@@ -1,0 +1,356 @@
+[gd_scene load_steps=7 format=3 uid="uid://j0oot51u7f0v"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/character_editor/character_editor.gd" id="1_jsaif"]
+[ext_resource type="Texture2D" uid="uid://b87j4fgy3hbgy" path="res://addons/rewind_story_engine/icons/File.svg" id="2_1puhp"]
+[ext_resource type="Texture2D" uid="uid://6yx3yl3gjuf7" path="res://addons/rewind_story_engine/icons/Add.svg" id="3_hy52d"]
+[ext_resource type="Texture2D" uid="uid://mqhlbtsjuvi8" path="res://addons/rewind_story_engine/icons/Eraser.svg" id="3_qn8xw"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/camera_info.gd" id="4_8m615"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/camera_2d_dragging.gd" id="4_y10jn"]
+
+[node name="CharacterEditor" type="Control" node_paths=PackedStringArray("character_item_list", "character_name_line_edit", "character_display_name_line_edit", "character_display_name_checkbox", "character_color_picker_button", "character_open_scene_file_dialog", "character_path_label", "emotion_container", "outfit_container", "character_preview_viewport", "character_preview_camera", "character_preview_emotion_label", "character_preview_outfit_label", "confirmation_dialog")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_jsaif")
+character_item_list = NodePath("HSplitContainer/ItemList")
+character_name_line_edit = NodePath("HSplitContainer/HSplitContainer/Editor/Name/Panel/LineEdit")
+character_display_name_line_edit = NodePath("HSplitContainer/HSplitContainer/Editor/DisplayName/Panel/LineEdit")
+character_display_name_checkbox = NodePath("HSplitContainer/HSplitContainer/Editor/DisplayName/CheckBox")
+character_color_picker_button = NodePath("HSplitContainer/HSplitContainer/Editor/Color/ColorPickerButton")
+character_open_scene_file_dialog = NodePath("FileDialog")
+character_path_label = NodePath("HSplitContainer/HSplitContainer/Editor/PathToScene/Panel/Path")
+emotion_container = NodePath("HSplitContainer/HSplitContainer/Editor/HBoxContainer/Emotions/Panel/ScrollContainer/MarginContainer/VBoxContainer")
+outfit_container = NodePath("HSplitContainer/HSplitContainer/Editor/HBoxContainer/Outfits/Panel/ScrollContainer/MarginContainer/VBoxContainer")
+character_preview_viewport = NodePath("HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer/SubViewport")
+character_preview_camera = NodePath("HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer/SubViewport/Camera2D")
+character_preview_emotion_label = NodePath("HSplitContainer/HSplitContainer/Preview/Panel/PreviewSettings/Emotion")
+character_preview_outfit_label = NodePath("HSplitContainer/HSplitContainer/Preview/Panel/PreviewSettings/Outfit")
+confirmation_dialog = NodePath("ConfirmationDialog")
+
+[node name="HSplitContainer" type="HSplitContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ItemList" type="ItemList" parent="HSplitContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Editor" type="VBoxContainer" parent="HSplitContainer/HSplitContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Name" type="HBoxContainer" parent="HSplitContainer/HSplitContainer/Editor"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/HSplitContainer/Editor/Name"]
+layout_mode = 2
+text = "Имя персонажа:"
+
+[node name="Panel" type="Panel" parent="HSplitContainer/HSplitContainer/Editor/Name"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LineEdit" type="LineEdit" parent="HSplitContainer/HSplitContainer/Editor/Name/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Имя персонажа..."
+flat = true
+
+[node name="DisplayName" type="HBoxContainer" parent="HSplitContainer/HSplitContainer/Editor"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/HSplitContainer/Editor/DisplayName"]
+layout_mode = 2
+text = "Отображаемое имя:"
+
+[node name="Panel" type="Panel" parent="HSplitContainer/HSplitContainer/Editor/DisplayName"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LineEdit" type="LineEdit" parent="HSplitContainer/HSplitContainer/Editor/DisplayName/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+tooltip_text = "Имя, которое игрок будет видеть во время диалогов."
+placeholder_text = "Отображаемое имя"
+flat = true
+
+[node name="CheckBox" type="CheckBox" parent="HSplitContainer/HSplitContainer/Editor/DisplayName"]
+layout_mode = 2
+text = "Использовать имя персонажа"
+
+[node name="Color" type="HBoxContainer" parent="HSplitContainer/HSplitContainer/Editor"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/HSplitContainer/Editor/Color"]
+layout_mode = 2
+text = "Цвет в диалогах:"
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="HSplitContainer/HSplitContainer/Editor/Color"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PathToScene" type="HBoxContainer" parent="HSplitContainer/HSplitContainer/Editor"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="HSplitContainer/HSplitContainer/Editor/PathToScene"]
+layout_mode = 2
+text = "Путь к сцене персонажа:"
+
+[node name="OpenFile" type="Button" parent="HSplitContainer/HSplitContainer/Editor/PathToScene"]
+layout_mode = 2
+text = "Выбрать файл"
+icon = ExtResource("2_1puhp")
+
+[node name="Panel" type="Panel" parent="HSplitContainer/HSplitContainer/Editor/PathToScene"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Path" type="Label" parent="HSplitContainer/HSplitContainer/Editor/PathToScene/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+vertical_alignment = 1
+clip_text = true
+
+[node name="Erase" type="Button" parent="HSplitContainer/HSplitContainer/Editor/PathToScene"]
+layout_mode = 2
+icon = ExtResource("3_qn8xw")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HSplitContainer/HSplitContainer/Editor"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Emotions" type="VBoxContainer" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Emotions"]
+layout_mode = 2
+text = "Эмоции"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Emotions"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Emotions/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Emotions/Panel/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Emotions/Panel/ScrollContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Emotions/Panel/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Добавить"
+icon = ExtResource("3_hy52d")
+
+[node name="Outfits" type="VBoxContainer" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Outfits"]
+layout_mode = 2
+text = "Костюмы"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Outfits"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Outfits/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Outfits/Panel/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Outfits/Panel/ScrollContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Outfits/Panel/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Добавить"
+icon = ExtResource("3_hy52d")
+
+[node name="Preview" type="VBoxContainer" parent="HSplitContainer/HSplitContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="HSplitContainer/HSplitContainer/Preview"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+text = "Предпросмотр персонажа"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="HSplitContainer/HSplitContainer/Preview"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/HSplitContainer/Preview/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer"]
+layout_mode = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer"]
+disable_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(2, 2)
+render_target_update_mode = 4
+
+[node name="Camera2D" type="Camera2D" parent="HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer/SubViewport"]
+script = ExtResource("4_y10jn")
+
+[node name="CameraInfo" type="Label" parent="HSplitContainer/HSplitContainer/Preview/Panel" node_paths=PackedStringArray("camera")]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = -27.0
+offset_right = 428.0
+offset_bottom = -4.0
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+text = "Позиция: (0.00, 0.00)
+Масштабирование: (1.00, 1.00)"
+script = ExtResource("4_8m615")
+camera = NodePath("../MarginContainer/SubViewportContainer/SubViewport/Camera2D")
+
+[node name="PreviewSettings" type="VBoxContainer" parent="HSplitContainer/HSplitContainer/Preview/Panel"]
+layout_mode = 1
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 155.0
+offset_bottom = 175.0
+
+[node name="ResetCamera" type="Button" parent="HSplitContainer/HSplitContainer/Preview/Panel/PreviewSettings"]
+layout_mode = 2
+text = "Сбросить камеру"
+
+[node name="EyesAnimation" type="CheckBox" parent="HSplitContainer/HSplitContainer/Preview/Panel/PreviewSettings"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+button_pressed = true
+text = "Анимация глаз"
+
+[node name="MouthAnimation" type="CheckBox" parent="HSplitContainer/HSplitContainer/Preview/Panel/PreviewSettings"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+text = "Анимация рта"
+
+[node name="Emotion" type="Label" parent="HSplitContainer/HSplitContainer/Preview/Panel/PreviewSettings"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+text = "Эмоция: -"
+
+[node name="Outfit" type="Label" parent="HSplitContainer/HSplitContainer/Preview/Panel/PreviewSettings"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+text = "Костюм: -"
+
+[node name="FileDialog" type="FileDialog" parent="."]
+title = "Open a File"
+initial_position = 4
+size = Vector2i(600, 400)
+ok_button_text = "Открыть"
+file_mode = 0
+filters = PackedStringArray("*.tscn")
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
+initial_position = 4
+dialog_text = "Вы уверены?"
+
+[connection signal="item_selected" from="HSplitContainer/ItemList" to="." method="_on_character_item_list_item_selected"]
+[connection signal="text_changed" from="HSplitContainer/HSplitContainer/Editor/Name/Panel/LineEdit" to="." method="_on_character_name_text_changed"]
+[connection signal="text_changed" from="HSplitContainer/HSplitContainer/Editor/DisplayName/Panel/LineEdit" to="." method="_on_display_name_line_edit_text_changed"]
+[connection signal="toggled" from="HSplitContainer/HSplitContainer/Editor/DisplayName/CheckBox" to="." method="_on_display_name_check_box_toggled"]
+[connection signal="color_changed" from="HSplitContainer/HSplitContainer/Editor/Color/ColorPickerButton" to="." method="_on_color_picker_color_changed"]
+[connection signal="pressed" from="HSplitContainer/HSplitContainer/Editor/PathToScene/OpenFile" to="." method="_on_open_scene_pressed"]
+[connection signal="pressed" from="HSplitContainer/HSplitContainer/Editor/PathToScene/Erase" to="." method="_on_erase_pressed"]
+[connection signal="pressed" from="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Emotions/Panel/ScrollContainer/MarginContainer/VBoxContainer/Button" to="." method="_on_add_emotion_button_pressed"]
+[connection signal="pressed" from="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Outfits/Panel/ScrollContainer/MarginContainer/VBoxContainer/Button" to="." method="_on_add_outfit_button_pressed"]
+[connection signal="gui_input" from="HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer" to="." method="_on_sub_viewport_container_gui_input"]
+[connection signal="pressed" from="HSplitContainer/HSplitContainer/Preview/Panel/PreviewSettings/ResetCamera" to="." method="_on_reset_camera_pressed"]
+[connection signal="toggled" from="HSplitContainer/HSplitContainer/Preview/Panel/PreviewSettings/EyesAnimation" to="." method="_on_eyes_animation_toggled"]
+[connection signal="toggled" from="HSplitContainer/HSplitContainer/Preview/Panel/PreviewSettings/MouthAnimation" to="." method="_on_mouth_animation_toggled"]
+[connection signal="file_selected" from="FileDialog" to="." method="_on_scene_dialog_file_selected"]
+[connection signal="confirmed" from="ConfirmationDialog" to="." method="_on_confirmation_dialog_confirmed"]

@@ -1,0 +1,23 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="rice"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+RewindStoryEngine="*res://addons/rewind_story_engine/rse_handler.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/rewind_story_engine/plugin.cfg")

@@ -1,0 +1,118 @@
+[gd_scene load_steps=8 format=3 uid="uid://d3b2lq6sr8ky0"]
+
+[ext_resource type="Texture2D" uid="uid://6yx3yl3gjuf7" path="res://addons/rewind_story_engine/icons/Add.svg" id="1_g5ahp"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/story_editor/story_editor.gd" id="1_ogmo4"]
+[ext_resource type="Texture2D" uid="uid://dilm1bhw8cjun" path="res://addons/rewind_story_engine/icons/Edit.svg" id="3_wccwt"]
+[ext_resource type="Texture2D" uid="uid://ddv0r5ovh5msj" path="res://addons/rewind_story_engine/icons/ActionCopy.svg" id="4_m7wt8"]
+[ext_resource type="Texture2D" uid="uid://bu7fno4vntimi" path="res://addons/rewind_story_engine/icons/Remove.svg" id="5_ewicf"]
+[ext_resource type="Texture2D" uid="uid://xrngsdo2uauu" path="res://addons/rewind_story_engine/icons/CharacterBody2D.svg" id="6_wapan"]
+[ext_resource type="Texture2D" uid="uid://d20heugf3uamj" path="res://addons/rewind_story_engine/icons/Environment.svg" id="7_sned8"]
+
+[node name="StoryEditor" type="Control" node_paths=PackedStringArray("graph_edit", "edit_popup_menu", "add_popup_menu", "confimation_dialog", "story_title_edit")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ogmo4")
+graph_edit = NodePath("GraphEdit")
+edit_popup_menu = NodePath("EditPopupMenu")
+add_popup_menu = NodePath("AddPopupMenu")
+confimation_dialog = NodePath("ConfirmationDialog")
+story_title_edit = NodePath("Panel/MarginContainer/LineEdit")
+
+[node name="GraphEdit" type="GraphEdit" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+right_disconnects = true
+show_zoom_label = true
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -620.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = 80.0
+grow_horizontal = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LineEdit" type="LineEdit" parent="Panel/MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+placeholder_text = "Название истории..."
+alignment = 1
+
+[node name="EditPopupMenu" type="PopupMenu" parent="."]
+size = Vector2i(229, 124)
+item_count = 6
+item_0/text = "Редактировать"
+item_0/icon = ExtResource("3_wccwt")
+item_0/id = 0
+item_1/text = ""
+item_1/id = 5
+item_1/separator = true
+item_2/text = "Отсоединить"
+item_2/id = 1
+item_3/text = "Дублировать"
+item_3/icon = ExtResource("4_m7wt8")
+item_3/id = 2
+item_3/disabled = true
+item_4/text = ""
+item_4/id = 4
+item_4/separator = true
+item_5/text = "Удалить"
+item_5/icon = ExtResource("5_ewicf")
+item_5/id = 3
+
+[node name="AddPopupMenu" type="PopupMenu" parent="."]
+size = Vector2i(277, 170)
+item_count = 7
+item_0/text = "Создать эпизод"
+item_0/icon = ExtResource("1_g5ahp")
+item_0/id = 0
+item_1/text = "Создать персонажа"
+item_1/icon = ExtResource("6_wapan")
+item_1/id = 1
+item_2/text = "Создать локацию"
+item_2/icon = ExtResource("7_sned8")
+item_2/id = 2
+item_3/text = "Создать визуальный эффект"
+item_3/id = 3
+item_4/text = "Создать звук"
+item_4/id = 4
+item_5/text = "Создать музыку"
+item_5/id = 5
+item_6/text = "Создать переход"
+item_6/id = 6
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
+title = "Удалить выбранные эпизоды"
+initial_position = 4
+size = Vector2i(200, 80)
+dialog_text = "Вы уверены?"
+
+[connection signal="connection_request" from="GraphEdit" to="." method="_on_graph_edit_connection_request"]
+[connection signal="delete_nodes_request" from="GraphEdit" to="." method="_on_graph_edit_delete_nodes_request"]
+[connection signal="disconnection_request" from="GraphEdit" to="." method="_on_graph_edit_disconnection_request"]
+[connection signal="node_deselected" from="GraphEdit" to="." method="_on_graph_edit_node_deselected"]
+[connection signal="node_selected" from="GraphEdit" to="." method="_on_graph_edit_node_selected"]
+[connection signal="popup_request" from="GraphEdit" to="." method="_on_graph_edit_popup_request"]
+[connection signal="text_changed" from="Panel/MarginContainer/LineEdit" to="." method="_on_story_title_changed"]
+[connection signal="id_pressed" from="EditPopupMenu" to="." method="_on_edit_popup_menu_id_pressed"]
+[connection signal="id_pressed" from="AddPopupMenu" to="." method="_on_add_popup_menu_id_pressed"]
+[connection signal="confirmed" from="ConfirmationDialog" to="." method="_on_confirmation_dialog_confirmed"]

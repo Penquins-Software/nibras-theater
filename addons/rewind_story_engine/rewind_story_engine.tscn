@@ -1,0 +1,186 @@
+[gd_scene load_steps=11 format=3 uid="uid://c6qe2c1m3weiv"]
+
+[ext_resource type="PackedScene" uid="uid://d3b2lq6sr8ky0" path="res://addons/rewind_story_engine/story_editor/story_editor.tscn" id="1_74vf6"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/rse_plugin_controller.gd" id="1_h214i"]
+[ext_resource type="PackedScene" uid="uid://b2epl80ky403a" path="res://addons/rewind_story_engine/episode_editor/episode_editor.tscn" id="2_ouay1"]
+[ext_resource type="PackedScene" uid="uid://j0oot51u7f0v" path="res://addons/rewind_story_engine/character_editor/character_editor.tscn" id="4_8n7ea"]
+[ext_resource type="PackedScene" uid="uid://cgqd5ldr1rjwr" path="res://addons/rewind_story_engine/location_editor/location_editor.tscn" id="5_bbcbh"]
+[ext_resource type="PackedScene" uid="uid://cne52vtx0ppoi" path="res://addons/rewind_story_engine/visual_effect_editor/visual_effect_editor.tscn" id="6_nyccg"]
+[ext_resource type="PackedScene" uid="uid://c6sjr0uctlf4r" path="res://addons/rewind_story_engine/sound_effect_editor/sound_effect_editor.tscn" id="7_qu87i"]
+[ext_resource type="PackedScene" uid="uid://cg6850o6vqvnc" path="res://addons/rewind_story_engine/music_editor/music_editor.tscn" id="8_2r257"]
+[ext_resource type="PackedScene" uid="uid://c3nmj815g0cjm" path="res://addons/rewind_story_engine/scene_editor/scene_editor.tscn" id="9_n47f2"]
+[ext_resource type="PackedScene" uid="uid://ce65a2xblprrq" path="res://addons/rewind_story_engine/transitition_editor/transitition_editor.tscn" id="10_n74y7"]
+
+[node name="RewindStoryEngine" type="Control" node_paths=PackedStringArray("start_screen", "work_screen", "tab_container", "create_file_dialog", "open_file_dialog", "save_file_dialog", "story_editor", "episode_editor", "character_editor", "location_editor", "visual_effect_editor", "sound_effect_editor", "music_editor", "transitition_editor", "scene_editor")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_h214i")
+start_screen = NodePath("StartScreen")
+work_screen = NodePath("WorkScreen")
+tab_container = NodePath("WorkScreen/TabContainer")
+create_file_dialog = NodePath("CreateFileDialog")
+open_file_dialog = NodePath("OpenFileDialog")
+save_file_dialog = NodePath("SaveFileDialog")
+story_editor = NodePath("WorkScreen/TabContainer/История")
+episode_editor = NodePath("WorkScreen/TabContainer/Эпизод")
+character_editor = NodePath("WorkScreen/TabContainer/Персонаж")
+location_editor = NodePath("WorkScreen/TabContainer/Локация")
+visual_effect_editor = NodePath("WorkScreen/TabContainer/Визуальный эффект")
+sound_effect_editor = NodePath("WorkScreen/TabContainer/Звук")
+music_editor = NodePath("WorkScreen/TabContainer/Музыка")
+transitition_editor = NodePath("WorkScreen/TabContainer/Переход")
+scene_editor = NodePath("WorkScreen/TabContainer/Сцена")
+
+[node name="StartScreen" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -81.0
+offset_right = 200.0
+offset_bottom = 81.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="StartScreen"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Rewind Story Engine"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="StartScreen"]
+layout_mode = 2
+text = "Создать историю"
+
+[node name="Button2" type="Button" parent="StartScreen"]
+layout_mode = 2
+text = "Открыть историю"
+
+[node name="WorkScreen" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Menu" type="Panel" parent="WorkScreen"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="WorkScreen/Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_right = 4
+
+[node name="MenuBar" type="MenuBar" parent="WorkScreen/Menu/MarginContainer"]
+layout_mode = 2
+flat = true
+
+[node name="Файл" type="PopupMenu" parent="WorkScreen/Menu/MarginContainer/MenuBar"]
+size = Vector2i(238, 100)
+item_count = 6
+item_0/text = "Создать новую историю"
+item_0/id = 0
+item_1/text = ""
+item_1/id = 5
+item_1/separator = true
+item_2/text = "Открыть историю..."
+item_2/id = 1
+item_3/text = ""
+item_3/id = 2
+item_3/separator = true
+item_4/text = "Сохранить историю"
+item_4/id = 3
+item_5/text = "Сохранить историю как..."
+item_5/id = 4
+
+[node name="TabContainer" type="TabContainer" parent="WorkScreen"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="История" parent="WorkScreen/TabContainer" instance=ExtResource("1_74vf6")]
+layout_mode = 2
+
+[node name="Эпизод" parent="WorkScreen/TabContainer" instance=ExtResource("2_ouay1")]
+visible = false
+layout_mode = 2
+
+[node name="Персонаж" parent="WorkScreen/TabContainer" instance=ExtResource("4_8n7ea")]
+visible = false
+layout_mode = 2
+
+[node name="Локация" parent="WorkScreen/TabContainer" instance=ExtResource("5_bbcbh")]
+visible = false
+layout_mode = 2
+
+[node name="Визуальный эффект" parent="WorkScreen/TabContainer" instance=ExtResource("6_nyccg")]
+visible = false
+layout_mode = 2
+
+[node name="Звук" parent="WorkScreen/TabContainer" instance=ExtResource("7_qu87i")]
+visible = false
+layout_mode = 2
+
+[node name="Музыка" parent="WorkScreen/TabContainer" instance=ExtResource("8_2r257")]
+visible = false
+layout_mode = 2
+
+[node name="Сцена" parent="WorkScreen/TabContainer" instance=ExtResource("9_n47f2")]
+visible = false
+layout_mode = 2
+
+[node name="Переход" parent="WorkScreen/TabContainer" instance=ExtResource("10_n74y7")]
+visible = false
+layout_mode = 2
+
+[node name="Проигрыватель" type="Control" parent="WorkScreen/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="CreateFileDialog" type="FileDialog" parent="."]
+title = "Создать историю"
+initial_position = 4
+size = Vector2i(600, 400)
+ok_button_text = "Сохранить"
+mode_overrides_title = false
+filters = PackedStringArray("*.rs")
+
+[node name="OpenFileDialog" type="FileDialog" parent="."]
+title = "Открыть историю"
+initial_position = 4
+size = Vector2i(600, 400)
+ok_button_text = "Открыть"
+mode_overrides_title = false
+file_mode = 0
+filters = PackedStringArray("*.rs")
+
+[node name="SaveFileDialog" type="FileDialog" parent="."]
+title = "Сохранить историю"
+initial_position = 4
+size = Vector2i(600, 400)
+ok_button_text = "Сохранить"
+mode_overrides_title = false
+filters = PackedStringArray("*.rs")
+
+[connection signal="pressed" from="StartScreen/Button" to="." method="create_story"]
+[connection signal="pressed" from="StartScreen/Button2" to="." method="load_story"]
+[connection signal="id_pressed" from="WorkScreen/Menu/MarginContainer/MenuBar/Файл" to="." method="_on_file_id_pressed"]
+[connection signal="tab_changed" from="WorkScreen/TabContainer" to="." method="change_mode"]
+[connection signal="file_selected" from="CreateFileDialog" to="." method="_create_story_by_path"]
+[connection signal="file_selected" from="OpenFileDialog" to="." method="_load_story_by_path"]
+[connection signal="file_selected" from="SaveFileDialog" to="." method="_save_as_story_by_path"]

@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://tvidn7nbi5ge"]
+
+[ext_resource type="Texture2D" uid="uid://bu7fno4vntimi" path="res://addons/rewind_story_engine/icons/Remove.svg" id="1_68dl5"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/character_editor/emotion_editor.gd" id="1_h3wf8"]
+[ext_resource type="Texture2D" uid="uid://bj2j8vaphgtr2" path="res://addons/rewind_story_engine/icons/Node.svg" id="2_w1126"]
+
+[node name="EmotionEditor" type="HBoxContainer" node_paths=PackedStringArray("id", "line_edit", "open_button")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h3wf8")
+id = NodePath("ID")
+line_edit = NodePath("LineEdit")
+open_button = NodePath("Open")
+
+[node name="ID" type="Label" parent="."]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+text = "id"
+horizontal_alignment = 2
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Название эмоции"
+
+[node name="Open" type="Button" parent="."]
+layout_mode = 2
+text = "Выбрать"
+icon = ExtResource("2_w1126")
+
+[node name="Remove" type="Button" parent="."]
+layout_mode = 2
+icon = ExtResource("1_68dl5")
+
+[connection signal="text_changed" from="LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="pressed" from="Remove" to="." method="_on_remove_button_pressed"]

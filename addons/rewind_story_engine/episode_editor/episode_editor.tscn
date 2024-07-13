@@ -1,0 +1,377 @@
+[gd_scene load_steps=20 format=3 uid="uid://b2epl80ky403a"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/episode_editor/episode_editor.gd" id="1_yd1o8"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/episode_editor/frames_container.gd" id="2_6elk6"]
+[ext_resource type="Texture2D" uid="uid://b1i4qpmmy863u" path="res://addons/rewind_story_engine/icons/Script.svg" id="3_c8mqw"]
+[ext_resource type="Texture2D" uid="uid://xrngsdo2uauu" path="res://addons/rewind_story_engine/icons/CharacterBody2D.svg" id="4_qjuwm"]
+[ext_resource type="Texture2D" uid="uid://boxvhkyqia24r" path="res://addons/rewind_story_engine/icons/ClassList.svg" id="5_mvpnn"]
+[ext_resource type="Texture2D" uid="uid://cxmmlqfj5spim" path="res://addons/rewind_story_engine/icons/GuiScrollArrowRightHl.svg" id="6_2wjkx"]
+[ext_resource type="Texture2D" uid="uid://d20heugf3uamj" path="res://addons/rewind_story_engine/icons/Environment.svg" id="6_tc6bv"]
+[ext_resource type="Texture2D" uid="uid://dstgl0jovuw5k" path="res://addons/rewind_story_engine/icons/CameraAttributes.svg" id="7_b1k2j"]
+[ext_resource type="Texture2D" uid="uid://dmgjl8q6dbbe0" path="res://addons/rewind_story_engine/icons/AudioStreamMP3.svg" id="8_5c2gm"]
+[ext_resource type="Texture2D" uid="uid://b2w4b3mq858qi" path="res://addons/rewind_story_engine/icons/AudioStreamPlayer.svg" id="9_s4bcu"]
+[ext_resource type="Texture2D" uid="uid://fw4l7xhfxbo0" path="res://addons/rewind_story_engine/icons/bool.svg" id="10_rsjou"]
+[ext_resource type="Texture2D" uid="uid://ckary5ioiki5d" path="res://addons/rewind_story_engine/icons/Info.svg" id="11_df6tg"]
+[ext_resource type="Texture2D" uid="uid://ddv0r5ovh5msj" path="res://addons/rewind_story_engine/icons/ActionCopy.svg" id="11_j5sjk"]
+[ext_resource type="Texture2D" uid="uid://c14siym04ftl5" path="res://addons/rewind_story_engine/icons/Variant.svg" id="12_fes7q"]
+[ext_resource type="Texture2D" uid="uid://tkoiyrgbu7j8" path="res://addons/rewind_story_engine/icons/ArrowUp.svg" id="12_heuoj"]
+[ext_resource type="Texture2D" uid="uid://mqhlbtsjuvi8" path="res://addons/rewind_story_engine/icons/Eraser.svg" id="12_mwd5i"]
+[ext_resource type="Texture2D" uid="uid://cwlj8vri8w04x" path="res://addons/rewind_story_engine/icons/Signals.svg" id="12_pu3ts"]
+[ext_resource type="Texture2D" uid="uid://cv37a71rpk4mu" path="res://addons/rewind_story_engine/icons/ArrowDown.svg" id="13_hkyab"]
+[ext_resource type="Texture2D" uid="uid://bu7fno4vntimi" path="res://addons/rewind_story_engine/icons/Remove.svg" id="14_77q6m"]
+
+[node name="EpisodeEditor" type="Control" node_paths=PackedStringArray("frame_container", "popup_menu", "drag_pointer", "frame_info_label", "episode_item_list", "episode_title_line_edit")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_yd1o8")
+frame_container = NodePath("HSplitContainer/HBoxContainer/PanelContainer/VSplitContainer/ScrollContainer/Frames")
+popup_menu = NodePath("PopupMenu")
+drag_pointer = NodePath("HSplitContainer/HBoxContainer/PanelContainer/VSplitContainer/ScrollContainer/Frames/DragPointer")
+frame_info_label = NodePath("HSplitContainer/HBoxContainer/PanelContainer/VSplitContainer/FrameInfo/MarginContainer/RichTextLabel")
+episode_item_list = NodePath("HSplitContainer/ItemList")
+episode_title_line_edit = NodePath("HSplitContainer/HBoxContainer/PanelContainer/Panel/EpisodeName")
+
+[node name="HSplitContainer" type="HSplitContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+
+[node name="ItemList" type="ItemList" parent="HSplitContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HSplitContainer" parent="HSplitContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PanelContainer" type="VBoxContainer" parent="HSplitContainer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Panel" type="Panel" parent="HSplitContainer/HBoxContainer/PanelContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="EpisodeName" type="LineEdit" parent="HSplitContainer/HBoxContainer/PanelContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Название эпизода..."
+flat = true
+
+[node name="VSplitContainer" type="VSplitContainer" parent="HSplitContainer/HBoxContainer/PanelContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HSplitContainer/HBoxContainer/PanelContainer/VSplitContainer"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+
+[node name="Frames" type="VBoxContainer" parent="HSplitContainer/HBoxContainer/PanelContainer/VSplitContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+script = ExtResource("2_6elk6")
+
+[node name="DragPointer" type="ColorRect" parent="HSplitContainer/HBoxContainer/PanelContainer/VSplitContainer/ScrollContainer/Frames"]
+visible = false
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+color = Color(0.890196, 0.635294, 0.121569, 1)
+
+[node name="FrameInfo" type="Panel" parent="HSplitContainer/HBoxContainer/PanelContainer/VSplitContainer"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/HBoxContainer/PanelContainer/VSplitContainer/FrameInfo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HSplitContainer/HBoxContainer/PanelContainer/VSplitContainer/FrameInfo/MarginContainer"]
+layout_mode = 2
+text = "Номер кадра: -
+Локация: -
+Персонажи: -
+Переменные:
+Визуальные эффекты: -
+Звуковые эффекты: -
+Музыка: -
+Озвучивание: -"
+
+[node name="FrameList" type="Panel" parent="HSplitContainer/HBoxContainer"]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/HBoxContainer/FrameList"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 4
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Основное"
+fit_content = true
+
+[node name="HFlowContainer" type="HFlowContainer" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Text" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Текст"
+icon = ExtResource("3_c8mqw")
+
+[node name="Character" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Персонаж"
+icon = ExtResource("4_qjuwm")
+
+[node name="Location" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Локация"
+icon = ExtResource("6_tc6bv")
+
+[node name="Selection" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Выбор"
+icon = ExtResource("5_mvpnn")
+
+[node name="Jump" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Переход в другой эпизод"
+icon = ExtResource("6_2wjkx")
+
+[node name="Gap" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer"]
+layout_mode = 2
+tooltip_text = "Завершает текущий кадр
+
+Если не используется, то переход на следующий кадр будет расчитан из количества слов в кадре или при смене говорящего."
+mouse_default_cursor_shape = 2
+text = "Следующий кадр"
+icon = ExtResource("13_hkyab")
+
+[node name="HSeparator" type="HSeparator" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Визуализация"
+fit_content = true
+
+[node name="HFlowContainer2" type="HFlowContainer" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Visual" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer2"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Визуальный эффект"
+icon = ExtResource("7_b1k2j")
+
+[node name="HSeparator3" type="HSeparator" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Аудио"
+fit_content = true
+
+[node name="HFlowContainer3" type="HFlowContainer" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Audio" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Звуковой эффект"
+icon = ExtResource("8_5c2gm")
+
+[node name="Music" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Музыка"
+icon = ExtResource("9_s4bcu")
+
+[node name="Voice" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Озвучивание"
+icon = ExtResource("9_s4bcu")
+
+[node name="HSeparator2" type="HSeparator" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Логика"
+fit_content = true
+
+[node name="HFlowContainer4" type="HFlowContainer" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Condition" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer4"]
+layout_mode = 2
+tooltip_text = "Логическое условие
+
+Возможные операторы: 
+[==] проверка на равенство числу (Value_1 == 5)
+[!=] проверка на неравенство числу (Value_1 != 2.5)
+[<] меньше чем число (Value_1 < 10)
+[>] больше чем число (Value_1 > 20)
+[NOT] логическое НЕ (NOT Value_1 > 20) (NOT Value_2)
+[AND] логическое И (Value_1 == 5 AND Value_2)
+[OR] логическое ИЛИ (Value_1 == 5 OR Value_2)
+
+* Примечание: если указанана только переменная без значения, будет проходить проверка на её наличие в записанных переменных.
+
+Пример выражения: Value_1 == 2 AND Value_2 < 5.2 OR Value_3 AND NOT Value_4"
+mouse_default_cursor_shape = 2
+text = "Условие"
+icon = ExtResource("10_rsjou")
+
+[node name="Variable" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer4"]
+layout_mode = 2
+tooltip_text = "Записать информацию в переменную
+
+Может использоваться в условиях или в игре."
+mouse_default_cursor_shape = 2
+text = "Переменная"
+icon = ExtResource("12_fes7q")
+
+[node name="Signal" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer4"]
+layout_mode = 2
+tooltip_text = "Запустить сигнал
+
+Сигналы обрабатываются игрой и могут запускать различные сценарии."
+mouse_default_cursor_shape = 2
+text = "Сигнал"
+icon = ExtResource("12_pu3ts")
+
+[node name="HSeparator4" type="HSeparator" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Другое"
+fit_content = true
+
+[node name="HFlowContainer5" type="HFlowContainer" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Comment" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer5"]
+layout_mode = 2
+tooltip_text = "Добавить комментарий
+
+Комментарий никак не влияет на игру и нужен исключительно для информации разработчикам."
+mouse_default_cursor_shape = 2
+text = "Комментарий"
+icon = ExtResource("11_df6tg")
+
+[node name="Inherit" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer5"]
+layout_mode = 2
+tooltip_text = "Наследовать сцену
+
+Наследует состояние сцены из предыдущего эпизода."
+mouse_default_cursor_shape = 2
+text = "Наследовать сцену"
+icon = ExtResource("12_heuoj")
+
+[node name="Erase" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer5"]
+layout_mode = 2
+tooltip_text = "Очистить сцену
+
+Убирает всех персонажей, локацию, визуальные эффекты, музыку и др."
+mouse_default_cursor_shape = 2
+text = "Очистить сцену"
+icon = ExtResource("12_mwd5i")
+
+[node name="PopupMenu" type="PopupMenu" parent="."]
+size = Vector2i(151, 124)
+item_count = 6
+item_0/text = "Дублировать"
+item_0/icon = ExtResource("11_j5sjk")
+item_0/id = 0
+item_0/disabled = true
+item_1/text = ""
+item_1/id = 1
+item_1/separator = true
+item_2/text = "Вверх"
+item_2/icon = ExtResource("12_heuoj")
+item_2/id = 2
+item_3/text = "Вниз"
+item_3/icon = ExtResource("13_hkyab")
+item_3/id = 3
+item_4/text = ""
+item_4/id = 4
+item_4/separator = true
+item_5/text = "Удалить"
+item_5/icon = ExtResource("14_77q6m")
+item_5/id = 5
+
+[connection signal="item_selected" from="HSplitContainer/ItemList" to="." method="_on_episode_item_list_item_selected"]
+[connection signal="text_changed" from="HSplitContainer/HBoxContainer/PanelContainer/Panel/EpisodeName" to="." method="_on_episode_name_text_changed"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer/Text" to="." method="_add_frame_text"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer/Character" to="." method="_add_frame_character"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer/Location" to="." method="_add_frame_location"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer/Selection" to="." method="_add_frame_selection"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer/Jump" to="." method="_add_frame_jump"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer/Gap" to="." method="_add_frame_gap"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer2/Visual" to="." method="_add_frame_visual_effect"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3/Audio" to="." method="_add_frame_sound"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3/Music" to="." method="_add_frame_music"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3/Voice" to="." method="_add_frame_voice"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer4/Condition" to="." method="_add_frame_condition"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer4/Variable" to="." method="_add_frame_variable"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer4/Signal" to="." method="_add_frame_signal"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer5/Comment" to="." method="_add_frame_comment"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer5/Erase" to="." method="_add_frame_erase_scene"]
+[connection signal="id_pressed" from="PopupMenu" to="." method="_popup_menu_id_pressed"]

@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://b16afmaai5a4e"]
+
+[ext_resource type="Texture2D" uid="uid://bu7fno4vntimi" path="res://addons/rewind_story_engine/icons/Remove.svg" id="1_1qntj"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/selection_option.gd" id="1_mrx7b"]
+[ext_resource type="Texture2D" uid="uid://m0sny0qqihc1" path="res://addons/rewind_story_engine/icons/GuiScrollArrowRight.svg" id="2_ci5a8"]
+
+[node name="Option" type="HBoxContainer" node_paths=PackedStringArray("option_line_edit", "to_episode_menu_button", "remove_button")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mrx7b")
+option_line_edit = NodePath("LineEdit")
+to_episode_menu_button = NodePath("Episode")
+remove_button = NodePath("Remove")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+placeholder_text = "Опция"
+draw_control_chars = true
+
+[node name="Alert" type="Label" parent="."]
+visible = false
+layout_mode = 2
+size_flags_vertical = 1
+mouse_filter = 1
+text = "Не указан эпизод!"
+vertical_alignment = 1
+
+[node name="Icon" type="Control" parent="."]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="TextureRect" type="TextureRect" parent="Icon"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -8.0
+offset_top = 8.0
+offset_right = 8.0
+offset_bottom = 24.0
+grow_horizontal = 2
+tooltip_text = "Переход в другой эпизод"
+mouse_default_cursor_shape = 6
+texture = ExtResource("2_ci5a8")
+
+[node name="Episode" type="MenuButton" parent="."]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 1
+text = "[Эпизод]"
+flat = false
+
+[node name="Remove" type="Button" parent="."]
+layout_mode = 2
+icon = ExtResource("1_1qntj")
+
+[connection signal="pressed" from="Remove" to="." method="_on_remove_button_pressed"]

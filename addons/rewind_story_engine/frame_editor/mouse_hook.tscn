@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://0qdrucdofjgn"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/mouse_hook.gd" id="1_cy0ls"]
+
+[node name="MouseHook" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_cy0ls")
+
+[node name="Up" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 8.0
+grow_horizontal = 2
+mouse_filter = 1
+
+[node name="Down" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 1
+
+[connection signal="mouse_entered" from="Up" to="." method="_on_up_mouse_entered"]
+[connection signal="mouse_entered" from="Down" to="." method="_on_down_mouse_entered"]

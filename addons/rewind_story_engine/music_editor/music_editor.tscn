@@ -1,0 +1,103 @@
+[gd_scene load_steps=4 format=3 uid="uid://cg6850o6vqvnc"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/music_editor/music_editor.gd" id="1_fx8ec"]
+[ext_resource type="Texture2D" uid="uid://b87j4fgy3hbgy" path="res://addons/rewind_story_engine/icons/File.svg" id="2_nja7m"]
+[ext_resource type="Texture2D" uid="uid://mqhlbtsjuvi8" path="res://addons/rewind_story_engine/icons/Eraser.svg" id="3_ubcqb"]
+
+[node name="MusicEditor" type="Control" node_paths=PackedStringArray("item_list", "name_line_edit", "open_scene_file_dialog", "path_label")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fx8ec")
+item_list = NodePath("HSplitContainer/ItemList")
+name_line_edit = NodePath("HSplitContainer/VBoxContainer/Name/Panel/LineEdit")
+open_scene_file_dialog = NodePath("FileDialog")
+path_label = NodePath("HSplitContainer/VBoxContainer/PathToScene/Panel/Path")
+
+[node name="HSplitContainer" type="HSplitContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ItemList" type="ItemList" parent="HSplitContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Name" type="HBoxContainer" parent="HSplitContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/Name"]
+layout_mode = 2
+text = "Название музыки:"
+
+[node name="Panel" type="Panel" parent="HSplitContainer/VBoxContainer/Name"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LineEdit" type="LineEdit" parent="HSplitContainer/VBoxContainer/Name/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Название музыки.."
+flat = true
+
+[node name="PathToScene" type="HBoxContainer" parent="HSplitContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="HSplitContainer/VBoxContainer/PathToScene"]
+layout_mode = 2
+text = "Путь к музыке:"
+
+[node name="OpenFile" type="Button" parent="HSplitContainer/VBoxContainer/PathToScene"]
+layout_mode = 2
+text = "Выбрать файл"
+icon = ExtResource("2_nja7m")
+
+[node name="Panel" type="Panel" parent="HSplitContainer/VBoxContainer/PathToScene"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Path" type="Label" parent="HSplitContainer/VBoxContainer/PathToScene/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+vertical_alignment = 1
+clip_text = true
+
+[node name="Erase" type="Button" parent="HSplitContainer/VBoxContainer/PathToScene"]
+layout_mode = 2
+icon = ExtResource("3_ubcqb")
+
+[node name="FileDialog" type="FileDialog" parent="."]
+title = "Open a File"
+initial_position = 4
+size = Vector2i(600, 400)
+ok_button_text = "Открыть"
+file_mode = 0
+filters = PackedStringArray("*.tscn")
+
+[connection signal="item_selected" from="HSplitContainer/ItemList" to="." method="_on_item_list_item_selected"]
+[connection signal="text_changed" from="HSplitContainer/VBoxContainer/Name/Panel/LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="pressed" from="HSplitContainer/VBoxContainer/PathToScene/OpenFile" to="." method="_on_open_file_pressed"]
+[connection signal="pressed" from="HSplitContainer/VBoxContainer/PathToScene/Erase" to="." method="_on_erase_pressed"]
+[connection signal="file_selected" from="FileDialog" to="." method="_on_file_dialog_file_selected"]

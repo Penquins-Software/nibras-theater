@@ -1,0 +1,313 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3nmj815g0cjm"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/scene_editor/scene_editor.gd" id="1_ib8g0"]
+[ext_resource type="PackedScene" uid="uid://6jobhq66ma72" path="res://addons/rewind_story_engine/scene_builder/scene_builder.tscn" id="2_k1d8p"]
+[ext_resource type="Texture2D" uid="uid://3equu8adepv5" path="res://addons/rewind_story_engine/icons/ArrowLeft.svg" id="2_krcrh"]
+[ext_resource type="Texture2D" uid="uid://ehkxajdgb8vr" path="res://addons/rewind_story_engine/icons/ArrowRight.svg" id="3_4rxgi"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/scene_editor/inspector.gd" id="6_p8hy4"]
+
+[node name="SceneEditor" type="Control" node_paths=PackedStringArray("scene_builder", "inspector", "item_list", "hierarchy_tree", "frame_spin_box")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ib8g0")
+scene_builder = NodePath("HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer/SubViewport/SceneBuilder")
+inspector = NodePath("HSplitContainer/VBoxContainer/HSplitContainer/Inspector")
+item_list = NodePath("HSplitContainer/ItemList")
+hierarchy_tree = NodePath("HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer/Tree")
+frame_spin_box = NodePath("HSplitContainer/VBoxContainer/FrameController/SpinBox")
+
+[node name="HSplitContainer" type="HSplitContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ItemList" type="ItemList" parent="HSplitContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FrameController" type="HBoxContainer" parent="HSplitContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/FrameController"]
+layout_mode = 2
+text = "Номер кадра:"
+
+[node name="SpinBox" type="SpinBox" parent="HSplitContainer/VBoxContainer/FrameController"]
+layout_mode = 2
+allow_greater = true
+
+[node name="Prev" type="Button" parent="HSplitContainer/VBoxContainer/FrameController"]
+layout_mode = 2
+text = "Предыдущий кадр"
+icon = ExtResource("2_krcrh")
+
+[node name="Next" type="Button" parent="HSplitContainer/VBoxContainer/FrameController"]
+layout_mode = 2
+text = "Следующий кадр"
+icon = ExtResource("3_4rxgi")
+
+[node name="Buttons" type="HFlowContainer" parent="HSplitContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="InheritPrevScenePreset" type="Button" parent="HSplitContainer/VBoxContainer/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Наследовать состояние сцены с предыдущего кадра"
+
+[node name="InheritNextScenePreset" type="Button" parent="HSplitContainer/VBoxContainer/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Наследовать состояние сцены со следующего кадра"
+
+[node name="ResetScenePreset" type="Button" parent="HSplitContainer/VBoxContainer/Buttons"]
+layout_mode = 2
+text = "Сбросить состояние сцены"
+
+[node name="HSplitContainer" type="HSplitContainer" parent="HSplitContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HSplitContainer" type="HSplitContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Tree" type="Tree" parent="HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+hide_root = true
+scroll_horizontal_enabled = false
+
+[node name="Preview" type="VBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer/Preview"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer/Preview/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer"]
+layout_mode = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer"]
+disable_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(536, 607)
+render_target_update_mode = 4
+
+[node name="SceneBuilder" parent="HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer/SubViewport" instance=ExtResource("2_k1d8p")]
+
+[node name="PreviewSettings" type="VBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer/Preview/Panel"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 152.0
+offset_bottom = 35.0
+
+[node name="Inspector" type="Panel" parent="HSplitContainer/VBoxContainer/HSplitContainer" node_paths=PackedStringArray("title", "transform", "position_x_spin_box", "position_y_spin_box", "rotation_spin_box", "rotation_slider", "scale_spin_box", "flip_h_check_box", "order", "order_spin_box")]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+focus_mode = 1
+script = ExtResource("6_p8hy4")
+title = NodePath("MarginContainer/Title/Label")
+transform = NodePath("MarginContainer/Title/Transform")
+position_x_spin_box = NodePath("MarginContainer/Title/Transform/Position/Parameters/X/SpinBox")
+position_y_spin_box = NodePath("MarginContainer/Title/Transform/Position/Parameters/Y/SpinBox")
+rotation_spin_box = NodePath("MarginContainer/Title/Transform/Rotation/Value")
+rotation_slider = NodePath("MarginContainer/Title/Transform/Rotation/HSlider")
+scale_spin_box = NodePath("MarginContainer/Title/Transform/Scale/Parameters/Value/SpinBox")
+flip_h_check_box = NodePath("MarginContainer/Title/Transform/FlipHCheckBox")
+order = NodePath("MarginContainer/Title/Transform/Order")
+order_spin_box = NodePath("MarginContainer/Title/Transform/Order/Value")
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="Title" type="VBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title"]
+layout_mode = 2
+text = "Локация"
+clip_text = true
+
+[node name="Transform" type="VBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title"]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform"]
+layout_mode = 2
+text = "Трансформация"
+
+[node name="Position" type="HBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Position"]
+custom_minimum_size = Vector2(80, 27)
+layout_mode = 2
+size_flags_vertical = 0
+text = "Позиция:"
+vertical_alignment = 2
+
+[node name="Parameters" type="VBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Position"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="X" type="HBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Position/Parameters"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Position/Parameters/X"]
+layout_mode = 2
+text = "X"
+
+[node name="SpinBox" type="SpinBox" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Position/Parameters/X"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = -2000.0
+max_value = 2000.0
+step = 0.1
+allow_greater = true
+allow_lesser = true
+
+[node name="Y" type="HBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Position/Parameters"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Position/Parameters/Y"]
+layout_mode = 2
+text = "Y"
+
+[node name="SpinBox" type="SpinBox" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Position/Parameters/Y"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = -2000.0
+max_value = 2000.0
+step = 0.1
+allow_greater = true
+allow_lesser = true
+
+[node name="Rotation" type="HBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Rotation"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+text = "Поворот:"
+vertical_alignment = 2
+
+[node name="Value" type="SpinBox" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Rotation"]
+layout_mode = 2
+min_value = -360.0
+max_value = 360.0
+
+[node name="HSlider" type="HSlider" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Rotation"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+min_value = -360.0
+max_value = 360.0
+
+[node name="Scale" type="HBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Scale"]
+custom_minimum_size = Vector2(80, 27)
+layout_mode = 2
+size_flags_vertical = 0
+text = "Масштаб:"
+vertical_alignment = 2
+
+[node name="Parameters" type="VBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Scale"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Value" type="HBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Scale/Parameters"]
+layout_mode = 2
+
+[node name="SpinBox" type="SpinBox" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Scale/Parameters/Value"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = -10.0
+max_value = 10.0
+step = 0.1
+allow_greater = true
+allow_lesser = true
+
+[node name="FlipHCheckBox" type="CheckBox" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform"]
+layout_mode = 2
+text = "Отразить по горизонтали"
+
+[node name="Order" type="HBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Order"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+text = "Порядок сортировки:"
+vertical_alignment = 2
+
+[node name="Value" type="SpinBox" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Order"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = -360.0
+max_value = 360.0
+
+[node name="HSeparator2" type="HSeparator" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title"]
+visible = false
+layout_mode = 2
+
+[connection signal="item_selected" from="HSplitContainer/ItemList" to="." method="_on_item_list_item_selected"]
+[connection signal="value_changed" from="HSplitContainer/VBoxContainer/FrameController/SpinBox" to="." method="_on_spin_box_value_changed"]
+[connection signal="pressed" from="HSplitContainer/VBoxContainer/FrameController/Prev" to="." method="_on_prev_pressed"]
+[connection signal="pressed" from="HSplitContainer/VBoxContainer/FrameController/Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="HSplitContainer/VBoxContainer/Buttons/InheritPrevScenePreset" to="." method="_on_inherit_prev_scene_preset_pressed"]
+[connection signal="pressed" from="HSplitContainer/VBoxContainer/Buttons/InheritNextScenePreset" to="." method="_on_inherit_next_scene_preset_pressed"]
+[connection signal="pressed" from="HSplitContainer/VBoxContainer/Buttons/ResetScenePreset" to="." method="_on_reset_scene_preset_pressed"]
+[connection signal="item_selected" from="HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer/Tree" to="." method="_on_tree_item_selected"]
+[connection signal="gui_input" from="HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer" to="HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer/SubViewport/SceneBuilder" method="_input"]
+[connection signal="node_changed" from="HSplitContainer/VBoxContainer/HSplitContainer/Inspector" to="." method="_on_inspector_node_changed"]
+[connection signal="value_changed" from="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Position/Parameters/X/SpinBox" to="HSplitContainer/VBoxContainer/HSplitContainer/Inspector" method="_on_position_x_changed"]
+[connection signal="value_changed" from="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Position/Parameters/Y/SpinBox" to="HSplitContainer/VBoxContainer/HSplitContainer/Inspector" method="_on_position_y_changed"]
+[connection signal="value_changed" from="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Rotation/Value" to="HSplitContainer/VBoxContainer/HSplitContainer/Inspector" method="_on_rotation_spin_box_changed"]
+[connection signal="value_changed" from="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Rotation/HSlider" to="HSplitContainer/VBoxContainer/HSplitContainer/Inspector" method="_on_rotation_changed"]
+[connection signal="value_changed" from="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Scale/Parameters/Value/SpinBox" to="HSplitContainer/VBoxContainer/HSplitContainer/Inspector" method="_on_scale_changed"]
+[connection signal="toggled" from="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/FlipHCheckBox" to="HSplitContainer/VBoxContainer/HSplitContainer/Inspector" method="_on_flip_h_check_box_toggled"]
+[connection signal="value_changed" from="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/Transform/Order/Value" to="HSplitContainer/VBoxContainer/HSplitContainer/Inspector" method="_on_order_changed"]

@@ -1,0 +1,90 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgdhrs6ci3ssd"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_editor_comment.gd" id="1_i87e3"]
+[ext_resource type="Texture2D" uid="uid://ckary5ioiki5d" path="res://addons/rewind_story_engine/icons/Info.svg" id="2_e3gaa"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_dragger.gd" id="3_li5dk"]
+
+[node name="FrameComment" type="MarginContainer" node_paths=PackedStringArray("text_edit", "highlight", "dragger", "index_label")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 2
+script = ExtResource("1_i87e3")
+text_edit = NodePath("MarginContainer/HBoxContainer/TextEdit")
+highlight = NodePath("Highlight")
+dragger = NodePath("MarginContainer/HBoxContainer/Icon/TextureRect")
+index_label = NodePath("MarginContainer/HBoxContainer/Index/Label")
+
+[node name="Highlight" type="ColorRect" parent="."]
+visible = false
+layout_mode = 2
+color = Color(0.12549, 0.12549, 0.12549, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Index" type="Control" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(48, 0)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/Index"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "1"
+horizontal_alignment = 2
+
+[node name="Icon" type="Control" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/HBoxContainer/Icon"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 26.0
+offset_right = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/Icon"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -8.0
+offset_top = 8.0
+offset_right = 8.0
+offset_bottom = 24.0
+grow_horizontal = 2
+tooltip_text = "Комментарий"
+mouse_default_cursor_shape = 6
+texture = ExtResource("2_e3gaa")
+script = ExtResource("3_li5dk")
+
+[node name="TextEdit" type="TextEdit" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Введите комментарий..."
+scroll_fit_content_height = true
+draw_control_chars = true
+draw_tabs = true
+draw_spaces = true

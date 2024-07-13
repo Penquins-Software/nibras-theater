@@ -1,0 +1,103 @@
+[gd_scene load_steps=5 format=3 uid="uid://bo46vk1viix72"]
+
+[ext_resource type="Texture2D" uid="uid://boxvhkyqia24r" path="res://addons/rewind_story_engine/icons/ClassList.svg" id="1_1irt6"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_editor_selection.gd" id="1_rnxga"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_dragger.gd" id="3_afvky"]
+[ext_resource type="Texture2D" uid="uid://6yx3yl3gjuf7" path="res://addons/rewind_story_engine/icons/Add.svg" id="4_htyqe"]
+
+[node name="FrameSelection" type="MarginContainer" node_paths=PackedStringArray("options_container", "add_option_button", "highlight", "dragger", "index_label")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 2
+script = ExtResource("1_rnxga")
+options_container = NodePath("MarginContainer/HBoxContainer/Options")
+add_option_button = NodePath("MarginContainer/HBoxContainer/Options/AddOption")
+highlight = NodePath("Highlight")
+dragger = NodePath("MarginContainer/HBoxContainer/Icon/TextureRect")
+index_label = NodePath("MarginContainer/HBoxContainer/Index/Label")
+
+[node name="Highlight" type="ColorRect" parent="."]
+visible = false
+layout_mode = 2
+color = Color(0.12549, 0.12549, 0.12549, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Index" type="Control" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(48, 0)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/Index"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "1"
+horizontal_alignment = 2
+
+[node name="Icon" type="Control" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/HBoxContainer/Icon"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 26.0
+offset_right = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/Icon"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -8.0
+offset_top = 8.0
+offset_right = 8.0
+offset_bottom = 24.0
+grow_horizontal = 2
+tooltip_text = "Выбор"
+mouse_default_cursor_shape = 6
+texture = ExtResource("1_1irt6")
+script = ExtResource("3_afvky")
+
+[node name="Options" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AddOption" type="Button" parent="MarginContainer/HBoxContainer/Options"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Добавить опцию"
+icon = ExtResource("4_htyqe")
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+visible = false
+modulate = Color(1, 1, 1, 0.25098)
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+size_flags_vertical = 8
+color = Color(0.456689, 0.537474, 1, 1)
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Options/AddOption" to="." method="_on_add_option_pressed"]

@@ -1,0 +1,137 @@
+[gd_scene load_steps=7 format=3 uid="uid://ckyejgag2sypp"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_editor_character.gd" id="1_du15u"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_dragger.gd" id="3_p7mxp"]
+[ext_resource type="Texture2D" uid="uid://ehkxajdgb8vr" path="res://addons/rewind_story_engine/icons/ArrowRight.svg" id="4_7fyud"]
+[ext_resource type="Texture2D" uid="uid://xrngsdo2uauu" path="res://addons/rewind_story_engine/icons/CharacterBody2D.svg" id="4_vt2au"]
+[ext_resource type="Texture2D" uid="uid://3equu8adepv5" path="res://addons/rewind_story_engine/icons/ArrowLeft.svg" id="5_82jan"]
+[ext_resource type="PackedScene" uid="uid://0qdrucdofjgn" path="res://addons/rewind_story_engine/frame_editor/mouse_hook.tscn" id="6_rtrw5"]
+
+[node name="FrameCharacter" type="MarginContainer" node_paths=PackedStringArray("character", "action", "emotion", "outfit", "highlight", "dragger", "index_label", "mouse_hook")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 2
+script = ExtResource("1_du15u")
+character = NodePath("MarginContainer/HBoxContainer/Character")
+action = NodePath("MarginContainer/HBoxContainer/Action")
+emotion = NodePath("MarginContainer/HBoxContainer/Emotion")
+outfit = NodePath("MarginContainer/HBoxContainer/Outfit")
+highlight = NodePath("Highlight")
+dragger = NodePath("MarginContainer/HBoxContainer/Icon/TextureRect")
+index_label = NodePath("MarginContainer/HBoxContainer/Index/Label")
+mouse_hook = NodePath("MouseHook")
+
+[node name="Highlight" type="ColorRect" parent="."]
+visible = false
+layout_mode = 2
+color = Color(0.12549, 0.12549, 0.12549, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Index" type="Control" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(48, 0)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/Index"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "1"
+horizontal_alignment = 2
+
+[node name="Icon" type="Control" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/HBoxContainer/Icon"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 26.0
+offset_right = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/Icon"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -8.0
+offset_top = 8.0
+offset_right = 8.0
+offset_bottom = 24.0
+grow_horizontal = 2
+tooltip_text = "Персонаж"
+mouse_default_cursor_shape = 6
+texture = ExtResource("4_vt2au")
+script = ExtResource("3_p7mxp")
+
+[node name="Character" type="MenuButton" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 1
+text = "[Персонаж]"
+flat = false
+
+[node name="Action" type="MenuButton" parent="MarginContainer/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 1
+text = "[Действие]"
+flat = false
+item_count = 4
+popup/item_0/text = "Приходит"
+popup/item_0/icon = ExtResource("4_7fyud")
+popup/item_0/id = 1
+popup/item_1/text = "Уходит"
+popup/item_1/icon = ExtResource("5_82jan")
+popup/item_1/id = 2
+popup/item_2/text = "Установить эмоцию"
+popup/item_2/id = 3
+popup/item_3/text = "Установить костюм"
+popup/item_3/id = 4
+
+[node name="Emotion" type="MenuButton" parent="MarginContainer/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 1
+text = "[Эмоция]"
+flat = false
+
+[node name="Outfit" type="MenuButton" parent="MarginContainer/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 1
+text = "[Костюм]"
+flat = false
+
+[node name="MouseHook" parent="." instance=ExtResource("6_rtrw5")]
+layout_mode = 2
