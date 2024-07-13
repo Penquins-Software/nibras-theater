@@ -114,6 +114,9 @@ func _on_display_name_line_edit_text_changed(new_text):
 
 
 func _on_display_name_check_box_toggled(toggled_on: bool):
+	if character == null:
+		return
+	
 	character_display_name_line_edit.editable = not toggled_on
 	character.main_name_for_display_name = toggled_on
 	if toggled_on:
@@ -219,11 +222,17 @@ func _add_outfit(id: int) -> void:
 
 
 func _on_add_emotion_button_pressed():
+	if character == null:
+		return
+	
 	var id = character.add_emotion()
 	_add_emotion(id)
 
 
 func _on_add_outfit_button_pressed():
+	if character == null:
+		return
+	
 	var id = character.add_outfit()
 	_add_outfit(id)
 

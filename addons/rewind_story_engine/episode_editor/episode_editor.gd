@@ -418,4 +418,7 @@ func update_current_episode() -> void:
 
 
 func _on_episode_name_text_changed(new_text):
+	if episode == null:
+		return
+	
 	episode.name = new_text

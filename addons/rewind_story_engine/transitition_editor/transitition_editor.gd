@@ -95,4 +95,7 @@ func _on_erase_pressed():
 
 
 func _on_play_pressed():
+	if preview_transitition == null:
+		return
+	
 	preview_transitition.play()

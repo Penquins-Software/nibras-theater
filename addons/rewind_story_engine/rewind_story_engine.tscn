@@ -140,11 +140,11 @@ layout_mode = 2
 visible = false
 layout_mode = 2
 
-[node name="Сцена" parent="WorkScreen/TabContainer" instance=ExtResource("9_n47f2")]
+[node name="Переход" parent="WorkScreen/TabContainer" instance=ExtResource("10_n74y7")]
 visible = false
 layout_mode = 2
 
-[node name="Переход" parent="WorkScreen/TabContainer" instance=ExtResource("10_n74y7")]
+[node name="Сцена" parent="WorkScreen/TabContainer" instance=ExtResource("9_n47f2")]
 visible = false
 layout_mode = 2
 
