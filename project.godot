@@ -11,13 +11,22 @@ config_version=5
 [application]
 
 config/name="rice"
+run/main_scene="res://ui/intro.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 RewindStoryEngine="*res://addons/rewind_story_engine/rse_handler.gd"
+Settings="*res://source/settings/settings.gd"
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/rewind_story_engine/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://addons/": "red",
+"res://source/": "orange"
+}
