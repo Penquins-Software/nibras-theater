@@ -36,6 +36,7 @@ enum Operator {
 
 
 var condition: String
+var end: RSEFrameEndCondition
 
 
 func get_frame_type() -> RSEFrame.FrameType:

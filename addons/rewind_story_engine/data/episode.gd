@@ -25,6 +25,7 @@ func _set_frames(f: Array[RSEFrame]) ->void:
 	get_exits()
 	create_scene_state_for_every_frame()
 	get_real_frames()
+	link_conditions_with_end()
 
 
 func get_id_with_name() -> String:
@@ -86,6 +87,18 @@ func get_exits() -> Array:
 	return exits
 
 
+func link_conditions_with_end() -> void:
+	var conditions: Array[RSEFrameCondition]
+	for frame in frames:
+		if frame is RSEFrameCondition:
+			conditions.append(frame)
+		elif frame is RSEFrameEndCondition:
+			if conditions.size() > 0:
+				var condition = conditions.pop_back()
+				condition.end = frame
+				frame.condition = condition
+
+
 func save_to_dictionary() -> Dictionary:
 	var data := {
 		"id" : id,
@@ -131,5 +144,6 @@ static func load_from_dictionary(story: RSEStory, data: Dictionary) -> RSEEpisod
 	episode.get_exits()
 	episode.create_scene_state_for_every_frame()
 	episode.get_real_frames()
+	episode.link_conditions_with_end()
 	
 	return episode
