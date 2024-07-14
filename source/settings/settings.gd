@@ -15,6 +15,7 @@ enum AudioBus {
 enum RewindMode {
 	Viewed = 0, ## Только просмотренное.
 	Full = 1, ## Перематывать всё.
+	Mega = 666, ## Секретный режим.
 }
 
 var audio_bus_name: Dictionary = {
