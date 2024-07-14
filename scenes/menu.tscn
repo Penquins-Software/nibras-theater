@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=11 format=3 uid="uid://1ldra2lpi55u"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
 [ext_resource type="Script" path="res://source/settings/setting_screen_mode.gd" id="1_iivln"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://source/settings/setting_language.gd" id="2_rtb7u"]
 [ext_resource type="Script" path="res://source/settings/setting_rewind_mode.gd" id="2_sglnt"]
 [ext_resource type="Script" path="res://source/main_menu/main_menu_button.gd" id="3_sfhbu"]
+[ext_resource type="Script" path="res://source/settings/setting_player_name.gd" id="4_6jkwe"]
 [ext_resource type="Script" path="res://source/settings/setting_text_speed.gd" id="4_8iigk"]
 [ext_resource type="Script" path="res://source/settings/setting_audio_bus.gd" id="5_lpc32"]
 [ext_resource type="Script" path="res://source/settings/settings_return_to_menu.gd.gd" id="5_u0r0y"]
@@ -121,7 +122,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Имя игрока" type="HBoxContainer" parent="Настройки/VBoxContainer"]
-visible = false
 layout_mode = 2
 
 [node name="Label" type="Label" parent="Настройки/VBoxContainer/Имя игрока"]
@@ -134,6 +134,7 @@ horizontal_alignment = 2
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Имя"
+script = ExtResource("4_6jkwe")
 
 [node name="Режим экрана" type="HBoxContainer" parent="Настройки/VBoxContainer"]
 layout_mode = 2
@@ -383,4 +384,5 @@ text = "Вернуться в меню "
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Настройки" to="." method="_show_menu_element"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Авторы" to="." method="_show_menu_element"]
 [connection signal="return_was_pressed" from="Настройки" to="." method="_show_main_menu"]
+[connection signal="text_changed" from="Настройки/VBoxContainer/Имя игрока/LineEdit" to="Настройки/VBoxContainer/Имя игрока/LineEdit" method="_on_text_changed"]
 [connection signal="return_was_pressed" from="Авторы" to="." method="_show_main_menu"]
