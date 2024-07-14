@@ -1,28 +1,35 @@
-[gd_scene load_steps=7 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=10 format=3 uid="uid://1ldra2lpi55u"]
 
+[ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
 [ext_resource type="Script" path="res://source/settings/setting_screen_mode.gd" id="1_iivln"]
+[ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_h3ser"]
 [ext_resource type="Script" path="res://source/settings/setting_language.gd" id="2_rtb7u"]
 [ext_resource type="Script" path="res://source/settings/setting_rewind_mode.gd" id="2_sglnt"]
+[ext_resource type="Script" path="res://source/main_menu/main_menu_button.gd" id="3_sfhbu"]
 [ext_resource type="Script" path="res://source/settings/setting_text_speed.gd" id="4_8iigk"]
 [ext_resource type="Script" path="res://source/settings/setting_audio_bus.gd" id="5_lpc32"]
 [ext_resource type="Script" path="res://source/settings/settings_return_to_menu.gd.gd" id="5_u0r0y"]
 
-[node name="Menu" type="Control"]
+[node name="Menu" type="Control" node_paths=PackedStringArray("main", "exit_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_74llx")
+main = NodePath("Главный экран")
+exit_button = NodePath("Главный экран/VBoxContainer/Выйти")
 
-[node name="Главный экран" type="Control" parent="."]
-visible = false
+[node name="Главный экран" type="Control" parent="." node_paths=PackedStringArray("focus_element")]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("2_h3ser")
+focus_element = NodePath("VBoxContainer/Начать игру")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Главный экран"]
 layout_mode = 1
@@ -54,26 +61,34 @@ text = "Галерея"
 layout_mode = 2
 text = "Экстра"
 
-[node name="Настройки" type="Button" parent="Главный экран/VBoxContainer"]
+[node name="Настройки" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
 text = "Настройки
 "
+script = ExtResource("3_sfhbu")
+menu_element_to_show = NodePath("../../../Настройки")
 
-[node name="Авторы" type="Button" parent="Главный экран/VBoxContainer"]
+[node name="Авторы" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
 text = "Авторы"
+script = ExtResource("3_sfhbu")
+menu_element_to_show = NodePath("../../../Авторы")
 
 [node name="Выйти" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
 text = "Выйти"
 
-[node name="Настройки" type="Control" parent="."]
+[node name="Настройки" type="Control" parent="." node_paths=PackedStringArray("return_button", "focus_element")]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("2_h3ser")
+return_button = NodePath("Вернуться")
+focus_element = NodePath("VBoxContainer/Режим экрана/MenuButton")
 
 [node name="Заголовок" type="Label" parent="Настройки"]
 layout_mode = 1
@@ -295,7 +310,7 @@ size_flags_horizontal = 4
 text = "Вернуться в меню "
 script = ExtResource("5_u0r0y")
 
-[node name="Авторы" type="Control" parent="."]
+[node name="Авторы" type="Control" parent="." node_paths=PackedStringArray("return_button", "focus_element")]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -303,6 +318,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("2_h3ser")
+return_button = NodePath("Вернуться")
+focus_element = NodePath("VBoxContainer/RichTextLabel")
 
 [node name="Заголовок" type="Label" parent="Авторы"]
 layout_mode = 1
@@ -360,3 +378,9 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 text = "Вернуться в меню "
+
+[connection signal="return_was_pressed" from="Главный экран" to="." method="_show_main_menu"]
+[connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Настройки" to="." method="_show_menu_element"]
+[connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Авторы" to="." method="_show_menu_element"]
+[connection signal="return_was_pressed" from="Настройки" to="." method="_show_main_menu"]
+[connection signal="return_was_pressed" from="Авторы" to="." method="_show_main_menu"]
