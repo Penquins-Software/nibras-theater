@@ -3,7 +3,6 @@ class_name RSEBaseTransititionController
 extends RSEBaseController
 
 
-signal on_half()
 signal ended()
 
 
@@ -11,8 +10,6 @@ signal ended()
 @export var animation_name: String
 
 var transitition: RSETransitition
-
-var from_end: bool = false
 
 
 func play() -> void:
@@ -24,7 +21,4 @@ func stop() -> void:
 
 
 func _on_animation_player_animation_finished(anim_name):
-	if not from_end:
-		from_end = true
-		player.play_backwards(animation_name)
-	
+	ended.emit()
