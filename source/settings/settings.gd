@@ -11,6 +11,12 @@ enum AudioBus {
 	MUSIC,
 }
 
+## Режимы пропуска кадров.
+enum RewindMode {
+	Viewed = 0, ## Только просмотренное.
+	Full = 1, ## Перематывать всё.
+}
+
 var audio_bus_name: Dictionary = {
 	AudioBus.MASTER : &"Master",
 	AudioBus.SFX : &"SFX",
@@ -26,6 +32,13 @@ var screen_mode: DisplayServer.WindowMode = DisplayServer.WINDOW_MODE_WINDOWED :
 var master_volume: int = 50 : set = _set_master_volume
 var sfx_volume: int = 50 : set = _set_sfx_volume
 var music_volume: int = 50 : set = _set_music_volume
+
+var rewind_mode: RewindMode = RewindMode.Viewed : set = _set_rewind_mode
+
+## Скорость вывода текста. Измеряется в количестве символов в секунду.
+var text_speed: int = 40 : set = _set_text_speed
+const MIN_TEXT_SPEED: int = 20
+const MAX_TEXT_SPEED: int = 120
 
 
 func _set_player_name(new_name: String) -> void:
@@ -68,6 +81,21 @@ func _set_music_volume(value: int) -> void:
 	print("%s bus volume is set to %s db." % [audio_bus_name[AudioBus.MUSIC], db]);
 
 
+func _set_rewind_mode(mode: RewindMode) -> void:
+	rewind_mode = mode
+	print("Rewind mode: %s." % RewindMode.keys()[rewind_mode]);
+
+
+func _set_text_speed(value: int) -> void:
+	if value < MIN_TEXT_SPEED:
+		value = MIN_TEXT_SPEED
+	elif value > MAX_TEXT_SPEED:
+		value = MAX_TEXT_SPEED
+
+	text_speed = value
+	print("Text speed: %s." % text_speed);
+
+
 func _enter_tree():
 	load_config()
 
@@ -91,6 +119,9 @@ func save_config() -> void:
 	config.set_value("audio_settings", "sfx_volume", sfx_volume)
 	config.set_value("audio_settings", "music_volume", music_volume)
 	
+	config.set_value("game_settings", "rewind_mode", rewind_mode)
+	config.set_value("game_settings", "text_speed", text_speed)
+	
 	config.save(PATH_TO_CONFIG)
 
 
@@ -110,6 +141,9 @@ func load_config() -> void:
 		master_volume = config.get_value("audio_settings", "master_volume", 50)
 		sfx_volume = config.get_value("audio_settings", "sfx_volume", 50)
 		music_volume = config.get_value("audio_settings", "music_volume", 50)
+	
+		rewind_mode = config.get_value("game_settings", "rewind_mode", RewindMode.Viewed)
+		text_speed = config.get_value("game_settings", "text_speed", 40)
 		
 		print("Configuration file loaded successfully!")
 	else:
