@@ -18,6 +18,7 @@ const FrameSelection: PackedScene = preload("res://addons/rewind_story_engine/fr
 const FrameCondition: PackedScene = preload("res://addons/rewind_story_engine/frame_editor/frame_condition.tscn")
 const FrameSignal: PackedScene = preload("res://addons/rewind_story_engine/frame_editor/frame_signal.tscn")
 const FrameVariable: PackedScene = preload("res://addons/rewind_story_engine/frame_editor/frame_variable.tscn")
+const FrameEndCondition: PackedScene = preload("res://addons/rewind_story_engine/frame_editor/frame_end_condition.tscn")
 
 
 @export var frame_container: BoxContainer
@@ -100,6 +101,8 @@ func _load_episode() -> void:
 				_add_frame_voice(frame, false)
 			RSEFrame.FrameType.Gap:
 				_add_frame_gap(frame, false)
+			RSEFrame.FrameType.EndCondition:
+				_add_frame_end_condition(frame, false)
 	episode_loading = false
 
 
@@ -183,6 +186,13 @@ func _add_frame_voice(f: RSEFrame = null, select: bool = true) -> FrameEditorVoi
 
 func _add_frame_gap(f: RSEFrame = null, select: bool = true) -> FrameEditorGap:
 	var frame = FrameGap.instantiate() as FrameEditorGap
+	frame.setting(story, f)
+	_setting_frame(frame, select)
+	return frame
+
+
+func _add_frame_end_condition(f: RSEFrame = null, select: bool = true) -> FrameEditorEndCondition:
+	var frame = FrameEndCondition.instantiate() as FrameEditorEndCondition
 	frame.setting(story, f)
 	_setting_frame(frame, select)
 	return frame

@@ -277,6 +277,12 @@ mouse_default_cursor_shape = 2
 text = "Условие"
 icon = ExtResource("10_rsjou")
 
+[node name="EndCondition" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer4"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Конец условия"
+icon = ExtResource("10_rsjou")
+
 [node name="Variable" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer4"]
 layout_mode = 2
 tooltip_text = "Записать информацию в переменную
@@ -322,6 +328,7 @@ tooltip_text = "Наследовать сцену
 
 Наследует состояние сцены из предыдущего эпизода."
 mouse_default_cursor_shape = 2
+disabled = true
 text = "Наследовать сцену"
 icon = ExtResource("12_heuoj")
 
@@ -370,6 +377,7 @@ item_5/id = 5
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3/Music" to="." method="_add_frame_music"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3/Voice" to="." method="_add_frame_voice"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer4/Condition" to="." method="_add_frame_condition"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer4/EndCondition" to="." method="_add_frame_end_condition"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer4/Variable" to="." method="_add_frame_variable"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer4/Signal" to="." method="_add_frame_signal"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer5/Comment" to="." method="_add_frame_comment"]

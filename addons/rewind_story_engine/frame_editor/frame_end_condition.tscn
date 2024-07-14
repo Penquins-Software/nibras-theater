@@ -1,18 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://c6colvoejg3d5"]
+[gd_scene load_steps=4 format=3 uid="uid://14y7t10aj5g4"]
 
-[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_condition.gd" id="1_8vtqo"]
-[ext_resource type="Texture2D" uid="uid://fw4l7xhfxbo0" path="res://addons/rewind_story_engine/icons/bool.svg" id="1_i4lda"]
-[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_dragger.gd" id="3_b3hmw"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_editor_end_condition.gd" id="1_j7tbj"]
+[ext_resource type="Texture2D" uid="uid://fw4l7xhfxbo0" path="res://addons/rewind_story_engine/icons/bool.svg" id="1_ksf87"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_dragger.gd" id="3_mb5gm"]
 
-[node name="FrameCondition" type="MarginContainer" node_paths=PackedStringArray("condition", "highlight", "dragger", "index_label")]
+[node name="FrameEndCondition" type="MarginContainer" node_paths=PackedStringArray("highlight", "dragger", "index_label")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 2
-script = ExtResource("1_8vtqo")
-condition = NodePath("MarginContainer/HBoxContainer/Body/Condition/LineEdit")
+script = ExtResource("1_j7tbj")
 highlight = NodePath("Highlight")
 dragger = NodePath("MarginContainer/HBoxContainer/Icon/TextureRect")
 index_label = NodePath("MarginContainer/HBoxContainer/Index/Label")
@@ -76,34 +75,20 @@ offset_top = 8.0
 offset_right = 8.0
 offset_bottom = 24.0
 grow_horizontal = 2
-tooltip_text = "Условие"
+tooltip_text = "Конец условия"
 mouse_default_cursor_shape = 6
-texture = ExtResource("1_i4lda")
-script = ExtResource("3_b3hmw")
+texture = ExtResource("1_ksf87")
+script = ExtResource("3_mb5gm")
 
-[node name="Body" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+[node name="Info" type="Control" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_filter = 1
 
-[node name="Condition" type="HBoxContainer" parent="MarginContainer/HBoxContainer/Body"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/Body/Condition"]
-layout_mode = 2
-text = "Условие:"
-
-[node name="LineEdit" type="LineEdit" parent="MarginContainer/HBoxContainer/Body/Condition"]
-layout_mode = 2
-size_flags_horizontal = 3
-placeholder_text = "Логическое выражение"
-
-[node name="Frames" type="VBoxContainer" parent="MarginContainer/HBoxContainer/Body"]
-layout_mode = 2
-
-[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
-visible = false
-modulate = Color(1, 1, 1, 0.25098)
-custom_minimum_size = Vector2(0, 2)
-layout_mode = 2
-size_flags_vertical = 8
-color = Color(0.456689, 0.537474, 1, 1)
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/Info"]
+layout_mode = 0
+offset_top = 4.0
+offset_right = 134.0
+offset_bottom = 27.0
+text = "Конец условия"

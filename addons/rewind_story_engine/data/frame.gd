@@ -19,6 +19,7 @@ enum FrameType {
 	VisualEffect,
 	Voice,
 	Gap,
+	EndCondition,
 }
 
 
@@ -108,6 +109,9 @@ static func load_frame_from_dictionary(data: Dictionary) -> RSEFrame:
 			return frame
 		"RSEFrameGap":
 			var frame = RSEFrameGap.new()
+			return frame
+		"RSEFrameEndCondition":
+			var frame = RSEFrameEndCondition.new()
 			return frame
 	return null
 
