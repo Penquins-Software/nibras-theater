@@ -4,6 +4,7 @@ signal locale_was_changed
 signal player_name_was_changed
 
 const PATH_TO_CONFIG = "user://config.ini"
+const PATH_TO_PROFILE = "user://profile.json"
 
 enum AudioBus {
 	MASTER,
@@ -25,6 +26,8 @@ var audio_bus_name: Dictionary = {
 }
 
 var config: ConfigFile
+
+var profile: Profile
 
 var player_name: String = "" : set = _set_player_name
 var locale: String = OS.get_locale() : set = _set_locale
@@ -99,10 +102,12 @@ func _set_text_speed(value: int) -> void:
 
 func _enter_tree():
 	load_config()
+	profile = Profile.load_from_file(PATH_TO_PROFILE)
 
 
 func _exit_tree():
 	save_config()
+	profile.save_to_file(PATH_TO_PROFILE)
 
 
 func save_config() -> void:

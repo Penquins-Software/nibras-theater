@@ -20,5 +20,5 @@ func save_frame_to_dictionary() -> Dictionary:
 	}
 
 
-func print_info() -> void:
-	print("Selection options: %s" % options)
+#func print_info() -> void:
+	#print("Selection options: %s, %s" % [options[0], options[1]])

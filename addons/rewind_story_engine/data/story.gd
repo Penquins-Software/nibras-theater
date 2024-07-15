@@ -17,6 +17,10 @@ var graph_state: Dictionary
 
 var last_id: int = 0
 
+var start_episode: RSEEpisode
+
+var max_symbols_in_text_box: int = 200
+
 
 func _init(path_to_story_file: String):
 	_path_to_story_file = path_to_story_file

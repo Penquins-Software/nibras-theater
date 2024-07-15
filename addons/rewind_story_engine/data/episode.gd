@@ -131,6 +131,9 @@ static func load_from_dictionary(story: RSEStory, data: Dictionary) -> RSEEpisod
 	episode.description = data["description"]
 	episode.active = data["active"]
 	episode.start = data["start"]
+
+	if episode.start:
+		story.start_episode = episode
 	
 	for frame_info in data["frames"]:
 		episode.frames.append(RSEFrame.load_frame_from_dictionary(frame_info))

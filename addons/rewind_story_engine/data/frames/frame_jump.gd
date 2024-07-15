@@ -6,6 +6,10 @@ var to_episode_id: int = 0
 var description: String = ""
 
 
+func _init():
+	real_frame = true
+
+
 func get_frame_type() -> RSEFrame.FrameType:
 	return RSEFrame.FrameType.Jump
 

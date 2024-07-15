@@ -3,6 +3,9 @@ class_name RSESceneBuilder
 extends Node2D
 
 
+signal last_frame()
+
+
 var episode: RSEEpisode
 var current_frame_index: int = -1
 
@@ -69,6 +72,8 @@ func next_frame() -> int:
 		current_frame_index += 1
 		var frame: RSEFrame = episode.real_frames[current_frame_index]
 		build_frame(frame, true)
+		if episode.real_frames.size() - 1 == current_frame_index:
+			last_frame.emit()
 	
 	return current_frame_index
 
@@ -264,6 +269,9 @@ func show_frame_info() -> void:
 
 
 func _input(event):
+	if not Engine.is_editor_hint():
+		return
+	
 	if is_instance_valid(camera_controller):
 		camera_controller.dragger._input(event)
 	if is_instance_valid(location_node):
@@ -272,3 +280,10 @@ func _input(event):
 		character.dragger._input(event)
 	for visual_effect: RSEBaseVisualEffectController in visual_effects.values():
 		visual_effect.dragger._input(event)
+
+
+func get_characeter_by_id(id: int) -> RSEBaseCharacterController:
+	if characters.has(id):
+		return characters[id]
+	
+	return null

@@ -9,6 +9,9 @@ var visual_effect_ids: Array[int]
 var sound_effect_ids: Array[int]
 var music_id: int
 var voice: String
+var speaker_id: int
+var text: String
+var gap: bool = false
 
 
 func clear() -> void:
@@ -18,6 +21,9 @@ func clear() -> void:
 	sound_effect_ids.clear()
 	music_id = -1
 	voice = ""
+	speaker_id = -1
+	text = ""
+	gap = false
 
 
 func make_copy() -> RSESceneState:
@@ -30,6 +36,9 @@ func make_copy() -> RSESceneState:
 	copy.sound_effect_ids = sound_effect_ids.duplicate(true)
 	copy.music_id = music_id
 	copy.voice = voice
+	copy.speaker_id = speaker_id
+	copy.text = text
+	copy.gap = gap
 	
 	return copy
 

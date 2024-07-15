@@ -6,6 +6,10 @@ func _init():
 	real_frame = true
 
 
+func write_frame_info_to_scene_state(scene_state: RSESceneState) -> void:
+	scene_state.gap = true
+
+
 func get_frame_type() -> RSEFrame.FrameType:
 	return RSEFrame.FrameType.Gap
 
