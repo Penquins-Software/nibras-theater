@@ -50,6 +50,14 @@ func get_real_frames() -> void:
 	scene_presets.resize(real_frames.size())
 
 
+func get_next_real_frame_index(frame: RSEFrame) -> int:
+	var frame_index = frames.find(frame)
+	for index in range(frame_index, frames.size()):
+		if frames[index].real_frame:
+			return real_frames.find(frames[index])
+	return 0
+
+
 func get_scene_state(frame_index: int) -> RSESceneState:
 	if frame_index > frames.size():
 		return

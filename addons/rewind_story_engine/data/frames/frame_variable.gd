@@ -2,8 +2,13 @@ class_name RSEFrameVariable
 extends RSEFrame
 
 
+var global: bool = false
 var name: String = ""
 var value
+
+
+func _init():
+	real_frame = true
 
 
 func write_frame_info_to_scene_state(scene_state: RSESceneState) -> void:
@@ -19,4 +24,9 @@ func save_frame_to_dictionary() -> Dictionary:
 		"type" : "RSEFrameVariable",
 		"name" : name,
 		"value" : value,
+		"global" : global,
 	}
+
+
+func print_info() -> void:
+	print_rich("[i][color=CHARTREUSE]Переменная: %s = %s" % [name, value])

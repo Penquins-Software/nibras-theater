@@ -177,8 +177,8 @@
        "Повторить прошлый эпизод"
       ],
       [
-       8,
-       "Проверка переноса строк"
+       10,
+       "Проверка условий"
       ],
       [
        7,
@@ -209,31 +209,6 @@
 
      }
     },
-    null,
-    null,
-    null,
-    null
-   ],
-   "start": false
-  },
-  {
-   "active": false,
-   "description": "",
-   "frames": [
-    {
-     "speaker_id": 2,
-     "text": "Тут будет происходить проверка переноса слов в строке.",
-     "type": "RSEFrameText"
-    },
-    {
-     "speaker_id": 2,
-     "text": "Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово. Слово.",
-     "type": "RSEFrameText"
-    }
-   ],
-   "id": 8,
-   "name": "Проверка переноса строк",
-   "scene_presets": [
     {
      "camera_transform": {
       "position_x": 0,
@@ -252,6 +227,177 @@
 
      }
     },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    }
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "global": false,
+     "name": "Value_1",
+     "type": "RSEFrameVariable",
+     "value": ""
+    },
+    {
+     "speaker_id": 2,
+     "text": "Проверка условий.",
+     "type": "RSEFrameText"
+    },
+    {
+     "condition": "Value_1",
+     "global": false,
+     "type": "RSEFrameCondition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Если ЕСТЬ Value_1, то будет показан этот текст.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Ла-ла-ла...",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "Если ЕСТЬ Value_1",
+     "to_episode_id": 11,
+     "type": "RSEFrameJump"
+    },
+    {
+     "type": "RSEFrameEndCondition"
+    },
+    {
+     "condition": "NOT Value_1",
+     "global": false,
+     "type": "RSEFrameCondition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Если Value_1 НЕТ, то будет показан этот текст.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Бе-бе-бе...",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "Если Value_1 НЕТ",
+     "to_episode_id": 12,
+     "type": "RSEFrameJump"
+    },
+    {
+     "type": "RSEFrameEndCondition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Конец проверки условий.",
+     "type": "RSEFrameText"
+    }
+   ],
+   "id": 10,
+   "name": "Проверка условий",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "speaker_id": 2,
+     "text": "У вас есть Value_1! Замечательно.",
+     "type": "RSEFrameText"
+    }
+   ],
+   "id": 11,
+   "name": "Концовка Value_1",
+   "scene_presets": [
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "speaker_id": 2,
+     "text": "У вас нет Value_1 :((((",
+     "type": "RSEFrameText"
+    }
+   ],
+   "id": 12,
+   "name": "Концовка NOT Value_1",
+   "scene_presets": [
     null
    ],
    "start": false
@@ -261,46 +407,58 @@
   "0": {
    "position_x": 1400,
    "position_y": 780,
-   "size_x": 199.999450683594,
-   "size_y": 241.000122070313
+   "size_x": 199.999572753906,
+   "size_y": 241.000030517578
+  },
+  "10": {
+   "position_x": 2760,
+   "position_y": 660,
+   "size_x": 200,
+   "size_y": 300.000122070313
+  },
+  "11": {
+   "position_x": 3180,
+   "position_y": 500,
+   "size_x": 200,
+   "size_y": 300
+  },
+  "12": {
+   "position_x": 3220,
+   "position_y": 920,
+   "size_x": 200,
+   "size_y": 299.999969482422
   },
   "2": {
    "position_x": 1000,
    "position_y": 640,
    "size_x": 200.000244140625,
-   "size_y": 155.000061035156
+   "size_y": 155.000152587891
   },
   "6": {
    "position_x": 1800,
    "position_y": 680,
-   "size_x": 200.935913085938,
-   "size_y": 319.650817871094
+   "size_x": 200.935729980469,
+   "size_y": 319.650848388672
   },
   "7": {
-   "position_x": 2200,
+   "position_x": 2160,
    "position_y": 680,
-   "size_x": 204.6787109375,
-   "size_y": 321.908142089844
-  },
-  "8": {
-   "position_x": 2600,
-   "position_y": 600,
-   "size_x": 201.974609375,
-   "size_y": 400.941101074219
+   "size_x": 297.861328125,
+   "size_y": 320.818695068359
   },
   "9": {
    "position_x": 760,
    "position_y": 820,
-   "size_x": 199.999786376953,
-   "size_y": 155.000244140625
+   "size_x": 200,
+   "size_y": 155.000274658203
   },
-  "scroll_offset_x": 735.494018554688,
-  "scroll_offset_y": 304.72265625,
+  "scroll_offset_x": 701.120361328125,
+  "scroll_offset_y": 158.882843017578,
   "show_grid": true,
   "snapping_enabled": true,
-  "zoom": 0.971493661403656
+  "zoom": 0.726783752441406
  },
- "last_id": 9,
+ "last_id": 12,
  "locations": [
   {
    "active": true,

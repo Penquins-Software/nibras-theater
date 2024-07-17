@@ -35,8 +35,13 @@ enum Operator {
 }
 
 
+var global: bool = false
 var condition: String
 var end: RSEFrameEndCondition
+
+
+func _init():
+	real_frame = true
 
 
 func get_frame_type() -> RSEFrame.FrameType:
@@ -47,6 +52,7 @@ func save_frame_to_dictionary() -> Dictionary:
 	return {
 		"type" : "RSEFrameCondition",
 		"condition" : condition,
+		"global" : global,
 	}
 
 
@@ -128,7 +134,7 @@ func check_flags(variables: Dictionary, logical_expression: Array) -> Array:
 	
 	for element in logical_expression:
 		if element[0] == LogicalElement.FLAG:
-			var result = variables["Flags"].has(element[1]) || variables.has(element[1])
+			var result = (variables.has("Flags") and variables["Flags"].has(element[1])) || variables.has(element[1])
 			new_logical_expression.append([LogicalElement.RESULT, result])
 		else:
 			new_logical_expression.append(element)
@@ -306,3 +312,7 @@ func check_or(variables: Dictionary, logical_expression: Array) -> Array:
 		index += 1
 
 	return new_logical_expression
+
+
+func print_info() -> void:
+	print_rich("[i][color=INDIAN_RED]Условие: %s" % condition)

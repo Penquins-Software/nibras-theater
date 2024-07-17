@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://fw4l7xhfxbo0" path="res://addons/rewind_story_engine/icons/bool.svg" id="1_i4lda"]
 [ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_dragger.gd" id="3_b3hmw"]
 
-[node name="FrameCondition" type="MarginContainer" node_paths=PackedStringArray("condition", "highlight", "dragger", "index_label")]
+[node name="FrameCondition" type="MarginContainer" node_paths=PackedStringArray("condition", "global_check_box", "highlight", "dragger", "index_label")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -13,6 +13,7 @@ grow_vertical = 2
 focus_mode = 2
 script = ExtResource("1_8vtqo")
 condition = NodePath("MarginContainer/HBoxContainer/Body/Condition/LineEdit")
+global_check_box = NodePath("MarginContainer/HBoxContainer/Body/Condition/CheckBox")
 highlight = NodePath("Highlight")
 dragger = NodePath("MarginContainer/HBoxContainer/Icon/TextureRect")
 index_label = NodePath("MarginContainer/HBoxContainer/Index/Label")
@@ -96,6 +97,10 @@ text = "Условие:"
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Логическое выражение"
+
+[node name="CheckBox" type="CheckBox" parent="MarginContainer/HBoxContainer/Body/Condition"]
+layout_mode = 2
+text = "Глобальное"
 
 [node name="Frames" type="VBoxContainer" parent="MarginContainer/HBoxContainer/Body"]
 layout_mode = 2

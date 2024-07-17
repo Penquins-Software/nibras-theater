@@ -14,6 +14,8 @@ const REWIND_DELAY_TIME: float = 0.02
 @export var scene_builder: RSESceneBuilder
 @export var pause_button: Button
 
+var local_variables: VariablesStorage
+
 var episode: RSEEpisode
 var current_frame_index: int
 
@@ -108,12 +110,18 @@ func set_frame(index: int) -> void:
 func build_frame(frame: RSEFrame, is_immediately: bool = false) -> void:
 	if frame is RSEFrameText:
 		show_text_frame(frame, is_immediately)
-	if frame is RSEFrameSelection:
+	elif frame is RSEFrameSelection:
 		show_selection(frame)
-	if frame is RSEFrameGap:
+	elif frame is RSEFrameGap:
 		gap(frame)
-	if frame is RSEFrameJump:
+	elif frame is RSEFrameJump:
 		jump(frame)
+	elif frame is RSEFrameVariable:
+		variable(frame)
+	elif frame is RSEFrameCondition:
+		condition(frame)
+	elif frame is RSEFrameEndCondition:
+		pass
 
 
 func show_text_frame(frame: RSEFrameText, is_immediately: bool = false) -> void:
@@ -144,6 +152,27 @@ func gap(_frame: RSEFrameGap) -> void:
 
 func jump(frame: RSEFrameJump) -> void:
 	set_episode(RewindStoryEngine.story.episodes[frame.to_episode_id])
+
+
+func variable(frame: RSEFrameVariable) -> void:
+	if frame.global:
+		Settings.profile.global_variables.add_variable(frame.name, frame.value)
+	else:
+		local_variables.add_variable(frame.name, frame.value)
+
+
+func condition(frame: RSEFrameCondition) -> void:
+	var result: bool = false
+	if frame.global:
+		frame.result(Settings.profile.global_variables.data)
+	else:
+		result = frame.result(local_variables.data)
+	print("Результат проверки условия: %s" % result)
+	if result:
+		next_frame()
+	else:
+		var real_frame_index = episode.get_next_real_frame_index(frame.end)
+		set_frame(real_frame_index)
 
 
 func _on_selection_menu_option_selected(option_id):

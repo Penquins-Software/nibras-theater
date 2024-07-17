@@ -57,6 +57,7 @@ static func load_frame_from_dictionary(data: Dictionary) -> RSEFrame:
 		"RSEFrameCondition":
 			var frame = RSEFrameCondition.new()
 			frame.condition = data["condition"]
+			frame.global = data["global"]
 			return frame
 		"RSEFrameEraseScene":
 			var frame = RSEFrameEraseScene.new()
@@ -97,6 +98,7 @@ static func load_frame_from_dictionary(data: Dictionary) -> RSEFrame:
 			var frame = RSEFrameVariable.new()
 			frame.name = data["name"]
 			frame.value = data["value"]
+			frame.global = data["global"]
 			return frame
 		"RSEFrameVisualEffect":
 			var frame = RSEFrameVisualEffect.new()

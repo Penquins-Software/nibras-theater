@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_editor_variable.gd" id="1_63xoe"]
 [ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_dragger.gd" id="3_q0eud"]
 
-[node name="FrameSignal" type="MarginContainer" node_paths=PackedStringArray("variable_line_edit", "value_line_edit", "highlight", "dragger", "index_label")]
+[node name="FrameVariable" type="MarginContainer" node_paths=PackedStringArray("variable_line_edit", "value_line_edit", "global_check_box", "highlight", "dragger", "index_label")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -14,6 +14,7 @@ focus_mode = 2
 script = ExtResource("1_63xoe")
 variable_line_edit = NodePath("MarginContainer/HBoxContainer/Variable")
 value_line_edit = NodePath("MarginContainer/HBoxContainer/Value")
+global_check_box = NodePath("MarginContainer/HBoxContainer/CheckBox")
 highlight = NodePath("Highlight")
 dragger = NodePath("MarginContainer/HBoxContainer/Icon/TextureRect")
 index_label = NodePath("MarginContainer/HBoxContainer/Index/Label")
@@ -107,3 +108,8 @@ size_flags_horizontal = 3
 size_flags_vertical = 0
 placeholder_text = "Значение"
 draw_control_chars = true
+
+[node name="CheckBox" type="CheckBox" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "Глобальная"

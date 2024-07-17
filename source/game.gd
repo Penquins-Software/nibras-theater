@@ -12,10 +12,11 @@ static var save_to_load: Save
 
 var screenshoot: Image
 
-var local_variables: Dictionary
+var local_variables: VariablesStorage = VariablesStorage.new()
 
 
 func _ready():
+	frame_player.local_variables = local_variables
 	if save_to_load != null:
 		load_save(save_to_load)
 		save_to_load = null
@@ -31,12 +32,13 @@ func load_save(save: Save) -> void:
 	var episode = RewindStoryEngine.story.episodes[save.episode_id]
 	frame_player.set_episode(episode, false)
 	frame_player.set_frame(save.frame_index)
-	local_variables = save.local_variables
+	local_variables.data = save.local_variables
+	print("Save local variables: %s" % local_variables)
 	continue_game()
 
 
 func make_save() -> void:
-	SaveManager.create_save(screenshoot, frame_player.episode.id, frame_player.current_frame_index, local_variables)
+	SaveManager.create_save(screenshoot, frame_player.episode.id, frame_player.current_frame_index, local_variables.data)
 	continue_game()
 
 
@@ -54,3 +56,4 @@ func continue_game() -> void:
 
 func return_to_menu() -> void:
 	get_tree().change_scene_to_file(path_to_menu_scene)
+
