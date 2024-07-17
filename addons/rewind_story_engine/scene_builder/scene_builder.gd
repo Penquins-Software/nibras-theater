@@ -181,6 +181,9 @@ func add_visual_effect(visual_effect: RSEVisualEffect) -> RSEBaseVisualEffectCon
 
 
 func save_scene_preset() -> void:
+	if episode == null:
+		return
+
 	if current_frame_index < 0 or current_frame_index > episode.scene_presets.size() - 1:
 		return
 	

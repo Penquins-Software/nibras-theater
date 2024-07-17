@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://7bfnwn4tg3f3"]
+
+[ext_resource type="Script" path="res://source/game.gd" id="1_0tc1i"]
+[ext_resource type="PackedScene" uid="uid://dn0b8hq6iasrx" path="res://scenes/frame_player/frame_player.tscn" id="2_no6m6"]
+[ext_resource type="PackedScene" uid="uid://cka2t7km7vv8b" path="res://scenes/pause.tscn" id="3_l2xwl"]
+
+[node name="Game" type="Node2D" node_paths=PackedStringArray("frame_player", "pause_menu")]
+script = ExtResource("1_0tc1i")
+frame_player = NodePath("FramePlayer/FramePlayer")
+pause_menu = NodePath("Pause/Pause")
+path_to_menu_scene = "res://scenes/menu.tscn"
+
+[node name="FramePlayer" type="CanvasLayer" parent="."]
+
+[node name="FramePlayer" parent="FramePlayer" instance=ExtResource("2_no6m6")]
+
+[node name="Pause" type="CanvasLayer" parent="."]
+
+[node name="Pause" parent="Pause" instance=ExtResource("3_l2xwl")]
+visible = false
+
+[connection signal="pause" from="FramePlayer/FramePlayer" to="." method="pause_game"]
+[connection signal="continue_game" from="Pause/Pause" to="." method="continue_game"]
+[connection signal="load_save" from="Pause/Pause" to="." method="load_save"]
+[connection signal="return_to_menu" from="Pause/Pause" to="." method="return_to_menu"]
+[connection signal="save_game" from="Pause/Pause" to="." method="make_save"]

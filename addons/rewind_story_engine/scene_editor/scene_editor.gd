@@ -18,6 +18,7 @@ var tree_nodes: Dictionary
 
 
 func _set_episode(ep: RSEEpisode) -> void:
+	scene_builder.save_scene_preset()
 	episode = ep
 	if ep != null:
 		_set_preview()
@@ -88,7 +89,8 @@ func _on_tree_item_selected():
 
 
 func _on_inspector_node_changed():
-	scene_builder.save_scene_preset()
+	#scene_builder.save_scene_preset()
+	pass
 
 
 func _on_inherit_prev_scene_preset_pressed():

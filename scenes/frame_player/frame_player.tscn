@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dn0b8hq6iasrx"]
+[gd_scene load_steps=12 format=3 uid="uid://dn0b8hq6iasrx"]
 
 [ext_resource type="Script" path="res://scenes/frame_player/text_box.gd" id="1_aporf"]
 [ext_resource type="PackedScene" uid="uid://6jobhq66ma72" path="res://addons/rewind_story_engine/scene_builder/scene_builder.tscn" id="1_k8j7s"]
@@ -7,10 +7,16 @@
 [ext_resource type="Texture2D" uid="uid://dktdb1xkwbt1d" path="res://icon.svg" id="3_jvok4"]
 [ext_resource type="Texture2D" uid="uid://bfxu7cicqjgxu" path="res://addons/rewind_story_engine/icons/AcceptDialog.svg" id="4_od5vn"]
 [ext_resource type="Script" path="res://scenes/frame_player/selection_menu.gd" id="7_pim0h"]
-[ext_resource type="Script" path="res://scenes/frame_player/log.gd" id="8_sjnoh"]
+[ext_resource type="Script" path="res://scenes/frame_player/logger.gd" id="8_bvskx"]
 [ext_resource type="Texture2D" uid="uid://xs2mituqujh6" path="res://addons/rewind_story_engine/icons/Close.svg" id="9_e67gh"]
 
-[node name="FramePlayer" type="Control" node_paths=PackedStringArray("text_box", "selection_menu", "log", "scene_builder")]
+[sub_resource type="InputEventAction" id="InputEventAction_nj2hj"]
+action = &"pause"
+
+[sub_resource type="Shortcut" id="Shortcut_58d3f"]
+events = [SubResource("InputEventAction_nj2hj")]
+
+[node name="FramePlayer" type="Control" node_paths=PackedStringArray("text_box", "selection_menu", "logger", "scene_builder", "pause_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,8 +26,9 @@ grow_vertical = 2
 script = ExtResource("1_s8ibl")
 text_box = NodePath("TextBox")
 selection_menu = NodePath("SelectionMenu")
-log = NodePath("Log")
+logger = NodePath("Logger")
 scene_builder = NodePath("SubViewportContainer/SubViewport/SceneBuilder")
+pause_button = NodePath("Pause")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
 layout_mode = 1
@@ -138,7 +145,24 @@ grow_vertical = 2
 alignment = 1
 script = ExtResource("7_pim0h")
 
-[node name="Log" type="Control" parent="." node_paths=PackedStringArray("text_label")]
+[node name="Pause" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -630.0
+offset_top = -350.0
+offset_right = -574.0
+offset_bottom = -319.0
+grow_horizontal = 2
+grow_vertical = 2
+shortcut = SubResource("Shortcut_58d3f")
+shortcut_in_tooltip = false
+text = "Пауза"
+
+[node name="Logger" type="Control" parent="." node_paths=PackedStringArray("text_label")]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -146,19 +170,19 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("8_sjnoh")
+script = ExtResource("8_bvskx")
 text_label = NodePath("MarginContainer/RichTextLabel")
 
-[node name="ColorRect" type="ColorRect" parent="Log"]
+[node name="ColorRect" type="ColorRect" parent="Logger"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.705882)
+color = Color(0, 0, 0, 0.941176)
 
-[node name="MarginContainer" type="MarginContainer" parent="Log"]
+[node name="MarginContainer" type="MarginContainer" parent="Logger"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -176,27 +200,29 @@ theme_override_constants/margin_top = 40
 theme_override_constants/margin_right = 80
 theme_override_constants/margin_bottom = 40
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Log/MarginContainer"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Logger/MarginContainer"]
 layout_mode = 2
 bbcode_enabled = true
 text = "[table=3]"
 scroll_following = true
 
-[node name="Close" type="Button" parent="Log"]
+[node name="Close" type="Button" parent="Logger"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 533.0
+offset_left = 606.0
 offset_top = -350.0
 offset_right = 630.0
-offset_bottom = -319.0
+offset_bottom = -326.0
 grow_horizontal = 0
-text = "Закрыть"
 icon = ExtResource("9_e67gh")
 
 [connection signal="finished" from="TextBox" to="." method="_on_text_box_finished"]
 [connection signal="option_selected" from="SelectionMenu" to="." method="_on_selection_menu_option_selected"]
-[connection signal="pressed" from="Log/Close" to="Log" method="_on_close_pressed"]
+[connection signal="mouse_entered" from="Pause" to="." method="_on_pause_mouse_entered"]
+[connection signal="mouse_exited" from="Pause" to="." method="_on_pause_mouse_exited"]
+[connection signal="pressed" from="Pause" to="." method="_on_pause_pressed"]
+[connection signal="pressed" from="Logger/Close" to="Logger" method="_on_close_pressed"]

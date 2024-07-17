@@ -1,0 +1,90 @@
+[gd_scene load_steps=8 format=3 uid="uid://cka2t7km7vv8b"]
+
+[ext_resource type="Script" path="res://source/pause.gd" id="1_cwqt0"]
+[ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_6swir"]
+[ext_resource type="PackedScene" uid="uid://c1njjadxa43bg" path="res://scenes/settings.tscn" id="2_1824l"]
+[ext_resource type="Script" path="res://source/main_menu/main_menu_button.gd" id="3_jcada"]
+[ext_resource type="PackedScene" uid="uid://beneekmk33mka" path="res://scenes/save_manager/save_list.tscn" id="5_00ptl"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_jt326"]
+action = &"pause"
+
+[sub_resource type="Shortcut" id="Shortcut_pytoy"]
+events = [SubResource("InputEventAction_jt326")]
+
+[node name="Pause" type="Control" node_paths=PackedStringArray("main")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cwqt0")
+main = NodePath("Главный экран")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.941176)
+
+[node name="Главный экран" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_6swir")
+
+[node name="Продолжить" type="Button" parent="Главный экран"]
+layout_mode = 2
+shortcut = SubResource("Shortcut_pytoy")
+shortcut_in_tooltip = false
+text = "Продолжить"
+
+[node name="Сохранить игру" type="Button" parent="Главный экран"]
+layout_mode = 2
+text = "Сохранить игру"
+
+[node name="Загрузить игру" type="Button" parent="Главный экран" node_paths=PackedStringArray("menu_element_to_show")]
+layout_mode = 2
+text = "Загрузить игру"
+script = ExtResource("3_jcada")
+menu_element_to_show = NodePath("../../Загрузить игру")
+
+[node name="Настройки" type="Button" parent="Главный экран" node_paths=PackedStringArray("menu_element_to_show")]
+layout_mode = 2
+text = "Настройки"
+script = ExtResource("3_jcada")
+menu_element_to_show = NodePath("../../Настройки")
+
+[node name="Выйти в меню" type="Button" parent="Главный экран"]
+layout_mode = 2
+text = "Выйти в меню"
+
+[node name="Настройки" parent="." instance=ExtResource("2_1824l")]
+visible = false
+layout_mode = 1
+
+[node name="Загрузить игру" parent="." instance=ExtResource("5_00ptl")]
+visible = false
+layout_mode = 1
+
+[connection signal="pressed" from="Главный экран/Продолжить" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="Главный экран/Сохранить игру" to="." method="_on_save_pressed"]
+[connection signal="menu_element_was_selected" from="Главный экран/Загрузить игру" to="." method="_show_menu_element"]
+[connection signal="menu_element_was_selected" from="Главный экран/Настройки" to="." method="_show_menu_element"]
+[connection signal="pressed" from="Главный экран/Выйти в меню" to="." method="_on_exit_pressed"]
+[connection signal="return_was_pressed" from="Настройки" to="." method="_show_main_menu"]
+[connection signal="load_save" from="Загрузить игру" to="." method="_on_load_save"]
+[connection signal="return_was_pressed" from="Загрузить игру" to="." method="_show_main_menu"]

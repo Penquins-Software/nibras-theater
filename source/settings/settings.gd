@@ -5,6 +5,7 @@ signal player_name_was_changed
 
 const PATH_TO_CONFIG = "user://config.ini"
 const PATH_TO_PROFILE = "user://profile.json"
+const PATH_TO_STORY = "res://project_rice.rs"
 
 enum AudioBus {
 	MASTER,
@@ -42,7 +43,7 @@ var rewind_mode: RewindMode = RewindMode.Viewed : set = _set_rewind_mode
 ## Скорость вывода текста. Измеряется в количестве символов в секунду.
 var text_speed: int = 40 : set = _set_text_speed
 const MIN_TEXT_SPEED: int = 20
-const MAX_TEXT_SPEED: int = 120
+const MAX_TEXT_SPEED: int = 80
 
 
 func _set_player_name(new_name: String) -> void:
@@ -103,6 +104,7 @@ func _set_text_speed(value: int) -> void:
 func _enter_tree():
 	load_config()
 	profile = Profile.load_from_file(PATH_TO_PROFILE)
+	RewindStoryEngine.story = RSEStory.load_from_file(PATH_TO_STORY)
 
 
 func _exit_tree():

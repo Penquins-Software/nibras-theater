@@ -1,15 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=7 format=3 uid="uid://1ldra2lpi55u"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
-[ext_resource type="Script" path="res://source/settings/setting_screen_mode.gd" id="1_iivln"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_h3ser"]
-[ext_resource type="Script" path="res://source/settings/setting_language.gd" id="2_rtb7u"]
-[ext_resource type="Script" path="res://source/settings/setting_rewind_mode.gd" id="2_sglnt"]
+[ext_resource type="PackedScene" uid="uid://7bfnwn4tg3f3" path="res://scenes/game.tscn" id="2_i8b50"]
 [ext_resource type="Script" path="res://source/main_menu/main_menu_button.gd" id="3_sfhbu"]
-[ext_resource type="Script" path="res://source/settings/setting_player_name.gd" id="4_6jkwe"]
-[ext_resource type="Script" path="res://source/settings/setting_text_speed.gd" id="4_8iigk"]
-[ext_resource type="Script" path="res://source/settings/setting_audio_bus.gd" id="5_lpc32"]
-[ext_resource type="Script" path="res://source/settings/settings_return_to_menu.gd.gd" id="5_u0r0y"]
+[ext_resource type="PackedScene" uid="uid://c1njjadxa43bg" path="res://scenes/settings.tscn" id="5_7o1gw"]
+[ext_resource type="PackedScene" uid="uid://beneekmk33mka" path="res://scenes/save_manager/save_list.tscn" id="5_rnans"]
 
 [node name="Menu" type="Control" node_paths=PackedStringArray("main", "exit_button")]
 layout_mode = 3
@@ -21,6 +17,7 @@ grow_vertical = 2
 script = ExtResource("1_74llx")
 main = NodePath("Главный экран")
 exit_button = NodePath("Главный экран/VBoxContainer/Выйти")
+game_scene_file = ExtResource("2_i8b50")
 
 [node name="Главный экран" type="Control" parent="." node_paths=PackedStringArray("focus_element")]
 layout_mode = 1
@@ -50,16 +47,24 @@ grow_vertical = 2
 layout_mode = 2
 text = "Начать игру"
 
-[node name="Загрузить игру" type="Button" parent="Главный экран/VBoxContainer"]
+[node name="Продолжить" type="Button" parent="Главный экран/VBoxContainer"]
+layout_mode = 2
+text = "Продолжить"
+
+[node name="Загрузить игру" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
 text = "Загрузить игру"
+script = ExtResource("3_sfhbu")
+menu_element_to_show = NodePath("../../../Загрузить игру")
 
 [node name="Галерея" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
+disabled = true
 text = "Галерея"
 
 [node name="Экстра" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
+disabled = true
 text = "Экстра"
 
 [node name="Настройки" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
@@ -79,237 +84,13 @@ menu_element_to_show = NodePath("../../../Авторы")
 layout_mode = 2
 text = "Выйти"
 
-[node name="Настройки" type="Control" parent="." node_paths=PackedStringArray("return_button", "focus_element")]
+[node name="Загрузить игру" parent="." instance=ExtResource("5_rnans")]
 visible = false
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("2_h3ser")
-return_button = NodePath("Вернуться")
-focus_element = NodePath("VBoxContainer/Режим экрана/MenuButton")
 
-[node name="Заголовок" type="Label" parent="Настройки"]
+[node name="Настройки" parent="." instance=ExtResource("5_7o1gw")]
+visible = false
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -300.0
-offset_top = -244.0
-offset_right = 300.0
-offset_bottom = -221.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "Настройки"
-horizontal_alignment = 1
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Настройки"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -300.0
-offset_top = -134.0
-offset_right = 300.0
-offset_bottom = 134.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Имя игрока" type="HBoxContainer" parent="Настройки/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Настройки/VBoxContainer/Имя игрока"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-text = "Имя игрока:"
-horizontal_alignment = 2
-
-[node name="LineEdit" type="LineEdit" parent="Настройки/VBoxContainer/Имя игрока"]
-layout_mode = 2
-size_flags_horizontal = 3
-placeholder_text = "Имя"
-script = ExtResource("4_6jkwe")
-
-[node name="Режим экрана" type="HBoxContainer" parent="Настройки/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Настройки/VBoxContainer/Режим экрана"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-text = "Режим экрана:"
-horizontal_alignment = 2
-
-[node name="MenuButton" type="MenuButton" parent="Настройки/VBoxContainer/Режим экрана"]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "Оконный"
-flat = false
-item_count = 2
-popup/item_0/text = "Оконный"
-popup/item_0/id = 0
-popup/item_1/text = "Полноэкранный"
-popup/item_1/id = 3
-script = ExtResource("1_iivln")
-
-[node name="Режим перемотки" type="HBoxContainer" parent="Настройки/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Настройки/VBoxContainer/Режим перемотки"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-text = "Режим переметотки:"
-horizontal_alignment = 2
-
-[node name="MenuButton" type="MenuButton" parent="Настройки/VBoxContainer/Режим перемотки"]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "Пропускать просмотрённое"
-flat = false
-item_count = 2
-popup/item_0/text = "Пропускать просмотрённое"
-popup/item_0/id = 0
-popup/item_1/text = "Пропускать всё"
-popup/item_1/id = 1
-script = ExtResource("2_sglnt")
-
-[node name="Язык" type="HBoxContainer" parent="Настройки/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Настройки/VBoxContainer/Язык"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-text = "Язык:"
-horizontal_alignment = 2
-
-[node name="MenuButton" type="MenuButton" parent="Настройки/VBoxContainer/Язык"]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "Russian"
-flat = false
-script = ExtResource("2_rtb7u")
-
-[node name="Скорость текста" type="HBoxContainer" parent="Настройки/VBoxContainer" node_paths=PackedStringArray("slider", "spin_box")]
-layout_mode = 2
-script = ExtResource("4_8iigk")
-slider = NodePath("HSlider")
-spin_box = NodePath("SpinBox")
-
-[node name="Label" type="Label" parent="Настройки/VBoxContainer/Скорость текста"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-text = "Скорость текста:"
-horizontal_alignment = 2
-
-[node name="HSlider" type="HSlider" parent="Настройки/VBoxContainer/Скорость текста"]
-custom_minimum_size = Vector2(200, 0)
-layout_mode = 2
-size_flags_horizontal = 10
-size_flags_vertical = 4
-min_value = 20.0
-max_value = 140.0
-value = 20.0
-
-[node name="SpinBox" type="SpinBox" parent="Настройки/VBoxContainer/Скорость текста"]
-layout_mode = 2
-min_value = 20.0
-max_value = 140.0
-value = 20.0
-
-[node name="Label" type="Label" parent="Настройки/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 12
-text = "* Скорость текста измеряется в количестве выводимых символов в секунду"
-horizontal_alignment = 1
-
-[node name="Общая громкость" type="HBoxContainer" parent="Настройки/VBoxContainer" node_paths=PackedStringArray("slider", "spin_box")]
-layout_mode = 2
-script = ExtResource("5_lpc32")
-slider = NodePath("HSlider")
-spin_box = NodePath("SpinBox")
-
-[node name="Label" type="Label" parent="Настройки/VBoxContainer/Общая громкость"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-text = "Общая громкость:"
-horizontal_alignment = 2
-
-[node name="HSlider" type="HSlider" parent="Настройки/VBoxContainer/Общая громкость"]
-custom_minimum_size = Vector2(200, 0)
-layout_mode = 2
-size_flags_horizontal = 10
-size_flags_vertical = 4
-
-[node name="SpinBox" type="SpinBox" parent="Настройки/VBoxContainer/Общая громкость"]
-layout_mode = 2
-size_flags_horizontal = 8
-
-[node name="Громкость звуковых эффектов" type="HBoxContainer" parent="Настройки/VBoxContainer" node_paths=PackedStringArray("slider", "spin_box")]
-layout_mode = 2
-script = ExtResource("5_lpc32")
-bus = 1
-slider = NodePath("HSlider")
-spin_box = NodePath("SpinBox")
-
-[node name="Label" type="Label" parent="Настройки/VBoxContainer/Громкость звуковых эффектов"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-text = "Громкость звуковых эффектов:"
-horizontal_alignment = 2
-
-[node name="HSlider" type="HSlider" parent="Настройки/VBoxContainer/Громкость звуковых эффектов"]
-custom_minimum_size = Vector2(200, 0)
-layout_mode = 2
-size_flags_horizontal = 10
-size_flags_vertical = 4
-
-[node name="SpinBox" type="SpinBox" parent="Настройки/VBoxContainer/Громкость звуковых эффектов"]
-layout_mode = 2
-size_flags_horizontal = 8
-
-[node name="Громкость музыки" type="HBoxContainer" parent="Настройки/VBoxContainer" node_paths=PackedStringArray("slider", "spin_box")]
-layout_mode = 2
-script = ExtResource("5_lpc32")
-slider = NodePath("HSlider")
-spin_box = NodePath("SpinBox")
-
-[node name="Label" type="Label" parent="Настройки/VBoxContainer/Громкость музыки"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-text = "Громкость музыки:"
-horizontal_alignment = 2
-
-[node name="HSlider" type="HSlider" parent="Настройки/VBoxContainer/Громкость музыки"]
-custom_minimum_size = Vector2(200, 0)
-layout_mode = 2
-size_flags_horizontal = 10
-size_flags_vertical = 4
-
-[node name="SpinBox" type="SpinBox" parent="Настройки/VBoxContainer/Громкость музыки"]
-layout_mode = 2
-size_flags_horizontal = 8
-
-[node name="Вернуться" type="Button" parent="Настройки"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -80.0
-offset_top = 223.0
-offset_right = 80.0
-offset_bottom = 254.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-text = "Вернуться в меню "
-script = ExtResource("5_u0r0y")
 
 [node name="Авторы" type="Control" parent="." node_paths=PackedStringArray("return_button", "focus_element")]
 visible = false
@@ -321,7 +102,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_h3ser")
 return_button = NodePath("Вернуться")
-focus_element = NodePath("VBoxContainer/RichTextLabel")
+focus_element = NodePath("Вернуться")
 
 [node name="Заголовок" type="Label" parent="Авторы"]
 layout_mode = 1
@@ -381,8 +162,12 @@ size_flags_horizontal = 4
 text = "Вернуться в меню "
 
 [connection signal="return_was_pressed" from="Главный экран" to="." method="_show_main_menu"]
+[connection signal="pressed" from="Главный экран/VBoxContainer/Начать игру" to="." method="_start_game"]
+[connection signal="pressed" from="Главный экран/VBoxContainer/Продолжить" to="." method="continue_game"]
+[connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Загрузить игру" to="." method="_show_menu_element"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Настройки" to="." method="_show_menu_element"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Авторы" to="." method="_show_menu_element"]
+[connection signal="load_save" from="Загрузить игру" to="." method="load_game"]
+[connection signal="return_was_pressed" from="Загрузить игру" to="." method="_show_main_menu"]
 [connection signal="return_was_pressed" from="Настройки" to="." method="_show_main_menu"]
-[connection signal="text_changed" from="Настройки/VBoxContainer/Имя игрока/LineEdit" to="Настройки/VBoxContainer/Имя игрока/LineEdit" method="_on_text_changed"]
 [connection signal="return_was_pressed" from="Авторы" to="." method="_show_main_menu"]

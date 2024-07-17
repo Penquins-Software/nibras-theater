@@ -9,7 +9,7 @@ extends Control
 @export var exit_button: Button
 
 @export_group("Scenes")
-@export_file("*.tscn") var game_scene_file
+@export var game_scene_file: PackedScene
 
 
 func _ready():
@@ -30,7 +30,16 @@ func _show_main_menu(menu_element: Control) -> void:
 
 
 func _start_game() -> void:
-	get_tree().change_scene_to_file(game_scene_file)
+	get_tree().change_scene_to_packed(game_scene_file)
+
+
+func continue_game() -> void:
+	load_game(SaveManager.saves[SaveManager.saves.size() - 1])
+
+
+func load_game(save: Save) -> void:
+	Game.save_to_load = save
+	_start_game()
 
 
 func exit_game() -> void:

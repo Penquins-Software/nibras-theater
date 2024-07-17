@@ -6,6 +6,7 @@ signal option_selected(option_id: int)
 
 
 func show_options(frame: RSEFrameSelection) -> void:
+	_clear()
 	show()
 	for option in frame.options:
 		var button = Button.new()

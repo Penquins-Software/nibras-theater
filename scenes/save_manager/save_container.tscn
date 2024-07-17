@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3 uid="uid://droyt1nlk5p3g"]
+
+[ext_resource type="Script" path="res://scenes/save_manager/save_container.gd" id="1_xq2kt"]
+[ext_resource type="Texture2D" uid="uid://dktdb1xkwbt1d" path="res://icon.svg" id="2_3daxs"]
+
+[node name="SaveContainer" type="HBoxContainer" node_paths=PackedStringArray("image", "label")]
+offset_right = 400.0
+offset_bottom = 100.0
+script = ExtResource("1_xq2kt")
+image = NodePath("Image")
+label = NodePath("Panel/MarginContainer/Info/Label")
+
+[node name="Image" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+texture = ExtResource("2_3daxs")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Info" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/Info"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Тестовый эпизод
+16.07.2024"
+
+[node name="Buttons" type="HBoxContainer" parent="Panel/MarginContainer/Info"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Load" type="Button" parent="Panel/MarginContainer/Info/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+text = "Загрузить"
+
+[node name="Delete" type="Button" parent="Panel/MarginContainer/Info/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+text = "Удалить"
+
+[connection signal="pressed" from="Panel/MarginContainer/Info/Buttons/Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="Panel/MarginContainer/Info/Buttons/Delete" to="." method="_on_delete_pressed"]

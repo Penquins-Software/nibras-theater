@@ -2,13 +2,17 @@ class_name FramePlayer
 extends Control
 
 
+signal pause()
+
+
 const REWIND_DELAY_TIME: float = 0.02
 
 
 @export var text_box: TextBox
 @export var selection_menu: SelectionMenu
-@export var log: Log
+@export var logger: Logger
 @export var scene_builder: RSESceneBuilder
+@export var pause_button: Button
 
 var episode: RSEEpisode
 var current_frame_index: int
@@ -16,26 +20,27 @@ var current_frame_index: int
 var is_gap: bool = false
 var rewind_delay: float = 0.0
 var rewind_block: bool = false
+var is_pause: bool = false
+
+var is_mouse_on_gui: bool = false 
 
 var speaker: RSECharacter
-
-
-func _ready():
-	RewindStoryEngine.story = RSEStory.load_from_file("res://project_rice.rs")
-	set_episode(RewindStoryEngine.story.start_episode)
 
 
 func _input(event):
 	if episode == null:
 		return
 	
-	if log.visible:
+	if is_pause:
+		return
+	
+	if logger.visible:
 		return
 	
 	if selection_menu.visible:
 		return
 	
-	if event.is_action_pressed("next_frame"):
+	if event.is_action_pressed("next_frame") and not is_mouse_on_gui:
 		if text_box.showing:
 			text_box.end_frame() ## Принудительно закончить кадр.
 		else: ## Переключиться на следующий кадр.
@@ -43,8 +48,11 @@ func _input(event):
 	if event.is_action("rewind"):
 		_rewind()
 	if event.is_action_pressed("prev_frame") or event.is_action_pressed("log"):
-		log.show()
+		logger.show()
+		#pause_button.visible = false
 		#prev_frame()
+	if event.is_action_pressed("hide_interface"):
+		pass
 
 
 func _process(delta):
@@ -67,14 +75,16 @@ func _rewind() -> void:
 				next_frame()
 
 
-func set_episode(ep: RSEEpisode) -> void:
+func set_episode(ep: RSEEpisode, build_first_frame: bool = true) -> void:
+	selection_menu.visible = false
 	is_gap = true
 	scene_builder.set_episode(ep)
 	episode = ep
-	next_frame()
+	if build_first_frame:
+		next_frame()
 
 
-func next_frame() -> void:	
+func next_frame() -> void:
 	current_frame_index = scene_builder.next_frame()
 	var frame: RSEFrame = episode.real_frames[current_frame_index]
 	build_frame(frame)
@@ -87,6 +97,12 @@ func prev_frame() -> void:
 		current_frame_index = scene_builder.prev_frame()
 		frame = episode.real_frames[current_frame_index]
 	build_frame(frame, true)
+
+
+func set_frame(index: int) -> void:
+	current_frame_index = scene_builder.set_frame(index)
+	var frame: RSEFrame = episode.real_frames[index]
+	build_frame(frame)
 
 
 func build_frame(frame: RSEFrame, is_immediately: bool = false) -> void:
@@ -137,7 +153,24 @@ func _on_selection_menu_option_selected(option_id):
 
 func _on_text_box_finished():
 	Settings.profile.add_viewed(episode.id, current_frame_index)
-	log.add(episode.real_frames[current_frame_index])
+	logger.add(episode.real_frames[current_frame_index])
 	var character = scene_builder.get_characeter_by_id(speaker.id)
 	if character != null:
 		character.stop_talk()
+
+
+func _on_pause_pressed() -> void:
+	is_pause = true
+	pause.emit()
+
+
+func continue_play() -> void:
+	is_pause = false
+
+
+func _on_pause_mouse_entered():
+	is_mouse_on_gui = true
+
+
+func _on_pause_mouse_exited():
+	is_mouse_on_gui = false

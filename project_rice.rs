@@ -26,6 +26,11 @@
    "description": "",
    "frames": [
     {
+     "location_id": 9,
+     "transitition_id": 0,
+     "type": "RSEFrameLocation"
+    },
+    {
      "action": 1,
      "character_id": 2,
      "emotion_id": 0,
@@ -61,14 +66,17 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 1,
-      "zoom": 1
+      "scale": 3,
+      "zoom": 0.333333343267441
      },
      "character_transforms": {
 
      },
      "location_transform": {
-
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
      },
      "visual_effects_transforms": {
 
@@ -79,14 +87,17 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 1,
-      "zoom": 1
+      "scale": 3,
+      "zoom": 0.333333343267441
      },
      "character_transforms": {
 
      },
      "location_transform": {
-
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
      },
      "visual_effects_transforms": {
 
@@ -97,14 +108,17 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 1,
-      "zoom": 1
+      "scale": 3,
+      "zoom": 0.333333343267441
      },
      "character_transforms": {
 
      },
      "location_transform": {
-
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
      },
      "visual_effects_transforms": {
 
@@ -115,14 +129,17 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 1,
-      "zoom": 1
+      "scale": 3,
+      "zoom": 0.333333343267441
      },
      "character_transforms": {
 
      },
      "location_transform": {
-
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
      },
      "visual_effects_transforms": {
 
@@ -174,7 +191,24 @@
    "id": 7,
    "name": "2",
    "scene_presets": [
-    null,
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
     null,
     null,
     null,
@@ -200,7 +234,24 @@
    "id": 8,
    "name": "Проверка переноса строк",
    "scene_presets": [
-    null,
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
     null
    ],
    "start": false
@@ -210,41 +261,54 @@
   "0": {
    "position_x": 1400,
    "position_y": 780,
-   "size_x": 200,
-   "size_y": 241.000061035156
+   "size_x": 199.999450683594,
+   "size_y": 241.000122070313
   },
   "2": {
    "position_x": 1000,
    "position_y": 640,
-   "size_x": 200.000061035156,
+   "size_x": 200.000244140625,
    "size_y": 155.000061035156
   },
   "6": {
-   "position_x": 1840,
+   "position_x": 1800,
    "position_y": 680,
-   "size_x": 199.999877929688,
-   "size_y": 300.000122070313
+   "size_x": 200.935913085938,
+   "size_y": 319.650817871094
   },
   "7": {
    "position_x": 2200,
    "position_y": 680,
-   "size_x": 199.999755859375,
-   "size_y": 306
+   "size_x": 204.6787109375,
+   "size_y": 321.908142089844
   },
   "8": {
-   "position_x": 2620,
-   "position_y": 660,
-   "size_x": 303.037353515625,
-   "size_y": 353.217132568359
+   "position_x": 2600,
+   "position_y": 600,
+   "size_x": 201.974609375,
+   "size_y": 400.941101074219
   },
-  "scroll_offset_x": 663.459350585938,
-  "scroll_offset_y": -25.1303100585938,
+  "9": {
+   "position_x": 760,
+   "position_y": 820,
+   "size_x": 199.999786376953,
+   "size_y": 155.000244140625
+  },
+  "scroll_offset_x": 735.494018554688,
+  "scroll_offset_y": 304.72265625,
   "show_grid": true,
   "snapping_enabled": true,
-  "zoom": 0.72989809513092
+  "zoom": 0.971493661403656
  },
- "last_id": 8,
- "locations": [],
+ "last_id": 9,
+ "locations": [
+  {
+   "active": true,
+   "id": 9,
+   "name": "Тест №1",
+   "path_to_scene": "res://locations/test/cave.tscn"
+  }
+ ],
  "music_list": [],
  "name": "Иск за рис без риска",
  "sound_effects": [],
