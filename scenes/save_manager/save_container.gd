@@ -7,7 +7,7 @@ signal delete_save(save_container: SaveContainer)
 
 
 @export var image: TextureRect
-@export var label: Label
+@export var label: RichTextLabel
 
 
 var _save: Save
@@ -15,9 +15,13 @@ var _save: Save
 
 func set_save(save: Save) -> void:
 	_save = save
-	image.texture = ImageTexture.create_from_image(save.image)
+	if save.image != null:
+		image.texture = ImageTexture.create_from_image(save.image)
 	var datetime = "%s.%02d.%02d %02d:%02d:%02d" % [save.datetime["year"], save.datetime["month"], save.datetime["day"], save.datetime["hour"], save.datetime["minute"], save.datetime["second"]]
-	label.text = "%s\n%s" % [save.episode_name, datetime]
+	label.text = ""
+	if save.auto_save:
+		label.text = "[color=INDIAN_RED][АВТО][/color] "
+	label.text += "%s\n%s" % [save.episode_name, datetime]
 
 
 func _on_load_pressed():

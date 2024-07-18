@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c1njjadxa43bg"]
+[gd_scene load_steps=10 format=3 uid="uid://c1njjadxa43bg"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="1_3d6xm"]
 [ext_resource type="Script" path="res://source/settings/setting_player_name.gd" id="2_uu37b"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://source/settings/setting_language.gd" id="5_46tpf"]
 [ext_resource type="Script" path="res://source/settings/setting_text_speed.gd" id="6_n4t7e"]
 [ext_resource type="Script" path="res://source/settings/setting_audio_bus.gd" id="7_bsqa4"]
+[ext_resource type="Script" path="res://source/settings/setting_auto_speed.gd" id="7_uqn1o"]
 [ext_resource type="Script" path="res://source/settings/settings_return_to_menu.gd.gd" id="8_iv8c3"]
 
 [node name="Настройки" type="Control" node_paths=PackedStringArray("return_button")]
@@ -124,6 +125,7 @@ flat = false
 script = ExtResource("5_46tpf")
 
 [node name="Скорость текста" type="HBoxContainer" parent="VBoxContainer" node_paths=PackedStringArray("slider", "spin_box")]
+custom_minimum_size = Vector2(0, 31)
 layout_mode = 2
 script = ExtResource("6_n4t7e")
 slider = NodePath("HSlider")
@@ -132,29 +134,60 @@ spin_box = NodePath("SpinBox")
 [node name="Label" type="Label" parent="VBoxContainer/Скорость текста"]
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
-text = "Скорость текста:"
+text = "Скорость вывода текста:"
 horizontal_alignment = 2
 
 [node name="HSlider" type="HSlider" parent="VBoxContainer/Скорость текста"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
-size_flags_horizontal = 10
+size_flags_horizontal = 3
 size_flags_vertical = 4
 min_value = 20.0
 max_value = 140.0
 value = 20.0
 
 [node name="SpinBox" type="SpinBox" parent="VBoxContainer/Скорость текста"]
+visible = false
 layout_mode = 2
 min_value = 20.0
 max_value = 140.0
 value = 20.0
 
 [node name="Label" type="Label" parent="VBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 12
 text = "Скорость текста измеряется в количестве выводимых символов в секунду."
 horizontal_alignment = 1
+
+[node name="Скорость автоматического чтения" type="HBoxContainer" parent="VBoxContainer" node_paths=PackedStringArray("slider", "spin_box")]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+script = ExtResource("7_uqn1o")
+slider = NodePath("HSlider")
+spin_box = NodePath("SpinBox")
+
+[node name="Label" type="Label" parent="VBoxContainer/Скорость автоматического чтения"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "Скорость автоматического чтения:"
+horizontal_alignment = 2
+
+[node name="HSlider" type="HSlider" parent="VBoxContainer/Скорость автоматического чтения"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+min_value = 20.0
+max_value = 140.0
+value = 20.0
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/Скорость автоматического чтения"]
+visible = false
+layout_mode = 2
+min_value = 20.0
+max_value = 140.0
+value = 20.0
 
 [node name="Общая громкость" type="HBoxContainer" parent="VBoxContainer" node_paths=PackedStringArray("slider", "spin_box")]
 layout_mode = 2

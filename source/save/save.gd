@@ -9,6 +9,7 @@ var frame_index: int
 var local_variables: Dictionary
 var datetime: Dictionary
 var path: String
+var auto_save: bool = false
 
 
 func _init(_image: Image, _episode_id: int, _frame_index: int, _local_variables: Dictionary, path_to_file: String = ""):

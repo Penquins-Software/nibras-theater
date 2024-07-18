@@ -3,6 +3,7 @@ extends Control
 
 
 signal pause()
+signal selection_started()
 
 
 const REWIND_DELAY_TIME: float = 0.02
@@ -17,11 +18,17 @@ const REWIND_DELAY_TIME: float = 0.02
 var local_variables: VariablesStorage
 
 var episode: RSEEpisode
+var current_frame: RSEFrame
 var current_frame_index: int
+
+## История пройденных кадров. Нужна для перемотки назад.
+var history: Array
 
 var is_gap: bool = false
 var rewind_delay: float = 0.0
 var rewind_block: bool = false
+var auto_play_time: float = 0.0
+var auto_play: bool = false
 var is_pause: bool = false
 
 var is_mouse_on_gui: bool = false 
@@ -39,27 +46,37 @@ func _input(event):
 	if logger.visible:
 		return
 	
-	if selection_menu.visible:
-		return
-	
 	if event.is_action_pressed("next_frame") and not is_mouse_on_gui:
-		if text_box.showing:
-			text_box.end_frame() ## Принудительно закончить кадр.
-		else: ## Переключиться на следующий кадр.
-			next_frame()
+		if not selection_menu.visible:
+			if text_box.showing:
+				text_box.end_frame() ## Принудительно закончить кадр.
+			else: ## Переключиться на следующий кадр.
+				next_frame()
 	if event.is_action("rewind"):
-		_rewind()
-	if event.is_action_pressed("prev_frame") or event.is_action_pressed("log"):
+		if not selection_menu.visible:
+			_rewind()
+	if event.is_action_pressed("prev_frame"):
+		if selection_menu.visible:
+			selection_menu.hide()
+		prev_frame()
+	if event.is_action_pressed("log"):
 		logger.show()
-		#pause_button.visible = false
-		#prev_frame()
 	if event.is_action_pressed("hide_interface"):
 		pass
+	if event.is_action_pressed("auto_play"):
+		auto_play = !auto_play
+		print("Autoplay is %s" % auto_play)
 
 
 func _process(delta):
 	if rewind_delay > 0:
 		rewind_delay -= delta
+	
+	if auto_play:
+		if auto_play_time > 0:
+			auto_play_time -= delta
+			if auto_play_time <= 0:
+				next_frame()
 
 
 func _rewind() -> void:
@@ -82,23 +99,42 @@ func set_episode(ep: RSEEpisode, build_first_frame: bool = true) -> void:
 	is_gap = true
 	scene_builder.set_episode(ep)
 	episode = ep
+	current_frame_index = -1
 	if build_first_frame:
 		next_frame()
 
 
 func next_frame() -> void:
+	if current_frame_index > -1:
+		history.append([episode.id, current_frame_index])
 	current_frame_index = scene_builder.next_frame()
 	var frame: RSEFrame = episode.real_frames[current_frame_index]
 	build_frame(frame)
 
 
 func prev_frame() -> void:
-	current_frame_index = scene_builder.prev_frame()
+	if history.size() <= 0:
+		return
+	var last_frame = history.pop_back()
+	if episode.id != last_frame[0]:
+		set_episode(RewindStoryEngine.story.episodes[last_frame[0]], false)
+	
+	current_frame_index = scene_builder.set_frame(last_frame[1])
 	var frame: RSEFrame = episode.real_frames[current_frame_index]
 	if frame is RSEFrameGap:
-		current_frame_index = scene_builder.prev_frame()
-		frame = episode.real_frames[current_frame_index]
-	build_frame(frame, true)
+		prev_frame()
+	elif frame is RSEFrameJump:
+		prev_frame()
+	elif frame is RSEFrameCondition:
+		prev_frame()
+	elif frame is RSEFrameVariable:
+		if frame.global:
+			Settings.profile.global_variables.remove_variable(frame.name)
+		else:
+			local_variables.remove_variable(frame.name)
+		prev_frame()
+	else:
+		build_frame(frame, true)
 
 
 func set_frame(index: int) -> void:
@@ -108,6 +144,7 @@ func set_frame(index: int) -> void:
 
 
 func build_frame(frame: RSEFrame, is_immediately: bool = false) -> void:
+	current_frame = frame
 	if frame is RSEFrameText:
 		show_text_frame(frame, is_immediately)
 	elif frame is RSEFrameSelection:
@@ -120,8 +157,6 @@ func build_frame(frame: RSEFrame, is_immediately: bool = false) -> void:
 		variable(frame)
 	elif frame is RSEFrameCondition:
 		condition(frame)
-	elif frame is RSEFrameEndCondition:
-		pass
 
 
 func show_text_frame(frame: RSEFrameText, is_immediately: bool = false) -> void:
@@ -143,6 +178,7 @@ func show_text_frame(frame: RSEFrameText, is_immediately: bool = false) -> void:
 func show_selection(frame: RSEFrameSelection) -> void:
 	selection_menu.show_options(frame)
 	rewind_block = true
+	selection_started.emit()
 
 
 func gap(_frame: RSEFrameGap) -> void:
@@ -159,6 +195,7 @@ func variable(frame: RSEFrameVariable) -> void:
 		Settings.profile.global_variables.add_variable(frame.name, frame.value)
 	else:
 		local_variables.add_variable(frame.name, frame.value)
+	next_frame()
 
 
 func condition(frame: RSEFrameCondition) -> void:
@@ -186,6 +223,8 @@ func _on_text_box_finished():
 	var character = scene_builder.get_characeter_by_id(speaker.id)
 	if character != null:
 		character.stop_talk()
+	if current_frame is RSEFrameText:
+		auto_play_time = float(current_frame.text.length()) / Settings.auto_speed
 
 
 func _on_pause_pressed() -> void:

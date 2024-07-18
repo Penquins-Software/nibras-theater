@@ -45,6 +45,11 @@ var text_speed: int = 40 : set = _set_text_speed
 const MIN_TEXT_SPEED: int = 20
 const MAX_TEXT_SPEED: int = 80
 
+## Скорость автоматического переключения кадров. Измеряется в символах на секунду после показа текста.
+var auto_speed: int = 20 : set = _set_auto_speed
+const MIN_AUTO_SPEED: int = 10
+const MAX_AUTO_SPEED: int = 60
+
 
 func _set_player_name(new_name: String) -> void:
 	player_name = new_name
@@ -99,6 +104,16 @@ func _set_text_speed(value: int) -> void:
 
 	text_speed = value
 	print("Text speed: %s." % text_speed);
+
+
+func _set_auto_speed(value: int) -> void:
+	if value < MIN_AUTO_SPEED:
+		value = MIN_AUTO_SPEED
+	elif value > MAX_AUTO_SPEED:
+		value = MAX_AUTO_SPEED
+
+	auto_speed = value
+	print("Auto speed: %s." % auto_speed);
 
 
 func _enter_tree():

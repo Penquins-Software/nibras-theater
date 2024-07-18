@@ -42,6 +42,11 @@ func make_save() -> void:
 	continue_game()
 
 
+func _on_frame_player_selection_started():
+	screenshoot = get_viewport().get_texture().get_image()
+	SaveManager.create_autosave(screenshoot, frame_player.episode.id, frame_player.current_frame_index, local_variables.data)
+
+
 func pause_game() -> void:
 	screenshoot = get_viewport().get_texture().get_image()
 	pause_menu.visible = true
@@ -55,5 +60,5 @@ func continue_game() -> void:
 
 
 func return_to_menu() -> void:
+	SaveManager.create_autosave(screenshoot, frame_player.episode.id, frame_player.current_frame_index, local_variables.data)
 	get_tree().change_scene_to_file(path_to_menu_scene)
-

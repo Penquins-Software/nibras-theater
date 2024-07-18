@@ -15,6 +15,13 @@ func add_variable(variable_name: String, value = null) -> void:
 			data["Flags"].append(variable_name)
 
 
+func remove_variable(variable_name: String, _value = null) -> void:
+	if data.has(variable_name):
+		data.erase(variable_name)
+	elif data.has("Flags") and data["Flags"].has(variable_name):
+		data["Flags"].erase(variable_name)
+
+
 func is_variable(variable_name: String, value = null) -> bool:
 	if not data.has(variable_name):
 		return false

@@ -8,7 +8,7 @@ offset_right = 400.0
 offset_bottom = 100.0
 script = ExtResource("1_xq2kt")
 image = NodePath("Image")
-label = NodePath("Panel/MarginContainer/Info/Label")
+label = NodePath("Panel/MarginContainer/Info/RichTextLabel")
 
 [node name="Image" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(0, 100)
@@ -38,11 +38,14 @@ theme_override_constants/margin_bottom = 8
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/Info"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/Info"]
 layout_mode = 2
 size_flags_vertical = 6
+bbcode_enabled = true
 text = "Тестовый эпизод
 16.07.2024"
+fit_content = true
+scroll_active = false
 
 [node name="Buttons" type="HBoxContainer" parent="Panel/MarginContainer/Info"]
 layout_mode = 2

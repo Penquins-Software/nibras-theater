@@ -20,6 +20,7 @@ path_to_menu_scene = "res://scenes/menu.tscn"
 visible = false
 
 [connection signal="pause" from="FramePlayer/FramePlayer" to="." method="pause_game"]
+[connection signal="selection_started" from="FramePlayer/FramePlayer" to="." method="_on_frame_player_selection_started"]
 [connection signal="continue_game" from="Pause/Pause" to="." method="continue_game"]
 [connection signal="load_save" from="Pause/Pause" to="." method="load_save"]
 [connection signal="return_to_menu" from="Pause/Pause" to="." method="return_to_menu"]
