@@ -93,3 +93,10 @@ func add_text(text: String, speaker: String = "", speaker_color: Color = Color.W
 	ready_to_next_frame = false
 	marker.hide()
 	marker_mode = mode
+
+
+func clear() -> void:
+	speaker_label.text = ""
+	text_label.text = ""
+	print_time = 0
+	text_label.visible_characters = 0

@@ -20,6 +20,7 @@ enum FrameType {
 	Voice,
 	Gap,
 	EndCondition,
+	Transitition,
 }
 
 
@@ -70,7 +71,6 @@ static func load_frame_from_dictionary(data: Dictionary) -> RSEFrame:
 		"RSEFrameLocation":
 			var frame = RSEFrameLocation.new()
 			frame.location_id = data["location_id"]
-			frame.transitition_id = data["transitition_id"]
 			return frame
 		"RSEFrameMusic":
 			var frame = RSEFrameMusic.new()
@@ -114,6 +114,10 @@ static func load_frame_from_dictionary(data: Dictionary) -> RSEFrame:
 			return frame
 		"RSEFrameEndCondition":
 			var frame = RSEFrameEndCondition.new()
+			return frame
+		"RSEFrameTransitition":
+			var frame = RSEFrameTransitition.new()
+			frame.transitition_id = data["transitition_id"]
 			return frame
 	return null
 

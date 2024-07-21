@@ -37,13 +37,16 @@ var order: int = 0 : set = _set_order
 
 func _set_flip_h(value: bool) -> void:
 	flip_h = value
-	_set_flip_h_forr_all_sprites()
+	_set_flip_h_for_all_sprites()
 
 
-func _set_flip_h_forr_all_sprites() -> void:
-	tors.flip_h = flip_h
-	eyes.flip_h = flip_h
-	mouth.flip_h = flip_h
+func _set_flip_h_for_all_sprites() -> void:
+	if tors:
+		tors.flip_h = flip_h
+	if eyes:
+		eyes.flip_h = flip_h
+	if mouth:
+		mouth.flip_h = flip_h
 
 
 func _set_order(order_index: int) -> void:
@@ -52,9 +55,12 @@ func _set_order(order_index: int) -> void:
 
 
 func _set_order_for_all_sprites() -> void:
-	tors.z_index = order
-	eyes.z_index = order
-	mouth.z_index = order
+	if tors:
+		tors.z_index = order
+	if eyes:
+		eyes.z_index = order
+	if mouth:
+		mouth.z_index = order
 
 
 func reset() -> void:
@@ -67,6 +73,9 @@ func reset() -> void:
 
 
 func _ready():
+	if emotion_ids_to_anim_names.size() < 1:
+		return
+	
 	anim_name = emotion_ids_to_anim_names.values()[0]
 	pass
 
@@ -87,11 +96,12 @@ func set_emotion(emotion_id: int) -> bool:
 	if emotion == character.emotions[str(emotion_id)]:
 		return false
 	
-	if emotion_ids_to_anim_names.keys().has(emotion_id):
-		emotion = character.emotions[str(emotion_id)]
-		anim_name = emotion_ids_to_anim_names[emotion_id]
-	else:
-		anim_name = emotion_ids_to_anim_names.values()[0]
+	if emotion_ids_to_anim_names.size() > 0:
+		if emotion_ids_to_anim_names.keys().has(emotion_id):
+			emotion = character.emotions[str(emotion_id)]
+			anim_name = emotion_ids_to_anim_names[emotion_id]
+		else:
+			anim_name = emotion_ids_to_anim_names.values()[0]
 	
 	_set_emotion_for_all_parts()
 	return true

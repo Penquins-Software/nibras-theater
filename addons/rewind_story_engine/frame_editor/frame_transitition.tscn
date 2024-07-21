@@ -1,18 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://cv0a4n5wno7tt"]
+[gd_scene load_steps=4 format=3 uid="uid://bl1bjwfvi8dri"]
 
-[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_editor_location.gd" id="1_g6rbw"]
-[ext_resource type="Texture2D" uid="uid://d20heugf3uamj" path="res://addons/rewind_story_engine/icons/Environment.svg" id="3_6yhmt"]
-[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_dragger.gd" id="3_8xf38"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_editor_transitition.gd" id="1_nqwgm"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/frame_editor/source/frame_dragger.gd" id="3_n5xxl"]
+[ext_resource type="Texture2D" uid="uid://c6r6j6xdpb42s" path="res://addons/rewind_story_engine/icons/AnimationLibrary.svg" id="4_hafc7"]
 
-[node name="FrameLocation" type="MarginContainer" node_paths=PackedStringArray("location", "highlight", "dragger", "index_label")]
+[node name="FrameTransitition" type="MarginContainer" node_paths=PackedStringArray("transitiion", "highlight", "dragger", "index_label")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 2
-script = ExtResource("1_g6rbw")
-location = NodePath("MarginContainer/HBoxContainer/Location")
+script = ExtResource("1_nqwgm")
+transitiion = NodePath("MarginContainer/HBoxContainer/Transition")
 highlight = NodePath("Highlight")
 dragger = NodePath("MarginContainer/HBoxContainer/Icon/TextureRect")
 index_label = NodePath("MarginContainer/HBoxContainer/Index/Label")
@@ -75,15 +75,15 @@ offset_top = 8.0
 offset_right = 8.0
 offset_bottom = 24.0
 grow_horizontal = 2
-tooltip_text = "Локация"
+tooltip_text = "Эффект перехода"
 mouse_default_cursor_shape = 6
-texture = ExtResource("3_6yhmt")
-script = ExtResource("3_8xf38")
+texture = ExtResource("4_hafc7")
+script = ExtResource("3_n5xxl")
 
-[node name="Location" type="MenuButton" parent="MarginContainer/HBoxContainer"]
+[node name="Transition" type="MenuButton" parent="MarginContainer/HBoxContainer"]
 custom_minimum_size = Vector2(0, 32)
 layout_mode = 2
 size_flags_vertical = 0
 mouse_filter = 1
-text = "[Локация]"
+text = "[Переход]"
 flat = false

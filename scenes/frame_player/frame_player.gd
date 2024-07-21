@@ -30,6 +30,7 @@ var rewind_block: bool = false
 var auto_play_time: float = 0.0
 var auto_play: bool = false
 var is_pause: bool = false
+var is_transitition: bool = false
 
 var is_mouse_on_gui: bool = false 
 
@@ -44,6 +45,9 @@ func _input(event):
 		return
 	
 	if logger.visible:
+		return
+	
+	if is_transitition:
 		return
 	
 	if event.is_action_pressed("next_frame") and not is_mouse_on_gui:
@@ -105,9 +109,12 @@ func set_episode(ep: RSEEpisode, build_first_frame: bool = true) -> void:
 
 
 func next_frame() -> void:
-	if current_frame_index > -1:
-		history.append([episode.id, current_frame_index])
+	var prev_frame_index = current_frame_index
 	current_frame_index = scene_builder.next_frame()
+	if prev_frame_index == current_frame_index:
+		return
+	if prev_frame_index > -1:
+		history.append([episode.id, prev_frame_index])
 	var frame: RSEFrame = episode.real_frames[current_frame_index]
 	build_frame(frame)
 
@@ -133,6 +140,8 @@ func prev_frame() -> void:
 		else:
 			local_variables.remove_variable(frame.name)
 		prev_frame()
+	elif frame is RSEFrameTransitition:
+		prev_frame()
 	else:
 		build_frame(frame, true)
 
@@ -157,6 +166,8 @@ func build_frame(frame: RSEFrame, is_immediately: bool = false) -> void:
 		variable(frame)
 	elif frame is RSEFrameCondition:
 		condition(frame)
+	elif frame is RSEFrameTransitition:
+		do_transitition(frame)
 
 
 func show_text_frame(frame: RSEFrameText, is_immediately: bool = false) -> void:
@@ -210,6 +221,20 @@ func condition(frame: RSEFrameCondition) -> void:
 	else:
 		var real_frame_index = episode.get_next_real_frame_index(frame.end)
 		set_frame(real_frame_index)
+
+
+func do_transitition(frame: RSEFrameTransitition) -> void:
+	is_transitition = true
+	text_box.clear()
+	#text_box.hide()
+	var transitition: RSETransitition = RewindStoryEngine.story.transititions[frame.transitition_id]
+	var transitition_controller = load(transitition.path_to_scene).instantiate() as RSEBaseTransititionController
+	add_child(transitition_controller)
+	transitition_controller.play()
+	await transitition_controller.ended
+	is_transitition = false
+	#text_box.show()
+	next_frame()
 
 
 func _on_selection_menu_option_selected(option_id):

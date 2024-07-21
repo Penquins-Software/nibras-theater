@@ -161,8 +161,6 @@ func add_character(character: RSECharacter) -> RSEBaseCharacterController:
 	var character_node: RSEBaseCharacterController = load(character.path_to_scene).instantiate()
 	character_node.character = character
 	add_child(character_node)
-	character_node.scale = Vector2(3, 3)
-	character_node.position += Vector2(0, 200)
 	characters[character.id] = character_node
 	Node2DDragger.new(character_node)
 	return character_node

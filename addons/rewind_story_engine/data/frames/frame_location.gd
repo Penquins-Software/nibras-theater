@@ -3,7 +3,6 @@ extends RSEFrame
 
 
 var location_id: int = 0
-var transitition_id: int = 0
 
 
 func write_frame_info_to_scene_state(scene_state: RSESceneState) -> void:
@@ -18,5 +17,4 @@ func save_frame_to_dictionary() -> Dictionary:
 	return {
 		"type" : "RSEFrameLocation",
 		"location_id" : location_id,
-		"transitition_id" : transitition_id,
 	}

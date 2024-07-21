@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://b2epl80ky403a"]
+[gd_scene load_steps=21 format=3 uid="uid://b2epl80ky403a"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/episode_editor/episode_editor.gd" id="1_yd1o8"]
 [ext_resource type="Script" path="res://addons/rewind_story_engine/episode_editor/frames_container.gd" id="2_6elk6"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dmgjl8q6dbbe0" path="res://addons/rewind_story_engine/icons/AudioStreamMP3.svg" id="8_5c2gm"]
 [ext_resource type="Texture2D" uid="uid://b2w4b3mq858qi" path="res://addons/rewind_story_engine/icons/AudioStreamPlayer.svg" id="9_s4bcu"]
 [ext_resource type="Texture2D" uid="uid://fw4l7xhfxbo0" path="res://addons/rewind_story_engine/icons/bool.svg" id="10_rsjou"]
+[ext_resource type="Texture2D" uid="uid://c6r6j6xdpb42s" path="res://addons/rewind_story_engine/icons/AnimationLibrary.svg" id="10_t5tie"]
 [ext_resource type="Texture2D" uid="uid://ckary5ioiki5d" path="res://addons/rewind_story_engine/icons/Info.svg" id="11_df6tg"]
 [ext_resource type="Texture2D" uid="uid://ddv0r5ovh5msj" path="res://addons/rewind_story_engine/icons/ActionCopy.svg" id="11_j5sjk"]
 [ext_resource type="Texture2D" uid="uid://c14siym04ftl5" path="res://addons/rewind_story_engine/icons/Variant.svg" id="12_fes7q"]
@@ -215,6 +216,12 @@ mouse_default_cursor_shape = 2
 text = "Визуальный эффект"
 icon = ExtResource("7_b1k2j")
 
+[node name="Transitition" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer2"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Эффект перехода"
+icon = ExtResource("10_t5tie")
+
 [node name="HSeparator3" type="HSeparator" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -373,6 +380,7 @@ item_5/id = 5
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer/Jump" to="." method="_add_frame_jump"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer/Gap" to="." method="_add_frame_gap"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer2/Visual" to="." method="_add_frame_visual_effect"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer2/Transitition" to="." method="_add_frame_transitition"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3/Audio" to="." method="_add_frame_sound"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3/Music" to="." method="_add_frame_music"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3/Voice" to="." method="_add_frame_voice"]

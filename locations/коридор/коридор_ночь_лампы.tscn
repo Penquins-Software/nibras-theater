@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7wrb02tybl6n"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_srwmw"]
+[ext_resource type="Texture2D" uid="uid://bfd73oori7l33" path="res://locations/коридор/ночь_лампы.jpg" id="2_s87is"]
+
+[node name="КоридорНочьЛампы" type="Node2D"]
+script = ExtResource("1_srwmw")
+
+[node name="День" type="Sprite2D" parent="."]
+texture = ExtResource("2_s87is")
