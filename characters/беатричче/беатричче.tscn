@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0wfq246knjj7"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_56mej"]
+[ext_resource type="Texture2D" uid="uid://b0iqd5x8erkqf" path="res://characters/беатричче/Bea_a11_1_hajirai1.webp" id="1_st768"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/bleep_player.gd" id="3_3huab"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7a1sn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_st768")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Беатричче" type="Node2D" node_paths=PackedStringArray("body", "tors", "bleep_player")]
+script = ExtResource("1_56mej")
+body = NodePath("AnimatedSprite2D")
+tors = NodePath("AnimatedSprite2D")
+bleep_player = NodePath("BleepPlayer")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7a1sn")
+
+[node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
+script = ExtResource("3_3huab")

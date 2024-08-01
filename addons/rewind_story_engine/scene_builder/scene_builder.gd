@@ -4,11 +4,15 @@ extends Node2D
 
 
 signal last_frame()
+signal music(music_id: int)
+signal bgs(bgs_id: int, status: bool)
 
 
 var episode: RSEEpisode
 var current_frame_index: int = -1
 
+var current_music_id: int = -1
+var current_bgs_ids: Array[int] = []
 
 var camera_controller: RSEBaseCameraController
 
@@ -29,11 +33,12 @@ func set_episode(episode: RSEEpisode) -> void:
 	
 	camera_controller = RSEBaseCameraController.new()
 	add_child(camera_controller)
-	camera_controller.camera.make_current()
 	
 	if Engine.is_editor_hint():
 		camera_controller.add_border()
 		Node2DDragger.new(camera_controller)
+	else:
+		camera_controller.camera.make_current()
 
 
 func clear_scene() -> void:
@@ -48,6 +53,9 @@ func clear_scene() -> void:
 	characters.clear()
 	visual_effects.clear()
 	sound_effects.clear()
+	
+	current_music_id = -1
+	current_bgs_ids.clear()
 
 
 func prev_frame() -> int:
@@ -132,6 +140,19 @@ func build_frame(frame: RSEFrame, is_next: bool) -> void:
 		if not visual_effects.has(visual_effect_id):
 			add_visual_effect(episode.story.visual_effects[visual_effect_id])
 	
+	if current_music_id != scene_state.music_id:
+		current_music_id = scene_state.music_id
+		music.emit(current_music_id)
+	
+	for bgs_id in current_bgs_ids:
+		if not scene_state.sound_effect_ids.has(bgs_id):
+			current_bgs_ids.erase(bgs_id)
+			bgs.emit(bgs_id, false)
+	for bgs_id in scene_state.sound_effect_ids:
+		if not current_bgs_ids.has(bgs_id):
+			current_bgs_ids.append(bgs_id)
+			bgs.emit(bgs_id, true)
+	
 	apply_scene_preset()
 	show_frame_info()
 
@@ -179,6 +200,9 @@ func add_visual_effect(visual_effect: RSEVisualEffect) -> RSEBaseVisualEffectCon
 
 
 func save_scene_preset() -> void:
+	if not Engine.is_editor_hint():
+		return
+	
 	if episode == null:
 		return
 

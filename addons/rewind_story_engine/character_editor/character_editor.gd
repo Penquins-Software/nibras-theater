@@ -21,6 +21,9 @@ const OUTFIT_TEXT: String = "Костюм: %s"
 @export var character_open_scene_file_dialog: FileDialog
 @export var character_path_label: Label
 
+@export var character_open_bleep_file_dialog: FileDialog
+@export var character_bleep_label: Label
+
 @export var emotion_container: Control
 @export var outfit_container: Control
 
@@ -51,6 +54,7 @@ func _set_character(ch: RSECharacter) -> void:
 	character_display_name_checkbox.button_pressed = ch.main_name_for_display_name
 	character_color_picker_button.color = ch.color
 	character_path_label.text = ch.path_to_scene
+	character_bleep_label.text = ch.path_to_bleep_sound
 	_set_emotions()
 	_set_outfits()
 	_set_preview()
@@ -261,3 +265,23 @@ func _remove_requset(sender) -> void:
 
 func _on_confirmation_dialog_confirmed():
 	remove_request_sender.remove()
+
+
+func _on_erase_bleep_pressed():
+	if character == null:
+		return
+	
+	character_bleep_label.text = ""
+	character.path_to_bleep_sound = ""
+
+
+func _on_open_bleep_pressed():
+	character_open_bleep_file_dialog.show()
+
+
+func _on_bleep_file_dialog_file_selected(path):
+	if character == null:
+		return
+
+	character_bleep_label.text = path
+	character.path_to_bleep_sound = path

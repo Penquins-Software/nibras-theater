@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://addons/rewind_story_engine/camera_info.gd" id="4_8m615"]
 [ext_resource type="Script" path="res://addons/rewind_story_engine/camera_2d_dragging.gd" id="4_y10jn"]
 
-[node name="CharacterEditor" type="Control" node_paths=PackedStringArray("character_item_list", "character_name_line_edit", "character_display_name_line_edit", "character_display_name_checkbox", "character_color_picker_button", "character_open_scene_file_dialog", "character_path_label", "emotion_container", "outfit_container", "character_preview_viewport", "character_preview_camera", "character_preview_emotion_label", "character_preview_outfit_label", "confirmation_dialog")]
+[node name="CharacterEditor" type="Control" node_paths=PackedStringArray("character_item_list", "character_name_line_edit", "character_display_name_line_edit", "character_display_name_checkbox", "character_color_picker_button", "character_open_scene_file_dialog", "character_path_label", "character_open_bleep_file_dialog", "character_bleep_label", "emotion_container", "outfit_container", "character_preview_viewport", "character_preview_camera", "character_preview_emotion_label", "character_preview_outfit_label", "confirmation_dialog")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,8 +21,10 @@ character_name_line_edit = NodePath("HSplitContainer/HSplitContainer/Editor/Name
 character_display_name_line_edit = NodePath("HSplitContainer/HSplitContainer/Editor/DisplayName/Panel/LineEdit")
 character_display_name_checkbox = NodePath("HSplitContainer/HSplitContainer/Editor/DisplayName/CheckBox")
 character_color_picker_button = NodePath("HSplitContainer/HSplitContainer/Editor/Color/ColorPickerButton")
-character_open_scene_file_dialog = NodePath("FileDialog")
+character_open_scene_file_dialog = NodePath("SceneFileDialog")
 character_path_label = NodePath("HSplitContainer/HSplitContainer/Editor/PathToScene/Panel/Path")
+character_open_bleep_file_dialog = NodePath("BleepFileDialog")
+character_bleep_label = NodePath("HSplitContainer/HSplitContainer/Editor/PathToBleep/Panel/Path")
 emotion_container = NodePath("HSplitContainer/HSplitContainer/Editor/HBoxContainer/Emotions/Panel/ScrollContainer/MarginContainer/VBoxContainer")
 outfit_container = NodePath("HSplitContainer/HSplitContainer/Editor/HBoxContainer/Outfits/Panel/ScrollContainer/MarginContainer/VBoxContainer")
 character_preview_viewport = NodePath("HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer/SubViewport")
@@ -143,6 +145,39 @@ vertical_alignment = 1
 clip_text = true
 
 [node name="Erase" type="Button" parent="HSplitContainer/HSplitContainer/Editor/PathToScene"]
+layout_mode = 2
+icon = ExtResource("3_qn8xw")
+
+[node name="PathToBleep" type="HBoxContainer" parent="HSplitContainer/HSplitContainer/Editor"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="HSplitContainer/HSplitContainer/Editor/PathToBleep"]
+layout_mode = 2
+text = "Путь к звуку блипа:"
+
+[node name="OpenFile" type="Button" parent="HSplitContainer/HSplitContainer/Editor/PathToBleep"]
+layout_mode = 2
+text = "Выбрать файл"
+icon = ExtResource("2_1puhp")
+
+[node name="Panel" type="Panel" parent="HSplitContainer/HSplitContainer/Editor/PathToBleep"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Path" type="Label" parent="HSplitContainer/HSplitContainer/Editor/PathToBleep/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+vertical_alignment = 1
+clip_text = true
+
+[node name="Erase" type="Button" parent="HSplitContainer/HSplitContainer/Editor/PathToBleep"]
 layout_mode = 2
 icon = ExtResource("3_qn8xw")
 
@@ -327,13 +362,21 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 6
 text = "Костюм: -"
 
-[node name="FileDialog" type="FileDialog" parent="."]
+[node name="SceneFileDialog" type="FileDialog" parent="."]
 title = "Open a File"
 initial_position = 4
 size = Vector2i(600, 400)
 ok_button_text = "Открыть"
 file_mode = 0
 filters = PackedStringArray("*.tscn")
+
+[node name="BleepFileDialog" type="FileDialog" parent="."]
+title = "Open a File"
+initial_position = 4
+size = Vector2i(600, 400)
+ok_button_text = "Открыть"
+file_mode = 0
+filters = PackedStringArray("*.ogg", "*.wav", "*.mp3")
 
 [node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
 initial_position = 4
@@ -346,11 +389,14 @@ dialog_text = "Вы уверены?"
 [connection signal="color_changed" from="HSplitContainer/HSplitContainer/Editor/Color/ColorPickerButton" to="." method="_on_color_picker_color_changed"]
 [connection signal="pressed" from="HSplitContainer/HSplitContainer/Editor/PathToScene/OpenFile" to="." method="_on_open_scene_pressed"]
 [connection signal="pressed" from="HSplitContainer/HSplitContainer/Editor/PathToScene/Erase" to="." method="_on_erase_pressed"]
+[connection signal="pressed" from="HSplitContainer/HSplitContainer/Editor/PathToBleep/OpenFile" to="." method="_on_open_bleep_pressed"]
+[connection signal="pressed" from="HSplitContainer/HSplitContainer/Editor/PathToBleep/Erase" to="." method="_on_erase_bleep_pressed"]
 [connection signal="pressed" from="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Emotions/Panel/ScrollContainer/MarginContainer/VBoxContainer/Button" to="." method="_on_add_emotion_button_pressed"]
 [connection signal="pressed" from="HSplitContainer/HSplitContainer/Editor/HBoxContainer/Outfits/Panel/ScrollContainer/MarginContainer/VBoxContainer/Button" to="." method="_on_add_outfit_button_pressed"]
 [connection signal="gui_input" from="HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer" to="." method="_on_sub_viewport_container_gui_input"]
 [connection signal="pressed" from="HSplitContainer/HSplitContainer/Preview/Panel/PreviewSettings/ResetCamera" to="." method="_on_reset_camera_pressed"]
 [connection signal="toggled" from="HSplitContainer/HSplitContainer/Preview/Panel/PreviewSettings/EyesAnimation" to="." method="_on_eyes_animation_toggled"]
 [connection signal="toggled" from="HSplitContainer/HSplitContainer/Preview/Panel/PreviewSettings/MouthAnimation" to="." method="_on_mouth_animation_toggled"]
-[connection signal="file_selected" from="FileDialog" to="." method="_on_scene_dialog_file_selected"]
+[connection signal="file_selected" from="SceneFileDialog" to="." method="_on_scene_dialog_file_selected"]
+[connection signal="file_selected" from="BleepFileDialog" to="." method="_on_bleep_file_dialog_file_selected"]
 [connection signal="confirmed" from="ConfirmationDialog" to="." method="_on_confirmation_dialog_confirmed"]

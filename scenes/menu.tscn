@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=8 format=3 uid="uid://1ldra2lpi55u"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_h3ser"]
 [ext_resource type="PackedScene" uid="uid://7bfnwn4tg3f3" path="res://scenes/game.tscn" id="2_i8b50"]
 [ext_resource type="Script" path="res://source/main_menu/main_menu_button.gd" id="3_sfhbu"]
+[ext_resource type="Theme" uid="uid://b20uw8pswcq8l" path="res://theme.tres" id="4_w7rwt"]
 [ext_resource type="PackedScene" uid="uid://c1njjadxa43bg" path="res://scenes/settings.tscn" id="5_7o1gw"]
 [ext_resource type="PackedScene" uid="uid://beneekmk33mka" path="res://scenes/save_manager/save_list.tscn" id="5_rnans"]
 
@@ -45,30 +46,36 @@ grow_vertical = 2
 
 [node name="Начать игру" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_w7rwt")
 text = "Начать игру"
 
 [node name="Продолжить" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_w7rwt")
 text = "Продолжить"
 
 [node name="Загрузить игру" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
+theme = ExtResource("4_w7rwt")
 text = "Загрузить игру"
 script = ExtResource("3_sfhbu")
 menu_element_to_show = NodePath("../../../Загрузить игру")
 
 [node name="Галерея" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_w7rwt")
 disabled = true
 text = "Галерея"
 
 [node name="Экстра" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_w7rwt")
 disabled = true
 text = "Экстра"
 
 [node name="Настройки" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
+theme = ExtResource("4_w7rwt")
 text = "Настройки
 "
 script = ExtResource("3_sfhbu")
@@ -76,12 +83,14 @@ menu_element_to_show = NodePath("../../../Настройки")
 
 [node name="Авторы" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
+theme = ExtResource("4_w7rwt")
 text = "Авторы"
 script = ExtResource("3_sfhbu")
 menu_element_to_show = NodePath("../../../Авторы")
 
 [node name="Выйти" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_w7rwt")
 text = "Выйти"
 
 [node name="Загрузить игру" parent="." instance=ExtResource("5_rnans")]
@@ -112,11 +121,12 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -300.0
-offset_top = -244.0
+offset_top = -380.0
 offset_right = 300.0
-offset_bottom = -221.0
+offset_bottom = -346.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("4_w7rwt")
 text = "Авторы"
 horizontal_alignment = 1
 
@@ -137,6 +147,7 @@ grow_vertical = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Авторы/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_w7rwt")
 bbcode_enabled = true
 text = "[center]Разработка: [url=https://ozkitsune.itch.io/]O3ZY[/url]
 Сценарий: [url=https://itch.io/profile/aki-ona]Akiona[/url]
@@ -152,13 +163,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -80.0
-offset_top = 223.0
-offset_right = 80.0
-offset_bottom = 254.0
+offset_left = -118.5
+offset_top = 338.0
+offset_right = 118.5
+offset_bottom = 380.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
+theme = ExtResource("4_w7rwt")
 text = "Вернуться в меню "
 
 [connection signal="return_was_pressed" from="Главный экран" to="." method="_show_main_menu"]

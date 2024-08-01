@@ -43,8 +43,9 @@ func make_save() -> void:
 
 
 func _on_frame_player_selection_started():
-	screenshoot = get_viewport().get_texture().get_image()
-	SaveManager.create_autosave(screenshoot, frame_player.episode.id, frame_player.current_frame_index, local_variables.data)
+	pass
+	#screenshoot = get_viewport().get_texture().get_image()
+	#SaveManager.create_autosave(screenshoot, frame_player.episode.id, frame_player.current_frame_index, local_variables.data)
 
 
 func pause_game() -> void:

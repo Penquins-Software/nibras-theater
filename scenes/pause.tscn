@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://cka2t7km7vv8b"]
+[gd_scene load_steps=9 format=3 uid="uid://cka2t7km7vv8b"]
 
 [ext_resource type="Script" path="res://source/pause.gd" id="1_cwqt0"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_6swir"]
 [ext_resource type="PackedScene" uid="uid://c1njjadxa43bg" path="res://scenes/settings.tscn" id="2_1824l"]
+[ext_resource type="Theme" uid="uid://b20uw8pswcq8l" path="res://theme.tres" id="3_0581p"]
 [ext_resource type="Script" path="res://source/main_menu/main_menu_button.gd" id="3_jcada"]
 [ext_resource type="PackedScene" uid="uid://beneekmk33mka" path="res://scenes/save_manager/save_list.tscn" id="5_00ptl"]
 
@@ -48,28 +49,33 @@ script = ExtResource("2_6swir")
 
 [node name="Продолжить" type="Button" parent="Главный экран"]
 layout_mode = 2
+theme = ExtResource("3_0581p")
 shortcut = SubResource("Shortcut_pytoy")
 shortcut_in_tooltip = false
 text = "Продолжить"
 
 [node name="Сохранить игру" type="Button" parent="Главный экран"]
 layout_mode = 2
+theme = ExtResource("3_0581p")
 text = "Сохранить игру"
 
 [node name="Загрузить игру" type="Button" parent="Главный экран" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
+theme = ExtResource("3_0581p")
 text = "Загрузить игру"
 script = ExtResource("3_jcada")
 menu_element_to_show = NodePath("../../Загрузить игру")
 
 [node name="Настройки" type="Button" parent="Главный экран" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
+theme = ExtResource("3_0581p")
 text = "Настройки"
 script = ExtResource("3_jcada")
 menu_element_to_show = NodePath("../../Настройки")
 
 [node name="Выйти в меню" type="Button" parent="Главный экран"]
 layout_mode = 2
+theme = ExtResource("3_0581p")
 text = "Выйти в меню"
 
 [node name="Настройки" parent="." instance=ExtResource("2_1824l")]

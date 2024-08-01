@@ -234,7 +234,13 @@ fit_content = true
 [node name="HFlowContainer3" type="HFlowContainer" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Audio" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3"]
+[node name="BGS" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Фоновый звук"
+icon = ExtResource("8_5c2gm")
+
+[node name="SFX" type="Button" parent="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3"]
 layout_mode = 2
 mouse_default_cursor_shape = 2
 text = "Звуковой эффект"
@@ -381,7 +387,8 @@ item_5/id = 5
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer/Gap" to="." method="_add_frame_gap"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer2/Visual" to="." method="_add_frame_visual_effect"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer2/Transitition" to="." method="_add_frame_transitition"]
-[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3/Audio" to="." method="_add_frame_sound"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3/BGS" to="." method="_add_frame_sound"]
+[connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3/SFX" to="." method="_add_frame_sfx"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3/Music" to="." method="_add_frame_music"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer3/Voice" to="." method="_add_frame_voice"]
 [connection signal="pressed" from="HSplitContainer/HBoxContainer/FrameList/MarginContainer/ScrollContainer/VBoxContainer/HFlowContainer4/Condition" to="." method="_add_frame_condition"]

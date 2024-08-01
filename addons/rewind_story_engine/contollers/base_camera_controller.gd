@@ -10,6 +10,7 @@ var border: Camera2DBorder
 func _init():
 	camera = Camera2D.new()
 	camera.position_smoothing_enabled = true ## Нужно настроить скорость.
+	camera.rotation_smoothing_enabled = true
 	add_child(camera)
 
 

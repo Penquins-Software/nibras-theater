@@ -19,9 +19,10 @@ extends RSEBaseController
 @export var eyes_frame_open: int
 @export var eyes_frame_close: int
 @export var default_emotion: String = "default"
+@export var bleep_player: BleepPlayer
 
 
-var character: RSECharacter
+var character: RSECharacter : set = _set_character
 var emotion: String
 var anim_name: StringName
 
@@ -33,6 +34,15 @@ var blinking_time: float = 1.0
 
 var flip_h: bool = false : set = _set_flip_h
 var order: int = 0 : set = _set_order
+
+
+func _set_character(ch: RSECharacter) -> void:
+	character = ch
+	
+	if bleep_player != null:
+		var bleep = load(ch.path_to_bleep_sound)
+		if bleep is AudioStream:
+			bleep_player.stream = bleep
 
 
 func _set_flip_h(value: bool) -> void:
@@ -130,6 +140,9 @@ func talk_with_audio(audio: AudioStream) -> void:
 
 
 func start_talk() -> void:
+	if bleep_player != null:
+		bleep_player._play()
+	
 	if anim_name == null:
 		return
 	
@@ -138,6 +151,9 @@ func start_talk() -> void:
 
 
 func stop_talk() -> void:
+	if bleep_player != null:
+		bleep_player._stop()
+	
 	if mouth != null:
 		mouth.stop()
 		talking = false

@@ -17,26 +17,28 @@
    "outfits": {
     "0": "Default"
    },
+   "path_to_bleep_sound": "res://audio/bleep/low_blip_voice.wav",
    "path_to_scene": ""
   },
   {
-   "active": false,
+   "active": true,
    "color_a": 1,
-   "color_b": 0.745098054409027,
-   "color_g": 0.745098054409027,
-   "color_r": 0.745098054409027,
+   "color_b": 0.081573486328125,
+   "color_g": 0.081573486328125,
+   "color_r": 0.7734375,
    "description": "",
-   "display_name": "",
+   "display_name": "Беатриче",
    "emotions": {
     "0": "Normal"
    },
    "id": 13,
    "main_name_for_display_name": true,
-   "name": "",
+   "name": "Беатриче",
    "outfits": {
     "0": "Default"
    },
-   "path_to_scene": ""
+   "path_to_bleep_sound": "res://audio/bleep/low_blip_synth.wav",
+   "path_to_scene": "res://characters/беатричче/беатричче.tscn"
   },
   {
    "active": true,
@@ -55,6 +57,7 @@
    "outfits": {
     "0": "Default"
    },
+   "path_to_bleep_sound": "res://audio/bleep/low_blip_voice.wav",
    "path_to_scene": "res://characters/смолл/смолл.tscn"
   }
  ],
@@ -107,8 +110,8 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 2,
+      "zoom": 0.5
      },
      "character_transforms": {
 
@@ -128,8 +131,8 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 2,
+      "zoom": 0.5
      },
      "character_transforms": {
 
@@ -149,8 +152,8 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 2,
+      "zoom": 0.5
      },
      "character_transforms": {
 
@@ -170,8 +173,8 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 2,
+      "zoom": 0.5
      },
      "character_transforms": {
 
@@ -191,8 +194,8 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 2,
+      "zoom": 0.5
      },
      "character_transforms": {
 
@@ -215,6 +218,10 @@
    "description": "",
    "frames": [
     {
+     "music_id": 22,
+     "type": "RSEFrameMusic"
+    },
+    {
      "action": 1,
      "character_id": 19,
      "emotion_id": 0,
@@ -236,6 +243,11 @@
     },
     {
      "type": "RSEFrameGap"
+    },
+    {
+     "sound_id": 23,
+     "status": false,
+     "type": "RSEFrameSoundEffect"
     },
     {
      "speaker_id": 2,
@@ -273,8 +285,8 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 2,
+      "zoom": 0.5
      },
      "character_transforms": {
       "19": {
@@ -302,8 +314,8 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 2,
+      "zoom": 0.5
      },
      "character_transforms": {
       "19": {
@@ -331,8 +343,43 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "19": {
+       "flip_h": false,
+       "id": 19,
+       "order": 0,
+       "position_x": -1114,
+       "position_y": 1487,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+      "21": {
+       "id": 21,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
      },
      "character_transforms": {
       "19": {
@@ -360,8 +407,8 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 2,
+      "zoom": 0.5
      },
      "character_transforms": {
       "19": {
@@ -389,37 +436,8 @@
       "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
-     },
-     "character_transforms": {
-      "19": {
-       "flip_h": false,
-       "id": 19,
-       "order": 0,
-       "position_x": -1114,
-       "position_y": 1487,
-       "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 2,
+      "zoom": 0.5
      },
      "character_transforms": {
       "19": {
@@ -450,8 +468,19 @@
    "description": "",
    "frames": [
     {
+     "music_id": 22,
+     "type": "RSEFrameMusic"
+    },
+    {
      "action": 1,
      "character_id": 19,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 13,
      "emotion_id": 0,
      "outfit_id": 0,
      "type": "RSEFrameCharacter"
@@ -467,7 +496,7 @@
      "value": ""
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 13,
      "text": "Проверка условий.",
      "type": "RSEFrameText"
     },
@@ -477,12 +506,12 @@
      "type": "RSEFrameCondition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 13,
      "text": "Если ЕСТЬ Value_1, то будет показан этот текст.",
      "type": "RSEFrameText"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 13,
      "text": "Ла-ла-ла...",
      "type": "RSEFrameText"
     },
@@ -500,12 +529,12 @@
      "type": "RSEFrameCondition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 13,
      "text": "Если Value_1 НЕТ, то будет показан этот текст.",
      "type": "RSEFrameText"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 13,
      "text": "Бе-бе-бе...",
      "type": "RSEFrameText"
     },
@@ -528,20 +557,29 @@
    "scene_presets": [
     {
      "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
+      "position_x": 144,
+      "position_y": -7,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 1.80000019073486,
+      "zoom": 0.555555522441864
      },
      "character_transforms": {
+      "13": {
+       "flip_h": true,
+       "id": 13,
+       "order": 0,
+       "position_x": -621,
+       "position_y": 176,
+       "rotation": 0,
+       "scale": 2.29999876022339
+      },
       "19": {
        "flip_h": false,
        "id": 19,
        "order": 0,
-       "position_x": 1092.80004882813,
-       "position_y": -80,
-       "rotation": -360,
+       "position_x": 1019.80004882813,
+       "position_y": 51,
+       "rotation": -134,
        "scale": 0.300010025501251
       }
      },
@@ -557,20 +595,29 @@
     },
     {
      "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
+      "position_x": 144,
+      "position_y": -7,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 1.80000019073486,
+      "zoom": 0.555555522441864
      },
      "character_transforms": {
+      "13": {
+       "flip_h": true,
+       "id": 13,
+       "order": 0,
+       "position_x": -621,
+       "position_y": 176,
+       "rotation": 0,
+       "scale": 2.29999876022339
+      },
       "19": {
        "flip_h": false,
        "id": 19,
        "order": 0,
-       "position_x": 1092.80004882813,
-       "position_y": -80,
-       "rotation": -360,
+       "position_x": 1019.80004882813,
+       "position_y": 51,
+       "rotation": -134,
        "scale": 0.300010025501251
       }
      },
@@ -586,20 +633,29 @@
     },
     {
      "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
+      "position_x": 88,
+      "position_y": -12,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 1.60000038146973,
+      "zoom": 0.62499988079071
      },
      "character_transforms": {
+      "13": {
+       "flip_h": true,
+       "id": 13,
+       "order": 0,
+       "position_x": -621,
+       "position_y": 176,
+       "rotation": 0,
+       "scale": 2.29999876022339
+      },
       "19": {
        "flip_h": false,
        "id": 19,
        "order": 0,
-       "position_x": 1092.80004882813,
-       "position_y": -80,
-       "rotation": -360,
+       "position_x": 1019.80004882813,
+       "position_y": 51,
+       "rotation": -134,
        "scale": 0.300010025501251
       }
      },
@@ -615,20 +671,29 @@
     },
     {
      "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
+      "position_x": 88,
+      "position_y": -12,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 1.60000038146973,
+      "zoom": 0.62499988079071
      },
      "character_transforms": {
+      "13": {
+       "flip_h": true,
+       "id": 13,
+       "order": 0,
+       "position_x": -621,
+       "position_y": 176,
+       "rotation": 0,
+       "scale": 2.29999876022339
+      },
       "19": {
        "flip_h": false,
        "id": 19,
        "order": 0,
-       "position_x": 1092.80004882813,
-       "position_y": -80,
-       "rotation": -360,
+       "position_x": 1019.80004882813,
+       "position_y": 51,
+       "rotation": -134,
        "scale": 0.300010025501251
       }
      },
@@ -644,20 +709,29 @@
     },
     {
      "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
+      "position_x": 88,
+      "position_y": -12,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 1.60000038146973,
+      "zoom": 0.62499988079071
      },
      "character_transforms": {
+      "13": {
+       "flip_h": true,
+       "id": 13,
+       "order": 0,
+       "position_x": -621,
+       "position_y": 176,
+       "rotation": 0,
+       "scale": 2.29999876022339
+      },
       "19": {
        "flip_h": false,
        "id": 19,
        "order": 0,
-       "position_x": 1092.80004882813,
-       "position_y": -80,
-       "rotation": -360,
+       "position_x": 1019.80004882813,
+       "position_y": 51,
+       "rotation": -134,
        "scale": 0.300010025501251
       }
      },
@@ -673,20 +747,29 @@
     },
     {
      "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
+      "position_x": -693,
+      "position_y": 38,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 1.09999990463257,
+      "zoom": 0.909090995788574
      },
      "character_transforms": {
+      "13": {
+       "flip_h": true,
+       "id": 13,
+       "order": 0,
+       "position_x": -621,
+       "position_y": 176,
+       "rotation": 0,
+       "scale": 2.29999876022339
+      },
       "19": {
        "flip_h": false,
        "id": 19,
        "order": 0,
-       "position_x": 1092.80004882813,
-       "position_y": -80,
-       "rotation": -360,
+       "position_x": 1019.80004882813,
+       "position_y": 51,
+       "rotation": -134,
        "scale": 0.300010025501251
       }
      },
@@ -702,20 +785,29 @@
     },
     {
      "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
+      "position_x": -693,
+      "position_y": 38,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 1.09999990463257,
+      "zoom": 0.909090995788574
      },
      "character_transforms": {
+      "13": {
+       "flip_h": true,
+       "id": 13,
+       "order": 0,
+       "position_x": -621,
+       "position_y": 176,
+       "rotation": 0,
+       "scale": 2.29999876022339
+      },
       "19": {
        "flip_h": false,
        "id": 19,
        "order": 0,
-       "position_x": 1092.80004882813,
-       "position_y": -80,
-       "rotation": -360,
+       "position_x": 1019.80004882813,
+       "position_y": 51,
+       "rotation": -134,
        "scale": 0.300010025501251
       }
      },
@@ -731,20 +823,29 @@
     },
     {
      "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
+      "position_x": -693,
+      "position_y": 38,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 1.09999990463257,
+      "zoom": 0.909090995788574
      },
      "character_transforms": {
+      "13": {
+       "flip_h": true,
+       "id": 13,
+       "order": 0,
+       "position_x": -621,
+       "position_y": 176,
+       "rotation": 0,
+       "scale": 2.29999876022339
+      },
       "19": {
        "flip_h": false,
        "id": 19,
        "order": 0,
-       "position_x": 1092.80004882813,
-       "position_y": -80,
-       "rotation": -360,
+       "position_x": 1019.80004882813,
+       "position_y": 51,
+       "rotation": -134,
        "scale": 0.300010025501251
       }
      },
@@ -760,20 +861,29 @@
     },
     {
      "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
+      "position_x": -693,
+      "position_y": 38,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 1.09999990463257,
+      "zoom": 0.909090995788574
      },
      "character_transforms": {
+      "13": {
+       "flip_h": true,
+       "id": 13,
+       "order": 0,
+       "position_x": -621,
+       "position_y": 176,
+       "rotation": 0,
+       "scale": 2.29999876022339
+      },
       "19": {
        "flip_h": false,
        "id": 19,
        "order": 0,
-       "position_x": 1092.80004882813,
-       "position_y": -80,
-       "rotation": -360,
+       "position_x": 1019.80004882813,
+       "position_y": 51,
+       "rotation": -134,
        "scale": 0.300010025501251
       }
      },
@@ -789,20 +899,29 @@
     },
     {
      "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
+      "position_x": -693,
+      "position_y": 38,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 1.09999990463257,
+      "zoom": 0.909090995788574
      },
      "character_transforms": {
+      "13": {
+       "flip_h": true,
+       "id": 13,
+       "order": 0,
+       "position_x": -621,
+       "position_y": 176,
+       "rotation": 0,
+       "scale": 2.29999876022339
+      },
       "19": {
        "flip_h": false,
        "id": 19,
        "order": 0,
-       "position_x": 1092.80004882813,
-       "position_y": -80,
-       "rotation": -360,
+       "position_x": 1019.80004882813,
+       "position_y": 51,
+       "rotation": -134,
        "scale": 0.300010025501251
       }
      },
@@ -818,20 +937,29 @@
     },
     {
      "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
+      "position_x": -693,
+      "position_y": 38,
       "rotation": 0,
-      "scale": 3,
-      "zoom": 0.333333343267441
+      "scale": 1.09999990463257,
+      "zoom": 0.909090995788574
      },
      "character_transforms": {
+      "13": {
+       "flip_h": true,
+       "id": 13,
+       "order": 0,
+       "position_x": -621,
+       "position_y": 176,
+       "rotation": 0,
+       "scale": 2.29999876022339
+      },
       "19": {
        "flip_h": false,
        "id": 19,
        "order": 0,
-       "position_x": 1092.80004882813,
-       "position_y": -80,
-       "rotation": -360,
+       "position_x": 1019.80004882813,
+       "position_y": 51,
+       "rotation": -134,
        "scale": 0.300010025501251
       }
      },
@@ -856,6 +984,15 @@
      "speaker_id": 2,
      "text": "У вас есть Value_1! Замечательно.",
      "type": "RSEFrameText"
+    },
+    {
+     "options": [
+      [
+       20,
+       "Безальтернативный выбор проверки блипов!"
+      ]
+     ],
+     "type": "RSEFrameSelection"
     }
    ],
    "id": 11,
@@ -878,7 +1015,8 @@
      "visual_effects_transforms": {
 
      }
-    }
+    },
+    null
    ],
    "start": false
   },
@@ -919,10 +1057,81 @@
   {
    "active": false,
    "description": "",
-   "frames": [],
+   "frames": [
+    {
+     "location_id": 18,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "action": 1,
+     "character_id": 19,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я начинаю озвучивать свои слова блипами.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Блип-блип-блип...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Блип-блип!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Блип?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки Коленки",
+     "type": "RSEFrameText"
+    }
+   ],
    "id": 20,
-   "name": "",
-   "scene_presets": [],
+   "name": "Проверка блипов",
+   "scene_presets": [
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "19": {
+       "flip_h": false,
+       "id": 19,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   }
  ],
@@ -931,105 +1140,123 @@
    "position_x": 1400,
    "position_y": 780,
    "size_x": 200.000549316406,
-   "size_y": 241.000183105469
+   "size_y": 241.000579833984
   },
   "10": {
    "position_x": 2760,
    "position_y": 660,
-   "size_x": 200.000732421875,
-   "size_y": 300.000030517578
+   "size_x": 200.001220703125,
+   "size_y": 300.000061035156
   },
   "11": {
    "position_x": 3180,
    "position_y": 500,
-   "size_x": 200.000244140625,
-   "size_y": 299.999542236328
+   "size_x": 200.000732421875,
+   "size_y": 299.99951171875
   },
   "12": {
    "position_x": 3220,
    "position_y": 920,
-   "size_x": 200.000732421875,
-   "size_y": 300.000183105469
+   "size_x": 200.00146484375,
+   "size_y": 300.000427246094
   },
   "13": {
    "position_x": 940,
    "position_y": 160,
-   "size_x": 200.000427246094,
-   "size_y": 155
+   "size_x": 199.999877929688,
+   "size_y": 155.000061035156
   },
   "14": {
-   "position_x": 760,
-   "position_y": 1040,
-   "size_x": 200.000091552734,
-   "size_y": 155.000244140625
-  },
-  "15": {
-   "position_x": 740,
-   "position_y": 1240,
-   "size_x": 200.000274658203,
+   "position_x": 600,
+   "position_y": 1440,
+   "size_x": 199.999633789063,
    "size_y": 155.000122070313
   },
+  "15": {
+   "position_x": 600,
+   "position_y": 1600,
+   "size_x": 200.000366210938,
+   "size_y": 155.000183105469
+  },
   "16": {
-   "position_x": 400,
-   "position_y": 640,
-   "size_x": 200.000061035156,
-   "size_y": 155.000335693359
+   "position_x": 0,
+   "position_y": 360,
+   "size_x": 200,
+   "size_y": 155.000213623047
   },
   "17": {
-   "position_x": 400,
-   "position_y": 480,
-   "size_x": 200.000061035156,
-   "size_y": 155.000152587891
+   "position_x": 0,
+   "position_y": 200,
+   "size_x": 200,
+   "size_y": 155.000183105469
   },
   "18": {
-   "position_x": 620,
-   "position_y": 480,
-   "size_x": 200.000061035156,
-   "size_y": 155.000152587891
+   "position_x": 220,
+   "position_y": 200,
+   "size_x": 199.999755859375,
+   "size_y": 155.000183105469
   },
   "19": {
    "position_x": 1160,
    "position_y": 260,
-   "size_x": 199.999755859375,
-   "size_y": 155.000213623047
+   "size_x": 199.999572753906,
+   "size_y": 155.000198364258
   },
   "2": {
    "position_x": 940,
    "position_y": 340,
-   "size_x": 200.000671386719,
-   "size_y": 155.000274658203
+   "size_x": 200.000122070313,
+   "size_y": 155.000610351563
   },
   "20": {
-   "position_x": 2520,
-   "position_y": 1000,
-   "size_x": 200.000244140625,
-   "size_y": 299.999755859375
+   "position_x": 3760,
+   "position_y": 660,
+   "size_x": 200,
+   "size_y": 299.999816894531
+  },
+  "21": {
+   "position_x": -200,
+   "position_y": 840,
+   "size_x": 200.000427246094,
+   "size_y": 155.000213623047
+  },
+  "22": {
+   "position_x": 0,
+   "position_y": 1400,
+   "size_x": 199.999633789063,
+   "size_y": 155.000244140625
+  },
+  "23": {
+   "position_x": -400,
+   "position_y": 1200,
+   "size_x": 200,
+   "size_y": 155.000366210938
   },
   "6": {
    "position_x": 1800,
    "position_y": 680,
-   "size_x": 200.935180664063,
-   "size_y": 319.650726318359
+   "size_x": 200.935424804688,
+   "size_y": 319.650604248047
   },
   "7": {
    "position_x": 2160,
    "position_y": 680,
-   "size_x": 297.8603515625,
-   "size_y": 320.818450927734
+   "size_x": 297.859497070313,
+   "size_y": 320.818328857422
   },
   "9": {
-   "position_x": 180,
-   "position_y": 680,
-   "size_x": 199.999786376953,
-   "size_y": 155.000091552734
+   "position_x": -220,
+   "position_y": 400,
+   "size_x": 199.999359130859,
+   "size_y": 155.000015258789
   },
-  "scroll_offset_x": 686.5205078125,
-  "scroll_offset_y": 106.643402099609,
+  "scroll_offset_x": -50.6775512695313,
+  "scroll_offset_y": 114.407043457031,
   "show_grid": true,
   "snapping_enabled": true,
-  "zoom": 0.879407465457916
+  "zoom": 0.603221535682678
  },
- "last_id": 20,
+ "last_id": 23,
  "locations": [
   {
    "active": true,
@@ -1056,9 +1283,24 @@
    "path_to_scene": "res://locations/коридор/коридор_ночь_лампы.tscn"
   }
  ],
- "music_list": [],
+ "music_list": [
+  {
+   "active": true,
+   "id": 22,
+   "name": "Track #1",
+   "path_to_file": "res://audio/waltz test render.mp3"
+  }
+ ],
  "name": "Театр Нибраса",
- "sound_effects": [],
+ "sound_effects": [
+  {
+   "active": true,
+   "id": 23,
+   "name": "Test Sound #1",
+   "once_playable": true,
+   "path_to_file": "res://audio/melancholic piano.mp3"
+  }
+ ],
  "transititions": [
   {
    "active": true,
@@ -1073,5 +1315,12 @@
    "path_to_scene": "res://transititions/fade_out.tscn"
   }
  ],
- "visual_effects": []
+ "visual_effects": [
+  {
+   "active": true,
+   "id": 21,
+   "name": "VHS",
+   "path_to_scene": "res://visual_effects/vhs.tscn"
+  }
+ ]
 }

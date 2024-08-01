@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://beneekmk33mka"]
+[gd_scene load_steps=4 format=3 uid="uid://beneekmk33mka"]
 
 [ext_resource type="Script" path="res://scenes/save_manager/save_list.gd" id="1_5bd7o"]
 [ext_resource type="PackedScene" uid="uid://droyt1nlk5p3g" path="res://scenes/save_manager/save_container.tscn" id="1_u6q87"]
+[ext_resource type="Theme" uid="uid://b20uw8pswcq8l" path="res://theme.tres" id="2_sxw42"]
 
 [node name="SaveList" type="Control" node_paths=PackedStringArray("saves_container", "confirmation_dialog", "return_button")]
 layout_mode = 3
@@ -23,26 +24,27 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -300.0
-offset_top = -244.0
+offset_top = -380.0
 offset_right = 300.0
-offset_bottom = -221.0
+offset_bottom = -346.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_sxw42")
 text = "Сохранения"
 horizontal_alignment = 1
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
-custom_minimum_size = Vector2(600, 0)
+custom_minimum_size = Vector2(800, 0)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -304.0
-offset_top = -160.0
-offset_right = 304.0
-offset_bottom = 160.0
+offset_left = -400.0
+offset_top = -300.0
+offset_right = 400.0
+offset_bottom = 300.0
 grow_horizontal = 2
 grow_vertical = 2
 horizontal_scroll_mode = 0
@@ -50,6 +52,7 @@ horizontal_scroll_mode = 0
 [node name="Saves" type="VBoxContainer" parent="ScrollContainer"]
 custom_minimum_size = Vector2(600, 0)
 layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="SaveContainer" parent="ScrollContainer/Saves" instance=ExtResource("1_u6q87")]
 layout_mode = 2
@@ -61,13 +64,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -80.0
-offset_top = 223.0
-offset_right = 80.0
-offset_bottom = 254.0
+offset_left = -118.5
+offset_top = 338.0
+offset_right = 118.5
+offset_bottom = 380.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
+theme = ExtResource("2_sxw42")
 text = "Вернуться в меню "
 
 [node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]

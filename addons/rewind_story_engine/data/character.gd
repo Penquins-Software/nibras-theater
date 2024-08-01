@@ -22,6 +22,7 @@ var active: bool = false
 var color: Color = Color.GRAY
 var emotions: Dictionary
 var outfits: Dictionary
+var path_to_bleep_sound: String
 
 
 func _set_name(new_name: String) -> void:
@@ -49,6 +50,7 @@ func save_to_dictionary() -> Dictionary:
 		"color_b" : color.b,
 		"emotions" : emotions,
 		"outfits" : outfits,
+		"path_to_bleep_sound" : path_to_bleep_sound,
 	}
 	
 	return data
@@ -69,6 +71,7 @@ static func load_from_dictionary(data: Dictionary) -> RSECharacter:
 	character.color.b = data["color_b"]
 	character.emotions = data["emotions"]
 	character.outfits = data["outfits"]
+	character.path_to_bleep_sound = data["path_to_bleep_sound"]
 	
 	return character
 

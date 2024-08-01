@@ -21,6 +21,7 @@ enum FrameType {
 	Gap,
 	EndCondition,
 	Transitition,
+	SFX,
 }
 
 
@@ -118,6 +119,10 @@ static func load_frame_from_dictionary(data: Dictionary) -> RSEFrame:
 		"RSEFrameTransitition":
 			var frame = RSEFrameTransitition.new()
 			frame.transitition_id = data["transitition_id"]
+			return frame
+		"RSEFrameSFX":
+			var frame = RSEFrameSFX.new()
+			frame.path_to_audio = data["path_to_audio"]
 			return frame
 	return null
 

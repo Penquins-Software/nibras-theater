@@ -94,7 +94,7 @@ initial_position = 4
 size = Vector2i(600, 400)
 ok_button_text = "Открыть"
 file_mode = 0
-filters = PackedStringArray("*.tscn")
+filters = PackedStringArray("*.wav", "*.ogg", "*.mp3")
 
 [connection signal="item_selected" from="HSplitContainer/ItemList" to="." method="_on_item_list_item_selected"]
 [connection signal="text_changed" from="HSplitContainer/VBoxContainer/Name/Panel/LineEdit" to="." method="_on_line_edit_text_changed"]

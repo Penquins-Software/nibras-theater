@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ocypbet2syis"
+path="res://.godot/imported/waltz test render.mp3-32baf70477ef2e843e186be3040a3104.mp3str"
+
+[deps]
+
+source_file="res://audio/waltz test render.mp3"
+dest_files=["res://.godot/imported/waltz test render.mp3-32baf70477ef2e843e186be3040a3104.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

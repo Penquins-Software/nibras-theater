@@ -15,11 +15,16 @@ const REWIND_DELAY_TIME: float = 0.02
 @export var scene_builder: RSESceneBuilder
 @export var pause_button: Button
 
+@export var music_player: AudioStreamPlayer
+@export var bgs_player: BGSPlayer
+@export var sfx_player: SFXPlayer
+
 var local_variables: VariablesStorage
 
 var episode: RSEEpisode
 var current_frame: RSEFrame
 var current_frame_index: int
+var current_music: RSEMusic
 
 ## История пройденных кадров. Нужна для перемотки назад.
 var history: Array
@@ -104,6 +109,7 @@ func set_episode(ep: RSEEpisode, build_first_frame: bool = true) -> void:
 	scene_builder.set_episode(ep)
 	episode = ep
 	current_frame_index = -1
+	bgs_player.clear()
 	if build_first_frame:
 		next_frame()
 
@@ -142,6 +148,10 @@ func prev_frame() -> void:
 		prev_frame()
 	elif frame is RSEFrameTransitition:
 		prev_frame()
+	elif frame is RSEFrameVoice:
+		prev_frame()
+	elif frame is RSEFrameSFX:
+		prev_frame()
 	else:
 		build_frame(frame, true)
 
@@ -168,10 +178,15 @@ func build_frame(frame: RSEFrame, is_immediately: bool = false) -> void:
 		condition(frame)
 	elif frame is RSEFrameTransitition:
 		do_transitition(frame)
+	elif frame is RSEFrameVoice:
+		voice(frame)
+	elif frame is RSEFrameSFX:
+		sfx(frame)
 
 
 func show_text_frame(frame: RSEFrameText, is_immediately: bool = false) -> void:
 	speaker = RewindStoryEngine.story.characters[frame.speaker_id]
+	var character = scene_builder.get_characeter_by_id(speaker.id)
 	if is_immediately:
 		is_gap = false
 		text_box.set_text(frame.scene_state.text, speaker.display_name, speaker.color, TextBox.MarkerMode.NextText, is_immediately)
@@ -181,9 +196,8 @@ func show_text_frame(frame: RSEFrameText, is_immediately: bool = false) -> void:
 		else:
 			is_gap = false
 			text_box.set_text(frame.text, speaker.display_name, speaker.color, TextBox.MarkerMode.NextText)
-	var character = scene_builder.get_characeter_by_id(speaker.id)
-	if character != null:
-		character.start_talk()
+		if character != null:
+			character.start_talk()
 
 
 func show_selection(frame: RSEFrameSelection) -> void:
@@ -237,6 +251,20 @@ func do_transitition(frame: RSEFrameTransitition) -> void:
 	next_frame()
 
 
+func voice(frame: RSEFrameVoice) -> void:
+	var audio = load(frame.path_to_audio)
+	if audio is AudioStream:
+		sfx_player.play(audio) 
+	next_frame()
+
+
+func sfx(frame: RSEFrameSFX) -> void:
+	var audio = load(frame.path_to_audio)
+	if audio is AudioStream:
+		sfx_player.play(audio) 
+	next_frame()
+
+
 func _on_selection_menu_option_selected(option_id):
 	set_episode(RewindStoryEngine.story.episodes[option_id])
 	rewind_block = false
@@ -267,3 +295,45 @@ func _on_pause_mouse_entered():
 
 func _on_pause_mouse_exited():
 	is_mouse_on_gui = false
+
+
+func _on_scene_builder_music(music_id: int):
+	if not RewindStoryEngine.story.music_list.has(music_id):
+		current_music = null
+		music_player.stream = null
+		music_player.stop()
+		return
+	
+	var music = RewindStoryEngine.story.music_list[music_id] as RSEMusic
+	
+	if current_music == music:
+		return
+	
+	current_music = music
+	
+	if music.path_to_file == null:
+		music_player.stream = null
+		music_player.stop()
+		return
+	
+	var music_audio = load(music.path_to_file)
+	if music_audio is AudioStream:
+		music_player.stream = music_audio
+		music_player.play()
+
+
+func _on_scene_builder_bgs(bgs_id: int, status: bool):
+	if not RewindStoryEngine.story.sound_effects.has(bgs_id):
+		return
+	
+	var bgs = RewindStoryEngine.story.sound_effects[bgs_id] as RSESoundEffect
+	
+	if bgs.path_to_file == null:
+		return
+	
+	var bgs_audio = load(bgs.path_to_file)
+	if bgs_audio is AudioStream:
+		if status:
+			bgs_player.play(bgs_audio)
+		else:
+			bgs_player.stop(bgs_audio)

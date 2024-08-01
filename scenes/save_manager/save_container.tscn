@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://droyt1nlk5p3g"]
+[gd_scene load_steps=4 format=3 uid="uid://droyt1nlk5p3g"]
 
 [ext_resource type="Script" path="res://scenes/save_manager/save_container.gd" id="1_xq2kt"]
 [ext_resource type="Texture2D" uid="uid://dktdb1xkwbt1d" path="res://icon.svg" id="2_3daxs"]
+[ext_resource type="Theme" uid="uid://b20uw8pswcq8l" path="res://theme.tres" id="3_bca2p"]
 
 [node name="SaveContainer" type="HBoxContainer" node_paths=PackedStringArray("image", "label")]
-offset_right = 400.0
-offset_bottom = 100.0
+custom_minimum_size = Vector2(0, 160)
+offset_right = 600.0
+offset_bottom = 160.0
 script = ExtResource("1_xq2kt")
 image = NodePath("Image")
 label = NodePath("Panel/MarginContainer/Info/RichTextLabel")
@@ -41,6 +43,7 @@ size_flags_horizontal = 3
 [node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/Info"]
 layout_mode = 2
 size_flags_vertical = 6
+theme = ExtResource("3_bca2p")
 bbcode_enabled = true
 text = "Тестовый эпизод
 16.07.2024"
@@ -55,12 +58,14 @@ size_flags_vertical = 8
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 8
+theme = ExtResource("3_bca2p")
 text = "Загрузить"
 
 [node name="Delete" type="Button" parent="Panel/MarginContainer/Info/Buttons"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 8
+theme = ExtResource("3_bca2p")
 text = "Удалить"
 
 [connection signal="pressed" from="Panel/MarginContainer/Info/Buttons/Load" to="." method="_on_load_pressed"]
