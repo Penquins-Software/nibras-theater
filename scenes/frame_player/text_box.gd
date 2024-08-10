@@ -60,6 +60,7 @@ func set_text(text: String, speaker: String = "", speaker_color: Color = Color.W
 	text_label.text = text
 	_speaker = speaker
 	print_time = 0
+	text_label.visible_ratio = 0
 	showing = true
 	ready_to_next_frame = false
 	marker.hide()

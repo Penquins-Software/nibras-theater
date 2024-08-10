@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cawykpyqsfmsu"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_yc054"]
+[ext_resource type="Texture2D" uid="uid://bukkkwphtwnqn" path="res://locations/цех/бутафорская_ночь.png" id="2_51o57"]
+
+[node name="Цех (ночь)" type="Node2D"]
+script = ExtResource("1_yc054")
+
+[node name="БутафорскаяНочь" type="Sprite2D" parent="."]
+texture = ExtResource("2_51o57")

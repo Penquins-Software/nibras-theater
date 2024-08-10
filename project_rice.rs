@@ -7356,11 +7356,11 @@
      },
      "character_transforms": {
       "27": {
-       "emotion_id": null,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 27,
        "order": 0,
-       "outfit_id": null,
+       "outfit_id": 0,
        "position_x": -231,
        "position_y": 895,
        "rotation": 0,
@@ -9855,6 +9855,23 @@
      "type": "RSEFrameGap"
     },
     {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 60,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "sound_id": 23,
+     "status": true,
+     "type": "RSEFrameSoundEffect"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
      "speaker_id": 2,
      "text": "Цех был заполнен всевозможными реквизитами: масками, костюмами, причудливыми куклами и декорациями.",
      "type": "RSEFrameText"
@@ -9863,11 +9880,524 @@
      "speaker_id": 2,
      "text": "В воздухе витал запах старого дерева и краски.",
      "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Здесь столько всего!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Каждый раз удивляюсь таланту нашего бутафора.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "С чего начнём?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "С ящика для оружия?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Так о чём ты хотела мне рассказать?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я начал осматривать комнату в поисках ящика.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Точно!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Причина по которой вас позвали…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Видите ли, я тоже считаю, что это было [i]убийство[/i].",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Но [i]виноват[/i] не мистер Дидье.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мой взгляд замер и направился на Арлет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Вот как?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Тогда кто же виноват?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Это тот, по чьей вине один из актёров сломал руку и уволился.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Тот, кто однажды испортил наше выступление.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Тот, чья тень нависла над нами.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Тот, кому вечно не достаёт веселья.",
+     "type": "RSEFrameText"
+    },
+    {
+     "path_to_audio": "res://audio/sfx/lightning.mp3",
+     "type": "RSEFrameSFX"
+    },
+    {
+     "transitition_id": 56,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 19,
+     "text": "НИБРАС!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "А-А-А-а-а-а-А-А-А-а-а!!!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Шучу!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Вас так легко напугать, господин Этьен.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Это всё гроза…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Д-да, это гроза.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Я не боюсь демонов.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Ты же говорила, что боишься грозы, но в этот раз даже не дрогнула?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Б-е-е-е-е.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я вас обманула!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Но доля правды в этом действительно есть…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "В боязни грозы?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "В Нибрасе!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Ну, не в самом демоне, наверное, но нечто странное и необъяснимое у нас действительно происходит.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Демоны?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Обычно это ничем хорошим не заканчивается…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Если кто-то выдаёт себя за демона, то, как правило, это опасные люди, с которыми лучше не связываться.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Что ж, именно за этим я и здесь – помочь вам разобраться в ваших [i]проблемах[/i].",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Боже, пусть это будет не “демон”!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Хе-хе, вы такой крутой!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я наконец-то нашёл ящик для хранения оружия.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Выглядит очень внушительно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Такой замок не получится взломать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет энергично подняла руку с ключом и воскликнула.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Сейчас открою!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Она это сделала так естественно, словно открывает их всю жизнь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Внутри лежала коробка с патронами и документ на оружие.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Оружие называется  Cassegrain 1917 Prot. 3.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Это экспериментальная самозарядная винтовка с магазином на 13 патронов калибра 8.2 на 54 мм.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Тут же написано, что было создано всего 2 образца.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Оружие оказалось непрактичным и никому не нужным.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "По итогу один прототип этого оружия оказался в музее, а другой увёз за границу какой-то коллекционер.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Вам не кажется странным использовать настолько редкое оружие в постановке?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "М?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Думаю, что мы уже давно успели к такому привыкнуть.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Что нас только не заставляли делать!",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 19,
+     "text": "И задерживать дыхание, и притворяться мёртвым, и говорить на странных языках…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Покупка дорогого реквизита не кажется таким странным на фоне всего остального.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "К этому оружию в комплекте шла и пачка патронов, правда, сильно потрёпанная.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "На ней написано 25 и 8.2х54.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Один, два, три…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Одиннадцать!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Внутри 11 патронов.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Все 11 патронов были холостыми.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "А всего их – 25.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Это о чём-то говорит?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Магазин оружия вмещает 13 патронов.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "То есть, если заряжать оружие на максимум, то должно остаться 12 патронов, так?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Вы больше не стреляли на репетициях?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Нет…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Ни разу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Это первая репетиция, когда мы использовали его.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Тогда куда делся ещё один патрон?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Может, кто-то взял его?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Или Дидье его уже использовал, чтобы проверить оружие?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Не знаю, но нужно будет обязательно спросить его.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я ещё раз окинул взглядом комнату и убедившись, что мне здесь больше ничего не нужно, решил вернуться обратно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я на всякий случай взял документ и закрыл ящик.",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "description": "",
+     "to_episode_id": 61,
+     "type": "RSEFrameJump"
     }
    ],
    "id": 54,
    "name": "Осмотр бутафорского цеха",
    "scene_presets": [
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null,
     null,
     null,
@@ -9936,292 +10466,599 @@
     null
    ],
    "start": false
+  },
+  {
+   "active": false,
+   "description": "Этьен с Арлет вернулись в гримёрку и Этьен продолжает развивать версию с Дидье.",
+   "frames": [
+    {
+     "location_id": 47,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "sound_id": 23,
+     "status": true,
+     "type": "RSEFrameSoundEffect"
+    },
+    {
+     "speaker_id": 39,
+     "text": "И всё-таки, куда он мог деться?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "С утра не могу найти его…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Любишь же ты разбрасываться своими манекенами, Дидье.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Никому они не нужны.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чарльз заметил, как мы вернулись, и повернулся к нам.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Детектив!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Мы вас заждались.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Вы вернулись.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Выяснили, что хотели?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Да, и у меня появились новые вопросы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Удивите нас!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Ждём с нетерпением.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "В ящике я обнаружил документ на оружие и пачку патронов.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Кажется, что документ подтверждает ваши слова об исключительной редкости оружия.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Но вот что странно…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Скажите, вы стреляли из этого оружия до этого?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Нет, в этом не было необходимости.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Эти патроны необычайно редкие и мне бы не хотелось потом вручную заряжать гильзы взрывчатым веществом.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Повезло, что они вообще дожили до нашего времени.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Я полностью прочистил и пересобрал оружие: оно идеально работает.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Когда я осматривал коробку с патронами, внутри я насчитал 11 патронов.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Разве магазин оружия не на 13 патронов?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Куда мог деться ещё один?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Как интересно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Неужели кто-то припас себе один патрон?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Ха!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Тут всё просто:",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "13 патронов были в магазине, а ещё один был заряжен и находился в патроннике.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Итого в оружии было 14 патронов.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чёрт, об этом я совершенно не подумал.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Но зачем заряжать оружие под завязку?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Ладно, оставлю это на потом…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Вот как?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Тогда, пожалуй, у меня больше нет вопросов к мистеру Дидье.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Но есть вопрос к кое-кому ещё…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я медленно перевёл свой взгляд на директора.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Теперь вы думаете, что это я?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "И зачем же мне убивать своих актёров?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "А главное, зачем мне в таком случае нанимать вас?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Что за глупость…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Действительно, а зачем ей это?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Но один вопрос задать нужно.",
+     "type": "RSEFrameText"
+    }
+   ],
+   "id": 61,
+   "name": "Версия с Дидье, часть 2",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
   }
  ],
  "graph_state": {
   "0": {
    "position_x": 1400,
    "position_y": 780,
-   "size_x": 200.000732421875,
-   "size_y": 241.002136230469
+   "size_x": 200.00048828125,
+   "size_y": 241.002075195313
   },
   "13": {
    "position_x": 1040,
    "position_y": 60,
-   "size_x": 200.000152587891,
+   "size_x": 199.99951171875,
    "size_y": 155.001068115234
   },
   "14": {
    "position_x": 800,
    "position_y": 1800,
-   "size_x": 199.998840332031,
-   "size_y": 155
+   "size_x": 199.998779296875,
+   "size_y": 155.000244140625
   },
   "15": {
    "position_x": 800,
    "position_y": 1960,
-   "size_x": 199.999816894531,
+   "size_x": 199.999755859375,
    "size_y": 155.001831054688
   },
   "16": {
    "position_x": 0,
    "position_y": 0,
-   "size_x": 199.997741699219,
-   "size_y": 155.000076293945
+   "size_x": 199.998046875,
+   "size_y": 155.000122070313
   },
   "17": {
    "position_x": 0,
    "position_y": 160,
-   "size_x": 199.997741699219,
-   "size_y": 155
+   "size_x": 199.998046875,
+   "size_y": 155.000091552734
   },
   "18": {
    "position_x": 0,
    "position_y": 320,
-   "size_x": 199.997741699219,
-   "size_y": 155.000061035156
+   "size_x": 199.998046875,
+   "size_y": 155.000183105469
   },
   "19": {
    "position_x": 1040,
    "position_y": 220,
-   "size_x": 200.001129150391,
-   "size_y": 155.00048828125
+   "size_x": 200.00048828125,
+   "size_y": 155.000366210938
   },
   "2": {
    "position_x": 800,
    "position_y": 260,
-   "size_x": 199.997863769531,
-   "size_y": 155.000854492188
+   "size_x": 199.997802734375,
+   "size_y": 155.001007080078
   },
   "21": {
    "position_x": -400,
    "position_y": 840,
-   "size_x": 199.998687744141,
-   "size_y": 155.000854492188
+   "size_x": 199.9990234375,
+   "size_y": 155.000732421875
   },
   "22": {
    "position_x": -200,
    "position_y": 1400,
-   "size_x": 200.000152587891,
-   "size_y": 155.002136230469
+   "size_x": 200,
+   "size_y": 155.002197265625
   },
   "23": {
    "position_x": -800,
    "position_y": 1200,
-   "size_x": 199.999816894531,
-   "size_y": 155.000549316406
+   "size_x": 200,
+   "size_y": 155.000610351563
   },
   "24": {
    "position_x": 1800,
    "position_y": 760,
-   "size_x": 199.998962402344,
-   "size_y": 299.999694824219
+   "size_x": 199.9990234375,
+   "size_y": 299.999938964844
   },
   "25": {
    "position_x": 1040,
    "position_y": -100,
-   "size_x": 200.001129150391,
+   "size_x": 200.00048828125,
    "size_y": 155.000183105469
   },
   "26": {
    "position_x": 1040,
    "position_y": -260,
-   "size_x": 200.001129150391,
-   "size_y": 155.000152587891
+   "size_x": 200.00048828125,
+   "size_y": 155.000183105469
   },
   "27": {
    "position_x": 1340,
    "position_y": -160,
-   "size_x": 200.001007080078,
-   "size_y": 155.000518798828
+   "size_x": 200.000732421875,
+   "size_y": 155.000549316406
   },
   "28": {
    "position_x": -200,
    "position_y": 1560,
-   "size_x": 200.000152587891,
-   "size_y": 155.000244140625
+   "size_x": 200,
+   "size_y": 155.000366210938
   },
   "29": {
    "position_x": -200,
    "position_y": 1720,
-   "size_x": 200.000152587891,
-   "size_y": 155.000061035156
+   "size_x": 200,
+   "size_y": 155.000244140625
   },
   "30": {
    "position_x": -200,
    "position_y": 1880,
-   "size_x": 200.000152587891,
-   "size_y": 155.000122070313
+   "size_x": 200,
+   "size_y": 155
   },
   "31": {
    "position_x": -200,
    "position_y": 2040,
-   "size_x": 200.000152587891,
-   "size_y": 155.002014160156
+   "size_x": 200,
+   "size_y": 155.001953125
   },
   "32": {
    "position_x": -200,
    "position_y": 2200,
-   "size_x": 200.000640869141,
+   "size_x": 200.00048828125,
    "size_y": 155.001586914063
   },
   "33": {
    "position_x": -200,
    "position_y": 2360,
-   "size_x": 200.000640869141,
-   "size_y": 155.000610351563
+   "size_x": 200.00048828125,
+   "size_y": 155.000244140625
   },
   "34": {
    "position_x": -200,
    "position_y": 2520,
-   "size_x": 200.000152587891,
-   "size_y": 155.000732421875
+   "size_x": 200,
+   "size_y": 155.00048828125
   },
   "35": {
    "position_x": -200,
    "position_y": 2680,
-   "size_x": 200.000152587891,
-   "size_y": 155.00048828125
+   "size_x": 200,
+   "size_y": 155.000244140625
   },
   "36": {
    "position_x": -420,
    "position_y": 1440,
-   "size_x": 200.000442504883,
+   "size_x": 200.00048828125,
    "size_y": 155.001220703125
   },
   "37": {
    "position_x": -400,
    "position_y": 680,
-   "size_x": 199.999664306641,
+   "size_x": 200,
    "size_y": 155.000061035156
   },
   "38": {
    "position_x": -240,
    "position_y": 0,
-   "size_x": 200.000854492188,
-   "size_y": 155.000076293945
+   "size_x": 200.0009765625,
+   "size_y": 155.000122070313
   },
   "39": {
    "position_x": 1040,
    "position_y": -420,
-   "size_x": 200.000152587891,
-   "size_y": 155
+   "size_x": 199.99951171875,
+   "size_y": 155.000122070313
   },
   "40": {
    "position_x": 1040,
    "position_y": -580,
-   "size_x": 200.000152587891,
-   "size_y": 155.000015258789
+   "size_x": 199.99951171875,
+   "size_y": 155
   },
   "41": {
    "position_x": 220,
    "position_y": -60,
-   "size_x": 199.999053955078,
+   "size_x": 199.9990234375,
    "size_y": 155.000244140625
   },
   "42": {
    "position_x": 2200,
    "position_y": 760,
-   "size_x": 200.001098632813,
-   "size_y": 300.000183105469
+   "size_x": 200.0009765625,
+   "size_y": 300.000427246094
   },
   "43": {
    "position_x": 1142.04223632813,
    "position_y": 453.982330322266,
-   "size_x": 199.999969482422,
-   "size_y": 155.000244140625
+   "size_x": 200.00048828125,
+   "size_y": 155.00048828125
   },
   "44": {
    "position_x": 2600,
    "position_y": 740,
-   "size_x": 239.490295410156,
-   "size_y": 375.0478515625
+   "size_x": 239.490112304688,
+   "size_y": 375.04736328125
   },
   "45": {
    "position_x": -480,
    "position_y": 0,
-   "size_x": 199.999465942383,
-   "size_y": 155.000076293945
+   "size_x": 199.99951171875,
+   "size_y": 155.000122070313
   },
   "46": {
    "position_x": -480,
    "position_y": 160,
-   "size_x": 199.999465942383,
-   "size_y": 155
+   "size_x": 199.99951171875,
+   "size_y": 155.000091552734
   },
   "47": {
    "position_x": -480,
    "position_y": 320,
-   "size_x": 199.999465942383,
-   "size_y": 155.000061035156
+   "size_x": 199.99951171875,
+   "size_y": 155.000183105469
   },
   "48": {
    "position_x": 3000,
    "position_y": 740,
-   "size_x": 302.685302734375,
-   "size_y": 345.62158203125
+   "size_x": 302.686157226563,
+   "size_y": 345.621459960938
   },
   "49": {
    "position_x": 3400,
    "position_y": 740,
    "size_x": 200.000610351563,
-   "size_y": 300
+   "size_y": 300.000122070313
   },
   "50": {
    "position_x": 3800,
    "position_y": 520,
-   "size_x": 287.62353515625,
-   "size_y": 291.492919921875
+   "size_x": 287.6220703125,
+   "size_y": 291.493072509766
   },
   "51": {
    "position_x": 3800,
    "position_y": 1000,
-   "size_x": 293.98095703125,
-   "size_y": 293.205383300781
+   "size_x": 293.9794921875,
+   "size_y": 293.205200195313
   },
   "52": {
    "position_x": 4240,
    "position_y": 740,
-   "size_x": 214.972045898438,
-   "size_y": 336.49658203125
+   "size_x": 214.97216796875,
+   "size_y": 336.496459960938
   },
   "53": {
    "position_x": 4520,
    "position_y": 740,
-   "size_x": 214.9716796875,
-   "size_y": 323.39501953125
+   "size_x": 214.971313476563,
+   "size_y": 323.394897460938
   },
   "54": {
    "position_x": 4800,
    "position_y": 720,
-   "size_x": 304.634765625,
-   "size_y": 344.235656738281
+   "size_x": 308.037841796875,
+   "size_y": 366.354187011719
   },
   "55": {
    "position_x": -620,
    "position_y": 820,
    "size_x": 199.99951171875,
-   "size_y": 155.000244140625
+   "size_y": 155.000366210938
   },
   "56": {
    "position_x": 800,
    "position_y": 2120,
-   "size_x": 199.999816894531,
-   "size_y": 155
+   "size_x": 199.999755859375,
+   "size_y": 155.000366210938
+  },
+  "57": {
+   "position_x": -720,
+   "position_y": 0,
+   "size_x": 200,
+   "size_y": 155.000122070313
+  },
+  "58": {
+   "position_x": -720,
+   "position_y": 160,
+   "size_x": 200,
+   "size_y": 155.000091552734
+  },
+  "59": {
+   "position_x": -720,
+   "position_y": 320,
+   "size_x": 200,
+   "size_y": 155.000183105469
+  },
+  "60": {
+   "position_x": -720,
+   "position_y": 480,
+   "size_x": 200,
+   "size_y": 155.000061035156
+  },
+  "61": {
+   "position_x": 5240,
+   "position_y": 740,
+   "size_x": 246.788330078125,
+   "size_y": 348.489685058594
   },
   "9": {
    "position_x": 220,
    "position_y": -300,
-   "size_x": 200.000030517578,
+   "size_x": 200,
    "size_y": 155.000244140625
   },
-  "scroll_offset_x": 5.1905517578125,
-  "scroll_offset_y": -217.240768432617,
+  "scroll_offset_x": 4973.61083984375,
+  "scroll_offset_y": 599.411010742188,
   "show_grid": true,
   "snapping_enabled": true,
-  "zoom": 0.374553054571152
+  "zoom": 1.17550837993622
  },
- "last_id": 56,
+ "last_id": 61,
  "locations": [
   {
    "active": true,
@@ -10276,6 +11113,30 @@
    "id": 47,
    "name": "Гримёрка (ночь + лампы)",
    "path_to_scene": ""
+  },
+  {
+   "active": true,
+   "id": 57,
+   "name": "Бутафорский цех (день)",
+   "path_to_scene": "res://locations/цех/цех_день.tscn"
+  },
+  {
+   "active": true,
+   "id": 58,
+   "name": "Бутафорский цех (ночь)",
+   "path_to_scene": "res://locations/цех/цех_ночь.tscn"
+  },
+  {
+   "active": true,
+   "id": 59,
+   "name": "Бутафорский цех  (ночь + лампы)",
+   "path_to_scene": "res://locations/цех/цех_лампы.tscn"
+  },
+  {
+   "active": true,
+   "id": 60,
+   "name": "Бутафорский цех (шторм)",
+   "path_to_scene": "res://locations/цех/цех_шторм.tscn"
   }
  ],
  "music_list": [

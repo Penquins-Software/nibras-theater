@@ -69,8 +69,10 @@ func _input(event):
 			#selection_menu.hide()
 		#prev_frame()
 		logger.show()
+		text_box.hide()
 	if event.is_action_pressed("log"):
 		logger.show()
+		text_box.hide()
 	if event.is_action_pressed("hide_interface"):
 		pass
 	if event.is_action_pressed("auto_play"):
@@ -288,6 +290,7 @@ func _on_pause_pressed() -> void:
 
 func continue_play() -> void:
 	is_pause = false
+	text_box.show()
 
 
 func _on_pause_mouse_entered():
@@ -338,3 +341,7 @@ func _on_scene_builder_bgs(bgs_id: int, status: bool):
 			bgs_player.play(bgs_audio)
 		else:
 			bgs_player.stop(bgs_audio)
+
+
+func _on_logger_close_pressed():
+	text_box.show()
