@@ -7,4 +7,5 @@
 script = ExtResource("1_fytym")
 
 [node name="День" type="Sprite2D" parent="."]
+light_mask = 0
 texture = ExtResource("2_u1iqv")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2luh11da78nc"
+path="res://.godot/imported/creepy and epic.mp3-67d2e231a18c6df372884f523f47d943.mp3str"
+
+[deps]
+
+source_file="res://audio/music/creepy and epic.mp3"
+dest_files=["res://.godot/imported/creepy and epic.mp3-67d2e231a18c6df372884f523f47d943.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

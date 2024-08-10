@@ -140,7 +140,7 @@ func talk_with_audio(audio: AudioStream) -> void:
 
 
 func start_talk() -> void:
-	if bleep_player != null:
+	if bleep_player != null and not Engine.is_editor_hint():
 		bleep_player._play()
 	
 	if anim_name == null:
@@ -182,7 +182,7 @@ func _check_blinking_time(delta: float) -> void:
 	
 	blinking_time -= delta
 	if blinking_time < 0:
-		blinking_time = randf_range(0.8, 2.2)
+		blinking_time = randf_range(2.2, 3.8)
 		blink()
 
 

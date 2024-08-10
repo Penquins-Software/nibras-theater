@@ -65,9 +65,10 @@ func _input(event):
 		if not selection_menu.visible:
 			_rewind()
 	if event.is_action_pressed("prev_frame"):
-		if selection_menu.visible:
-			selection_menu.hide()
-		prev_frame()
+		#if selection_menu.visible:
+			#selection_menu.hide()
+		#prev_frame()
+		logger.show()
 	if event.is_action_pressed("log"):
 		logger.show()
 	if event.is_action_pressed("hide_interface"):
@@ -311,7 +312,7 @@ func _on_scene_builder_music(music_id: int):
 	
 	current_music = music
 	
-	if music.path_to_file == null:
+	if music.path_to_file == null or music.path_to_file == "":
 		music_player.stream = null
 		music_player.stop()
 		return

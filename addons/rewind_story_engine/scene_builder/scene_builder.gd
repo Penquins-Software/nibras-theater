@@ -222,10 +222,12 @@ func save_scene_preset() -> void:
 
 func apply_scene_preset() -> void:
 	if current_frame_index < 0 or current_frame_index > episode.scene_presets.size() - 1:
+		camera_controller.camera.zoom = Vector2(0.5, 0.5)
 		return
 	
 	var scene_preset = episode.scene_presets[current_frame_index]
 	if scene_preset == null:
+		camera_controller.camera.zoom = Vector2(0.5, 0.5)
 		return
 	
 	scene_preset.apply_preset_to_camera(camera_controller)

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjsdryykcho86"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_q7bym"]
+[ext_resource type="Texture2D" uid="uid://csu6skgjx8qta" path="res://locations/сцена/1.png" id="2_gnodt"]
+
+[node name="Сцена" type="Node2D"]
+script = ExtResource("1_q7bym")
+
+[node name="1" type="Sprite2D" parent="."]
+texture = ExtResource("2_gnodt")

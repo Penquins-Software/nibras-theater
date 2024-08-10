@@ -36,7 +36,7 @@ func _process(delta):
 	print_time += delta
 	text_label.visible_characters = print_time * Settings.text_speed
 	
-	if text_label.visible_characters >= text_label.text.length():
+	if text_label.visible_ratio >= 1:
 		end_frame()
 
 
