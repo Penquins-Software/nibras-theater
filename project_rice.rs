@@ -43,13 +43,14 @@
   {
    "active": true,
    "color_a": 1,
-   "color_b": 0.317647069692612,
-   "color_g": 0.513725519180298,
-   "color_r": 0.980392158031464,
+   "color_b": 0.294117659330368,
+   "color_g": 0.47843137383461,
+   "color_r": 0.960784316062927,
    "description": "",
    "display_name": "Арлет",
    "emotions": {
-    "0": "Normal"
+    "0": "Спокойствие",
+    "1": "Злость"
    },
    "id": 19,
    "main_name_for_display_name": true,
@@ -103,9 +104,9 @@
   {
    "active": true,
    "color_a": 1,
-   "color_b": 0.745098054409027,
-   "color_g": 0.745098054409027,
-   "color_r": 0.745098054409027,
+   "color_b": 0.792156875133514,
+   "color_g": 0.780392169952393,
+   "color_r": 0.764705896377563,
    "description": "",
    "display_name": "Этьен",
    "emotions": {
@@ -704,6 +705,22 @@
      "type": "RSEFrameGap"
     },
     {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "path_to_audio": "res://audio/sfx/shot.mp3",
+     "type": "RSEFrameSFX"
+    },
+    {
+     "location_id": 9,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
      "speaker_id": 2,
      "text": "Раздался взрыв.",
      "type": "RSEFrameText"
@@ -981,9 +998,11 @@
      },
      "character_transforms": {
       "19": {
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -760,
        "position_y": 150,
        "rotation": 0,
@@ -1010,9 +1029,11 @@
      },
      "character_transforms": {
       "19": {
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -760,
        "position_y": 150,
        "rotation": 0,
@@ -1039,9 +1060,11 @@
      },
      "character_transforms": {
       "19": {
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -806,
        "position_y": 889,
        "rotation": 0,
@@ -1068,9 +1091,11 @@
      },
      "character_transforms": {
       "19": {
+       "emotion_id": 1,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -806,
        "position_y": 889,
        "rotation": 0,
@@ -1097,9 +1122,11 @@
      },
      "character_transforms": {
       "19": {
+       "emotion_id": 1,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -760,
        "position_y": 150,
        "rotation": 0,
@@ -1126,9 +1153,11 @@
      },
      "character_transforms": {
       "19": {
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -760,
        "position_y": 150,
        "rotation": 0,
@@ -1155,9 +1184,11 @@
      },
      "character_transforms": {
       "19": {
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -760,
        "position_y": 150,
        "rotation": 0,
@@ -1183,19 +1214,12 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      },
       "19": {
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -760,
        "position_y": 150,
        "rotation": 0,
@@ -1221,19 +1245,12 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      },
       "19": {
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -760,
        "position_y": 150,
        "rotation": 0,
@@ -1259,19 +1276,12 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      },
       "19": {
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -760,
        "position_y": 150,
        "rotation": 0,
@@ -1297,19 +1307,12 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      },
       "19": {
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -760,
        "position_y": 150,
        "rotation": 0,
@@ -1335,19 +1338,12 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      },
       "19": {
+       "emotion_id": 1,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -760,
        "position_y": 150,
        "rotation": 0,
@@ -1373,19 +1369,12 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      },
       "19": {
+       "emotion_id": 1,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -760,
        "position_y": 150,
        "rotation": 0,
@@ -1411,19 +1400,12 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      },
       "19": {
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 0,
+       "outfit_id": 0,
        "position_x": -760,
        "position_y": 150,
        "rotation": 0,
@@ -3954,15 +3936,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -3983,15 +3957,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4012,15 +3978,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4041,15 +3999,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4070,15 +4020,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4099,15 +4041,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4128,15 +4062,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4157,15 +4083,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4186,15 +4104,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4215,15 +4125,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4244,15 +4146,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4273,15 +4167,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4302,15 +4188,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4331,15 +4209,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4360,15 +4230,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4389,15 +4251,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4418,15 +4272,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4447,15 +4293,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4476,15 +4314,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4505,15 +4335,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4534,15 +4356,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4563,15 +4377,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4592,15 +4398,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4621,15 +4419,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4650,15 +4440,7 @@
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4673,21 +4455,13 @@
     {
      "camera_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": 1252,
       "rotation": 0,
       "scale": 1.99999904632568,
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4702,21 +4476,13 @@
     {
      "camera_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": 1252,
       "rotation": 0,
       "scale": 1.99999904632568,
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4731,21 +4497,13 @@
     {
      "camera_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": 1252,
       "rotation": 0,
       "scale": 1.99999904632568,
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4760,21 +4518,13 @@
     {
      "camera_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": 1252,
       "rotation": 0,
       "scale": 1.99999904632568,
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4789,21 +4539,13 @@
     {
      "camera_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": 1252,
       "rotation": 0,
       "scale": 1.99999904632568,
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4818,21 +4560,13 @@
     {
      "camera_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": 1252,
       "rotation": 0,
       "scale": 1.99999904632568,
       "zoom": 0.500000238418579
      },
      "character_transforms": {
-      "13": {
-       "flip_h": false,
-       "id": 13,
-       "order": 0,
-       "position_x": 624,
-       "position_y": 115,
-       "rotation": 0,
-       "scale": 1
-      }
+
      },
      "location_transform": {
       "position_x": 0,
@@ -4844,9 +4578,132 @@
 
      }
     },
-    null,
-    null,
-    null,
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 1252,
+      "rotation": 0,
+      "scale": 1.99999904632568,
+      "zoom": 0.500000238418579
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 1252,
+      "rotation": 0,
+      "scale": 1.99999904632568,
+      "zoom": 0.500000238418579
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 1252,
+      "rotation": 0,
+      "scale": 1.99999904632568,
+      "zoom": 0.500000238418579
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 1252,
+      "rotation": 0,
+      "scale": 1.99999904632568,
+      "zoom": 0.500000238418579
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 1252,
+      "rotation": 0,
+      "scale": 1.99999904632568,
+      "zoom": 0.500000238418579
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 1252,
+      "rotation": 0,
+      "scale": 1.99999904632568,
+      "zoom": 0.500000238418579
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
     null
    ],
    "start": true
@@ -4862,6 +4719,13 @@
     {
      "transitition_id": 15,
      "type": "RSEFrameTransitition"
+    },
+    {
+     "action": 1,
+     "character_id": 27,
+     "emotion_id": 0,
+     "outfit_id": 1,
+     "type": "RSEFrameCharacter"
     },
     {
      "speaker_id": 27,
@@ -5183,9 +5047,12 @@
      "type": "RSEFrameText"
     },
     {
-     "speaker_id": 2,
-     "text": "После этих слов раздался раскат грома, свет на секунду погас, а на улице начался сильный шторм.",
-     "type": "RSEFrameText"
+     "path_to_audio": "res://audio/sfx/lightning.mp3",
+     "type": "RSEFrameSFX"
+    },
+    {
+     "transitition_id": 56,
+     "type": "RSEFrameTransitition"
     },
     {
      "transitition_id": 14,
@@ -5195,60 +5062,1487 @@
      "description": "",
      "to_episode_id": 44,
      "type": "RSEFrameJump"
+    },
+    {
+     "speaker_id": 2,
+     "text": "После этих слов раздался раскат грома, свет на секунду погас, а на улице начался сильный шторм.",
+     "type": "RSEFrameText"
     }
    ],
    "id": 42,
    "name": "После репетиции",
    "scene_presets": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": -478,
+       "position_y": 1393,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
     null,
     null,
     null,
@@ -5283,13 +6577,18 @@
      "type": "RSEFrameTransitition"
     },
     {
+     "sound_id": 23,
+     "status": true,
+     "type": "RSEFrameSoundEffect"
+    },
+    {
      "speaker_id": 2,
      "text": "Мы собрались в гримёрке.",
      "type": "RSEFrameText"
     },
     {
      "speaker_id": 2,
-     "text": "Капли дождя сильно били по окну, завывал ветер,  и изредка были слышны глухие раскаты грома.",
+     "text": "Капли дождя сильно били по окну, ветер завывал, и изредка были слышны глухие раскаты грома.",
      "type": "RSEFrameText"
     },
     {
@@ -5480,22 +6779,294 @@
    "id": 44,
    "name": "Сбор в гримёрке",
    "scene_presets": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
     null,
     null,
     null,
@@ -5532,6 +7103,20 @@
      "type": "RSEFrameLocation"
     },
     {
+     "action": 1,
+     "character_id": 27,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 26,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
      "transitition_id": 15,
      "type": "RSEFrameTransitition"
     },
@@ -5561,11 +7146,15 @@
      "type": "RSEFrameText"
     },
     {
+     "type": "RSEFrameGap"
+    },
+    {
      "transitition_id": 14,
      "type": "RSEFrameTransitition"
     },
     {
-     "type": "RSEFrameGap"
+     "location_id": 9,
+     "type": "RSEFrameLocation"
     },
     {
      "transitition_id": 15,
@@ -5621,6 +7210,18 @@
      "speaker_id": 2,
      "text": "Рука, к которой я притронулся, оказалась несколько жёсткой – это у всех трупов так?",
      "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
     },
     {
      "speaker_id": 27,
@@ -5745,30 +7346,738 @@
    "id": 48,
    "name": "Осмотр места происшествия",
    "scene_presets": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "emotion_id": null,
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "outfit_id": null,
+       "position_x": -231,
+       "position_y": 895,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -1252,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -1252,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -1252,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -1252,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -1252,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -1252,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -1252,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -1252,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -1252,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -1252,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -1252,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -1252,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -1252,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+      "27": {
+       "flip_h": false,
+       "id": 27,
+       "order": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
     null,
     null,
     null,
@@ -5803,6 +8112,11 @@
     {
      "transitition_id": 15,
      "type": "RSEFrameTransitition"
+    },
+    {
+     "sound_id": 23,
+     "status": true,
+     "type": "RSEFrameSoundEffect"
     },
     {
      "speaker_id": 2,
@@ -6148,6 +8462,11 @@
      "type": "RSEFrameText"
     },
     {
+     "description": "",
+     "to_episode_id": 52,
+     "type": "RSEFrameJump"
+    },
+    {
      "speaker_id": 27,
      "text": "Да!",
      "type": "RSEFrameText"
@@ -6170,6 +8489,24 @@
    "id": 49,
    "name": "Опрос подозреваемых",
    "scene_presets": [
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
     null,
     null,
     null,
@@ -6292,8 +8629,42 @@
    "id": 50,
    "name": "Реакция на “иллюстрацию” №1",
    "scene_presets": [
-    null,
-    null,
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
     null,
     null,
     null,
@@ -6373,7 +8744,24 @@
    "id": 51,
    "name": "Реакция на “иллюстрацию” №2",
    "scene_presets": [
-    null,
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
     null,
     null,
     null,
@@ -6542,14 +8930,31 @@
     },
     {
      "description": "",
-     "to_episode_id": 0,
+     "to_episode_id": 53,
      "type": "RSEFrameJump"
     }
    ],
    "id": 52,
    "name": "Выбор версии",
    "scene_presets": [
-    null,
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 2,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
     null,
     null,
     null,
@@ -6588,10 +8993,948 @@
   {
    "active": false,
    "description": "Этьен предлагает версию с Дидье",
-   "frames": [],
+   "frames": [
+    {
+     "location_id": 47,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Я думаю, что это могло быть убийство.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "А тот, кто это сделал…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Это Дидье, ваш бутафор!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Это нонсенс!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Я бы не стал убивать людей.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Я долгое время служу театру и ни за что бы не пошёл на такое!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Это очень серьёзное обвинение, у вас есть доказательства?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Ситуация принимает интересный оборот!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Дидье – тот, кто имеет постоянный доступ к оружию.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Более того, он своими руками делает холостые патроны.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Что ему могло помешать оставить один или несколько патронов боевыми?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Или даже раздобыть их где-то ещё?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Именно это он и сделал, а затем зарядил боевой патрон в магазин оружия перед репетицией, тем самым убив мисс Морт.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Это невозможно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Наш театр сумел раздобыть только одну коробку с патронами для этого оружия, и все патроны были сразу же переделаны в холостые.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Всё это было задокументировано и сделано при госпоже директоре.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Директор, вы можете это подтвердить?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Да, это действительно так.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Вы говорите, что это оружие и патроны к нему редкие?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Ещё какие!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Нам пришлось связаться с музеем и заплатить немалые деньги, чтобы раздобыть их.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Калибр этого оружия нестандартный и так и не был стандартизирован, поэтому использовать другие патроны, даже очень похожие по калибру, очень и очень опасно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "А могли бы потратить эти деньги на что-нибудь полезное…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Мы могли бы купить новые костюмы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Или вкусно покушать в лучшем ресторане города!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "И далеко не раз…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "А если бы ещё не потратились на мощнейшую акустическую систему…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Хватит!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Это было взвешенное и обоснованное решение.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Нам нужно именно это оружие.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "А хороший звук очень важен для погружения зрителя.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет заулыбалась и начала подтрунивать над директором.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "А-а-а…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Это всё из-за того мужчины?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мне на секунду показалось, что директор засмущалась. ",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Или не показалось?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Погодите, мы отошли от темы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Госпожа директор, то есть, другими словами, вы можете подтвердить, что боевых патронов быть не должно?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Да – мы забрали всё, что было в том музее.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Предположим, что это так.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Тогда…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Что мешает мистеру Дидье взять один из холостых патронов и снова сделать его боевым?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Это очень непросто.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "К тому же, мы сразу утилизировали все пули, а найти им замену мне кажется и вовсе чем-то невозможным.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Кажется, что ситуация очень забавит Чарльза.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Упс…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Кажется, наш детектив в тупике!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Хм…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мне не нравится история с этим оружием, но мистера Дидье защищает директор, да и явного мотива на убийство мисс Морт у него нет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Только если директор не в сговоре с ним?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Или Дидье и вовсе к этому не причастен?",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Эх…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Не люблю, когда действительно приходится работать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Но, кажется, у меня нет сейчас другого выбора.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вот бы оказаться дома…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Что же, если вы не против, я бы хотел осмотреть бутафорскую комнату.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Цех.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Это бутафорский цех.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Да, именно это я и хотел сказать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Я был бы очень признателен, если кто-нибудь сможет меня проводить в бутафорский цех.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Давайте я!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я вас провожу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет посмотрела на директора, словно ожидая разрешения, и та кивнула в ответ.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Хорошо.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Дверь в бутафорский цех открыта, можете пройти туда.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Мы же останемся здесь и подождём вас.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Дидье, дай им ключ от ящика – пусть господин Этьен осмотрит его.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Под ответственность Арлет, само собой.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Госпожа директор!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Нельзя просто так давать ключи налево и направо.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Там же всё равно ничего опасного не осталось?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Оружие сейчас у тебя.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Дай им ключ.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Дидье это явно не понравилось, но он не стал дальше перечить директору.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Надеюсь, вы найдете там то, что ищете.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Но предупреждаю: не смейте переставлять вещи местами и портить порядок в комнате.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Так ты называешь это порядком?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Ах-ха-ха!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Да уж…",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "description": "",
+     "to_episode_id": 54,
+     "type": "RSEFrameJump"
+    }
+   ],
    "id": 53,
    "name": "Версия с Дидье",
-   "scene_presets": [],
+   "scene_presets": [
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 0.5
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "Этьен вместе с Арлет отправились в бутафорский цех в поисках дополнительных улик и информации.",
+   "frames": [
+    {
+     "location_id": 18,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "action": 1,
+     "character_id": 27,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 19,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мы с Арлет вышли из гримёрки и направились по длинному коридору театра.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Коридор был освещён тусклыми лампами, которые едва справлялись со своей задачей.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Под ногами тихо скрипели половицы, создавая атмосферу таинственности.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я решил немного разузнать про убитую.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Какой была мисс Морт?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Морт?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Она моя подруга!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Мы с ней работаем вместе недавно, но уже успели хорошо подружиться.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "И у нас много общих увлечений!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "А ещё она крутейший гримёр.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Даже не знаю, как мы будем без неё…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Подруга?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Что-то она не сильно расстроена смертью Морт.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Ты действительно думаешь, что это сделал Дидье?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Может по нему и не скажешь, но он добрый человек и предан своему делу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я бы даже сказала, что убийство других людей ему совершенно неинтересно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Говорят, что в тихом омуте черти водятся?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Сама подумай – он тот, у кого есть все возможности для этого.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Он имеет доступ к оружию и патронам, плюс у него есть технические навыки.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Да и не верю я, что он не сможет собрать боевой патрон обратно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "На улице раздался очередной раскат грома.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "А-а-а-а!!!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет схватилась за моё плечо.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "А-А-А-а-а-а!!!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я чуть не умер со страха.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Ещё чуть-чуть и жертв в театре стало бы больше.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Вы напугали меня!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Извините…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я с детства боюсь грозы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "А тут ещё и такая атмосфера.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Постарайтесь так больше не делать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Или, по крайней мере, в следующий раз предупреждайте меня, если хотите внезапно испугаться.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Моя фраза несколько озадачила её.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Спустя некоторое время она продолжила.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Скажите, а вы правда верите в сверхъестественное?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я слышала от директора, что вы занимаетесь чем-то подобным, но, честно говоря, я впервые встречаю такого человека.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Чем именно вы занимаетесь?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Я – экзорцист-консультант, единственный и неповторимый в своём роде!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "В мои услуги входит успокаивание призраков, обряды очищения, изгнание демонов…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Конечно же я в это верю!..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Как-то не очень уверенно прозвучало!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я перешёл на легкий шёпот.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Хотя чаще всё сводится к чему-то банальному: спасение кошек, издающих “демонические звуки” из-за стен; разоблачение шутников, которые пытаются изображать злых духов; успокаивание старушек – и тому подобное…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Вы упоминали демонов?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Часто ли вы их встречали?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Демоны?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Стоит ли говорить, что я вообще ни разу за свою жизнь не встречал ничего сверхъестественного?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я решил немного перевести тему.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Почему ты о них заговорила?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Неужто тебя беспокоит какой-то демон?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Точно!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Вы, наверное, даже не в курсе.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Директор вам так ничего и не успела рассказать?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Сразу же, как я пришёл в театр, меня посадили смотреть репетицию, обещая всё рассказать после неё.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я об этом совершенно забыл.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Нет…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Не успела.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Мы пришли!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мы подошли к тяжелой деревянной двери с табличкой \"Бутафорский цех\".",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я осторожно открыл дверь и мы вошли внутрь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Цех был заполнен всевозможными реквизитами: масками, костюмами, причудливыми куклами и декорациями.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В воздухе витал запах старого дерева и краски.",
+     "type": "RSEFrameText"
+    }
+   ],
+   "id": 54,
+   "name": "Осмотр бутафорского цеха",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   }
  ],
@@ -6599,274 +9942,292 @@
   "0": {
    "position_x": 1400,
    "position_y": 780,
-   "size_x": 200.000854492188,
-   "size_y": 241.001159667969
+   "size_x": 200.000732421875,
+   "size_y": 241.002136230469
   },
   "13": {
    "position_x": 1040,
    "position_y": 60,
-   "size_x": 200.000732421875,
-   "size_y": 155.001037597656
+   "size_x": 200.000152587891,
+   "size_y": 155.001068115234
   },
   "14": {
    "position_x": 800,
    "position_y": 1800,
-   "size_x": 199.99951171875,
+   "size_x": 199.998840332031,
    "size_y": 155
   },
   "15": {
    "position_x": 800,
    "position_y": 1960,
-   "size_x": 200.00048828125,
-   "size_y": 155.00146484375
+   "size_x": 199.999816894531,
+   "size_y": 155.001831054688
   },
   "16": {
    "position_x": 0,
    "position_y": 0,
-   "size_x": 199.99755859375,
-   "size_y": 155.000091552734
+   "size_x": 199.997741699219,
+   "size_y": 155.000076293945
   },
   "17": {
    "position_x": 0,
    "position_y": 160,
-   "size_x": 199.99755859375,
-   "size_y": 155.000152587891
+   "size_x": 199.997741699219,
+   "size_y": 155
   },
   "18": {
    "position_x": 0,
    "position_y": 320,
-   "size_x": 199.99755859375,
-   "size_y": 155.000244140625
+   "size_x": 199.997741699219,
+   "size_y": 155.000061035156
   },
   "19": {
    "position_x": 1040,
    "position_y": 220,
-   "size_x": 200.001708984375,
+   "size_x": 200.001129150391,
    "size_y": 155.00048828125
   },
   "2": {
    "position_x": 800,
    "position_y": 260,
-   "size_x": 199.99853515625,
-   "size_y": 155.000701904297
+   "size_x": 199.997863769531,
+   "size_y": 155.000854492188
   },
   "21": {
    "position_x": -400,
    "position_y": 840,
-   "size_x": 199.9990234375,
-   "size_y": 155.000579833984
+   "size_x": 199.998687744141,
+   "size_y": 155.000854492188
   },
   "22": {
    "position_x": -200,
    "position_y": 1400,
-   "size_x": 200,
-   "size_y": 155.001647949219
+   "size_x": 200.000152587891,
+   "size_y": 155.002136230469
   },
   "23": {
    "position_x": -800,
    "position_y": 1200,
-   "size_x": 200,
-   "size_y": 155.000915527344
+   "size_x": 199.999816894531,
+   "size_y": 155.000549316406
   },
   "24": {
    "position_x": 1800,
    "position_y": 760,
-   "size_x": 199.999938964844,
-   "size_y": 300.000183105469
+   "size_x": 199.998962402344,
+   "size_y": 299.999694824219
   },
   "25": {
    "position_x": 1040,
    "position_y": -100,
-   "size_x": 200.001708984375,
-   "size_y": 155.000305175781
+   "size_x": 200.001129150391,
+   "size_y": 155.000183105469
   },
   "26": {
    "position_x": 1040,
    "position_y": -260,
-   "size_x": 200.001708984375,
-   "size_y": 155.000061035156
+   "size_x": 200.001129150391,
+   "size_y": 155.000152587891
   },
   "27": {
    "position_x": 1340,
    "position_y": -160,
-   "size_x": 200.001220703125,
-   "size_y": 155.000244140625
+   "size_x": 200.001007080078,
+   "size_y": 155.000518798828
   },
   "28": {
    "position_x": -200,
    "position_y": 1560,
-   "size_x": 200,
-   "size_y": 155.000305175781
+   "size_x": 200.000152587891,
+   "size_y": 155.000244140625
   },
   "29": {
    "position_x": -200,
    "position_y": 1720,
-   "size_x": 200,
-   "size_y": 155.000366210938
+   "size_x": 200.000152587891,
+   "size_y": 155.000061035156
   },
   "30": {
    "position_x": -200,
    "position_y": 1880,
-   "size_x": 200,
-   "size_y": 155.00048828125
+   "size_x": 200.000152587891,
+   "size_y": 155.000122070313
   },
   "31": {
    "position_x": -200,
    "position_y": 2040,
-   "size_x": 200,
-   "size_y": 155.001220703125
+   "size_x": 200.000152587891,
+   "size_y": 155.002014160156
   },
   "32": {
    "position_x": -200,
    "position_y": 2200,
-   "size_x": 200.00048828125,
-   "size_y": 155.000366210938
+   "size_x": 200.000640869141,
+   "size_y": 155.001586914063
   },
   "33": {
    "position_x": -200,
    "position_y": 2360,
-   "size_x": 200.00048828125,
-   "size_y": 155.00146484375
+   "size_x": 200.000640869141,
+   "size_y": 155.000610351563
   },
   "34": {
    "position_x": -200,
    "position_y": 2520,
-   "size_x": 200,
-   "size_y": 155.0009765625
+   "size_x": 200.000152587891,
+   "size_y": 155.000732421875
   },
   "35": {
    "position_x": -200,
    "position_y": 2680,
-   "size_x": 200,
-   "size_y": 155
+   "size_x": 200.000152587891,
+   "size_y": 155.00048828125
   },
   "36": {
    "position_x": -420,
    "position_y": 1440,
-   "size_x": 200,
-   "size_y": 155.001647949219
+   "size_x": 200.000442504883,
+   "size_y": 155.001220703125
   },
   "37": {
    "position_x": -400,
    "position_y": 680,
-   "size_x": 200,
-   "size_y": 155.000213623047
+   "size_x": 199.999664306641,
+   "size_y": 155.000061035156
   },
   "38": {
    "position_x": -240,
    "position_y": 0,
-   "size_x": 200,
-   "size_y": 155.000091552734
+   "size_x": 200.000854492188,
+   "size_y": 155.000076293945
   },
   "39": {
    "position_x": 1040,
    "position_y": -420,
-   "size_x": 200.000732421875,
+   "size_x": 200.000152587891,
    "size_y": 155
   },
   "40": {
    "position_x": 1040,
    "position_y": -580,
-   "size_x": 200.000732421875,
-   "size_y": 155.000122070313
+   "size_x": 200.000152587891,
+   "size_y": 155.000015258789
   },
   "41": {
    "position_x": 220,
    "position_y": -60,
-   "size_x": 199.9990234375,
-   "size_y": 155
+   "size_x": 199.999053955078,
+   "size_y": 155.000244140625
   },
   "42": {
    "position_x": 2200,
    "position_y": 760,
-   "size_x": 200.001281738281,
-   "size_y": 300.000671386719
+   "size_x": 200.001098632813,
+   "size_y": 300.000183105469
   },
   "43": {
    "position_x": 1142.04223632813,
    "position_y": 453.982330322266,
-   "size_x": 199.999633789063,
-   "size_y": 155.000091552734
+   "size_x": 199.999969482422,
+   "size_y": 155.000244140625
   },
   "44": {
    "position_x": 2600,
    "position_y": 740,
-   "size_x": 239.489379882813,
-   "size_y": 375.04736328125
+   "size_x": 239.490295410156,
+   "size_y": 375.0478515625
   },
   "45": {
    "position_x": -480,
    "position_y": 0,
-   "size_x": 200,
-   "size_y": 155.000030517578
+   "size_x": 199.999465942383,
+   "size_y": 155.000076293945
   },
   "46": {
    "position_x": -480,
    "position_y": 160,
-   "size_x": 200,
-   "size_y": 155.000030517578
+   "size_x": 199.999465942383,
+   "size_y": 155
   },
   "47": {
    "position_x": -480,
    "position_y": 320,
-   "size_x": 200,
-   "size_y": 155.000244140625
+   "size_x": 199.999465942383,
+   "size_y": 155.000061035156
   },
   "48": {
    "position_x": 3000,
    "position_y": 740,
-   "size_x": 302.685546875,
-   "size_y": 345.62060546875
+   "size_x": 302.685302734375,
+   "size_y": 345.62158203125
   },
   "49": {
    "position_x": 3400,
    "position_y": 740,
-   "size_x": 200.000732421875,
-   "size_y": 299.99951171875
+   "size_x": 200.000610351563,
+   "size_y": 300
   },
   "50": {
    "position_x": 3800,
-   "position_y": 600,
-   "size_x": 287.62158203125,
-   "size_y": 291.493225097656
+   "position_y": 520,
+   "size_x": 287.62353515625,
+   "size_y": 291.492919921875
   },
   "51": {
    "position_x": 3800,
-   "position_y": 920,
-   "size_x": 293.97900390625,
-   "size_y": 293.206481933594
+   "position_y": 1000,
+   "size_x": 293.98095703125,
+   "size_y": 293.205383300781
   },
   "52": {
-   "position_x": 4320,
-   "position_y": 780,
-   "size_x": 200,
-   "size_y": 300
+   "position_x": 4240,
+   "position_y": 740,
+   "size_x": 214.972045898438,
+   "size_y": 336.49658203125
   },
   "53": {
-   "position_x": 4640,
-   "position_y": 780,
-   "size_x": 200,
-   "size_y": 300
+   "position_x": 4520,
+   "position_y": 740,
+   "size_x": 214.9716796875,
+   "size_y": 323.39501953125
+  },
+  "54": {
+   "position_x": 4800,
+   "position_y": 720,
+   "size_x": 304.634765625,
+   "size_y": 344.235656738281
+  },
+  "55": {
+   "position_x": -620,
+   "position_y": 820,
+   "size_x": 199.99951171875,
+   "size_y": 155.000244140625
+  },
+  "56": {
+   "position_x": 800,
+   "position_y": 2120,
+   "size_x": 199.999816894531,
+   "size_y": 155
   },
   "9": {
    "position_x": 220,
    "position_y": -300,
-   "size_x": 200,
-   "size_y": 155.000122070313
+   "size_x": 200.000030517578,
+   "size_y": 155.000244140625
   },
-  "scroll_offset_x": 2014.80053710938,
-  "scroll_offset_y": 393.071228027344,
+  "scroll_offset_x": 5.1905517578125,
+  "scroll_offset_y": -217.240768432617,
   "show_grid": true,
   "snapping_enabled": true,
-  "zoom": 0.883176743984222
+  "zoom": 0.374553054571152
  },
- "last_id": 53,
+ "last_id": 56,
  "locations": [
   {
-   "active": false,
+   "active": true,
    "id": 9,
-   "name": "Тест №1",
-   "path_to_scene": "res://locations/test/cave.tscn"
+   "name": "(CG) Мёртвая Морт",
+   "path_to_scene": "res://cg_arts/морт/морт.tscn"
   },
   {
    "active": true,
@@ -6984,9 +10345,9 @@
   {
    "active": true,
    "id": 23,
-   "name": "Test Sound #1",
+   "name": "Дождь",
    "once_playable": true,
-   "path_to_file": "res://audio/melancholic piano.mp3"
+   "path_to_file": "res://audio/sfx/rain.mp3"
   }
  ],
  "transititions": [
@@ -7001,6 +10362,12 @@
    "id": 15,
    "name": "Fade Out",
    "path_to_scene": "res://transititions/fade_out.tscn"
+  },
+  {
+   "active": true,
+   "id": 56,
+   "name": "Вспышка молнии",
+   "path_to_scene": "res://transititions/lightning.tscn"
   }
  ],
  "visual_effects": [
@@ -7014,6 +10381,12 @@
    "active": true,
    "id": 37,
    "name": "Flashback",
+   "path_to_scene": ""
+  },
+  {
+   "active": false,
+   "id": 55,
+   "name": "",
    "path_to_scene": ""
   }
  ]

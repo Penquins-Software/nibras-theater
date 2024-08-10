@@ -86,15 +86,15 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Этьен" type="Node2D" node_paths=PackedStringArray("head", "eyes", "mouth", "body", "bleep_player")]
+[node name="Этьен" type="Node2D" node_paths=PackedStringArray("eyes", "mouth", "bleep_player")]
+z_index = 10
 script = ExtResource("1_5osko")
+play_animations_in_editor = null
 emotion_ids_to_anim_names = {
 0: "default"
 }
-head = NodePath("Head")
 eyes = NodePath("Head/Eyes")
 mouth = NodePath("Head/Mouth")
-body = NodePath("Body")
 eyes_frame_close = 2
 bleep_player = NodePath("BleepPlayer")
 

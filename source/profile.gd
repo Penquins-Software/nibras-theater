@@ -55,6 +55,7 @@ static func load_from_file(path_to_file: String) -> Profile:
 		profile.viewed = json.data["viewed"]
 	
 	print("Profile has been loaded.")
-	print("Global variables: %s" % profile.global_variables.data)
-	print("Viewed: %s" % profile.viewed)
+	if Engine.is_editor_hint():
+		print("Global variables: %s" % profile.global_variables.data)
+		print("Viewed: %s" % profile.viewed)
 	return profile

@@ -77,6 +77,7 @@ func _set_preview() -> void:
 	character_preview_viewport.add_child(preview_character)
 
 	preview_character.character = character
+	preview_character.play_animations_in_editor = true
 
 	if character.emotions.size() > 0:
 		_preview_emotion(int(character.emotions.keys()[0]))

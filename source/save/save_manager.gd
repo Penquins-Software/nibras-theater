@@ -31,7 +31,7 @@ func get_saves() -> void:
 		dir.list_dir_begin()
 		var file_name = dir.get_next()
 		while file_name != "":
-			if not dir.current_is_dir() and not file_name.ends_with(".png"):
+			if not dir.current_is_dir() and not file_name.ends_with(".jpg"):
 				var full_path = PATH_TO_SAVE_FOLDER + "/" + file_name
 				var save = Save.load_from_file(full_path)
 				saves.append(save)

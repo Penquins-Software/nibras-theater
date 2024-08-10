@@ -6,8 +6,8 @@ extends AudioStreamPlayer
 var is_playing: bool = false
 
 
-func _init():
-	bus = &"Bleep"
+#func _init():
+	#bus = &"Bleep"
 
 
 func _ready():

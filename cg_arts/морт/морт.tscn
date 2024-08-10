@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhj5t2ugl6v7i"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_3t10n"]
+[ext_resource type="Texture2D" uid="uid://qw85tailqmll" path="res://cg_arts/морт/морт.png" id="1_g3rs8"]
+
+[node name="Морт" type="Node2D"]
+z_index = 100
+script = ExtResource("1_3t10n")
+
+[node name="Морт" type="Sprite2D" parent="."]
+position = Vector2(0, 626)
+texture = ExtResource("1_g3rs8")

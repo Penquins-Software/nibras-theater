@@ -15,8 +15,16 @@ signal node_changed()
 @export var flip_h_check_box: CheckBox
 @export var order: Control
 @export var order_spin_box: SpinBox
+@export var character_preset: Control
+@export var character_emotion: MenuButton
+@export var character_outfit: MenuButton
 
 var selected_node: Node2D
+
+
+func _ready():
+	character_emotion.get_popup().index_pressed.connect(_character_emotion_index_pressed)
+	character_outfit.get_popup().index_pressed.connect(_character_outfit_index_pressed)
 
 
 func set_node(node: Node2D) -> void:
@@ -81,6 +89,25 @@ func _set_parameters() -> void:
 		order_spin_box.value = selected_node.order
 	else:
 		order.visible = false
+	
+	if selected_node is RSEBaseCharacterController:
+		character_preset.visible = true
+		
+		character_emotion.text = "[Эмоция]"
+		character_emotion.get_popup().clear()
+		for emotion_id in selected_node.character.emotions:
+			character_emotion.get_popup().add_item(selected_node.character.emotions[emotion_id], int(emotion_id))
+			if selected_node._emotion_id == int(emotion_id):
+				character_emotion.text = selected_node.character.emotions[emotion_id]
+		
+		character_outfit.text = "[Костюм]"
+		character_outfit.get_popup().clear()
+		for outfit_id in selected_node.character.outfits:
+			character_outfit.get_popup().add_item(selected_node.character.outfits[outfit_id], int(outfit_id))
+			if selected_node._outfit_id == int(outfit_id):
+				character_outfit.text = selected_node.character.outfits[outfit_id]
+	else:
+		character_preset.visible = false
 
 
 func _on_position_x_changed(value):
@@ -121,3 +148,16 @@ func _on_flip_h_check_box_toggled(toggled_on):
 func _on_order_changed(value):
 	selected_node.order = value
 	node_changed.emit()
+
+
+
+func _character_emotion_index_pressed(index: int) -> void:
+	var id = character_emotion.get_popup().get_item_id(index)
+	character_emotion.text = character_emotion.get_popup().get_item_text(index)
+	(selected_node as RSEBaseCharacterController).set_emotion(id)
+
+
+func _character_outfit_index_pressed(index: int) -> void:
+	var id = character_outfit.get_popup().get_item_id(index)
+	character_outfit.text = character_outfit.get_popup().get_item_text(index)
+	(selected_node as RSEBaseCharacterController).set_outfit(id)

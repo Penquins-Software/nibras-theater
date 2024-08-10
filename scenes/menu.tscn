@@ -151,9 +151,13 @@ theme = ExtResource("4_w7rwt")
 bbcode_enabled = true
 text = "[center]Разработка: [url=https://ozkitsune.itch.io/]O3ZY[/url]
 Сценарий: [url=https://ozkitsune.itch.io/]O3ZY[/url]
+Редактура: [url=https://vk.com/musical_output]lexander[/url]
 Графика: [url=https://vk.com/ankelran]RANKEL[/url], [url=https://vk.com/agnialoo]Василий Василич[/url]
 Музыка и звуковой дизайн: [url=https://vk.com/musical_output]lexander[/url]
-Автор идеи: [url=https://itch.io/profile/aki-ona]Akiona[/url]"
+
+Автор идеи: [url=https://itch.io/profile/aki-ona]Akiona[/url]
+
+Pen[color=red]q[/color]uins Software"
 fit_content = true
 scroll_active = false
 

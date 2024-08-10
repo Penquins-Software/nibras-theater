@@ -44,7 +44,7 @@ func save_to_file(path_to_file: String) -> void:
 	file.close()
 	
 	if image != null:
-		image.save_png(path_to_file + ".png")
+		image.save_jpg(path_to_file + ".jpg")
 
 
 static func load_from_file(path_to_file: String) -> Save:
@@ -72,7 +72,7 @@ static func load_from_file(path_to_file: String) -> Save:
 		_local_variables = json.data["local_variables"]
 		_datetime = json.data["datetime"]
 	
-	var path_to_image = path_to_file + ".png"
+	var path_to_image = path_to_file + ".jpg"
 	if FileAccess.file_exists(path_to_image):
 		_image = Image.load_from_file(path_to_image)
 	
@@ -83,5 +83,5 @@ static func load_from_file(path_to_file: String) -> Save:
 
 func delete() -> void:
 	DirAccess.remove_absolute(path)
-	DirAccess.remove_absolute(path + ".png")
+	DirAccess.remove_absolute(path + ".jpg")
 	SaveManager.get_saves()

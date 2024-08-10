@@ -278,6 +278,33 @@ layout_mode = 2
 size_flags_horizontal = 8
 theme = ExtResource("2_5jnp4")
 
+[node name="Громкость блипов" type="HBoxContainer" parent="VBoxContainer" node_paths=PackedStringArray("slider", "spin_box")]
+visible = false
+layout_mode = 2
+script = ExtResource("7_bsqa4")
+bus = 2
+slider = NodePath("../Громкость музыки/HSlider")
+spin_box = NodePath("../Громкость музыки/SpinBox")
+
+[node name="Label" type="Label" parent="VBoxContainer/Громкость блипов"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme = ExtResource("2_5jnp4")
+text = "Громкость музыки:"
+horizontal_alignment = 2
+
+[node name="HSlider" type="HSlider" parent="VBoxContainer/Громкость блипов"]
+custom_minimum_size = Vector2(380, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+theme = ExtResource("2_5jnp4")
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/Громкость блипов"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme = ExtResource("2_5jnp4")
+
 [node name="Вернуться" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8

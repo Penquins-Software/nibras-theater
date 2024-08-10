@@ -2,18 +2,19 @@
 class_name RSEBaseCharacterController
 extends RSEBaseController
 
+@export_category("Editor")
+@export var play_animations_in_editor: bool = false
 
 @export_category("Emotion")
 @export var emotion_ids_to_anim_names: Dictionary
 
 @export_category("Head")
-@export var head: Node2D
+#@export var head: Node2D
 @export var eyes: AnimatedSprite2D
 @export var mouth: AnimatedSprite2D
 
-@export_category("Body")
-@export var body: Node2D
-@export var tors: AnimatedSprite2D
+#@export_category("Body")
+#@export var body: Node2D
 
 @export_category("Other")
 @export var eyes_frame_open: int
@@ -23,6 +24,8 @@ extends RSEBaseController
 
 
 var character: RSECharacter : set = _set_character
+var _emotion_id: int
+var _outfit_id: int
 var emotion: String
 var anim_name: StringName
 
@@ -51,22 +54,25 @@ func _set_flip_h(value: bool) -> void:
 
 
 func _set_flip_h_for_all_sprites() -> void:
-	if tors:
-		tors.flip_h = flip_h
-	if eyes:
-		eyes.flip_h = flip_h
-	if mouth:
-		mouth.flip_h = flip_h
+	_set_flip_for_part(self)
+
+
+func _set_flip_for_part(node: Node) -> void:
+	if node is AnimatedSprite2D or node is Sprite2D:
+		node.flip_h = flip_h
+	
+	for child in node.get_children():
+		_set_flip_for_part(child)
 
 
 func _set_order(order_index: int) -> void:
 	order = order_index
-	_set_order_for_all_sprites()
+	#_set_order_for_all_sprites()
 
 
 func _set_order_for_all_sprites() -> void:
-	if tors:
-		tors.z_index = order
+	#if tors:
+		#tors.z_index = order
 	if eyes:
 		eyes.z_index = order
 	if mouth:
@@ -106,6 +112,8 @@ func set_emotion(emotion_id: int) -> bool:
 	if emotion == character.emotions[str(emotion_id)]:
 		return false
 	
+	_emotion_id = emotion_id
+	
 	if emotion_ids_to_anim_names.size() > 0:
 		if emotion_ids_to_anim_names.keys().has(emotion_id):
 			emotion = character.emotions[str(emotion_id)]
@@ -118,14 +126,20 @@ func set_emotion(emotion_id: int) -> bool:
 
 
 func _set_emotion_for_all_parts() -> void:
-	if eyes != null:
-		eyes.animation = anim_name
-	if mouth != null:
-		mouth.animation = anim_name
+	_set_emotion_for_part(self)
+
+
+func _set_emotion_for_part(node: Node) -> void:
+	if node is AnimatedSprite2D:
+		if node.sprite_frames.has_animation(anim_name):
+			node.animation = anim_name
+	
+	for child in node.get_children():
+		_set_emotion_for_part(child)
 
 
 func set_outfit(outfit_id: int) -> void:
-	pass
+	_outfit_id = outfit_id
 
 
 func talk(time: float = 0.0) -> void:
@@ -147,7 +161,10 @@ func start_talk() -> void:
 		return
 	
 	if mouth != null:
-		mouth.play(anim_name)
+		if mouth.sprite_frames.has_animation(anim_name):
+			mouth.play(anim_name)
+		else:
+			mouth.play(default_emotion)
 
 
 func stop_talk() -> void:
@@ -172,8 +189,14 @@ func blink() -> void:
 	if anim_name == null:
 		return
 	
+	if Engine.is_editor_hint() and not play_animations_in_editor:
+		return
+	
 	if eyes != null:
-		eyes.play(anim_name)
+		if eyes.sprite_frames.has_animation(anim_name):
+			eyes.play(anim_name)
+		else:
+			eyes.play(default_emotion)
 
 
 func _check_blinking_time(delta: float) -> void:

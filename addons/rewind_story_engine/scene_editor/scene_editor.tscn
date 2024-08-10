@@ -120,7 +120,7 @@ stretch = true
 disable_3d = true
 transparent_bg = true
 handle_input_locally = false
-size = Vector2i(2, 2)
+size = Vector2i(1176, 1002)
 render_target_update_mode = 4
 
 [node name="SceneBuilder" parent="HSplitContainer/VBoxContainer/HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer/SubViewport" instance=ExtResource("2_k1d8p")]
@@ -135,7 +135,7 @@ offset_top = 4.0
 offset_right = 152.0
 offset_bottom = 35.0
 
-[node name="Inspector" type="Panel" parent="HSplitContainer/VBoxContainer/HSplitContainer" node_paths=PackedStringArray("title", "transform", "position_x_spin_box", "position_y_spin_box", "rotation_spin_box", "rotation_slider", "scale_spin_box", "flip_h_check_box", "order", "order_spin_box")]
+[node name="Inspector" type="Panel" parent="HSplitContainer/VBoxContainer/HSplitContainer" node_paths=PackedStringArray("title", "transform", "position_x_spin_box", "position_y_spin_box", "rotation_spin_box", "rotation_slider", "scale_spin_box", "flip_h_check_box", "order", "order_spin_box", "character_preset", "character_emotion", "character_outfit")]
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 focus_mode = 1
@@ -150,6 +150,9 @@ scale_spin_box = NodePath("MarginContainer/Title/Transform/Scale/Parameters/Valu
 flip_h_check_box = NodePath("MarginContainer/Title/Transform/FlipHCheckBox")
 order = NodePath("MarginContainer/Title/Transform/Order")
 order_spin_box = NodePath("MarginContainer/Title/Transform/Order/Value")
+character_preset = NodePath("MarginContainer/Title/CharacterPreset")
+character_emotion = NodePath("MarginContainer/Title/CharacterPreset/Emotion/Parameters/MenuButton")
+character_outfit = NodePath("MarginContainer/Title/CharacterPreset/Outfit/Parameters/MenuButton")
 
 [node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector"]
 layout_mode = 1
@@ -293,9 +296,53 @@ size_flags_horizontal = 3
 min_value = -360.0
 max_value = 360.0
 
-[node name="HSeparator2" type="HSeparator" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title"]
-visible = false
+[node name="CharacterPreset" type="VBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title"]
 layout_mode = 2
+
+[node name="HSeparator2" type="HSeparator" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/CharacterPreset"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/CharacterPreset"]
+layout_mode = 2
+text = "Установки персонажа"
+
+[node name="Emotion" type="HBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/CharacterPreset"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/CharacterPreset/Emotion"]
+custom_minimum_size = Vector2(80, 27)
+layout_mode = 2
+size_flags_vertical = 0
+text = "Эмоция:"
+vertical_alignment = 2
+
+[node name="Parameters" type="VBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/CharacterPreset/Emotion"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MenuButton" type="MenuButton" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/CharacterPreset/Emotion/Parameters"]
+layout_mode = 2
+text = "[Эмоция]"
+flat = false
+
+[node name="Outfit" type="HBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/CharacterPreset"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/CharacterPreset/Outfit"]
+custom_minimum_size = Vector2(80, 27)
+layout_mode = 2
+size_flags_vertical = 0
+text = "Костюм:"
+vertical_alignment = 2
+
+[node name="Parameters" type="VBoxContainer" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/CharacterPreset/Outfit"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MenuButton" type="MenuButton" parent="HSplitContainer/VBoxContainer/HSplitContainer/Inspector/MarginContainer/Title/CharacterPreset/Outfit/Parameters"]
+layout_mode = 2
+text = "[Костюм]"
+flat = false
 
 [connection signal="item_selected" from="HSplitContainer/ItemList" to="." method="_on_item_list_item_selected"]
 [connection signal="value_changed" from="HSplitContainer/VBoxContainer/FrameController/SpinBox" to="." method="_on_spin_box_value_changed"]

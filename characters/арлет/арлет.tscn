@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://beq7l84g5gdlw"]
+[gd_scene load_steps=32 format=3 uid="uid://beq7l84g5gdlw"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_rk3p5"]
 [ext_resource type="Texture2D" uid="uid://cs5fbqsa7ifs1" path="res://characters/арлет/sprites/Голова 1.png" id="2_stomh"]
@@ -20,8 +20,12 @@
 [ext_resource type="Texture2D" uid="uid://dclkatp3abv6d" path="res://characters/арлет/sprites/Голова 1 Рот 1-1.png" id="15_heh6n"]
 [ext_resource type="Texture2D" uid="uid://bxkxaivy0wr4a" path="res://characters/арлет/sprites/Голова 1 Рот 1-2.png" id="16_x0hmg"]
 [ext_resource type="Texture2D" uid="uid://cvyefdxdajlsb" path="res://characters/арлет/sprites/Голова 1 Рот 1-3.png" id="17_36jlr"]
+[ext_resource type="Texture2D" uid="uid://dhwh1tfn47o2" path="res://characters/арлет/sprites/Голова 1 Рот 2-1.png" id="18_o3mn6"]
 [ext_resource type="Texture2D" uid="uid://c13tm7p0x8oin" path="res://characters/арлет/sprites/Голова 1 брови 1.png" id="18_o8wh2"]
 [ext_resource type="Texture2D" uid="uid://kufcebyf35k4" path="res://characters/арлет/sprites/2_.png" id="19_eerc2"]
+[ext_resource type="Texture2D" uid="uid://cwp4wviq1pbc" path="res://characters/арлет/sprites/Голова 1 Рот 2-2.png" id="19_qfl2r"]
+[ext_resource type="Texture2D" uid="uid://c73b01xbw47ip" path="res://characters/арлет/sprites/Голова 1 Рот 2-3.png" id="20_7v5pq"]
+[ext_resource type="Texture2D" uid="uid://bg0crqp48judp" path="res://characters/арлет/sprites/Голова 1 брови 3.png" id="22_sukaw"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7i0p1"]
 animations = [{
@@ -50,20 +54,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_b2af3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_t0enu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_u7cpm")
-}],
-"loop": true,
-"name": &"new_animation",
-"speed": 6.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": ExtResource("9_e8y5r")
 }, {
 "duration": 1.0,
@@ -72,7 +62,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("11_gtjte")
 }],
-"loop": true,
+"loop": false,
 "name": &"new_animation_1",
 "speed": 6.0
 }, {
@@ -86,9 +76,37 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("14_opscj")
 }],
-"loop": true,
+"loop": false,
 "name": &"new_animation_2",
 "speed": 6.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation_3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_b2af3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_t0enu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_u7cpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_u7cpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_t0enu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_b2af3")
+}],
+"loop": false,
+"name": &"Злость",
+"speed": 10.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_as4yi"]
@@ -106,6 +124,20 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_o3mn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_qfl2r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_7v5pq")
+}],
+"loop": true,
+"name": &"Злость",
+"speed": 8.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o3p7a"]
@@ -116,6 +148,14 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_sukaw")
+}],
+"loop": true,
+"name": &"Злость",
 "speed": 5.0
 }]
 
@@ -132,15 +172,15 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Арлет" type="Node2D" node_paths=PackedStringArray("head", "eyes", "mouth", "body", "bleep_player")]
+[node name="Арлет" type="Node2D" node_paths=PackedStringArray("eyes", "mouth", "bleep_player")]
+z_index = 10
 script = ExtResource("1_rk3p5")
 emotion_ids_to_anim_names = {
-0: "default"
+0: "default",
+1: &"Злость"
 }
-head = NodePath("Head")
 eyes = NodePath("Head/Eyes")
 mouth = NodePath("Head/Mouth")
-body = NodePath("Body")
 eyes_frame_close = 2
 bleep_player = NodePath("BleepPlayer")
 
@@ -149,18 +189,17 @@ texture = ExtResource("2_stomh")
 
 [node name="Eyes" type="AnimatedSprite2D" parent="Head"]
 sprite_frames = SubResource("SpriteFrames_7i0p1")
-frame = 5
-frame_progress = 1.0
+animation = &"Злость"
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 sprite_frames = SubResource("SpriteFrames_as4yi")
-frame_progress = 0.20314
+animation = &"Злость"
 
 [node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
 sprite_frames = SubResource("SpriteFrames_o3p7a")
+animation = &"Злость"
 
 [node name="Hair" type="Sprite2D" parent="Head"]
-visible = false
 texture = ExtResource("19_eerc2")
 
 [node name="Body" type="Sprite2D" parent="."]

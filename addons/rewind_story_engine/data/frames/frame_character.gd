@@ -20,9 +20,11 @@ func write_frame_info_to_scene_state(scene_state: RSESceneState) -> void:
 			if scene_state.characters.has(character_id):
 				scene_state.characters.erase(character_id)
 		RSECharacter.Action.Emotion:
-			scene_state.characters[character_id]["emotion_id"] = emotion_id
+			if scene_state.characters.has(character_id):
+				scene_state.characters[character_id]["emotion_id"] = emotion_id
 		RSECharacter.Action.Outfit:
-			scene_state.characters[character_id]["outfit_id"] = outfit_id
+			if scene_state.characters.has(character_id):
+				scene_state.characters[character_id]["outfit_id"] = outfit_id
 
 
 func get_frame_type() -> RSEFrame.FrameType:

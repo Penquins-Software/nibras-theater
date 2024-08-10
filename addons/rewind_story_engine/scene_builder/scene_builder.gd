@@ -223,11 +223,13 @@ func save_scene_preset() -> void:
 func apply_scene_preset() -> void:
 	if current_frame_index < 0 or current_frame_index > episode.scene_presets.size() - 1:
 		camera_controller.camera.zoom = Vector2(0.5, 0.5)
+		camera_controller.scale = Vector2(2, 2)
 		return
 	
 	var scene_preset = episode.scene_presets[current_frame_index]
 	if scene_preset == null:
 		camera_controller.camera.zoom = Vector2(0.5, 0.5)
+		camera_controller.scale = Vector2(2, 2)
 		return
 	
 	scene_preset.apply_preset_to_camera(camera_controller)
@@ -291,8 +293,9 @@ func reset_scene_preset() -> void:
 
 
 func show_frame_info() -> void:
-	var frame = episode.real_frames[current_frame_index]
-	frame.print_info()
+	if Engine.is_editor_hint():
+		var frame = episode.real_frames[current_frame_index]
+		frame.print_info()
 
 
 func _input(event):
