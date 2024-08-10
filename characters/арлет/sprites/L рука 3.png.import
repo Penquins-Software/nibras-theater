@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/L рука 3.png-4f50094218aff4fb2c256706d836
 
 [params]
 
-compress/mode=0
+compress/mode=1
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

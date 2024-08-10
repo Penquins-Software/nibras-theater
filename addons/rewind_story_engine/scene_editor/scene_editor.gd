@@ -17,12 +17,20 @@ var episode: RSEEpisode : set = _set_episode
 var tree_nodes: Dictionary
 
 
+func _input(event):
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_RIGHT:
+			inspector.set_node(null)
+			hierarchy_tree.deselect_all()
+
+
 func _set_episode(ep: RSEEpisode) -> void:
 	scene_builder.save_scene_preset()
 	episode = ep
 	if ep != null:
 		_set_preview()
 		_build_hierarchy_tree()
+		inspector.set_node(null)
 
 
 func _build_hierarchy_tree() -> void:
@@ -31,7 +39,9 @@ func _build_hierarchy_tree() -> void:
 	tree_nodes.clear()
 	var root = _create_tree_item(scene_builder)
 	for child in scene_builder.get_children():
-		_create_tree_item(child, root)
+		var item = _create_tree_item(child, root)
+		if inspector.selected_node == child:
+			hierarchy_tree.set_selected(item, 0)
 
 
 func _create_tree_item(node: Node, parent: TreeItem = null) -> TreeItem:
@@ -71,16 +81,19 @@ func _on_item_list_item_selected(index):
 func _on_spin_box_value_changed(value: int):
 	frame_spin_box.value = scene_builder.set_frame(value)
 	_build_hierarchy_tree()
+	inspector.update()
 
 
 func _on_prev_pressed():
 	frame_spin_box.set_value_no_signal(scene_builder.prev_frame())
 	_build_hierarchy_tree()
+	inspector.update()
 
 
 func _on_next_pressed():
 	frame_spin_box.set_value_no_signal(scene_builder.next_frame())
 	_build_hierarchy_tree()
+	inspector.update()
 
 
 func _on_tree_item_selected():

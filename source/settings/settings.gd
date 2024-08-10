@@ -120,6 +120,8 @@ func _enter_tree():
 	load_config()
 	profile = Profile.load_from_file(PATH_TO_PROFILE)
 	RewindStoryEngine.story = RSEStory.load_from_file(PATH_TO_STORY)
+	var thread = Thread.new()
+	thread.start(RSESceneBuilder.load_all_characters)
 
 
 func _exit_tree():

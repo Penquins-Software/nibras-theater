@@ -253,6 +253,8 @@ func _preview_emotion(id: int) -> void:
 
 func _preview_outfit(id: int) -> void:
 	character_preview_outfit_label.text = OUTFIT_TEXT % character.outfits[str(id)]
+	if preview_character != null:
+		preview_character.set_outfit(id)
 
 
 func _on_color_picker_color_changed(color: Color):

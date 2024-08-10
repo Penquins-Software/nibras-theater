@@ -96,10 +96,10 @@ func apply_preset_to_character(character_controller: RSEBaseCharacterController)
 	character_controller.scale = Vector2(transform["scale"], transform["scale"])
 	character_controller.flip_h = transform["flip_h"]
 	character_controller.order = transform["order"]
-	if transform.has("emotion_id"):
-		character_controller.set_emotion(transform["emotion_id"])
 	if transform.has("outfit_id"):
 		character_controller.set_outfit(transform["outfit_id"])
+	if transform.has("emotion_id"):
+		character_controller.set_emotion(transform["emotion_id"])
 
 	return true
 

@@ -23,6 +23,10 @@ var visual_effects: Dictionary
 var sound_effects: Dictionary
 
 
+static var characters_loaded: bool = false
+static var loaded_characters = {}
+
+
 func set_episode(episode: RSEEpisode) -> void:
 	clear_scene()
 	self.episode = episode
@@ -129,8 +133,8 @@ func build_frame(frame: RSEFrame, is_next: bool) -> void:
 		else:
 			character = characters[character_id]
 		if character != null:
-			character.set_emotion(scene_state.characters[character_id]["emotion_id"])
 			character.set_outfit(scene_state.characters[character_id]["outfit_id"])
+			character.set_emotion(scene_state.characters[character_id]["emotion_id"])
 	
 	for visual_effect_id in visual_effects:
 		if not scene_state.visual_effect_ids.has(visual_effect_id):
@@ -179,7 +183,14 @@ func add_character(character: RSECharacter) -> RSEBaseCharacterController:
 	if character.path_to_scene == "":
 		return null
 	
-	var character_node: RSEBaseCharacterController = load(character.path_to_scene).instantiate()
+	var character_scene: PackedScene
+	if not loaded_characters == null and loaded_characters.has(character.id):
+		character_scene = loaded_characters[character.id]
+	else:
+		character_scene = load(character.path_to_scene)
+	
+	#var character_node: RSEBaseCharacterController = load(character.path_to_scene).instantiate()
+	var character_node: RSEBaseCharacterController = character_scene.instantiate()
 	character_node.character = character
 	add_child(character_node)
 	characters[character.id] = character_node
@@ -317,3 +328,12 @@ func get_characeter_by_id(id: int) -> RSEBaseCharacterController:
 		return characters[id]
 	
 	return null
+
+
+static func load_all_characters() -> void:
+	for character_id: int in RewindStoryEngine.story.characters:
+		var character: RSECharacter = RewindStoryEngine.story.characters[character_id]
+		if not character.path_to_scene == "":
+			loaded_characters[character_id] = load(character.path_to_scene)
+	characters_loaded = true
+	print("loaded_all_characters!")

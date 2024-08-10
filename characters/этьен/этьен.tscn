@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://ws4buoavq3e6"]
+[gd_scene load_steps=20 format=3 uid="uid://ws4buoavq3e6"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_5osko"]
 [ext_resource type="Texture2D" uid="uid://6nhthfuwuvxb" path="res://characters/этьен/sprites/Голова.png" id="2_r2j3f"]
@@ -37,7 +37,7 @@ animations = [{
 "texture": ExtResource("3_lc7xa")
 }],
 "loop": false,
-"name": &"default",
+"name": &"Спокойствие",
 "speed": 10.0
 }]
 
@@ -57,7 +57,7 @@ animations = [{
 "texture": ExtResource("7_pdd0y")
 }],
 "loop": true,
-"name": &"default",
+"name": &"Спокойствие",
 "speed": 8.0
 }]
 
@@ -71,7 +71,7 @@ animations = [{
 "texture": ExtResource("18_ntdvi")
 }],
 "loop": true,
-"name": &"default",
+"name": &"Спокойствие",
 "speed": 5.0
 }]
 
@@ -82,20 +82,42 @@ animations = [{
 "texture": ExtResource("13_0ixdx")
 }],
 "loop": true,
-"name": &"default",
+"name": &"Спокойствие",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i6dk6"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Спокойствие",
 "speed": 5.0
 }]
 
 [node name="Этьен" type="Node2D" node_paths=PackedStringArray("eyes", "mouth", "bleep_player")]
 z_index = 10
 script = ExtResource("1_5osko")
-play_animations_in_editor = null
 emotion_ids_to_anim_names = {
-0: "default"
+0: &"Спокойствие",
+1: &"Злость",
+2: &"Удивление",
+3: &"Грусть",
+4: &"Радость",
+5: &"Размышление",
+6: &"Страх",
+7: &"Смущение",
+8: &"Умозаключение",
+9: &"Указание"
+}
+outfit_ids_to_anim_prefix = {
+0: "",
+1: "N_",
+2: "S_"
 }
 eyes = NodePath("Head/Eyes")
 mouth = NodePath("Head/Mouth")
 eyes_frame_close = 2
+default_emotion = "Спокойствие"
 bleep_player = NodePath("BleepPlayer")
 
 [node name="Head" type="Sprite2D" parent="."]
@@ -103,15 +125,15 @@ texture = ExtResource("2_r2j3f")
 
 [node name="Eyes" type="AnimatedSprite2D" parent="Head"]
 sprite_frames = SubResource("SpriteFrames_7i0p1")
-frame = 5
-frame_progress = 1.0
+animation = &"Спокойствие"
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 sprite_frames = SubResource("SpriteFrames_as4yi")
-frame_progress = 0.512294
+animation = &"Спокойствие"
 
 [node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
 sprite_frames = SubResource("SpriteFrames_o3p7a")
+animation = &"Спокойствие"
 
 [node name="Hair" type="Sprite2D" parent="Head"]
 texture = ExtResource("11_d2t22")
@@ -121,8 +143,13 @@ texture = ExtResource("19_dt0xb")
 
 [node name="Arms" type="Node2D" parent="."]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Arms"]
+[node name="Left Arm" type="AnimatedSprite2D" parent="Arms"]
 sprite_frames = SubResource("SpriteFrames_b8k8w")
+animation = &"Спокойствие"
+
+[node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
+sprite_frames = SubResource("SpriteFrames_i6dk6")
+animation = &"Спокойствие"
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
 script = ExtResource("22_y440g")

@@ -43,6 +43,7 @@ func set_node(node: Node2D) -> void:
 	if node == null:
 		title.text = ""
 		transform.hide()
+		character_preset.hide()
 		return
 	
 	set_highlight_node(node, true)
@@ -91,7 +92,7 @@ func _set_parameters() -> void:
 		order.visible = false
 	
 	if selected_node is RSEBaseCharacterController:
-		character_preset.visible = true
+		character_preset.show()
 		
 		character_emotion.text = "[Эмоция]"
 		character_emotion.get_popup().clear()
@@ -107,7 +108,7 @@ func _set_parameters() -> void:
 			if selected_node._outfit_id == int(outfit_id):
 				character_outfit.text = selected_node.character.outfits[outfit_id]
 	else:
-		character_preset.visible = false
+		character_preset.hide()
 
 
 func _on_position_x_changed(value):
@@ -161,3 +162,10 @@ func _character_outfit_index_pressed(index: int) -> void:
 	var id = character_outfit.get_popup().get_item_id(index)
 	character_outfit.text = character_outfit.get_popup().get_item_text(index)
 	(selected_node as RSEBaseCharacterController).set_outfit(id)
+
+
+func update() -> void:
+	if is_instance_valid(selected_node):
+		_set_parameters()
+	else:
+		set_node(null)

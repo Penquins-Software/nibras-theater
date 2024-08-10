@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/Голова 2 Рот 3-2.png-a04744b7ca15cd3
 
 [params]
 
-compress/mode=0
+compress/mode=1
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

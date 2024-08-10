@@ -8,6 +8,9 @@ extends RSEBaseController
 @export_category("Emotion")
 @export var emotion_ids_to_anim_names: Dictionary
 
+@export_category("Outfit")
+@export var outfit_ids_to_anim_prefix: Dictionary
+
 @export_category("Head")
 #@export var head: Node2D
 @export var eyes: AnimatedSprite2D
@@ -20,6 +23,7 @@ extends RSEBaseController
 @export var eyes_frame_open: int
 @export var eyes_frame_close: int
 @export var default_emotion: String = "default"
+@export var default_outfit: String = ""
 @export var bleep_player: BleepPlayer
 
 
@@ -27,13 +31,17 @@ var character: RSECharacter : set = _set_character
 var _emotion_id: int
 var _outfit_id: int
 var emotion: String
-var anim_name: StringName
+var anim_name: String
+var anim_prefix: String
 
 var talking: bool = false
 var talking_time: float = 0.0
 
 var blinking: bool = true
 var blinking_time: float = 1.0
+
+## Используется для эффекта тени.
+var twin: RSEBaseCharacterController
 
 var flip_h: bool = false : set = _set_flip_h
 var order: int = 0 : set = _set_order
@@ -51,6 +59,11 @@ func _set_character(ch: RSECharacter) -> void:
 func _set_flip_h(value: bool) -> void:
 	flip_h = value
 	_set_flip_h_for_all_sprites()
+	if not twin == null:
+		if not flip_h:
+			twin.position = Vector2(-50, 50)
+		else:
+			twin.position = Vector2(50, 50)
 
 
 func _set_flip_h_for_all_sprites() -> void:
@@ -109,8 +122,8 @@ func set_emotion(emotion_id: int) -> bool:
 		push_warning("Персонаж '%s' не имеет эмоции с ID '%s'." % [character.name, emotion_id])
 		return false
 	
-	if emotion == character.emotions[str(emotion_id)]:
-		return false
+	#if emotion == character.emotions[str(emotion_id)]:
+		#return false
 	
 	_emotion_id = emotion_id
 	
@@ -121,7 +134,11 @@ func set_emotion(emotion_id: int) -> bool:
 		else:
 			anim_name = emotion_ids_to_anim_names.values()[0]
 	
+	anim_name = anim_prefix + anim_name
+	
 	_set_emotion_for_all_parts()
+	if not twin == null:
+		twin.set_emotion(emotion_id)
 	return true
 
 
@@ -133,6 +150,8 @@ func _set_emotion_for_part(node: Node) -> void:
 	if node is AnimatedSprite2D:
 		if node.sprite_frames.has_animation(anim_name):
 			node.animation = anim_name
+		else:
+			node.animation = default_emotion
 	
 	for child in node.get_children():
 		_set_emotion_for_part(child)
@@ -140,6 +159,15 @@ func _set_emotion_for_part(node: Node) -> void:
 
 func set_outfit(outfit_id: int) -> void:
 	_outfit_id = outfit_id
+	
+	anim_prefix = outfit_ids_to_anim_prefix[outfit_id]
+	
+	if outfit_id == 2:
+		make_twin()
+	else:
+		if is_instance_valid(twin):
+			twin.queue_free()
+	#set_emotion(_emotion_id)
 
 
 func talk(time: float = 0.0) -> void:
@@ -225,3 +253,12 @@ func close_eyes() -> void:
 
 	if eyes != null:
 		eyes.frame = eyes_frame_close
+
+
+func make_twin() -> void:
+	twin = (load(character.path_to_scene) as PackedScene).instantiate() as RSEBaseCharacterController
+	twin.modulate = Color.BLACK
+	add_child(twin)
+	twin.position += Vector2(-50, 50)
+	twin.z_as_relative = false
+	twin.z_index -= 1
