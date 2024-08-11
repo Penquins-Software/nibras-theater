@@ -892,6 +892,10 @@
      "type": "RSEFrameText"
     },
     {
+     "path_to_audio": "res://audio/music/whoo.mp3",
+     "type": "RSEFrameSFX"
+    },
+    {
      "speaker_id": 2,
      "text": "Она вдруг запнулась и побледнела.",
      "type": "RSEFrameText"
@@ -7896,7 +7900,8 @@
      "visual_effects_transforms": {
 
      }
-    }
+    },
+    null
    ],
    "start": true
   },
@@ -14752,6 +14757,10 @@
      "type": "RSEFrameCharacter"
     },
     {
+     "music_id": 34,
+     "type": "RSEFrameMusic"
+    },
+    {
      "transitition_id": 15,
      "type": "RSEFrameTransitition"
     },
@@ -15887,6 +15896,10 @@
      "type": "RSEFrameText"
     },
     {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
      "speaker_id": 2,
      "text": "Я встал в центр комнаты и обратился к присутствующим.",
      "type": "RSEFrameText"
@@ -16644,6 +16657,10 @@
      "type": "RSEFrameSoundEffect"
     },
     {
+     "path_to_audio": "res://audio/music/heroic jingle.mp3",
+     "type": "RSEFrameSFX"
+    },
+    {
      "speaker_id": 27,
      "text": "Я думаю, что это могло быть убийство.",
      "type": "RSEFrameText"
@@ -17160,6 +17177,7 @@
     null,
     null,
     null,
+    null,
     null
    ],
    "start": false
@@ -17189,6 +17207,10 @@
      "emotion_id": 0,
      "outfit_id": 0,
      "type": "RSEFrameCharacter"
+    },
+    {
+     "music_id": 32,
+     "type": "RSEFrameMusic"
     },
     {
      "speaker_id": 2,
@@ -19489,6 +19511,10 @@
      "type": "RSEFrameSoundEffect"
     },
     {
+     "path_to_audio": "res://audio/music/heroic jingle.mp3",
+     "type": "RSEFrameSFX"
+    },
+    {
      "transitition_id": 15,
      "type": "RSEFrameTransitition"
     },
@@ -19711,6 +19737,7 @@
    "id": 61,
    "name": "Версия с Дидье, часть 2",
    "scene_presets": [
+    null,
     null,
     null,
     null,
@@ -20712,10 +20739,6 @@
      "type": "RSEFrameLocation"
     },
     {
-     "transitition_id": 15,
-     "type": "RSEFrameTransitition"
-    },
-    {
      "action": 1,
      "character_id": 27,
      "emotion_id": 0,
@@ -20728,6 +20751,14 @@
      "emotion_id": 0,
      "outfit_id": 0,
      "type": "RSEFrameCharacter"
+    },
+    {
+     "music_id": 32,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
     },
     {
      "speaker_id": 2,
@@ -21053,6 +21084,10 @@
      "type": "RSEFrameText"
     },
     {
+     "music_id": 36,
+     "type": "RSEFrameMusic"
+    },
+    {
      "speaker_id": 27,
      "text": "Не может быть...",
      "type": "RSEFrameText"
@@ -21061,6 +21096,10 @@
      "speaker_id": 13,
      "text": "…",
      "type": "RSEFrameText"
+    },
+    {
+     "path_to_audio": "res://audio/music/whoo.mp3",
+     "type": "RSEFrameSFX"
     },
     {
      "speaker_id": 2,
@@ -21241,6 +21280,10 @@
      "type": "RSEFrameComment"
     },
     {
+     "music_id": 33,
+     "type": "RSEFrameMusic"
+    },
+    {
      "speaker_id": 2,
      "text": "Господин “Детектив”!",
      "type": "RSEFrameText"
@@ -21354,6 +21397,10 @@
     {
      "text": "Конец письма.",
      "type": "RSEFrameComment"
+    },
+    {
+     "music_id": 36,
+     "type": "RSEFrameMusic"
     },
     {
      "speaker_id": 2,
@@ -21606,6 +21653,7 @@
     null,
     null,
     null,
+    null,
     null
    ],
    "start": false
@@ -21620,7 +21668,7 @@
     },
     {
      "sound_id": 23,
-     "status": false,
+     "status": true,
      "type": "RSEFrameSoundEffect"
     },
     {
@@ -21827,6 +21875,10 @@
      "sound_id": 23,
      "status": true,
      "type": "RSEFrameSoundEffect"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
     },
     {
      "speaker_id": 2,
@@ -22049,6 +22101,10 @@
      "type": "RSEFrameTransitition"
     },
     {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
      "action": 1,
      "character_id": 27,
      "emotion_id": 0,
@@ -22081,6 +22137,10 @@
      "speaker_id": 2,
      "text": "Арлет тоже остановилась и медленно повернулась ко мне.",
      "type": "RSEFrameText"
+    },
+    {
+     "music_id": 31,
+     "type": "RSEFrameMusic"
     },
     {
      "speaker_id": 19,
@@ -22231,6 +22291,10 @@
      "speaker_id": 27,
      "text": "Я сейчас о другом – на кону стоят наши жизни!",
      "type": "RSEFrameText"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
     },
     {
      "speaker_id": 2,
@@ -22567,6 +22631,10 @@
      "type": "RSEFrameText"
     },
     {
+     "music_id": 28,
+     "type": "RSEFrameMusic"
+    },
+    {
      "speaker_id": 27,
      "text": "Что это?",
      "type": "RSEFrameText"
@@ -22848,6 +22916,10 @@
      "type": "RSEFrameGap"
     },
     {
+     "music_id": 31,
+     "type": "RSEFrameMusic"
+    },
+    {
      "speaker_id": 2,
      "text": "Она подошла к Мишель и Ловким движением руки…",
      "type": "RSEFrameText"
@@ -23074,6 +23146,10 @@
      "type": "RSEFrameText"
     },
     {
+     "music_id": 36,
+     "type": "RSEFrameMusic"
+    },
+    {
      "speaker_id": 19,
      "text": "Ай!",
      "type": "RSEFrameText"
@@ -23258,8 +23334,8 @@
   "0": {
    "position_x": 1400,
    "position_y": 780,
-   "size_x": 200.00048828125,
-   "size_y": 241.001098632813
+   "size_x": 200,
+   "size_y": 241.001281738281
   },
   "13": {
    "position_x": 1040,
@@ -23271,19 +23347,19 @@
    "position_x": 800,
    "position_y": 1800,
    "size_x": 200,
-   "size_y": 155.000122070313
+   "size_y": 155
   },
   "15": {
    "position_x": 800,
    "position_y": 1960,
    "size_x": 200,
-   "size_y": 155.002685546875
+   "size_y": 155.002563476563
   },
   "16": {
    "position_x": 0,
    "position_y": -100,
    "size_x": 199.99755859375,
-   "size_y": 155.000518798828
+   "size_y": 155.000549316406
   },
   "17": {
    "position_x": 0,
@@ -23307,13 +23383,13 @@
    "position_x": 800,
    "position_y": 260,
    "size_x": 199.998046875,
-   "size_y": 155.001205444336
+   "size_y": 155.001266479492
   },
   "21": {
    "position_x": -400,
    "position_y": 840,
    "size_x": 199.9990234375,
-   "size_y": 155.001251220703
+   "size_y": 155.001403808594
   },
   "22": {
    "position_x": -200,
@@ -23325,49 +23401,49 @@
    "position_x": -800,
    "position_y": 1200,
    "size_x": 199.99951171875,
-   "size_y": 155.0009765625
+   "size_y": 155.000854492188
   },
   "24": {
    "position_x": 1800,
    "position_y": 760,
    "size_x": 199.99853515625,
-   "size_y": 300.000518798828
+   "size_y": 300.00048828125
   },
   "25": {
    "position_x": 1040,
    "position_y": -100,
    "size_x": 200,
-   "size_y": 155.000518798828
+   "size_y": 155.000549316406
   },
   "26": {
    "position_x": 1040,
    "position_y": -260,
    "size_x": 200,
-   "size_y": 155.000244140625
+   "size_y": 155.000213623047
   },
   "27": {
    "position_x": 1340,
    "position_y": -160,
    "size_x": 200.00146484375,
-   "size_y": 155.001068115234
+   "size_y": 155.001129150391
   },
   "28": {
    "position_x": -200,
    "position_y": 1560,
    "size_x": 200.001953125,
-   "size_y": 155.000671386719
+   "size_y": 155.00048828125
   },
   "29": {
    "position_x": -200,
    "position_y": 1720,
    "size_x": 200.001953125,
-   "size_y": 155.000061035156
+   "size_y": 155
   },
   "30": {
    "position_x": -200,
    "position_y": 1880,
    "size_x": 200.001953125,
-   "size_y": 155.001098632813
+   "size_y": 155.001220703125
   },
   "31": {
    "position_x": -200,
@@ -23385,37 +23461,37 @@
    "position_x": -200,
    "position_y": 2360,
    "size_x": 200.001953125,
-   "size_y": 155.000366210938
+   "size_y": 155.00048828125
   },
   "34": {
    "position_x": -200,
    "position_y": 2520,
    "size_x": 200.001953125,
-   "size_y": 155.000122070313
+   "size_y": 155
   },
   "35": {
    "position_x": -200,
    "position_y": 2680,
    "size_x": 200.001953125,
-   "size_y": 155.000610351563
+   "size_y": 155.000854492188
   },
   "36": {
    "position_x": -420,
    "position_y": 1440,
    "size_x": 200.0009765625,
-   "size_y": 155.000854492188
+   "size_y": 155.000732421875
   },
   "37": {
    "position_x": -400,
    "position_y": 680,
    "size_x": 200,
-   "size_y": 155.000579833984
+   "size_y": 155.000549316406
   },
   "38": {
    "position_x": -240,
    "position_y": -300,
    "size_x": 200.0009765625,
-   "size_y": 155
+   "size_y": 155.000030517578
   },
   "39": {
    "position_x": 1040,
@@ -23433,13 +23509,13 @@
    "position_x": 220,
    "position_y": -60,
    "size_x": 199.998046875,
-   "size_y": 155.000030517578
+   "size_y": 155
   },
   "42": {
    "position_x": 2200,
    "position_y": 760,
    "size_x": 200.00146484375,
-   "size_y": 300.001007080078
+   "size_y": 300.0009765625
   },
   "43": {
    "position_x": 1340,
@@ -23451,13 +23527,13 @@
    "position_x": 2600,
    "position_y": 740,
    "size_x": 239.4912109375,
-   "size_y": 375.047760009766
+   "size_y": 375.047668457031
   },
   "45": {
    "position_x": -480,
    "position_y": -100,
    "size_x": 199.99951171875,
-   "size_y": 155.000518798828
+   "size_y": 155.000549316406
   },
   "46": {
    "position_x": -480,
@@ -23474,50 +23550,50 @@
   "48": {
    "position_x": 3000,
    "position_y": 740,
-   "size_x": 302.686767578125,
-   "size_y": 345.621490478516
+   "size_x": 302.6865234375,
+   "size_y": 345.621398925781
   },
   "49": {
    "position_x": 3400,
    "position_y": 740,
-   "size_x": 199.99853515625,
-   "size_y": 299.999908447266
+   "size_x": 199.998291015625,
+   "size_y": 299.999816894531
   },
   "50": {
    "position_x": 3800,
    "position_y": 520,
-   "size_x": 287.6220703125,
-   "size_y": 291.493713378906
+   "size_x": 287.62158203125,
+   "size_y": 291.493682861328
   },
   "51": {
    "position_x": 3800,
    "position_y": 1000,
-   "size_x": 293.982421875,
+   "size_x": 293.982177734375,
    "size_y": 293.205688476563
   },
   "52": {
    "position_x": 4240,
    "position_y": 740,
-   "size_x": 214.97021484375,
-   "size_y": 336.496246337891
+   "size_x": 214.970458984375,
+   "size_y": 336.496154785156
   },
   "53": {
    "position_x": 4520,
    "position_y": 740,
-   "size_x": 214.9716796875,
-   "size_y": 323.394683837891
+   "size_x": 214.97216796875,
+   "size_y": 323.394592285156
   },
   "54": {
    "position_x": 4800,
    "position_y": 720,
-   "size_x": 308.036010742188,
-   "size_y": 366.355712890625
+   "size_x": 308.036499023438,
+   "size_y": 366.355651855469
   },
   "55": {
    "position_x": -620,
    "position_y": 820,
    "size_x": 199.9990234375,
-   "size_y": 155.000366210938
+   "size_y": 155.000427246094
   },
   "56": {
    "position_x": 800,
@@ -23541,7 +23617,7 @@
    "position_x": -720,
    "position_y": 320,
    "size_x": 200,
-   "size_y": 155.000305175781
+   "size_y": 155.000259399414
   },
   "60": {
    "position_x": -720,
@@ -23552,68 +23628,68 @@
   "61": {
    "position_x": 5240,
    "position_y": 740,
-   "size_x": 263.227783203125,
-   "size_y": 414.253082275391
+   "size_x": 263.2275390625,
+   "size_y": 414.252990722656
   },
   "62": {
    "position_x": 5600,
    "position_y": 740,
-   "size_x": 217.814575195313,
-   "size_y": 354.802520751953
+   "size_x": 217.814819335938,
+   "size_y": 354.802429199219
   },
   "63": {
    "position_x": 5940,
    "position_y": 740,
-   "size_x": 223.293090820313,
-   "size_y": 350.692047119141
+   "size_x": 223.29296875,
+   "size_y": 350.691955566406
   },
   "64": {
    "position_x": 1340,
    "position_y": -340,
    "size_x": 200.00048828125,
-   "size_y": 155.000091552734
+   "size_y": 155.000061035156
   },
   "65": {
    "position_x": 6260,
    "position_y": 740,
-   "size_x": 215.907958984375,
-   "size_y": 395.448883056641
+   "size_x": 215.907165527344,
+   "size_y": 395.448791503906
   },
   "66": {
    "position_x": 6600,
    "position_y": 740,
-   "size_x": 207.485717773438,
-   "size_y": 362.697174072266
+   "size_x": 207.48583984375,
+   "size_y": 362.697082519531
   },
   "67": {
    "position_x": 6980,
    "position_y": 740,
-   "size_x": 226.203735351563,
-   "size_y": 350.531890869141
+   "size_x": 226.20361328125,
+   "size_y": 350.531799316406
   },
   "68": {
    "position_x": 7260,
    "position_y": 740,
-   "size_x": 245.180297851563,
-   "size_y": 375.073394775391
+   "size_x": 245.18017578125,
+   "size_y": 375.073303222656
   },
   "69": {
    "position_x": 7580,
    "position_y": 740,
-   "size_x": 246.082153320313,
-   "size_y": 367.257965087891
+   "size_x": 246.082275390625,
+   "size_y": 367.257873535156
   },
   "70": {
    "position_x": -240,
    "position_y": -140,
    "size_x": 199.9990234375,
-   "size_y": 155.000091552734
+   "size_y": 155
   },
   "71": {
    "position_x": -240,
    "position_y": 20,
    "size_x": 199.9990234375,
-   "size_y": 155.000366210938
+   "size_y": 155.000305175781
   },
   "72": {
    "position_x": -240,
@@ -23625,13 +23701,13 @@
    "position_x": -240,
    "position_y": 320,
    "size_x": 199.9990234375,
-   "size_y": 155.000183105469
+   "size_y": 155.000137329102
   },
   "74": {
    "position_x": 7900,
    "position_y": 740,
-   "size_x": 204.982177734375,
-   "size_y": 337.365386962891
+   "size_x": 204.982055664063,
+   "size_y": 337.365295410156
   },
   "75": {
    "position_x": -1000,
@@ -23649,7 +23725,7 @@
    "position_x": -1000,
    "position_y": 320,
    "size_x": 199.99951171875,
-   "size_y": 155.000183105469
+   "size_y": 155.000137329102
   },
   "78": {
    "position_x": -1000,
@@ -23661,31 +23737,31 @@
    "position_x": 8200,
    "position_y": 760,
    "size_x": 233.628540039063,
-   "size_y": 343.592681884766
+   "size_y": 343.592651367188
   },
   "80": {
    "position_x": 8480,
    "position_y": 760,
-   "size_x": 218.6826171875,
-   "size_y": 389.676300048828
+   "size_x": 218.682373046875,
+   "size_y": 389.67626953125
   },
   "81": {
    "position_x": 8840,
    "position_y": 800,
-   "size_x": 241.94140625,
-   "size_y": 356.529907226563
+   "size_x": 241.941040039063,
+   "size_y": 356.529846191406
   },
   "9": {
    "position_x": 220,
    "position_y": -300,
    "size_x": 199.9990234375,
-   "size_y": 155.000061035156
+   "size_y": 155.000091552734
   },
-  "scroll_offset_x": 3795.2119140625,
-  "scroll_offset_y": 97.375,
+  "scroll_offset_x": 4396.76708984375,
+  "scroll_offset_y": 194.418151855469,
   "show_grid": true,
   "snapping_enabled": true,
-  "zoom": 0.548383176326752
+  "zoom": 0.663543701171875
  },
  "last_id": 81,
  "locations": [
@@ -23729,19 +23805,19 @@
    "active": true,
    "id": 45,
    "name": "Гримёрка",
-   "path_to_scene": ""
+   "path_to_scene": "res://locations/гримёрка/гримёрка.tscn"
   },
   {
    "active": true,
    "id": 46,
    "name": "Гримёрка (ночь)",
-   "path_to_scene": ""
+   "path_to_scene": "res://locations/гримёрка/гримёрка.tscn"
   },
   {
    "active": true,
    "id": 47,
    "name": "Гримёрка (ночь + лампы)",
-   "path_to_scene": ""
+   "path_to_scene": "res://locations/гримёрка/гримёрка.tscn"
   },
   {
    "active": true,

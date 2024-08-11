@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/heroic jingle.mp3-cbb4b2f9a65e2e44acf1e6fa507
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0.0
 bpm=0.0
 beat_count=0
