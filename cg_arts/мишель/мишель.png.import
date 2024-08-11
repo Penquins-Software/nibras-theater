@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/мишель.png-94f754185f86e8311315552b057d
 
 [params]
 
-compress/mode=1
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

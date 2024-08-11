@@ -132,9 +132,9 @@ func build_frame(frame: RSEFrame, is_next: bool) -> void:
 			character = add_character(episode.story.characters[character_id])
 		else:
 			character = characters[character_id]
-		if character != null:
-			character.set_outfit(scene_state.characters[character_id]["outfit_id"])
-			character.set_emotion(scene_state.characters[character_id]["emotion_id"])
+		#if character != null:
+			#character.set_outfit(scene_state.characters[character_id]["outfit_id"])
+			#character.set_emotion(scene_state.characters[character_id]["emotion_id"])
 	
 	for visual_effect_id in visual_effects:
 		if not scene_state.visual_effect_ids.has(visual_effect_id):

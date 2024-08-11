@@ -13,6 +13,7 @@ config_version=5
 config/name="Nibras Theater"
 run/main_scene="res://scenes/intro/intro.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+run/max_fps=60
 boot_splash/show_image=false
 config/icon="res://graphics/penquins/4.png"
 
@@ -52,7 +53,7 @@ texture={
 "compress/hdr_compression": 1,
 "compress/high_quality": false,
 "compress/lossy_quality": 0.7,
-"compress/mode": 1,
+"compress/mode": 0,
 "compress/normal_map": 0,
 "detect_3d/compress_to": 1,
 "mipmaps/generate": false,

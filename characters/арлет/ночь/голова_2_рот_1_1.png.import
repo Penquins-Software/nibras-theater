@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/голова_2_рот_1_1.png-7d7517b5627de5c
 
 [params]
 
-compress/mode=1
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

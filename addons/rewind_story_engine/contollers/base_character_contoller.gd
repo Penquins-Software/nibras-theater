@@ -62,9 +62,9 @@ func _set_flip_h(value: bool) -> void:
 	if not twin == null:
 		twin.flip_h = flip_h
 		if not flip_h:
-			twin.position = Vector2(-50, 50)
+			twin.position = Vector2(-20, 20)
 		else:
-			twin.position = Vector2(50, 50)
+			twin.position = Vector2(20, 20)
 
 
 func _set_flip_h_for_all_sprites() -> void:
@@ -174,6 +174,8 @@ func set_outfit(outfit_id: int) -> void:
 	
 	anim_prefix = outfit_ids_to_anim_prefix[outfit_id]
 	
+	#print(character.name)
+	#print(outfit_id)
 	if outfit_id == 2:
 		make_twin()
 	else:
@@ -268,6 +270,9 @@ func close_eyes() -> void:
 
 
 func make_twin() -> void:
+	if not twin == null:
+		return
+	
 	twin = (load(character.path_to_scene) as PackedScene).instantiate() as RSEBaseCharacterController
 	twin.modulate = Color.BLACK
 	add_child(twin)
@@ -276,6 +281,6 @@ func make_twin() -> void:
 	twin.flip_h = flip_h
 	twin.set_emotion(_emotion_id)
 	if not flip_h:
-		twin.position = Vector2(-50, 50)
+		twin.position = Vector2(-20, 20)
 	else:
-		twin.position = Vector2(50, 50)
+		twin.position = Vector2(20, 20)
