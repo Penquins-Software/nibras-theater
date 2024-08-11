@@ -229,7 +229,7 @@ func variable(frame: RSEFrameVariable) -> void:
 func condition(frame: RSEFrameCondition) -> void:
 	var result: bool = false
 	if frame.global:
-		frame.result(Settings.profile.global_variables.data)
+		result = frame.result(Settings.profile.global_variables.data)
 	else:
 		result = frame.result(local_variables.data)
 	print("Результат проверки условия: %s" % result)

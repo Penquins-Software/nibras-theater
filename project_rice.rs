@@ -210,7 +210,7 @@
    "outfits": {
     "0": "Default"
    },
-   "path_to_bleep_sound": "",
+   "path_to_bleep_sound": "res://audio/bleep/nibras_blip.mp3",
    "path_to_scene": ""
   },
   {
@@ -227,6 +227,26 @@
    "id": 64,
    "main_name_for_display_name": true,
    "name": "Некто",
+   "outfits": {
+    "0": "Default"
+   },
+   "path_to_bleep_sound": "res://audio/bleep/nibras_blip.mp3",
+   "path_to_scene": ""
+  },
+  {
+   "active": false,
+   "color_a": 1,
+   "color_b": 0.745098054409027,
+   "color_g": 0.745098054409027,
+   "color_r": 0.745098054409027,
+   "description": "",
+   "display_name": "",
+   "emotions": {
+    "0": "Normal"
+   },
+   "id": 104,
+   "main_name_for_display_name": true,
+   "name": "",
    "outfits": {
     "0": "Default"
    },
@@ -24378,10 +24398,6 @@
      "type": "RSEFrameLocation"
     },
     {
-     "transitition_id": 14,
-     "type": "RSEFrameTransitition"
-    },
-    {
      "music_id": 29,
      "type": "RSEFrameMusic"
     },
@@ -24398,6 +24414,10 @@
      "emotion_id": 0,
      "outfit_id": 0,
      "type": "RSEFrameCharacter"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
     },
     {
      "speaker_id": 2,
@@ -24889,10 +24909,6 @@
      "type": "RSEFrameLocation"
     },
     {
-     "transitition_id": 14,
-     "type": "RSEFrameTransitition"
-    },
-    {
      "action": 1,
      "character_id": 27,
      "emotion_id": 0,
@@ -24905,6 +24921,10 @@
      "emotion_id": 0,
      "outfit_id": 0,
      "type": "RSEFrameCharacter"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
     },
     {
      "speaker_id": 2,
@@ -26554,11 +26574,11 @@
     {
      "options": [
       [
-       -1,
+       83,
        "Отправить Арлет."
       ],
       [
-       -1,
+       84,
        "Отправиться самому."
       ]
      ],
@@ -27529,10 +27549,117 @@
   {
    "active": false,
    "description": "Дидье и я отправляемся восстанавливать электричество и телефонную связь. Цех закрыли на ключ.",
-   "frames": [],
+   "frames": [
+    {
+     "sound_id": 23,
+     "status": true,
+     "type": "RSEFrameSoundEffect"
+    },
+    {
+     "location_id": 58,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я посмотрел на Арлет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Нет, всё-таки я не могу отправить её с Дидье.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Лучше пусть она останется здесь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "path_to_audio": "res://audio/music/heroic jingle.mp3",
+     "type": "RSEFrameSFX"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Я пойду с вами.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Что же, хорошо.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Арлет, я оставлю вам фонарик.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Сидите здесь и закройтесь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 39,
+     "text": "От этой комнаты только два ключа: один у меня и один у вас.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Только два ключа…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Принято.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Мы скоро вернёмся.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Будьте осторожны, хорошо?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "description": "",
+     "to_episode_id": 89,
+     "type": "RSEFrameJump"
+    }
+   ],
    "id": 84,
    "name": "2 Бутафор и Этьен",
-   "scene_presets": [],
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   },
   {
@@ -28329,20 +28456,12 @@
      "type": "RSEFrameText"
     },
     {
-     "transitition_id": 14,
-     "type": "RSEFrameTransitition"
-    },
-    {
      "path_to_audio": "res://audio/sfx/flashlight_on.mp3",
      "type": "RSEFrameSFX"
     },
     {
      "location_id": 98,
      "type": "RSEFrameLocation"
-    },
-    {
-     "transitition_id": 15,
-     "type": "RSEFrameTransitition"
     },
     {
      "speaker_id": 2,
@@ -28571,8 +28690,6 @@
     null,
     null,
     null,
-    null,
-    null,
     null
    ],
    "start": false
@@ -28614,19 +28731,19 @@
      "type": "RSEFrameText"
     },
     {
+     "type": "RSEFrameGap"
+    },
+    {
      "transitition_id": 14,
      "type": "RSEFrameTransitition"
     },
     {
-     "location_id": 58,
+     "location_id": 100,
      "type": "RSEFrameLocation"
     },
     {
      "transitition_id": 15,
      "type": "RSEFrameTransitition"
-    },
-    {
-     "type": "RSEFrameGap"
     },
     {
      "speaker_id": 2,
@@ -28865,7 +28982,7 @@
      "type": "RSEFrameText"
     },
     {
-     "condition": "ENDING_1",
+     "condition": "ENDING_1 AND ENDING_2",
      "global": true,
      "type": "RSEFrameCondition"
     },
@@ -29334,6 +29451,10 @@
      "name": "ENDING_1",
      "type": "RSEFrameVariable",
      "value": ""
+    },
+    {
+     "text_signal": "ENDING",
+     "type": "RSEFrameSignal"
     }
    ],
    "id": 88,
@@ -29456,73 +29577,3626 @@
   {
    "active": false,
    "description": "Этьен и Дидье отправляются восстанавливать электричество и телефонную связь. Они обсуждают, кто мог убить Чарльза.",
-   "frames": [],
+   "frames": [
+    {
+     "location_id": 17,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 32,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мы вышли в коридор.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Он был погружён во мрак.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Как думаешь, куда исчезло тело Морт?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Дидье аккуратно на меня взглянул.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "По правде сказать, даже не знаю, что думать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я всё это время находился в гримёрке, а со мной были госпожа директор и Чарльз.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Единственные, кто выходил – это были вы, Лоран и Арлет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "То есть вы думаете, что это мог быть я и кто-то из актрис?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Получается, так.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Впрочем, я даже и не видел, что тела на сцене нет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Вся эта информация только с ваших слов и Лоран.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Вот как?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Что же, разумное замечание.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Но я здесь, чтобы помочь вам разобраться с ситуацией.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "А это уже со слов Мишель, но ей я верю.",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мы прошли какое-то расстояние молча, пока Дидье не продолжил.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Я подозреваю, что это Лоран могла убить Чарльза.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Только совсем не понимаю, как дверь оказалась закрыта…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Напоминаю, что вторые ключи были у вас.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Это так.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Может, Лоран сумела их как-то стащить, а когда вернулась – незаметно подложила обратно?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Помнится, Мишель утверждала, что сложно не заметить их пропажу…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Но не невозможно?",
+     "type": "RSEFrameText"
+    },
+    {
+     "text": "Сцена, где Мишель даёт подзатыльник Арлет, а Лоран стоит рядом.",
+     "type": "RSEFrameComment"
+    },
+    {
+     "speaker_id": 2,
+     "text": "А ведь она могла в этот момент вернуть ключи.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "А чтобы пропажу не заметили, она заменила связку на что-то похожее?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "А ещё она куда-то уходила, когда Чарльза предположительно убили…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Кажется, Дидье задумался об этом.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Спустя какое-то время мы остановились.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Мы пришли!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Надеюсь, это не займёт много времени.",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "description": "",
+     "to_episode_id": 90,
+     "type": "RSEFrameJump"
+    }
+   ],
    "id": 89,
    "name": "2 Лоран убийца?",
-   "scene_presets": [],
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   },
   {
    "active": false,
    "description": "Этьен и Дидье восстановили электричество, но телефонная связь оказалась повреждена. Они возвращаются к остальным и решают, что делать дальше.",
-   "frames": [],
+   "frames": [
+    {
+     "location_id": 18,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Свет ламп озарил коридор.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Да будет свет!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Жаль, что телефонную связь не удалось восстановить…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Да уж, кто-то перерезал все кабели.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я опять подумал на Лоран, которая куда-то “ходила гулять”.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Мы должны вернуться к остальным и решить, что делать дальше.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Всё-таки я думаю, что нужно отсюда уходить.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Дидье посмотрел в окно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Не хотелось бы, конечно, в такую погоду оказаться на улице, но выбора нет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "description": "",
+     "to_episode_id": 91,
+     "type": "RSEFrameJump"
+    }
+   ],
    "id": 90,
    "name": "2 Да будет свет!",
-   "scene_presets": [],
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   },
   {
    "active": false,
    "description": "Этьен и Дидье подошли к цеху. У двери они видят знакомый символ, а внутри находят мёртвую Мишель.",
-   "frames": [],
+   "frames": [
+    {
+     "location_id": 18,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мы молча возвращались обратно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "path_to_audio": "res://audio/sfx/lightning.mp3",
+     "type": "RSEFrameSFX"
+    },
+    {
+     "transitition_id": 56,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Изредка были слышны раскаты грома.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "И когда мы вернулись…",
+     "type": "RSEFrameText"
+    },
+    {
+     "path_to_audio": "res://audio/music/whoo.mp3",
+     "type": "RSEFrameSFX"
+    },
+    {
+     "speaker_id": 39,
+     "text": "О нет…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Убийца начал действовать?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "На двери в бутафорский цех виднелся всё тот же кровавый символ.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "music_id": 34,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Дидье быстро открыл замок, и мы вошли внутрь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 100,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мишель сидела в углу комнаты.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Она была в луже крови и не подавала признаков жизни.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Госпожа директор…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Чёрт!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "От злости я ударил кулаком по стене.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я обратил внимание на связку ключей рядом с Мишель.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Ключи здесь?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Вы говорили, что от этой комнаты всего два ключа?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Да…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "И один из них у меня.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Очередная закрытая комната?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Меня как-то обманывают?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я посмотрел на единственное окно в комнате – оно оказалось закрытым.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Открывалось только изнутри.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "text": "Сцена, где говорят, что Нибрас умеет ходить сквозь стены.",
+     "type": "RSEFrameComment"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Нибрас?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я уверен, что всё это можно как-то объяснить.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "А где остальные девушки?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Она в опасности!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Где Арлет?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Нужно срочно её найти.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Думаете, это Лоран?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Теперь я уверен!",
+     "type": "RSEFrameText"
+    },
+    {
+     "music_id": 99,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 18,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я выбежал в коридор и начал оглядываться.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Бегите!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Найдите её быстрее, чем Лоран.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "А я уже стар для бега, буду идти вслед.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Дидье кивнул мне и я побежал.",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "description": "",
+     "to_episode_id": 92,
+     "type": "RSEFrameJump"
+    }
+   ],
    "id": 91,
    "name": "2 Куда все делись?",
-   "scene_presets": [],
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   },
   {
    "active": false,
    "description": "Этьен побежал искать Арлет. Вскоре он слышит крик Арлет и бежит на него.",
-   "frames": [],
+   "frames": [
+    {
+     "location_id": 18,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Прошло уже несколько минут.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я немного выдохся и перешёл на шаг.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Где же они?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "music_id": 28,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 19,
+     "text": "А-а-А-а-а!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Это было оттуда.",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 77,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я побежал в направлении крика, пока не оказался в холле.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В центре холла безмолвно стояла Арлет и с ужасом смотрела на пол.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "На полу оказался большой символ улыбки и буква Н.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Всё это опять было написано как будто кровью.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Арлет!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Ты в порядке?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Этьен…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Нибрас, он…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Это он…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Из её глаз потекли слёзы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Он убивает всех!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Мы разозлили его!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я подошёл и обнял её.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Тише-тише, спокойно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Расскажи, что случилось в цехе?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Вы же должны были сидеть там?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я увидела [i]его[/i].",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я испугалась и убежала.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Нибраса?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Да…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я оставила директора и Лоран одних и сбежала.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Что за чертовщина?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Нибрас существует?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Может, ей привиделось?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Этьен!..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Нас наконец догнал Дидье, только он…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Мистер Дидье, вы ранены?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Он медленно спускался по лестнице, опираясь на стену.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Я его видел!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Это демон во плоти…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "После этих слов он затих и начал сползать по стене.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Дидье, держитесь!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Не вздумайте умирать!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Его глаза перестали что-либо выражать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Он неподвижно сидел и смотрел куда-то вдаль.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "ЧЁРТ!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Мистер Дидье…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Ярость закипала внутри меня.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "ЛОРАН!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Ты за всё заплатишь!",
+     "type": "RSEFrameText"
+    },
+    {
+     "music_id": 36,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "path_to_audio": "res://audio/sfx/loudspeaker_on.mp3",
+     "type": "RSEFrameSFX"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Внезапно включился и заговорил громкоговоритель.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 64,
+     "text": "Внимание!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 64,
+     "text": "Внимание!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 64,
+     "text": "Мистер Этьен, наша игра подходит к концу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 64,
+     "text": "Отправляйтесь туда, где всё началось.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 64,
+     "text": "С нетерпением жду вас.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Арлет, пошли…",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "description": "",
+     "to_episode_id": 93,
+     "type": "RSEFrameJump"
+    }
+   ],
    "id": 92,
    "name": "2 Арлет, ты где?",
-   "scene_presets": [],
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   },
   {
    "active": false,
    "description": "Этьен и Арлет возвращаются на сцену. Там они находят Лоран.",
-   "frames": [],
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 99,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "На сцене царила напряженная тишина.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В центре стояла и озиралась Лоран.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Зрительный зал был пуст, но казалось, что невидимые глаза следят за каждым нашим движением.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Лоран заметила нас, но продолжила стоять на сцене.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "У неё был серьезный вид, а её руки были в крови.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Этьен, ты в порядке!",
+     "type": "RSEFrameText"
+    },
+    {
+     "condition": "ENDING_1 AND ENDING_2",
+     "global": true,
+     "type": "RSEFrameCondition"
+    },
+    {
+     "description": "",
+     "to_episode_id": 94,
+     "type": "RSEFrameJump"
+    },
+    {
+     "type": "RSEFrameEndCondition"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Лоран…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Тебе нужно многое нам объяснить…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Она взглянула на свои руки и принялась их вытирать об платье.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Это не то, что ты подумал!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Я никого не убивала.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Это всё они, чокнутые сектанты.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Сектанты?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "О чём ты говоришь?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Они принесли Морт в жертву демону, а потом начали убивать друг друга!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "У меня есть доказательства…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "А Мишель и вовсе убила себя!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я поднял руку вверх и она замолчала.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Хватит, Лоран.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Этим ты делаешь только хуже.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Просто признайся.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Признаться?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "В чём я, по-твоему, должна признаться?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Ты думаешь, это я убила Морт и всех остальных?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Да, именно так я и думаю.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Тебе очень не нравилось, как Мишель управляет театром, и ты захотела забрать его себе.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "У директора не было детей, поэтому по правилам театр перешёл бы к старшей актрисе.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Какое-то время ты совершала диверсии, выдавая их за проделки демона, в надежде, что Мишель всё забросит и сама покинет свой пост, но она этого не делала.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Затем ты решила пойти немного другим путём, и сначала устранила Морт – старшую актрису, идущую перед тобой.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Ты начала действовать перед генеральной репетицией, потому что посчитала это удобным случаем.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Однако ты не знала, что директор пригласила меня, специалиста по сверхъестественному, и осуществила убийство в неподходящий для этого момент.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Каким-то образом тебе удалось подложить заглушку в ствол, тем самым убив бедную мисс Морт и автоматически став наследником театра.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Оставалось только избавиться от нынешнего директора.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Зная характер Мишель, ты знала, что она не захочет привлекать полицию перед премьерой, и у тебя будет шанс разобраться с ней.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Первое: как был убит Чарльз?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Подозреваю, что у тебя случайно получилось убедить остальных в мистической основе убийства.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Когда Чарльз покинул гримёрку, ты проследила за ним и вонзила нож ему в грудь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Однако, он не умер сразу и спрятался в ближайшей комнате – комнате для отдыха и закрылся там на ключ, создав тем самым закрытую комнату.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "После этого ты повредила телефонную связь, а потом вернулась в гримёрку.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Удача была на твоей стороне, и из-за грозы пропал свет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мы с Дидье оставили вас троих – Мишель, Арлет и тебя – наедине в бутафорском цехе.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Ты чем-то напугала Арлет, она открыла дверь, оставив ключи, и убежала прочь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Оставшись с Мишель, ты с лёгкостью убила её – она не могла даже ходить.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Пока мы с Дидье возвращались, у тебя было достаточно времени нарисовать тот символ в холле.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вскоре на него наткнулась блуждающая Арлет и закричала.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мы с Дидье разделились, и ты смертельно ранила его.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Кажется, Лоран смирилась с тем, что ей не отвертеться от наказания.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Вот как?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Что же, у меня не получится тебя переубедить.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вдруг её взгляд стал суровым.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Но знай!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Ты ошибаешься.",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "music_id": 28,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "location_id": 41,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Таким образом, Этьен и Арлет сумели выжить.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Лоран арестовали, и остаток своей жизни она провела в тюрьме.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Театр перешёл Арлет, но она от него отказалась.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "По итогу он достался государству, и из него сделали музей.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В прессе этот случай окрестили “Театр Нибраса”.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Новость вызвала такой резонанс, что даже готовится экранизация этих событий.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Этьен основал частное детективное агентство под названием “Мета Детектив” и теперь расследует запутанные дела.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет какое-то время провела в психбольнице, но вскоре покинула её и забыла те страшные события.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Этьена ещё долго не покидало странное чувство, будто он где-то ошибся, но в конце концов он забыл про него, и жизнь продолжилась своим чередом.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "[b]Fin.[/b]",
+     "type": "RSEFrameText"
+    },
+    {
+     "global": true,
+     "name": "ENDING_2",
+     "type": "RSEFrameVariable",
+     "value": ""
+    },
+    {
+     "text_signal": "ENDING",
+     "type": "RSEFrameSignal"
+    }
+   ],
    "id": 93,
    "name": "2 Эпилог. Убийца – Лоран",
-   "scene_presets": [],
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   },
   {
    "active": false,
    "description": "Этьену открывается истина и он рассказывает истинную версию.",
-   "frames": [],
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Да, я в порядке…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Что более важно, теперь я всё понял.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Девушки очень внимательно смотрели на меня.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Всё произошедшее очень легко объяснить!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Очень легко объяснить, если предположить, что существует некто 7-й в театре.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Нибрас...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "…",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 101,
+     "type": "RSEFrameJump"
+    }
+   ],
    "id": 94,
    "name": "3 Эпилог. Убийца – Морт?",
-   "scene_presets": [],
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   },
   {
    "active": false,
    "description": "Актёры стоят на сцене и кланяются. В зале раздаются аплодисменты.",
-   "frames": [],
+   "frames": [
+    {
+     "location_id": 71,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В ролях!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Младшая актриса – Арлет Янн.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Старшая актриса – Лоран Шеро.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Убитая актриса и она же кукла Нибраса – Морт Вив.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Бутафор  – Дидье Тьери.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Художественный руководитель и голос Нибраса – Чарльз Моррис.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Директор театра – Мишель Лагранж.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "И, конечно же, экзорцист-консультант, он же детектив – Этьен Дюваль!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Специально для вас, Театр Нибраса!",
+     "type": "RSEFrameText"
+    },
+    {
+     "path_to_audio": "res://audio/sfx/applause.mp3",
+     "type": "RSEFrameSFX"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "description": "",
+     "to_episode_id": 96,
+     "type": "RSEFrameJump"
+    }
+   ],
    "id": 95,
    "name": "Конец постановки",
-   "scene_presets": [],
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   },
   {
    "active": false,
    "description": "Зрители делятся между собой впечатлениями.",
-   "frames": [],
+   "frames": [
+    {
+     "location_id": 75,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "sound_id": 124,
+     "status": true,
+     "type": "RSEFrameSoundEffect"
+    },
+    {
+     "speaker_id": 2,
+     "text": "История про камень была интереснее…",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Актёры на высоте, декорации на уровне, звук потрясающий.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "[b]1 из 5.[/b]",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Актёров зовут так же, как и их роли?",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Ня!",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Господин Мартин Виллемс остался доволен.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я вам говорю, вместо убийства из ружья на Морт нужно было сбросить люстру!",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Кажется, что автор придумывает всё на ходу…",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Пойду лучше в [b]Лопателя[/b] погоняю.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Логика и автор постановки – вещи несовместимые.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Пьеса написана Годо, а не мастером Ренпи?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Это сразу мимо.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Это шедевр!",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Ну, конечно, такое прочтение пьесы тоже имеет право на существование…",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "text_signal": "ENDING",
+     "type": "RSEFrameSignal"
+    }
+   ],
    "id": 96,
    "name": "После показа",
-   "scene_presets": [],
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Это...",
+     "type": "RSEFrameText"
+    },
+    {
+     "options": [
+      [
+       106,
+       "Нибрас!"
+      ],
+      [
+       107,
+       "Человек-усы."
+      ],
+      [
+       108,
+       "Морт…"
+      ]
+     ],
+     "type": "RSEFrameSelection"
+    }
+   ],
+   "id": 101,
+   "name": "Кто убийца?",
+   "scene_presets": [
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Нибрас!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Правда?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Нет…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Демонов не существует, это не может быть он.",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 101,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 106,
+   "name": "Нибрас!",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Человек-усы!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Он анти-герой, который убивает всех “безусатых” людей.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Его главный враг – человек-бритва.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "И они ведут нескончаемую борьбу за…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "У Дидье были усы, и он оказался убит?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Да, что-то не сходится…",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 101,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 107,
+   "name": "Человек-усы",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Или…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Если Морт в действительности осталась живой.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Тогда всё встаёт на свои места!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Глаза Арлет и Лоран раскрылись от удивления.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Но она же была мёртвой?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Ты хочешь сказать, что она…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "притворилась мёртвой?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "У неё не было пульса!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Вероятно, Дидье из-за стресса ошибся, когда замерял пульс.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "В критических ситуациях такое возможно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Но после я вернулся и ещё раз проверил пульс и его точно не было…",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 109,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 108,
+   "name": "Морт",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Почему не было пульса?",
+     "type": "RSEFrameText"
+    },
+    {
+     "options": [
+      [
+       110,
+       "У Морт не было сердца!"
+      ],
+      [
+       111,
+       "Вместо руки у неё был протез."
+      ],
+      [
+       112,
+       "Это был манекен."
+      ]
+     ],
+     "type": "RSEFrameSelection"
+    }
+   ],
+   "id": 109,
+   "name": "Где пульс?",
+   "scene_presets": [
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 2,
+     "text": "“Морт – стерва и у неё не было сердца!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Она была настолько чванливой, что другие её называли…”",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Неудачная шутка.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Пожалуй, не буду её озвучивать…",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 109,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 110,
+   "name": "Чван Ли Ва",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Всё просто!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "И Дидье, и я замеряли пульс через её правую руку.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "А вместо руки у неё протез!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "ПРАВДА?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Это не так.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Чёрт!",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 109,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 111,
+   "name": "Протез",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Когда я замерял пульс, вместо тела Морт лежал уже манекен.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Помните, как Дидье говорил, что потерял один из своих манекенов?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "А ты, Арлет, говорила что она – первоклассный гримёр.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Это правда.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Она бы смогла воссоздать себя.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "На сцене было темно, и я мог не заметить каких-то деталей.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Пока мы осматривали манекен, Морт могла пойти и повредить телефонную связь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "После подготовки, она убрала “тело”, создавая вокруг этого мистическую атмосферу и оставила письмо, написанное якобы Нибрасом.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Вот как?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Звучит складно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Дальше: убийство Чарльза.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Как он оказался убит в закрытой комнате?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Если честно, я до сих пор этого не понимаю.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Да, я тоже долгое время не мог понять.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Трюк, который работает только с закрытыми комнатами.",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 113,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 112,
+   "name": "Манекен",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Это…",
+     "type": "RSEFrameText"
+    },
+    {
+     "options": [
+      [
+       114,
+       "Мега-устройство взлома!"
+      ],
+      [
+       115,
+       "Самоубийство"
+      ],
+      [
+       116,
+       "Убийство через щель двери…"
+      ],
+      [
+       117,
+       "Убийца не покидал комнату."
+      ],
+      [
+       118,
+       "Тайный проход."
+      ]
+     ],
+     "type": "RSEFrameSelection"
+    }
+   ],
+   "id": 113,
+   "name": "Трюк",
+   "scene_presets": [
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "У Морт было мега-устройство, которое позволяет открывать и закрывать любые замки!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Вау!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Арлет, таких устройств не существует…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Кхе-кхе…",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 113,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 114,
+   "name": "Устройство",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Это самоубийство.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Морт каким-то образом заставила Чарльза и остальных совершить самоубийство.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "И как же?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Она обещала раскрыть все их самые страшные секреты!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "И они предпочли все вместо этого умереть?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "И как же Чарльз сумел вогнать нож себе в грудь таким образом?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Ну…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Это…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чёрт, не вяжется…",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 113,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 115,
+   "name": "Самоубийство",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Щель!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "У каждой комнаты есть дверь, а у дверей – щели.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Именно через неё и были совершены все убийства.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Не может быть!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Вы такой умный.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Щель?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "И как же через щель был просунут нож?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Ножи же тонкие, так?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Поэтому если щель будет достаточно широкой…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Хватит, это невозможно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Похоже на то.",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 113,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 116,
+   "name": "Щель!",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Убийца может закрыть комнату изнутри, спрятаться и создать эффект убийства в закрытой комнате.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Мы же не осматривали комнаты полностью?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Хм…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Но перед тем, как уйти, мы закрыли комнату с Чарльзом.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Как тогда убийца мог покинуть её?",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 119,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 117,
+   "name": "Скрытность",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Детективная классика: у каждой закрытой комнаты есть тайный проход.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Это не особняк какого-то безумного миллионера и не “Призрак Оперы”, Этьен.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "У нас здесь нет тайных проходов.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "У нас банально не хватит места.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Вот как?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Что же…",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 113,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 118,
+   "name": "Тайный проход",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Как убийца покинул комнату?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "options": [
+      [
+       120,
+       "Переход в газообразное состояние."
+      ],
+      [
+       121,
+       "Гипноз!"
+      ],
+      [
+       122,
+       "Незаметно покинуть открытую комнату."
+      ]
+     ],
+     "type": "RSEFrameSelection"
+    }
+   ],
+   "id": 119,
+   "name": "Как убийца покинул комнату?",
+   "scene_presets": [
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Морт обладает уникальной возможностью менять свою молекулярную структуру и переходить в газообразное состояние для попадания в труднодоступные места, а потом становиться “твёрдой” обратно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Также она является верным сообщником “Человека-усы” и вместе они противостоят…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Кому же, кому же?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Этьен…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Ладно-ладно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 119,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 120,
+   "name": "Газ!",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мы все были загипнотизированы Морт.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Она спокойно покинула комнату, а после мы проснулись и…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "ГИПНОЗ?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Во-о-т это да-а-а!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Звучит очень сомнительно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 119,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 121,
+   "name": "Гипноз?..",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Пока мы смотрели на убитого Чарльза, у неё было достаточно времени покинуть комнату.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Вот оно что!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Думаю, что в других случаях также использовался подобный трюк.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Морт убивала жертву, закрывала дверь на ключ и пряталась в комнате.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Это многое объясняет…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "А убивала она всех, чтобы…",
+     "type": "RSEFrameText"
+    },
+    {
+     "music_id": 36,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "path_to_audio": "res://audio/sfx/claps.mp3",
+     "type": "RSEFrameSFX"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Раздались медленные хлопки.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет и Лоран насторожились.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "На сцену вышла улыбающаяся Морт и заговорила.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Браво, господин детектив!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Продолжайте, зачем я убивала?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Морт!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Ты вправду жива!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Но тогда получается…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Как ты могла…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Ты инсценировала свою смерть, зная, что Мишель перед премьерой не будет привлекать полицию и начнёт проводить своё расследование.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Я внимательно слушаю, говорите дальше…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Ты задумала убить Мишель, чтобы театр перешёл к тебе по наследству, так как ты старшая актриса.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Очень интересно!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Театр действительно теперь должен перейти ко мне.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Ты убила Чарльза и Дидье зная, что они могли что-нибудь заподозрить.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Близко, но не совсем.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Мне они просто не нравились: у Чарльза были несмешные шутки, а у Дидье…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Эти его дурацкие усы…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Так бесят!!!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Ты убила Чарльза за то, что он не умеет шутить?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "А Дидье – за усы?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Ах-ха-ха!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "ХА-ХА-ХА!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Ты безумная…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Убивать Лоран и Арлет для тебя не было смысла, поэтому они и остались живыми.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Против актёров я не ничего не имею – [i]вы все[/i] честно выполняете свою работу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Но ты зачем-то решила устроить игру со мной…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "А вот тут вы не правы, господин детектив.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Ваша версия очень складная и мне она очень нравится, но за всем этим стою не я.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Хоть я и исполнитель…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Что вы имеете в виду?",
+     "type": "RSEFrameText"
+    },
+    {
+     "music_id": 22,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 43,
+     "text": "За этим стою я - Нибрас!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Раздался страшный голос.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я потерял дар речи.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет с Лоран в ужасе застыли.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Н-и-и-б-б-рас?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Да, вы всё верно расслышали.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "НИБ-РАС!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я принялся оглядываться но никого не нашёл.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Но где вы?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мы вас не видим.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "В силу некоторых, кхм, обстоятельств, я не могу сейчас материализоваться перед вами.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Ваша версия почти безупречная, но всё было немного не так.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Морт подошла ко мне и протянула обе руки.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Ну же, проверьте мой пульс.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я принялся проверять его, но его…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Не было?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Его нет…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Как это возможно?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Кто вы такая?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Морт – моя кукла.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Она существует в этом театре с самого его основания.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Морт должно быть уже несколько сотен лет!..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Я хорошо сохранилась!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Завидуете?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Морт не убивали на репетиции, и я не думаю, что можно ошибиться при проверке пульса, даже в подобной стрессовой ситуации.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Она изначально не была живой, поэтому и не могла умереть!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Ха-ха-ха-ха-ха!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "А как же манекен?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Мне не нужен манекен, чтобы не двигаться и выглядеть мёртвой.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Но Дидье говорил, что потерял один из них…",
+     "type": "RSEFrameText"
+    },
+    {
+     "text": "Флешкбек про менекен",
+     "type": "RSEFrameComment"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Потерял?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Простое совпадение.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 40,
+     "text": "Но в остальном вы были совершенно правы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Вам удалось меня развлечь, господин Этьен!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Редко кому это удаётся.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Ага…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Пожалуйста?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Раньше я получал удовольствие от просмотра постановок, но в последнее время театр пришёл в упадок – под управлением нового директора.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Чтобы как-то себя развлечь, я устраивал различные беспорядки и гадости, но их совершенно не хватало…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Все эти несчастный случаи…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Да, это был я!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Но вот директор решила со всем этим разобраться и обратилась к специалисту.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Это оказалось хорошей возможностью развлечься, и я разыграл детективную историю, инсценировав смерть Морт.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Так всё это ради развлечения?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Совершенно верно!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "А что будет с нами?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "С вами?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Против вас я ничего не имею.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Вы можете остаться и продолжать играть в моем театре.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Театр, к слову, официально перейдёт Лоран.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Морт изменит свою внешность и станет новой актрисой.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "А вы будете продолжать радовать меня!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Если, конечно, вы готовы рискнуть и остаться…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Получается, я могу идти?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "О, нет, господин Этьен.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "К сожалению, я не могу отпустить вас.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Вам придётся присоединиться к нашему театру.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Иначе…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Я понял!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Я “рискну” и останусь радовать вас в театре.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "У меня даже готова первая постановка, которую вы для меня сыграете.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "music_id": 123,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Пьеса называется Insight!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Лоран будет играть Диди, Арлет – лису, Морт – дракона, а вы, Этьен, будете главным героем.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Жду от всех хорошей игры!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "И не вздумайте халтурить, иначе заставлю вас играть вечно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Есть у меня [i]один знакомый[/i], который может с этим помочь…",
+     "type": "RSEFrameText"
+    },
+    {
+     "music_id": 36,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мы с Лоран и Арлет переглянулись.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Нужно будет обязательно найти способ свалить отсюда.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "А пока…",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "description": "",
+     "to_episode_id": 95,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 122,
+   "name": "Истина",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   }
  ],
@@ -29530,284 +33204,416 @@
   "0": {
    "position_x": 1400,
    "position_y": 780,
-   "size_x": 200.00048828125,
-   "size_y": 241.001129150391
+   "size_x": 200.0029296875,
+   "size_y": 241.000610351563
+  },
+  "100": {
+   "position_x": -20,
+   "position_y": -580,
+   "size_x": 199.9990234375,
+   "size_y": 155
+  },
+  "101": {
+   "position_x": 12240,
+   "position_y": 580,
+   "size_x": 199.9990234375,
+   "size_y": 306.000518798828
+  },
+  "104": {
+   "position_x": 1620,
+   "position_y": -540,
+   "size_x": 200.0009765625,
+   "size_y": 155.00048828125
+  },
+  "106": {
+   "position_x": 12480,
+   "position_y": 340,
+   "size_x": 194.386962890625,
+   "size_y": 256
+  },
+  "107": {
+   "position_x": 12480,
+   "position_y": 660,
+   "size_x": 198.129150390625,
+   "size_y": 256.000335693359
+  },
+  "108": {
+   "position_x": 12480,
+   "position_y": 920,
+   "size_x": 204.984619140625,
+   "size_y": 306.000549316406
+  },
+  "109": {
+   "position_x": 12780,
+   "position_y": 620,
+   "size_x": 200.000244140625,
+   "size_y": 306.000640869141
+  },
+  "110": {
+   "position_x": 13060,
+   "position_y": 320,
+   "size_x": 199.998046875,
+   "size_y": 300.000305175781
+  },
+  "111": {
+   "position_x": 13060,
+   "position_y": 660,
+   "size_x": 199.998046875,
+   "size_y": 300.000213623047
+  },
+  "112": {
+   "position_x": 13060,
+   "position_y": 1000,
+   "size_x": 199.998046875,
+   "size_y": 300.000366210938
+  },
+  "113": {
+   "position_x": 13360,
+   "position_y": 680,
+   "size_x": 200,
+   "size_y": 356.000762939453
+  },
+  "114": {
+   "position_x": 13700,
+   "position_y": 240,
+   "size_x": 200.00390625,
+   "size_y": 300.000366210938
+  },
+  "115": {
+   "position_x": 14000,
+   "position_y": 420,
+   "size_x": 199.99951171875,
+   "size_y": 299.999420166016
+  },
+  "116": {
+   "position_x": 13700,
+   "position_y": 680,
+   "size_x": 200.00390625,
+   "size_y": 300.000518798828
+  },
+  "117": {
+   "position_x": 14000,
+   "position_y": 920,
+   "size_x": 199.99951171875,
+   "size_y": 299.999450683594
+  },
+  "118": {
+   "position_x": 13700,
+   "position_y": 1120,
+   "size_x": 200.00390625,
+   "size_y": 299.999877929688
+  },
+  "119": {
+   "position_x": 14380,
+   "position_y": 720,
+   "size_x": 200.00244140625,
+   "size_y": 306.000335693359
+  },
+  "120": {
+   "position_x": 14800,
+   "position_y": 320,
+   "size_x": 199.99951171875,
+   "size_y": 300.000183105469
+  },
+  "121": {
+   "position_x": 14800,
+   "position_y": 640,
+   "size_x": 199.99951171875,
+   "size_y": 300.000152587891
+  },
+  "122": {
+   "position_x": 14800,
+   "position_y": 980,
+   "size_x": 199.99951171875,
+   "size_y": 300.000122070313
+  },
+  "123": {
+   "position_x": -640,
+   "position_y": 1480,
+   "size_x": 200,
+   "size_y": 155.000366210938
+  },
+  "124": {
+   "position_x": -620,
+   "position_y": 1200,
+   "size_x": 200,
+   "size_y": 155
   },
   "13": {
    "position_x": 1040,
    "position_y": 60,
-   "size_x": 199.9990234375,
-   "size_y": 155.000823974609
+   "size_x": 199.998046875,
+   "size_y": 155.000793457031
   },
   "14": {
    "position_x": 400,
    "position_y": 1800,
-   "size_x": 200.0009765625,
-   "size_y": 155.000610351563
+   "size_x": 200,
+   "size_y": 155.000244140625
   },
   "15": {
    "position_x": 400,
    "position_y": 1960,
-   "size_x": 200.0009765625,
-   "size_y": 155.002685546875
+   "size_x": 200,
+   "size_y": 155.002197265625
   },
   "16": {
    "position_x": 0,
    "position_y": -100,
    "size_x": 199.998046875,
-   "size_y": 155.00048828125
+   "size_y": 155.000534057617
   },
   "17": {
    "position_x": 0,
    "position_y": 60,
    "size_x": 199.998046875,
-   "size_y": 155.000213623047
+   "size_y": 155.000061035156
   },
   "18": {
    "position_x": 0,
    "position_y": 220,
    "size_x": 199.998046875,
-   "size_y": 155
+   "size_y": 155.000244140625
   },
   "19": {
    "position_x": 1040,
    "position_y": 220,
-   "size_x": 199.9990234375,
-   "size_y": 155
+   "size_x": 199.998046875,
+   "size_y": 155.000244140625
   },
   "2": {
    "position_x": 1340,
    "position_y": 20,
-   "size_x": 199.998046875,
-   "size_y": 155.001037597656
+   "size_x": 199.99609375,
+   "size_y": 155.001251220703
   },
   "21": {
    "position_x": -400,
    "position_y": 840,
-   "size_x": 199.9990234375,
-   "size_y": 155.001495361328
+   "size_x": 200,
+   "size_y": 155.002197265625
   },
   "22": {
    "position_x": -200,
    "position_y": 1400,
-   "size_x": 200.001953125,
-   "size_y": 155.0029296875
+   "size_x": 200.0029296875,
+   "size_y": 155.003173828125
   },
   "23": {
    "position_x": -400,
    "position_y": 1200,
-   "size_x": 199.9990234375,
-   "size_y": 155.000854492188
+   "size_x": 200,
+   "size_y": 155.00048828125
   },
   "24": {
    "position_x": 1800,
    "position_y": 760,
-   "size_x": 199.9970703125,
-   "size_y": 300.000366210938
+   "size_x": 199.99609375,
+   "size_y": 300.000244140625
   },
   "25": {
    "position_x": 1040,
    "position_y": -100,
-   "size_x": 199.9990234375,
-   "size_y": 155.00048828125
+   "size_x": 199.998046875,
+   "size_y": 155.000534057617
   },
   "26": {
    "position_x": 1040,
    "position_y": -260,
-   "size_x": 199.9990234375,
-   "size_y": 155.00048828125
+   "size_x": 199.998046875,
+   "size_y": 155.000457763672
   },
   "27": {
    "position_x": 1340,
    "position_y": -160,
-   "size_x": 200.0009765625,
-   "size_y": 155.000854492188
+   "size_x": 200,
+   "size_y": 155.000610351563
   },
   "28": {
    "position_x": -200,
    "position_y": 1560,
-   "size_x": 200.001953125,
-   "size_y": 155.001220703125
+   "size_x": 200.0029296875,
+   "size_y": 155.000854492188
   },
   "29": {
    "position_x": -200,
    "position_y": 1720,
-   "size_x": 200.001953125,
-   "size_y": 155
+   "size_x": 200.0029296875,
+   "size_y": 155.000366210938
   },
   "30": {
    "position_x": -200,
    "position_y": 1880,
-   "size_x": 200.001953125,
-   "size_y": 155.001586914063
+   "size_x": 200.0029296875,
+   "size_y": 155.00146484375
   },
   "31": {
    "position_x": -200,
    "position_y": 2040,
-   "size_x": 200.001953125,
-   "size_y": 155.000610351563
+   "size_x": 200.0029296875,
+   "size_y": 155.000244140625
   },
   "32": {
    "position_x": -200,
    "position_y": 2200,
-   "size_x": 200.001953125,
-   "size_y": 155.001342773438
+   "size_x": 200.0029296875,
+   "size_y": 155.001220703125
   },
   "33": {
    "position_x": -200,
    "position_y": 2360,
-   "size_x": 200.001953125,
-   "size_y": 155.001831054688
+   "size_x": 200.0029296875,
+   "size_y": 155.001953125
   },
   "34": {
    "position_x": -200,
    "position_y": 2520,
-   "size_x": 200.001953125,
-   "size_y": 155.000122070313
+   "size_x": 200.0029296875,
+   "size_y": 155.002197265625
   },
   "35": {
    "position_x": -200,
    "position_y": 2680,
-   "size_x": 200.001953125,
-   "size_y": 155.000732421875
+   "size_x": 200.0029296875,
+   "size_y": 155.001220703125
   },
   "36": {
    "position_x": -420,
    "position_y": 1440,
    "size_x": 200,
-   "size_y": 155.001342773438
+   "size_y": 155.001098632813
   },
   "37": {
    "position_x": -400,
    "position_y": 680,
    "size_x": 200,
-   "size_y": 155.000518798828
+   "size_y": 155.000640869141
   },
   "38": {
    "position_x": -240,
    "position_y": -300,
-   "size_x": 200.0009765625,
+   "size_x": 200,
    "size_y": 155.000122070313
   },
   "39": {
    "position_x": 1040,
    "position_y": -420,
-   "size_x": 199.9990234375,
-   "size_y": 155.000244140625
+   "size_x": 199.998046875,
+   "size_y": 155.000854492188
   },
   "40": {
    "position_x": 1040,
    "position_y": -580,
-   "size_x": 199.9990234375,
-   "size_y": 155.000122070313
+   "size_x": 199.998046875,
+   "size_y": 155
   },
   "41": {
    "position_x": 220,
    "position_y": -60,
-   "size_x": 199.9970703125,
-   "size_y": 155
+   "size_x": 199.998046875,
+   "size_y": 155.000030517578
   },
   "42": {
    "position_x": 2200,
    "position_y": 760,
-   "size_x": 200.001953125,
-   "size_y": 300.000854492188
+   "size_x": 200.0009765625,
+   "size_y": 300.000732421875
   },
   "43": {
    "position_x": 1340,
    "position_y": -500,
-   "size_x": 200.0009765625,
-   "size_y": 155.000122070313
+   "size_x": 200,
+   "size_y": 155.000061035156
   },
   "44": {
    "position_x": 2600,
    "position_y": 740,
    "size_x": 239.4912109375,
-   "size_y": 375.049041748047
+   "size_y": 375.048980712891
   },
   "45": {
    "position_x": -480,
    "position_y": -100,
-   "size_x": 199.9990234375,
-   "size_y": 155.00048828125
+   "size_x": 200,
+   "size_y": 155.000534057617
   },
   "46": {
    "position_x": -480,
    "position_y": 60,
-   "size_x": 199.9990234375,
-   "size_y": 155.000213623047
+   "size_x": 200,
+   "size_y": 155.000061035156
   },
   "47": {
    "position_x": -480,
    "position_y": 220,
-   "size_x": 199.9990234375,
-   "size_y": 155
+   "size_x": 200,
+   "size_y": 155.000244140625
   },
   "48": {
    "position_x": 3000,
    "position_y": 740,
-   "size_x": 302.6865234375,
-   "size_y": 345.622406005859
+   "size_x": 302.6875,
+   "size_y": 345.622344970703
   },
   "49": {
    "position_x": 3400,
    "position_y": 740,
-   "size_x": 199.9990234375,
-   "size_y": 300.000335693359
+   "size_x": 200,
+   "size_y": 300.000640869141
   },
   "50": {
    "position_x": 3800,
    "position_y": 520,
-   "size_x": 287.62060546875,
+   "size_x": 287.62109375,
    "size_y": 291.494110107422
   },
   "51": {
    "position_x": 3800,
    "position_y": 1000,
-   "size_x": 293.98193359375,
+   "size_x": 293.982421875,
    "size_y": 293.205444335938
   },
   "52": {
    "position_x": 4240,
    "position_y": 740,
-   "size_x": 214.97119140625,
-   "size_y": 336.496917724609
+   "size_x": 214.9716796875,
+   "size_y": 336.496978759766
   },
   "53": {
    "position_x": 4520,
    "position_y": 740,
    "size_x": 214.97314453125,
-   "size_y": 323.395233154297
+   "size_y": 323.395416259766
   },
   "54": {
    "position_x": 4800,
    "position_y": 720,
    "size_x": 308.03662109375,
-   "size_y": 366.35498046875
+   "size_y": 366.355926513672
   },
   "55": {
    "position_x": -620,
    "position_y": 820,
-   "size_x": 199.9990234375,
-   "size_y": 155.000671386719
+   "size_x": 200,
+   "size_y": 155.001159667969
   },
   "56": {
    "position_x": 400,
    "position_y": 2120,
-   "size_x": 200.0009765625,
-   "size_y": 155.00146484375
+   "size_x": 200,
+   "size_y": 155.001098632813
   },
   "57": {
    "position_x": -720,
    "position_y": 0,
    "size_x": 200,
-   "size_y": 155.000549316406
+   "size_y": 155.000427246094
   },
   "58": {
    "position_x": -720,
    "position_y": 160,
    "size_x": 200,
-   "size_y": 155.000091552734
+   "size_y": 155.000122070313
   },
   "59": {
    "position_x": -720,
@@ -29819,255 +33625,255 @@
    "position_x": -720,
    "position_y": 480,
    "size_x": 200,
-   "size_y": 155.000122070313
+   "size_y": 155.000366210938
   },
   "61": {
    "position_x": 5240,
    "position_y": 740,
-   "size_x": 263.227783203125,
-   "size_y": 414.253387451172
+   "size_x": 263.2294921875,
+   "size_y": 414.253692626953
   },
   "62": {
    "position_x": 5600,
    "position_y": 740,
-   "size_x": 217.814208984375,
-   "size_y": 354.803314208984
+   "size_x": 217.8125,
+   "size_y": 354.803375244141
   },
   "63": {
    "position_x": 5940,
    "position_y": 740,
-   "size_x": 223.294677734375,
-   "size_y": 350.692718505859
+   "size_x": 223.29296875,
+   "size_y": 350.692657470703
   },
   "64": {
    "position_x": 1340,
    "position_y": -340,
-   "size_x": 200.0009765625,
+   "size_x": 200,
    "size_y": 155
   },
   "65": {
    "position_x": 6260,
    "position_y": 740,
-   "size_x": 215.906494140625,
-   "size_y": 395.449676513672
+   "size_x": 215.908203125,
+   "size_y": 395.449615478516
   },
   "66": {
    "position_x": 6600,
    "position_y": 740,
    "size_x": 207.48681640625,
-   "size_y": 362.698333740234
+   "size_y": 362.698150634766
   },
   "67": {
    "position_x": 6980,
    "position_y": 740,
    "size_x": 226.2021484375,
-   "size_y": 350.532562255859
+   "size_y": 350.532501220703
   },
   "68": {
    "position_x": 7260,
    "position_y": 740,
-   "size_x": 245.178955078125,
-   "size_y": 375.074432373047
+   "size_x": 245.1796875,
+   "size_y": 375.074371337891
   },
   "69": {
    "position_x": 7580,
    "position_y": 740,
-   "size_x": 246.084594726563,
-   "size_y": 367.259002685547
+   "size_x": 246.0849609375,
+   "size_y": 367.258941650391
   },
   "70": {
    "position_x": -240,
    "position_y": -140,
-   "size_x": 199.9990234375,
+   "size_x": 200,
    "size_y": 155.000366210938
   },
   "71": {
    "position_x": -240,
    "position_y": 20,
-   "size_x": 199.9990234375,
-   "size_y": 155
+   "size_x": 200,
+   "size_y": 155.000152587891
   },
   "72": {
    "position_x": -240,
    "position_y": 160,
-   "size_x": 199.9990234375,
-   "size_y": 155.000091552734
+   "size_x": 200,
+   "size_y": 155.000122070313
   },
   "73": {
    "position_x": -240,
    "position_y": 320,
-   "size_x": 199.9990234375,
+   "size_x": 200,
    "size_y": 155.000366210938
   },
   "74": {
    "position_x": 7900,
    "position_y": 740,
-   "size_x": 204.982543945313,
-   "size_y": 337.366058349609
+   "size_x": 204.98291015625,
+   "size_y": 337.366119384766
   },
   "75": {
    "position_x": -1000,
    "position_y": 0,
    "size_x": 200,
-   "size_y": 155.000549316406
+   "size_y": 155.000427246094
   },
   "76": {
    "position_x": -1000,
    "position_y": 160,
-   "size_x": 199.9990234375,
-   "size_y": 155.000091552734
+   "size_x": 199.998046875,
+   "size_y": 155.000122070313
   },
   "77": {
    "position_x": -1000,
    "position_y": 320,
-   "size_x": 199.9990234375,
+   "size_x": 199.998046875,
    "size_y": 155.000366210938
   },
   "78": {
    "position_x": -1000,
    "position_y": 480,
-   "size_x": 199.9990234375,
-   "size_y": 155.000122070313
+   "size_x": 199.998046875,
+   "size_y": 155.000366210938
   },
   "79": {
    "position_x": 8200,
    "position_y": 760,
-   "size_x": 233.629638671875,
-   "size_y": 343.592651367188
+   "size_x": 233.6298828125,
+   "size_y": 343.592529296875
   },
   "80": {
    "position_x": 8480,
    "position_y": 760,
-   "size_x": 218.682373046875,
-   "size_y": 389.675659179688
+   "size_x": 218.6845703125,
+   "size_y": 389.67529296875
   },
   "81": {
    "position_x": 8840,
    "position_y": 800,
-   "size_x": 241.93994140625,
-   "size_y": 356.529449462891
+   "size_x": 241.93798828125,
+   "size_y": 356.528686523438
   },
   "82": {
    "position_x": 9200,
    "position_y": 800,
-   "size_x": 236.119140625,
-   "size_y": 410.849761962891
+   "size_x": 236.115478515625,
+   "size_y": 410.849365234375
   },
   "83": {
    "position_x": 9540,
    "position_y": 620,
-   "size_x": 251.470703125,
-   "size_y": 410.138031005859
+   "size_x": 251.471435546875,
+   "size_y": 410.139190673828
   },
   "84": {
    "position_x": 9540,
    "position_y": 1060,
-   "size_x": 260.013671875,
-   "size_y": 347.555847167969
+   "size_x": 260.014404296875,
+   "size_y": 347.555908203125
   },
   "85": {
    "position_x": 9960,
    "position_y": 420,
-   "size_x": 258.775634765625,
-   "size_y": 423.579284667969
+   "size_x": 258.7744140625,
+   "size_y": 423.578765869141
   },
   "86": {
    "position_x": 10300,
    "position_y": 420,
-   "size_x": 246.72265625,
-   "size_y": 393.438171386719
+   "size_x": 246.720703125,
+   "size_y": 393.437896728516
   },
   "87": {
    "position_x": 10600,
    "position_y": 400,
-   "size_x": 224.117797851563,
-   "size_y": 355.761047363281
+   "size_x": 224.120361328125,
+   "size_y": 355.761871337891
   },
   "88": {
    "position_x": 10880,
    "position_y": 400,
-   "size_x": 224.114379882813,
-   "size_y": 397.959289550781
+   "size_x": 224.120483398438,
+   "size_y": 397.960357666016
   },
   "89": {
    "position_x": 9880,
    "position_y": 1060,
    "size_x": 296.451171875,
-   "size_y": 369.325500488281
+   "size_y": 369.32568359375
   },
   "9": {
    "position_x": 280,
    "position_y": -320,
    "size_x": 199.9990234375,
-   "size_y": 155.000061035156
+   "size_y": 155.000030517578
   },
   "90": {
    "position_x": 10280,
    "position_y": 1080,
-   "size_x": 335.638305664063,
-   "size_y": 352.747436523438
+   "size_x": 335.636840820313,
+   "size_y": 352.746704101563
   },
   "91": {
    "position_x": 10680,
    "position_y": 1060,
-   "size_x": 281.384887695313,
-   "size_y": 348.226257324219
+   "size_x": 281.385131835938,
+   "size_y": 348.226318359375
   },
   "92": {
    "position_x": 11020,
    "position_y": 1060,
-   "size_x": 255.761474609375,
-   "size_y": 307.536437988281
+   "size_x": 255.764038085938,
+   "size_y": 307.537109375
   },
   "93": {
    "position_x": 11360,
    "position_y": 1040,
-   "size_x": 287.408203125,
-   "size_y": 322.605651855469
+   "size_x": 287.410278320313,
+   "size_y": 322.606201171875
   },
   "94": {
-   "position_x": 11840,
-   "position_y": 600,
-   "size_x": 313.228759765625,
-   "size_y": 302.265502929688
+   "position_x": 11880,
+   "position_y": 580,
+   "size_x": 313.2265625,
+   "size_y": 302.264801025391
   },
   "95": {
-   "position_x": 12200,
-   "position_y": 580,
-   "size_x": 270.20703125,
-   "size_y": 350.147247314453
+   "position_x": 15400,
+   "position_y": 360,
+   "size_x": 270.20263671875,
+   "size_y": 350.147552490234
   },
   "96": {
-   "position_x": 12520,
-   "position_y": 580,
-   "size_x": 286.254150390625,
-   "size_y": 328.082061767578
+   "position_x": 15820,
+   "position_y": 400,
+   "size_x": 286.2548828125,
+   "size_y": 328.082153320313
   },
   "97": {
    "position_x": 280,
    "position_y": -700,
-   "size_x": 200,
+   "size_x": 200.0029296875,
    "size_y": 155
   },
   "98": {
    "position_x": 280,
    "position_y": -540,
-   "size_x": 200,
-   "size_y": 155.000122070313
+   "size_x": 200.0029296875,
+   "size_y": 155.000244140625
   },
   "99": {
    "position_x": -420,
    "position_y": 1620,
    "size_x": 200,
-   "size_y": 155.000122070313
+   "size_y": 155.001342773438
   },
-  "scroll_offset_x": 5470.32275390625,
-  "scroll_offset_y": 84.3525390625,
+  "scroll_offset_x": 12592.7255859375,
+  "scroll_offset_y": 296.059906005859,
   "show_grid": true,
   "snapping_enabled": true,
-  "zoom": 0.603221535682678
+  "zoom": 1.06864392757416
  },
- "last_id": 99,
+ "last_id": 124,
  "locations": [
   {
    "active": true,
@@ -30206,6 +34012,12 @@
    "id": 98,
    "name": "(CG) Мёртвый Дидье (свет)",
    "path_to_scene": "res://cg_arts/дидье/1.tscn"
+  },
+  {
+   "active": true,
+   "id": 100,
+   "name": "(CG) Мёртвая Мишель",
+   "path_to_scene": ""
   }
  ],
  "music_list": [
@@ -30274,6 +34086,12 @@
    "id": 99,
    "name": "Тишина",
    "path_to_file": ""
+  },
+  {
+   "active": true,
+   "id": 123,
+   "name": "Insight Theme",
+   "path_to_file": ""
   }
  ],
  "name": "Театр Нибраса",
@@ -30284,6 +34102,13 @@
    "name": "Дождь",
    "once_playable": true,
    "path_to_file": "res://audio/sfx/rain.mp3"
+  },
+  {
+   "active": true,
+   "id": 124,
+   "name": "Шум толпы",
+   "once_playable": true,
+   "path_to_file": "res://audio/music/crowd.mp3"
   }
  ],
  "transititions": [
