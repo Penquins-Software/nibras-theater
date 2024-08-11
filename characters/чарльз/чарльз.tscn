@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://qse1yc7e81t6"]
 
-[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_dlgeu"]
+[ext_resource type="Script" path="res://characters/character_with_mustache.gd" id="1_7loiu"]
 [ext_resource type="Texture2D" uid="uid://btyls3jeaki0w" path="res://characters/чарльз/обычное/голова.png" id="2_5ihty"]
 [ext_resource type="Texture2D" uid="uid://dfey1lcygiyoe" path="res://characters/чарльз/обычное/глаза_1.png" id="3_djwvb"]
 [ext_resource type="Texture2D" uid="uid://dfl8nxqu8aq6g" path="res://characters/чарльз/обычное/глаза_2.png" id="4_4lf0w"]
@@ -96,7 +96,7 @@ animations = [{
 
 [node name="Чарльз" type="Node2D" node_paths=PackedStringArray("eyes", "mouth", "bleep_player")]
 z_index = 10
-script = ExtResource("1_dlgeu")
+script = ExtResource("1_7loiu")
 emotion_ids_to_anim_names = {
 0: &"Спокойствие",
 1: &"Злость",
@@ -108,11 +108,6 @@ emotion_ids_to_anim_names = {
 7: &"Смущение",
 8: &"Умозаключение",
 9: &"Указание"
-}
-outfit_ids_to_anim_prefix = {
-0: "",
-1: "N_",
-2: ""
 }
 eyes = NodePath("Head/Eyes")
 mouth = NodePath("Head/Mouth")

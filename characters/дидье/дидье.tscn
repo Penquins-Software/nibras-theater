@@ -86,12 +86,6 @@ emotion_ids_to_anim_names = {
 8: &"Умозаключение",
 9: &"Указание"
 }
-outfit_ids_to_anim_prefix = {
-0: "",
-1: "N_",
-2: "",
-3: "D_"
-}
 eyes = NodePath("Head/Eyes")
 eyes_frame_close = 2
 default_emotion = "Спокойствие"

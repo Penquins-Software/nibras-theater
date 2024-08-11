@@ -20,7 +20,6 @@ extends RSEBaseController
 @export var eyes_frame_open: int
 @export var eyes_frame_close: int
 @export var default_emotion: String = "default"
-@export var default_outfit: String = ""
 @export var bleep_player: BleepPlayer
 
 
@@ -166,17 +165,17 @@ func _set_emotion_for_part(node: Node) -> void:
 func set_outfit(outfit_id: int) -> void:
 	_outfit_id = outfit_id
 	
-	## Усы.
-	if outfit_id == 1:
-		pass
-	else:
-		pass
+	_set_special(outfit_id == 1)
 	
 	if outfit_id == 2:
 		make_twin()
 	else:
 		if is_instance_valid(twin):
 			twin.queue_free()
+
+
+func _set_special(status: bool) -> void:
+	pass
 
 
 func talk(time: float = 0.0) -> void:

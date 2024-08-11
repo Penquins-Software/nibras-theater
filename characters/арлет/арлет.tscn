@@ -1,6 +1,6 @@
 [gd_scene load_steps=68 format=3 uid="uid://beq7l84g5gdlw"]
 
-[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_rk3p5"]
+[ext_resource type="Script" path="res://characters/character_with_mustache.gd" id="1_y36ds"]
 [ext_resource type="Texture2D" uid="uid://cs5fbqsa7ifs1" path="res://characters/арлет/sprites/Голова 1.png" id="2_stomh"]
 [ext_resource type="Texture2D" uid="uid://d3lqg4vkokjp3" path="res://characters/арлет/sprites/Main.png" id="3_0wgu5"]
 [ext_resource type="Texture2D" uid="uid://cb8f0ro3vtmnc" path="res://characters/арлет/sprites/Голова 2.png" id="3_4xo5n"]
@@ -834,7 +834,7 @@ animations = [{
 [node name="Арлет" type="Node2D" node_paths=PackedStringArray("eyes", "mouth", "bleep_player")]
 light_mask = 3
 z_index = 10
-script = ExtResource("1_rk3p5")
+script = ExtResource("1_y36ds")
 emotion_ids_to_anim_names = {
 0: &"Спокойствие",
 1: &"Злость",
