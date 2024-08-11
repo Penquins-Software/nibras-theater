@@ -8,9 +8,6 @@ extends RSEBaseController
 @export_category("Emotion")
 @export var emotion_ids_to_anim_names: Dictionary
 
-@export_category("Outfit")
-@export var outfit_ids_to_anim_prefix: Dictionary
-
 @export_category("Head")
 #@export var head: Node2D
 @export var eyes: AnimatedSprite2D
@@ -32,7 +29,6 @@ var _emotion_id: int
 var _outfit_id: int
 var emotion: String
 var anim_name: String
-var anim_prefix: String
 
 var talking: bool = false
 var talking_time: float = 0.0
@@ -146,8 +142,6 @@ func set_emotion(emotion_id: int) -> bool:
 		else:
 			anim_name = emotion_ids_to_anim_names.values()[0]
 	
-	anim_name = anim_prefix + anim_name
-	
 	_set_emotion_for_all_parts()
 	if not twin == null:
 		twin.set_emotion(emotion_id)
@@ -172,16 +166,17 @@ func _set_emotion_for_part(node: Node) -> void:
 func set_outfit(outfit_id: int) -> void:
 	_outfit_id = outfit_id
 	
-	anim_prefix = outfit_ids_to_anim_prefix[outfit_id]
+	## Усы.
+	if outfit_id == 1:
+		pass
+	else:
+		pass
 	
-	#print(character.name)
-	#print(outfit_id)
 	if outfit_id == 2:
 		make_twin()
 	else:
 		if is_instance_valid(twin):
 			twin.queue_free()
-	#set_emotion(_emotion_id)
 
 
 func talk(time: float = 0.0) -> void:

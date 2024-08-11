@@ -1,7 +1,6 @@
-[gd_scene load_steps=85 format=3 uid="uid://beq7l84g5gdlw"]
+[gd_scene load_steps=68 format=3 uid="uid://beq7l84g5gdlw"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_rk3p5"]
-[ext_resource type="Texture2D" uid="uid://bww6vyyjh0o28" path="res://characters/арлет/ночь/голова_1.png" id="2_8jkwn"]
 [ext_resource type="Texture2D" uid="uid://cs5fbqsa7ifs1" path="res://characters/арлет/sprites/Голова 1.png" id="2_stomh"]
 [ext_resource type="Texture2D" uid="uid://d3lqg4vkokjp3" path="res://characters/арлет/sprites/Main.png" id="3_0wgu5"]
 [ext_resource type="Texture2D" uid="uid://cb8f0ro3vtmnc" path="res://characters/арлет/sprites/Голова 2.png" id="3_4xo5n"]
@@ -9,10 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cyyv3t57x3xoy" path="res://characters/арлет/sprites/Голова 1 Глаза 1-2.png" id="4_hd8sy"]
 [ext_resource type="Texture2D" uid="uid://byqtlenlfn5aw" path="res://characters/арлет/sprites/LR руки 1.png" id="4_nslli"]
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/bleep_player.gd" id="5_2hi2d"]
-[ext_resource type="Texture2D" uid="uid://w3a22x1q1jdm" path="res://characters/арлет/ночь/голова_1_глаза_1_1.png" id="5_i06ll"]
 [ext_resource type="Texture2D" uid="uid://ckpur7yowsvw0" path="res://characters/арлет/sprites/Голова 1 Глаза 1-3.png" id="5_p3gtf"]
-[ext_resource type="Texture2D" uid="uid://cslaf6rd2x5ym" path="res://characters/арлет/ночь/голова_1_глаза_1_2.png" id="6_q52yl"]
-[ext_resource type="Texture2D" uid="uid://b2w1ekbuhicp0" path="res://characters/арлет/ночь/голова_1_глаза_1_3.png" id="7_b7h4b"]
 [ext_resource type="Texture2D" uid="uid://b0f17nmdgj3qo" path="res://characters/арлет/sprites/Голова 1 Глаза 3-1.png" id="9_e8y5r"]
 [ext_resource type="Texture2D" uid="uid://dhyb4bhbo60oe" path="res://characters/арлет/sprites/Голова 1 Глаза 3-2.png" id="10_fhx1c"]
 [ext_resource type="Texture2D" uid="uid://dtrpd2desa5eu" path="res://characters/арлет/sprites/Голова 1 Глаза 3-3.png" id="11_gtjte"]
@@ -37,14 +33,8 @@
 [ext_resource type="Texture2D" uid="uid://1vrw0xudrxdk" path="res://characters/арлет/sprites/Голова 1 Рот 4-2.png" id="22_3xhrh"]
 [ext_resource type="Texture2D" uid="uid://dhno4alybip6u" path="res://characters/арлет/sprites/Голова 1 Рот 4-3.png" id="23_a4pxd"]
 [ext_resource type="Texture2D" uid="uid://6gh21xi0d5x2" path="res://characters/арлет/sprites/Голова 1 Рот 3-1.png" id="24_gy1u0"]
-[ext_resource type="Texture2D" uid="uid://djmqfaqp43nc6" path="res://characters/арлет/ночь/голова_1_рот_2_1.png" id="24_jfygv"]
-[ext_resource type="Texture2D" uid="uid://bdfynidhw7gf" path="res://characters/арлет/ночь/голова_1_рот_1_1.png" id="24_xx8un"]
 [ext_resource type="Texture2D" uid="uid://btn61eorer3lk" path="res://characters/арлет/sprites/Голова 2 Рот 1-1.png" id="25_6701r"]
-[ext_resource type="Texture2D" uid="uid://cmy7msq3nxx3e" path="res://characters/арлет/ночь/голова_1_рот_1_2.png" id="25_c636d"]
-[ext_resource type="Texture2D" uid="uid://8qdlbbffjypd" path="res://characters/арлет/ночь/голова_1_рот_2_2.png" id="25_kc1ab"]
 [ext_resource type="Texture2D" uid="uid://50b8a7evwi1x" path="res://characters/арлет/sprites/Голова 1 Рот 3-2.png" id="25_o8dp3"]
-[ext_resource type="Texture2D" uid="uid://dnoxjn2t01uky" path="res://characters/арлет/ночь/голова_1_рот_1_3.png" id="26_4s56s"]
-[ext_resource type="Texture2D" uid="uid://cgabusayyblm2" path="res://characters/арлет/ночь/голова_1_рот_2_3.png" id="26_sevjk"]
 [ext_resource type="Texture2D" uid="uid://b706icgq7t7fn" path="res://characters/арлет/sprites/Голова 2 Рот 1-2.png" id="26_srdek"]
 [ext_resource type="Texture2D" uid="uid://bk4udrnieguc4" path="res://characters/арлет/sprites/Голова 1 Рот 3-3.png" id="26_u6xyu"]
 [ext_resource type="Texture2D" uid="uid://dt38i127xhjix" path="res://characters/арлет/sprites/Голова 2 Рот 1-3.png" id="27_5l5ns"]
@@ -66,34 +56,11 @@
 [ext_resource type="Texture2D" uid="uid://l77mao0wbs5g" path="res://characters/арлет/sprites/Голова 2 Рот 4-3.png" id="39_ewvw2"]
 [ext_resource type="Texture2D" uid="uid://bkryh1cpfnig8" path="res://characters/арлет/sprites/R рука 5.png" id="39_ucfvr"]
 [ext_resource type="Texture2D" uid="uid://bm40leqrrba3f" path="res://characters/арлет/sprites/R рука 2.png" id="40_otxlg"]
-[ext_resource type="Texture2D" uid="uid://bseeu7kweunet" path="res://characters/арлет/ночь/голова_1_брови_1.png" id="45_wo07y"]
-[ext_resource type="Texture2D" uid="uid://bfpavjdvcq4cv" path="res://characters/арлет/ночь/основа.png" id="48_n7c6p"]
-[ext_resource type="Texture2D" uid="uid://bfj5oalkg1hpw" path="res://characters/арлет/ночь/голова_1_брови_4.png" id="48_osy5j"]
 [ext_resource type="Texture2D" uid="uid://oj6ptgkhgqhe" path="res://characters/арлет/sprites/Голова 2 Пот.png" id="50_1ubap"]
-[ext_resource type="Texture2D" uid="uid://bxsqrrum5605s" path="res://characters/арлет/ночь/голова_1_слезы.png" id="55_3a368"]
 [ext_resource type="Texture2D" uid="uid://bg471e0qhpi25" path="res://characters/арлет/sprites/LR руки 2.png" id="56_vytos"]
-[ext_resource type="Texture2D" uid="uid://d2asq4k113j4y" path="res://characters/арлет/ночь/две_руки_1.png" id="57_imirt"]
-[ext_resource type="Texture2D" uid="uid://cl6lnt2cudb6q" path="res://characters/арлет/ночь/рука_левая_1.png" id="62_w6ilx"]
-[ext_resource type="Texture2D" uid="uid://dr670r2lul2xx" path="res://characters/арлет/ночь/рука_правая_1.png" id="70_bl446"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g27sv"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_8jkwn")
-}],
-"loop": true,
-"name": &"N_Грусть",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_8jkwn")
-}],
-"loop": true,
-"name": &"N_Спокойствие",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_stomh")
@@ -169,52 +136,6 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7i0p1"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_i06ll")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_q52yl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_b7h4b")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_b7h4b")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_q52yl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_i06ll")
-}],
-"loop": false,
-"name": &"N_Грусть",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_i06ll")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_q52yl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_b7h4b")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_b7h4b")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_q52yl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_i06ll")
-}],
-"loop": false,
-"name": &"N_Спокойствие",
-"speed": 10.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("3_uiku2")
@@ -412,34 +333,6 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("24_jfygv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_kc1ab")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_sevjk")
-}],
-"loop": true,
-"name": &"N_Грусть",
-"speed": 8.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("24_xx8un")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_c636d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_4s56s")
-}],
-"loop": true,
-"name": &"N_Спокойствие",
-"speed": 8.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": ExtResource("18_o3mn6")
 }, {
 "duration": 1.0,
@@ -567,22 +460,6 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o3p7a"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("48_osy5j")
-}],
-"loop": true,
-"name": &"N_Грусть",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("45_wo07y")
-}],
-"loop": true,
-"name": &"N_Спокойствие",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("29_pem3r")
@@ -738,22 +615,6 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("55_3a368")
-}],
-"loop": true,
-"name": &"N_Грусть",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("36_rpdbt")
-}],
-"loop": true,
-"name": &"N_Спокойствие",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": ExtResource("33_kdrol")
 }],
 "loop": true,
@@ -829,14 +690,6 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("48_n7c6p")
-}],
-"loop": true,
-"name": &"N_Спокойствие",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": ExtResource("3_0wgu5")
 }],
 "loop": true,
@@ -846,22 +699,6 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_b8k8w"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("62_w6ilx")
-}],
-"loop": true,
-"name": &"N_Грусть",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("57_imirt")
-}],
-"loop": true,
-"name": &"N_Спокойствие",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("33_yt1nl")
@@ -929,22 +766,6 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w5m3s"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("70_bl446")
-}],
-"loop": true,
-"name": &"N_Грусть",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("36_rpdbt")
-}],
-"loop": true,
-"name": &"N_Спокойствие",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("36_a32ai")
@@ -1025,11 +846,6 @@ emotion_ids_to_anim_names = {
 7: &"Страх",
 8: &"Смущение"
 }
-outfit_ids_to_anim_prefix = {
-0: "",
-1: "N_",
-2: ""
-}
 eyes = NodePath("Head/Eyes")
 mouth = NodePath("Head/Mouth")
 eyes_frame_close = 2
@@ -1039,22 +855,22 @@ bleep_player = NodePath("BleepPlayer")
 [node name="Head" type="AnimatedSprite2D" parent="."]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_g27sv")
-animation = &"Удивление"
+animation = &"Грусть"
 
 [node name="Eyes" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_7i0p1")
-animation = &"Удивление"
+animation = &"Грусть"
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_as4yi")
-animation = &"Удивление"
+animation = &"Грусть"
 
 [node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_o3p7a")
-animation = &"Удивление"
+animation = &"Грусть"
 
 [node name="Line" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
@@ -1064,7 +880,7 @@ animation = &"Удивление"
 [node name="Details 1" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_x0vta")
-animation = &"Удивление"
+animation = &"Спокойствие"
 
 [node name="Body" type="AnimatedSprite2D" parent="."]
 light_mask = 3
@@ -1077,12 +893,12 @@ light_mask = 3
 [node name="Left Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_b8k8w")
-animation = &"Удивление"
+animation = &"Грусть"
 
 [node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_w5m3s")
-animation = &"Удивление"
+animation = &"Грусть"
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
 script = ExtResource("5_2hi2d")

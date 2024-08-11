@@ -1,10 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://cawykpyqsfmsu"]
+[gd_scene load_steps=4 format=3 uid="uid://cawykpyqsfmsu"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_yc054"]
 [ext_resource type="Texture2D" uid="uid://bukkkwphtwnqn" path="res://locations/цех/бутафорская_ночь.png" id="2_51o57"]
+[ext_resource type="Texture2D" uid="uid://w04mgdypqc5y" path="res://locations/white_box.png" id="3_8mkeq"]
 
 [node name="Цех (ночь)" type="Node2D"]
 script = ExtResource("1_yc054")
 
 [node name="БутафорскаяНочь" type="Sprite2D" parent="."]
 texture = ExtResource("2_51o57")
+
+[node name="Тьма" type="PointLight2D" parent="."]
+light_mask = 3
+color = Color(0.546545, 0.549481, 0.73086, 1)
+energy = 1.1
+blend_mode = 2
+range_item_cull_mask = 2
+texture = ExtResource("3_8mkeq")
+texture_scale = 10.0

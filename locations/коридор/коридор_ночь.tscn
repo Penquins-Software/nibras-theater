@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b13fhn678qv04"]
+[gd_scene load_steps=4 format=3 uid="uid://b13fhn678qv04"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_fytym"]
 [ext_resource type="Texture2D" uid="uid://kt61m6m37oxn" path="res://locations/коридор/ночь.jpg" id="2_u1iqv"]
+[ext_resource type="Texture2D" uid="uid://w04mgdypqc5y" path="res://locations/white_box.png" id="5_c53py"]
 
 [node name="КоридорНочь" type="Node2D"]
 script = ExtResource("1_fytym")
@@ -9,3 +10,12 @@ script = ExtResource("1_fytym")
 [node name="День" type="Sprite2D" parent="."]
 light_mask = 0
 texture = ExtResource("2_u1iqv")
+
+[node name="Тьма" type="PointLight2D" parent="День"]
+light_mask = 3
+color = Color(0.546545, 0.549481, 0.73086, 1)
+energy = 1.1
+blend_mode = 2
+range_item_cull_mask = 2
+texture = ExtResource("5_c53py")
+texture_scale = 10.0

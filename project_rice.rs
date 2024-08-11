@@ -1993,7 +1993,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 4,
+       "emotion_id": 5,
        "flip_h": false,
        "id": 19,
        "order": 10,
@@ -2057,7 +2057,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 4,
+       "emotion_id": 5,
        "flip_h": false,
        "id": 19,
        "order": 10,
@@ -2121,7 +2121,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 4,
+       "emotion_id": 6,
        "flip_h": false,
        "id": 19,
        "order": 10,
@@ -2185,7 +2185,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 4,
+       "emotion_id": 6,
        "flip_h": false,
        "id": 19,
        "order": 10,
@@ -2249,7 +2249,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 4,
+       "emotion_id": 6,
        "flip_h": false,
        "id": 19,
        "order": 10,
@@ -2313,7 +2313,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 4,
+       "emotion_id": 2,
        "flip_h": false,
        "id": 19,
        "order": 10,
@@ -2377,7 +2377,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 4,
+       "emotion_id": 2,
        "flip_h": false,
        "id": 19,
        "order": 10,
@@ -2441,7 +2441,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 4,
+       "emotion_id": 2,
        "flip_h": false,
        "id": 19,
        "order": 10,
@@ -2505,7 +2505,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 4,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 10,
@@ -2569,7 +2569,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 4,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 10,
@@ -2633,7 +2633,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 4,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 10,
@@ -2697,7 +2697,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 4,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 19,
        "order": 10,
@@ -17844,7 +17844,27 @@
 
      }
     },
-    null,
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
     null,
     null,
     null,
@@ -27386,7 +27406,27 @@
 
      }
     },
-    null,
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
     null,
     null,
     null,
@@ -31208,9 +31248,15 @@
      "type": "RSEFrameText"
     },
     {
+     "type": "RSEFrameGap"
+    },
+    {
      "speaker_id": 2,
      "text": "Младшая актриса – Арлет Янн.",
      "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
     },
     {
      "speaker_id": 2,
@@ -31218,9 +31264,15 @@
      "type": "RSEFrameText"
     },
     {
+     "type": "RSEFrameGap"
+    },
+    {
      "speaker_id": 2,
      "text": "Убитая актриса и она же кукла Нибраса – Морт Вив.",
      "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
     },
     {
      "speaker_id": 2,
@@ -31228,9 +31280,15 @@
      "type": "RSEFrameText"
     },
     {
+     "type": "RSEFrameGap"
+    },
+    {
      "speaker_id": 2,
      "text": "Художественный руководитель и голос Нибраса – Чарльз Моррис.",
      "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
     },
     {
      "speaker_id": 2,
@@ -31238,9 +31296,15 @@
      "type": "RSEFrameText"
     },
     {
+     "type": "RSEFrameGap"
+    },
+    {
      "speaker_id": 2,
      "text": "И, конечно же, экзорцист-консультант, он же детектив – Этьен Дюваль!",
      "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
     },
     {
      "speaker_id": 2,
@@ -31264,6 +31328,14 @@
    "id": 95,
    "name": "Конец постановки",
    "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null,
     null,
     null,
