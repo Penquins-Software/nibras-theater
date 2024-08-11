@@ -15,7 +15,7 @@ const REWIND_DELAY_TIME: float = 0.02
 @export var scene_builder: RSESceneBuilder
 @export var pause_button: Button
 
-@export var music_player: AudioStreamPlayer
+@export var music_player: MusicPlayer
 @export var bgs_player: BGSPlayer
 @export var sfx_player: SFXPlayer
 
@@ -303,27 +303,10 @@ func _on_pause_mouse_exited():
 
 func _on_scene_builder_music(music_id: int):
 	if not RewindStoryEngine.story.music_list.has(music_id):
-		current_music = null
-		music_player.stream = null
-		music_player.stop()
 		return
 	
 	var music = RewindStoryEngine.story.music_list[music_id] as RSEMusic
-	
-	if current_music == music:
-		return
-	
-	current_music = music
-	
-	if music.path_to_file == null or music.path_to_file == "":
-		music_player.stream = null
-		music_player.stop()
-		return
-	
-	var music_audio = load(music.path_to_file)
-	if music_audio is AudioStream:
-		music_player.stream = music_audio
-		music_player.play()
+	music_player.play_music(music)
 
 
 func _on_scene_builder_bgs(bgs_id: int, status: bool):
