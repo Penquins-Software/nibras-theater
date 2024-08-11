@@ -28586,6 +28586,10 @@
      "type": "RSEFrameLocation"
     },
     {
+     "music_id": 34,
+     "type": "RSEFrameMusic"
+    },
+    {
      "transitition_id": 15,
      "type": "RSEFrameTransitition"
     },
@@ -28794,10 +28798,659 @@
   {
    "active": false,
    "description": "Этьен и Лоран возвращаются на сцену. Там они находят Арлет.",
-   "frames": [],
+   "frames": [
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 99,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "На сцене царила напряженная тишина.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В центре стояла и озиралась Арлет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Зрительный зал был пуст, но казалось, что невидимые глаза следят за каждым нашим движением.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет заметила меня и побежала в мою сторону.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Было видно, как она плачет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Этьен!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Ты в порядке?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Это всё он, это всё Нибрас…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Он убил Дидье!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я видела это своими глазами!",
+     "type": "RSEFrameText"
+    },
+    {
+     "condition": "ENDING_1",
+     "global": true,
+     "type": "RSEFrameCondition"
+    },
+    {
+     "description": "",
+     "to_episode_id": 94,
+     "type": "RSEFrameJump"
+    },
+    {
+     "type": "RSEFrameEndCondition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет заметила за моей спиной Лоран.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Лоран!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Как хорошо, что с тобой всё в порядке…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "А где Мишель?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Она мертва.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Что?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Но в-вы же были с ней?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Как такое могло произойти?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Не придуривайся, Арлет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Мы всё знаем.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Знаете… что?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Ты – соучастница убийства Морт, а также убийца Дидье и Мишель.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет начала пятиться и непонимающе смотреть на меня.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Что?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Как ты мог так подумать…",
+     "type": "RSEFrameText"
+    },
+    {
+     "music_id": 29,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Давай я расскажу обо всём по порядку.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мишель, Чарльз и Дидье договорились продать этот театр одному очень влиятельному и богатому человеку.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Назовём его мистер X.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Театр под управлением Мишель не приносил дохода, и нужно было что-то с этим делать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "На глаза Чарльзу попалась статья про некого богача – мистера X – который по слухам занимается демонологией и активно скупает всякие проклятые места.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "И тут он понял: “Если у нас не получается быть хорошим театром, то, может, получится стать хорошим проклятым местом?”",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Денег можно получить очень много, и Мишель эта идея понравилась.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Примерно тогда  же начали происходить несчастные случаи, и пошли слухи про некого демона Нибраса.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мишель долго подготавливала почву и даже заманила того самого мистера X в качестве зрителя – и всё благодаря, как она же и сказала, аутентичному и крайне редкому оружию, что так ценит мистер X.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вскоре должна была состоятся премьера показа, и тут она решила действовать – нужно максимально накалить обстановку и заставить всех поверить в сверхъестественное.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Для этого она даже пригласила специалиста по сверхъестественному, экзорциста-консультанта – меня.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "И вот, первое убийство: мисс Морт.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я никак не мог его объяснить, ведь получается что это и не пуля, и не заглушка.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Все оправдывают друг друга и ни на кого нельзя указать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Только если…",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Если Мишель, Чарльз и Дидье не в сговоре.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В таком случае они с лёгкостью могли создать “мистическую” ситуацию, при которой никто из людей не виноват, да и несчастный случай это быть не мог, ведь Чарльз выстрелил из оружия перед репетицией.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Второе: исчезновение убитой мисс Морт!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Кто это сделал?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "И зачем?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Для создания той самой мистической обстановки!",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вероятно, это были Чарльз и Дидье, которые провернули это, пока Лоран дремала в гримёрке, а мы с тобой были в бутафорском цехе.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Ещё и письмо приложили…",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Третье: убийство Чарльза?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Зачем его убили?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Тут всё банально – очевидно, Мишель хотела получить больше денег и она подговорила Дидье убить Чарльза, чтобы поделить его долю на двоих.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Но причём здесь я?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я не понимаю тебя.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Да!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Причём здесь вы, мисс Арлет?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вы узнали о планах Мишель и подумали, что подвернулась хорошая возможность подзаработать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Действовать вы решили после смерти Чарльза.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я ошибся, подумав на Лоран, и отправил вас вместе с Дидье.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "И вы убили его, воспользовавшись неожиданностью.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вы каким-то образом заманили его в гримёрку и напали.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "А затем закрыли на ключ.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "На мастер-ключ! ",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Когда Мишель врезалась в вас и повредила ногу, у неё из кармана выпал ключ, который вы оставили себе.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Оказалось, что он может закрывать и открывать все двери в театре.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Нет у меня никакого ключа!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Этьен, остановись, ты ошибаешься!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Пока мы с Лоран искали тебя, ты пробралась к Мишель, убила её и также закрыла дверь на ключ.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Необъяснимые убийства в закрытых комнатах должны поднять ценность этого места для мистера X, не так ли?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "А театр после смерти Мишель наследуют актёры.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "И для окончательного осуществления вашего плана, вам осталось только убить…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Меня…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я бы не стала этого делать!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я этого не делала…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Это всё Нибрас…",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Арлет, хватит.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Думаю, что полиция разберётся со всем остальным.",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 41,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 28,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Таким образом, Этьен и Лоран сумели выжить.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет сначала арестовали, а потом поместили в психиатрическую больницу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Театр закрыли.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В прессе этот случай окрестили “Театром Нибраса”.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Новость вызвала такой резонанс, что даже готовится экранизация этих событий.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Этьен основал частное детективное агентство под названием “Мета Детектив” и теперь расследует запутанные дела.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Лоран ушла в другой театр и успешно продолжает выступать в роли актрисы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Этьена ещё долго не покидало странное чувство, будто он где-то ошибся, но в конце концов он забыл про него, и жизнь продолжилась своим чередом.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "[b]Fin.[/b]",
+     "type": "RSEFrameText"
+    },
+    {
+     "global": true,
+     "name": "ENDING_1",
+     "type": "RSEFrameVariable",
+     "value": ""
+    }
+   ],
    "id": 88,
    "name": "1 Эпилог. Убийца – Арлет",
-   "scene_presets": [],
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   },
   {
@@ -28877,14 +29530,14 @@
   "0": {
    "position_x": 1400,
    "position_y": 780,
-   "size_x": 200,
-   "size_y": 241.001037597656
+   "size_x": 200.00048828125,
+   "size_y": 241.001129150391
   },
   "13": {
    "position_x": 1040,
    "position_y": 60,
    "size_x": 199.9990234375,
-   "size_y": 155.000762939453
+   "size_y": 155.000823974609
   },
   "14": {
    "position_x": 400,
@@ -28896,79 +29549,79 @@
    "position_x": 400,
    "position_y": 1960,
    "size_x": 200.0009765625,
-   "size_y": 155.00244140625
+   "size_y": 155.002685546875
   },
   "16": {
    "position_x": 0,
    "position_y": -100,
-   "size_x": 199.9970703125,
-   "size_y": 155.000534057617
+   "size_x": 199.998046875,
+   "size_y": 155.00048828125
   },
   "17": {
    "position_x": 0,
    "position_y": 60,
-   "size_x": 199.9970703125,
-   "size_y": 155.000152587891
+   "size_x": 199.998046875,
+   "size_y": 155.000213623047
   },
   "18": {
    "position_x": 0,
    "position_y": 220,
-   "size_x": 199.9970703125,
-   "size_y": 155.000061035156
+   "size_x": 199.998046875,
+   "size_y": 155
   },
   "19": {
    "position_x": 1040,
    "position_y": 220,
    "size_x": 199.9990234375,
-   "size_y": 155.000061035156
+   "size_y": 155
   },
   "2": {
    "position_x": 1340,
    "position_y": 20,
    "size_x": 199.998046875,
-   "size_y": 155.001068115234
+   "size_y": 155.001037597656
   },
   "21": {
    "position_x": -400,
    "position_y": 840,
    "size_x": 199.9990234375,
-   "size_y": 155.00146484375
+   "size_y": 155.001495361328
   },
   "22": {
    "position_x": -200,
    "position_y": 1400,
    "size_x": 200.001953125,
-   "size_y": 155.002990722656
+   "size_y": 155.0029296875
   },
   "23": {
    "position_x": -400,
    "position_y": 1200,
    "size_x": 199.9990234375,
-   "size_y": 155.001037597656
+   "size_y": 155.000854492188
   },
   "24": {
    "position_x": 1800,
    "position_y": 760,
    "size_x": 199.9970703125,
-   "size_y": 300.000244140625
+   "size_y": 300.000366210938
   },
   "25": {
    "position_x": 1040,
    "position_y": -100,
    "size_x": 199.9990234375,
-   "size_y": 155.000534057617
+   "size_y": 155.00048828125
   },
   "26": {
    "position_x": 1040,
    "position_y": -260,
    "size_x": 199.9990234375,
-   "size_y": 155.000457763672
+   "size_y": 155.00048828125
   },
   "27": {
    "position_x": 1340,
    "position_y": -160,
    "size_x": 200.0009765625,
-   "size_y": 155.000823974609
+   "size_y": 155.000854492188
   },
   "28": {
    "position_x": -200,
@@ -28980,7 +29633,7 @@
    "position_x": -200,
    "position_y": 1720,
    "size_x": 200.001953125,
-   "size_y": 155.000244140625
+   "size_y": 155
   },
   "30": {
    "position_x": -200,
@@ -28992,31 +29645,31 @@
    "position_x": -200,
    "position_y": 2040,
    "size_x": 200.001953125,
-   "size_y": 155.00048828125
+   "size_y": 155.000610351563
   },
   "32": {
    "position_x": -200,
    "position_y": 2200,
    "size_x": 200.001953125,
-   "size_y": 155.001220703125
+   "size_y": 155.001342773438
   },
   "33": {
    "position_x": -200,
    "position_y": 2360,
    "size_x": 200.001953125,
-   "size_y": 155.001953125
+   "size_y": 155.001831054688
   },
   "34": {
    "position_x": -200,
    "position_y": 2520,
    "size_x": 200.001953125,
-   "size_y": 155
+   "size_y": 155.000122070313
   },
   "35": {
    "position_x": -200,
    "position_y": 2680,
    "size_x": 200.001953125,
-   "size_y": 155.00048828125
+   "size_y": 155.000732421875
   },
   "36": {
    "position_x": -420,
@@ -29028,13 +29681,13 @@
    "position_x": -400,
    "position_y": 680,
    "size_x": 200,
-   "size_y": 155.000579833984
+   "size_y": 155.000518798828
   },
   "38": {
    "position_x": -240,
    "position_y": -300,
    "size_x": 200.0009765625,
-   "size_y": 155.000091552734
+   "size_y": 155.000122070313
   },
   "39": {
    "position_x": 1040,
@@ -29052,13 +29705,13 @@
    "position_x": 220,
    "position_y": -60,
    "size_x": 199.9970703125,
-   "size_y": 155.000030517578
+   "size_y": 155
   },
   "42": {
    "position_x": 2200,
    "position_y": 760,
    "size_x": 200.001953125,
-   "size_y": 300.000732421875
+   "size_y": 300.000854492188
   },
   "43": {
    "position_x": 1340,
@@ -29070,43 +29723,43 @@
    "position_x": 2600,
    "position_y": 740,
    "size_x": 239.4912109375,
-   "size_y": 375.048889160156
+   "size_y": 375.049041748047
   },
   "45": {
    "position_x": -480,
    "position_y": -100,
    "size_x": 199.9990234375,
-   "size_y": 155.000534057617
+   "size_y": 155.00048828125
   },
   "46": {
    "position_x": -480,
    "position_y": 60,
    "size_x": 199.9990234375,
-   "size_y": 155.000152587891
+   "size_y": 155.000213623047
   },
   "47": {
    "position_x": -480,
    "position_y": 220,
    "size_x": 199.9990234375,
-   "size_y": 155.000061035156
+   "size_y": 155
   },
   "48": {
    "position_x": 3000,
    "position_y": 740,
    "size_x": 302.6865234375,
-   "size_y": 345.622375488281
+   "size_y": 345.622406005859
   },
   "49": {
    "position_x": 3400,
    "position_y": 740,
-   "size_x": 199.99853515625,
-   "size_y": 300.000305175781
+   "size_x": 199.9990234375,
+   "size_y": 300.000335693359
   },
   "50": {
    "position_x": 3800,
    "position_y": 520,
    "size_x": 287.62060546875,
-   "size_y": 291.494140625
+   "size_y": 291.494110107422
   },
   "51": {
    "position_x": 3800,
@@ -29118,13 +29771,13 @@
    "position_x": 4240,
    "position_y": 740,
    "size_x": 214.97119140625,
-   "size_y": 336.496887207031
+   "size_y": 336.496917724609
   },
   "53": {
    "position_x": 4520,
    "position_y": 740,
-   "size_x": 214.9736328125,
-   "size_y": 323.395080566406
+   "size_x": 214.97314453125,
+   "size_y": 323.395233154297
   },
   "54": {
    "position_x": 4800,
@@ -29136,13 +29789,13 @@
    "position_x": -620,
    "position_y": 820,
    "size_x": 199.9990234375,
-   "size_y": 155.000793457031
+   "size_y": 155.000671386719
   },
   "56": {
    "position_x": 400,
    "position_y": 2120,
    "size_x": 200.0009765625,
-   "size_y": 155.001220703125
+   "size_y": 155.00146484375
   },
   "57": {
    "position_x": -720,
@@ -29154,7 +29807,7 @@
    "position_x": -720,
    "position_y": 160,
    "size_x": 200,
-   "size_y": 155.000152587891
+   "size_y": 155.000091552734
   },
   "59": {
    "position_x": -720,
@@ -29166,61 +29819,61 @@
    "position_x": -720,
    "position_y": 480,
    "size_x": 200,
-   "size_y": 155.000061035156
+   "size_y": 155.000122070313
   },
   "61": {
    "position_x": 5240,
    "position_y": 740,
-   "size_x": 263.2275390625,
-   "size_y": 414.253234863281
+   "size_x": 263.227783203125,
+   "size_y": 414.253387451172
   },
   "62": {
    "position_x": 5600,
    "position_y": 740,
-   "size_x": 217.81396484375,
-   "size_y": 354.803283691406
+   "size_x": 217.814208984375,
+   "size_y": 354.803314208984
   },
   "63": {
    "position_x": 5940,
    "position_y": 740,
-   "size_x": 223.29443359375,
-   "size_y": 350.692687988281
+   "size_x": 223.294677734375,
+   "size_y": 350.692718505859
   },
   "64": {
    "position_x": 1340,
    "position_y": -340,
    "size_x": 200.0009765625,
-   "size_y": 155.000030517578
+   "size_y": 155
   },
   "65": {
    "position_x": 6260,
    "position_y": 740,
-   "size_x": 215.90625,
-   "size_y": 395.449523925781
+   "size_x": 215.906494140625,
+   "size_y": 395.449676513672
   },
   "66": {
    "position_x": 6600,
    "position_y": 740,
-   "size_x": 207.4873046875,
-   "size_y": 362.698303222656
+   "size_x": 207.48681640625,
+   "size_y": 362.698333740234
   },
   "67": {
    "position_x": 6980,
    "position_y": 740,
-   "size_x": 226.20263671875,
-   "size_y": 350.532531738281
+   "size_x": 226.2021484375,
+   "size_y": 350.532562255859
   },
   "68": {
    "position_x": 7260,
    "position_y": 740,
-   "size_x": 245.17919921875,
-   "size_y": 375.074279785156
+   "size_x": 245.178955078125,
+   "size_y": 375.074432373047
   },
   "69": {
    "position_x": 7580,
    "position_y": 740,
-   "size_x": 246.08447265625,
-   "size_y": 367.258850097656
+   "size_x": 246.084594726563,
+   "size_y": 367.259002685547
   },
   "70": {
    "position_x": -240,
@@ -29238,7 +29891,7 @@
    "position_x": -240,
    "position_y": 160,
    "size_x": 199.9990234375,
-   "size_y": 155.000152587891
+   "size_y": 155.000091552734
   },
   "73": {
    "position_x": -240,
@@ -29249,8 +29902,8 @@
   "74": {
    "position_x": 7900,
    "position_y": 740,
-   "size_x": 204.982421875,
-   "size_y": 337.366027832031
+   "size_x": 204.982543945313,
+   "size_y": 337.366058349609
   },
   "75": {
    "position_x": -1000,
@@ -29262,7 +29915,7 @@
    "position_x": -1000,
    "position_y": 160,
    "size_x": 199.9990234375,
-   "size_y": 155.000152587891
+   "size_y": 155.000091552734
   },
   "77": {
    "position_x": -1000,
@@ -29274,121 +29927,121 @@
    "position_x": -1000,
    "position_y": 480,
    "size_x": 199.9990234375,
-   "size_y": 155.000061035156
+   "size_y": 155.000122070313
   },
   "79": {
    "position_x": 8200,
    "position_y": 760,
-   "size_x": 233.62939453125,
-   "size_y": 343.592529296875
+   "size_x": 233.629638671875,
+   "size_y": 343.592651367188
   },
   "80": {
    "position_x": 8480,
    "position_y": 760,
-   "size_x": 218.682739257813,
-   "size_y": 389.675537109375
+   "size_x": 218.682373046875,
+   "size_y": 389.675659179688
   },
   "81": {
    "position_x": 8840,
    "position_y": 800,
-   "size_x": 241.939819335938,
-   "size_y": 356.529541015625
+   "size_x": 241.93994140625,
+   "size_y": 356.529449462891
   },
   "82": {
    "position_x": 9200,
    "position_y": 800,
    "size_x": 236.119140625,
-   "size_y": 410.849853515625
+   "size_y": 410.849761962891
   },
   "83": {
    "position_x": 9540,
    "position_y": 620,
-   "size_x": 251.470581054688,
-   "size_y": 410.137878417969
+   "size_x": 251.470703125,
+   "size_y": 410.138031005859
   },
   "84": {
    "position_x": 9540,
    "position_y": 1060,
-   "size_x": 260.013549804688,
+   "size_x": 260.013671875,
    "size_y": 347.555847167969
   },
   "85": {
    "position_x": 9960,
    "position_y": 420,
-   "size_x": 258.775390625,
-   "size_y": 423.579223632813
+   "size_x": 258.775634765625,
+   "size_y": 423.579284667969
   },
   "86": {
    "position_x": 10300,
    "position_y": 420,
-   "size_x": 246.72314453125,
-   "size_y": 393.438110351563
+   "size_x": 246.72265625,
+   "size_y": 393.438171386719
   },
   "87": {
    "position_x": 10600,
    "position_y": 400,
-   "size_x": 224.11669921875,
-   "size_y": 355.761108398438
+   "size_x": 224.117797851563,
+   "size_y": 355.761047363281
   },
   "88": {
    "position_x": 10880,
    "position_y": 400,
-   "size_x": 224.111328125,
-   "size_y": 397.959350585938
+   "size_x": 224.114379882813,
+   "size_y": 397.959289550781
   },
   "89": {
    "position_x": 9880,
    "position_y": 1060,
-   "size_x": 296.450927734375,
-   "size_y": 369.325378417969
+   "size_x": 296.451171875,
+   "size_y": 369.325500488281
   },
   "9": {
    "position_x": 280,
    "position_y": -320,
    "size_x": 199.9990234375,
-   "size_y": 155.000030517578
+   "size_y": 155.000061035156
   },
   "90": {
    "position_x": 10280,
    "position_y": 1080,
-   "size_x": 335.638671875,
-   "size_y": 352.747314453125
+   "size_x": 335.638305664063,
+   "size_y": 352.747436523438
   },
   "91": {
    "position_x": 10680,
    "position_y": 1060,
-   "size_x": 281.3828125,
+   "size_x": 281.384887695313,
    "size_y": 348.226257324219
   },
   "92": {
    "position_x": 11020,
    "position_y": 1060,
-   "size_x": 255.759521484375,
-   "size_y": 307.536499023438
+   "size_x": 255.761474609375,
+   "size_y": 307.536437988281
   },
   "93": {
    "position_x": 11360,
    "position_y": 1040,
-   "size_x": 287.407470703125,
+   "size_x": 287.408203125,
    "size_y": 322.605651855469
   },
   "94": {
    "position_x": 11840,
    "position_y": 600,
-   "size_x": 313.229736328125,
-   "size_y": 302.265380859375
+   "size_x": 313.228759765625,
+   "size_y": 302.265502929688
   },
   "95": {
    "position_x": 12200,
    "position_y": 580,
-   "size_x": 270.206787109375,
-   "size_y": 350.147399902344
+   "size_x": 270.20703125,
+   "size_y": 350.147247314453
   },
   "96": {
    "position_x": 12520,
    "position_y": 580,
-   "size_x": 286.25439453125,
-   "size_y": 328.082214355469
+   "size_x": 286.254150390625,
+   "size_y": 328.082061767578
   },
   "97": {
    "position_x": 280,
@@ -29400,15 +30053,21 @@
    "position_x": 280,
    "position_y": -540,
    "size_x": 200,
-   "size_y": 155.000183105469
+   "size_y": 155.000122070313
   },
-  "scroll_offset_x": 6682.40283203125,
-  "scroll_offset_y": 91.5986328125,
+  "99": {
+   "position_x": -420,
+   "position_y": 1620,
+   "size_x": 200,
+   "size_y": 155.000122070313
+  },
+  "scroll_offset_x": 5470.32275390625,
+  "scroll_offset_y": 84.3525390625,
   "show_grid": true,
   "snapping_enabled": true,
-  "zoom": 0.72989809513092
+  "zoom": 0.603221535682678
  },
- "last_id": 98,
+ "last_id": 99,
  "locations": [
   {
    "active": true,
@@ -29608,6 +30267,12 @@
    "active": true,
    "id": 36,
    "name": "None",
+   "path_to_file": ""
+  },
+  {
+   "active": true,
+   "id": 99,
+   "name": "Тишина",
    "path_to_file": ""
   }
  ],
