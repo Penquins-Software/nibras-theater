@@ -27,6 +27,8 @@ func _stop() -> void:
 
 
 func _replay() -> void:
-	volume_db = randf_range(-2.0, 2.0)
-	pitch_scale = randf_range(0.8, 1.2)
+	#volume_db = randf_range(-2.0, 2.0)
+	volume_db = randf_range(-1.0, 0.5)
+	#pitch_scale = randf_range(0.8, 1.2)
+	pitch_scale = randf_range(0.9, 1.1)
 	play()

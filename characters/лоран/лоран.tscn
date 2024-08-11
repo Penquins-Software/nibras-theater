@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://dary6mcmpje0e"]
+[gd_scene load_steps=45 format=3 uid="uid://dary6mcmpje0e"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_sol72"]
 [ext_resource type="Texture2D" uid="uid://c3x0nvdq1k5uw" path="res://characters/лоран/обычная/голова.png" id="2_kfy5g"]
@@ -32,6 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://cgfqbtk2wni12" path="res://characters/empty_pixel.png" id="22_dibk8"]
 [ext_resource type="Texture2D" uid="uid://bte04mtx437d3" path="res://characters/лоран/обычная/слезы.png" id="23_3ggb5"]
 [ext_resource type="Texture2D" uid="uid://10ouctoiok3k" path="res://characters/лоран/обычная/рука_правая_3.png" id="27_emg4i"]
+[ext_resource type="Texture2D" uid="uid://ddj6m4i2yk40s" path="res://characters/лоран/усы_лоран.png" id="28_5vsy8"]
 [ext_resource type="Texture2D" uid="uid://di4kjclr6q2xy" path="res://characters/лоран/обычная/рука_правая_1.png" id="28_li3ah"]
 [ext_resource type="Texture2D" uid="uid://ciks3p64kdjkc" path="res://characters/лоран/обычная/рука_левая_3.png" id="30_afxty"]
 [ext_resource type="Texture2D" uid="uid://bp1hofpn3ebfv" path="res://characters/лоран/обычная/рука_левая_2.png" id="31_kr4xx"]
@@ -265,7 +266,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Грусть",
-"speed": 5.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -288,7 +289,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Злость",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -305,7 +306,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Радость",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -322,7 +323,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Размышление",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -339,7 +340,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Спокойствие",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -356,7 +357,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Страх",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -373,7 +374,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Удивление",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -390,7 +391,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Указание",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -407,7 +408,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Умозаключение",
-"speed": 8.0
+"speed": 12.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grsxb"]
@@ -743,7 +744,7 @@ animation = &"Указание"
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_dxlf1")
-animation = &"Указание"
+animation = &"Умозаключение"
 
 [node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
@@ -759,6 +760,10 @@ animation = &"Указание"
 light_mask = 3
 texture = ExtResource("10_apb43")
 
+[node name="Mustache" type="Sprite2D" parent="Head"]
+visible = false
+texture = ExtResource("28_5vsy8")
+
 [node name="Body" type="Sprite2D" parent="."]
 light_mask = 3
 texture = ExtResource("12_5htav")
@@ -768,11 +773,13 @@ light_mask = 3
 
 [node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
+position = Vector2(2, 0)
 sprite_frames = SubResource("SpriteFrames_pb7os")
 animation = &"Указание"
 
 [node name="Left Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
+position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_uspv6")
 animation = &"Указание"
 

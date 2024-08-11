@@ -12,17 +12,14 @@ script = ExtResource("1_q804i")
 texture = ExtResource("2_0ydk2")
 
 [node name="Прожектор" type="Sprite2D" parent="Сцена_СветСлева"]
-visible = false
 z_index = 20
 texture = ExtResource("3_8dx8e")
 
 [node name="Свет" type="PointLight2D" parent="Сцена_СветСлева"]
-visible = false
 energy = 1.5
 texture = ExtResource("3_8dx8e")
 
 [node name="Тьма" type="PointLight2D" parent="Сцена_СветСлева"]
-visible = false
 light_mask = 3
 blend_mode = 2
 range_item_cull_mask = 2

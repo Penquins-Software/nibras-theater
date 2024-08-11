@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://beq7l84g5gdlw"]
+[gd_scene load_steps=69 format=3 uid="uid://beq7l84g5gdlw"]
 
 [ext_resource type="Script" path="res://characters/character_with_mustache.gd" id="1_y36ds"]
 [ext_resource type="Texture2D" uid="uid://cs5fbqsa7ifs1" path="res://characters/арлет/sprites/Голова 1.png" id="2_stomh"]
@@ -56,6 +56,7 @@
 [ext_resource type="Texture2D" uid="uid://l77mao0wbs5g" path="res://characters/арлет/sprites/Голова 2 Рот 4-3.png" id="39_ewvw2"]
 [ext_resource type="Texture2D" uid="uid://bkryh1cpfnig8" path="res://characters/арлет/sprites/R рука 5.png" id="39_ucfvr"]
 [ext_resource type="Texture2D" uid="uid://bm40leqrrba3f" path="res://characters/арлет/sprites/R рука 2.png" id="40_otxlg"]
+[ext_resource type="Texture2D" uid="uid://birv4fak6sm4i" path="res://characters/арлет/усы_арлетт.png" id="47_0wbad"]
 [ext_resource type="Texture2D" uid="uid://oj6ptgkhgqhe" path="res://characters/арлет/sprites/Голова 2 Пот.png" id="50_1ubap"]
 [ext_resource type="Texture2D" uid="uid://bg471e0qhpi25" path="res://characters/арлет/sprites/LR руки 2.png" id="56_vytos"]
 
@@ -343,7 +344,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Грусть",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -357,7 +358,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Злость",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -371,7 +372,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Радость",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -385,7 +386,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Размышление 1",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -399,7 +400,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Размышление 2",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -413,7 +414,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Смущение",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -427,7 +428,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Спокойствие",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -441,7 +442,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Страх",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -455,7 +456,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Удивление",
-"speed": 8.0
+"speed": 12.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o3p7a"]
@@ -831,10 +832,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Арлет" type="Node2D" node_paths=PackedStringArray("eyes", "mouth", "bleep_player")]
+[node name="Арлет" type="Node2D" node_paths=PackedStringArray("mustache", "eyes", "mouth", "bleep_player")]
 light_mask = 3
 z_index = 10
 script = ExtResource("1_y36ds")
+mustache = NodePath("Head/Mustache")
 emotion_ids_to_anim_names = {
 0: &"Спокойствие",
 1: &"Злость",
@@ -865,7 +867,7 @@ animation = &"Грусть"
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_as4yi")
-animation = &"Грусть"
+animation = &"Удивление"
 
 [node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
@@ -882,6 +884,10 @@ light_mask = 3
 sprite_frames = SubResource("SpriteFrames_x0vta")
 animation = &"Спокойствие"
 
+[node name="Mustache" type="Sprite2D" parent="Head"]
+visible = false
+texture = ExtResource("47_0wbad")
+
 [node name="Body" type="AnimatedSprite2D" parent="."]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_68ic7")
@@ -892,11 +898,13 @@ light_mask = 3
 
 [node name="Left Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
+position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_b8k8w")
 animation = &"Грусть"
 
 [node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
+position = Vector2(1, 0)
 sprite_frames = SubResource("SpriteFrames_w5m3s")
 animation = &"Грусть"
 

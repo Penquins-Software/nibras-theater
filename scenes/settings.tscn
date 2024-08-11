@@ -98,7 +98,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(500, 0)
 layout_mode = 2
 theme = ExtResource("2_5jnp4")
-text = "Режим переметотки:"
+text = "Режим перемотки:"
 horizontal_alignment = 2
 
 [node name="MenuButton" type="MenuButton" parent="VBoxContainer/Режим перемотки"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://d2ojtr8f41gbb"]
+[gd_scene load_steps=21 format=3 uid="uid://d2ojtr8f41gbb"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_0npc7"]
 [ext_resource type="Texture2D" uid="uid://nkv3on65uvbh" path="res://characters/морт/обычная/голова.png" id="2_jicdm"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://mencycxd7ykn" path="res://characters/морт/обычная/брови_1.png" id="9_duplw"]
 [ext_resource type="Texture2D" uid="uid://bp2hs5gr4ts7a" path="res://characters/морт/обычная/волосы_лайн.png" id="10_to5m4"]
 [ext_resource type="Texture2D" uid="uid://dmcdbhyv5f3qi" path="res://characters/морт/обычная/основа.png" id="11_alkoc"]
+[ext_resource type="Texture2D" uid="uid://87a5hqsqybu2" path="res://characters/морт/усы_морт.png" id="11_gbak7"]
 [ext_resource type="Texture2D" uid="uid://cx2xby1q22fj" path="res://characters/морт/обычная/рука_правая_1.png" id="12_6tyxb"]
 [ext_resource type="Texture2D" uid="uid://cgfqbtk2wni12" path="res://characters/empty_pixel.png" id="13_jcxbh"]
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/bleep_player.gd" id="14_1alix"]
@@ -58,7 +59,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Спокойствие",
-"speed": 8.0
+"speed": 12.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grsxb"]
@@ -139,6 +140,10 @@ animation = &"Спокойствие"
 [node name="Hair" type="Sprite2D" parent="Head"]
 light_mask = 3
 texture = ExtResource("10_to5m4")
+
+[node name="Mustache" type="Sprite2D" parent="Head"]
+visible = false
+texture = ExtResource("11_gbak7")
 
 [node name="Body" type="Sprite2D" parent="."]
 light_mask = 3

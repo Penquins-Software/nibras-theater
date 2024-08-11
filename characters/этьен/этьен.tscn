@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://ws4buoavq3e6"]
+[gd_scene load_steps=20 format=3 uid="uid://ws4buoavq3e6"]
 
 [ext_resource type="Script" path="res://characters/этьен/etien_controller.gd" id="1_qti34"]
 [ext_resource type="Texture2D" uid="uid://6nhthfuwuvxb" path="res://characters/этьен/sprites/Голова.png" id="2_r2j3f"]
@@ -12,7 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://dhkukwp0cegn8" path="res://characters/этьен/sprites/волосы_лайн.png" id="11_d2t22"]
 [ext_resource type="Texture2D" uid="uid://bi7d4kebmd1wg" path="res://characters/этьен/sprites/LR рука 1.png" id="13_0ixdx"]
 [ext_resource type="Texture2D" uid="uid://t5owj6pxk1q1" path="res://characters/этьен/sprites/пиджак.png" id="13_wa4c2"]
-[ext_resource type="Texture2D" uid="uid://c13tm7p0x8oin" path="res://characters/арлет/sprites/Голова 1 брови 1.png" id="18_ntdvi"]
 [ext_resource type="Texture2D" uid="uid://cjtqgsn3jdfkf" path="res://characters/этьен/sprites/Main.png" id="19_dt0xb"]
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/bleep_player.gd" id="22_y440g"]
 
@@ -59,7 +58,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Спокойствие",
-"speed": 8.0
+"speed": 12.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o3p7a"]
@@ -67,9 +66,6 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("9_4ga5b")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_ntdvi")
 }],
 "loop": true,
 "name": &"Спокойствие",
@@ -156,6 +152,7 @@ light_mask = 3
 
 [node name="Left Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
+position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_b8k8w")
 animation = &"Спокойствие"
 

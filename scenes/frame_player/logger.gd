@@ -19,6 +19,7 @@ func add(frame: RSEFrame) -> void:
 			speaker_name += ':'
 		var parameters = [speaker.color.to_html(), speaker_name, frame.text]
 		text_label.text += "[cell][right][color=#%s]%s[/color][/right][/cell][cell][/cell][cell]%s[/cell]" % parameters
+		text_label.text += "[cell][/cell][cell][/cell][cell][/cell]"
 	text_label.scroll_to_line(Constants.INT32_MAX)
 
 

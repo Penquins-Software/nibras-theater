@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://e85u42361paf"]
+[gd_scene load_steps=21 format=3 uid="uid://e85u42361paf"]
 
 [ext_resource type="Script" path="res://characters/character_with_mustache.gd" id="1_n27ca"]
 [ext_resource type="Texture2D" uid="uid://ckl6v4ie0gdmk" path="res://characters/мишель/обычная/голова.png" id="2_mmr24"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dlkenxca0yj7n" path="res://characters/мишель/обычная/брови_1.png" id="9_x3vsv"]
 [ext_resource type="Texture2D" uid="uid://dm2yh37nfd73r" path="res://characters/мишель/обычная/волосы_лайн.png" id="10_gb7k6"]
 [ext_resource type="Texture2D" uid="uid://dbc3xhjknk8o2" path="res://characters/мишель/обычная/основа.png" id="11_2bl5c"]
+[ext_resource type="Texture2D" uid="uid://blq1sh884ugxx" path="res://characters/мишель/усы_мишель.png" id="11_ann6c"]
 [ext_resource type="Texture2D" uid="uid://cf8eyb6p3px4l" path="res://characters/мишель/обычная/левая_рука_1.png" id="12_fuumu"]
 [ext_resource type="Texture2D" uid="uid://trsba23al6r3" path="res://characters/мишель/обычная/правая_рука_2.png" id="13_h1qje"]
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/bleep_player.gd" id="14_qialg"]
@@ -58,7 +59,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Спокойствие",
-"speed": 8.0
+"speed": 12.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grsxb"]
@@ -94,9 +95,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Мишель" type="Node2D" node_paths=PackedStringArray("eyes", "mouth", "bleep_player")]
+[node name="Мишель" type="Node2D" node_paths=PackedStringArray("mustache", "eyes", "mouth", "bleep_player")]
 z_index = 10
 script = ExtResource("1_n27ca")
+mustache = NodePath("Head/Mustache")
 emotion_ids_to_anim_names = {
 0: &"Спокойствие",
 1: &"Злость",
@@ -130,7 +132,7 @@ frame_progress = 1.0
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_dxlf1")
 animation = &"Спокойствие"
-frame_progress = 0.692294
+frame_progress = 0.99939
 
 [node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
@@ -141,6 +143,10 @@ animation = &"Спокойствие"
 light_mask = 3
 texture = ExtResource("10_gb7k6")
 
+[node name="Mustache" type="Sprite2D" parent="Head"]
+visible = false
+texture = ExtResource("11_ann6c")
+
 [node name="Body" type="Sprite2D" parent="."]
 light_mask = 3
 texture = ExtResource("11_2bl5c")
@@ -150,6 +156,7 @@ light_mask = 3
 
 [node name="Left Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
+position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_uspv6")
 animation = &"Спокойствие"
 

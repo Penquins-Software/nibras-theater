@@ -208,6 +208,7 @@ theme = ExtResource("8_0c082")
 bbcode_enabled = true
 text = "[table=3]"
 scroll_following = true
+threaded = true
 
 [node name="Close" type="Button" parent="Logger"]
 layout_mode = 1

@@ -12,18 +12,34 @@ script = ExtResource("1_vgv30")
 texture = ExtResource("2_oa37b")
 
 [node name="Прожектор" type="Sprite2D" parent="Сцена_СветСимметрия"]
-visible = false
 z_index = 20
 texture = ExtResource("3_ymqi1")
 
 [node name="Свет" type="PointLight2D" parent="Сцена_СветСимметрия"]
-visible = false
 energy = 1.5
 texture = ExtResource("3_ymqi1")
 
 [node name="Тьма" type="PointLight2D" parent="Сцена_СветСимметрия"]
 visible = false
 light_mask = 3
+blend_mode = 2
+range_item_cull_mask = 2
+texture = ExtResource("4_x0f6d")
+
+[node name="Прожектор2" type="Sprite2D" parent="Сцена_СветСимметрия"]
+z_index = 20
+scale = Vector2(-1, 1)
+texture = ExtResource("3_ymqi1")
+
+[node name="Свет2" type="PointLight2D" parent="Сцена_СветСимметрия"]
+scale = Vector2(-1, 1)
+energy = 1.5
+texture = ExtResource("3_ymqi1")
+
+[node name="Тьма2" type="PointLight2D" parent="Сцена_СветСимметрия"]
+visible = false
+light_mask = 3
+scale = Vector2(-1, 1)
 blend_mode = 2
 range_item_cull_mask = 2
 texture = ExtResource("4_x0f6d")
