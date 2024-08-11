@@ -81,13 +81,13 @@ func _set_parameters() -> void:
 	
 	if selected_node.has_method("_set_flip_h"):
 		flip_h_check_box.visible = true
-		flip_h_check_box.button_pressed = selected_node.flip_h
+		flip_h_check_box.set_pressed_no_signal(selected_node.flip_h)
 	else:
 		flip_h_check_box.visible = false
 	
 	if selected_node.has_method("_set_order"):
 		order.visible = true
-		order_spin_box.value = selected_node.order
+		order_spin_box.set_value_no_signal(selected_node.order)
 	else:
 		order.visible = false
 	

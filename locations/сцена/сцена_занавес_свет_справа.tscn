@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkeakb2o6lngj"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_aw5ok"]
+[ext_resource type="Texture2D" uid="uid://dvjotm688ifsi" path="res://locations/сцена/Светло/Передний занавес. Свет/Сцена. Свет СПРАВА.png" id="2_vrq27"]
+[ext_resource type="Texture2D" uid="uid://duxdt06xruvux" path="res://locations/сцена/прожектор.png" id="3_m1o6r"]
+[ext_resource type="Texture2D" uid="uid://078ah54me0ky" path="res://locations/сцена/прожектор_т.png" id="4_rcgsl"]
+
+[node name="СценаСветСправа" type="Node2D"]
+script = ExtResource("1_aw5ok")
+
+[node name="Сцена_СветСправа" type="Sprite2D" parent="."]
+texture = ExtResource("2_vrq27")
+
+[node name="Прожектор" type="Sprite2D" parent="Сцена_СветСправа"]
+visible = false
+z_index = 20
+texture = ExtResource("3_m1o6r")
+
+[node name="Свет" type="PointLight2D" parent="Сцена_СветСправа"]
+visible = false
+energy = 1.5
+texture = ExtResource("3_m1o6r")
+
+[node name="Тьма" type="PointLight2D" parent="Сцена_СветСправа"]
+visible = false
+light_mask = 3
+blend_mode = 2
+range_item_cull_mask = 2
+texture = ExtResource("4_rcgsl")

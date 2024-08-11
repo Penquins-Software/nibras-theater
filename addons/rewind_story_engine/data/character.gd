@@ -31,6 +31,12 @@ func _set_name(new_name: String) -> void:
 		display_name = name
 
 
+func set_main_name_for_display_name(status: bool) -> void:
+	main_name_for_display_name = status
+	if status:
+		display_name = name
+
+
 func _init(id: int):
 	self.id = id
 

@@ -112,7 +112,7 @@ emotion_ids_to_anim_names = {
 outfit_ids_to_anim_prefix = {
 0: "",
 1: "N_",
-2: "S_"
+2: ""
 }
 eyes = NodePath("Head/Eyes")
 mouth = NodePath("Head/Mouth")
@@ -121,33 +121,44 @@ default_emotion = "Спокойствие"
 bleep_player = NodePath("BleepPlayer")
 
 [node name="Head" type="Sprite2D" parent="."]
+light_mask = 3
 texture = ExtResource("2_r2j3f")
 
 [node name="Eyes" type="AnimatedSprite2D" parent="Head"]
+light_mask = 3
 sprite_frames = SubResource("SpriteFrames_7i0p1")
 animation = &"Спокойствие"
+frame = 5
+frame_progress = 1.0
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
+light_mask = 3
 sprite_frames = SubResource("SpriteFrames_as4yi")
 animation = &"Спокойствие"
 
 [node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
+light_mask = 3
 sprite_frames = SubResource("SpriteFrames_o3p7a")
 animation = &"Спокойствие"
 
 [node name="Hair" type="Sprite2D" parent="Head"]
+light_mask = 3
 texture = ExtResource("11_d2t22")
 
 [node name="Body" type="Sprite2D" parent="."]
+light_mask = 3
 texture = ExtResource("19_dt0xb")
 
 [node name="Arms" type="Node2D" parent="."]
+light_mask = 3
 
 [node name="Left Arm" type="AnimatedSprite2D" parent="Arms"]
+light_mask = 3
 sprite_frames = SubResource("SpriteFrames_b8k8w")
 animation = &"Спокойствие"
 
 [node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
+light_mask = 3
 sprite_frames = SubResource("SpriteFrames_i6dk6")
 animation = &"Спокойствие"
 

@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnmgcg0auwfdw"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_qlqvo"]
+[ext_resource type="Texture2D" uid="uid://umudmgxfcgv5" path="res://locations/сцена/Темно/Сцена. Пол. Ночь.png" id="2_b00b3"]
+[ext_resource type="Texture2D" uid="uid://m56y724emn52" path="res://locations/сцена/Темно/Задний занавес/Сцена. ЛЕВЫЙ задний занавес. Ночь.png" id="3_gnggg"]
+[ext_resource type="Texture2D" uid="uid://wnjrwe0yw3cr" path="res://locations/сцена/Темно/Задний занавес/Сцена. ПРАВЫЙ задний занавес. Ночь.png" id="4_fd2yq"]
+
+[node name="Сцена" type="Node2D"]
+script = ExtResource("1_qlqvo")
+
+[node name="Сцена_Пол" type="Sprite2D" parent="."]
+texture = ExtResource("2_b00b3")
+
+[node name="Сцена_ЛевыйЗаднийЗанавес" type="Sprite2D" parent="."]
+texture = ExtResource("3_gnggg")
+
+[node name="Сцена_ПравыйЗаднийЗанавес" type="Sprite2D" parent="."]
+texture = ExtResource("4_fd2yq")

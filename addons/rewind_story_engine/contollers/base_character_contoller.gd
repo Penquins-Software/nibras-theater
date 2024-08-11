@@ -60,6 +60,7 @@ func _set_flip_h(value: bool) -> void:
 	flip_h = value
 	_set_flip_h_for_all_sprites()
 	if not twin == null:
+		twin.flip_h = flip_h
 		if not flip_h:
 			twin.position = Vector2(-50, 50)
 		else:
@@ -80,16 +81,27 @@ func _set_flip_for_part(node: Node) -> void:
 
 func _set_order(order_index: int) -> void:
 	order = order_index
+	z_index = order_index
+	if not twin == null:
+		twin.order = order_index - 1
 	#_set_order_for_all_sprites()
 
 
 func _set_order_for_all_sprites() -> void:
-	#if tors:
-		#tors.z_index = order
-	if eyes:
-		eyes.z_index = order
-	if mouth:
-		mouth.z_index = order
+	for child in get_children():
+		_set_order_for_node(child)
+
+
+func _set_order_for_node(node: Node) -> void:
+	if not twin == null and node == twin:
+		twin.order = order - 1
+		return
+	
+	if node is CanvasItem:
+		node.z_index = order
+	
+	for child in node.get_children():
+		_set_order_for_node(child)
 
 
 func reset() -> void:
@@ -259,6 +271,11 @@ func make_twin() -> void:
 	twin = (load(character.path_to_scene) as PackedScene).instantiate() as RSEBaseCharacterController
 	twin.modulate = Color.BLACK
 	add_child(twin)
-	twin.position += Vector2(-50, 50)
 	twin.z_as_relative = false
 	twin.z_index -= 1
+	twin.flip_h = flip_h
+	twin.set_emotion(_emotion_id)
+	if not flip_h:
+		twin.position = Vector2(-50, 50)
+	else:
+		twin.position = Vector2(50, 50)

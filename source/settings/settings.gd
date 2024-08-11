@@ -50,6 +50,8 @@ var auto_speed: int = 20 : set = _set_auto_speed
 const MIN_AUTO_SPEED: int = 10
 const MAX_AUTO_SPEED: int = 60
 
+var thread: Thread
+
 
 func _set_player_name(new_name: String) -> void:
 	player_name = new_name
@@ -120,11 +122,15 @@ func _enter_tree():
 	load_config()
 	profile = Profile.load_from_file(PATH_TO_PROFILE)
 	RewindStoryEngine.story = RSEStory.load_from_file(PATH_TO_STORY)
-	var thread = Thread.new()
-	thread.start(RSESceneBuilder.load_all_characters)
+	thread = Thread.new()
+	## ОБЯЗАТЕЛЬНО!
+	thread.start(RSESceneBuilder.load_all_characters) ## НУЖНО правильно закрыть поток!
+	## Обязательно проверь эту часть кода.
 
 
 func _exit_tree():
+	thread.wait_to_finish()
+	RSESceneBuilder.clear_characters()
 	save_config()
 	profile.save_to_file(PATH_TO_PROFILE)
 

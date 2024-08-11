@@ -1,0 +1,166 @@
+[gd_scene load_steps=20 format=3 uid="uid://d2ojtr8f41gbb"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_0npc7"]
+[ext_resource type="Texture2D" uid="uid://nkv3on65uvbh" path="res://characters/морт/обычная/голова.png" id="2_jicdm"]
+[ext_resource type="Texture2D" uid="uid://cceuyejnj5ubj" path="res://characters/морт/обычная/глаза_1_1.png" id="3_hb5xi"]
+[ext_resource type="Texture2D" uid="uid://seet07e2syju" path="res://characters/морт/обычная/глаза_1_2.png" id="4_jfcqb"]
+[ext_resource type="Texture2D" uid="uid://dmohgfexluw0c" path="res://characters/морт/обычная/глаза_1_3.png" id="5_tgt6q"]
+[ext_resource type="Texture2D" uid="uid://cbagb35oa4823" path="res://characters/морт/обычная/рот_1_1.png" id="6_8tpcy"]
+[ext_resource type="Texture2D" uid="uid://dhmlb25xqv0iq" path="res://characters/морт/обычная/рот_1_2.png" id="7_dssbe"]
+[ext_resource type="Texture2D" uid="uid://bwfr18cm4734u" path="res://characters/морт/обычная/рот_1_3.png" id="8_jgyld"]
+[ext_resource type="Texture2D" uid="uid://mencycxd7ykn" path="res://characters/морт/обычная/брови_1.png" id="9_duplw"]
+[ext_resource type="Texture2D" uid="uid://bp2hs5gr4ts7a" path="res://characters/морт/обычная/волосы_лайн.png" id="10_to5m4"]
+[ext_resource type="Texture2D" uid="uid://dmcdbhyv5f3qi" path="res://characters/морт/обычная/основа.png" id="11_alkoc"]
+[ext_resource type="Texture2D" uid="uid://cx2xby1q22fj" path="res://characters/морт/обычная/рука_правая_1.png" id="12_6tyxb"]
+[ext_resource type="Texture2D" uid="uid://cgfqbtk2wni12" path="res://characters/empty_pixel.png" id="13_jcxbh"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/bleep_player.gd" id="14_1alix"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2doan"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_hb5xi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jfcqb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tgt6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tgt6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jfcqb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hb5xi")
+}],
+"loop": false,
+"name": &"Спокойствие",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dxlf1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_8tpcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dssbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jgyld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dssbe")
+}],
+"loop": true,
+"name": &"Спокойствие",
+"speed": 8.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_grsxb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_duplw")
+}],
+"loop": true,
+"name": &"Спокойствие",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uspv6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_6tyxb")
+}],
+"loop": true,
+"name": &"Спокойствие",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pb7os"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_jcxbh")
+}],
+"loop": true,
+"name": &"Спокойствие",
+"speed": 5.0
+}]
+
+[node name="Морт" type="Node2D" node_paths=PackedStringArray("eyes", "mouth", "bleep_player")]
+z_index = 10
+script = ExtResource("1_0npc7")
+emotion_ids_to_anim_names = {
+0: &"Спокойствие",
+1: &"Злость",
+2: &"Удивление",
+3: &"Грусть",
+4: &"Радость",
+5: &"Размышление",
+6: &"Страх",
+7: &"Смущение",
+8: &"Умозаключение",
+9: &"Указание"
+}
+outfit_ids_to_anim_prefix = {
+0: "",
+1: "N_",
+2: ""
+}
+eyes = NodePath("Head/Eyes")
+mouth = NodePath("Head/Mouth")
+eyes_frame_close = 2
+default_emotion = "Спокойствие"
+bleep_player = NodePath("BleepPlayer")
+
+[node name="Head" type="Sprite2D" parent="."]
+light_mask = 3
+texture = ExtResource("2_jicdm")
+
+[node name="Eyes" type="AnimatedSprite2D" parent="Head"]
+light_mask = 3
+sprite_frames = SubResource("SpriteFrames_2doan")
+animation = &"Спокойствие"
+
+[node name="Mouth" type="AnimatedSprite2D" parent="Head"]
+light_mask = 3
+sprite_frames = SubResource("SpriteFrames_dxlf1")
+animation = &"Спокойствие"
+frame = 3
+frame_progress = 0.804845
+
+[node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
+light_mask = 3
+sprite_frames = SubResource("SpriteFrames_grsxb")
+animation = &"Спокойствие"
+
+[node name="Hair" type="Sprite2D" parent="Head"]
+light_mask = 3
+texture = ExtResource("10_to5m4")
+
+[node name="Body" type="Sprite2D" parent="."]
+light_mask = 3
+texture = ExtResource("11_alkoc")
+
+[node name="Arms" type="Node2D" parent="."]
+light_mask = 3
+
+[node name="Left Arm" type="AnimatedSprite2D" parent="Arms"]
+light_mask = 3
+sprite_frames = SubResource("SpriteFrames_uspv6")
+animation = &"Спокойствие"
+
+[node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
+light_mask = 3
+sprite_frames = SubResource("SpriteFrames_pb7os")
+animation = &"Спокойствие"
+
+[node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
+script = ExtResource("14_1alix")

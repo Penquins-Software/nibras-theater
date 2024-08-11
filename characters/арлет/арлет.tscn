@@ -1011,6 +1011,7 @@ animations = [{
 }]
 
 [node name="Арлет" type="Node2D" node_paths=PackedStringArray("eyes", "mouth", "bleep_player")]
+light_mask = 3
 z_index = 10
 script = ExtResource("1_rk3p5")
 emotion_ids_to_anim_names = {

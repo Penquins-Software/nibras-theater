@@ -1,33 +1,27 @@
-[gd_scene load_steps=6 format=3 uid="uid://bh4udnarpv6fc"]
+[gd_scene load_steps=5 format=3 uid="uid://bh4udnarpv6fc"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_q804i"]
-[ext_resource type="Texture2D" uid="uid://dudxwsp3jbodv" path="res://locations/сцена/2.png" id="2_lg7ok"]
+[ext_resource type="Texture2D" uid="uid://cu4s6oavpsayb" path="res://locations/сцена/Светло/Передний занавес. Свет/Сцена. Свет СЛЕВА.png" id="2_0ydk2"]
 [ext_resource type="Texture2D" uid="uid://duxdt06xruvux" path="res://locations/сцена/прожектор.png" id="3_8dx8e"]
-[ext_resource type="PackedScene" uid="uid://beq7l84g5gdlw" path="res://characters/арлет/арлет.tscn" id="4_bp2f7"]
 [ext_resource type="Texture2D" uid="uid://078ah54me0ky" path="res://locations/сцена/прожектор_т.png" id="5_clqbt"]
 
-[node name="Сцена" type="Node2D"]
+[node name="СценаСветСлева" type="Node2D"]
 script = ExtResource("1_q804i")
 
-[node name="2" type="Sprite2D" parent="."]
-texture = ExtResource("2_lg7ok")
+[node name="Сцена_СветСлева" type="Sprite2D" parent="."]
+texture = ExtResource("2_0ydk2")
 
-[node name="Прожектор" type="Sprite2D" parent="2"]
+[node name="Прожектор" type="Sprite2D" parent="Сцена_СветСлева"]
 visible = false
 z_index = 20
 texture = ExtResource("3_8dx8e")
 
-[node name="Арлет" parent="2" instance=ExtResource("4_bp2f7")]
-visible = false
-light_mask = 2
-position = Vector2(-797, 950)
-
-[node name="Свет" type="PointLight2D" parent="2"]
+[node name="Свет" type="PointLight2D" parent="Сцена_СветСлева"]
 visible = false
 energy = 1.5
 texture = ExtResource("3_8dx8e")
 
-[node name="Тьма" type="PointLight2D" parent="2"]
+[node name="Тьма" type="PointLight2D" parent="Сцена_СветСлева"]
 visible = false
 light_mask = 3
 blend_mode = 2

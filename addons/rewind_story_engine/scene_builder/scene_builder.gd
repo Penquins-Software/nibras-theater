@@ -337,3 +337,9 @@ static func load_all_characters() -> void:
 			loaded_characters[character_id] = load(character.path_to_scene)
 	characters_loaded = true
 	print("loaded_all_characters!")
+
+
+static func clear_characters() -> void:
+	for character_id in loaded_characters:
+		loaded_characters[character_id] = null
+	loaded_characters.clear()
