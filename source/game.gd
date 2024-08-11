@@ -30,6 +30,7 @@ func new_game() -> void:
 
 func load_save(save: Save) -> void:
 	var episode = RewindStoryEngine.story.episodes[save.episode_id]
+	frame_player.music_player.stream = null
 	frame_player.set_episode(episode, false)
 	frame_player.set_frame(save.frame_index)
 	local_variables.data = save.local_variables

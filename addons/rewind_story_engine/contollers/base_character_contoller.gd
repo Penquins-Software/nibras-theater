@@ -113,7 +113,8 @@ func _ready():
 		return
 	
 	anim_name = emotion_ids_to_anim_names.values()[0]
-	pass
+	
+	blinking_time = randf_range(1.5, 3.0)
 
 
 func _process(delta):
