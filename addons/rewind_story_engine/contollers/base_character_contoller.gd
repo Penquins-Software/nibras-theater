@@ -5,22 +5,25 @@ extends RSEBaseController
 @export_category("Editor")
 @export var play_animations_in_editor: bool = false
 
-@export_category("Emotion")
-@export var emotion_ids_to_anim_names: Dictionary
-
 @export_category("Head")
-#@export var head: Node2D
 @export var eyes: AnimatedSprite2D
 @export var mouth: AnimatedSprite2D
-
-#@export_category("Body")
-#@export var body: Node2D
 
 @export_category("Other")
 @export var eyes_frame_open: int
 @export var eyes_frame_close: int
 @export var default_emotion: String = "default"
 @export var bleep_player: BleepPlayer
+
+@export_category("Tools")
+@export var character_id: int : set = _set_character_id
+func _set_character_id(id: int) -> void:
+	character_id = id
+	if RewindStoryEngine.story.characters.has(id):
+		var ch: RSECharacter = RewindStoryEngine.story.characters[id]
+		print("Создание анимаций для %s." % ch.name)
+		for emotion in ch.emotions.values():
+			create_animation(self, emotion)
 
 
 var character: RSECharacter : set = _set_character
@@ -109,11 +112,7 @@ func reset() -> void:
 
 
 func _ready():
-	if emotion_ids_to_anim_names.size() < 1:
-		return
-	
-	anim_name = emotion_ids_to_anim_names.values()[0]
-	
+	anim_name = default_emotion
 	blinking_time = randf_range(1.5, 3.0)
 
 
@@ -130,17 +129,8 @@ func set_emotion(emotion_id: int) -> bool:
 		push_warning("Персонаж '%s' не имеет эмоции с ID '%s'." % [character.name, emotion_id])
 		return false
 	
-	#if emotion == character.emotions[str(emotion_id)]:
-		#return false
-	
 	_emotion_id = emotion_id
-	
-	if emotion_ids_to_anim_names.size() > 0:
-		if emotion_ids_to_anim_names.keys().has(emotion_id):
-			emotion = character.emotions[str(emotion_id)]
-			anim_name = emotion_ids_to_anim_names[emotion_id]
-		else:
-			anim_name = emotion_ids_to_anim_names.values()[0]
+	anim_name = character.emotions[str(emotion_id)]
 	
 	_set_emotion_for_all_parts()
 	if not twin == null:
@@ -156,7 +146,7 @@ func _set_emotion_for_part(node: Node) -> void:
 	if node is AnimatedSprite2D:
 		if node.sprite_frames.has_animation(anim_name):
 			node.animation = anim_name
-		else:
+		elif node.sprite_frames.has_animation(default_emotion):
 			node.animation = default_emotion
 	
 	for child in node.get_children():
@@ -279,3 +269,18 @@ func make_twin() -> void:
 		twin.position = Vector2(-20, 20)
 	else:
 		twin.position = Vector2(20, 20)
+
+
+func create_animation(node: Node, animation: String) -> void:
+	if node is AnimatedSprite2D:
+		if not node.sprite_frames.has_animation(animation):
+			node.sprite_frames.add_animation(animation)
+		if eyes != null and node == eyes:
+			node.sprite_frames.set_animation_speed(animation, 10)
+			node.sprite_frames.set_animation_loop(animation, false)
+		if mouth != null and node == mouth:
+			node.sprite_frames.set_animation_speed(animation, 12)
+			node.sprite_frames.set_animation_loop(animation, true)
+	
+	for child in node.get_children():
+		create_animation(node, animation)
