@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://bfcb8nlrhmy3f"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_0t6oj"]
-[ext_resource type="Texture2D" uid="uid://2pct6poljqtt" path="res://locations/коридор/день.jpg" id="2_4ky68"]
+[ext_resource type="Texture2D" uid="uid://dj6eabukh2w57" path="res://locations/коридор/коридор день.png" id="2_c8127"]
 
 [node name="КоридорДень" type="Node2D"]
 z_index = -5
 script = ExtResource("1_0t6oj")
 
 [node name="День" type="Sprite2D" parent="."]
-texture = ExtResource("2_4ky68")
+texture = ExtResource("2_c8127")

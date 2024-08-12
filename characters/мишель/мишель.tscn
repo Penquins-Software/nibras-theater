@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=3 uid="uid://e85u42361paf"]
+[gd_scene load_steps=65 format=3 uid="uid://e85u42361paf"]
 
 [ext_resource type="Script" path="res://characters/character_with_mustache.gd" id="1_n27ca"]
 [ext_resource type="Texture2D" uid="uid://ckl6v4ie0gdmk" path="res://characters/мишель/обычная/голова.png" id="2_mmr24"]
@@ -27,7 +27,6 @@
 [ext_resource type="Texture2D" uid="uid://trsba23al6r3" path="res://characters/мишель/обычная/правая_рука_2.png" id="13_h1qje"]
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/bleep_player.gd" id="14_qialg"]
 [ext_resource type="Texture2D" uid="uid://cf16sifdy00gi" path="res://characters/мишель/обычная/глаза_4.png" id="17_aug8n"]
-[ext_resource type="Texture2D" uid="uid://6o0heukpbpj5" path="res://characters/мишель/обычная/глаза_6.png" id="18_stxvh"]
 [ext_resource type="Texture2D" uid="uid://dle7v2yc1gibe" path="res://characters/мишель/обычная/рот_4_1.png" id="19_y8ivp"]
 [ext_resource type="Texture2D" uid="uid://dtvbdol5htd8r" path="res://characters/мишель/обычная/рот_4_2.png" id="20_2ebqn"]
 [ext_resource type="Texture2D" uid="uid://dlc8h3jeq56ny" path="res://characters/мишель/обычная/рот_4_3.png" id="21_pjdr6"]
@@ -257,7 +256,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("18_stxvh")
+"texture": ExtResource("9_wepm2")
 }],
 "loop": false,
 "name": &"Сильно испуган",
@@ -1243,7 +1242,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("13_h1qje")
+"texture": ExtResource("55_4donj")
 }],
 "loop": true,
 "name": &"Спокойствие",
@@ -1283,7 +1282,7 @@ texture = ExtResource("2_mmr24")
 [node name="Eyes" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_2doan")
-animation = &"Удивление"
+animation = &"Сильно испуган"
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
@@ -1320,12 +1319,12 @@ light_mask = 3
 light_mask = 3
 position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_uspv6")
-animation = &"Грустный"
+animation = &"Спокойствие"
 
 [node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_pb7os")
-animation = &"Удивление"
+animation = &"Спокойствие"
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
 script = ExtResource("14_qialg")

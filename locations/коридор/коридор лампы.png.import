@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfd73oori7l33"
-path="res://.godot/imported/ночь_лампы.jpg-8351994df1e4ad2f871ff33a1efd12df.ctex"
+uid="uid://faunxy17wew"
+path="res://.godot/imported/коридор лампы.png-56cb8f3a59ee1ebb653b290019e76ec5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://locations/коридор/ночь_лампы.jpg"
-dest_files=["res://.godot/imported/ночь_лампы.jpg-8351994df1e4ad2f871ff33a1efd12df.ctex"]
+source_file="res://locations/коридор/коридор лампы.png"
+dest_files=["res://.godot/imported/коридор лампы.png-56cb8f3a59ee1ebb653b290019e76ec5.ctex"]
 
 [params]
 

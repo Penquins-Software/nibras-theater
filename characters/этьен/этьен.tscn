@@ -131,22 +131,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_v35r1")
+"texture": ExtResource("12_rfpfc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_t2v01")
+"texture": ExtResource("13_ankae")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_dn27x")
+"texture": ExtResource("14_6vbtl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_dn27x")
+"texture": ExtResource("14_6vbtl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_t2v01")
+"texture": ExtResource("13_ankae")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_v35r1")
+"texture": ExtResource("12_rfpfc")
 }],
 "loop": false,
 "name": &"Испуган",
@@ -1087,7 +1087,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("38_sojem")
+"texture": ExtResource("45_hfckk")
 }],
 "loop": true,
 "name": &"Сильно испуган",
@@ -1242,7 +1242,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("43_03lwh")
+"texture": ExtResource("40_trks1")
 }],
 "loop": true,
 "name": &"Сильно испуган",
@@ -1258,7 +1258,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("13_0ixdx")
+"texture": ExtResource("40_trks1")
 }],
 "loop": true,
 "name": &"Спокойствие",
@@ -1413,7 +1413,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("45_hfckk")
+"texture": ExtResource("47_b0kmu")
 }],
 "loop": true,
 "name": &"Спокойствие",
@@ -1462,7 +1462,7 @@ texture = ExtResource("2_r2j3f")
 [node name="Eyes" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_7i0p1")
-animation = &"Удивление"
+animation = &"Сильно испуган"
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
@@ -1477,7 +1477,7 @@ animation = &"Указывает на"
 [node name="Details" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_a1f4h")
-animation = &"Увиливает"
+animation = &"Сильно испуган"
 
 [node name="Hair" type="Sprite2D" parent="Head"]
 light_mask = 3
@@ -1498,7 +1498,7 @@ light_mask = 3
 light_mask = 3
 position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_b8k8w")
-animation = &"Спокойствие"
+animation = &"Сильно испуган"
 
 [node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3

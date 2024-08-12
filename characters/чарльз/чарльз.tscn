@@ -142,7 +142,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_8y5hu")
+"texture": ExtResource("4_4lf0w")
 }],
 "loop": false,
 "name": &"Удивление",

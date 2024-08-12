@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kt61m6m37oxn"
-path="res://.godot/imported/ночь.jpg-f5435b97710f8f6b8b584f6522935821.ctex"
+uid="uid://dj6eabukh2w57"
+path="res://.godot/imported/коридор день.png-b6a26baac567a966c58aa86cb17b611a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://locations/коридор/ночь.jpg"
-dest_files=["res://.godot/imported/ночь.jpg-f5435b97710f8f6b8b584f6522935821.ctex"]
+source_file="res://locations/коридор/коридор день.png"
+dest_files=["res://.godot/imported/коридор день.png-b6a26baac567a966c58aa86cb17b611a.ctex"]
 
 [params]
 

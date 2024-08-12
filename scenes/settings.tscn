@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="1_3d6xm"]
 [ext_resource type="Theme" uid="uid://b20uw8pswcq8l" path="res://theme.tres" id="2_5jnp4"]
-[ext_resource type="Texture2D" uid="uid://d2o1i3yrnwba7" path="res://gui/фон Меню в игре.png" id="2_ex4ay"]
+[ext_resource type="Texture2D" uid="uid://bo0h30eo6twp2" path="res://gui/фон Сохранения и настройки.png" id="2_r2sg6"]
 [ext_resource type="Script" path="res://source/settings/setting_player_name.gd" id="2_uu37b"]
 [ext_resource type="Script" path="res://source/settings/setting_screen_mode.gd" id="3_v3jpw"]
 [ext_resource type="Script" path="res://source/settings/setting_rewind_mode.gd" id="4_ucrbx"]
@@ -29,7 +29,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_ex4ay")
+texture = ExtResource("2_r2sg6")
 expand_mode = 1
 
 [node name="Заголовок" type="Label" parent="."]

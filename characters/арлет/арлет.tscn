@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=3 uid="uid://beq7l84g5gdlw"]
+[gd_scene load_steps=73 format=3 uid="uid://beq7l84g5gdlw"]
 
 [ext_resource type="Script" path="res://characters/character_with_mustache.gd" id="1_y36ds"]
 [ext_resource type="Texture2D" uid="uid://cs5fbqsa7ifs1" path="res://characters/арлет/sprites/Голова 1.png" id="2_stomh"]
@@ -14,10 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://c5u6hsbly8b2h" path="res://characters/арлет/sprites/Голова 2 глаза 4-3.png" id="7_t7cs7"]
 [ext_resource type="Texture2D" uid="uid://b2r1rbc7ubuq3" path="res://characters/арлет/sprites/Голова 1 Глаза 2-1.png" id="8_grw5m"]
 [ext_resource type="Texture2D" uid="uid://cc5umnf5cu7ur" path="res://characters/арлет/sprites/Голова 1 Глаза 2-2.png" id="9_6rd4w"]
-[ext_resource type="Texture2D" uid="uid://b0f17nmdgj3qo" path="res://characters/арлет/sprites/Голова 1 Глаза 3-1.png" id="9_e8y5r"]
 [ext_resource type="Texture2D" uid="uid://c3snv5juw410d" path="res://characters/арлет/sprites/Голова 1 Глаза 2-3.png" id="10_11ptp"]
-[ext_resource type="Texture2D" uid="uid://dhyb4bhbo60oe" path="res://characters/арлет/sprites/Голова 1 Глаза 3-2.png" id="10_fhx1c"]
-[ext_resource type="Texture2D" uid="uid://dtrpd2desa5eu" path="res://characters/арлет/sprites/Голова 1 Глаза 3-3.png" id="11_gtjte"]
 [ext_resource type="Texture2D" uid="uid://dae3tjiavtwq3" path="res://characters/арлет/sprites/Голова 2 глаза 1-1.png" id="13_6y21w"]
 [ext_resource type="Texture2D" uid="uid://pekmf0upqg05" path="res://characters/арлет/sprites/Голова 2 глаза 1-2.png" id="14_8d1xu"]
 [ext_resource type="Texture2D" uid="uid://dclkatp3abv6d" path="res://characters/арлет/sprites/Голова 1 Рот 1-1.png" id="15_heh6n"]
@@ -62,7 +59,6 @@
 [ext_resource type="Texture2D" uid="uid://b57m68wro63f6" path="res://characters/арлет/sprites/Голова 2 Рот 2-3.png" id="42_kt0db"]
 [ext_resource type="Texture2D" uid="uid://c8oognfc3dlyx" path="res://characters/арлет/sprites/Голова 2 Брови 2.png" id="44_d8urq"]
 [ext_resource type="Texture2D" uid="uid://birv4fak6sm4i" path="res://characters/арлет/усы_арлетт.png" id="47_0wbad"]
-[ext_resource type="Texture2D" uid="uid://bg0crqp48judp" path="res://characters/арлет/sprites/Голова 1 брови 3.png" id="47_qlkwp"]
 [ext_resource type="Texture2D" uid="uid://oj6ptgkhgqhe" path="res://characters/арлет/sprites/Голова 2 Пот.png" id="50_1ubap"]
 [ext_resource type="Texture2D" uid="uid://p33adwtu7uvh" path="res://characters/арлет/sprites/Голова 2 Румяна.png" id="51_tnbxq"]
 [ext_resource type="Texture2D" uid="uid://b2c7wlg6ql5ve" path="res://characters/арлет/sprites/Голова 1 тень.png" id="52_thdvg"]
@@ -467,22 +463,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_e8y5r")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_fhx1c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_gtjte")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_gtjte")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_fhx1c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_e8y5r")
+"texture": ExtResource("36_rpdbt")
 }],
 "loop": false,
 "name": &"Сильно злится",
@@ -1054,7 +1035,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("47_qlkwp")
+"texture": ExtResource("36_rpdbt")
 }],
 "loop": true,
 "name": &"Сильно злится",
@@ -1788,7 +1769,7 @@ animation = &"Удивление"
 [node name="Eyes" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_7i0p1")
-animation = &"Удивление"
+animation = &"Сильно злится"
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
@@ -1798,7 +1779,7 @@ animation = &"Удивление"
 [node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_o3p7a")
-animation = &"Грустный"
+animation = &"Сильно злится"
 
 [node name="Line" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3

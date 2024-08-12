@@ -441,32 +441,50 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yp737"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_pb42u")
+}],
 "loop": true,
 "name": &"Грустный",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_pb42u")
+}],
 "loop": true,
 "name": &"Думает",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_pb42u")
+}],
 "loop": true,
 "name": &"Злится",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_pb42u")
+}],
 "loop": true,
 "name": &"Испуган",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_pb42u")
+}],
 "loop": true,
 "name": &"Напряженно думает",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_pb42u")
+}],
 "loop": true,
 "name": &"Объясняет, предлагает",
 "speed": 5.0
@@ -487,7 +505,10 @@ animations = [{
 "name": &"Сильно злится",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_pb42u")
+}],
 "loop": true,
 "name": &"Сильно испуган",
 "speed": 5.0
@@ -500,7 +521,10 @@ animations = [{
 "name": &"Сильно увиливает",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_pb42u")
+}],
 "loop": true,
 "name": &"Смех",
 "speed": 5.0
@@ -521,7 +545,10 @@ animations = [{
 "name": &"Увиливает",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_pb42u")
+}],
 "loop": true,
 "name": &"Удивление",
 "speed": 5.0
@@ -782,7 +809,7 @@ animation = &"Удивление"
 [node name="Details" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_yp737")
-animation = &"Удивление"
+animation = &"Грустный"
 
 [node name="Hair" type="Sprite2D" parent="Head"]
 light_mask = 3

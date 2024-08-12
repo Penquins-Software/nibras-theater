@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://b83la06spk4xf" path="res://gui/Главное меню и настройки/главное меню 3.png" id="6_25p8h"]
 [ext_resource type="Texture2D" uid="uid://bu1fc76i5fe2v" path="res://gui/Главное меню и настройки/Лого.png" id="7_nugf5"]
 [ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="8_7egbi"]
-[ext_resource type="Texture2D" uid="uid://d2o1i3yrnwba7" path="res://gui/фон Меню в игре.png" id="13_fb8ov"]
+[ext_resource type="Texture2D" uid="uid://bo0h30eo6twp2" path="res://gui/фон Сохранения и настройки.png" id="13_ivy2m"]
 
 [node name="Menu" type="Control" node_paths=PackedStringArray("main", "exit_button")]
 layout_mode = 3
@@ -178,7 +178,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("13_fb8ov")
+texture = ExtResource("13_ivy2m")
 expand_mode = 1
 
 [node name="Заголовок" type="Label" parent="Авторы"]
