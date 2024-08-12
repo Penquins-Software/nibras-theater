@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/frame_player/text_box.gd" id="1_aporf"]
 [ext_resource type="PackedScene" uid="uid://6jobhq66ma72" path="res://addons/rewind_story_engine/scene_builder/scene_builder.tscn" id="1_k8j7s"]
-[ext_resource type="Texture2D" uid="uid://bhuft7glcxok4" path="res://graphics/dialog_box.png" id="1_mnco4"]
+[ext_resource type="Texture2D" uid="uid://bhuft7glcxok4" path="res://characters/graphics/dialog_box.png" id="1_mnco4"]
 [ext_resource type="Script" path="res://scenes/frame_player/frame_player.gd" id="1_s8ibl"]
 [ext_resource type="Texture2D" uid="uid://dktdb1xkwbt1d" path="res://icon.svg" id="3_jvok4"]
 [ext_resource type="Texture2D" uid="uid://bfxu7cicqjgxu" path="res://addons/rewind_story_engine/icons/AcceptDialog.svg" id="4_od5vn"]

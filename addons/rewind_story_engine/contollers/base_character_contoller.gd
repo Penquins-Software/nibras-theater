@@ -16,8 +16,11 @@ extends RSEBaseController
 @export var bleep_player: BleepPlayer
 
 @export_category("Tools")
+@export var create_animations_by_id: bool = false
 @export var character_id: int : set = _set_character_id
 func _set_character_id(id: int) -> void:
+	if not create_animations_by_id:
+		return
 	character_id = id
 	if RewindStoryEngine.story.characters.has(id):
 		var ch: RSECharacter = RewindStoryEngine.story.characters[id]
@@ -283,4 +286,4 @@ func create_animation(node: Node, animation: String) -> void:
 			node.sprite_frames.set_animation_loop(animation, true)
 	
 	for child in node.get_children():
-		create_animation(node, animation)
+		create_animation(child, animation)
