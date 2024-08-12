@@ -191,6 +191,7 @@ func add_character(character: RSECharacter) -> RSEBaseCharacterController:
 	
 	#var character_node: RSEBaseCharacterController = load(character.path_to_scene).instantiate()
 	var character_node: RSEBaseCharacterController = character_scene.instantiate()
+	character_node.order = 10;
 	character_node.character = character
 	add_child(character_node)
 	characters[character.id] = character_node
@@ -343,3 +344,12 @@ static func clear_characters() -> void:
 	for character_id in loaded_characters:
 		loaded_characters[character_id] = null
 	loaded_characters.clear()
+
+
+func stop_speaker(speaker: RSECharacter) -> void:
+	if speaker == null:
+		return
+	
+	var character_node = get_characeter_by_id(speaker.id)
+	if character_node != null:
+		character_node.stop_talk()

@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://c4e2ygeqqqaxy"]
+
+[ext_resource type="FontFile" uid="uid://d2s4oq5a4rkca" path="res://gui/Мелочи/Шрифт для меню Neucha/Neucha-Regular.ttf" id="1_h8ci1"]
+
+[resource]
+default_font = ExtResource("1_h8ci1")
+default_font_size = 32

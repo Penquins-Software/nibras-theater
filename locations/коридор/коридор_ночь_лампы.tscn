@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bfd73oori7l33" path="res://locations/коридор/ночь_лампы.jpg" id="2_s87is"]
 
 [node name="КоридорНочьЛампы" type="Node2D"]
+z_index = -5
 script = ExtResource("1_srwmw")
 
 [node name="День" type="Sprite2D" parent="."]

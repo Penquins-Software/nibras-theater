@@ -15,7 +15,7 @@ run/main_scene="res://scenes/intro/intro.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 run/max_fps=60
 boot_splash/show_image=false
-config/icon="res://characters/graphics/penquins/4.png"
+config/icon="res://graphics/penquins/4.png"
 
 [autoload]
 

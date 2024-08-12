@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cnhdff2ilkoxd" path="res://characters/мишель/обычная/глаза_1_2.png" id="4_mvlm1"]
 [ext_resource type="Texture2D" uid="uid://c50esrti8du62" path="res://characters/мишель/обычная/глаза_1_3.png" id="5_adwt0"]
 [ext_resource type="Texture2D" uid="uid://b7nxeiywpoanq" path="res://characters/мишель/обычная/глаза_2_3.png" id="5_qf64a"]
-[ext_resource type="Texture2D" path="res://characters/мишель/рот_1_1.png" id="6_0gpfs"]
+[ext_resource type="Texture2D" uid="uid://bcvgmi8tk5b8r" path="res://characters/мишель/обычная/рот_1_1.png" id="6_0gpfs"]
 [ext_resource type="Texture2D" uid="uid://dqjfa580oecok" path="res://characters/мишель/обычная/глаза_8_1.png" id="6_5dw6m"]
 [ext_resource type="Texture2D" uid="uid://bki8kyogyy7ku" path="res://characters/мишель/обычная/рот_1_2.png" id="7_34m0q"]
 [ext_resource type="Texture2D" uid="uid://0rw8biw8heyi" path="res://characters/мишель/обычная/глаза_8_2.png" id="7_dkqyr"]
@@ -40,12 +40,12 @@
 [ext_resource type="Texture2D" uid="uid://dgrjld5f3x4nx" path="res://characters/мишель/обычная/рот_2_1.png" id="28_jf5nv"]
 [ext_resource type="Texture2D" uid="uid://lc1qcb10noc3" path="res://characters/мишель/обычная/рот_2_2.png" id="29_hf5sg"]
 [ext_resource type="Texture2D" uid="uid://dbjeffem720uq" path="res://characters/мишель/обычная/рот_2_3.png" id="30_4tfbv"]
-[ext_resource type="Texture2D" path="res://characters/мишель/обычная/рот_1_1.png" id="34_k82ct"]
 [ext_resource type="Texture2D" uid="uid://uutplc5gvl55" path="res://characters/мишель/обычная/брови_4.png" id="35_seo6y"]
 [ext_resource type="Texture2D" uid="uid://diwcdeekrumre" path="res://characters/мишель/обычная/брови_3.png" id="36_xxu8g"]
 [ext_resource type="Texture2D" uid="uid://bt0oeaskjjgt0" path="res://characters/мишель/обычная/брови_2.png" id="37_g5vxi"]
 [ext_resource type="Texture2D" uid="uid://ctqe4fok3mxkm" path="res://characters/мишель/обычная/брови_5.png" id="38_4cswy"]
 [ext_resource type="Texture2D" uid="uid://b3wxcfox6mubn" path="res://characters/мишель/обычная/слезы.png" id="42_btgck"]
+[ext_resource type="Texture2D" uid="uid://0e10ckq0asx" path="res://characters/мишель/обычная/румяна.png" id="42_w4teq"]
 [ext_resource type="Texture2D" uid="uid://dhu2sfyrpiesf" path="res://characters/мишель/обычная/левая_рука_5.png" id="43_6h5ac"]
 [ext_resource type="Texture2D" uid="uid://bqy7m0ghmi77f" path="res://characters/мишель/обычная/пот.png" id="43_6nkeb"]
 [ext_resource type="Texture2D" uid="uid://bldhkbky0ila5" path="res://characters/мишель/обычная/левая_рука_4.png" id="44_0v8hm"]
@@ -512,7 +512,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("34_k82ct")
+"texture": ExtResource("6_0gpfs")
 }, {
 "duration": 1.0,
 "texture": ExtResource("7_34m0q")
@@ -597,7 +597,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("34_k82ct")
+"texture": ExtResource("6_0gpfs")
 }, {
 "duration": 1.0,
 "texture": ExtResource("7_34m0q")
@@ -611,7 +611,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("34_k82ct")
+"texture": ExtResource("6_0gpfs")
 }, {
 "duration": 1.0,
 "texture": ExtResource("7_34m0q")
@@ -620,7 +620,7 @@ animations = [{
 "texture": ExtResource("8_1a6sk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_k82ct")
+"texture": ExtResource("6_0gpfs")
 }],
 "loop": true,
 "name": &"Смущается 2",
@@ -933,7 +933,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("45_6gdp4")
+"texture": ExtResource("42_w4teq")
 }],
 "loop": true,
 "name": &"Смущается",
@@ -941,7 +941,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("45_6gdp4")
+"texture": ExtResource("42_w4teq")
 }],
 "loop": true,
 "name": &"Смущается 2",
@@ -1275,7 +1275,6 @@ mouth = NodePath("Head/Mouth")
 eyes_frame_close = 2
 default_emotion = "Спокойствие"
 bleep_player = NodePath("BleepPlayer")
-character_id = 26
 
 [node name="Head" type="Sprite2D" parent="."]
 light_mask = 3
@@ -1304,7 +1303,7 @@ texture = ExtResource("10_gb7k6")
 [node name="Details" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_wi52r")
-animation = &"Грустный"
+animation = &"Смущается 2"
 
 [node name="Mustache" type="Sprite2D" parent="Head"]
 visible = false

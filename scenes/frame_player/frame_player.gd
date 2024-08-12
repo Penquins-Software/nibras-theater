@@ -65,11 +65,13 @@ func _input(event):
 		if not selection_menu.visible:
 			_rewind()
 	if event.is_action_pressed("prev_frame"):
-		#if selection_menu.visible:
-			#selection_menu.hide()
-		#prev_frame()
-		logger.show()
-		text_box.hide()
+		if selection_menu.visible:
+			selection_menu.hide()
+		if text_box.showing:
+			text_box.end_frame() ## Принудительно закончить кадр.
+		prev_frame()
+		#logger.show()
+		#text_box.hide()
 	if event.is_action_pressed("log"):
 		logger.show()
 		text_box.hide()
@@ -118,6 +120,8 @@ func set_episode(ep: RSEEpisode, build_first_frame: bool = true) -> void:
 
 
 func next_frame() -> void:
+	scene_builder.camera_controller.set_smoothing(true)
+	
 	var prev_frame_index = current_frame_index
 	current_frame_index = scene_builder.next_frame()
 	if prev_frame_index == current_frame_index:
@@ -131,6 +135,10 @@ func next_frame() -> void:
 func prev_frame() -> void:
 	if history.size() <= 0:
 		return
+	
+	scene_builder.stop_speaker(speaker)
+	scene_builder.camera_controller.set_smoothing(false)
+	
 	var last_frame = history.pop_back()
 	if episode.id != last_frame[0]:
 		set_episode(RewindStoryEngine.story.episodes[last_frame[0]], false)
@@ -276,9 +284,7 @@ func _on_selection_menu_option_selected(option_id):
 func _on_text_box_finished():
 	Settings.profile.add_viewed(episode.id, current_frame_index)
 	logger.add(episode.real_frames[current_frame_index])
-	var character = scene_builder.get_characeter_by_id(speaker.id)
-	if character != null:
-		character.stop_talk()
+	scene_builder.stop_speaker(speaker)
 	if current_frame is RSEFrameText:
 		auto_play_time = float(current_frame.text.length()) / Settings.auto_speed
 
@@ -302,6 +308,9 @@ func _on_pause_mouse_exited():
 
 
 func _on_scene_builder_music(music_id: int):
+	if music_id == 0:
+		music_player.stop()
+	
 	if not RewindStoryEngine.story.music_list.has(music_id):
 		return
 	

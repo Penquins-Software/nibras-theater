@@ -764,8 +764,6 @@ eyes = NodePath("Head/Eyes")
 eyes_frame_close = 2
 default_emotion = "Спокойствие"
 bleep_player = NodePath("BleepPlayer")
-create_animations_by_id = null
-character_id = 39
 
 [node name="Head" type="Sprite2D" parent="."]
 light_mask = 3
@@ -799,7 +797,6 @@ light_mask = 3
 
 [node name="Left Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
-position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_uspv6")
 animation = &"Удивление"
 

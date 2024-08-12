@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://c1njjadxa43bg"]
+[gd_scene load_steps=12 format=3 uid="uid://c1njjadxa43bg"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="1_3d6xm"]
 [ext_resource type="Theme" uid="uid://b20uw8pswcq8l" path="res://theme.tres" id="2_5jnp4"]
+[ext_resource type="Texture2D" uid="uid://d2o1i3yrnwba7" path="res://gui/фон Меню в игре.png" id="2_ex4ay"]
 [ext_resource type="Script" path="res://source/settings/setting_player_name.gd" id="2_uu37b"]
 [ext_resource type="Script" path="res://source/settings/setting_screen_mode.gd" id="3_v3jpw"]
 [ext_resource type="Script" path="res://source/settings/setting_rewind_mode.gd" id="4_ucrbx"]
@@ -20,6 +21,16 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_3d6xm")
 return_button = NodePath("Вернуться")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ex4ay")
+expand_mode = 1
 
 [node name="Заголовок" type="Label" parent="."]
 layout_mode = 1

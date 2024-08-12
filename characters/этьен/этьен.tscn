@@ -382,7 +382,25 @@ animations = [{
 "name": &"Сильно испуган",
 "speed": 10.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_lc7xa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dy7yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fnvfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fnvfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dy7yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lc7xa")
+}],
 "loop": false,
 "name": &"Смех",
 "speed": 10.0
@@ -1436,7 +1454,6 @@ mouth = NodePath("Head/Mouth")
 eyes_frame_close = 2
 default_emotion = "Спокойствие"
 bleep_player = NodePath("BleepPlayer")
-character_id = 27
 
 [node name="Head" type="Sprite2D" parent="."]
 light_mask = 3
@@ -1445,7 +1462,7 @@ texture = ExtResource("2_r2j3f")
 [node name="Eyes" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_7i0p1")
-animation = &"Сильно испуган"
+animation = &"Удивление"
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3

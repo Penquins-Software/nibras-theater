@@ -67,7 +67,7 @@ func set_text(text: String, speaker: String = "", speaker_color: Color = Color.W
 	if text_label.text.length() > MAX_SYMBOLS:
 		mode = MarkerMode.NextFrame
 	marker_mode = mode
-	speaker_label.text = "[color=#%s]%s" % [speaker_color.to_html(), speaker]
+	speaker_label.text = "[b][color=#%s]%s" % [speaker_color.to_html(), speaker]
 	
 	if immediately:
 		end_frame()

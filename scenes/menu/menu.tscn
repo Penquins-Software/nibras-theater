@@ -1,12 +1,19 @@
-[gd_scene load_steps=8 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=15 format=3 uid="uid://1ldra2lpi55u"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_h3ser"]
 [ext_resource type="PackedScene" uid="uid://7bfnwn4tg3f3" path="res://scenes/game.tscn" id="2_i8b50"]
+[ext_resource type="Texture2D" uid="uid://o0r3d53uvbmj" path="res://gui/Главное меню и настройки/главное меню 1.png" id="3_ors6w"]
 [ext_resource type="Script" path="res://source/main_menu/main_menu_button.gd" id="3_sfhbu"]
+[ext_resource type="Script" path="res://scenes/menu/menu_background.gd" id="4_f824p"]
 [ext_resource type="Theme" uid="uid://b20uw8pswcq8l" path="res://theme.tres" id="4_w7rwt"]
 [ext_resource type="PackedScene" uid="uid://c1njjadxa43bg" path="res://scenes/settings.tscn" id="5_7o1gw"]
 [ext_resource type="PackedScene" uid="uid://beneekmk33mka" path="res://scenes/save_manager/save_list.tscn" id="5_rnans"]
+[ext_resource type="Texture2D" uid="uid://dm7df5gcssvpf" path="res://gui/Главное меню и настройки/главное меню 2.png" id="5_wmqj6"]
+[ext_resource type="Texture2D" uid="uid://b83la06spk4xf" path="res://gui/Главное меню и настройки/главное меню 3.png" id="6_25p8h"]
+[ext_resource type="Texture2D" uid="uid://bu1fc76i5fe2v" path="res://gui/Главное меню и настройки/Лого.png" id="7_nugf5"]
+[ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="8_7egbi"]
+[ext_resource type="Texture2D" uid="uid://d2o1i3yrnwba7" path="res://gui/фон Меню в игре.png" id="13_fb8ov"]
 
 [node name="Menu" type="Control" node_paths=PackedStringArray("main", "exit_button")]
 layout_mode = 3
@@ -20,6 +27,36 @@ main = NodePath("Главный экран")
 exit_button = NodePath("Главный экран/VBoxContainer/Выйти")
 game_scene_file = ExtResource("2_i8b50")
 
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ors6w")
+expand_mode = 1
+script = ExtResource("4_f824p")
+image_2 = ExtResource("5_wmqj6")
+image_3 = ExtResource("6_25p8h")
+
+[node name="Logo" type="TextureRect" parent="Background"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -242.0
+offset_top = -114.0
+offset_right = -30.0
+offset_bottom = -17.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("7_nugf5")
+expand_mode = 2
+stretch_mode = 5
+
 [node name="Главный экран" type="Control" parent="." node_paths=PackedStringArray("focus_element")]
 layout_mode = 1
 anchors_preset = 15
@@ -32,66 +69,87 @@ focus_element = NodePath("VBoxContainer/Начать игру")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Главный экран"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -65.5
-offset_top = -120.5
-offset_right = 65.5
-offset_bottom = 120.5
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = -464.0
+offset_right = 291.0
+offset_bottom = -100.0
+grow_vertical = 0
 
 [node name="Начать игру" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("4_w7rwt")
+size_flags_horizontal = 0
+theme = ExtResource("8_7egbi")
 text = "Начать игру"
+flat = true
+alignment = 0
 
 [node name="Продолжить" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("4_w7rwt")
+size_flags_horizontal = 0
+theme = ExtResource("8_7egbi")
 text = "Продолжить"
+flat = true
+alignment = 0
 
 [node name="Загрузить игру" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
-theme = ExtResource("4_w7rwt")
+size_flags_horizontal = 0
+theme = ExtResource("8_7egbi")
 text = "Загрузить игру"
+flat = true
+alignment = 0
 script = ExtResource("3_sfhbu")
 menu_element_to_show = NodePath("../../../Загрузить игру")
 
 [node name="Галерея" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("4_w7rwt")
+size_flags_horizontal = 0
+theme = ExtResource("8_7egbi")
 disabled = true
 text = "Галерея"
+flat = true
+alignment = 0
 
 [node name="Экстра" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("4_w7rwt")
+size_flags_horizontal = 0
+theme = ExtResource("8_7egbi")
 disabled = true
 text = "Экстра"
+flat = true
+alignment = 0
 
 [node name="Настройки" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
-theme = ExtResource("4_w7rwt")
+size_flags_horizontal = 0
+theme = ExtResource("8_7egbi")
 text = "Настройки
 "
+flat = true
+alignment = 0
 script = ExtResource("3_sfhbu")
 menu_element_to_show = NodePath("../../../Настройки")
 
 [node name="Авторы" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
-theme = ExtResource("4_w7rwt")
+size_flags_horizontal = 0
+theme = ExtResource("8_7egbi")
 text = "Авторы"
+flat = true
+alignment = 0
 script = ExtResource("3_sfhbu")
 menu_element_to_show = NodePath("../../../Авторы")
 
 [node name="Выйти" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("4_w7rwt")
+size_flags_horizontal = 0
+theme = ExtResource("8_7egbi")
 text = "Выйти"
+flat = true
+alignment = 0
 
 [node name="Загрузить игру" parent="." instance=ExtResource("5_rnans")]
 visible = false
@@ -112,6 +170,16 @@ grow_vertical = 2
 script = ExtResource("2_h3ser")
 return_button = NodePath("Вернуться")
 focus_element = NodePath("Вернуться")
+
+[node name="Background" type="TextureRect" parent="Авторы"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_fb8ov")
+expand_mode = 1
 
 [node name="Заголовок" type="Label" parent="Авторы"]
 layout_mode = 1

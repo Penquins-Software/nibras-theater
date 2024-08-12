@@ -98,18 +98,6 @@ animations = [{
 [node name="Морт" type="Node2D" node_paths=PackedStringArray("eyes", "mouth", "bleep_player")]
 z_index = 10
 script = ExtResource("1_0npc7")
-emotion_ids_to_anim_names = {
-0: &"Спокойствие",
-1: &"Злость",
-2: &"Удивление",
-3: &"Грусть",
-4: &"Радость",
-5: &"Размышление",
-6: &"Страх",
-7: &"Смущение",
-8: &"Умозаключение",
-9: &"Указание"
-}
 eyes = NodePath("Head/Eyes")
 mouth = NodePath("Head/Mouth")
 eyes_frame_close = 2

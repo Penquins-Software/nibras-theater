@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=3 uid="uid://beq7l84g5gdlw"]
+[gd_scene load_steps=77 format=3 uid="uid://beq7l84g5gdlw"]
 
 [ext_resource type="Script" path="res://characters/character_with_mustache.gd" id="1_y36ds"]
 [ext_resource type="Texture2D" uid="uid://cs5fbqsa7ifs1" path="res://characters/арлет/sprites/Голова 1.png" id="2_stomh"]
@@ -65,6 +65,7 @@
 [ext_resource type="Texture2D" uid="uid://bg0crqp48judp" path="res://characters/арлет/sprites/Голова 1 брови 3.png" id="47_qlkwp"]
 [ext_resource type="Texture2D" uid="uid://oj6ptgkhgqhe" path="res://characters/арлет/sprites/Голова 2 Пот.png" id="50_1ubap"]
 [ext_resource type="Texture2D" uid="uid://p33adwtu7uvh" path="res://characters/арлет/sprites/Голова 2 Румяна.png" id="51_tnbxq"]
+[ext_resource type="Texture2D" uid="uid://b2c7wlg6ql5ve" path="res://characters/арлет/sprites/Голова 1 тень.png" id="52_thdvg"]
 [ext_resource type="Texture2D" uid="uid://bg471e0qhpi25" path="res://characters/арлет/sprites/LR руки 2.png" id="56_vytos"]
 [ext_resource type="Texture2D" uid="uid://dijgb53d6ddvw" path="res://characters/арлет/sprites/R рука 4.png" id="63_ylpnt"]
 
@@ -1379,7 +1380,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("36_rpdbt")
+"texture": ExtResource("52_thdvg")
 }],
 "loop": true,
 "name": &"Сильно злится",
@@ -1778,7 +1779,6 @@ mouth = NodePath("Head/Mouth")
 eyes_frame_close = 2
 default_emotion = "Спокойствие"
 bleep_player = NodePath("BleepPlayer")
-character_id = 19
 
 [node name="Head" type="AnimatedSprite2D" parent="."]
 light_mask = 3
@@ -1808,7 +1808,7 @@ animation = &"Удивление"
 [node name="Details" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_x0vta")
-animation = &"Удивление"
+animation = &"Сильно злится"
 
 [node name="Mustache" type="Sprite2D" parent="Head"]
 visible = false

@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://timqtqr5jlpb" path="res://locations/сцена/Светло/Задний занавес/Сцена. ПРАВЫЙ задний занавес.png" id="4_eqb8v"]
 
 [node name="Сцена" type="Node2D"]
+z_index = -5
 script = ExtResource("1_q7bym")
 
 [node name="Сцена_Пол" type="Sprite2D" parent="."]

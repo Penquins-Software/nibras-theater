@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://w04mgdypqc5y" path="res://locations/white_box.png" id="5_mabse"]
 
 [node name="Сцена" type="Node2D"]
+z_index = -5
 script = ExtResource("1_qlqvo")
 
 [node name="Сцена_Пол" type="Sprite2D" parent="."]

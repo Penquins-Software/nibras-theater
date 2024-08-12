@@ -7,6 +7,8 @@ var current_music: RSEMusic
 
 func play_music(music: RSEMusic) -> void:
 	if music == current_music:
+		if not playing:
+			play()
 		return
 	
 	current_music = music
@@ -14,6 +16,7 @@ func play_music(music: RSEMusic) -> void:
 	
 	if music.name == "None":
 		stop()
+		stream = null
 		return
 	
 	if music.path_to_file == null or music.path_to_file == "":

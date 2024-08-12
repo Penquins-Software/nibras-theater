@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://078ah54me0ky" path="res://locations/сцена/прожектор_т.png" id="4_x0f6d"]
 
 [node name="СценаСветСимметрия" type="Node2D"]
+z_index = -5
 script = ExtResource("1_vgv30")
 
 [node name="Сцена_СветСимметрия" type="Sprite2D" parent="."]

@@ -10,7 +10,7 @@ var border: Camera2DBorder
 func _init():
 	camera = Camera2D.new()
 	camera.position_smoothing_enabled = true
-	camera.position_smoothing_speed = 0.075
+	camera.position_smoothing_speed = 0.12
 	name = "Camera"
 	add_child(camera)
 
@@ -25,3 +25,7 @@ func reset() -> void:
 	scale = Vector2.ONE
 	camera.zoom = Vector2.ONE
 	reseted.emit()
+
+
+func set_smoothing(status: bool) -> void:
+	camera.position_smoothing_enabled = status
