@@ -1,0 +1,56 @@
+[gd_resource type="Theme" load_steps=14 format=3 uid="uid://cgymxxcr7u4ai"]
+
+[ext_resource type="Texture2D" uid="uid://5al33j6qgfq6" path="res://gui/Мелочи/Сохранения/Кнопка 2.png" id="1_5wiiw"]
+[ext_resource type="Texture2D" uid="uid://cfb5cs8q7hjgt" path="res://gui/Мелочи/Сохранения/Кнопка 1.png" id="2_cf7mg"]
+[ext_resource type="Texture2D" uid="uid://bpc8gs1dy5i70" path="res://gui/Мелочи/Сохранения/Кнопка 3.png" id="3_4a6sk"]
+[ext_resource type="FontFile" uid="uid://d2s4oq5a4rkca" path="res://gui/Мелочи/Шрифт для меню Neucha/Neucha-Regular.ttf" id="4_h6aey"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ajwkg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hyfiq"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jujpv"]
+texture = ExtResource("1_5wiiw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m62cm"]
+texture = ExtResource("2_cf7mg")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7b6sk"]
+texture = ExtResource("3_4a6sk")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_40oq1"]
+bg_color = Color(0.286275, 0.0117647, 0, 0.501961)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eaotj"]
+bg_color = Color(0.560784, 0.0352941, 0.0352941, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_punxh"]
+bg_color = Color(1, 0, 0, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8uhtl"]
+bg_color = Color(0.847059, 0.792157, 0.670588, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[resource]
+default_font = ExtResource("4_h6aey")
+default_font_size = 32
+Button/styles/disabled = SubResource("StyleBoxEmpty_ajwkg")
+Button/styles/focus = SubResource("StyleBoxEmpty_hyfiq")
+Button/styles/hover = SubResource("StyleBoxTexture_jujpv")
+Button/styles/normal = SubResource("StyleBoxTexture_m62cm")
+Button/styles/pressed = SubResource("StyleBoxTexture_7b6sk")
+Panel/styles/panel = SubResource("StyleBoxFlat_40oq1")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_eaotj")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_punxh")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_8uhtl")

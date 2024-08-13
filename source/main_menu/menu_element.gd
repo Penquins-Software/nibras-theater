@@ -16,8 +16,8 @@ func _ready():
 
 func show_and_focus() -> void:
 	show()
-	if focus_element != null:
-		focus_element.grab_focus()
+	#if focus_element != null:
+		#focus_element.grab_focus()
 
 
 func return_to_menu() -> void:

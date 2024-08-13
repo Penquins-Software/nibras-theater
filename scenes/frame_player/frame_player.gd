@@ -10,11 +10,13 @@ signal end()
 const REWIND_DELAY_TIME: float = 0.02
 
 
+@export var interface_container: Control
 @export var text_box: TextBox
 @export var selection_menu: SelectionMenu
 @export var logger: Logger
 @export var scene_builder: RSESceneBuilder
 @export var pause_button: Button
+@export var auto_play_button: TextureButton
 
 @export var music_player: MusicPlayer
 @export var bgs_player: BGSPlayer
@@ -33,6 +35,7 @@ var history: Array
 var is_gap: bool = false
 var rewind_delay: float = 0.0
 var rewind_block: bool = false
+var auto_rewind: bool = false
 var auto_play_time: float = 0.0
 var auto_play: bool = false
 var is_pause: bool = false
@@ -47,6 +50,14 @@ func _input(event):
 	if episode == null:
 		return
 	
+	if event.is_action_pressed("hide_interface"):
+		switch_interface_visability()
+	
+	if not interface_container.visible:
+		if event.is_action_pressed("cancel") or event.is_action_pressed("next_frame"):
+			switch_interface_visability()
+		return
+	
 	if is_pause:
 		return
 	
@@ -57,30 +68,15 @@ func _input(event):
 		return
 	
 	if event.is_action_pressed("next_frame") and not is_mouse_on_gui:
-		if not selection_menu.visible:
-			if text_box.showing:
-				text_box.end_frame() ## Принудительно закончить кадр.
-			else: ## Переключиться на следующий кадр.
-				next_frame()
+		next_frame()
 	if event.is_action("rewind"):
-		if not selection_menu.visible:
-			_rewind()
+		_rewind()
 	if event.is_action_pressed("prev_frame"):
-		if selection_menu.visible:
-			selection_menu.hide()
-		if text_box.showing:
-			text_box.end_frame() ## Принудительно закончить кадр.
 		prev_frame()
-		#logger.show()
-		#text_box.hide()
 	if event.is_action_pressed("log"):
-		logger.show()
-		text_box.hide()
-	if event.is_action_pressed("hide_interface"):
-		pass
+		_show_logger()
 	if event.is_action_pressed("auto_play"):
-		auto_play = !auto_play
-		print("Autoplay is %s" % auto_play)
+		set_auto_play(not auto_play)
 
 
 func _process(delta):
@@ -92,9 +88,15 @@ func _process(delta):
 			auto_play_time -= delta
 			if auto_play_time <= 0:
 				next_frame()
+	
+	if auto_rewind:
+		_rewind()
 
 
 func _rewind() -> void:
+	if selection_menu.visible:
+		return
+	
 	if rewind_block:
 		return
 	
@@ -109,6 +111,14 @@ func _rewind() -> void:
 				next_frame()
 
 
+func _start_rewind() -> void:
+	auto_rewind = true
+
+
+func _stop_rewind() -> void:
+	auto_rewind = false
+
+
 func set_episode(ep: RSEEpisode, build_first_frame: bool = true) -> void:
 	selection_menu.visible = false
 	is_gap = true
@@ -121,6 +131,13 @@ func set_episode(ep: RSEEpisode, build_first_frame: bool = true) -> void:
 
 
 func next_frame() -> void:
+	if selection_menu.visible:
+		return
+	
+	if text_box.showing:
+		text_box.end_frame() ## Принудительно закончить кадр.
+		return
+	
 	scene_builder.camera_controller.set_smoothing(true)
 	
 	var prev_frame_index = current_frame_index
@@ -135,6 +152,11 @@ func next_frame() -> void:
 
 
 func prev_frame() -> void:
+	if selection_menu.visible:
+		selection_menu.hide()
+	if text_box.showing:
+		text_box.end_frame() ## Принудительно закончить кадр.
+	
 	if history.size() <= 0:
 		return
 	
@@ -202,13 +224,13 @@ func show_text_frame(frame: RSEFrameText, is_immediately: bool = false) -> void:
 	var character = scene_builder.get_characeter_by_id(speaker.id)
 	if is_immediately:
 		is_gap = false
-		text_box.set_text(frame.scene_state.text, speaker.display_name, speaker.color, TextBox.MarkerMode.NextText, is_immediately)
+		text_box.set_text(frame.scene_state.text, speaker.display_name, speaker.color, _define_marker_mode(), is_immediately)
 	else:
 		if not is_gap:
-			text_box.add_text(frame.text, speaker.display_name, speaker.color, TextBox.MarkerMode.NextText)
+			text_box.add_text(frame.text, speaker.display_name, speaker.color, _define_marker_mode())
 		else:
 			is_gap = false
-			text_box.set_text(frame.text, speaker.display_name, speaker.color, TextBox.MarkerMode.NextText)
+			text_box.set_text(frame.text, speaker.display_name, speaker.color, _define_marker_mode())
 		if character != null:
 			character.start_talk()
 
@@ -254,6 +276,7 @@ func do_transitition(frame: RSEFrameTransitition) -> void:
 	is_transitition = true
 	if episode.id != 95:
 		text_box.clear()
+		text_box.marker.hide()
 	#text_box.hide()
 	var transitition: RSETransitition = RewindStoryEngine.story.transititions[frame.transitition_id]
 	var transitition_controller = load(transitition.path_to_scene).instantiate() as RSEBaseTransititionController
@@ -302,11 +325,11 @@ func continue_play() -> void:
 	text_box.show()
 
 
-func _on_pause_mouse_entered():
+func _on_gui_mouse_entered():
 	is_mouse_on_gui = true
 
 
-func _on_pause_mouse_exited():
+func _on_gui_mouse_exited():
 	is_mouse_on_gui = false
 
 
@@ -339,4 +362,51 @@ func _on_scene_builder_bgs(bgs_id: int, status: bool):
 
 
 func _on_logger_close_pressed():
+	hide_logger()
+
+
+func _show_logger() -> void:
+	text_box.hide()
+	logger.show()
+
+
+func hide_logger() -> void:
 	text_box.show()
+	logger.hide()
+
+
+func set_auto_play(status: bool) -> void:
+	auto_play = status
+	auto_play_button.set_pressed_no_signal(status)
+	print("Autoplay is %s" % status)
+
+
+func switch_interface_visability() -> void:
+	interface_container.visible = not interface_container.visible
+
+
+func _define_marker_mode() -> TextBox.MarkerMode:
+	if not current_frame is RSEFrameText:
+		return TextBox.MarkerMode.NextFrame
+	
+	for index in range(current_frame_index + 1, episode.real_frames.size()):
+		var frame = episode.real_frames[index]
+		if frame is RSEFrameSelection:
+			return TextBox.MarkerMode.NextFrame
+		elif frame is RSEFrameGap:
+			return TextBox.MarkerMode.NextFrame
+		elif frame is RSEFrameJump:
+			return TextBox.MarkerMode.NextFrame
+		elif frame is RSEFrameCondition:
+			return TextBox.MarkerMode.NextFrame
+		elif frame is RSEFrameTransitition:
+			return TextBox.MarkerMode.NextFrame
+		elif frame is RSEFrameText:
+			if frame.speaker_id != speaker.id:
+				return TextBox.MarkerMode.NextFrame
+			if text_box.get_clear_text_length() + current_frame.text.length() > text_box.MAX_SYMBOLS:
+				return TextBox.MarkerMode.NextFrame
+			else:
+				return TextBox.MarkerMode.NextText
+	
+	return TextBox.MarkerMode.NextFrame

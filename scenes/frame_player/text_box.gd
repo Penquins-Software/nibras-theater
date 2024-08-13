@@ -12,14 +12,12 @@ enum MarkerMode {
 
 
 const MAX_SYMBOLS: int = 200
+const BB_CODE_NEXT_TEXT: String = "  [img=24]res://gui/Мелочи/Игра/Для текста/1.png[/img]"
 
 
 @export var speaker_label: RichTextLabel
 @export var text_label: RichTextLabel
 @export var marker: TextureRect
-
-@export var marker_next_text: Texture2D
-@export var marker_next_frame: Texture2D
 
 
 var _speaker: String
@@ -44,18 +42,20 @@ func end_frame() -> void:
 	showing = false
 	ready_to_next_frame = true
 	finished.emit()
-	marker.show()
-	print_time = float(text_label.text.length()) / Settings.text_speed
+	print_time = float(get_clear_text_length()) / Settings.text_speed
 	text_label.visible_characters = -1
 	if marker_mode == MarkerMode.NextText:
-		marker.texture = marker_next_text
+		#marker.texture = marker_next_text
+		add_bbcode_marker()
 	elif marker_mode == MarkerMode.NextFrame:
-		marker.texture = marker_next_frame
+		marker.show()
 
 
 func set_text(text: String, speaker: String = "", speaker_color: Color = Color.WHITE, mode: MarkerMode = MarkerMode.NextFrame, immediately: bool = false) -> void:
 	if not ready_to_next_frame:
 		return
+	
+	remove_bbcode_marker()
 	
 	text_label.text = text
 	_speaker = speaker
@@ -64,7 +64,7 @@ func set_text(text: String, speaker: String = "", speaker_color: Color = Color.W
 	showing = true
 	ready_to_next_frame = false
 	marker.hide()
-	if text_label.text.length() > MAX_SYMBOLS:
+	if get_clear_text_length() > MAX_SYMBOLS:
 		mode = MarkerMode.NextFrame
 	marker_mode = mode
 	speaker_label.text = "[b][color=#%s]%s" % [speaker_color.to_html(), speaker]
@@ -81,13 +81,15 @@ func add_text(text: String, speaker: String = "", speaker_color: Color = Color.W
 		set_text(text, speaker, speaker_color, mode)
 		return
 	
-	if (text_label.text + text).length() > MAX_SYMBOLS:
+	if get_clear_text_length() + text.length() > MAX_SYMBOLS:
 		set_text(text, speaker, speaker_color, mode)
 		return
 	
 	if _speaker != speaker:
 		set_text(text, speaker, speaker_color, mode)
 		return
+	
+	remove_bbcode_marker()
 	
 	text_label.text += ' ' + text
 	showing = true
@@ -101,3 +103,15 @@ func clear() -> void:
 	text_label.text = ""
 	print_time = 0
 	text_label.visible_characters = 0
+
+
+func get_clear_text_length() -> int:
+	return text_label.text.replace(BB_CODE_NEXT_TEXT, "").length()
+
+
+func add_bbcode_marker() -> void:
+	text_label.text += BB_CODE_NEXT_TEXT
+
+
+func remove_bbcode_marker() -> void:
+	text_label.text = text_label.text.replace(BB_CODE_NEXT_TEXT, "")

@@ -45,7 +45,28 @@ var blinking_time: float = 1.0
 var twin: RSEBaseCharacterController
 
 var flip_h: bool = false : set = _set_flip_h
+func _set_flip_h(value: bool) -> void:
+	flip_h = value
+	scale.x = -scale.x
+	#_set_flip_h_for_all_sprites()
+	#if not twin == null:
+		#twin.flip_h = flip_h
+		#if not flip_h:
+			#twin.position = Vector2(-20, 20)
+		#else:
+			#twin.position = Vector2(20, 20)
+
 var order: int = 0 : set = _set_order
+func _set_order(order_index: int) -> void:
+	order = order_index
+	z_index = order_index
+	if not twin == null:
+		twin.order = order_index - 1
+
+var scale_custom: int : set = _set_scale
+func _set_scale(value: int) -> void:
+	scale_custom = value
+	scale = Vector2(value * sign(scale.x), value)
 
 
 func _set_character(ch: RSECharacter) -> void:
@@ -55,17 +76,6 @@ func _set_character(ch: RSECharacter) -> void:
 		var bleep = load(ch.path_to_bleep_sound)
 		if bleep is AudioStream:
 			bleep_player.stream = bleep
-
-
-func _set_flip_h(value: bool) -> void:
-	flip_h = value
-	_set_flip_h_for_all_sprites()
-	if not twin == null:
-		twin.flip_h = flip_h
-		if not flip_h:
-			twin.position = Vector2(-20, 20)
-		else:
-			twin.position = Vector2(20, 20)
 
 
 func _set_flip_h_for_all_sprites() -> void:
@@ -80,12 +90,6 @@ func _set_flip_for_part(node: Node) -> void:
 		_set_flip_for_part(child)
 
 
-func _set_order(order_index: int) -> void:
-	order = order_index
-	z_index = order_index
-	if not twin == null:
-		twin.order = order_index - 1
-	#_set_order_for_all_sprites()
 
 
 func _set_order_for_all_sprites() -> void:

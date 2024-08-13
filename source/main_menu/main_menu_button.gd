@@ -1,4 +1,4 @@
-extends Button
+extends ButtonWithSound
 
 
 signal menu_element_was_selected(menu_element: MenuElement)
@@ -8,4 +8,6 @@ signal menu_element_was_selected(menu_element: MenuElement)
 
 
 func _pressed():
-	menu_element_was_selected.emit(menu_element_to_show)
+	_play_sound()
+	if menu_element_to_show != null:
+		menu_element_was_selected.emit(menu_element_to_show)

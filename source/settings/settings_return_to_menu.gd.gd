@@ -1,4 +1,4 @@
-extends Button
+extends ButtonWithSound
 
 
 func _ready():

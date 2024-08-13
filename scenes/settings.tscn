@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://c1njjadxa43bg"]
+[gd_scene load_steps=14 format=3 uid="uid://c1njjadxa43bg"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="1_3d6xm"]
 [ext_resource type="Theme" uid="uid://b20uw8pswcq8l" path="res://theme.tres" id="2_5jnp4"]
 [ext_resource type="Texture2D" uid="uid://bo0h30eo6twp2" path="res://gui/фон Сохранения и настройки.png" id="2_r2sg6"]
 [ext_resource type="Script" path="res://source/settings/setting_player_name.gd" id="2_uu37b"]
+[ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="3_qwhhk"]
 [ext_resource type="Script" path="res://source/settings/setting_screen_mode.gd" id="3_v3jpw"]
 [ext_resource type="Script" path="res://source/settings/setting_rewind_mode.gd" id="4_ucrbx"]
 [ext_resource type="Script" path="res://source/settings/setting_language.gd" id="5_46tpf"]
@@ -11,6 +12,7 @@
 [ext_resource type="Script" path="res://source/settings/setting_audio_bus.gd" id="7_bsqa4"]
 [ext_resource type="Script" path="res://source/settings/setting_auto_speed.gd" id="7_uqn1o"]
 [ext_resource type="Script" path="res://source/settings/settings_return_to_menu.gd.gd" id="8_iv8c3"]
+[ext_resource type="Script" path="res://source/settings/setting_bleep_mode.gd" id="12_vgyhw"]
 
 [node name="Настройки" type="Control" node_paths=PackedStringArray("return_button")]
 layout_mode = 3
@@ -45,7 +47,7 @@ offset_right = 300.0
 offset_bottom = -346.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 text = "Настройки"
 horizontal_alignment = 1
 
@@ -83,16 +85,22 @@ script = ExtResource("2_uu37b")
 layout_mode = 2
 
 [node name="Label" type="Label" parent="VBoxContainer/Режим экрана"]
-custom_minimum_size = Vector2(500, 0)
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 text = "Режим экрана:"
 horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Space" type="Control" parent="VBoxContainer/Режим экрана"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
 
 [node name="MenuButton" type="MenuButton" parent="VBoxContainer/Режим экрана"]
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 text = "Оконный"
 flat = false
 item_count = 2
@@ -106,16 +114,22 @@ script = ExtResource("3_v3jpw")
 layout_mode = 2
 
 [node name="Label" type="Label" parent="VBoxContainer/Режим перемотки"]
-custom_minimum_size = Vector2(500, 0)
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 text = "Режим перемотки:"
 horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Space" type="Control" parent="VBoxContainer/Режим перемотки"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
 
 [node name="MenuButton" type="MenuButton" parent="VBoxContainer/Режим перемотки"]
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 text = "Пропускать просмотрённое"
 flat = false
 item_count = 2
@@ -129,16 +143,22 @@ script = ExtResource("4_ucrbx")
 layout_mode = 2
 
 [node name="Label" type="Label" parent="VBoxContainer/Язык"]
-custom_minimum_size = Vector2(500, 0)
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 text = "Язык:"
 horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Space" type="Control" parent="VBoxContainer/Язык"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
 
 [node name="MenuButton" type="MenuButton" parent="VBoxContainer/Язык"]
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 text = "Russian"
 flat = false
 script = ExtResource("5_46tpf")
@@ -146,16 +166,22 @@ script = ExtResource("5_46tpf")
 [node name="Скорость текста" type="HBoxContainer" parent="VBoxContainer" node_paths=PackedStringArray("slider", "spin_box")]
 custom_minimum_size = Vector2(0, 42)
 layout_mode = 2
+theme = ExtResource("3_qwhhk")
 script = ExtResource("6_n4t7e")
 slider = NodePath("HSlider")
 spin_box = NodePath("SpinBox")
 
 [node name="Label" type="Label" parent="VBoxContainer/Скорость текста"]
-custom_minimum_size = Vector2(500, 0)
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 text = "Скорость вывода текста:"
 horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Space" type="Control" parent="VBoxContainer/Скорость текста"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
 
 [node name="HSlider" type="HSlider" parent="VBoxContainer/Скорость текста"]
 custom_minimum_size = Vector2(200, 0)
@@ -189,18 +215,23 @@ slider = NodePath("HSlider")
 spin_box = NodePath("SpinBox")
 
 [node name="Label" type="Label" parent="VBoxContainer/Скорость автоматического чтения"]
-custom_minimum_size = Vector2(500, 0)
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 text = "Скорость автоматического чтения:"
 horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Space" type="Control" parent="VBoxContainer/Скорость автоматического чтения"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
 
 [node name="HSlider" type="HSlider" parent="VBoxContainer/Скорость автоматического чтения"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 min_value = 20.0
 max_value = 140.0
 value = 20.0
@@ -219,23 +250,30 @@ slider = NodePath("HSlider")
 spin_box = NodePath("SpinBox")
 
 [node name="Label" type="Label" parent="VBoxContainer/Общая громкость"]
-custom_minimum_size = Vector2(500, 0)
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 text = "Общая громкость:"
 horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Space" type="Control" parent="VBoxContainer/Общая громкость"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
 
 [node name="HSlider" type="HSlider" parent="VBoxContainer/Общая громкость"]
 custom_minimum_size = Vector2(380, 0)
 layout_mode = 2
 size_flags_horizontal = 10
 size_flags_vertical = 4
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 
 [node name="SpinBox" type="SpinBox" parent="VBoxContainer/Общая громкость"]
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 size_flags_horizontal = 8
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
+alignment = 1
 
 [node name="Громкость звуковых эффектов" type="HBoxContainer" parent="VBoxContainer" node_paths=PackedStringArray("slider", "spin_box")]
 layout_mode = 2
@@ -245,23 +283,30 @@ slider = NodePath("HSlider")
 spin_box = NodePath("SpinBox")
 
 [node name="Label" type="Label" parent="VBoxContainer/Громкость звуковых эффектов"]
-custom_minimum_size = Vector2(500, 0)
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 text = "Громкость звуковых эффектов:"
 horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Space" type="Control" parent="VBoxContainer/Громкость звуковых эффектов"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
 
 [node name="HSlider" type="HSlider" parent="VBoxContainer/Громкость звуковых эффектов"]
 custom_minimum_size = Vector2(380, 0)
 layout_mode = 2
 size_flags_horizontal = 10
 size_flags_vertical = 4
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 
 [node name="SpinBox" type="SpinBox" parent="VBoxContainer/Громкость звуковых эффектов"]
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 size_flags_horizontal = 8
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
+alignment = 1
 
 [node name="Громкость музыки" type="HBoxContainer" parent="VBoxContainer" node_paths=PackedStringArray("slider", "spin_box")]
 layout_mode = 2
@@ -271,26 +316,32 @@ slider = NodePath("HSlider")
 spin_box = NodePath("SpinBox")
 
 [node name="Label" type="Label" parent="VBoxContainer/Громкость музыки"]
-custom_minimum_size = Vector2(500, 0)
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 text = "Громкость музыки:"
 horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Space" type="Control" parent="VBoxContainer/Громкость музыки"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
 
 [node name="HSlider" type="HSlider" parent="VBoxContainer/Громкость музыки"]
 custom_minimum_size = Vector2(380, 0)
 layout_mode = 2
 size_flags_horizontal = 10
 size_flags_vertical = 4
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
 
 [node name="SpinBox" type="SpinBox" parent="VBoxContainer/Громкость музыки"]
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 size_flags_horizontal = 8
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
+alignment = 1
 
 [node name="Громкость блипов" type="HBoxContainer" parent="VBoxContainer" node_paths=PackedStringArray("slider", "spin_box")]
-visible = false
 layout_mode = 2
 script = ExtResource("7_bsqa4")
 bus = 2
@@ -298,23 +349,21 @@ slider = NodePath("../Громкость музыки/HSlider")
 spin_box = NodePath("../Громкость музыки/SpinBox")
 
 [node name="Label" type="Label" parent="VBoxContainer/Громкость блипов"]
-custom_minimum_size = Vector2(500, 0)
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
-theme = ExtResource("2_5jnp4")
-text = "Громкость музыки:"
+theme = ExtResource("3_qwhhk")
+text = "Блипы персонажей:"
 horizontal_alignment = 2
+vertical_alignment = 1
 
-[node name="HSlider" type="HSlider" parent="VBoxContainer/Громкость блипов"]
-custom_minimum_size = Vector2(380, 0)
+[node name="Space" type="Control" parent="VBoxContainer/Громкость блипов"]
+custom_minimum_size = Vector2(20, 0)
 layout_mode = 2
-size_flags_horizontal = 10
-size_flags_vertical = 4
-theme = ExtResource("2_5jnp4")
 
-[node name="SpinBox" type="SpinBox" parent="VBoxContainer/Громкость блипов"]
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/Громкость блипов"]
 layout_mode = 2
-size_flags_horizontal = 8
-theme = ExtResource("2_5jnp4")
+theme = ExtResource("3_qwhhk")
+script = ExtResource("12_vgyhw")
 
 [node name="Вернуться" type="Button" parent="."]
 layout_mode = 1
@@ -330,7 +379,8 @@ offset_bottom = 380.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
-theme = ExtResource("2_5jnp4")
+focus_mode = 0
+theme = ExtResource("3_qwhhk")
 text = "Вернуться в меню "
 script = ExtResource("8_iv8c3")
 

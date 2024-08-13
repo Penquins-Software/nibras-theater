@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://droyt1nlk5p3g"]
+[gd_scene load_steps=7 format=3 uid="uid://droyt1nlk5p3g"]
 
 [ext_resource type="Script" path="res://scenes/save_manager/save_container.gd" id="1_xq2kt"]
 [ext_resource type="Texture2D" uid="uid://dktdb1xkwbt1d" path="res://icon.svg" id="2_3daxs"]
-[ext_resource type="Theme" uid="uid://b20uw8pswcq8l" path="res://theme.tres" id="3_bca2p"]
+[ext_resource type="Texture2D" uid="uid://uq2vxg6rm5jd" path="res://gui/Мелочи/Сохранения/Рамка.png" id="3_6jjuj"]
+[ext_resource type="Script" path="res://scenes/save_manager/save_image.gd" id="3_dcn40"]
+[ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="4_23sh2"]
+[ext_resource type="Theme" uid="uid://cgymxxcr7u4ai" path="res://scenes/save_manager/save_theme.tres" id="5_ck5cf"]
 
 [node name="SaveContainer" type="HBoxContainer" node_paths=PackedStringArray("image", "label")]
 custom_minimum_size = Vector2(0, 160)
@@ -12,16 +15,30 @@ script = ExtResource("1_xq2kt")
 image = NodePath("Image")
 label = NodePath("Panel/MarginContainer/Info/RichTextLabel")
 
-[node name="Image" type="TextureRect" parent="."]
+[node name="Image" type="TextureRect" parent="." node_paths=PackedStringArray("border")]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 texture = ExtResource("2_3daxs")
 expand_mode = 3
 stretch_mode = 5
+script = ExtResource("3_dcn40")
+border = NodePath("Рамка")
+
+[node name="Рамка" type="TextureRect" parent="Image"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_6jjuj")
+expand_mode = 1
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("5_ck5cf")
 
 [node name="MarginContainer" type="MarginContainer" parent="Panel"]
 layout_mode = 1
@@ -31,6 +48,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
+theme = ExtResource("5_ck5cf")
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
@@ -43,7 +61,7 @@ size_flags_horizontal = 3
 [node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/Info"]
 layout_mode = 2
 size_flags_vertical = 6
-theme = ExtResource("3_bca2p")
+theme = ExtResource("4_23sh2")
 bbcode_enabled = true
 text = "Тестовый эпизод
 16.07.2024"
@@ -58,14 +76,14 @@ size_flags_vertical = 8
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 8
-theme = ExtResource("3_bca2p")
+theme = ExtResource("5_ck5cf")
 text = "Загрузить"
 
 [node name="Delete" type="Button" parent="Panel/MarginContainer/Info/Buttons"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 8
-theme = ExtResource("3_bca2p")
+theme = ExtResource("5_ck5cf")
 text = "Удалить"
 
 [connection signal="pressed" from="Panel/MarginContainer/Info/Buttons/Load" to="." method="_on_load_pressed"]

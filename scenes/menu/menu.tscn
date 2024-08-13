@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=20 format=3 uid="uid://1ldra2lpi55u"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_h3ser"]
@@ -6,14 +6,52 @@
 [ext_resource type="Texture2D" uid="uid://o0r3d53uvbmj" path="res://gui/Главное меню и настройки/главное меню 1.png" id="3_ors6w"]
 [ext_resource type="Script" path="res://source/main_menu/main_menu_button.gd" id="3_sfhbu"]
 [ext_resource type="Script" path="res://scenes/menu/menu_background.gd" id="4_f824p"]
-[ext_resource type="Theme" uid="uid://b20uw8pswcq8l" path="res://theme.tres" id="4_w7rwt"]
 [ext_resource type="PackedScene" uid="uid://c1njjadxa43bg" path="res://scenes/settings.tscn" id="5_7o1gw"]
 [ext_resource type="PackedScene" uid="uid://beneekmk33mka" path="res://scenes/save_manager/save_list.tscn" id="5_rnans"]
 [ext_resource type="Texture2D" uid="uid://dm7df5gcssvpf" path="res://gui/Главное меню и настройки/главное меню 2.png" id="5_wmqj6"]
 [ext_resource type="Texture2D" uid="uid://b83la06spk4xf" path="res://gui/Главное меню и настройки/главное меню 3.png" id="6_25p8h"]
 [ext_resource type="Texture2D" uid="uid://bu1fc76i5fe2v" path="res://gui/Главное меню и настройки/Лого.png" id="7_nugf5"]
 [ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="8_7egbi"]
+[ext_resource type="Script" path="res://scenes/menu/exit_button.gd" id="11_ahf2s"]
 [ext_resource type="Texture2D" uid="uid://bo0h30eo6twp2" path="res://gui/фон Сохранения и настройки.png" id="13_ivy2m"]
+[ext_resource type="Script" path="res://source/web_link.gd" id="15_ddq1b"]
+[ext_resource type="Script" path="res://source/button_with_sound.gd" id="16_ruy8w"]
+
+[sub_resource type="Animation" id="Animation_51bo5"]
+resource_name = "fadeout"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_0s6sp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_l0v30"]
+_data = {
+"RESET": SubResource("Animation_0s6sp"),
+"fadeout": SubResource("Animation_51bo5")
+}
 
 [node name="Menu" type="Control" node_paths=PackedStringArray("main", "exit_button")]
 layout_mode = 3
@@ -57,6 +95,19 @@ texture = ExtResource("7_nugf5")
 expand_mode = 2
 stretch_mode = 5
 
+[node name="Jam" type="RichTextLabel" parent="Background"]
+layout_mode = 0
+offset_left = 1527.0
+offset_top = 366.0
+offset_right = 1886.0
+offset_bottom = 392.0
+theme = ExtResource("8_7egbi")
+theme_override_colors/default_color = Color(0.627451, 0.0392157, 0.0392157, 1)
+theme_override_font_sizes/normal_font_size = 24
+text = "Создано в рамках Джема Ста Цветов"
+fit_content = true
+scroll_active = false
+
 [node name="Главный экран" type="Control" parent="." node_paths=PackedStringArray("focus_element")]
 layout_mode = 1
 anchors_preset = 15
@@ -73,7 +124,7 @@ anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 100.0
-offset_top = -464.0
+offset_top = -408.0
 offset_right = 291.0
 offset_bottom = -100.0
 grow_vertical = 0
@@ -81,25 +132,25 @@ grow_vertical = 0
 [node name="Начать игру" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
+focus_mode = 0
 theme = ExtResource("8_7egbi")
 text = "Начать игру"
-flat = true
 alignment = 0
 
 [node name="Продолжить" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
+focus_mode = 0
 theme = ExtResource("8_7egbi")
 text = "Продолжить"
-flat = true
 alignment = 0
 
 [node name="Загрузить игру" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
 size_flags_horizontal = 0
+focus_mode = 0
 theme = ExtResource("8_7egbi")
 text = "Загрузить игру"
-flat = true
 alignment = 0
 script = ExtResource("3_sfhbu")
 menu_element_to_show = NodePath("../../../Загрузить игру")
@@ -107,28 +158,30 @@ menu_element_to_show = NodePath("../../../Загрузить игру")
 [node name="Галерея" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
+focus_mode = 0
 theme = ExtResource("8_7egbi")
 disabled = true
 text = "Галерея"
-flat = true
 alignment = 0
+script = ExtResource("3_sfhbu")
 
 [node name="Экстра" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
+focus_mode = 0
 theme = ExtResource("8_7egbi")
 disabled = true
 text = "Экстра"
-flat = true
 alignment = 0
+script = ExtResource("3_sfhbu")
 
 [node name="Настройки" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
 size_flags_horizontal = 0
+focus_mode = 0
 theme = ExtResource("8_7egbi")
 text = "Настройки
 "
-flat = true
 alignment = 0
 script = ExtResource("3_sfhbu")
 menu_element_to_show = NodePath("../../../Настройки")
@@ -136,9 +189,9 @@ menu_element_to_show = NodePath("../../../Настройки")
 [node name="Авторы" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
 size_flags_horizontal = 0
+focus_mode = 0
 theme = ExtResource("8_7egbi")
 text = "Авторы"
-flat = true
 alignment = 0
 script = ExtResource("3_sfhbu")
 menu_element_to_show = NodePath("../../../Авторы")
@@ -146,10 +199,11 @@ menu_element_to_show = NodePath("../../../Авторы")
 [node name="Выйти" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
+focus_mode = 0
 theme = ExtResource("8_7egbi")
 text = "Выйти"
-flat = true
 alignment = 0
+script = ExtResource("11_ahf2s")
 
 [node name="Загрузить игру" parent="." instance=ExtResource("5_rnans")]
 visible = false
@@ -194,7 +248,7 @@ offset_right = 300.0
 offset_bottom = -346.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("4_w7rwt")
+theme = ExtResource("8_7egbi")
 text = "Авторы"
 horizontal_alignment = 1
 
@@ -215,7 +269,7 @@ grow_vertical = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Авторы/VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("4_w7rwt")
+theme = ExtResource("8_7egbi")
 bbcode_enabled = true
 text = "[center]Разработка: [url=https://ozkitsune.itch.io/]O3ZY[/url]
 Сценарий: [url=https://ozkitsune.itch.io/]O3ZY[/url]
@@ -225,9 +279,10 @@ text = "[center]Разработка: [url=https://ozkitsune.itch.io/]O3ZY[/url]
 
 Автор идеи: [url=https://itch.io/profile/aki-ona]Akiona[/url]
 
-Pen[color=red]q[/color]uins Software"
+[url=https://penquins.software/]Pen[color=red]q[/color]uins Software[/url]"
 fit_content = true
 scroll_active = false
+script = ExtResource("15_ddq1b")
 
 [node name="Вернуться" type="Button" parent="Авторы"]
 layout_mode = 1
@@ -243,8 +298,36 @@ offset_bottom = 380.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
-theme = ExtResource("4_w7rwt")
+focus_mode = 0
+theme = ExtResource("8_7egbi")
 text = "Вернуться в меню "
+script = ExtResource("16_ruy8w")
+
+[node name="Затемнение" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="Затемнение"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.00784314, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Затемнение"]
+libraries = {
+"": SubResource("AnimationLibrary_l0v30")
+}
+autoplay = "fadeout"
 
 [connection signal="return_was_pressed" from="Главный экран" to="." method="_show_main_menu"]
 [connection signal="pressed" from="Главный экран/VBoxContainer/Начать игру" to="." method="_start_game"]

@@ -1,10 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://cka2t7km7vv8b"]
+[gd_scene load_steps=11 format=3 uid="uid://cka2t7km7vv8b"]
 
 [ext_resource type="Script" path="res://source/pause.gd" id="1_cwqt0"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_6swir"]
 [ext_resource type="PackedScene" uid="uid://c1njjadxa43bg" path="res://scenes/settings.tscn" id="2_1824l"]
-[ext_resource type="Theme" uid="uid://b20uw8pswcq8l" path="res://theme.tres" id="3_0581p"]
+[ext_resource type="Texture2D" uid="uid://d2o1i3yrnwba7" path="res://gui/фон Меню в игре.png" id="2_ug3ph"]
 [ext_resource type="Script" path="res://source/main_menu/main_menu_button.gd" id="3_jcada"]
+[ext_resource type="Script" path="res://source/button_with_sound.gd" id="4_3v4p6"]
+[ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="4_ns6aa"]
 [ext_resource type="PackedScene" uid="uid://beneekmk33mka" path="res://scenes/save_manager/save_list.tscn" id="5_00ptl"]
 
 [sub_resource type="InputEventAction" id="InputEventAction_jt326"]
@@ -21,62 +23,92 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_cwqt0")
-main = NodePath("Главный экран")
+main = NodePath("Main")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.941176)
+texture = ExtResource("2_ug3ph")
+expand_mode = 1
 
-[node name="Главный экран" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Main" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 script = ExtResource("2_6swir")
 
-[node name="Продолжить" type="Button" parent="Главный экран"]
+[node name="Продолжить" type="Button" parent="Main"]
 layout_mode = 2
-theme = ExtResource("3_0581p")
+offset_left = 355.0
+offset_top = 347.0
+offset_right = 731.0
+offset_bottom = 416.0
+rotation = -0.0874057
+focus_mode = 0
+theme = ExtResource("4_ns6aa")
+theme_override_font_sizes/font_size = 64
 shortcut = SubResource("Shortcut_pytoy")
 shortcut_in_tooltip = false
 text = "Продолжить"
+script = ExtResource("4_3v4p6")
 
-[node name="Сохранить игру" type="Button" parent="Главный экран"]
+[node name="Сохранить игру" type="Button" parent="Main"]
 layout_mode = 2
-theme = ExtResource("3_0581p")
+offset_left = 414.0
+offset_top = 431.0
+offset_right = 790.0
+offset_bottom = 500.0
+rotation = -0.083248
+focus_mode = 0
+theme = ExtResource("4_ns6aa")
+theme_override_font_sizes/font_size = 64
 text = "Сохранить игру"
+script = ExtResource("4_3v4p6")
 
-[node name="Загрузить игру" type="Button" parent="Главный экран" node_paths=PackedStringArray("menu_element_to_show")]
+[node name="Загрузить игру" type="Button" parent="Main" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
-theme = ExtResource("3_0581p")
+offset_left = 461.0
+offset_top = 519.0
+offset_right = 837.0
+offset_bottom = 588.0
+rotation = -0.0884918
+focus_mode = 0
+theme = ExtResource("4_ns6aa")
+theme_override_font_sizes/font_size = 64
 text = "Загрузить игру"
 script = ExtResource("3_jcada")
 menu_element_to_show = NodePath("../../Загрузить игру")
 
-[node name="Настройки" type="Button" parent="Главный экран" node_paths=PackedStringArray("menu_element_to_show")]
+[node name="Настройки" type="Button" parent="Main" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
-theme = ExtResource("3_0581p")
+offset_left = 487.0
+offset_top = 612.0
+offset_right = 863.0
+offset_bottom = 681.0
+rotation = -0.111697
+focus_mode = 0
+theme = ExtResource("4_ns6aa")
+theme_override_font_sizes/font_size = 64
 text = "Настройки"
 script = ExtResource("3_jcada")
 menu_element_to_show = NodePath("../../Настройки")
 
-[node name="Выйти в меню" type="Button" parent="Главный экран"]
+[node name="Выйти в меню" type="Button" parent="Main"]
 layout_mode = 2
-theme = ExtResource("3_0581p")
+offset_left = 510.0
+offset_top = 704.0
+offset_right = 886.0
+offset_bottom = 773.0
+rotation = -0.106777
+focus_mode = 0
+theme = ExtResource("4_ns6aa")
+theme_override_font_sizes/font_size = 64
 text = "Выйти в меню"
+script = ExtResource("4_3v4p6")
 
 [node name="Настройки" parent="." instance=ExtResource("2_1824l")]
 visible = false
@@ -86,11 +118,11 @@ layout_mode = 1
 visible = false
 layout_mode = 1
 
-[connection signal="pressed" from="Главный экран/Продолжить" to="." method="_on_continue_pressed"]
-[connection signal="pressed" from="Главный экран/Сохранить игру" to="." method="_on_save_pressed"]
-[connection signal="menu_element_was_selected" from="Главный экран/Загрузить игру" to="." method="_show_menu_element"]
-[connection signal="menu_element_was_selected" from="Главный экран/Настройки" to="." method="_show_menu_element"]
-[connection signal="pressed" from="Главный экран/Выйти в меню" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Main/Продолжить" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="Main/Сохранить игру" to="." method="_on_save_pressed"]
+[connection signal="menu_element_was_selected" from="Main/Загрузить игру" to="." method="_show_menu_element"]
+[connection signal="menu_element_was_selected" from="Main/Настройки" to="." method="_show_menu_element"]
+[connection signal="pressed" from="Main/Выйти в меню" to="." method="_on_exit_pressed"]
 [connection signal="return_was_pressed" from="Настройки" to="." method="_show_main_menu"]
 [connection signal="load_save" from="Загрузить игру" to="." method="_on_load_save"]
 [connection signal="return_was_pressed" from="Загрузить игру" to="." method="_show_main_menu"]

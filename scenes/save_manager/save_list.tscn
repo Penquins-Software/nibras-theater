@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://beneekmk33mka"]
+[gd_scene load_steps=7 format=3 uid="uid://beneekmk33mka"]
 
 [ext_resource type="Script" path="res://scenes/save_manager/save_list.gd" id="1_5bd7o"]
 [ext_resource type="PackedScene" uid="uid://droyt1nlk5p3g" path="res://scenes/save_manager/save_container.tscn" id="1_u6q87"]
-[ext_resource type="Theme" uid="uid://b20uw8pswcq8l" path="res://theme.tres" id="2_sxw42"]
 [ext_resource type="Texture2D" uid="uid://bo0h30eo6twp2" path="res://gui/фон Сохранения и настройки.png" id="2_xa1r3"]
+[ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="3_o1e3c"]
+[ext_resource type="Theme" uid="uid://cgymxxcr7u4ai" path="res://scenes/save_manager/save_theme.tres" id="4_qiond"]
+[ext_resource type="Script" path="res://source/button_with_sound.gd" id="5_gk272"]
 
 [node name="SaveList" type="Control" node_paths=PackedStringArray("saves_container", "confirmation_dialog", "return_button")]
 layout_mode = 3
@@ -40,7 +42,7 @@ offset_right = 300.0
 offset_bottom = -346.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_sxw42")
+theme = ExtResource("3_o1e3c")
 text = "Сохранения"
 horizontal_alignment = 1
 
@@ -58,6 +60,7 @@ offset_right = 400.0
 offset_bottom = 300.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("4_qiond")
 horizontal_scroll_mode = 0
 
 [node name="Saves" type="VBoxContainer" parent="ScrollContainer"]
@@ -82,8 +85,10 @@ offset_bottom = 380.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
-theme = ExtResource("2_sxw42")
+focus_mode = 0
+theme = ExtResource("3_o1e3c")
 text = "Вернуться в меню "
+script = ExtResource("5_gk272")
 
 [node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
 title = "Удалить сохранение"

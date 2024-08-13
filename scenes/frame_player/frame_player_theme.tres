@@ -1,7 +1,31 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://c4e2ygeqqqaxy"]
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://c4e2ygeqqqaxy"]
 
 [ext_resource type="FontFile" uid="uid://d2s4oq5a4rkca" path="res://gui/Мелочи/Шрифт для меню Neucha/Neucha-Regular.ttf" id="1_h8ci1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x0fyk"]
+bg_color = Color(0.560784, 0.0352941, 0.0352941, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qg2lc"]
+bg_color = Color(1, 0, 0, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_33kth"]
+bg_color = Color(0.847059, 0.792157, 0.670588, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
 
 [resource]
 default_font = ExtResource("1_h8ci1")
 default_font_size = 32
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_x0fyk")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_qg2lc")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_33kth")

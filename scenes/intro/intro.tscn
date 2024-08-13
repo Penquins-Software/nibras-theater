@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cnwopdqobme0s"]
+[gd_scene load_steps=8 format=3 uid="uid://cnwopdqobme0s"]
 
 [ext_resource type="Script" path="res://scenes/intro/intro.gd" id="1_6spyc"]
 [ext_resource type="Texture2D" uid="uid://b8vlfyorxb0s2" path="res://graphics/penquins/5.png" id="1_cc2cc"]
 [ext_resource type="PackedScene" uid="uid://1ldra2lpi55u" path="res://scenes/menu/menu.tscn" id="2_pwpon"]
+[ext_resource type="Texture2D" uid="uid://bu1fc76i5fe2v" path="res://gui/Главное меню и настройки/Лого.png" id="4_qlcnh"]
 
 [sub_resource type="Animation" id="Animation_qdkep"]
 length = 0.001
@@ -17,6 +18,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 0, 0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_k7b1u"]
@@ -33,6 +46,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect2:modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3, 4, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 0, 0, 0), Color(1, 0, 0, 1), Color(1, 0, 0, 1), Color(1, 0, 0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7bqhd"]
@@ -52,16 +77,16 @@ script = ExtResource("1_6spyc")
 main_menu = ExtResource("2_pwpon")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.445243, 0.513055, 0.892727, 1)
+color = Color(0.00784314, 0, 0, 1)
 
 [node name="TextureRect" type="TextureRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -83,5 +108,21 @@ libraries = {
 "": SubResource("AnimationLibrary_7bqhd")
 }
 autoplay = "intro"
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+modulate = Color(1, 0, 0, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -294.5
+offset_top = -111.0
+offset_right = 294.5
+offset_bottom = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_qlcnh")
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

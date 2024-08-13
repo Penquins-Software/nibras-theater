@@ -1,6 +1,41 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://o18on08dn11a"]
+[gd_resource type="Theme" load_steps=16 format=3 uid="uid://o18on08dn11a"]
 
 [ext_resource type="FontFile" uid="uid://d2s4oq5a4rkca" path="res://gui/Мелочи/Шрифт для меню Neucha/Neucha-Regular.ttf" id="1_7wijp"]
+[ext_resource type="Texture2D" uid="uid://c1amaowg6b1yk" path="res://gui/Главное меню и настройки/Подчеркивание2.png" id="1_018o2"]
+[ext_resource type="Texture2D" uid="uid://depkj6r6f51xv" path="res://gui/Мелочи/Бегунок для настроек_20px.png" id="2_pm6jo"]
+[ext_resource type="Texture2D" uid="uid://cgfqbtk2wni12" path="res://characters/empty_pixel.png" id="3_u0dob"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_264wq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ml3vq"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_psurc"]
+texture = ExtResource("1_018o2")
+expand_margin_left = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sah0a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2l0k3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3talv"]
+bg_color = Color(0.286275, 0.0117647, 0, 0.501961)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xkoy0"]
+bg_color = Color(0.286275, 0.0117647, 0, 0.501961)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5mul0"]
+bg_color = Color(0.286275, 0.0117647, 0, 0.501961)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yyfgs"]
+bg_color = Color(0.286275, 0.0117647, 0, 0.501961)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0pgj8"]
+bg_color = Color(0.286275, 0.0117647, 0, 0.501961)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfe73"]
+bg_color = Color(0.286275, 0.0117647, 0, 0.501961)
 
 [resource]
 default_font = ExtResource("1_7wijp")
@@ -21,3 +56,20 @@ Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
 Button/constants/h_separation = 4
 Button/constants/icon_max_width = 0
 Button/constants/outline_size = 0
+Button/styles/disabled = SubResource("StyleBoxEmpty_264wq")
+Button/styles/focus = SubResource("StyleBoxEmpty_ml3vq")
+Button/styles/hover = SubResource("StyleBoxTexture_psurc")
+Button/styles/normal = SubResource("StyleBoxEmpty_sah0a")
+Button/styles/pressed = SubResource("StyleBoxEmpty_2l0k3")
+HSlider/icons/grabber = ExtResource("2_pm6jo")
+HSlider/icons/grabber_disabled = ExtResource("2_pm6jo")
+HSlider/icons/grabber_highlight = ExtResource("2_pm6jo")
+Label/colors/font_color = Color(0.847059, 0.792157, 0.670588, 1)
+LineEdit/styles/normal = SubResource("StyleBoxFlat_3talv")
+MenuButton/styles/disabled = SubResource("StyleBoxFlat_xkoy0")
+MenuButton/styles/hover = SubResource("StyleBoxFlat_5mul0")
+MenuButton/styles/normal = SubResource("StyleBoxFlat_yyfgs")
+MenuButton/styles/pressed = SubResource("StyleBoxFlat_0pgj8")
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_cfe73")
+RichTextLabel/colors/default_color = Color(0.847059, 0.792157, 0.670588, 1)
+SpinBox/icons/updown = ExtResource("3_u0dob")

@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://scenes/frame_player/text_box.gd" id="1_aporf"]
 [ext_resource type="PackedScene" uid="uid://6jobhq66ma72" path="res://addons/rewind_story_engine/scene_builder/scene_builder.tscn" id="1_k8j7s"]
 [ext_resource type="Script" path="res://scenes/frame_player/frame_player.gd" id="1_s8ibl"]
-[ext_resource type="Texture2D" uid="uid://cf02keepqjk1w" path="res://gui/Мелочи/Игра/Для текста/1.png" id="4_0qrvt"]
 [ext_resource type="Texture2D" uid="uid://dxi8pjgq7xko1" path="res://gui/Мелочи/Игра/Для текста/2.png" id="5_tf6n5"]
 [ext_resource type="Texture2D" uid="uid://d1lfq8nd4lfrr" path="res://gui/Мелочи/Игра/Для текста/Плашка для текста 1.png" id="6_2j1jh"]
 [ext_resource type="Theme" uid="uid://c4e2ygeqqqaxy" path="res://scenes/frame_player/frame_player_theme.tres" id="7_eyx6w"]
@@ -28,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://d4ckrrm703340" path="res://gui/Мелочи/Игра/Нажатие/Следующий кадр.png" id="17_dm1k2"]
 [ext_resource type="Texture2D" uid="uid://b6120qec0nk2n" path="res://gui/Мелочи/Игра/Перемотка.png" id="18_w0tjf"]
 [ext_resource type="Texture2D" uid="uid://dp0hmwblyq4d2" path="res://gui/Мелочи/Игра/Нажатие/Перемотка.png" id="19_kimg4"]
+[ext_resource type="Script" path="res://source/button_with_sound.gd" id="23_s1i53"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x53o4"]
 
@@ -43,7 +43,7 @@ action = &"pause"
 [sub_resource type="Shortcut" id="Shortcut_58d3f"]
 events = [SubResource("InputEventAction_nj2hj")]
 
-[node name="FramePlayer" type="Control" node_paths=PackedStringArray("text_box", "selection_menu", "logger", "scene_builder", "pause_button", "music_player", "bgs_player", "sfx_player")]
+[node name="FramePlayer" type="Control" node_paths=PackedStringArray("interface_container", "text_box", "selection_menu", "logger", "scene_builder", "pause_button", "auto_play_button", "music_player", "bgs_player", "sfx_player")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -51,11 +51,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_s8ibl")
-text_box = NodePath("TextBox")
-selection_menu = NodePath("SelectionMenu")
-logger = NodePath("Logger")
+interface_container = NodePath("Interface")
+text_box = NodePath("Interface/TextBox")
+selection_menu = NodePath("Interface/SelectionMenu")
+logger = NodePath("Interface/Logger")
 scene_builder = NodePath("SubViewportContainer/SubViewport/SceneBuilder")
-pause_button = NodePath("Pause")
+pause_button = NodePath("Interface/Pause")
+auto_play_button = NodePath("Interface/TextBox/Buttons/Auto")
 music_player = NodePath("MusicPlayer")
 bgs_player = NodePath("BGSPlayer")
 sfx_player = NodePath("SFXPlayer")
@@ -78,7 +80,15 @@ render_target_update_mode = 4
 
 [node name="SceneBuilder" parent="SubViewportContainer/SubViewport" instance=ExtResource("1_k8j7s")]
 
-[node name="TextBox" type="Control" parent="." node_paths=PackedStringArray("speaker_label", "text_label", "marker")]
+[node name="Interface" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextBox" type="Control" parent="Interface" node_paths=PackedStringArray("speaker_label", "text_label", "marker")]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -91,10 +101,8 @@ script = ExtResource("1_aporf")
 speaker_label = NodePath("Speaker")
 text_label = NodePath("Text/Label")
 marker = NodePath("Marker")
-marker_next_text = ExtResource("4_0qrvt")
-marker_next_frame = ExtResource("5_tf6n5")
 
-[node name="Background" type="TextureRect" parent="TextBox"]
+[node name="Background" type="TextureRect" parent="Interface/TextBox"]
 modulate = Color(1, 1, 1, 0.909804)
 layout_mode = 1
 anchors_preset = 15
@@ -106,7 +114,7 @@ grow_vertical = 2
 texture = ExtResource("6_2j1jh")
 expand_mode = 1
 
-[node name="Speaker" type="RichTextLabel" parent="TextBox"]
+[node name="Speaker" type="RichTextLabel" parent="Interface/TextBox"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -122,7 +130,7 @@ bbcode_enabled = true
 text = "[color=orange]Рассказчик"
 scroll_active = false
 
-[node name="Text" type="MarginContainer" parent="TextBox"]
+[node name="Text" type="MarginContainer" parent="Interface/TextBox"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -137,16 +145,16 @@ theme_override_constants/margin_top = 70
 theme_override_constants/margin_right = 100
 theme_override_constants/margin_bottom = 40
 
-[node name="Label" type="RichTextLabel" parent="TextBox/Text"]
+[node name="Label" type="RichTextLabel" parent="Interface/TextBox/Text"]
 layout_mode = 2
 theme = ExtResource("7_eyx6w")
 bbcode_enabled = true
-text = "Здесь будет выводиться текст.  [img=24]res://gui/Мелочи/Игра/Для текста/1.png[/img] ssssssssssssss ssssssssssss ssssssssssssssss ssssssssssssssssssssss ssssssssssssssssssssssssssssssssssssssssssssssssssssssssss sssssssssssssssssssssssssssssssss"
+text = "Здесь будет выводиться текст."
 fit_content = true
 scroll_active = false
 visible_characters_behavior = 1
 
-[node name="Marker" type="TextureRect" parent="TextBox"]
+[node name="Marker" type="TextureRect" parent="Interface/TextBox"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -162,21 +170,20 @@ grow_vertical = 0
 texture = ExtResource("5_tf6n5")
 expand_mode = 1
 
-[node name="Buttons" type="Control" parent="TextBox"]
+[node name="Buttons" type="Control" parent="Interface/TextBox"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 748.0
-offset_top = -49.0
-offset_right = 788.0
-offset_bottom = -9.0
+offset_left = 730.0
+offset_top = -40.0
+offset_right = 770.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Auto" type="TextureButton" parent="TextBox/Buttons"]
+[node name="Auto" type="TextureButton" parent="Interface/TextBox/Buttons"]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 2.0
@@ -190,7 +197,7 @@ texture_hover = ExtResource("9_iqu7r")
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Log" type="TextureButton" parent="TextBox/Buttons"]
+[node name="Log" type="TextureButton" parent="Interface/TextBox/Buttons"]
 layout_mode = 0
 offset_left = 76.0
 offset_top = -1.0
@@ -203,7 +210,7 @@ texture_hover = ExtResource("11_uvccp")
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Hide" type="TextureButton" parent="TextBox/Buttons"]
+[node name="Hide" type="TextureButton" parent="Interface/TextBox/Buttons"]
 layout_mode = 0
 offset_left = 132.0
 offset_top = 1.0
@@ -216,7 +223,7 @@ texture_hover = ExtResource("13_1wpnn")
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Prev" type="TextureButton" parent="TextBox/Buttons"]
+[node name="Prev" type="TextureButton" parent="Interface/TextBox/Buttons"]
 layout_mode = 0
 offset_left = 22.0
 offset_top = 46.0
@@ -229,33 +236,33 @@ texture_hover = ExtResource("15_6sg52")
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Next" type="TextureButton" parent="TextBox/Buttons"]
+[node name="Next" type="TextureButton" parent="Interface/TextBox/Buttons"]
 layout_mode = 0
 offset_left = 72.0
 offset_top = 45.0
 offset_right = 112.0
 offset_bottom = 85.0
-tooltip_text = "Следующий кадр (ЛКМ | колёсико вниз)"
+tooltip_text = "Следующий кадр (ЛКМ или колёсико вниз)"
 texture_normal = ExtResource("16_pti3f")
 texture_pressed = ExtResource("17_dm1k2")
 texture_hover = ExtResource("17_dm1k2")
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Rewind" type="TextureButton" parent="TextBox/Buttons"]
+[node name="Rewind" type="TextureButton" parent="Interface/TextBox/Buttons"]
 layout_mode = 0
 offset_left = 129.0
 offset_top = 50.0
 offset_right = 169.0
 offset_bottom = 90.0
-tooltip_text = "Перемотка (держать LCTRL)"
+tooltip_text = "Перемотка (держать Left CTRL)"
 texture_normal = ExtResource("18_w0tjf")
 texture_pressed = ExtResource("19_kimg4")
 texture_hover = ExtResource("19_kimg4")
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="SelectionMenu" type="VBoxContainer" parent="."]
+[node name="SelectionMenu" type="VBoxContainer" parent="Interface"]
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -272,7 +279,7 @@ grow_vertical = 2
 alignment = 1
 script = ExtResource("7_pim0h")
 
-[node name="Pause" type="Button" parent="."]
+[node name="Pause" type="Button" parent="Interface"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -294,8 +301,9 @@ theme_override_styles/pressed = SubResource("StyleBoxTexture_i3bp3")
 shortcut = SubResource("Shortcut_58d3f")
 shortcut_in_tooltip = false
 text = "Пауза"
+script = ExtResource("23_s1i53")
 
-[node name="Logger" type="Control" parent="." node_paths=PackedStringArray("text_label")]
+[node name="Logger" type="Control" parent="Interface" node_paths=PackedStringArray("text_label")]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -306,7 +314,7 @@ grow_vertical = 2
 script = ExtResource("8_bvskx")
 text_label = NodePath("MarginContainer/RichTextLabel")
 
-[node name="ColorRect" type="ColorRect" parent="Logger"]
+[node name="ColorRect" type="ColorRect" parent="Interface/Logger"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -315,7 +323,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.941176)
 
-[node name="MarginContainer" type="MarginContainer" parent="Logger"]
+[node name="MarginContainer" type="MarginContainer" parent="Interface/Logger"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -327,7 +335,7 @@ theme_override_constants/margin_top = 80
 theme_override_constants/margin_right = 160
 theme_override_constants/margin_bottom = 80
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Logger/MarginContainer"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Interface/Logger/MarginContainer"]
 layout_mode = 2
 theme = ExtResource("7_eyx6w")
 bbcode_enabled = true
@@ -335,7 +343,7 @@ text = "[table=3]"
 scroll_following = true
 threaded = true
 
-[node name="Close" type="Button" parent="Logger"]
+[node name="Close" type="Button" parent="Interface/Logger"]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -348,6 +356,7 @@ grow_horizontal = 0
 theme = ExtResource("8_0c082")
 icon = ExtResource("9_e67gh")
 flat = true
+script = ExtResource("23_s1i53")
 
 [node name="VoicePlayer" type="AudioStreamPlayer" parent="."]
 
@@ -363,11 +372,29 @@ script = ExtResource("13_6njry")
 
 [connection signal="bgs" from="SubViewportContainer/SubViewport/SceneBuilder" to="." method="_on_scene_builder_bgs"]
 [connection signal="music" from="SubViewportContainer/SubViewport/SceneBuilder" to="." method="_on_scene_builder_music"]
-[connection signal="finished" from="TextBox" to="." method="_on_text_box_finished"]
-[connection signal="option_selected" from="SelectionMenu" to="." method="_on_selection_menu_option_selected"]
-[connection signal="mouse_entered" from="Pause" to="." method="_on_pause_mouse_entered"]
-[connection signal="mouse_exited" from="Pause" to="." method="_on_pause_mouse_exited"]
-[connection signal="pressed" from="Pause" to="." method="_on_pause_pressed"]
-[connection signal="hidden" from="Logger" to="." method="_on_logger_close_pressed"]
-[connection signal="pressed" from="Logger/Close" to="." method="_on_logger_close_pressed"]
-[connection signal="pressed" from="Logger/Close" to="Logger" method="_on_close_pressed"]
+[connection signal="finished" from="Interface/TextBox" to="." method="_on_text_box_finished"]
+[connection signal="mouse_entered" from="Interface/TextBox/Buttons/Auto" to="." method="_on_gui_mouse_entered"]
+[connection signal="mouse_exited" from="Interface/TextBox/Buttons/Auto" to="." method="_on_gui_mouse_exited"]
+[connection signal="toggled" from="Interface/TextBox/Buttons/Auto" to="." method="set_auto_play"]
+[connection signal="mouse_entered" from="Interface/TextBox/Buttons/Log" to="." method="_on_gui_mouse_entered"]
+[connection signal="mouse_exited" from="Interface/TextBox/Buttons/Log" to="." method="_on_gui_mouse_exited"]
+[connection signal="pressed" from="Interface/TextBox/Buttons/Log" to="." method="_show_logger"]
+[connection signal="mouse_entered" from="Interface/TextBox/Buttons/Hide" to="." method="_on_gui_mouse_entered"]
+[connection signal="mouse_exited" from="Interface/TextBox/Buttons/Hide" to="." method="_on_gui_mouse_exited"]
+[connection signal="pressed" from="Interface/TextBox/Buttons/Hide" to="." method="switch_interface_visability"]
+[connection signal="mouse_entered" from="Interface/TextBox/Buttons/Prev" to="." method="_on_gui_mouse_entered"]
+[connection signal="mouse_exited" from="Interface/TextBox/Buttons/Prev" to="." method="_on_gui_mouse_exited"]
+[connection signal="pressed" from="Interface/TextBox/Buttons/Prev" to="." method="prev_frame"]
+[connection signal="mouse_entered" from="Interface/TextBox/Buttons/Next" to="." method="_on_gui_mouse_entered"]
+[connection signal="mouse_exited" from="Interface/TextBox/Buttons/Next" to="." method="_on_gui_mouse_exited"]
+[connection signal="pressed" from="Interface/TextBox/Buttons/Next" to="." method="next_frame"]
+[connection signal="button_down" from="Interface/TextBox/Buttons/Rewind" to="." method="_start_rewind"]
+[connection signal="button_up" from="Interface/TextBox/Buttons/Rewind" to="." method="_stop_rewind"]
+[connection signal="mouse_entered" from="Interface/TextBox/Buttons/Rewind" to="." method="_on_gui_mouse_entered"]
+[connection signal="mouse_exited" from="Interface/TextBox/Buttons/Rewind" to="." method="_on_gui_mouse_exited"]
+[connection signal="option_selected" from="Interface/SelectionMenu" to="." method="_on_selection_menu_option_selected"]
+[connection signal="mouse_entered" from="Interface/Pause" to="." method="_on_gui_mouse_entered"]
+[connection signal="mouse_exited" from="Interface/Pause" to="." method="_on_gui_mouse_exited"]
+[connection signal="pressed" from="Interface/Pause" to="." method="_on_pause_pressed"]
+[connection signal="hidden" from="Interface/Logger" to="." method="_on_logger_close_pressed"]
+[connection signal="pressed" from="Interface/Logger/Close" to="." method="_on_logger_close_pressed"]

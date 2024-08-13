@@ -14,6 +14,7 @@ config/name="Nibras Theater"
 run/main_scene="res://scenes/intro/intro.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 run/max_fps=60
+boot_splash/bg_color=Color(0.00784314, 0, 0, 1)
 boot_splash/show_image=false
 config/icon="res://graphics/penquins/4.png"
 
@@ -22,6 +23,7 @@ config/icon="res://graphics/penquins/4.png"
 RewindStoryEngine="*res://addons/rewind_story_engine/rse_handler.gd"
 Settings="*res://source/settings/settings.gd"
 SaveManager="*res://source/save/save_manager.gd"
+UISoundManager="*res://source/ui_sound_manager.gd"
 
 [debug]
 
