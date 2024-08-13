@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://chapwb8od2d05"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_uwfuf"]
+[ext_resource type="Texture2D" uid="uid://1siviqqoqycs" path="res://cg_arts/арлет/1.png" id="2_ofpg6"]
+[ext_resource type="Texture2D" uid="uid://dv5gucdvx7w4p" path="res://cg_arts/арлет/2.png" id="3_8xarc"]
+[ext_resource type="Texture2D" uid="uid://bsloryl75jsj3" path="res://cg_arts/арлет/3.png" id="4_mxdnt"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/bleep_player.gd" id="5_x1n8w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4y56u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ofpg6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8xarc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mxdnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8xarc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="Арлет" type="Node2D" node_paths=PackedStringArray("mouth", "bleep_player")]
+script = ExtResource("1_uwfuf")
+mouth = NodePath("Mouth")
+eyes_frame_close = 2
+bleep_player = NodePath("BleepPlayer")
+
+[node name="Mouth" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_4y56u")
+frame_progress = 0.411496
+
+[node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
+script = ExtResource("5_x1n8w")

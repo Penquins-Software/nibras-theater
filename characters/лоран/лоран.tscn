@@ -1113,4 +1113,5 @@ sprite_frames = SubResource("SpriteFrames_uspv6")
 animation = &"Грустный"
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Bleep"
 script = ExtResource("13_trhfk")

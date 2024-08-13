@@ -1815,4 +1815,5 @@ sprite_frames = SubResource("SpriteFrames_w5m3s")
 animation = &"Сильно испуган"
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Bleep"
 script = ExtResource("5_2hi2d")

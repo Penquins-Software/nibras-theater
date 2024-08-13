@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbrl6xplj51r5"]
+
+[ext_resource type="Script" path="res://transititions/leitmotivs/leitmotiv.gd" id="1_kw3f3"]
+[ext_resource type="AudioStream" uid="uid://bkuwwofs568kv" path="res://audio/leitmotivs/didier_motif.mp3" id="2_14bny"]
+
+[node name="Дидье" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_kw3f3")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_14bny")
+autoplay = true
+bus = &"Music"
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

@@ -14,7 +14,8 @@ var transitition: RSETransitition
 
 func play() -> void:
 	z_index = 100
-	player.play(animation_name)
+	if player != null:
+		player.play(animation_name)
 
 
 func stop() -> void:

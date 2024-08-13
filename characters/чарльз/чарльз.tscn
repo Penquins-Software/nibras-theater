@@ -911,4 +911,5 @@ sprite_frames = SubResource("SpriteFrames_pb7os")
 animation = &"Удивление"
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Bleep"
 script = ExtResource("14_uhgen")

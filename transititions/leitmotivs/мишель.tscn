@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxlfsqru0yda1"]
+
+[ext_resource type="Script" path="res://transititions/leitmotivs/leitmotiv.gd" id="1_hxaia"]
+[ext_resource type="AudioStream" uid="uid://cnvvue8dyv0hr" path="res://audio/leitmotivs/michelle_motif.mp3" id="2_487ts"]
+
+[node name="Мишель" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_hxaia")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_487ts")
+autoplay = true
+bus = &"Music"
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

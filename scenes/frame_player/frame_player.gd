@@ -4,6 +4,7 @@ extends Control
 
 signal pause()
 signal selection_started()
+signal end()
 
 
 const REWIND_DELAY_TIME: float = 0.02
@@ -125,6 +126,7 @@ func next_frame() -> void:
 	var prev_frame_index = current_frame_index
 	current_frame_index = scene_builder.next_frame()
 	if prev_frame_index == current_frame_index:
+		end.emit()
 		return
 	if prev_frame_index > -1:
 		history.append([episode.id, prev_frame_index])
@@ -250,7 +252,8 @@ func condition(frame: RSEFrameCondition) -> void:
 
 func do_transitition(frame: RSEFrameTransitition) -> void:
 	is_transitition = true
-	text_box.clear()
+	if episode.id != 95:
+		text_box.clear()
 	#text_box.hide()
 	var transitition: RSETransitition = RewindStoryEngine.story.transititions[frame.transitition_id]
 	var transitition_controller = load(transitition.path_to_scene).instantiate() as RSEBaseTransititionController

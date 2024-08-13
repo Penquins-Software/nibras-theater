@@ -1506,4 +1506,5 @@ sprite_frames = SubResource("SpriteFrames_i6dk6")
 animation = &"Спокойствие"
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Bleep"
 script = ExtResource("22_y440g")

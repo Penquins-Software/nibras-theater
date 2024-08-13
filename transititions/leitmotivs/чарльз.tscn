@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsscha5cnbyqi"]
+
+[ext_resource type="Script" path="res://transititions/leitmotivs/leitmotiv.gd" id="1_efp17"]
+[ext_resource type="AudioStream" uid="uid://c1ws5ipjyo04h" path="res://audio/leitmotivs/charles_motif.mp3" id="2_1hn8r"]
+
+[node name="Чарльз" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_efp17")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_1hn8r")
+autoplay = true
+bus = &"Music"
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

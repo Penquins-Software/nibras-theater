@@ -23,6 +23,7 @@ energy = 1.5
 texture = ExtResource("3_m1o6r")
 
 [node name="Тьма" type="PointLight2D" parent="Сцена_СветСправа"]
+visible = false
 light_mask = 3
 scale = Vector2(-1, 1)
 blend_mode = 2

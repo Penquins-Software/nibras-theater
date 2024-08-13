@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bb7q5g13ttx4y"]
+
+[ext_resource type="Script" path="res://transititions/leitmotivs/leitmotiv.gd" id="1_ee8df"]
+[ext_resource type="AudioStream" uid="uid://d0r0xwyvjwkya" path="res://audio/leitmotivs/etienne_motif.mp3" id="2_47r3d"]
+
+[node name="Этьен" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ee8df")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_47r3d")
+autoplay = true
+bus = &"Music"
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

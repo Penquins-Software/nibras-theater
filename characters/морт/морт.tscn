@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://d2ojtr8f41gbb"]
+[gd_scene load_steps=25 format=3 uid="uid://d2ojtr8f41gbb"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_0npc7"]
 [ext_resource type="Texture2D" uid="uid://nkv3on65uvbh" path="res://characters/морт/обычная/голова.png" id="2_jicdm"]
@@ -6,18 +6,45 @@
 [ext_resource type="Texture2D" uid="uid://seet07e2syju" path="res://characters/морт/обычная/глаза_1_2.png" id="4_jfcqb"]
 [ext_resource type="Texture2D" uid="uid://dmohgfexluw0c" path="res://characters/морт/обычная/глаза_1_3.png" id="5_tgt6q"]
 [ext_resource type="Texture2D" uid="uid://cbagb35oa4823" path="res://characters/морт/обычная/рот_1_1.png" id="6_8tpcy"]
+[ext_resource type="Texture2D" uid="uid://65yxqfaer45x" path="res://characters/морт/обычная/рот_2_1.png" id="6_barvq"]
 [ext_resource type="Texture2D" uid="uid://dhmlb25xqv0iq" path="res://characters/морт/обычная/рот_1_2.png" id="7_dssbe"]
+[ext_resource type="Texture2D" uid="uid://b7114g1iyyfse" path="res://characters/морт/обычная/рот_2_2.png" id="7_rg8in"]
 [ext_resource type="Texture2D" uid="uid://bwfr18cm4734u" path="res://characters/морт/обычная/рот_1_3.png" id="8_jgyld"]
+[ext_resource type="Texture2D" uid="uid://deo6mg1reet08" path="res://characters/морт/обычная/рот_2_3.png" id="8_q4d5f"]
 [ext_resource type="Texture2D" uid="uid://mencycxd7ykn" path="res://characters/морт/обычная/брови_1.png" id="9_duplw"]
 [ext_resource type="Texture2D" uid="uid://bp2hs5gr4ts7a" path="res://characters/морт/обычная/волосы_лайн.png" id="10_to5m4"]
 [ext_resource type="Texture2D" uid="uid://dmcdbhyv5f3qi" path="res://characters/морт/обычная/основа.png" id="11_alkoc"]
 [ext_resource type="Texture2D" uid="uid://87a5hqsqybu2" path="res://characters/морт/усы_морт.png" id="11_gbak7"]
 [ext_resource type="Texture2D" uid="uid://cx2xby1q22fj" path="res://characters/морт/обычная/рука_правая_1.png" id="12_6tyxb"]
+[ext_resource type="Texture2D" uid="uid://cc7miqjyuk5wy" path="res://characters/морт/обычная/брови_2.png" id="12_bovy0"]
 [ext_resource type="Texture2D" uid="uid://cgfqbtk2wni12" path="res://characters/empty_pixel.png" id="13_jcxbh"]
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/bleep_player.gd" id="14_1alix"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2doan"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_hb5xi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jfcqb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tgt6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tgt6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jfcqb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hb5xi")
+}],
+"loop": false,
+"name": &"Веселье",
+"speed": 10.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("3_hb5xi")
@@ -46,6 +73,23 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("6_barvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rg8in")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_q4d5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rg8in")
+}],
+"loop": true,
+"name": &"Веселье",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("6_8tpcy")
 }, {
 "duration": 1.0,
@@ -64,6 +108,14 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grsxb"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_bovy0")
+}],
+"loop": true,
+"name": &"Веселье",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("9_duplw")
@@ -111,19 +163,17 @@ texture = ExtResource("2_jicdm")
 [node name="Eyes" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_2doan")
-animation = &"Спокойствие"
+animation = &"Веселье"
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_dxlf1")
-animation = &"Спокойствие"
-frame = 3
-frame_progress = 0.804845
+animation = &"Веселье"
 
 [node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_grsxb")
-animation = &"Спокойствие"
+animation = &"Веселье"
 
 [node name="Hair" type="Sprite2D" parent="Head"]
 light_mask = 3
@@ -151,4 +201,5 @@ sprite_frames = SubResource("SpriteFrames_pb7os")
 animation = &"Спокойствие"
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Bleep"
 script = ExtResource("14_1alix")

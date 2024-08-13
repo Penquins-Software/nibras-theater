@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://wteogc2rvq7p"]
+
+[ext_resource type="Script" path="res://transititions/leitmotivs/leitmotiv.gd" id="1_ivdls"]
+[ext_resource type="AudioStream" uid="uid://be2wjy0xn07bg" path="res://audio/leitmotivs/loran_motif.mp3" id="2_gtoae"]
+
+[node name="Лоран" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ivdls")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_gtoae")
+autoplay = true
+bus = &"Music"
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
