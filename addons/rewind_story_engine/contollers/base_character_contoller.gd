@@ -65,8 +65,8 @@ func _set_order(order_index: int) -> void:
 	if not twin == null:
 		twin.order = order_index - 1
 
-var scale_custom: int : set = _set_scale
-func _set_scale(value: int) -> void:
+var scale_custom: float : set = _set_scale
+func _set_scale(value: float) -> void:
 	scale_custom = value
 	scale = Vector2(value * sign(scale.x), value)
 

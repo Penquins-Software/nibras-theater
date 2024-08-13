@@ -155,6 +155,7 @@ func save_config() -> void:
 	config.set_value("general_settings", "locale", locale)
 	
 	config.set_value("screen_settings", "mode", int(screen_mode))
+	config.set_value("screen_settings", "screen_size", get_window().size)
 	
 	config.set_value("audio_settings", "master_volume", master_volume)
 	config.set_value("audio_settings", "sfx_volume", sfx_volume)
@@ -179,6 +180,9 @@ func load_config() -> void:
 		locale = config.get_value("general_settings", "locale", "en")
 		
 		screen_mode = config.get_value("screen_settings", "mode", DisplayServer.WINDOW_MODE_WINDOWED)
+	
+		get_window().size = config.get_value("screen_settings", "screen_size", Vector2(1280, 720))
+		get_window().move_to_center()
 		
 		master_volume = config.get_value("audio_settings", "master_volume", 50)
 		sfx_volume = config.get_value("audio_settings", "sfx_volume", 50)

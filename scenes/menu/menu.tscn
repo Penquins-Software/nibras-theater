@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=21 format=3 uid="uid://1ldra2lpi55u"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_h3ser"]
@@ -12,25 +12,11 @@
 [ext_resource type="Texture2D" uid="uid://b83la06spk4xf" path="res://gui/Главное меню и настройки/главное меню 3.png" id="6_25p8h"]
 [ext_resource type="Texture2D" uid="uid://bu1fc76i5fe2v" path="res://gui/Главное меню и настройки/Лого.png" id="7_nugf5"]
 [ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="8_7egbi"]
+[ext_resource type="Script" path="res://scenes/menu/continue_button.gd" id="10_tp6ug"]
 [ext_resource type="Script" path="res://scenes/menu/exit_button.gd" id="11_ahf2s"]
 [ext_resource type="Texture2D" uid="uid://bo0h30eo6twp2" path="res://gui/фон Сохранения и настройки.png" id="13_ivy2m"]
 [ext_resource type="Script" path="res://source/web_link.gd" id="15_ddq1b"]
 [ext_resource type="Script" path="res://source/button_with_sound.gd" id="16_ruy8w"]
-
-[sub_resource type="Animation" id="Animation_51bo5"]
-resource_name = "fadeout"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ColorRect:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
 
 [sub_resource type="Animation" id="Animation_0s6sp"]
 length = 0.001
@@ -45,6 +31,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_51bo5"]
+resource_name = "fadeout"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_l0v30"]
@@ -136,6 +137,7 @@ focus_mode = 0
 theme = ExtResource("8_7egbi")
 text = "Начать игру"
 alignment = 0
+script = ExtResource("16_ruy8w")
 
 [node name="Продолжить" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
@@ -144,6 +146,7 @@ focus_mode = 0
 theme = ExtResource("8_7egbi")
 text = "Продолжить"
 alignment = 0
+script = ExtResource("10_tp6ug")
 
 [node name="Загрузить игру" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
