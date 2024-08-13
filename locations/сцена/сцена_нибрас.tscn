@@ -1,0 +1,423 @@
+[gd_scene load_steps=25 format=3 uid="uid://8htvp4ej64ni"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_cgwbt"]
+[ext_resource type="Texture2D" uid="uid://b4k4hmds7n2em" path="res://characters/нибрас/sprites/пол.png" id="2_p58hw"]
+[ext_resource type="Texture2D" uid="uid://bctc6tmo0xj4r" path="res://characters/нибрас/sprites/дым под шторой 1 кр.png" id="2_rkmxl"]
+[ext_resource type="Texture2D" uid="uid://cidhp6l0nuc0x" path="res://characters/нибрас/sprites/левая штора.png" id="3_immjw"]
+[ext_resource type="Texture2D" uid="uid://d1idogd27pyhs" path="res://characters/нибрас/sprites/дым под шторой 2 кр.png" id="3_t5bfu"]
+[ext_resource type="Texture2D" uid="uid://bikoguc0f43xv" path="res://characters/нибрас/sprites/правая штора.png" id="4_50bpq"]
+[ext_resource type="Texture2D" uid="uid://dt5wwq1u3vork" path="res://characters/нибрас/sprites/дым 1.png" id="5_pr854"]
+[ext_resource type="Texture2D" uid="uid://wirsvto58y67" path="res://characters/нибрас/sprites/дым 2.png" id="6_uvuvx"]
+[ext_resource type="Texture2D" uid="uid://c8k1frembiktt" path="res://characters/нибрас/sprites/дым 3.png" id="7_d0rqy"]
+[ext_resource type="Texture2D" uid="uid://doxbnvyp8w203" path="res://characters/нибрас/sprites/дым 4.png" id="8_ddntv"]
+[ext_resource type="Texture2D" uid="uid://da7fng75cfmlh" path="res://locations/сцена/Светло/Задний занавес/Сцена. ЛЕВЫЙ задний занавес.png" id="9_xceou"]
+[ext_resource type="Texture2D" uid="uid://timqtqr5jlpb" path="res://locations/сцена/Светло/Задний занавес/Сцена. ПРАВЫЙ задний занавес.png" id="10_bl57g"]
+
+[sub_resource type="Animation" id="Animation_or7v2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Дым1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Дым2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Дым3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Дым4:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_nhbbk"]
+resource_name = "появление дыма"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Дым1:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Дым2:modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Дым3:modulate")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Дым4:modulate")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_of6sp"]
+_data = {
+"RESET": SubResource("Animation_or7v2"),
+"появление дыма": SubResource("Animation_nhbbk")
+}
+
+[sub_resource type="Animation" id="Animation_x8cnr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Дым1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Дым2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Дым3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Дым4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_oqfju"]
+resource_name = "движение дыма"
+length = 16.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Дым1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6.9, 16),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 200), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Дым2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 10.1, 16),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -100), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Дым3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 8.8, 16),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 200), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Дым4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 7.7, 16),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -100), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nerg4"]
+_data = {
+"RESET": SubResource("Animation_x8cnr"),
+"движение дыма": SubResource("Animation_oqfju")
+}
+
+[sub_resource type="Animation" id="Animation_pcvw6"]
+resource_name = "раздвижение штор"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Сцена_ЛевыйЗаднийЗанавес:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-495, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Сцена_ПравыйЗаднийЗанавес:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(440, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_s8wrr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Сцена_ЛевыйЗаднийЗанавес:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Сцена_ПравыйЗаднийЗанавес:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_viags"]
+_data = {
+"RESET": SubResource("Animation_s8wrr"),
+"раздвижение штор": SubResource("Animation_pcvw6")
+}
+
+[sub_resource type="Animation" id="Animation_mcvsj"]
+resource_name = "появление"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ДымПодШторой1Кр:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ДымПодШторой2Кр:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_bfs7n"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ДымПодШторой1Кр:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ДымПодШторой2Кр:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_damkk"]
+_data = {
+"RESET": SubResource("Animation_bfs7n"),
+"появление": SubResource("Animation_mcvsj")
+}
+
+[node name="СценаНибрас" type="Node2D"]
+script = ExtResource("1_cgwbt")
+
+[node name="ДымПодШторой1Кр" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("2_rkmxl")
+
+[node name="ДымПодШторой2Кр" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("3_t5bfu")
+
+[node name="Пол" type="Sprite2D" parent="."]
+texture = ExtResource("2_p58hw")
+
+[node name="ЛеваяШтора" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("3_immjw")
+
+[node name="ПраваяШтора" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("4_50bpq")
+
+[node name="Сцена_ЛевыйЗаднийЗанавес" type="Sprite2D" parent="."]
+texture = ExtResource("9_xceou")
+
+[node name="Сцена_ПравыйЗаднийЗанавес" type="Sprite2D" parent="."]
+texture = ExtResource("10_bl57g")
+
+[node name="Дым1" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("5_pr854")
+
+[node name="Дым2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("6_uvuvx")
+
+[node name="Дым3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("7_d0rqy")
+
+[node name="Дым4" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("8_ddntv")
+
+[node name="Появление дыма" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_of6sp")
+}
+autoplay = "появление дыма"
+
+[node name="Движение дыма" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_nerg4")
+}
+autoplay = "движение дыма"
+
+[node name="Шторы" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_viags")
+}
+autoplay = "раздвижение штор"
+
+[node name="Появление дыма за шторами" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_damkk")
+}
+autoplay = "появление"
