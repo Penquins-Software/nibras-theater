@@ -160053,10 +160053,6 @@
      "type": "RSEFrameText"
     },
     {
-     "music_id": 36,
-     "type": "RSEFrameMusic"
-    },
-    {
      "speaker_id": 2,
      "text": "Мы с Лоран и Арлет переглянулись.",
      "type": "RSEFrameText"
@@ -160070,6 +160066,10 @@
      "speaker_id": 2,
      "text": "А пока…",
      "type": "RSEFrameText"
+    },
+    {
+     "music_id": 36,
+     "type": "RSEFrameMusic"
     },
     {
      "global": true,
@@ -168741,7 +168741,7 @@
    "active": true,
    "id": 123,
    "name": "Insight Theme",
-   "path_to_file": ""
+   "path_to_file": "res://audio/music/house.mp3"
   },
   {
    "active": true,
