@@ -76,7 +76,7 @@ func add_character_preset(character_controller: RSEBaseCharacterController) -> v
 		"position_x": character_controller.position.x,
 		"position_y": character_controller.position.y,
 		"rotation": character_controller.rotation_degrees,
-		"scale": character_controller.scale.x,
+		"scale": character_controller.scale_custom,
 		"flip_h": character_controller.flip_h,
 		"order": character_controller.order,
 		"emotion_id": character_controller._emotion_id,
@@ -93,7 +93,7 @@ func apply_preset_to_character(character_controller: RSEBaseCharacterController)
 	character_controller.position.x = transform["position_x"]
 	character_controller.position.y = transform["position_y"]
 	character_controller.rotation_degrees = transform["rotation"]
-	character_controller.scale = Vector2(transform["scale"], transform["scale"])
+	character_controller.scale_custom = transform["scale"]
 	character_controller.flip_h = transform["flip_h"]
 	character_controller.order = transform["order"]
 	if transform.has("outfit_id"):

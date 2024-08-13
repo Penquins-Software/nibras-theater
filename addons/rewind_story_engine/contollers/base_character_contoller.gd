@@ -47,10 +47,12 @@ var twin: RSEBaseCharacterController
 var flip_h: bool = false : set = _set_flip_h
 func _set_flip_h(value: bool) -> void:
 	flip_h = value
-	scale.x = -scale.x
+	if value:
+		scale.x = -abs(scale.y)
+	else:
+		scale.x = abs(scale.y)
 	#_set_flip_h_for_all_sprites()
 	#if not twin == null:
-		#twin.flip_h = flip_h
 		#if not flip_h:
 			#twin.position = Vector2(-20, 20)
 		#else:
@@ -270,12 +272,13 @@ func make_twin() -> void:
 	add_child(twin)
 	twin.z_as_relative = false
 	twin.z_index -= 1
-	twin.flip_h = flip_h
+	#twin.flip_h = flip_h
 	twin.set_emotion(_emotion_id)
-	if not flip_h:
-		twin.position = Vector2(-20, 20)
-	else:
-		twin.position = Vector2(20, 20)
+	twin.position = Vector2(-16, 16)
+	#if not flip_h:
+		#twin.position = Vector2(-20, 20)
+	#else:
+		#twin.position = Vector2(20, 20)
 
 
 func create_animation(node: Node, animation: String) -> void:

@@ -1498,7 +1498,7 @@ light_mask = 3
 light_mask = 3
 position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_b8k8w")
-animation = &"Сильно испуган"
+animation = &"Просит помолчать"
 
 [node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3

@@ -77,7 +77,7 @@ func _set_parameters() -> void:
 	position_y_spin_box.set_value_no_signal(selected_node.position.y)
 	rotation_spin_box.set_value_no_signal(selected_node.rotation_degrees)
 	rotation_slider.set_value_no_signal(selected_node.rotation_degrees)
-	scale_spin_box.set_value_no_signal(selected_node.scale.x)
+	scale_spin_box.set_value_no_signal(selected_node.scale.y)
 	
 	if selected_node.has_method("_set_flip_h"):
 		flip_h_check_box.visible = true
@@ -134,7 +134,10 @@ func _on_rotation_spin_box_changed(value):
 
 
 func _on_scale_changed(value):
-	selected_node.scale = Vector2(value, value)
+	if selected_node is RSEBaseCharacterController:
+		selected_node.scale_custom = value
+	else:
+		selected_node.scale = Vector2(value, value)
 	if selected_node is RSEBaseCameraController:
 		var zoom = 1 / value
 		selected_node.camera.zoom = Vector2(zoom, zoom)
