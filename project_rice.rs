@@ -125855,17 +125855,70 @@
    "description": "Актёры стоят на сцене и кланяются. В зале раздаются аплодисменты.",
    "frames": [
     {
+     "location_id": 41,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "action": 1,
+     "character_id": 13,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 19,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 25,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 26,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 27,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 39,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 40,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В ролях!",
+     "type": "RSEFrameText"
+    },
+    {
      "location_id": 71,
      "type": "RSEFrameLocation"
     },
     {
      "transitition_id": 15,
      "type": "RSEFrameTransitition"
-    },
-    {
-     "speaker_id": 2,
-     "text": "В ролях!",
-     "type": "RSEFrameText"
     },
     {
      "type": "RSEFrameGap"
@@ -125883,12 +125936,24 @@
      "type": "RSEFrameGap"
     },
     {
+     "location_id": 72,
+     "type": "RSEFrameLocation"
+    },
+    {
      "speaker_id": 2,
      "text": "Старшая актриса – Лоран Шеро.",
      "type": "RSEFrameText"
     },
     {
+     "transitition_id": 135,
+     "type": "RSEFrameTransitition"
+    },
+    {
      "type": "RSEFrameGap"
+    },
+    {
+     "location_id": 71,
+     "type": "RSEFrameLocation"
     },
     {
      "speaker_id": 2,
@@ -125896,7 +125961,15 @@
      "type": "RSEFrameText"
     },
     {
+     "transitition_id": 136,
+     "type": "RSEFrameTransitition"
+    },
+    {
      "type": "RSEFrameGap"
+    },
+    {
+     "location_id": 72,
+     "type": "RSEFrameLocation"
     },
     {
      "speaker_id": 2,
@@ -125904,7 +125977,15 @@
      "type": "RSEFrameText"
     },
     {
+     "transitition_id": 137,
+     "type": "RSEFrameTransitition"
+    },
+    {
      "type": "RSEFrameGap"
+    },
+    {
+     "location_id": 71,
+     "type": "RSEFrameLocation"
     },
     {
      "speaker_id": 2,
@@ -125912,7 +125993,15 @@
      "type": "RSEFrameText"
     },
     {
+     "transitition_id": 138,
+     "type": "RSEFrameTransitition"
+    },
+    {
      "type": "RSEFrameGap"
+    },
+    {
+     "location_id": 72,
+     "type": "RSEFrameLocation"
     },
     {
      "speaker_id": 2,
@@ -125920,7 +126009,15 @@
      "type": "RSEFrameText"
     },
     {
+     "transitition_id": 139,
+     "type": "RSEFrameTransitition"
+    },
+    {
      "type": "RSEFrameGap"
+    },
+    {
+     "location_id": 71,
+     "type": "RSEFrameLocation"
     },
     {
      "speaker_id": 2,
@@ -125928,7 +126025,15 @@
      "type": "RSEFrameText"
     },
     {
+     "transitition_id": 140,
+     "type": "RSEFrameTransitition"
+    },
+    {
      "type": "RSEFrameGap"
+    },
+    {
+     "location_id": 73,
+     "type": "RSEFrameLocation"
     },
     {
      "speaker_id": 2,
@@ -125936,12 +126041,16 @@
      "type": "RSEFrameText"
     },
     {
-     "path_to_audio": "res://audio/sfx/applause.mp3",
-     "type": "RSEFrameSFX"
+     "transitition_id": 141,
+     "type": "RSEFrameTransitition"
     },
     {
      "transitition_id": 14,
      "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 41,
+     "type": "RSEFrameLocation"
     },
     {
      "type": "RSEFrameGap"
@@ -125969,7 +126078,83 @@
       "zoom": 1
      },
      "character_transforms": {
-
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
      },
      "location_transform": {
       "position_x": 0,
@@ -125981,29 +126166,2819 @@
 
      }
     },
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 13,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 13,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 13,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 13,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 13,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 13,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "39": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 13,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 13,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "19": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "25": {
+       "emotion_id": 13,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "27": {
+       "emotion_id": 17,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737875
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 700,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 19,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -700,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 3,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -450,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -250,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 14,
+       "flip_h": false,
+       "id": 27,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 2,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 450,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "40": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 250,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 700,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 19,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -700,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 3,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -450,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -250,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 14,
+       "flip_h": false,
+       "id": 27,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 2,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 450,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "40": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 250,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 700,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 19,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -700,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 3,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -450,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -250,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 14,
+       "flip_h": false,
+       "id": 27,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 2,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 450,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "40": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 250,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 700,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 19,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -700,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 3,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -450,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -250,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 14,
+       "flip_h": false,
+       "id": 27,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 2,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 450,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "40": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 250,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 700,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 19,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -700,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 3,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -450,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -250,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 14,
+       "flip_h": false,
+       "id": 27,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 2,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 450,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "40": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 250,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 700,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 19,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -700,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 3,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -450,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -250,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 14,
+       "flip_h": false,
+       "id": 27,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": 0,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 2,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 450,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "40": {
+       "emotion_id": 1,
+       "flip_h": true,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": 250,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    }
    ],
    "start": false
   },
@@ -126132,6 +129107,15 @@
      "type": "RSEFrameTransitition"
     },
     {
+     "location_id": 41,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Спасибо за то, что сыграли в нашу игру!",
+     "type": "RSEFrameText"
+    },
+    {
      "text_signal": "ENDING",
      "type": "RSEFrameSignal"
     }
@@ -126160,6 +129144,7 @@
 
      }
     },
+    null,
     null,
     null,
     null,
@@ -126491,7 +129476,27 @@
    "id": 109,
    "name": "Где пульс?",
    "scene_presets": [
-    null,
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
     null
    ],
    "start": false
