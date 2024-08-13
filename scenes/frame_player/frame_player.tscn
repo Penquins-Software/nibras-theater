@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://dn0b8hq6iasrx"]
+[gd_scene load_steps=35 format=3 uid="uid://dn0b8hq6iasrx"]
 
 [ext_resource type="Script" path="res://scenes/frame_player/text_box.gd" id="1_aporf"]
 [ext_resource type="PackedScene" uid="uid://6jobhq66ma72" path="res://addons/rewind_story_engine/scene_builder/scene_builder.tscn" id="1_k8j7s"]
@@ -27,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://d4ckrrm703340" path="res://gui/Мелочи/Игра/Нажатие/Следующий кадр.png" id="17_dm1k2"]
 [ext_resource type="Texture2D" uid="uid://b6120qec0nk2n" path="res://gui/Мелочи/Игра/Перемотка.png" id="18_w0tjf"]
 [ext_resource type="Texture2D" uid="uid://dp0hmwblyq4d2" path="res://gui/Мелочи/Игра/Нажатие/Перемотка.png" id="19_kimg4"]
+[ext_resource type="Theme" uid="uid://cgymxxcr7u4ai" path="res://scenes/save_manager/save_theme.tres" id="20_pk4gw"]
 [ext_resource type="Script" path="res://source/button_with_sound.gd" id="23_s1i53"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x53o4"]
@@ -263,7 +264,6 @@ ignore_texture_size = true
 stretch_mode = 4
 
 [node name="SelectionMenu" type="VBoxContainer" parent="Interface"]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -278,6 +278,7 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 script = ExtResource("7_pim0h")
+button_theme = ExtResource("20_pk4gw")
 
 [node name="Pause" type="Button" parent="Interface"]
 layout_mode = 1

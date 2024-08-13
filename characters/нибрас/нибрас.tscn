@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://df7pexxivvwqj"]
+[gd_scene load_steps=21 format=3 uid="uid://df7pexxivvwqj"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_vg3cd"]
 [ext_resource type="Texture2D" uid="uid://do6bn43gidbby" path="res://characters/нибрас/sprites/1 кр.png" id="2_j0fnj"]
@@ -48,6 +48,33 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="Animation" id="Animation_ig60a"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ЛевЗрачок:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ПрЗрачок:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_87glu"]
 resource_name = "появление"
 length = 8.0
@@ -76,37 +103,37 @@ tracks/1/keys = {
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_ig60a"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uvv7o"]
+_data = {
+"RESET": SubResource("Animation_ig60a"),
+"появление": SubResource("Animation_87glu")
+}
+
+[sub_resource type="Animation" id="Animation_vavq7"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("ЛевЗрачок:modulate")
+tracks/0/path = NodePath("ЛевЗрачок:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 0)]
+"values": [Vector2(0, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("ПрЗрачок:modulate")
+tracks/1/path = NodePath("ПрЗрачок:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_uvv7o"]
-_data = {
-"RESET": SubResource("Animation_ig60a"),
-"появление": SubResource("Animation_87glu")
+"values": [Vector2(0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_tas0c"]
@@ -138,37 +165,47 @@ tracks/1/keys = {
 "values": [Vector2(0, 0), Vector2(-1, -3), Vector2(3, 3), Vector2(3, -2), Vector2(-5, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_vavq7"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b8e3m"]
+_data = {
+"RESET": SubResource("Animation_vavq7"),
+"движение": SubResource("Animation_tas0c")
+}
+
+[sub_resource type="Animation" id="Animation_snwq1"]
+resource_name = "появление"
+length = 12.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mouth:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_buxyc"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("ЛевЗрачок:position")
+tracks/0/path = NodePath("Mouth:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ПрЗрачок:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
+"values": [Color(1, 1, 1, 0)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_b8e3m"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nrrj2"]
 _data = {
-"RESET": SubResource("Animation_vavq7"),
-"движение": SubResource("Animation_tas0c")
+"RESET": SubResource("Animation_buxyc"),
+"появление": SubResource("Animation_snwq1")
 }
 
 [node name="Нибрас" type="Node2D" node_paths=PackedStringArray("mouth", "bleep_player")]
@@ -178,6 +215,7 @@ eyes_frame_close = 2
 bleep_player = NodePath("BleepPlayer")
 
 [node name="Mouth" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
 sprite_frames = SubResource("SpriteFrames_01phd")
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
@@ -202,4 +240,9 @@ autoplay = "появление"
 libraries = {
 "": SubResource("AnimationLibrary_b8e3m")
 }
-autoplay = "движение"
+
+[node name="Появление головы" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_nrrj2")
+}
+autoplay = "появление"

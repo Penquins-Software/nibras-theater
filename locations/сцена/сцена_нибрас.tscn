@@ -232,6 +232,33 @@ _data = {
 "движение дыма": SubResource("Animation_oqfju")
 }
 
+[sub_resource type="Animation" id="Animation_s8wrr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Сцена_ЛевыйЗаднийЗанавес:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Сцена_ПравыйЗаднийЗанавес:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_pcvw6"]
 resource_name = "раздвижение штор"
 length = 2.0
@@ -260,37 +287,37 @@ tracks/1/keys = {
 "values": [Vector2(0, 0), Vector2(440, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_s8wrr"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_viags"]
+_data = {
+"RESET": SubResource("Animation_s8wrr"),
+"раздвижение штор": SubResource("Animation_pcvw6")
+}
+
+[sub_resource type="Animation" id="Animation_bfs7n"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Сцена_ЛевыйЗаднийЗанавес:position")
+tracks/0/path = NodePath("ДымПодШторой1Кр:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, 0)]
+"values": [Color(1, 1, 1, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Сцена_ПравыйЗаднийЗанавес:position")
+tracks/1/path = NodePath("ДымПодШторой2Кр:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_viags"]
-_data = {
-"RESET": SubResource("Animation_s8wrr"),
-"раздвижение штор": SubResource("Animation_pcvw6")
+"values": [Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_mcvsj"]
@@ -321,33 +348,6 @@ tracks/1/keys = {
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_bfs7n"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ДымПодШторой1Кр:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ДымПодШторой2Кр:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_damkk"]
 _data = {
 "RESET": SubResource("Animation_bfs7n"),
@@ -356,6 +356,14 @@ _data = {
 
 [node name="СценаНибрас" type="Node2D"]
 script = ExtResource("1_cgwbt")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -100
+offset_left = -564.0
+offset_top = -622.0
+offset_right = 591.0
+offset_bottom = 329.0
+color = Color(0.0235294, 0.0196078, 0.0196078, 1)
 
 [node name="ДымПодШторой1Кр" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)

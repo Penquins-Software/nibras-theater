@@ -17,7 +17,11 @@ expand_margin_bottom = 10.0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sah0a"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2l0k3"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ux6qg"]
+texture = ExtResource("1_018o2")
+expand_margin_left = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 10.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3talv"]
 bg_color = Color(0.286275, 0.0117647, 0, 0.501961)
@@ -43,7 +47,7 @@ default_font_size = 32
 Button/colors/font_color = Color(0.847059, 0.792157, 0.670588, 1)
 Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
 Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
-Button/colors/font_hover_color = Color(1, 0, 0, 1)
+Button/colors/font_hover_color = Color(0.847059, 0.792157, 0.670588, 1)
 Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 Button/colors/font_outline_color = Color(1, 1, 1, 1)
 Button/colors/font_pressed_color = Color(1, 0, 0, 1)
@@ -60,7 +64,7 @@ Button/styles/disabled = SubResource("StyleBoxEmpty_264wq")
 Button/styles/focus = SubResource("StyleBoxEmpty_ml3vq")
 Button/styles/hover = SubResource("StyleBoxTexture_psurc")
 Button/styles/normal = SubResource("StyleBoxEmpty_sah0a")
-Button/styles/pressed = SubResource("StyleBoxEmpty_2l0k3")
+Button/styles/pressed = SubResource("StyleBoxTexture_ux6qg")
 HSlider/icons/grabber = ExtResource("2_pm6jo")
 HSlider/icons/grabber_disabled = ExtResource("2_pm6jo")
 HSlider/icons/grabber_highlight = ExtResource("2_pm6jo")

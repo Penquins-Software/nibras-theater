@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b83la06spk4xf"
-path="res://.godot/imported/главное меню 3.png-c65724e412a158929833d9ad86e9cbd8.ctex"
+uid="uid://djv3txdrxhsae"
+path="res://.godot/imported/левая.png-d0552550e196b5e815a43e524afe5fc2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gui/Главное меню и настройки/главное меню 3.png"
-dest_files=["res://.godot/imported/главное меню 3.png-c65724e412a158929833d9ad86e9cbd8.ctex"]
+source_file="res://gui/Главное меню и настройки/левая.png"
+dest_files=["res://.godot/imported/левая.png-d0552550e196b5e815a43e524afe5fc2.ctex"]
 
 [params]
 

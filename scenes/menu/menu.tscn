@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=25 format=3 uid="uid://1ldra2lpi55u"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_h3ser"]
@@ -7,9 +7,10 @@
 [ext_resource type="Script" path="res://source/main_menu/main_menu_button.gd" id="3_sfhbu"]
 [ext_resource type="Script" path="res://scenes/menu/menu_background.gd" id="4_f824p"]
 [ext_resource type="PackedScene" uid="uid://c1njjadxa43bg" path="res://scenes/settings.tscn" id="5_7o1gw"]
+[ext_resource type="Texture2D" uid="uid://djv3txdrxhsae" path="res://gui/Главное меню и настройки/левая.png" id="5_8p1ol"]
+[ext_resource type="Texture2D" uid="uid://dmdnbgkovufq5" path="res://gui/Главное меню и настройки/Меню 2.png" id="5_pyue1"]
 [ext_resource type="PackedScene" uid="uid://beneekmk33mka" path="res://scenes/save_manager/save_list.tscn" id="5_rnans"]
-[ext_resource type="Texture2D" uid="uid://dm7df5gcssvpf" path="res://gui/Главное меню и настройки/главное меню 2.png" id="5_wmqj6"]
-[ext_resource type="Texture2D" uid="uid://b83la06spk4xf" path="res://gui/Главное меню и настройки/главное меню 3.png" id="6_25p8h"]
+[ext_resource type="Texture2D" uid="uid://brnxtegkgyyqc" path="res://gui/Главное меню и настройки/правая.png" id="6_a3sls"]
 [ext_resource type="Texture2D" uid="uid://bu1fc76i5fe2v" path="res://gui/Главное меню и настройки/Лого.png" id="7_nugf5"]
 [ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="8_7egbi"]
 [ext_resource type="Script" path="res://scenes/menu/continue_button.gd" id="10_tp6ug"]
@@ -17,6 +18,68 @@
 [ext_resource type="Texture2D" uid="uid://bo0h30eo6twp2" path="res://gui/фон Сохранения и настройки.png" id="13_ivy2m"]
 [ext_resource type="Script" path="res://source/web_link.gd" id="15_ddq1b"]
 [ext_resource type="Script" path="res://source/button_with_sound.gd" id="16_ruy8w"]
+
+[sub_resource type="Animation" id="Animation_ckxfq"]
+resource_name = "движение"
+length = 12.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3, 6, 9, 12),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(10, 15), Vector2(-5, 10), Vector2(-20, 6), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("2:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3, 6, 9, 12),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-15, 7), Vector2(16, 26), Vector2(20, 11), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_rcg8h"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wnxuj"]
+_data = {
+"RESET": SubResource("Animation_rcg8h"),
+"движение": SubResource("Animation_ckxfq")
+}
 
 [sub_resource type="Animation" id="Animation_0s6sp"]
 length = 0.001
@@ -66,7 +129,7 @@ main = NodePath("Главный экран")
 exit_button = NodePath("Главный экран/VBoxContainer/Выйти")
 game_scene_file = ExtResource("2_i8b50")
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="." node_paths=PackedStringArray("hands")]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -76,8 +139,42 @@ grow_vertical = 2
 texture = ExtResource("3_ors6w")
 expand_mode = 1
 script = ExtResource("4_f824p")
-image_2 = ExtResource("5_wmqj6")
-image_3 = ExtResource("6_25p8h")
+hands = NodePath("Руки")
+true_ending = ExtResource("5_pyue1")
+
+[node name="Руки" type="Control" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="1" type="TextureRect" parent="Background/Руки"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_8p1ol")
+expand_mode = 1
+
+[node name="2" type="TextureRect" parent="Background/Руки"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_a3sls")
+expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Background/Руки"]
+libraries = {
+"": SubResource("AnimationLibrary_wnxuj")
+}
+autoplay = "движение"
 
 [node name="Logo" type="TextureRect" parent="Background"]
 layout_mode = 1
