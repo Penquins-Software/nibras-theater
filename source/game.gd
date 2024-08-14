@@ -8,8 +8,6 @@ static var save_to_load: Save
 @export var frame_player: FramePlayer
 @export var pause_menu: Pause
 
-@export_file("*.tscn") var path_to_menu_scene: String
-
 var screenshoot: Image
 
 var local_variables: VariablesStorage = VariablesStorage.new()
@@ -45,8 +43,6 @@ func make_save() -> void:
 
 func _on_frame_player_selection_started():
 	pass
-	#screenshoot = get_viewport().get_texture().get_image()
-	#SaveManager.create_autosave(screenshoot, frame_player.episode.id, frame_player.current_frame_index, local_variables.data)
 
 
 func pause_game() -> void:
@@ -63,8 +59,8 @@ func continue_game() -> void:
 
 func return_to_menu() -> void:
 	SaveManager.create_autosave(screenshoot, frame_player.episode.id, frame_player.current_frame_index, local_variables.data)
-	get_tree().change_scene_to_file(path_to_menu_scene)
+	get_tree().change_scene_to_packed(Menu.menu_scene)
 
 
 func _on_frame_player_end():
-	get_tree().change_scene_to_file(path_to_menu_scene)
+	get_tree().change_scene_to_packed(Menu.menu_scene)

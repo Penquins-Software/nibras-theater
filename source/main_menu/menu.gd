@@ -2,10 +2,14 @@ class_name Menu
 extends Control
 
 
+static var menu_scene: PackedScene
+
+
 @export_group("Menu elements")
 @export var main: MenuElement
 
 @export_group("Buttons")
+@export var gallery_button: Button
 @export var exit_button: Button
 
 @export_group("Scenes")
@@ -14,6 +18,8 @@ extends Control
 
 func _ready():
 	main.show_and_focus()
+	
+	gallery_button.disabled = not (Settings.profile.global_variables.is_variable("ENDING_1") or Settings.profile.global_variables.is_variable("ENDING_2"))
 	
 	if OS.has_feature("web"):
 		exit_button.hide()

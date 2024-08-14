@@ -136,6 +136,7 @@ func _enter_tree():
 	## ОБЯЗАТЕЛЬНО!
 	thread.start(RSESceneBuilder.load_all_characters) ## НУЖНО правильно закрыть поток!
 	## Обязательно проверь эту часть кода.
+	Menu.menu_scene = load("res://scenes/menu/menu.tscn")
 
 
 func _exit_tree():
