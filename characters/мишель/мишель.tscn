@@ -63,6 +63,14 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("5_adwt0")
+}],
+"loop": false,
+"name": &"Боль",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("3_e3th1")
 }, {
 "duration": 1.0,
@@ -375,6 +383,14 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("20_2ebqn")
+}],
+"loop": true,
+"name": &"Боль",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("19_y8ivp")
 }, {
 "duration": 1.0,
@@ -681,6 +697,14 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("36_xxu8g")
+}],
+"loop": true,
+"name": &"Боль",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("35_seo6y")
 }],
 "loop": true,
@@ -831,6 +855,14 @@ animations = [{
 "texture": ExtResource("45_6gdp4")
 }],
 "loop": true,
+"name": &"Боль",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_6gdp4")
+}],
+"loop": true,
 "name": &"Грустный",
 "speed": 5.0
 }, {
@@ -973,6 +1005,14 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uspv6"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_0v8hm")
+}],
+"loop": true,
+"name": &"Боль",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("43_6h5ac")
@@ -1120,6 +1160,14 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pb7os"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("52_p7v21")
+}],
+"loop": true,
+"name": &"Боль",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("50_ljkxo")
@@ -1282,18 +1330,17 @@ texture = ExtResource("2_mmr24")
 [node name="Eyes" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_2doan")
-animation = &"Сильно испуган"
+animation = &"Боль"
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_dxlf1")
-animation = &"Удивление"
-frame_progress = 0.665189
+animation = &"Боль"
 
 [node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_grsxb")
-animation = &"Удивление"
+animation = &"Боль"
 
 [node name="Hair" type="Sprite2D" parent="Head"]
 light_mask = 3
@@ -1302,7 +1349,7 @@ texture = ExtResource("10_gb7k6")
 [node name="Details" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_wi52r")
-animation = &"Смущается 2"
+animation = &"Боль"
 
 [node name="Mustache" type="Sprite2D" parent="Head"]
 visible = false
@@ -1319,12 +1366,12 @@ light_mask = 3
 light_mask = 3
 position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_uspv6")
-animation = &"Спокойствие"
+animation = &"Боль"
 
 [node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_pb7os")
-animation = &"Спокойствие"
+animation = &"Боль"
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
 bus = &"Bleep"

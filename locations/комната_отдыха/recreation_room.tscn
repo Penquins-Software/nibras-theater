@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://vu6ryijrkow"]
+
+[ext_resource type="Texture2D" uid="uid://fqhf06242ms5" path="res://locations/комната_отдыха/Лампы.png" id="1_avgis"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_vrqbl"]
+
+[node name="RecreationRoom" type="Node2D"]
+script = ExtResource("1_vrqbl")
+
+[node name="Лампы" type="Sprite2D" parent="."]
+texture = ExtResource("1_avgis")
