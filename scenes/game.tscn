@@ -8,6 +8,7 @@
 script = ExtResource("1_0tc1i")
 frame_player = NodePath("FramePlayer/FramePlayer")
 pause_menu = NodePath("Pause/Pause")
+path_to_menu_scene = "res://scenes/menu/menu.tscn"
 
 [node name="FramePlayer" type="CanvasLayer" parent="."]
 

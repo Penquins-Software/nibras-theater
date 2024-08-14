@@ -1046,6 +1046,12 @@
      "type": "RSEFrameTransitition"
     },
     {
+     "global": true,
+     "name": "FIRST_EPISODE",
+     "type": "RSEFrameVariable",
+     "value": ""
+    },
+    {
      "description": "",
      "to_episode_id": 42,
      "type": "RSEFrameJump"
@@ -8048,7 +8054,8 @@
      "visual_effects_transforms": {
 
      }
-    }
+    },
+    null
    ],
    "start": true
   },
@@ -8472,6 +8479,12 @@
     {
      "transitition_id": 14,
      "type": "RSEFrameTransitition"
+    },
+    {
+     "global": true,
+     "name": "SCENE_LIGHT",
+     "type": "RSEFrameVariable",
+     "value": ""
     },
     {
      "description": "",
@@ -14540,7 +14553,8 @@
      "visual_effects_transforms": {
 
      }
-    }
+    },
+    null
    ],
    "start": false
   },
@@ -18591,6 +18605,12 @@
      "type": "RSEFrameTransitition"
     },
     {
+     "global": true,
+     "name": "SCENE_DARK",
+     "type": "RSEFrameVariable",
+     "value": ""
+    },
+    {
      "music_id": 36,
      "type": "RSEFrameMusic"
     },
@@ -20534,7 +20554,8 @@
      "visual_effects_transforms": {
 
      }
-    }
+    },
+    null
    ],
    "start": false
   },
