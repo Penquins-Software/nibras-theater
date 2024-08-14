@@ -142,7 +142,7 @@
    "emotions": {
     "0": "Спокойствие",
     "1": "Смех",
-    "10": "Боль",
+    "10": "Объясняет",
     "11": "Сильно испуган",
     "12": "Напряженно думает",
     "13": "Удивление",
@@ -150,6 +150,7 @@
     "15": "Смущается",
     "16": "Смущается 2",
     "17": "Обычное состояние",
+    "18": "Боль",
     "2": "Думает",
     "3": "Увиливает",
     "4": "Насмехается",
@@ -41351,7 +41352,7 @@
        "id": 19,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 350,
+       "position_x": 400,
        "position_y": 475,
        "rotation": 0,
        "scale": 1
@@ -56766,7 +56767,7 @@
     },
     {
      "speaker_id": 27,
-     "text": "Чарльз, а где во время выстрела был ты?",
+     "text": "Чарльз, а где во время выстрела были вы?",
      "type": "RSEFrameText"
     },
     {
@@ -87426,7 +87427,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -87501,7 +87502,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -87651,7 +87652,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -87726,7 +87727,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -87801,7 +87802,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -87876,7 +87877,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -87951,7 +87952,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -88026,7 +88027,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -88101,82 +88102,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
-       "flip_h": false,
-       "id": 26,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "27": {
-       "emotion_id": 2,
-       "flip_h": false,
-       "id": 27,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "39": {
-       "emotion_id": 2,
-       "flip_h": true,
-       "id": 39,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 13,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      },
-      "19": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      },
-      "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -88251,7 +88177,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -88326,7 +88252,82 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 2,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 2,
+       "flip_h": true,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "19": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -88401,7 +88402,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -88476,7 +88477,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 7,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -88551,7 +88552,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 13,
+       "emotion_id": 7,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -88626,7 +88627,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 13,
+       "emotion_id": 7,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -88701,7 +88702,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -88776,7 +88777,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 5,
+       "emotion_id": 7,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -88851,7 +88852,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 7,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -88926,7 +88927,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -89901,7 +89902,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -89976,7 +89977,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -90051,7 +90052,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -90126,7 +90127,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 10,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
