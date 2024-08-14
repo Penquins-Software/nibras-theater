@@ -277,6 +277,10 @@ func do_transitition(frame: RSEFrameTransitition) -> void:
 	if episode.id != 95:
 		text_box.clear()
 		text_box.marker.hide()
+	else:
+		if text_box.text_label.text == "В ролях!":
+			text_box.clear()
+			text_box.marker.hide()
 	#text_box.hide()
 	var transitition: RSETransitition = RewindStoryEngine.story.transititions[frame.transitition_id]
 	var transitition_controller = load(transitition.path_to_scene).instantiate() as RSEBaseTransititionController
