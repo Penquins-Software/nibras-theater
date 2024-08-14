@@ -5,6 +5,8 @@ extends RefCounted
 var global_variables: VariablesStorage = VariablesStorage.new()
 ## Просмотренные эпизоды и кадры.
 var viewed: Dictionary
+## Просмотренные картинки в галерее.
+var viewed_gallery_images: Array
 
 
 func add_viewed(episode_id: int, frame_index: int) -> void:
@@ -29,6 +31,7 @@ func save_to_file(path_to_file: String) -> void:
 	var data := {
 		"global_variables" : global_variables.data,
 		"viewed" : viewed,
+		"viewed_gallery_images" : viewed_gallery_images,
 	}
 	
 	var json_string = JSON.stringify(data, " ")
@@ -53,9 +56,15 @@ static func load_from_file(path_to_file: String) -> Profile:
 	if error == OK:
 		profile.global_variables.data = json.data["global_variables"]
 		profile.viewed = json.data["viewed"]
+		profile.viewed_gallery_images = json.data["viewed_gallery_images"]
 	
 	print("Profile has been loaded.")
 	if Engine.is_editor_hint():
 		print("Global variables: %s" % profile.global_variables.data)
 		print("Viewed: %s" % profile.viewed)
 	return profile
+
+
+func add_image_to_viewed(index: float) -> void:
+	if not viewed_gallery_images.has(index):
+		viewed_gallery_images.append(index)

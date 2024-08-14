@@ -1,12 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://btjj01uvktlvn"]
+[gd_scene load_steps=4 format=3 uid="uid://btjj01uvktlvn"]
 
 [ext_resource type="Script" path="res://scenes/menu/gallery_item.gd" id="1_stf0x"]
-[ext_resource type="Texture2D" uid="uid://c8ecqfc530yjw" path="res://cg_arts/дидье/1.png" id="1_v62jl"]
 [ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="2_hnmaa"]
 [ext_resource type="Texture2D" uid="uid://uq2vxg6rm5jd" path="res://gui/Мелочи/Сохранения/Рамка.png" id="3_03jee"]
 
-[node name="GalleryItem" type="Control" node_paths=PackedStringArray("tip_label", "image_rect", "border", "lock")]
-custom_minimum_size = Vector2(320, 220)
+[node name="GalleryItem" type="Control" node_paths=PackedStringArray("tip_label", "image_rect", "border", "lock", "new_label")]
+custom_minimum_size = Vector2(320, 180)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,6 +17,7 @@ tip_label = NodePath("MarginContainer/Background/MarginContainer/Lock/MarginCont
 image_rect = NodePath("MarginContainer/Background/MarginContainer/Image")
 border = NodePath("MarginContainer/Background/MarginContainer/Border")
 lock = NodePath("MarginContainer/Background/MarginContainer/Lock")
+new_label = NodePath("MarginContainer/Background/MarginContainer/Image/MarginContainer")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -26,10 +26,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
+theme_override_constants/margin_left = 9
+theme_override_constants/margin_top = 9
+theme_override_constants/margin_right = 9
+theme_override_constants/margin_bottom = 9
 
 [node name="Background" type="ColorRect" parent="MarginContainer"]
 layout_mode = 2
@@ -49,8 +49,32 @@ theme_override_constants/margin_bottom = 4
 
 [node name="Image" type="TextureRect" parent="MarginContainer/Background/MarginContainer"]
 layout_mode = 2
-texture = ExtResource("1_v62jl")
 expand_mode = 1
+stretch_mode = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Background/MarginContainer/Image"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Label" type="RichTextLabel" parent="MarginContainer/Background/MarginContainer/Image/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+mouse_filter = 2
+theme = ExtResource("2_hnmaa")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+bbcode_enabled = true
+text = "[center][color=red]Новое!"
+fit_content = true
 
 [node name="Lock" type="ColorRect" parent="MarginContainer/Background/MarginContainer"]
 layout_mode = 2

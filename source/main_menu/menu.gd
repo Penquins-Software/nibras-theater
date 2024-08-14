@@ -15,14 +15,20 @@ static var menu_scene: PackedScene
 @export_group("Scenes")
 @export var game_scene_file: PackedScene
 
+@export_group("Other")
+@export var gallery_new: Control
+@export var gallery_items_container: Control
+
 
 func _ready():
 	main.show_and_focus()
 	
-	gallery_button.disabled = not (Settings.profile.global_variables.is_variable("ENDING_1") or Settings.profile.global_variables.is_variable("ENDING_2"))
+	gallery_button.disabled = not Settings.profile.global_variables.is_variable("FIRST_EPISODE")
 	
 	if OS.has_feature("web"):
 		exit_button.hide()
+	
+	check_gallery_items()
 
 
 func _show_menu_element(menu_element: MenuElement) -> void:
@@ -50,3 +56,15 @@ func load_game(save: Save) -> void:
 
 func exit_game() -> void:
 	get_tree().quit()
+
+
+func _on_return_from_gallery_pressed():
+	check_gallery_items()
+
+
+func check_gallery_items() -> void:
+	gallery_new.hide()
+	for child: GalleryItem in gallery_items_container.get_children():
+		if child.new:
+			gallery_new.show()
+			return

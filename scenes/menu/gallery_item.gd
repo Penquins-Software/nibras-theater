@@ -5,6 +5,7 @@ extends Control
 signal gallery_item(image: Texture2D, description: String)
 
 
+@export var id: int = 0
 @export var condition: String
 @export_multiline var tip_for_unlock: String = "Закрыто!"
 @export_multiline var description: String = ""
@@ -13,6 +14,11 @@ signal gallery_item(image: Texture2D, description: String)
 @export var image_rect: TextureRect
 @export var border: TextureRect
 @export var lock: Control
+@export var new_label: Control
+
+var viewed: bool = false
+var locked: bool = true
+var new: bool = true
 
 
 func _ready():
@@ -22,8 +28,15 @@ func _ready():
 	image_rect.texture = image
 	tip_label.text = tip_for_unlock
 	
+	viewed = Settings.profile.viewed_gallery_images.has(float(id))
+	
 	if condition == "" or Settings.profile.global_variables.is_variable(condition):
 		lock.visible = false
+		locked = false
+	
+	new = not locked and not viewed
+	if not new:
+		new_label.visible = false
 
 
 func _on_image_mouse_entered():
@@ -45,3 +58,7 @@ func _on_image_gui_input(event):
 		if event.button_index == MOUSE_BUTTON_LEFT and event.is_released():
 			UISoundManager.click()
 			gallery_item.emit(image, description)
+			if new:
+				Settings.profile.add_image_to_viewed(id)
+				new = false
+				new_label.visible = false

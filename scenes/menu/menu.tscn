@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=71 format=3 uid="uid://1ldra2lpi55u"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_h3ser"]
@@ -23,12 +23,14 @@
 [ext_resource type="PackedScene" uid="uid://btjj01uvktlvn" path="res://scenes/menu/gallery_item.tscn" id="18_pqco6"]
 [ext_resource type="Texture2D" uid="uid://fr16djow08qc" path="res://locations/коридор/коридор ночь.png" id="19_ljm3s"]
 [ext_resource type="AudioStream" uid="uid://7xl4kj5ya886" path="res://audio/music/menu.mp3" id="19_ojgkf"]
-[ext_resource type="Texture2D" uid="uid://dudxwsp3jbodv" path="res://locations/сцена/2.png" id="19_rhpx6"]
+[ext_resource type="Texture2D" uid="uid://12g3j8nqupc7" path="res://cg_arts/сцена_занавес.jpg" id="20_jtr0h"]
 [ext_resource type="Texture2D" uid="uid://faunxy17wew" path="res://locations/коридор/коридор лампы.png" id="20_q2gk7"]
-[ext_resource type="Texture2D" uid="uid://csu6skgjx8qta" path="res://locations/сцена/1.png" id="20_tripx"]
 [ext_resource type="Texture2D" uid="uid://dj6eabukh2w57" path="res://locations/коридор/коридор день.png" id="21_2b7s8"]
+[ext_resource type="Texture2D" uid="uid://0kpghrksy32j" path="res://cg_arts/сцена_свет.jpg" id="21_xg8u7"]
+[ext_resource type="Texture2D" uid="uid://drnpjn15yqw3k" path="res://cg_arts/сцена_тьма.jpg" id="22_27x82"]
 [ext_resource type="Texture2D" uid="uid://ddg8qqv3ih5qg" path="res://locations/коридор/коридор шторм.png" id="22_q31uk"]
 [ext_resource type="Texture2D" uid="uid://myhnbkxyst2u" path="res://locations/гримёрка/гримерка Ночь.png" id="23_482o1"]
+[ext_resource type="Texture2D" uid="uid://wh1vufxtnw1j" path="res://cg_arts/нибрас.jpg" id="23_dd7k5"]
 [ext_resource type="Script" path="res://scenes/menu/image_preview.gd" id="23_dqe06"]
 [ext_resource type="Texture2D" uid="uid://dnk130uoqyh1q" path="res://locations/гримёрка/гримерка Лампы.png" id="24_uknqc"]
 [ext_resource type="Texture2D" uid="uid://vli63p5raufq" path="res://locations/гримёрка/гримерка День.png" id="25_lkjhp"]
@@ -45,15 +47,23 @@
 [ext_resource type="Texture2D" uid="uid://pgvo1mm1xtb4" path="res://cg_arts/арлет/full_2.png" id="39_7pdgo"]
 [ext_resource type="Texture2D" uid="uid://0ftvtf3tgvr1" path="res://cg_arts/морт/морт_тьма.png" id="39_uw40p"]
 [ext_resource type="Texture2D" uid="uid://bbe38qxgnsmd2" path="res://cg_arts/чарльз/чарльз.png" id="40_x2h8k"]
+[ext_resource type="Texture2D" uid="uid://qw85tailqmll" path="res://cg_arts/морт/морт.png" id="40_x41rk"]
 [ext_resource type="Texture2D" uid="uid://cwyb7aua6tdnc" path="res://cg_arts/дидье/2.png" id="41_p3fwu"]
 [ext_resource type="Texture2D" uid="uid://c8ecqfc530yjw" path="res://cg_arts/дидье/1.png" id="42_7dufl"]
 [ext_resource type="Texture2D" uid="uid://bv4ogpjr4cp0r" path="res://cg_arts/мишель/мишель.png" id="43_xy1ud"]
 [ext_resource type="Texture2D" uid="uid://bkhvj6v5gd3s5" path="res://cg_arts/items/схема_1.png" id="44_iox5f"]
 [ext_resource type="Texture2D" uid="uid://bjpg0rxqmd24u" path="res://cg_arts/items/схема_2.png" id="45_hfc4s"]
+[ext_resource type="Texture2D" uid="uid://yp42h1p0bdks" path="res://cg_arts/menu_2.png" id="46_8vam1"]
+[ext_resource type="Texture2D" uid="uid://bkmnvxka608ao" path="res://cg_arts/усы.jpg" id="46_kh4ur"]
 [ext_resource type="Texture2D" uid="uid://cdmdsrjr3bu5a" path="res://cg_arts/items/схема_3.png" id="46_ps0ky"]
+[ext_resource type="Texture2D" uid="uid://c06fg557gq0iw" path="res://cg_arts/menu_3.png" id="47_tl5p8"]
+[ext_resource type="Texture2D" uid="uid://c1s2atv1bepy3" path="res://cg_arts/Characters.png" id="47_u6875"]
 [ext_resource type="Texture2D" uid="uid://cf2t7aargn52e" path="res://cg_arts/items/винтовка.png" id="47_wk66v"]
 [ext_resource type="Texture2D" uid="uid://o7ed7fe1htjw" path="res://cg_arts/items/патроны.png" id="48_5x6v5"]
+[ext_resource type="Texture2D" uid="uid://h2ksywgaeggh" path="res://cg_arts/постер.jpg" id="48_mtt87"]
+[ext_resource type="Texture2D" uid="uid://b768k41knrau1" path="res://cg_arts/BIG_palette.jpg" id="48_nrhky"]
 [ext_resource type="Texture2D" uid="uid://dliajgaduhbl2" path="res://cg_arts/items/метка.png" id="49_7dh0l"]
+[ext_resource type="Texture2D" uid="uid://cgpk2uui42wst" path="res://cg_arts/BOSSpalette.jpg" id="49_17foi"]
 
 [sub_resource type="Animation" id="Animation_rcg8h"]
 length = 0.001
@@ -153,7 +163,7 @@ _data = {
 "fadeout": SubResource("Animation_51bo5")
 }
 
-[node name="Menu" type="Control" node_paths=PackedStringArray("main", "gallery_button", "exit_button")]
+[node name="Menu" type="Control" node_paths=PackedStringArray("main", "gallery_button", "exit_button", "gallery_new", "gallery_items_container")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -165,6 +175,8 @@ main = NodePath("Главный экран")
 gallery_button = NodePath("Главный экран/VBoxContainer/Галерея")
 exit_button = NodePath("Главный экран/VBoxContainer/Выйти")
 game_scene_file = ExtResource("2_i8b50")
+gallery_new = NodePath("Главный экран/VBoxContainer/Галерея/New")
+gallery_items_container = NodePath("Галерея/ScrollContainer/HFlowContainer")
 
 [node name="Background" type="TextureRect" parent="." node_paths=PackedStringArray("hands")]
 layout_mode = 1
@@ -192,6 +204,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("5_8p1ol")
@@ -202,6 +216,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("6_a3sls")
@@ -322,6 +338,7 @@ text = "[color=red](новое)"
 scroll_active = false
 
 [node name="Экстра" type="Button" parent="Главный экран/VBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 0
 focus_mode = 0
@@ -432,33 +449,37 @@ condition = "FIRST_EPISODE"
 tip_for_unlock = "Закрыто!
 Посетите эту
 локацию."
-image = ExtResource("19_rhpx6")
+image = ExtResource("20_jtr0h")
 
 [node name="Сцена (свет)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 1
 condition = "SCENE_LIGHT"
 tip_for_unlock = "Закрыто!
 Посетите эту
 локацию."
-image = ExtResource("20_tripx")
+image = ExtResource("21_xg8u7")
 
 [node name="Сцена (тьма)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 2
 condition = "SCENE_DARK"
 tip_for_unlock = "Закрыто!
 Посетите эту
 локацию."
-image = ExtResource("20_tripx")
+image = ExtResource("22_27x82")
 
 [node name="Сцена (Нибрас)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 3
 condition = "TRUE_ENDING"
 tip_for_unlock = "Закрыто!
 ???"
-image = ExtResource("20_tripx")
+image = ExtResource("23_dd7k5")
 
 [node name="Гримёрка (свет)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 4
 condition = "DRESSING_ROOM"
 tip_for_unlock = "Закрыто!
 Посетите эту
@@ -468,6 +489,7 @@ image = ExtResource("24_uknqc")
 
 [node name="Гримёрка (ночь)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 5
 condition = "FIRST_CHOICE"
 tip_for_unlock = "Закрыто!
 Сделайте свой
@@ -477,6 +499,7 @@ image = ExtResource("23_482o1")
 
 [node name="Гримёрка (день)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 6
 condition = "ENDING"
 tip_for_unlock = "Закрыто!
 Пройдите игру
@@ -486,6 +509,7 @@ image = ExtResource("25_lkjhp")
 
 [node name="Гримёрка (шторм)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 7
 condition = "TRUE_ENDING"
 tip_for_unlock = "Закрыто!
 ???"
@@ -494,6 +518,7 @@ image = ExtResource("26_8wpt5")
 
 [node name="Коридор (свет)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 8
 condition = "CORRIDOR"
 tip_for_unlock = "Закрыто!
 Посетите эту
@@ -503,6 +528,7 @@ image = ExtResource("20_q2gk7")
 
 [node name="Коридор (ночь)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 9
 condition = "FIRST_CHOICE"
 tip_for_unlock = "Закрыто!
 Сделайте свой
@@ -512,6 +538,7 @@ image = ExtResource("19_ljm3s")
 
 [node name="Коридор (день)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 10
 condition = "ENDING"
 tip_for_unlock = "Закрыто!
 Пройдите игру
@@ -521,6 +548,7 @@ image = ExtResource("21_2b7s8")
 
 [node name="Коридор (шторм)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 11
 condition = "TRUE_ENDING"
 tip_for_unlock = "Закрыто!
 ???"
@@ -529,6 +557,7 @@ image = ExtResource("22_q31uk")
 
 [node name="Цех (свет)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 12
 condition = "WORKSHOP"
 tip_for_unlock = "Закрыто!
 Посетите эту
@@ -538,6 +567,7 @@ image = ExtResource("29_4ogoh")
 
 [node name="Цех (ночь)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 13
 condition = "FIRST_CHOICE"
 tip_for_unlock = "Закрыто!
 Сделайте свой
@@ -547,6 +577,7 @@ image = ExtResource("30_qa25m")
 
 [node name="Цех (день)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 14
 condition = "ENDING"
 tip_for_unlock = "Закрыто!
 Пройдите игру
@@ -556,6 +587,7 @@ image = ExtResource("31_ngyk5")
 
 [node name="Цех (шторм)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 15
 condition = "TRUE_ENDING"
 tip_for_unlock = "Закрыто!
 ???"
@@ -564,6 +596,7 @@ image = ExtResource("32_vfdd4")
 
 [node name="Холл (свет)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 16
 condition = "HALL"
 tip_for_unlock = "Закрыто!
 Посетите эту
@@ -573,6 +606,7 @@ image = ExtResource("28_rhyhm")
 
 [node name="Холл (ночь)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 17
 condition = "FIRST_CHOICE"
 tip_for_unlock = "Закрыто!
 Сделайте свой
@@ -582,6 +616,7 @@ image = ExtResource("27_btmts")
 
 [node name="Холл (день)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 18
 condition = "ENDING"
 tip_for_unlock = "Закрыто!
 Пройдите игру
@@ -591,6 +626,7 @@ image = ExtResource("29_b53yu")
 
 [node name="Холл (шторм)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 19
 condition = "TRUE_ENDING"
 tip_for_unlock = "Закрыто!
 ???"
@@ -599,18 +635,42 @@ image = ExtResource("30_4i0uc")
 
 [node name="Комнта для отдыха (свет)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 20
+condition = "CHARLES"
+tip_for_unlock = "Закрыто!
+Посетите эту
+локацию."
+description = "Комната для отдыха с освещением."
 
 [node name="Комнта для отдыха (ночь)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 21
+condition = "FIRST_CHOICE"
+tip_for_unlock = "Закрыто!
+Сделайте свой
+первый выбор."
+description = "Комната для отдыха ночью."
 
 [node name="Комнта для отдыха (день)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 22
+condition = "ENDING"
+tip_for_unlock = "Закрыто!
+Пройдите игру
+один раз."
+description = "Комната для отдыха днём. Чарльз любил читать здесь газеты."
 
 [node name="Комнта для отдыха (шторм)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 23
+condition = "TRUE_ENDING"
+tip_for_unlock = "Закрыто!
+???"
+description = "Комната для отдыха во время шторма."
 
 [node name="Арлет (страшная) 1" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 24
 condition = "WORKSHOP"
 tip_for_unlock = "Закрыто!
 ???"
@@ -619,86 +679,137 @@ image = ExtResource("38_77fg2")
 
 [node name="Арлет (страшная) 2" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 25
 condition = "WORKSHOP"
 tip_for_unlock = "Закрыто!
 ???"
 description = "НИБРАС!"
 image = ExtResource("39_7pdgo")
 
-[node name="Смерть Морт" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
+[node name="Смерть Морт 1" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 26
+condition = "FIRST_EPISODE"
+tip_for_unlock = "Закрыто!
+???"
+description = "М-морт? Морт, ты ведь понимаешь, что сейчас не время для шуток?"
+image = ExtResource("40_x41rk")
+
+[node name="Смерть Морт 2" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
+layout_mode = 2
+id = 27
 condition = "SCENE_DARK"
 tip_for_unlock = "Закрыто!
 ???"
+description = "Глаза были открытыми и смотрели вверх. На лице словно застыло выражение удивления."
 image = ExtResource("39_uw40p")
 
 [node name="Смерть Чарльза" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 28
+condition = "CHARLES"
 tip_for_unlock = "Закрыто!
 ???"
+description = "...на диване, в углу комнаты, лежал Чарльз с ножом в груди, а лицо было искажено гримасой боли."
 image = ExtResource("40_x2h8k")
 
 [node name="Смерть Дидье 1" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 29
+condition = "DIDIE"
 tip_for_unlock = "Закрыто!
 ???"
+description = "Здесь темно… Сейчас включу фонарик."
 image = ExtResource("41_p3fwu")
 
 [node name="Смерть Дидье 2" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 30
+condition = "DIDIE"
 tip_for_unlock = "Закрыто!
 ???"
+description = "Мой фонарик оказался направлен прямо… на труп Дидье."
 image = ExtResource("42_7dufl")
 
 [node name="Смерть Мишель" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 31
+condition = "MICHELE"
 tip_for_unlock = "Закрыто!
 ???"
+description = "Мишель сидела в углу комнаты. Она была в луже крови и не подавала признаков жизни."
 image = ExtResource("43_xy1ud")
 
 [node name="Усы?" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 32
 condition = "TRUE_ENDING"
 tip_for_unlock = "Закрыто!
 ???"
+description = "Усы?!.."
+image = ExtResource("46_kh4ur")
 
 [node name="Лайн персонажей" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 33
 condition = "TRUE_ENDING"
 tip_for_unlock = "Закрыто!
 ???"
+image = ExtResource("47_u6875")
 
 [node name="Цвета (Лоран)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 34
 condition = "TRUE_ENDING"
 tip_for_unlock = "Закрыто!
 ???"
+description = "Кодовое имя \"BIG\"."
+image = ExtResource("48_nrhky")
 
 [node name="Цвета (Мишель)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 35
 condition = "TRUE_ENDING"
 tip_for_unlock = "Закрыто!
 ???"
+description = "Кодовое имя \"BOSS\"."
+image = ExtResource("49_17foi")
 
 [node name="Меню (1)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 36
+condition = "FIRST_EPISODE"
 description = "Главное меню"
 image = ExtResource("3_ors6w")
 
 [node name="Меню (2)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 37
+condition = "ENDING"
+tip_for_unlock = "Закрыто!
+Пройдите игру
+один раз."
 description = "Главное меню, тип 2"
+image = ExtResource("46_8vam1")
 
 [node name="Меню (3)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 38
+condition = "TRUE_ENDING"
+tip_for_unlock = "Закрыто!
+???"
 description = "Главное меню, тип 3"
+image = ExtResource("47_tl5p8")
 
 [node name="Постер" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
-description = "Постер!"
+id = 39
+condition = "TRUE_ENDING"
+image = ExtResource("48_mtt87")
 
 [node name="Схема 1" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 40
 condition = "ENDING"
 tip_for_unlock = "Закрыто!
 Пройдите игру
@@ -707,6 +818,7 @@ image = ExtResource("44_iox5f")
 
 [node name="Схема 2" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 41
 condition = "ENDING"
 tip_for_unlock = "Закрыто!
 Пройдите игру
@@ -715,6 +827,7 @@ image = ExtResource("45_hfc4s")
 
 [node name="Схема 3" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 42
 condition = "ENDING"
 tip_for_unlock = "Закрыто!
 Пройдите игру
@@ -723,26 +836,32 @@ image = ExtResource("46_ps0ky")
 
 [node name="Винтовка" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 43
 condition = "ENDING"
 tip_for_unlock = "Закрыто!
 Пройдите игру
 один раз."
+description = "Cassegrain 1917 Prot. 3."
 image = ExtResource("47_wk66v")
 
 [node name="Патроны" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 44
 condition = "ENDING"
 tip_for_unlock = "Закрыто!
 Пройдите игру
 один раз."
+description = "25 патронов в калибре 8.2х54."
 image = ExtResource("48_5x6v5")
 
 [node name="Метка" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
+id = 45
 condition = "ENDING"
 tip_for_unlock = "Закрыто!
 Пройдите игру
 один раз."
+description = "Символ изображает… улыбку?"
 image = ExtResource("49_7dh0l")
 
 [node name="Вернуться" type="Button" parent="Галерея"]
@@ -775,6 +894,15 @@ grow_vertical = 2
 script = ExtResource("23_dqe06")
 image_rect = NodePath("Image")
 description_label = NodePath("Label")
+
+[node name="ColorRect" type="ColorRect" parent="Галерея/ImagePreview"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [node name="Image" type="TextureRect" parent="Галерея/ImagePreview"]
 layout_mode = 1
@@ -948,6 +1076,7 @@ bus = &"Music"
 [connection signal="load_save" from="Загрузить игру" to="." method="load_game"]
 [connection signal="return_was_pressed" from="Загрузить игру" to="." method="_show_main_menu"]
 [connection signal="return_was_pressed" from="Галерея" to="." method="_show_main_menu"]
+[connection signal="pressed" from="Галерея/Вернуться" to="." method="_on_return_from_gallery_pressed"]
 [connection signal="pressed" from="Галерея/ImagePreview/Exit" to="Галерея/ImagePreview" method="_on_exit_pressed"]
 [connection signal="return_was_pressed" from="Настройки" to="." method="_show_main_menu"]
 [connection signal="return_was_pressed" from="Авторы" to="." method="_show_main_menu"]

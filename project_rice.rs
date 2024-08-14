@@ -84155,6 +84155,12 @@
      "type": "RSEFrameTransitition"
     },
     {
+     "global": true,
+     "name": "CHARLES",
+     "type": "RSEFrameVariable",
+     "value": ""
+    },
+    {
      "description": "",
      "to_episode_id": 82,
      "type": "RSEFrameJump"
@@ -93912,7 +93918,8 @@
      "visual_effects_transforms": {
 
      }
-    }
+    },
+    null
    ],
    "start": false
   },
@@ -107746,6 +107753,12 @@
      "type": "RSEFrameTransitition"
     },
     {
+     "global": true,
+     "name": "DIDIE",
+     "type": "RSEFrameVariable",
+     "value": ""
+    },
+    {
      "description": "",
      "to_episode_id": 87,
      "type": "RSEFrameJump"
@@ -110315,7 +110328,8 @@
      "visual_effects_transforms": {
 
      }
-    }
+    },
+    null
    ],
    "start": false
   },
@@ -110509,6 +110523,12 @@
     {
      "transitition_id": 14,
      "type": "RSEFrameTransitition"
+    },
+    {
+     "global": true,
+     "name": "MICHELE",
+     "type": "RSEFrameVariable",
+     "value": ""
     },
     {
      "description": "",
@@ -111904,7 +111924,8 @@
      "visual_effects_transforms": {
 
      }
-    }
+    },
+    null
    ],
    "start": false
   },
@@ -129906,6 +129927,12 @@
      "type": "RSEFrameTransitition"
     },
     {
+     "global": true,
+     "name": "MICHELE",
+     "type": "RSEFrameVariable",
+     "value": ""
+    },
+    {
      "description": "",
      "to_episode_id": 92,
      "type": "RSEFrameJump"
@@ -132679,7 +132706,8 @@
      "visual_effects_transforms": {
 
      }
-    }
+    },
+    null
    ],
    "start": false
   },
