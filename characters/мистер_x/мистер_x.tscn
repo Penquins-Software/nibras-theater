@@ -1,13 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://dscad1bgvde1g"]
+[gd_scene load_steps=4 format=3 uid="uid://dscad1bgvde1g"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_v10al"]
 [ext_resource type="Texture2D" uid="uid://cag3dv3a7ecca" path="res://characters/мистер_x/тень.png" id="2_d66v5"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/bleep_player.gd" id="3_gbtvb"]
 
-[node name="МистерX" type="Node2D"]
+[node name="МистерX" type="Node2D" node_paths=PackedStringArray("bleep_player")]
 light_mask = 0
 script = ExtResource("1_v10al")
+bleep_player = NodePath("BleepPlayer")
 
 [node name="Основа" type="Sprite2D" parent="."]
 light_mask = 0
 texture = ExtResource("2_d66v5")
 flip_h = true
+
+[node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
+script = ExtResource("3_gbtvb")

@@ -209,8 +209,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 3840.0
-offset_bottom = 2160.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("5_8p1ol")
@@ -221,8 +219,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 3840.0
-offset_bottom = 2160.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("6_a3sls")
@@ -817,7 +813,10 @@ image = ExtResource("47_tl5p8")
 [node name="Постер" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
 id = 39
-condition = "TRUE_ENDING"
+condition = "ENDING"
+tip_for_unlock = "Закрыто!
+Пройдите игру
+один раз."
 image = ExtResource("48_mtt87")
 
 [node name="Схема 1" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
@@ -953,6 +952,104 @@ offset_left = -8.0
 offset_bottom = 8.0
 grow_horizontal = 0
 text = "Вернуться"
+
+[node name="Экстра" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="Экстра"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ivy2m")
+expand_mode = 1
+
+[node name="Заголовок" type="Label" parent="Экстра"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -380.0
+offset_right = 300.0
+offset_bottom = -346.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("8_7egbi")
+text = "Экстра"
+horizontal_alignment = 1
+
+[node name="Вернуться" type="Button" parent="Экстра"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -118.5
+offset_top = 338.0
+offset_right = 118.5
+offset_bottom = 380.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme = ExtResource("8_7egbi")
+text = "Вернуться в меню "
+script = ExtResource("16_ruy8w")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Экстра"]
+custom_minimum_size = Vector2(800, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Экстра/VBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("17_uo323")
+text = "Эпизод \"Прятки\""
+
+[node name="Label" type="Label" parent="Экстра/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("8_7egbi")
+theme_override_font_sizes/font_size = 24
+text = "Первый и единственный выбор, влияющий на концовку!"
+horizontal_alignment = 1
+
+[node name="Button2" type="Button" parent="Экстра/VBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("17_uo323")
+text = "Гримёрка"
+
+[node name="Label2" type="Label" parent="Экстра/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("8_7egbi")
+theme_override_font_sizes/font_size = 24
+text = "Место, где можно посмотреть на персонажей..."
+horizontal_alignment = 1
 
 [node name="Настройки" parent="." instance=ExtResource("5_7o1gw")]
 visible = false
@@ -1091,5 +1188,6 @@ bus = &"Music"
 [connection signal="return_was_pressed" from="Галерея" to="." method="_show_main_menu"]
 [connection signal="pressed" from="Галерея/Вернуться" to="." method="_on_return_from_gallery_pressed"]
 [connection signal="pressed" from="Галерея/ImagePreview/Exit" to="Галерея/ImagePreview" method="_on_exit_pressed"]
+[connection signal="pressed" from="Экстра/Вернуться" to="." method="_on_return_from_gallery_pressed"]
 [connection signal="return_was_pressed" from="Настройки" to="." method="_show_main_menu"]
 [connection signal="return_was_pressed" from="Авторы" to="." method="_show_main_menu"]

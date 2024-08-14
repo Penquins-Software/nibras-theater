@@ -48,7 +48,10 @@ func _start_game() -> void:
 
 
 func continue_game() -> void:
-	load_game(SaveManager.saves[SaveManager.saves.size() - 1])
+	if Settings.last_save != "":
+		load_game(Save.load_from_file(Settings.last_save))
+	else:
+		load_game(SaveManager.saves[SaveManager.saves.size() - 1])
 
 
 func load_game(save: Save) -> void:

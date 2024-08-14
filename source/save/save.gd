@@ -29,6 +29,8 @@ func get_file_name() -> String:
 
 
 func save_to_file(path_to_file: String) -> void:
+	Settings.last_save = path_to_file
+	
 	var data := {
 		"episode_id" : episode_id,
 		"episode_name" : episode_name,

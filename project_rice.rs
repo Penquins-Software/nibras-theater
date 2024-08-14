@@ -67059,7 +67059,7 @@
       },
       "27": {
        "emotion_id": 2,
-       "flip_h": false,
+       "flip_h": true,
        "id": 27,
        "order": 0,
        "outfit_id": 0,
@@ -67100,7 +67100,7 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 2,
+       "emotion_id": 16,
        "flip_h": false,
        "id": 27,
        "order": 0,
@@ -67173,7 +67173,7 @@
      },
      "character_transforms": {
       "13": {
-       "emotion_id": 2,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 13,
        "order": 0,
@@ -67215,7 +67215,7 @@
      },
      "character_transforms": {
       "13": {
-       "emotion_id": 2,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 13,
        "order": 0,
@@ -67257,7 +67257,7 @@
      },
      "character_transforms": {
       "13": {
-       "emotion_id": 2,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 13,
        "order": 0,
@@ -67299,7 +67299,7 @@
      },
      "character_transforms": {
       "13": {
-       "emotion_id": 2,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 13,
        "order": 0,
@@ -77763,7 +77763,7 @@
      "type": "RSEFrameVisualEffect"
     },
     {
-     "location_id": 59,
+     "location_id": 144,
      "type": "RSEFrameLocation"
     },
     {
@@ -100392,7 +100392,7 @@
      "type": "RSEFrameText"
     },
     {
-     "speaker_id": 13,
+     "speaker_id": 2,
      "text": "Лоран указала на газету, которая лежала на столе.",
      "type": "RSEFrameText"
     },
@@ -100811,7 +100811,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -100864,7 +100864,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -100917,7 +100917,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -100970,7 +100970,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -101023,7 +101023,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -101076,7 +101076,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -101129,7 +101129,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -101182,7 +101182,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -101235,7 +101235,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -101524,7 +101524,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -101577,60 +101577,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 26,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "27": {
        "emotion_id": 18,
-       "flip_h": true,
-       "id": 27,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 2,
-       "flip_h": true,
-       "id": 13,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      },
-      "26": {
-       "emotion_id": 2,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -101736,7 +101683,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 2,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -101789,7 +101736,60 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 7,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 18,
+       "flip_h": true,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 2,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -101842,7 +101842,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -101895,7 +101895,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -106668,7 +106668,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -106721,7 +106721,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -107039,7 +107039,60 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 13,
+       "emotion_id": 18,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": true,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 6,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -107145,7 +107198,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 3,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -107198,7 +107251,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 3,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -107251,7 +107304,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 3,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -107304,7 +107357,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 3,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -107357,7 +107410,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 3,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -107410,60 +107463,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 3,
-       "flip_h": false,
-       "id": 26,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "27": {
-       "emotion_id": 0,
-       "flip_h": true,
-       "id": 27,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 6,
-       "flip_h": false,
-       "id": 13,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      },
-      "26": {
-       "emotion_id": 3,
+       "emotion_id": 18,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -107570,6 +107570,11 @@
      "type": "RSEFrameText"
     },
     {
+     "speaker_id": 2,
+     "text": "Мы принялись искать их по всему театру, как вдруг Лоран остановилась у двери в гримёрку.",
+     "type": "RSEFrameText"
+    },
+    {
      "transitition_id": 14,
      "type": "RSEFrameTransitition"
     },
@@ -107583,11 +107588,6 @@
     {
      "transitition_id": 15,
      "type": "RSEFrameTransitition"
-    },
-    {
-     "speaker_id": 2,
-     "text": "Мы принялись искать их по всему театру, как вдруг Лоран остановились у двери в гримёрку.",
-     "type": "RSEFrameText"
     },
     {
      "speaker_id": 13,
@@ -110404,7 +110404,48 @@
 
      }
     },
-    null
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    }
    ],
    "start": false
   },
@@ -110554,6 +110595,13 @@
      "speaker_id": 2,
      "text": "Заговорил громкоговоритель.",
      "type": "RSEFrameText"
+    },
+    {
+     "action": 1,
+     "character_id": 64,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
     },
     {
      "speaker_id": 64,
@@ -111610,6 +111658,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -111652,6 +111711,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -111694,6 +111764,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -111736,6 +111817,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -111778,6 +111870,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -111820,6 +111923,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -111862,6 +111976,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -111904,6 +112029,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -111946,6 +112082,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -111988,6 +112135,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -112000,7 +112158,59 @@
 
      }
     },
-    null
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    }
    ],
    "start": false
   },
@@ -112312,7 +112522,7 @@
     },
     {
      "speaker_id": 27,
-     "text": "Примерно тогда  же начали происходить несчастные случаи, и пошли слухи про некого демона Нибраса.",
+     "text": "Примерно тогда же начали происходить несчастные случаи, и пошли слухи про некого демона Нибраса.",
      "type": "RSEFrameText"
     },
     {
@@ -112767,7 +112977,7 @@
     },
     {
      "speaker_id": 2,
-     "text": "Этьен основал частное детективное агентство под названием “Мета Детектив” и теперь расследует запутанные дела.",
+     "text": "Этьен основал частное детективное агентство под названием “[color=orange]Мета Детектив[/color]” и теперь расследует запутанные дела.",
      "type": "RSEFrameText"
     },
     {
@@ -126643,12 +126853,12 @@
      "type": "RSEFrameText"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 39,
      "text": "Я всё это время находился в гримёрке, а со мной были госпожа директор и Чарльз.",
      "type": "RSEFrameText"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 39,
      "text": "Единственные, кто выходил – это были вы, Лоран и Арлет.",
      "type": "RSEFrameText"
     },
@@ -133112,6 +133322,13 @@
      "type": "RSEFrameText"
     },
     {
+     "action": 1,
+     "character_id": 64,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
      "speaker_id": 64,
      "text": "Внимание!",
      "type": "RSEFrameText"
@@ -135829,6 +136046,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -135882,6 +136110,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -135935,6 +136174,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -135988,6 +136238,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -136041,6 +136302,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -136094,6 +136366,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -136147,6 +136430,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -136200,6 +136494,17 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0
       }
      },
      "location_transform": {
@@ -136466,7 +136771,7 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Какое-то время ты совершала диверсии, выдавая их за проделки демона, в надежде, что Мишель всё забросит и сама покинет свой пост, но она этого не делала.",
      "type": "RSEFrameText"
     },
@@ -136486,7 +136791,7 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Затем ты решила пойти немного другим путём, и сначала устранила Морт – старшую актрису, идущую перед тобой.",
      "type": "RSEFrameText"
     },
@@ -136494,7 +136799,7 @@
      "type": "RSEFrameGap"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Ты начала действовать перед генеральной репетицией, потому что посчитала это удобным случаем.",
      "type": "RSEFrameText"
     },
@@ -136511,7 +136816,7 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Однако ты не знала, что директор пригласила меня, специалиста по сверхъестественному, и осуществила убийство в неподходящий для этого момент.",
      "type": "RSEFrameText"
     },
@@ -136531,7 +136836,7 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Каким-то образом тебе удалось подложить заглушку в ствол, тем самым убив бедную мисс Морт и автоматически став наследником театра.",
      "type": "RSEFrameText"
     },
@@ -136551,7 +136856,7 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Оставалось только избавиться от нынешнего директора.",
      "type": "RSEFrameText"
     },
@@ -136559,7 +136864,7 @@
      "type": "RSEFrameGap"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Зная характер Мишель, ты знала, что она не захочет привлекать полицию перед премьерой, и у тебя будет шанс разобраться с ней.",
      "type": "RSEFrameText"
     },
@@ -136579,12 +136884,12 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Первое: как был убит Чарльз?",
      "type": "RSEFrameText"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Подозреваю, что у тебя случайно получилось убедить остальных в мистической основе убийства.",
      "type": "RSEFrameText"
     },
@@ -136604,12 +136909,12 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Когда Чарльз покинул гримёрку, ты проследила за ним и вонзила нож ему в грудь.",
      "type": "RSEFrameText"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Однако, он не умер сразу и спрятался в ближайшей комнате – комнате для отдыха и закрылся там на ключ, создав тем самым закрытую комнату.",
      "type": "RSEFrameText"
     },
@@ -136629,7 +136934,7 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "После этого ты повредила телефонную связь, а потом вернулась в гримёрку.",
      "type": "RSEFrameText"
     },
@@ -136637,7 +136942,7 @@
      "type": "RSEFrameGap"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Удача была на твоей стороне, и из-за грозы пропал свет.",
      "type": "RSEFrameText"
     },
@@ -136654,12 +136959,12 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Мы с Дидье оставили вас троих – Мишель, Арлет и тебя – наедине в бутафорском цехе.",
      "type": "RSEFrameText"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Ты чем-то напугала Арлет, она открыла дверь, оставив ключи, и убежала прочь.",
      "type": "RSEFrameText"
     },
@@ -136679,7 +136984,7 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Оставшись с Мишель, ты с лёгкостью убила её – она не могла даже ходить.",
      "type": "RSEFrameText"
     },
@@ -136699,7 +137004,7 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Пока мы с Дидье возвращались, у тебя было достаточно времени нарисовать тот символ в холле.",
      "type": "RSEFrameText"
     },
@@ -136716,7 +137021,7 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Вскоре на него наткнулась блуждающая Арлет и закричала.",
      "type": "RSEFrameText"
     },
@@ -136733,7 +137038,7 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "speaker_id": 2,
+     "speaker_id": 27,
      "text": "Мы с Дидье разделились, и ты смертельно ранила его.",
      "type": "RSEFrameText"
     },
@@ -136845,7 +137150,7 @@
     },
     {
      "speaker_id": 2,
-     "text": "Этьен основал частное детективное агентство под названием “Мета Детектив” и теперь расследует запутанные дела.",
+     "text": "Этьен основал частное детективное агентство под названием “[color=orange]Мета Детектив[/color]” и теперь расследует запутанные дела.",
      "type": "RSEFrameText"
     },
     {
@@ -161469,7 +161774,7 @@
     },
     {
      "speaker_id": 43,
-     "text": "Пьеса называется Insight!",
+     "text": "Пьеса называется [color=orange]Insight[/color]!",
      "type": "RSEFrameText"
     },
     {

@@ -44,6 +44,8 @@ var bleep_mode: bool = true : set = _set_bleep_mode
 
 var rewind_mode: RewindMode = RewindMode.Viewed : set = _set_rewind_mode
 
+var last_save: String
+
 ## Скорость вывода текста. Измеряется в количестве символов в секунду.
 var text_speed: int = 40 : set = _set_text_speed
 const MIN_TEXT_SPEED: int = 20
@@ -165,6 +167,8 @@ func save_config() -> void:
 	config.set_value("game_settings", "text_speed", text_speed)
 	config.set_value("game_settings", "bleep_mode", bleep_mode)
 	
+	config.set_value("game_settings", "last_save", last_save)
+	
 	config.save(PATH_TO_CONFIG)
 
 
@@ -191,6 +195,8 @@ func load_config() -> void:
 		rewind_mode = config.get_value("game_settings", "rewind_mode", RewindMode.Viewed)
 		text_speed = config.get_value("game_settings", "text_speed", 40)
 		bleep_mode = config.get_value("game_settings", "bleep_mode", true)
+		
+		last_save = config.get_value("game_settings", "last_save", "")
 		
 		print("Configuration file loaded successfully!")
 	else:
