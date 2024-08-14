@@ -1810,7 +1810,6 @@ animation = &"Рассуждает"
 
 [node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
-position = Vector2(1, 0)
 sprite_frames = SubResource("SpriteFrames_w5m3s")
 animation = &"Сильно испуган"
 

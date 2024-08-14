@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://cnwopdqobme0s"]
+[gd_scene load_steps=9 format=3 uid="uid://cnwopdqobme0s"]
 
 [ext_resource type="Script" path="res://scenes/intro/intro.gd" id="1_6spyc"]
 [ext_resource type="Texture2D" uid="uid://b8vlfyorxb0s2" path="res://graphics/penquins/5.png" id="1_cc2cc"]
 [ext_resource type="PackedScene" uid="uid://1ldra2lpi55u" path="res://scenes/menu/menu.tscn" id="2_pwpon"]
 [ext_resource type="Texture2D" uid="uid://bu1fc76i5fe2v" path="res://gui/Главное меню и настройки/Лого.png" id="4_qlcnh"]
+[ext_resource type="AudioStream" uid="uid://dwb3ngxlcpg6v" path="res://audio/penguins.mp3" id="5_r2u6x"]
 
 [sub_resource type="Animation" id="Animation_qdkep"]
 length = 0.001
@@ -124,5 +125,10 @@ offset_bottom = 111.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_qlcnh")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_r2u6x")
+autoplay = true
+bus = &"Music"
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

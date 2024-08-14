@@ -1,28 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://dscad1bgvde1g"]
+[gd_scene load_steps=3 format=3 uid="uid://dscad1bgvde1g"]
 
 [ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_v10al"]
-[ext_resource type="Texture2D" uid="uid://bae14liaox5dj" path="res://characters/дидье/обычный/основа.png" id="2_acopl"]
-[ext_resource type="Texture2D" uid="uid://drvia3jxu3g41" path="res://characters/дидье/обычный/голова.png" id="3_i8vcx"]
-[ext_resource type="Texture2D" uid="uid://wqr06uwnu4nh" path="res://characters/дидье/обычный/рука_левая_1.png" id="4_5fjjq"]
-[ext_resource type="Texture2D" uid="uid://bk2qm8tfxhffc" path="res://characters/дидье/обычный/рука_правая_1.png" id="5_eod83"]
+[ext_resource type="Texture2D" uid="uid://cag3dv3a7ecca" path="res://characters/мистер_x/тень.png" id="2_d66v5"]
 
 [node name="МистерX" type="Node2D"]
-modulate = Color(0, 0, 0, 1)
 light_mask = 0
 script = ExtResource("1_v10al")
 
 [node name="Основа" type="Sprite2D" parent="."]
 light_mask = 0
-texture = ExtResource("2_acopl")
-
-[node name="Голова" type="Sprite2D" parent="."]
-light_mask = 0
-texture = ExtResource("3_i8vcx")
-
-[node name="РукаЛевая1" type="Sprite2D" parent="."]
-light_mask = 0
-texture = ExtResource("4_5fjjq")
-
-[node name="РукаПравая1" type="Sprite2D" parent="."]
-light_mask = 0
-texture = ExtResource("5_eod83")
+texture = ExtResource("2_d66v5")
+flip_h = true

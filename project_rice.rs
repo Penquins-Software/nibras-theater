@@ -20848,6 +20848,18 @@
      "type": "RSEFrameText"
     },
     {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 146,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
      "speaker_id": 25,
      "text": "В этой сцене меня не было.",
      "type": "RSEFrameText"
@@ -20858,12 +20870,12 @@
      "type": "RSEFrameText"
     },
     {
-     "music_id": 36,
-     "type": "RSEFrameMusic"
-    },
-    {
      "transitition_id": 14,
      "type": "RSEFrameTransitition"
+    },
+    {
+     "music_id": 36,
+     "type": "RSEFrameMusic"
     },
     {
      "description": "",
@@ -27077,9 +27089,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -120,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.400000005960464
      },
      "visual_effects_transforms": {
 
@@ -27163,9 +27175,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -120,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.400000005960464
      },
      "visual_effects_transforms": {
 
@@ -27249,9 +27261,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -120,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.400000005960464
      },
      "visual_effects_transforms": {
 
@@ -27335,9 +27347,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -120,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.400000005960464
      },
      "visual_effects_transforms": {
 
@@ -27421,9 +27433,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -120,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.400000005960464
      },
      "visual_effects_transforms": {
 
@@ -27507,9 +27519,181 @@
      },
      "location_transform": {
       "position_x": 0,
+      "position_y": -120,
+      "rotation": 0,
+      "scale": 0.400000005960464
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 1
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 1,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "19": {
+       "emotion_id": 3,
+       "flip_h": false,
+       "id": 19,
+       "order": 2,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 2,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 0,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": true,
+       "id": 27,
+       "order": 2,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 3,
+       "flip_h": false,
+       "id": 39,
+       "order": 1,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -120,
+      "rotation": 0,
+      "scale": 0.400000005960464
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 1,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "19": {
+       "emotion_id": 3,
+       "flip_h": false,
+       "id": 19,
+       "order": 2,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 2,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 0,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": true,
+       "id": 27,
+       "order": 2,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 3,
+       "flip_h": false,
+       "id": 39,
+       "order": 1,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -120,
+      "rotation": 0,
+      "scale": 0.400000005960464
      },
      "visual_effects_transforms": {
 
@@ -37939,13 +38123,17 @@
      "type": "RSEFrameGap"
     },
     {
+     "location_id": 144,
+     "type": "RSEFrameLocation"
+    },
+    {
      "speaker_id": 2,
      "text": "Оружие называется [b]Cassegrain 1917 Prot. 3[/b].",
      "type": "RSEFrameText"
     },
     {
      "speaker_id": 2,
-     "text": "Это экспериментальная самозарядная винтовка с магазином на 13 патронов калибра 8.2 на 54 мм.",
+     "text": "Это экспериментальная винтовка с продольно-скользящим затвором с магазином на 13 патронов калибра 8.2 на 54 мм.",
      "type": "RSEFrameText"
     },
     {
@@ -37962,6 +38150,10 @@
      "speaker_id": 2,
      "text": "По итогу один прототип этого оружия оказался в музее, а другой увёз за границу какой-то коллекционер.",
      "type": "RSEFrameText"
+    },
+    {
+     "location_id": 59,
+     "type": "RSEFrameLocation"
     },
     {
      "speaker_id": 27,
@@ -37997,6 +38189,10 @@
      "type": "RSEFrameText"
     },
     {
+     "location_id": 145,
+     "type": "RSEFrameLocation"
+    },
+    {
      "speaker_id": 2,
      "text": "К этому оружию в комплекте шла и пачка патронов, правда, сильно потрёпанная.",
      "type": "RSEFrameText"
@@ -38005,6 +38201,10 @@
      "speaker_id": 2,
      "text": "На ней написано 25 и 8.2х54.",
      "type": "RSEFrameText"
+    },
+    {
+     "location_id": 59,
+     "type": "RSEFrameLocation"
     },
     {
      "speaker_id": 19,
@@ -43414,9 +43614,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -43456,9 +43656,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -43498,9 +43698,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -43540,9 +43740,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -43582,9 +43782,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -43918,9 +44118,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -43960,9 +44160,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -43989,7 +44189,7 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 2,
+       "emotion_id": 12,
        "flip_h": false,
        "id": 27,
        "order": 10,
@@ -48463,6 +48663,10 @@
      "type": "RSEFrameText"
     },
     {
+     "location_id": 145,
+     "type": "RSEFrameLocation"
+    },
+    {
      "speaker_id": 27,
      "text": "Почему магазин оружия на 13 патронов, а коробка на 25?",
      "type": "RSEFrameText"
@@ -48491,6 +48695,10 @@
      "speaker_id": 27,
      "text": "Может, вы припрятали один патрон себе?",
      "type": "RSEFrameText"
+    },
+    {
+     "location_id": 47,
+     "type": "RSEFrameLocation"
     },
     {
      "text": "Нужно показать спрайт коробки с патронами.",
@@ -48855,9 +49063,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -48884,7 +49092,7 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 10,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 27,
        "order": 10,
@@ -48908,9 +49116,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -48937,7 +49145,7 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 10,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 27,
        "order": 10,
@@ -48961,9 +49169,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -48979,7 +49187,7 @@
      },
      "character_transforms": {
       "26": {
-       "emotion_id": 2,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -48990,7 +49198,7 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 10,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 27,
        "order": 10,
@@ -49014,9 +49222,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -49032,7 +49240,7 @@
      },
      "character_transforms": {
       "26": {
-       "emotion_id": 2,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -49043,7 +49251,7 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 10,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 27,
        "order": 10,
@@ -49067,9 +49275,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -49085,7 +49293,7 @@
      },
      "character_transforms": {
       "26": {
-       "emotion_id": 2,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -49096,7 +49304,7 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 10,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 27,
        "order": 10,
@@ -49120,9 +49328,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -56453,6 +56661,18 @@
      "type": "RSEFrameText"
     },
     {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 147,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
      "text": "Нужно показать картинку с устройством сцены.",
      "type": "RSEFrameComment"
     },
@@ -56473,6 +56693,18 @@
      "speaker_id": 2,
      "text": "Получается, зайти в эти карманы или выйти из них, будучи незамеченным, представляется невозможным.",
      "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 47,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
     },
     {
      "type": "RSEFrameGap"
@@ -58262,9 +58494,384 @@
      },
      "location_transform": {
       "position_x": 0,
+      "position_y": -120,
+      "rotation": 0,
+      "scale": 0.400000005960464
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 1
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "19": {
+       "emotion_id": 14,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "25": {
+       "emotion_id": 9,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 10,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 18,
+       "flip_h": true,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -120,
+      "rotation": 0,
+      "scale": 0.400000005960464
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "19": {
+       "emotion_id": 14,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "25": {
+       "emotion_id": 9,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 10,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 18,
+       "flip_h": true,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -120,
+      "rotation": 0,
+      "scale": 0.400000005960464
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "19": {
+       "emotion_id": 14,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "25": {
+       "emotion_id": 9,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 10,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 18,
+       "flip_h": true,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -120,
+      "rotation": 0,
+      "scale": 0.400000005960464
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "19": {
+       "emotion_id": 14,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "25": {
+       "emotion_id": 9,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 10,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 18,
+       "flip_h": true,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -120,
+      "rotation": 0,
+      "scale": 0.400000005960464
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "19": {
+       "emotion_id": 14,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "25": {
+       "emotion_id": 9,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 10,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 18,
+       "flip_h": true,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -120,
+      "rotation": 0,
+      "scale": 0.400000005960464
      },
      "visual_effects_transforms": {
 
@@ -58549,81 +59156,6 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 18,
-       "flip_h": true,
-       "id": 27,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 13,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 0,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      },
-      "19": {
-       "emotion_id": 14,
-       "flip_h": true,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      },
-      "25": {
-       "emotion_id": 9,
-       "flip_h": false,
-       "id": 25,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      },
-      "26": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 26,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "27": {
        "emotion_id": 16,
        "flip_h": true,
        "id": 27,
@@ -58674,7 +59206,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       },
       "25": {
        "emotion_id": 9,
@@ -58688,7 +59220,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 10,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -58699,7 +59231,7 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 16,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 27,
        "order": 10,
@@ -58707,7 +59239,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       }
      },
      "location_transform": {
@@ -58730,18 +59262,18 @@
      },
      "character_transforms": {
       "13": {
-       "emotion_id": 0,
+       "emotion_id": 12,
        "flip_h": false,
        "id": 13,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 0,
+       "position_x": 400,
+       "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 0
       },
       "19": {
-       "emotion_id": 14,
+       "emotion_id": 13,
        "flip_h": true,
        "id": 19,
        "order": 10,
@@ -58763,7 +59295,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 0,
+       "emotion_id": 10,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -58805,165 +59337,15 @@
      },
      "character_transforms": {
       "13": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 13,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 0,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      },
-      "19": {
-       "emotion_id": 8,
-       "flip_h": false,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "25": {
-       "emotion_id": 9,
-       "flip_h": false,
-       "id": 25,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      },
-      "26": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 26,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "27": {
-       "emotion_id": 16,
+       "emotion_id": 12,
        "flip_h": true,
-       "id": 27,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 0,
-       "flip_h": false,
        "id": 13,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 0,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      },
-      "19": {
-       "emotion_id": 8,
-       "flip_h": false,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
-      },
-      "25": {
-       "emotion_id": 9,
-       "flip_h": false,
-       "id": 25,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      },
-      "26": {
-       "emotion_id": 14,
-       "flip_h": false,
-       "id": 26,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "27": {
-       "emotion_id": 16,
-       "flip_h": true,
-       "id": 27,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 13,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 0,
-       "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 0
       },
       "19": {
        "emotion_id": 8,
@@ -59031,6 +59413,81 @@
      "character_transforms": {
       "13": {
        "emotion_id": 12,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0
+      },
+      "19": {
+       "emotion_id": 8,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 9,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 14,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 16,
+       "flip_h": true,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 11,
        "flip_h": false,
        "id": 13,
        "order": 10,
@@ -59063,7 +59520,82 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 14,
+       "emotion_id": 3,
+       "flip_h": false,
+       "id": 26,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 16,
+       "flip_h": true,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 12,
+       "flip_h": true,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 8,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "25": {
+       "emotion_id": 9,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 3,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -75283,7 +75815,7 @@
    "description": "Этьен с Арлет по пути в гримёрку обнаруживают странный символ на двери.",
    "frames": [
     {
-     "location_id": 18,
+     "location_id": 143,
      "type": "RSEFrameLocation"
     },
     {
@@ -75337,6 +75869,10 @@
      "speaker_id": 2,
      "text": "Вместо “глаз” была изображена буква Н.",
      "type": "RSEFrameText"
+    },
+    {
+     "location_id": 18,
+     "type": "RSEFrameLocation"
     },
     {
      "speaker_id": 19,
@@ -75481,9 +76017,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -75523,9 +76059,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -75541,7 +76077,7 @@
      },
      "character_transforms": {
       "19": {
-       "emotion_id": 7,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 19,
        "order": 0,
@@ -75552,7 +76088,7 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 7,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 27,
        "order": 0,
@@ -75565,9 +76101,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -75583,7 +76119,7 @@
      },
      "character_transforms": {
       "19": {
-       "emotion_id": 7,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 19,
        "order": 0,
@@ -75594,7 +76130,7 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 7,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 27,
        "order": 0,
@@ -75607,9 +76143,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -75625,7 +76161,7 @@
      },
      "character_transforms": {
       "19": {
-       "emotion_id": 7,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 19,
        "order": 0,
@@ -75636,7 +76172,7 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 7,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 27,
        "order": 0,
@@ -75649,9 +76185,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -75667,7 +76203,7 @@
      },
      "character_transforms": {
       "19": {
-       "emotion_id": 7,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 19,
        "order": 0,
@@ -75678,7 +76214,7 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 7,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 27,
        "order": 0,
@@ -75691,9 +76227,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -75709,7 +76245,7 @@
      },
      "character_transforms": {
       "19": {
-       "emotion_id": 7,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 19,
        "order": 0,
@@ -75720,7 +76256,7 @@
        "scale": 1
       },
       "27": {
-       "emotion_id": 7,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 27,
        "order": 0,
@@ -75733,9 +76269,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -82680,7 +83216,7 @@
    "description": "Этьен, Арлет, Мишель и Лоран отправляются проверять комнату для отдыха и находят там мёртвого Чарльза.",
    "frames": [
     {
-     "location_id": 18,
+     "location_id": 143,
      "type": "RSEFrameLocation"
     },
     {
@@ -82811,7 +83347,7 @@
     },
     {
      "speaker_id": 2,
-     "text": "В комнате было темно",
+     "text": "В комнате было темно.",
      "type": "RSEFrameText"
     },
     {
@@ -83014,7 +83550,7 @@
     },
     {
      "speaker_id": 2,
-     "text": "Мишель широко раскрыла глаза и обратила внимание на меня.",
+     "text": "Мишель широко раскрыла глаза и обратила взгляд на меня.",
      "type": "RSEFrameText"
     },
     {
@@ -83329,7 +83865,7 @@
     },
     {
      "speaker_id": 26,
-     "text": "Мы вызовем в полицию и будем их ждать.",
+     "text": "Мы вызовем полицию и будем их ждать.",
      "type": "RSEFrameText"
     },
     {
@@ -83437,9 +83973,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -83512,9 +84048,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -83587,9 +84123,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -83627,7 +84163,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 8,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -83662,9 +84198,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -83702,7 +84238,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 8,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -83737,9 +84273,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -83777,7 +84313,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 8,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -83800,11 +84336,11 @@
       },
       "39": {
        "emotion_id": 0,
-       "flip_h": true,
+       "flip_h": false,
        "id": 39,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
@@ -83812,9 +84348,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -83852,7 +84388,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 8,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -83871,25 +84407,25 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "39": {
        "emotion_id": 0,
-       "flip_h": true,
+       "flip_h": false,
        "id": 39,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       }
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -83927,7 +84463,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 8,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -83946,25 +84482,25 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "39": {
-       "emotion_id": 2,
-       "flip_h": true,
+       "emotion_id": 0,
+       "flip_h": false,
        "id": 39,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       }
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -84002,7 +84538,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 8,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -84021,25 +84557,25 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "39": {
-       "emotion_id": 2,
-       "flip_h": true,
+       "emotion_id": 0,
+       "flip_h": false,
        "id": 39,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       }
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -84060,10 +84596,10 @@
        "id": 13,
        "order": 10,
        "outfit_id": 0,
-       "position_x": -400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 0,
@@ -84077,7 +84613,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 8,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -84085,7 +84621,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "27": {
        "emotion_id": 0,
@@ -84096,25 +84632,25 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "39": {
-       "emotion_id": 2,
-       "flip_h": true,
+       "emotion_id": 0,
+       "flip_h": false,
        "id": 39,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       }
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -84135,10 +84671,10 @@
        "id": 13,
        "order": 10,
        "outfit_id": 0,
-       "position_x": -400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 0,
@@ -84152,7 +84688,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 8,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -84160,7 +84696,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "27": {
        "emotion_id": 0,
@@ -84171,25 +84707,25 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "39": {
-       "emotion_id": 2,
-       "flip_h": true,
+       "emotion_id": 0,
+       "flip_h": false,
        "id": 39,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       }
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -84210,10 +84746,10 @@
        "id": 13,
        "order": 10,
        "outfit_id": 0,
-       "position_x": -400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 0,
@@ -84227,7 +84763,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 8,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -84235,7 +84771,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "27": {
        "emotion_id": 0,
@@ -84246,25 +84782,25 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "39": {
-       "emotion_id": 1,
-       "flip_h": true,
+       "emotion_id": 0,
+       "flip_h": false,
        "id": 39,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       }
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -84285,10 +84821,10 @@
        "id": 13,
        "order": 10,
        "outfit_id": 0,
-       "position_x": -400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 0,
@@ -84302,7 +84838,7 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 8,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
@@ -84310,7 +84846,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "27": {
        "emotion_id": 0,
@@ -84321,25 +84857,25 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "39": {
-       "emotion_id": 10,
-       "flip_h": true,
+       "emotion_id": 0,
+       "flip_h": false,
        "id": 39,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       }
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -84360,7 +84896,7 @@
        "id": 13,
        "order": 10,
        "outfit_id": 0,
-       "position_x": -400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
@@ -84377,12 +84913,12 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 9,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 0,
+       "position_x": -400,
        "position_y": 475,
        "rotation": 0,
        "scale": 1
@@ -84396,15 +84932,15 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "39": {
-       "emotion_id": 10,
-       "flip_h": true,
+       "emotion_id": 0,
+       "flip_h": false,
        "id": 39,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
@@ -84412,9 +84948,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -84435,7 +84971,7 @@
        "id": 13,
        "order": 10,
        "outfit_id": 0,
-       "position_x": -400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
@@ -84452,12 +84988,12 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 9,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 0,
+       "position_x": -400,
        "position_y": 475,
        "rotation": 0,
        "scale": 1
@@ -84471,15 +85007,15 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "39": {
-       "emotion_id": 10,
-       "flip_h": true,
+       "emotion_id": 0,
+       "flip_h": false,
        "id": 39,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
@@ -84487,9 +85023,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -84510,7 +85046,7 @@
        "id": 13,
        "order": 10,
        "outfit_id": 0,
-       "position_x": -400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
@@ -84527,12 +85063,12 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 9,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 0,
+       "position_x": -400,
        "position_y": 475,
        "rotation": 0,
        "scale": 1
@@ -84546,15 +85082,15 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "39": {
-       "emotion_id": 10,
-       "flip_h": true,
+       "emotion_id": 0,
+       "flip_h": false,
        "id": 39,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
@@ -84562,9 +85098,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -84585,7 +85121,7 @@
        "id": 13,
        "order": 10,
        "outfit_id": 0,
-       "position_x": -400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
@@ -84602,12 +85138,12 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 9,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 0,
+       "position_x": -400,
        "position_y": 475,
        "rotation": 0,
        "scale": 1
@@ -84621,15 +85157,15 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "39": {
-       "emotion_id": 10,
-       "flip_h": true,
+       "emotion_id": 0,
+       "flip_h": false,
        "id": 39,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
@@ -84637,9 +85173,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -84660,7 +85196,7 @@
        "id": 13,
        "order": 10,
        "outfit_id": 0,
-       "position_x": -400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
@@ -84677,12 +85213,12 @@
        "scale": 0.00000999999974737
       },
       "26": {
-       "emotion_id": 9,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 26,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 0,
+       "position_x": -400,
        "position_y": 475,
        "rotation": 0,
        "scale": 1
@@ -84696,15 +85232,15 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737
+       "scale": 1
       },
       "39": {
-       "emotion_id": 10,
-       "flip_h": true,
+       "emotion_id": 0,
+       "flip_h": false,
        "id": 39,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
        "scale": 0.00000999999974737
@@ -84712,9 +85248,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -93132,7 +93668,7 @@
      "type": "RSEFrameLocation"
     },
     {
-     "music_id": 32,
+     "music_id": 126,
      "type": "RSEFrameMusic"
     },
     {
@@ -106621,6 +107157,10 @@
      "type": "RSEFrameGap"
     },
     {
+     "location_id": 143,
+     "type": "RSEFrameLocation"
+    },
+    {
      "transitition_id": 15,
      "type": "RSEFrameTransitition"
     },
@@ -107414,9 +107954,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -107456,9 +107996,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -107498,9 +108038,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -107540,9 +108080,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -107582,9 +108122,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -107624,9 +108164,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -107666,9 +108206,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -107708,9 +108248,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -107750,9 +108290,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -107792,9 +108332,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -107834,9 +108374,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -107876,9 +108416,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -107918,9 +108458,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -109446,7 +109986,7 @@
    "description": "Этьен и Лоран бегут обратно в цех. Внутри они находят мёртвую Мишель.",
    "frames": [
     {
-     "location_id": 17,
+     "location_id": 143,
      "type": "RSEFrameLocation"
     },
     {
@@ -109675,9 +110215,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -109717,9 +110257,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -109759,9 +110299,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -109801,9 +110341,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -109843,9 +110383,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -109885,9 +110425,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -109927,9 +110467,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -113711,58 +114251,27 @@
        "rotation": 0,
        "scale": 1
       },
-      "27": {
+      "25": {
        "emotion_id": 0,
        "flip_h": false,
-       "id": 27,
+       "id": 25,
        "order": 10,
-       "outfit_id": 0,
-       "position_x": -200,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 9,
-       "flip_h": false,
-       "id": 13,
-       "order": 10,
-       "outfit_id": 0,
+       "outfit_id": 2,
        "position_x": -600,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       },
-      "19": {
-       "emotion_id": 11,
-       "flip_h": true,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 0,
@@ -113774,6 +114283,28 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
       }
      },
      "location_transform": {
@@ -113817,8 +114348,30 @@
        "rotation": 0,
        "scale": 1
       },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
       "27": {
-       "emotion_id": 10,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 27,
        "order": 10,
@@ -113827,6 +114380,28 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
       }
      },
      "location_transform": {
@@ -113870,6 +114445,28 @@
        "rotation": 0,
        "scale": 1
       },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
       "27": {
        "emotion_id": 10,
        "flip_h": false,
@@ -113880,6 +114477,28 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
       }
      },
      "location_transform": {
@@ -113923,6 +114542,28 @@
        "rotation": 0,
        "scale": 1
       },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
       "27": {
        "emotion_id": 10,
        "flip_h": false,
@@ -113933,6 +114574,28 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
       }
      },
      "location_transform": {
@@ -113976,217 +114639,27 @@
        "rotation": 0,
        "scale": 1
       },
-      "27": {
-       "emotion_id": 14,
+      "25": {
+       "emotion_id": 0,
        "flip_h": false,
-       "id": 27,
+       "id": 25,
        "order": 10,
-       "outfit_id": 0,
-       "position_x": -200,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 9,
-       "flip_h": false,
-       "id": 13,
-       "order": 10,
-       "outfit_id": 0,
+       "outfit_id": 2,
        "position_x": -600,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       },
-      "19": {
-       "emotion_id": 9,
-       "flip_h": true,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 600,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "27": {
-       "emotion_id": 14,
+      "26": {
+       "emotion_id": 0,
        "flip_h": false,
-       "id": 27,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -200,
+       "id": 26,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 9,
-       "flip_h": false,
-       "id": 13,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -600,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "19": {
-       "emotion_id": 9,
-       "flip_h": true,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 600,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "27": {
-       "emotion_id": 14,
-       "flip_h": false,
-       "id": 27,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -200,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 9,
-       "flip_h": false,
-       "id": 13,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -600,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "19": {
-       "emotion_id": 9,
-       "flip_h": true,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 600,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "27": {
-       "emotion_id": 14,
-       "flip_h": false,
-       "id": 27,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -200,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 9,
-       "flip_h": false,
-       "id": 13,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -600,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "19": {
-       "emotion_id": 9,
-       "flip_h": true,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 600,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 10,
@@ -114198,6 +114671,513 @@
        "position_y": 475,
        "rotation": 0,
        "scale": 1
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 9,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 11,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 14,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 9,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 9,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 14,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 9,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 9,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 14,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 9,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 9,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 14,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 9,
+       "flip_h": false,
+       "id": 13,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 9,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "25": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 25,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -600,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "26": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 26,
+       "order": 15,
+       "outfit_id": 2,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 10,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "39": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 39,
+       "order": 10,
+       "outfit_id": 2,
+       "position_x": -200,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "64": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 64,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 0.00000999999974737
       }
      },
      "location_transform": {
@@ -128307,7 +129287,7 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "location_id": 41,
+     "location_id": 143,
      "type": "RSEFrameLocation"
     },
     {
@@ -129001,9 +129981,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -129043,9 +130023,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -129085,9 +130065,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -129127,9 +130107,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -129169,9 +130149,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -129211,9 +130191,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -129253,9 +130233,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -129295,9 +130275,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -131454,7 +132434,7 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "location_id": 41,
+     "location_id": 143,
      "type": "RSEFrameLocation"
     },
     {
@@ -132390,93 +133370,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -50,
       "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "19": {
-       "emotion_id": 11,
-       "flip_h": false,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "27": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 27,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "19": {
-       "emotion_id": 11,
-       "flip_h": false,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "27": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 27,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -132497,28 +133393,112 @@
        "id": 19,
        "order": 10,
        "outfit_id": 0,
-       "position_x": 400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
        "scale": 1
       },
       "27": {
-       "emotion_id": 8,
+       "emotion_id": 0,
        "flip_h": false,
        "id": 27,
        "order": 10,
        "outfit_id": 0,
-       "position_x": -400,
+       "position_x": 0,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       }
      },
      "location_transform": {
       "position_x": 0,
+      "position_y": -50,
+      "rotation": 0,
+      "scale": 0.699999988079071
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
       "position_y": 0,
       "rotation": 0,
-      "scale": 1
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "19": {
+       "emotion_id": 7,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -50,
+      "rotation": 0,
+      "scale": 0.699999988079071
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "19": {
+       "emotion_id": 7,
+       "flip_h": false,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "27": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 27,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": -50,
+      "rotation": 0,
+      "scale": 0.699999988079071
      },
      "visual_effects_transforms": {
 
@@ -159515,6 +160495,10 @@
      "type": "RSEFrameCharacter"
     },
     {
+     "location_id": 148,
+     "type": "RSEFrameLocation"
+    },
+    {
      "speaker_id": 27,
      "text": "Пока мы смотрели на убитого Чарльза, у неё было достаточно времени покинуть комнату.",
      "type": "RSEFrameText"
@@ -159533,6 +160517,10 @@
      "speaker_id": 27,
      "text": "Морт убивала жертву, закрывала дверь на ключ и пряталась в комнате.",
      "type": "RSEFrameText"
+    },
+    {
+     "location_id": 38,
+     "type": "RSEFrameLocation"
     },
     {
      "speaker_id": 19,
@@ -160135,9 +161123,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -120,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.400000005960464
      },
      "visual_effects_transforms": {
 
@@ -160153,7 +161141,7 @@
      },
      "character_transforms": {
       "13": {
-       "emotion_id": 12,
+       "emotion_id": 2,
        "flip_h": true,
        "id": 13,
        "order": 15,
@@ -160164,7 +161152,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 13,
+       "emotion_id": 12,
        "flip_h": true,
        "id": 19,
        "order": 10,
@@ -160188,9 +161176,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -120,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.400000005960464
      },
      "visual_effects_transforms": {
 
@@ -160206,7 +161194,7 @@
      },
      "character_transforms": {
       "13": {
-       "emotion_id": 12,
+       "emotion_id": 2,
        "flip_h": true,
        "id": 13,
        "order": 15,
@@ -160217,7 +161205,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 13,
+       "emotion_id": 12,
        "flip_h": true,
        "id": 19,
        "order": 10,
@@ -160241,9 +161229,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -120,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.400000005960464
      },
      "visual_effects_transforms": {
 
@@ -160259,7 +161247,7 @@
      },
      "character_transforms": {
       "13": {
-       "emotion_id": 12,
+       "emotion_id": 2,
        "flip_h": true,
        "id": 13,
        "order": 15,
@@ -160270,7 +161258,7 @@
        "scale": 1
       },
       "19": {
-       "emotion_id": 13,
+       "emotion_id": 12,
        "flip_h": true,
        "id": 19,
        "order": 10,
@@ -160294,9 +161282,9 @@
      },
      "location_transform": {
       "position_x": 0,
-      "position_y": 0,
+      "position_y": -120,
       "rotation": 0,
-      "scale": 1
+      "scale": 0.400000005960464
      },
      "visual_effects_transforms": {
 
@@ -161311,7 +162299,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 7,
@@ -161322,7 +162310,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 8,
@@ -161951,7 +162939,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 6,
@@ -161973,7 +162961,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 1,
@@ -162015,7 +163003,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 6,
@@ -162026,7 +163014,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 10,
@@ -162079,7 +163067,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 6,
@@ -162090,7 +163078,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 8,
@@ -162143,7 +163131,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 6,
@@ -162154,71 +163142,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
-      },
-      "27": {
-       "emotion_id": 18,
-       "flip_h": true,
-       "id": 27,
-       "order": 20,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "40": {
-       "emotion_id": 1,
-       "flip_h": false,
-       "id": 40,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 8,
-       "flip_h": true,
-       "id": 13,
-       "order": 15,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737875
-      },
-      "19": {
-       "emotion_id": 6,
-       "flip_h": true,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 18,
@@ -162271,7 +163195,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 6,
@@ -162282,7 +163206,71 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 18,
+       "flip_h": true,
+       "id": 27,
+       "order": 20,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "40": {
+       "emotion_id": 1,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 8,
+       "flip_h": true,
+       "id": 13,
+       "order": 15,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "19": {
+       "emotion_id": 6,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 18,
@@ -162335,7 +163323,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 6,
@@ -162346,7 +163334,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 18,
@@ -162399,7 +163387,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 6,
@@ -162410,7 +163398,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 13,
@@ -162463,7 +163451,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 6,
@@ -162474,7 +163462,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -162538,7 +163526,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 6,
@@ -162549,7 +163537,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -162613,7 +163601,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 6,
@@ -162624,7 +163612,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -162710,7 +163698,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 1,
@@ -162721,7 +163709,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "43": {
        "emotion_id": 0,
@@ -162763,7 +163751,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -162774,7 +163762,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -162838,7 +163826,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -162849,7 +163837,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -162913,7 +163901,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -162924,7 +163912,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -162988,7 +163976,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -162999,7 +163987,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -163063,7 +164051,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -163074,7 +164062,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -163138,7 +164126,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -163149,7 +164137,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 2,
@@ -163213,7 +164201,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -163224,7 +164212,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 2,
@@ -163288,7 +164276,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -163299,7 +164287,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 2,
@@ -163363,7 +164351,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -163374,7 +164362,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -163438,7 +164426,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -163449,7 +164437,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -163513,7 +164501,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -163524,7 +164512,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -163588,7 +164576,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -163599,7 +164587,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -163663,7 +164651,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -163674,7 +164662,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -163749,7 +164737,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -163760,7 +164748,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 0,
@@ -163824,7 +164812,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -163835,82 +164823,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
-      },
-      "40": {
-       "emotion_id": 1,
-       "flip_h": false,
-       "id": 40,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "43": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 43,
-       "order": -5,
-       "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 0,
-       "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 12,
-       "flip_h": true,
-       "id": 13,
-       "order": 15,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "19": {
-       "emotion_id": 11,
-       "flip_h": true,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737875
-      },
-      "27": {
-       "emotion_id": 7,
-       "flip_h": true,
-       "id": 27,
-       "order": 20,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 1,
@@ -163963,7 +164876,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 1
       },
       "19": {
        "emotion_id": 11,
@@ -163974,7 +164887,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -163985,7 +164898,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 1,
@@ -164038,7 +164951,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -164049,7 +164962,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -164113,7 +165026,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -164124,7 +165037,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -164188,7 +165101,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -164199,7 +165112,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -164263,7 +165176,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -164274,7 +165187,82 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 7,
+       "flip_h": true,
+       "id": 27,
+       "order": 20,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "40": {
+       "emotion_id": 1,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "43": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 43,
+       "order": -5,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 12,
+       "flip_h": true,
+       "id": 13,
+       "order": 15,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "19": {
+       "emotion_id": 11,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -164338,7 +165326,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -164349,7 +165337,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -164413,7 +165401,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -164424,7 +165412,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -164488,7 +165476,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -164499,7 +165487,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -164563,7 +165551,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -164574,7 +165562,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -164638,7 +165626,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -164649,7 +165637,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -164713,7 +165701,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -164724,7 +165712,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -164788,7 +165776,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -164799,7 +165787,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -164863,7 +165851,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -164874,7 +165862,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -164938,7 +165926,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -164949,7 +165937,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -165013,7 +166001,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -165024,7 +166012,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -165099,7 +166087,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -165110,7 +166098,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 0,
@@ -165174,7 +166162,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -165185,7 +166173,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 0,
@@ -165249,7 +166237,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -165260,7 +166248,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 0,
@@ -165324,7 +166312,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -165335,7 +166323,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 0,
@@ -165388,7 +166376,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -165399,82 +166387,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
-      },
-      "27": {
-       "emotion_id": 7,
-       "flip_h": true,
-       "id": 27,
-       "order": 20,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "40": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 40,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "43": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 43,
-       "order": -5,
-       "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 0,
-       "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 12,
-       "flip_h": true,
-       "id": 13,
-       "order": 15,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737875
-      },
-      "19": {
-       "emotion_id": 11,
-       "flip_h": true,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -165538,7 +166451,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -165549,7 +166462,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -165560,7 +166473,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 1
       },
       "40": {
        "emotion_id": 0,
@@ -165613,7 +166526,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -165635,7 +166548,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 0,
@@ -165688,7 +166601,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -165710,7 +166623,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 0,
@@ -165763,7 +166676,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -165785,7 +166698,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 0,
@@ -165838,7 +166751,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -165860,7 +166773,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 0,
@@ -165913,7 +166826,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 1
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -165924,7 +166837,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 1
       },
       "27": {
        "emotion_id": 7,
@@ -165935,82 +166848,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
-      },
-      "40": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 40,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "43": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 43,
-       "order": -5,
-       "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 0,
-       "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 12,
-       "flip_h": true,
-       "id": 13,
-       "order": 15,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "19": {
-       "emotion_id": 11,
-       "flip_h": true,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737875
-      },
-      "27": {
-       "emotion_id": 7,
-       "flip_h": true,
-       "id": 27,
-       "order": 20,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 0,
@@ -166074,7 +166912,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -166085,7 +166923,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 0,
@@ -166149,7 +166987,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 7,
@@ -166160,7 +166998,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "40": {
        "emotion_id": 0,
@@ -166213,7 +167051,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 1
       },
       "19": {
        "emotion_id": 11,
@@ -166224,7 +167062,157 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 7,
+       "flip_h": true,
+       "id": 27,
+       "order": 20,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "43": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 43,
+       "order": -5,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 12,
+       "flip_h": true,
+       "id": 13,
+       "order": 15,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "19": {
+       "emotion_id": 11,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 7,
+       "flip_h": true,
+       "id": 27,
+       "order": 20,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "40": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "43": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 43,
+       "order": -5,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 12,
+       "flip_h": true,
+       "id": 13,
+       "order": 15,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "19": {
+       "emotion_id": 11,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 3,
@@ -166288,7 +167276,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -166299,7 +167287,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 3,
@@ -166363,7 +167351,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -166374,7 +167362,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -166438,7 +167426,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -166449,7 +167437,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -166513,7 +167501,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -166524,7 +167512,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -166588,7 +167576,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -166599,82 +167587,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
-      },
-      "27": {
-       "emotion_id": 11,
-       "flip_h": true,
-       "id": 27,
-       "order": 20,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "40": {
-       "emotion_id": 1,
-       "flip_h": false,
-       "id": 40,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": -400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 1
-      },
-      "43": {
-       "emotion_id": 0,
-       "flip_h": false,
-       "id": 43,
-       "order": -5,
-       "outfit_id": 0,
-       "position_x": 0,
-       "position_y": 0,
-       "rotation": 0,
-       "scale": 1
-      }
-     },
-     "location_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1
-     },
-     "visual_effects_transforms": {
-
-     }
-    },
-    {
-     "camera_transform": {
-      "position_x": 0,
-      "position_y": 0,
-      "rotation": 0,
-      "scale": 1,
-      "zoom": 1
-     },
-     "character_transforms": {
-      "13": {
-       "emotion_id": 12,
-       "flip_h": true,
-       "id": 13,
-       "order": 15,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737875
-      },
-      "19": {
-       "emotion_id": 11,
-       "flip_h": true,
-       "id": 19,
-       "order": 10,
-       "outfit_id": 0,
-       "position_x": 400,
-       "position_y": 475,
-       "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -166738,7 +167651,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -166749,7 +167662,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -166813,7 +167726,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -166824,7 +167737,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -166888,7 +167801,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -166899,7 +167812,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -166963,7 +167876,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -166974,7 +167887,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -167038,7 +167951,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -167049,7 +167962,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -167113,7 +168026,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -167124,7 +168037,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -167188,7 +168101,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -167199,7 +168112,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -167263,7 +168176,7 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "19": {
        "emotion_id": 11,
@@ -167274,7 +168187,82 @@
        "position_x": 400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
+      },
+      "27": {
+       "emotion_id": 11,
+       "flip_h": true,
+       "id": 27,
+       "order": 20,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "40": {
+       "emotion_id": 1,
+       "flip_h": false,
+       "id": 40,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": -400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 1
+      },
+      "43": {
+       "emotion_id": 0,
+       "flip_h": false,
+       "id": 43,
+       "order": -5,
+       "outfit_id": 0,
+       "position_x": 0,
+       "position_y": 0,
+       "rotation": 0,
+       "scale": 1
+      }
+     },
+     "location_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1
+     },
+     "visual_effects_transforms": {
+
+     }
+    },
+    {
+     "camera_transform": {
+      "position_x": 0,
+      "position_y": 0,
+      "rotation": 0,
+      "scale": 1,
+      "zoom": 1
+     },
+     "character_transforms": {
+      "13": {
+       "emotion_id": 12,
+       "flip_h": true,
+       "id": 13,
+       "order": 15,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
+      },
+      "19": {
+       "emotion_id": 11,
+       "flip_h": true,
+       "id": 19,
+       "order": 10,
+       "outfit_id": 0,
+       "position_x": 400,
+       "position_y": 475,
+       "rotation": 0,
+       "scale": 0.00000999999974737
       },
       "27": {
        "emotion_id": 11,
@@ -167371,7 +168359,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "43": {
        "emotion_id": 0,
@@ -167446,7 +168434,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "43": {
        "emotion_id": 0,
@@ -167521,7 +168509,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "43": {
        "emotion_id": 0,
@@ -167596,7 +168584,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "43": {
        "emotion_id": 0,
@@ -167671,7 +168659,7 @@
        "position_x": -400,
        "position_y": 475,
        "rotation": 0,
-       "scale": 0.00000999999974737875
+       "scale": 0.00000999999974737
       },
       "43": {
        "emotion_id": 0,
@@ -167704,182 +168692,182 @@
   "0": {
    "position_x": 1400,
    "position_y": 780,
-   "size_x": 200.0048828125,
-   "size_y": 241.000610351563
+   "size_x": 200.005187988281,
+   "size_y": 241.000915527344
   },
   "100": {
    "position_x": -20,
    "position_y": -580,
-   "size_x": 199.998352050781,
-   "size_y": 155.000061035156
+   "size_x": 199.998474121094,
+   "size_y": 155.000106811523
   },
   "101": {
    "position_x": 12240,
    "position_y": 580,
    "size_x": 199.998046875,
-   "size_y": 306.001251220703
+   "size_y": 306.001342773438
   },
   "104": {
    "position_x": 1620,
    "position_y": -540,
-   "size_x": 200,
-   "size_y": 155.001220703125
+   "size_x": 199.999755859375,
+   "size_y": 155.001190185547
   },
   "106": {
    "position_x": 12480,
    "position_y": 340,
-   "size_x": 194.384765625,
-   "size_y": 256.000732421875
+   "size_x": 194.3876953125,
+   "size_y": 256.0009765625
   },
   "107": {
    "position_x": 12480,
    "position_y": 660,
-   "size_x": 198.126953125,
-   "size_y": 256.001159667969
+   "size_x": 198.1298828125,
+   "size_y": 256.001251220703
   },
   "108": {
    "position_x": 12480,
    "position_y": 920,
-   "size_x": 204.982421875,
-   "size_y": 306.001159667969
+   "size_x": 204.9853515625,
+   "size_y": 306.001342773438
   },
   "109": {
    "position_x": 12780,
    "position_y": 620,
    "size_x": 200.00390625,
-   "size_y": 306.000457763672
+   "size_y": 306.000274658203
   },
   "110": {
    "position_x": 13060,
    "position_y": 320,
    "size_x": 200.001953125,
-   "size_y": 300.0009765625
+   "size_y": 300.001037597656
   },
   "111": {
    "position_x": 13060,
    "position_y": 660,
    "size_x": 200.001953125,
-   "size_y": 300.000366210938
+   "size_y": 300.000518798828
   },
   "112": {
    "position_x": 13060,
    "position_y": 1000,
    "size_x": 200.001953125,
-   "size_y": 299.999633789063
+   "size_y": 299.999725341797
   },
   "113": {
    "position_x": 13360,
    "position_y": 680,
-   "size_x": 200,
-   "size_y": 356.0009765625
+   "size_x": 199.99951171875,
+   "size_y": 356.001220703125
   },
   "114": {
    "position_x": 13700,
    "position_y": 240,
    "size_x": 200.01171875,
-   "size_y": 299.999664306641
+   "size_y": 299.99951171875
   },
   "115": {
    "position_x": 14000,
    "position_y": 420,
    "size_x": 200.001953125,
-   "size_y": 299.999816894531
+   "size_y": 299.999969482422
   },
   "116": {
    "position_x": 13700,
    "position_y": 680,
    "size_x": 200.01171875,
-   "size_y": 300.000244140625
+   "size_y": 300.000366210938
   },
   "117": {
    "position_x": 14000,
    "position_y": 920,
    "size_x": 200.001953125,
-   "size_y": 300.000183105469
+   "size_y": 300.000366210938
   },
   "118": {
    "position_x": 13700,
    "position_y": 1120,
    "size_x": 200.01171875,
-   "size_y": 299.998596191406
+   "size_y": 299.998657226563
   },
   "119": {
    "position_x": 14380,
    "position_y": 720,
-   "size_x": 200.001953125,
-   "size_y": 306.000610351563
+   "size_x": 200.00244140625,
+   "size_y": 306.000854492188
   },
   "120": {
    "position_x": 14800,
    "position_y": 320,
    "size_x": 200,
-   "size_y": 300.0009765625
+   "size_y": 300.001037597656
   },
   "121": {
    "position_x": 14800,
    "position_y": 640,
    "size_x": 200,
-   "size_y": 299.999938964844
+   "size_y": 299.999847412109
   },
   "122": {
    "position_x": 14800,
    "position_y": 980,
    "size_x": 200,
-   "size_y": 299.999694824219
+   "size_y": 299.999877929688
   },
   "123": {
    "position_x": -640,
    "position_y": 1480,
-   "size_x": 200.000854492188,
-   "size_y": 155.000183105469
+   "size_x": 200.000549316406,
+   "size_y": 155
   },
   "124": {
    "position_x": -620,
    "position_y": 1200,
-   "size_x": 200,
-   "size_y": 155.000244140625
+   "size_x": 200.000061035156,
+   "size_y": 155.000366210938
   },
   "125": {
    "position_x": -20,
    "position_y": -400,
-   "size_x": 200.000305175781,
-   "size_y": 155
+   "size_x": 200.000427246094,
+   "size_y": 155.000015258789
   },
   "126": {
    "position_x": -420,
    "position_y": 1800,
-   "size_x": 200,
-   "size_y": 155.000122070313
+   "size_x": 200.000396728516,
+   "size_y": 155
   },
   "127": {
    "position_x": -1280,
    "position_y": 0,
-   "size_x": 200,
-   "size_y": 155.000213623047
+   "size_x": 200.000274658203,
+   "size_y": 155.000152587891
   },
   "128": {
    "position_x": 500,
    "position_y": -320,
-   "size_x": 199.999755859375,
-   "size_y": 155.000030517578
+   "size_x": 199.999389648438,
+   "size_y": 155.000122070313
   },
   "129": {
    "position_x": 700,
    "position_y": 1920,
-   "size_x": 200.00048828125,
-   "size_y": 155.000244140625
+   "size_x": 200.000671386719,
+   "size_y": 155.000061035156
   },
   "13": {
    "position_x": 1040,
    "position_y": 60,
-   "size_x": 200.00048828125,
-   "size_y": 155.001098632813
+   "size_x": 200.000732421875,
+   "size_y": 155.001037597656
   },
   "130": {
    "position_x": 700,
    "position_y": 2080,
-   "size_x": 200.00048828125,
-   "size_y": 155.000366210938
+   "size_x": 200.000671386719,
+   "size_y": 155.00048828125
   },
   "131": {
    "position_x": 580,
@@ -167902,308 +168890,344 @@
   "134": {
    "position_x": 1000,
    "position_y": 2180,
-   "size_x": 200,
-   "size_y": 155.000244140625
+   "size_x": 199.999816894531,
+   "size_y": 155.000122070313
   },
   "135": {
    "position_x": 1000,
    "position_y": 2340,
-   "size_x": 200,
+   "size_x": 199.999816894531,
    "size_y": 155.00048828125
   },
   "136": {
    "position_x": 1000,
    "position_y": 2500,
-   "size_x": 200,
+   "size_x": 199.999816894531,
    "size_y": 155
   },
   "137": {
    "position_x": 1000,
    "position_y": 2660,
-   "size_x": 200,
-   "size_y": 155
+   "size_x": 199.999816894531,
+   "size_y": 155.000122070313
   },
   "138": {
    "position_x": 1000,
    "position_y": 2820,
-   "size_x": 200,
+   "size_x": 199.999816894531,
    "size_y": 155.00048828125
   },
   "139": {
    "position_x": 1000,
    "position_y": 2980,
-   "size_x": 200,
-   "size_y": 155.000122070313
+   "size_x": 199.999816894531,
+   "size_y": 155.000244140625
   },
   "14": {
    "position_x": 400,
    "position_y": 1800,
    "size_x": 200.000854492188,
-   "size_y": 155.001098632813
+   "size_y": 155.0009765625
   },
   "140": {
    "position_x": 1000,
    "position_y": 3140,
-   "size_x": 200,
-   "size_y": 155
+   "size_x": 199.999816894531,
+   "size_y": 155.000122070313
   },
   "141": {
    "position_x": 1337.91857910156,
    "position_y": 2393.302734375,
    "size_x": 199.999877929688,
-   "size_y": 155.000244140625
+   "size_y": 155.000366210938
   },
   "142": {
    "position_x": -240,
    "position_y": 480,
-   "size_x": 200.000122070313,
+   "size_x": 199.999908447266,
    "size_y": 155
+  },
+  "143": {
+   "position_x": -1000,
+   "position_y": -600,
+   "size_x": 200.000061035156,
+   "size_y": 155.000015258789
+  },
+  "144": {
+   "position_x": -1000,
+   "position_y": -440,
+   "size_x": 199.999938964844,
+   "size_y": 155
+  },
+  "145": {
+   "position_x": -1000,
+   "position_y": -280,
+   "size_x": 200.000061035156,
+   "size_y": 155.000122070313
+  },
+  "146": {
+   "position_x": -740,
+   "position_y": -600,
+   "size_x": 200,
+   "size_y": 155.000015258789
+  },
+  "147": {
+   "position_x": -740,
+   "position_y": -440,
+   "size_x": 200,
+   "size_y": 155.000122070313
+  },
+  "148": {
+   "position_x": -740,
+   "position_y": -280,
+   "size_x": 200,
+   "size_y": 155.000061035156
   },
   "15": {
    "position_x": 400,
    "position_y": 1960,
    "size_x": 200.000854492188,
-   "size_y": 155.002685546875
+   "size_y": 155.0029296875
   },
   "16": {
    "position_x": 0,
    "position_y": -100,
-   "size_x": 199.997131347656,
-   "size_y": 155.000854492188
+   "size_x": 199.997375488281,
+   "size_y": 155.000823974609
   },
   "17": {
    "position_x": 0,
    "position_y": 60,
-   "size_x": 199.997131347656,
-   "size_y": 155.000610351563
+   "size_x": 199.997375488281,
+   "size_y": 155.000549316406
   },
   "18": {
    "position_x": 0,
    "position_y": 220,
-   "size_x": 199.997131347656,
-   "size_y": 155.000427246094
+   "size_x": 199.997375488281,
+   "size_y": 155.000274658203
   },
   "19": {
    "position_x": 1040,
    "position_y": 220,
-   "size_x": 200.00048828125,
-   "size_y": 155.000427246094
+   "size_x": 200.000732421875,
+   "size_y": 155.000274658203
   },
   "2": {
    "position_x": 1340,
    "position_y": 20,
-   "size_x": 199.997314453125,
-   "size_y": 155.000762939453
+   "size_x": 199.997375488281,
+   "size_y": 155.000946044922
   },
   "21": {
    "position_x": -400,
    "position_y": 840,
-   "size_x": 199.999633789063,
-   "size_y": 155.001586914063
+   "size_x": 199.999755859375,
+   "size_y": 155.001739501953
   },
   "22": {
    "position_x": -200,
    "position_y": 1400,
-   "size_x": 200.002197265625,
-   "size_y": 155.003540039063
+   "size_x": 200.002044677734,
+   "size_y": 155.003784179688
   },
   "23": {
    "position_x": -400,
    "position_y": 1200,
-   "size_x": 199.999633789063,
-   "size_y": 155.000244140625
+   "size_x": 199.999755859375,
+   "size_y": 155.000366210938
   },
   "24": {
    "position_x": 1800,
    "position_y": 760,
-   "size_x": 199.995849609375,
-   "size_y": 300.000671386719
+   "size_x": 199.995971679688,
+   "size_y": 300.000732421875
   },
   "25": {
    "position_x": 1040,
    "position_y": -100,
-   "size_x": 200.00048828125,
-   "size_y": 155.000854492188
+   "size_x": 200.000732421875,
+   "size_y": 155.000823974609
   },
   "26": {
    "position_x": 1040,
    "position_y": -260,
-   "size_x": 200.00048828125,
-   "size_y": 155.000442504883
+   "size_x": 200.000732421875,
+   "size_y": 155.000518798828
   },
   "27": {
    "position_x": 1340,
    "position_y": -160,
-   "size_x": 200.001220703125,
-   "size_y": 155.000732421875
+   "size_x": 200.001281738281,
+   "size_y": 155.000671386719
   },
   "28": {
    "position_x": -200,
    "position_y": 1560,
-   "size_x": 200.002197265625,
-   "size_y": 155.001342773438
+   "size_x": 200.002044677734,
+   "size_y": 155.001525878906
   },
   "29": {
    "position_x": -200,
    "position_y": 1720,
-   "size_x": 200.002197265625,
-   "size_y": 155.000122070313
+   "size_x": 200.002044677734,
+   "size_y": 155
   },
   "30": {
    "position_x": -200,
    "position_y": 1880,
-   "size_x": 200.002197265625,
-   "size_y": 155.002319335938
+   "size_x": 200.002044677734,
+   "size_y": 155.002563476563
   },
   "31": {
    "position_x": -200,
    "position_y": 2040,
-   "size_x": 200.002197265625,
-   "size_y": 155.0009765625
+   "size_x": 200.002044677734,
+   "size_y": 155.000854492188
   },
   "32": {
    "position_x": -200,
    "position_y": 2200,
-   "size_x": 200.002197265625,
-   "size_y": 155.000732421875
+   "size_x": 200.002044677734,
+   "size_y": 155.00048828125
   },
   "33": {
    "position_x": -200,
    "position_y": 2360,
-   "size_x": 200.002197265625,
-   "size_y": 155.001220703125
+   "size_x": 200.002044677734,
+   "size_y": 155.0009765625
   },
   "34": {
    "position_x": -200,
    "position_y": 2520,
-   "size_x": 200.002197265625,
-   "size_y": 155.000732421875
+   "size_x": 200.002044677734,
+   "size_y": 155.000854492188
   },
   "35": {
    "position_x": -200,
    "position_y": 2680,
-   "size_x": 200.002197265625,
+   "size_x": 200.002044677734,
    "size_y": 155.001098632813
   },
   "36": {
    "position_x": -420,
    "position_y": 1440,
-   "size_x": 200,
-   "size_y": 155.001342773438
+   "size_x": 200.000396728516,
+   "size_y": 155.001159667969
   },
   "37": {
    "position_x": -400,
    "position_y": 680,
-   "size_x": 199.999633789063,
-   "size_y": 155.001770019531
+   "size_x": 199.999755859375,
+   "size_y": 155.001953125
   },
   "38": {
    "position_x": -240,
    "position_y": -300,
-   "size_x": 200.000366210938,
-   "size_y": 155.000122070313
+   "size_x": 200.000152587891,
+   "size_y": 155
   },
   "39": {
    "position_x": 1040,
    "position_y": -420,
-   "size_x": 200.00048828125,
-   "size_y": 155.0009765625
+   "size_x": 200.000732421875,
+   "size_y": 155.001007080078
   },
   "40": {
    "position_x": 1040,
    "position_y": -580,
-   "size_x": 200.00048828125,
-   "size_y": 155.000061035156
+   "size_x": 200.000732421875,
+   "size_y": 155.000106811523
   },
   "41": {
    "position_x": 220,
    "position_y": -60,
    "size_x": 199.9990234375,
-   "size_y": 155.000061035156
+   "size_y": 155.000091552734
   },
   "42": {
    "position_x": 2200,
    "position_y": 760,
-   "size_x": 200.00048828125,
-   "size_y": 300.001159667969
+   "size_x": 200.0009765625,
+   "size_y": 300.001220703125
   },
   "43": {
    "position_x": 1340,
    "position_y": -500,
-   "size_x": 200.001220703125,
+   "size_x": 200.001281738281,
    "size_y": 155
   },
   "44": {
    "position_x": 2600,
    "position_y": 740,
-   "size_x": 239.49072265625,
-   "size_y": 375.048828125
+   "size_x": 239.48974609375,
+   "size_y": 375.048706054688
   },
   "45": {
    "position_x": -480,
    "position_y": -100,
-   "size_x": 199.997192382813,
-   "size_y": 155.000854492188
+   "size_x": 199.997177124023,
+   "size_y": 155.000823974609
   },
   "46": {
    "position_x": -480,
    "position_y": 60,
-   "size_x": 199.997192382813,
-   "size_y": 155.000610351563
+   "size_x": 199.997177124023,
+   "size_y": 155.000549316406
   },
   "47": {
    "position_x": -480,
    "position_y": 220,
-   "size_x": 199.997192382813,
-   "size_y": 155.000427246094
+   "size_x": 199.997177124023,
+   "size_y": 155.000274658203
   },
   "48": {
    "position_x": 3000,
    "position_y": 740,
    "size_x": 302.6884765625,
-   "size_y": 345.622863769531
+   "size_y": 345.622924804688
   },
   "49": {
    "position_x": 3400,
    "position_y": 740,
-   "size_x": 199.99951171875,
-   "size_y": 300.000732421875
+   "size_x": 199.9990234375,
+   "size_y": 300.00048828125
   },
   "50": {
    "position_x": 3800,
    "position_y": 520,
-   "size_x": 287.623046875,
-   "size_y": 291.494476318359
+   "size_x": 287.62353515625,
+   "size_y": 291.49462890625
   },
   "51": {
    "position_x": 3800,
    "position_y": 1000,
-   "size_x": 293.984375,
-   "size_y": 293.205200195313
+   "size_x": 293.98486328125,
+   "size_y": 293.205291748047
   },
   "52": {
    "position_x": 4240,
    "position_y": 740,
-   "size_x": 214.970458984375,
-   "size_y": 336.497375488281
+   "size_x": 214.9697265625,
+   "size_y": 336.497314453125
   },
   "53": {
    "position_x": 4520,
    "position_y": 740,
-   "size_x": 214.97314453125,
-   "size_y": 323.395568847656
+   "size_x": 214.973388671875,
+   "size_y": 323.3955078125
   },
   "54": {
    "position_x": 4800,
    "position_y": 720,
-   "size_x": 308.03759765625,
-   "size_y": 366.356567382813
+   "size_x": 308.037109375,
+   "size_y": 366.356689453125
   },
   "55": {
    "position_x": -620,
    "position_y": 820,
-   "size_x": 200,
-   "size_y": 155.001342773438
+   "size_x": 200.000061035156,
+   "size_y": 155.001617431641
   },
   "56": {
    "position_x": 400,
@@ -168214,274 +169238,274 @@
   "57": {
    "position_x": -720,
    "position_y": 0,
-   "size_x": 199.999328613281,
-   "size_y": 155.000457763672
+   "size_x": 199.999206542969,
+   "size_y": 155.000396728516
   },
   "58": {
    "position_x": -720,
    "position_y": 160,
-   "size_x": 199.999328613281,
-   "size_y": 155.000305175781
+   "size_x": 199.999206542969,
+   "size_y": 155.000442504883
   },
   "59": {
    "position_x": -720,
    "position_y": 320,
-   "size_x": 199.999328613281,
-   "size_y": 155.001708984375
+   "size_x": 199.999206542969,
+   "size_y": 155.001892089844
   },
   "60": {
    "position_x": -720,
    "position_y": 480,
-   "size_x": 199.999328613281,
-   "size_y": 155.000122070313
+   "size_x": 199.999206542969,
+   "size_y": 155.000106811523
   },
   "61": {
    "position_x": 5240,
    "position_y": 740,
-   "size_x": 263.2333984375,
-   "size_y": 414.253234863281
+   "size_x": 263.233642578125,
+   "size_y": 414.253295898438
   },
   "62": {
    "position_x": 5600,
    "position_y": 740,
-   "size_x": 217.81298828125,
-   "size_y": 354.803283691406
+   "size_x": 217.8125,
+   "size_y": 354.803588867188
   },
   "63": {
    "position_x": 5940,
    "position_y": 740,
-   "size_x": 223.29296875,
-   "size_y": 350.692687988281
+   "size_x": 223.29248046875,
+   "size_y": 350.692749023438
   },
   "64": {
    "position_x": 1340,
    "position_y": -340,
-   "size_x": 200.001220703125,
-   "size_y": 155.000015258789
+   "size_x": 200.001281738281,
+   "size_y": 155
   },
   "65": {
    "position_x": 6260,
    "position_y": 740,
-   "size_x": 215.90966796875,
-   "size_y": 395.449462890625
+   "size_x": 215.9091796875,
+   "size_y": 395.449584960938
   },
   "66": {
    "position_x": 6600,
    "position_y": 740,
-   "size_x": 207.48828125,
-   "size_y": 362.69775390625
+   "size_x": 207.48876953125,
+   "size_y": 362.697631835938
   },
   "67": {
    "position_x": 6980,
    "position_y": 740,
-   "size_x": 226.2021484375,
-   "size_y": 350.532531738281
+   "size_x": 226.203125,
+   "size_y": 350.532592773438
   },
   "68": {
    "position_x": 7260,
    "position_y": 740,
-   "size_x": 245.181640625,
-   "size_y": 375.07421875
+   "size_x": 245.18115234375,
+   "size_y": 375.074096679688
   },
   "69": {
    "position_x": 7580,
    "position_y": 740,
-   "size_x": 246.0859375,
-   "size_y": 367.2587890625
+   "size_x": 246.085693359375,
+   "size_y": 367.258666992188
   },
   "70": {
    "position_x": -240,
    "position_y": -140,
-   "size_x": 200.000366210938,
-   "size_y": 155.000396728516
+   "size_x": 200.000152587891,
+   "size_y": 155.000427246094
   },
   "71": {
    "position_x": -240,
    "position_y": 20,
-   "size_x": 200.000366210938,
-   "size_y": 155.000030517578
+   "size_x": 200.000152587891,
+   "size_y": 155.000213623047
   },
   "72": {
    "position_x": -240,
    "position_y": 160,
-   "size_x": 200.000366210938,
-   "size_y": 155.000305175781
+   "size_x": 200.000152587891,
+   "size_y": 155.000442504883
   },
   "73": {
    "position_x": -240,
    "position_y": 320,
-   "size_x": 200.000366210938,
-   "size_y": 155.001708984375
+   "size_x": 200.000152587891,
+   "size_y": 155.001892089844
   },
   "74": {
    "position_x": 7900,
    "position_y": 740,
-   "size_x": 204.98095703125,
-   "size_y": 337.366516113281
+   "size_x": 204.981201171875,
+   "size_y": 337.366455078125
   },
   "75": {
    "position_x": -1000,
    "position_y": 0,
-   "size_x": 200.000854492188,
-   "size_y": 155.000457763672
+   "size_x": 200.001037597656,
+   "size_y": 155.000396728516
   },
   "76": {
    "position_x": -1000,
    "position_y": 160,
-   "size_x": 199.998901367188,
-   "size_y": 155.000305175781
+   "size_x": 199.999084472656,
+   "size_y": 155.000442504883
   },
   "77": {
    "position_x": -1000,
    "position_y": 320,
-   "size_x": 199.998901367188,
-   "size_y": 155.001708984375
+   "size_x": 199.999084472656,
+   "size_y": 155.001892089844
   },
   "78": {
    "position_x": -1000,
    "position_y": 480,
-   "size_x": 199.998901367188,
-   "size_y": 155.000122070313
+   "size_x": 199.999084472656,
+   "size_y": 155.000106811523
   },
   "79": {
    "position_x": 8200,
    "position_y": 760,
-   "size_x": 233.62890625,
-   "size_y": 343.592956542969
+   "size_x": 233.6298828125,
+   "size_y": 343.593017578125
   },
   "80": {
    "position_x": 8480,
    "position_y": 760,
-   "size_x": 218.689453125,
+   "size_x": 218.689208984375,
    "size_y": 389.675537109375
   },
   "81": {
    "position_x": 8840,
    "position_y": 800,
    "size_x": 241.939453125,
-   "size_y": 356.527221679688
+   "size_y": 356.527252197266
   },
   "82": {
    "position_x": 9200,
    "position_y": 800,
    "size_x": 236.1171875,
-   "size_y": 410.847229003906
+   "size_y": 410.847076416016
   },
   "83": {
    "position_x": 9540,
    "position_y": 620,
-   "size_x": 251.4658203125,
-   "size_y": 410.138885498047
+   "size_x": 251.46533203125,
+   "size_y": 410.138702392578
   },
   "84": {
    "position_x": 9540,
    "position_y": 1060,
-   "size_x": 260.0107421875,
-   "size_y": 347.554626464844
+   "size_x": 260.01025390625,
+   "size_y": 347.554718017578
   },
   "85": {
    "position_x": 9960,
    "position_y": 420,
-   "size_x": 258.779296875,
-   "size_y": 423.578674316406
+   "size_x": 258.7783203125,
+   "size_y": 423.578948974609
   },
   "86": {
    "position_x": 10300,
    "position_y": 420,
-   "size_x": 246.72265625,
-   "size_y": 393.437561035156
+   "size_x": 246.72216796875,
+   "size_y": 393.437835693359
   },
   "87": {
    "position_x": 10600,
    "position_y": 400,
    "size_x": 224.12109375,
-   "size_y": 355.762512207031
+   "size_y": 355.762603759766
   },
   "88": {
    "position_x": 10880,
    "position_y": 400,
-   "size_x": 224.119140625,
-   "size_y": 397.960754394531
+   "size_x": 224.1181640625,
+   "size_y": 397.960601806641
   },
   "89": {
    "position_x": 9880,
    "position_y": 1060,
-   "size_x": 296.451171875,
-   "size_y": 369.324645996094
+   "size_x": 296.4501953125,
+   "size_y": 369.324737548828
   },
   "9": {
    "position_x": 280,
    "position_y": -320,
-   "size_x": 199.999755859375,
-   "size_y": 155.000030517578
+   "size_x": 199.999847412109,
+   "size_y": 155.000122070313
   },
   "90": {
    "position_x": 10280,
    "position_y": 1080,
-   "size_x": 335.6337890625,
-   "size_y": 352.747436523438
+   "size_x": 335.6328125,
+   "size_y": 352.747589111328
   },
   "91": {
    "position_x": 10680,
    "position_y": 1060,
-   "size_x": 281.388671875,
-   "size_y": 348.225036621094
+   "size_x": 281.3876953125,
+   "size_y": 348.225128173828
   },
   "92": {
    "position_x": 11020,
    "position_y": 1060,
-   "size_x": 255.765625,
-   "size_y": 307.537048339844
+   "size_x": 255.76416015625,
+   "size_y": 307.537139892578
   },
   "93": {
    "position_x": 11360,
    "position_y": 1040,
-   "size_x": 287.412109375,
-   "size_y": 322.606750488281
+   "size_x": 287.41259765625,
+   "size_y": 322.606719970703
   },
   "94": {
    "position_x": 11880,
    "position_y": 580,
-   "size_x": 313.23095703125,
-   "size_y": 302.265167236328
+   "size_x": 313.2314453125,
+   "size_y": 302.265258789063
   },
   "95": {
    "position_x": 15400,
    "position_y": 360,
-   "size_x": 270.1953125,
-   "size_y": 350.147674560547
+   "size_x": 270.1943359375,
+   "size_y": 350.147521972656
   },
   "96": {
    "position_x": 15820,
    "position_y": 400,
    "size_x": 286.255859375,
-   "size_y": 328.082580566406
+   "size_y": 328.082672119141
   },
   "97": {
    "position_x": 280,
    "position_y": -700,
-   "size_x": 200.003662109375,
+   "size_x": 200.003753662109,
    "size_y": 155
   },
   "98": {
    "position_x": 280,
    "position_y": -540,
-   "size_x": 200.003662109375,
-   "size_y": 155.001220703125
+   "size_x": 200.003753662109,
+   "size_y": 155.001190185547
   },
   "99": {
    "position_x": -420,
    "position_y": 1620,
-   "size_x": 200,
-   "size_y": 155.000610351563
+   "size_x": 200.000396728516,
+   "size_y": 155.000366210938
   },
-  "scroll_offset_x": -919.139587402344,
-  "scroll_offset_y": -124.444580078125,
+  "scroll_offset_x": -364.447998046875,
+  "scroll_offset_y": -47.9749450683594,
   "show_grid": true,
   "snapping_enabled": true,
-  "zoom": 0.603221535682678
+  "zoom": 0.412008374929428
  },
- "last_id": 142,
+ "last_id": 148,
  "locations": [
   {
    "active": true,
@@ -168668,6 +169692,42 @@
    "id": 142,
    "name": "Сцена (Нибрас)",
    "path_to_scene": "res://locations/сцена/сцена_нибрас.tscn"
+  },
+  {
+   "active": true,
+   "id": 143,
+   "name": "(Item) Метка",
+   "path_to_scene": "res://cg_arts/items/метка.tscn"
+  },
+  {
+   "active": true,
+   "id": 144,
+   "name": "(Item) Винтовка",
+   "path_to_scene": "res://cg_arts/items/винтовка.tscn"
+  },
+  {
+   "active": true,
+   "id": 145,
+   "name": "(Item) Патроны",
+   "path_to_scene": "res://cg_arts/items/патроны.tscn"
+  },
+  {
+   "active": true,
+   "id": 146,
+   "name": "(Item) Схема 1",
+   "path_to_scene": "res://cg_arts/items/схема_1.tscn"
+  },
+  {
+   "active": true,
+   "id": 147,
+   "name": "(Item) Схема 2",
+   "path_to_scene": "res://cg_arts/items/схема_2.tscn"
+  },
+  {
+   "active": true,
+   "id": 148,
+   "name": "(Item) Схема 3",
+   "path_to_scene": "res://cg_arts/items/схема_3.tscn"
   }
  ],
  "music_list": [

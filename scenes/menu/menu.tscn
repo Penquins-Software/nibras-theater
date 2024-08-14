@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=33 format=3 uid="uid://1ldra2lpi55u"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_h3ser"]
@@ -18,6 +18,41 @@
 [ext_resource type="Texture2D" uid="uid://bo0h30eo6twp2" path="res://gui/фон Сохранения и настройки.png" id="13_ivy2m"]
 [ext_resource type="Script" path="res://source/web_link.gd" id="15_ddq1b"]
 [ext_resource type="Script" path="res://source/button_with_sound.gd" id="16_ruy8w"]
+[ext_resource type="Theme" uid="uid://cgymxxcr7u4ai" path="res://scenes/save_manager/save_theme.tres" id="17_uo323"]
+[ext_resource type="PackedScene" uid="uid://btjj01uvktlvn" path="res://scenes/menu/gallery_item.tscn" id="18_pqco6"]
+[ext_resource type="Texture2D" uid="uid://fr16djow08qc" path="res://locations/коридор/коридор ночь.png" id="19_ljm3s"]
+[ext_resource type="AudioStream" uid="uid://7xl4kj5ya886" path="res://audio/music/menu.mp3" id="19_ojgkf"]
+[ext_resource type="Texture2D" uid="uid://faunxy17wew" path="res://locations/коридор/коридор лампы.png" id="20_q2gk7"]
+[ext_resource type="Texture2D" uid="uid://dj6eabukh2w57" path="res://locations/коридор/коридор день.png" id="21_2b7s8"]
+[ext_resource type="Texture2D" uid="uid://ddg8qqv3ih5qg" path="res://locations/коридор/коридор шторм.png" id="22_q31uk"]
+[ext_resource type="Script" path="res://scenes/menu/image_preview.gd" id="23_dqe06"]
+
+[sub_resource type="Animation" id="Animation_rcg8h"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_ckxfq"]
 resource_name = "движение"
@@ -46,33 +81,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(0, 0), Vector2(-15, 7), Vector2(16, 26), Vector2(20, 11), Vector2(0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_rcg8h"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("1:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("2:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_wnxuj"]
@@ -155,20 +163,24 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 5760.0
+offset_bottom = 3240.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("5_8p1ol")
-expand_mode = 1
+metadata/_edit_lock_ = true
 
 [node name="2" type="TextureRect" parent="Background/Руки"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 5760.0
+offset_bottom = 3240.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("6_a3sls")
-expand_mode = 1
+metadata/_edit_lock_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Background/Руки"]
 libraries = {
@@ -222,7 +234,7 @@ anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 100.0
-offset_top = -408.0
+offset_top = -369.0
 offset_right = 291.0
 offset_bottom = -100.0
 grow_vertical = 0
@@ -255,15 +267,34 @@ alignment = 0
 script = ExtResource("3_sfhbu")
 menu_element_to_show = NodePath("../../../Загрузить игру")
 
-[node name="Галерея" type="Button" parent="Главный экран/VBoxContainer"]
+[node name="Галерея" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
 size_flags_horizontal = 0
 focus_mode = 0
 theme = ExtResource("8_7egbi")
-disabled = true
 text = "Галерея"
 alignment = 0
 script = ExtResource("3_sfhbu")
+menu_element_to_show = NodePath("../../../Галерея")
+
+[node name="New" type="RichTextLabel" parent="Главный экран/VBoxContainer/Галерея"]
+visible = false
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -17.5
+offset_right = 111.0
+offset_bottom = 17.5
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("8_7egbi")
+bbcode_enabled = true
+text = "[color=red](новое)"
+scroll_active = false
 
 [node name="Экстра" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
@@ -308,6 +339,164 @@ script = ExtResource("11_ahf2s")
 [node name="Загрузить игру" parent="." instance=ExtResource("5_rnans")]
 visible = false
 layout_mode = 1
+
+[node name="Галерея" type="Control" parent="." node_paths=PackedStringArray("return_button")]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_h3ser")
+return_button = NodePath("Вернуться")
+
+[node name="Background" type="TextureRect" parent="Галерея"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_ivy2m")
+expand_mode = 1
+
+[node name="Заголовок" type="Label" parent="Галерея"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -380.0
+offset_right = 300.0
+offset_bottom = -346.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("8_7egbi")
+text = "Галерея"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Галерея"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -550.0
+offset_top = -300.0
+offset_right = 550.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("17_uo323")
+
+[node name="HFlowContainer" type="HFlowContainer" parent="Галерея/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Коридор (ночь)" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
+layout_mode = 2
+description = "Ночной коридор."
+image = ExtResource("19_ljm3s")
+
+[node name="GalleryItem2" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
+layout_mode = 2
+image = ExtResource("20_q2gk7")
+
+[node name="GalleryItem3" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
+layout_mode = 2
+image = ExtResource("21_2b7s8")
+
+[node name="GalleryItem4" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
+layout_mode = 2
+condition = "TRUE_ENDING1"
+image = ExtResource("22_q31uk")
+
+[node name="GalleryItem5" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
+layout_mode = 2
+
+[node name="GalleryItem6" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
+layout_mode = 2
+
+[node name="GalleryItem7" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
+layout_mode = 2
+
+[node name="GalleryItem8" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
+layout_mode = 2
+
+[node name="GalleryItem9" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
+layout_mode = 2
+
+[node name="GalleryItem10" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
+layout_mode = 2
+
+[node name="Вернуться" type="Button" parent="Галерея"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -118.5
+offset_top = 338.0
+offset_right = 118.5
+offset_bottom = 380.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme = ExtResource("8_7egbi")
+text = "Вернуться в меню "
+script = ExtResource("16_ruy8w")
+
+[node name="ImagePreview" type="Control" parent="Галерея" node_paths=PackedStringArray("image_rect", "description_label")]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("23_dqe06")
+image_rect = NodePath("Image")
+description_label = NodePath("Label")
+
+[node name="Image" type="TextureRect" parent="Галерея/ImagePreview"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Галерея/ImagePreview"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -75.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("8_7egbi")
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+
+[node name="Exit" type="Button" parent="Галерея/ImagePreview"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -8.0
+offset_bottom = 8.0
+grow_horizontal = 0
+text = "Вернуться"
 
 [node name="Настройки" parent="." instance=ExtResource("5_7o1gw")]
 visible = false
@@ -429,13 +618,23 @@ libraries = {
 }
 autoplay = "fadeout"
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19_ojgkf")
+autoplay = true
+bus = &"Music"
+
 [connection signal="return_was_pressed" from="Главный экран" to="." method="_show_main_menu"]
 [connection signal="pressed" from="Главный экран/VBoxContainer/Начать игру" to="." method="_start_game"]
 [connection signal="pressed" from="Главный экран/VBoxContainer/Продолжить" to="." method="continue_game"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Загрузить игру" to="." method="_show_menu_element"]
+[connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Галерея" to="." method="_show_menu_element"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Настройки" to="." method="_show_menu_element"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Авторы" to="." method="_show_menu_element"]
 [connection signal="load_save" from="Загрузить игру" to="." method="load_game"]
 [connection signal="return_was_pressed" from="Загрузить игру" to="." method="_show_main_menu"]
+[connection signal="return_was_pressed" from="Галерея" to="." method="_show_main_menu"]
+[connection signal="gallery_item" from="Галерея/ScrollContainer/HFlowContainer/Коридор (ночь)" to="Галерея/ImagePreview" method="show_image"]
+[connection signal="gallery_item" from="Галерея/ScrollContainer/HFlowContainer/GalleryItem4" to="Галерея/ImagePreview" method="show_image"]
+[connection signal="pressed" from="Галерея/ImagePreview/Exit" to="Галерея/ImagePreview" method="_on_exit_pressed"]
 [connection signal="return_was_pressed" from="Настройки" to="." method="_show_main_menu"]
 [connection signal="return_was_pressed" from="Авторы" to="." method="_show_main_menu"]

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0wmkvebarn1v"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_w8y2i"]
+[ext_resource type="Texture2D" uid="uid://bjpg0rxqmd24u" path="res://cg_arts/items/схема_2.png" id="2_0sjgm"]
+
+[node name="Схема1" type="Node2D"]
+z_index = 100
+script = ExtResource("1_w8y2i")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -3711.0
+offset_top = -2082.0
+offset_right = 3701.0
+offset_bottom = 2272.0
+color = Color(0.0980392, 0.0784314, 0.0784314, 1)
+
+[node name="Схема1" type="Sprite2D" parent="."]
+texture = ExtResource("2_0sjgm")
