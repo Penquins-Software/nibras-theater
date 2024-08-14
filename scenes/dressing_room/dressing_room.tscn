@@ -1,0 +1,76 @@
+[gd_scene load_steps=5 format=3 uid="uid://bse5wjbnvvfda"]
+
+[ext_resource type="PackedScene" uid="uid://3f3yq5xgcyh8" path="res://locations/гримёрка/гримёрка.tscn" id="1_cwtwd"]
+[ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="2_lqbst"]
+[ext_resource type="Theme" uid="uid://cgymxxcr7u4ai" path="res://scenes/save_manager/save_theme.tres" id="3_qlkr4"]
+[ext_resource type="PackedScene" uid="uid://e85u42361paf" path="res://characters/мишель/мишель.tscn" id="4_hfssh"]
+
+[node name="DressingRoom" type="Node2D"]
+
+[node name="Гримёрка" parent="." instance=ExtResource("1_cwtwd")]
+position = Vector2(-4, -175)
+scale = Vector2(1.5, 1.5)
+
+[node name="Мишель" parent="." instance=ExtResource("4_hfssh")]
+position = Vector2(35, 23)
+scale = Vector2(0.55, 0.55)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1520.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_lqbst")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="MenuButton" type="MenuButton" parent="CanvasLayer/Control/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "[Персонаж]"
+flat = false
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Control/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_qlkr4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/Panel/MarginContainer/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="CanvasLayer/Control/Panel/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Спокойствие"
+
+[node name="Button2" type="Button" parent="CanvasLayer/Control/Panel/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "asdasdasdasd"
