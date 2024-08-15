@@ -23,7 +23,7 @@ var visual_effects: Dictionary
 var sound_effects: Dictionary
 
 
-static var characters_loaded: bool = false
+static var loaded_locations = {}
 static var loaded_characters = {}
 
 
@@ -173,7 +173,13 @@ func set_location(location: RSELocation) -> void:
 	if location.path_to_scene == "":
 		return
 	
-	location_node = load(location.path_to_scene).instantiate()
+	var location_scene: PackedScene
+	if not loaded_locations == null and loaded_locations.has(location.id):
+		location_scene = loaded_locations[location.id]
+	else:
+		location_scene = load(location.path_to_scene)
+	
+	location_node = location_scene.instantiate()
 	add_child(location_node)
 	
 	Node2DDragger.new(location_node)
@@ -189,7 +195,6 @@ func add_character(character: RSECharacter) -> RSEBaseCharacterController:
 	else:
 		character_scene = load(character.path_to_scene)
 	
-	#var character_node: RSEBaseCharacterController = load(character.path_to_scene).instantiate()
 	var character_node: RSEBaseCharacterController = character_scene.instantiate()
 	character_node.order = 10;
 	character_node.character = character
@@ -331,13 +336,18 @@ func get_characeter_by_id(id: int) -> RSEBaseCharacterController:
 	return null
 
 
+static func load_all_locations() -> void:
+	for location_id: int in RewindStoryEngine.story.locations:
+		var location: RSELocation = RewindStoryEngine.story.locations[location_id]
+		if not location.path_to_scene == "":
+			loaded_locations[location_id] = load(location.path_to_scene)
+
+
 static func load_all_characters() -> void:
 	for character_id: int in RewindStoryEngine.story.characters:
 		var character: RSECharacter = RewindStoryEngine.story.characters[character_id]
 		if not character.path_to_scene == "":
 			loaded_characters[character_id] = load(character.path_to_scene)
-	characters_loaded = true
-	print("loaded_all_characters!")
 
 
 static func clear_characters() -> void:

@@ -79,7 +79,7 @@ func _input(event):
 		set_auto_play(not auto_play)
 
 
-func _process(delta):
+func _physics_process(delta):
 	if rewind_delay > 0:
 		rewind_delay -= delta
 	
@@ -122,6 +122,7 @@ func _stop_rewind() -> void:
 func set_episode(ep: RSEEpisode, build_first_frame: bool = true) -> void:
 	selection_menu.visible = false
 	is_gap = true
+	logger.clear_log()
 	scene_builder.set_episode(ep)
 	episode = ep
 	current_frame_index = -1
@@ -147,6 +148,8 @@ func next_frame() -> void:
 		return
 	if prev_frame_index > -1:
 		history.append([episode.id, prev_frame_index])
+		#if history.size() > 128:
+			#history.pop_front()
 	var frame: RSEFrame = episode.real_frames[current_frame_index]
 	build_frame(frame)
 

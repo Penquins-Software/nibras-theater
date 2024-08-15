@@ -28,4 +28,5 @@ func reset() -> void:
 
 
 func set_smoothing(status: bool) -> void:
-	camera.position_smoothing_enabled = status
+	if camera.position_smoothing_enabled != status:
+		camera.position_smoothing_enabled = status

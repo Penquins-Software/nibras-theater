@@ -12,7 +12,7 @@ func play_music(music: RSEMusic) -> void:
 		return
 	
 	current_music = music
-	print(music.name)
+	#print(music.name)
 	
 	if music.name == "None":
 		stop()

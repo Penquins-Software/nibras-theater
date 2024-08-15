@@ -21,3 +21,7 @@ func add(frame: RSEFrame) -> void:
 		text_label.text += "[cell][right][color=#%s]%s[/color][/right][/cell]	[cell][/cell][cell]%s[/cell]" % parameters
 		text_label.text += "[cell][/cell][cell] [/cell][cell][/cell]"
 	text_label.scroll_to_line(Constants.INT32_MAX)
+
+
+func clear_log() -> void:
+	text_label.text = "[table=3]"

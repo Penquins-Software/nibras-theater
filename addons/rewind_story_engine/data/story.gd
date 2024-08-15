@@ -76,7 +76,8 @@ func save_to_file() -> void:
 
 
 static func load_from_file(path_to_file: String) -> RSEStory:
-	print("Загрузка истории: " + path_to_file)
+	if Engine.is_editor_hint():
+		print("Загрузка истории: " + path_to_file)
 	var story = RSEStory.new(path_to_file)
 	
 	var file = FileAccess.open(story._path_to_story_file, FileAccess.READ)
