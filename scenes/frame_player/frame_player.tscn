@@ -300,6 +300,7 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_x53o4")
 theme_override_styles/hover = SubResource("StyleBoxTexture_u8la7")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_i3bp3")
 shortcut = SubResource("Shortcut_58d3f")
+shortcut_feedback = false
 shortcut_in_tooltip = false
 text = "Пауза"
 script = ExtResource("23_s1i53")
