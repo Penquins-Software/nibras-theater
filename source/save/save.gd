@@ -23,8 +23,8 @@ func _init(_image: Image, _episode_id: int, _frame_index: int, _local_variables:
 
 
 func get_file_name() -> String:
-	var file_name: String = "%s%s%s" % [datetime["year"], datetime["month"], datetime["day"]]
-	file_name += "%s%s%s" % [datetime["hour"], datetime["minute"], datetime["second"]]
+	var file_name: String = "%04d%02d%02d" % [datetime["year"], datetime["month"], datetime["day"]]
+	file_name += "%02d%02d%02d" % [datetime["hour"], datetime["minute"], datetime["second"]]
 	return file_name
 
 
