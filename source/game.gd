@@ -33,6 +33,7 @@ func load_save(save: Save) -> void:
 	frame_player.music_player.stream = null
 	frame_player.set_episode(episode, false)
 	frame_player.set_frame(save.frame_index)
+	frame_player.history.clear()
 	local_variables.data = save.local_variables
 	print("Save local variables: %s" % local_variables)
 	continue_game()

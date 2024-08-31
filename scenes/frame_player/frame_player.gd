@@ -191,7 +191,7 @@ func prev_frame() -> void:
 	elif frame is RSEFrameSFX:
 		prev_frame()
 	else:
-		build_frame(frame, true)
+		build_frame(frame, true, true)
 
 
 func set_frame(index: int) -> void:
@@ -200,7 +200,7 @@ func set_frame(index: int) -> void:
 	build_frame(frame)
 
 
-func build_frame(frame: RSEFrame, is_immediately: bool = false) -> void:
+func build_frame(frame: RSEFrame, is_immediately: bool = false, is_back: bool = false) -> void:
 	current_frame = frame
 	if frame is RSEFrameText:
 		show_text_frame(frame, is_immediately)
@@ -222,18 +222,18 @@ func build_frame(frame: RSEFrame, is_immediately: bool = false) -> void:
 		sfx(frame)
 
 
-func show_text_frame(frame: RSEFrameText, is_immediately: bool = false) -> void:
+func show_text_frame(frame: RSEFrameText, is_immediately: bool = false, is_back: bool = false) -> void:
 	speaker = RewindStoryEngine.story.characters[frame.speaker_id]
 	var character = scene_builder.get_characeter_by_id(speaker.id)
 	if is_immediately:
 		is_gap = false
-		text_box.set_text(frame.scene_state.text, speaker.display_name, speaker.color, _define_marker_mode(), is_immediately)
+		text_box.set_text(frame.scene_state.text, speaker.display_name, speaker.color, _define_marker_mode(is_back), is_immediately)
 	else:
 		if not is_gap:
-			text_box.add_text(frame.text, speaker.display_name, speaker.color, _define_marker_mode())
+			text_box.add_text(frame.text, speaker.display_name, speaker.color, _define_marker_mode(is_back))
 		else:
 			is_gap = false
-			text_box.set_text(frame.text, speaker.display_name, speaker.color, _define_marker_mode())
+			text_box.set_text(frame.text, speaker.display_name, speaker.color, _define_marker_mode(is_back))
 		if character != null:
 			character.start_talk()
 
@@ -267,7 +267,7 @@ func condition(frame: RSEFrameCondition) -> void:
 		result = frame.result(Settings.profile.global_variables.data)
 	else:
 		result = frame.result(local_variables.data)
-	print("Результат проверки условия: %s" % result)
+	#print("Результат проверки условия: %s" % result)
 	if result:
 		next_frame()
 	else:
@@ -392,7 +392,7 @@ func switch_interface_visability() -> void:
 	interface_container.visible = not interface_container.visible
 
 
-func _define_marker_mode() -> TextBox.MarkerMode:
+func _define_marker_mode(is_back: bool) -> TextBox.MarkerMode:
 	if not current_frame is RSEFrameText:
 		return TextBox.MarkerMode.NextFrame
 	
@@ -411,7 +411,7 @@ func _define_marker_mode() -> TextBox.MarkerMode:
 		elif frame is RSEFrameText:
 			if frame.speaker_id != speaker.id:
 				return TextBox.MarkerMode.NextFrame
-			if text_box.get_clear_text_length() + current_frame.text.length() > text_box.MAX_SYMBOLS:
+			if is_back and text_box.get_clear_text_length() + current_frame.text.length() > text_box.MAX_SYMBOLS:
 				return TextBox.MarkerMode.NextFrame
 			else:
 				return TextBox.MarkerMode.NextText
