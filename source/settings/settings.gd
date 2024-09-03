@@ -34,7 +34,7 @@ var profile: Profile
 
 var player_name: String = "" : set = _set_player_name
 var locale: String = OS.get_locale() : set = _set_locale
-var screen_mode: DisplayServer.WindowMode = DisplayServer.WINDOW_MODE_WINDOWED : set = _set_screen_mode
+var screen_mode: DisplayServer.WindowMode = DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN : set = _set_screen_mode
 
 var master_volume: int = 50 : set = _set_master_volume
 var sfx_volume: int = 50 : set = _set_sfx_volume
@@ -196,7 +196,7 @@ func load_config() -> void:
 		
 		locale = config.get_value("general_settings", "locale", "en")
 		
-		screen_mode = config.get_value("screen_settings", "mode", DisplayServer.WINDOW_MODE_WINDOWED)
+		screen_mode = config.get_value("screen_settings", "mode", DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
 	
 		get_window().size = config.get_value("screen_settings", "screen_size", Vector2(1280, 720))
 		get_window().move_to_center()

@@ -203,7 +203,7 @@ func set_frame(index: int) -> void:
 func build_frame(frame: RSEFrame, is_immediately: bool = false, is_back: bool = false) -> void:
 	current_frame = frame
 	if frame is RSEFrameText:
-		show_text_frame(frame, is_immediately)
+		show_text_frame(frame, is_immediately, is_back)
 	elif frame is RSEFrameSelection:
 		show_selection(frame)
 	elif frame is RSEFrameGap:

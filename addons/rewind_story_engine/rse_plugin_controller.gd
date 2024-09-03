@@ -26,6 +26,7 @@ enum Mode {
 @export var create_file_dialog: FileDialog
 @export var open_file_dialog: FileDialog
 @export var save_file_dialog: FileDialog
+@export var save_pot_dialog: FileDialog
 
 @export_category("Tabs")
 @export var story_editor: RSEStoryEditor
@@ -78,6 +79,9 @@ func _on_file_id_pressed(id):
 		4:
 			## Сохранить как.
 			save_as_story()
+		7:
+			## Сгенерировать POT.
+			generate_pot_as()
 
 
 func _show_work_screen() -> void:
@@ -161,6 +165,15 @@ func _save_as_story_by_path(path: String) -> void:
 		save_story()
 
 
+func generate_pot_as() -> void:
+	save_pot_dialog.show()
+
+
+func _on_save_pot_dialog_file_selected(path):
+	if story != null:
+		generate_pot(path)
+
+
 func change_mode(mode: Mode):
 	match current_mode:
 		Mode.History:
@@ -198,3 +211,30 @@ func open_episode(episode: RSEEpisode) -> void:
 	episode_editor.episode = episode
 	await get_tree().create_timer(0.02).timeout
 	tab_container.current_tab = Mode.Episode
+
+
+func generate_pot(path: String) -> void:
+	var pot: String = 'msgid ""\nmsgstr ""\n\n'
+	
+	pot += get_pot_string(story.name)
+	
+	for character: RSECharacter in story.characters.values():
+		pot += get_pot_string(character.name)
+		pot += get_pot_string(character.display_name)
+	
+	#for location: RSELocation in story.locations.values():
+		#pot += get_pot_string(location.name)
+	
+	for episode: RSEEpisode in story.episodes.values():
+		pot += get_pot_string(episode.name)
+		for frame: RSEFrame in episode.frames:
+			if frame is RSEFrameText:
+				pot += get_pot_string(frame.text)
+	
+	var file = FileAccess.open(path, FileAccess.WRITE)
+	file.store_string(pot)
+	file.close()
+
+
+func get_pot_string(text: String) -> String:
+	return 'msgid "%s"\nmsgstr "%s"\n\n' % [text, text] 

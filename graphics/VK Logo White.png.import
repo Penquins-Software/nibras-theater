@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bu1fc76i5fe2v"
-path="res://.godot/imported/Лого.png-30e718b00b9b61966098a039671e52bb.ctex"
+uid="uid://bdg7kk0esiuhw"
+path="res://.godot/imported/VK Logo White.png-0c2b77be7dd184891dc1087db9fe7f20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gui/Главное меню и настройки/Лого.png"
-dest_files=["res://.godot/imported/Лого.png-30e718b00b9b61966098a039671e52bb.ctex"]
+source_file="res://graphics/VK Logo White.png"
+dest_files=["res://.godot/imported/VK Logo White.png-0c2b77be7dd184891dc1087db9fe7f20.ctex"]
 
 [params]
 

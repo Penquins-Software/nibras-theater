@@ -127,6 +127,7 @@ offset_left = -760.0
 offset_top = -80.0
 offset_right = -160.0
 offset_bottom = -40.0
+auto_translate = false
 theme = ExtResource("7_eyx6w")
 bbcode_enabled = true
 text = "[color=orange]Рассказчик"
@@ -149,6 +150,7 @@ theme_override_constants/margin_bottom = 40
 
 [node name="Label" type="RichTextLabel" parent="Interface/TextBox/Text"]
 layout_mode = 2
+auto_translate = false
 theme = ExtResource("7_eyx6w")
 bbcode_enabled = true
 text = "Здесь будет выводиться текст."
@@ -346,6 +348,7 @@ theme_override_constants/margin_bottom = 80
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Interface/Logger/MarginContainer"]
 layout_mode = 2
+auto_translate = false
 theme = ExtResource("7_eyx6w")
 bbcode_enabled = true
 text = "[table=3]"

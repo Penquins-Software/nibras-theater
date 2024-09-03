@@ -61,6 +61,7 @@ size_flags_horizontal = 3
 [node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer/Info"]
 layout_mode = 2
 size_flags_vertical = 6
+auto_translate = false
 theme = ExtResource("4_23sh2")
 bbcode_enabled = true
 text = "Тестовый эпизод

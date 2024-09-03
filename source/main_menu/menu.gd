@@ -10,6 +10,7 @@ static var menu_scene: PackedScene
 
 @export_group("Buttons")
 @export var gallery_button: Button
+@export var extra_button: Button
 @export var saves_button: Button
 @export var exit_button: Button
 
@@ -25,6 +26,7 @@ func _ready():
 	main.show_and_focus()
 	
 	gallery_button.disabled = not Settings.profile.global_variables.is_variable("FIRST_EPISODE")
+	extra_button.disabled = not Settings.profile.global_variables.is_variable("TRUE_ENDING")
 	saves_button.disabled = SaveManager.saves.size() == 0
 	
 	if OS.has_feature("web"):

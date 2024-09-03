@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=78 format=3 uid="uid://1ldra2lpi55u"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_h3ser"]
@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://brnxtegkgyyqc" path="res://gui/Главное меню и настройки/правая.png" id="6_a3sls"]
 [ext_resource type="Texture2D" uid="uid://bu1fc76i5fe2v" path="res://gui/Главное меню и настройки/Лого.png" id="7_nugf5"]
 [ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="8_7egbi"]
+[ext_resource type="Texture2D" uid="uid://bdg7kk0esiuhw" path="res://graphics/VK Logo White.png" id="9_xqdj7"]
+[ext_resource type="Script" path="res://source/control_link.gd" id="10_2q5tt"]
 [ext_resource type="Script" path="res://scenes/menu/continue_button.gd" id="10_tp6ug"]
 [ext_resource type="Script" path="res://scenes/menu/exit_button.gd" id="11_ahf2s"]
 [ext_resource type="Texture2D" uid="uid://bo0h30eo6twp2" path="res://gui/фон Сохранения и настройки.png" id="13_ivy2m"]
@@ -68,6 +70,7 @@
 [ext_resource type="Texture2D" uid="uid://b768k41knrau1" path="res://cg_arts/BIG_palette.jpg" id="48_nrhky"]
 [ext_resource type="Texture2D" uid="uid://dliajgaduhbl2" path="res://cg_arts/items/метка.png" id="49_7dh0l"]
 [ext_resource type="Texture2D" uid="uid://cgpk2uui42wst" path="res://cg_arts/BOSSpalette.jpg" id="49_17foi"]
+[ext_resource type="Script" path="res://scenes/menu/extra_story.gd" id="69_67vah"]
 
 [sub_resource type="Animation" id="Animation_rcg8h"]
 length = 0.001
@@ -167,7 +170,7 @@ _data = {
 "fadeout": SubResource("Animation_51bo5")
 }
 
-[node name="Menu" type="Control" node_paths=PackedStringArray("main", "gallery_button", "saves_button", "exit_button", "gallery_new", "gallery_items_container")]
+[node name="Menu" type="Control" node_paths=PackedStringArray("main", "gallery_button", "extra_button", "saves_button", "exit_button", "gallery_new", "gallery_items_container")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -177,6 +180,7 @@ grow_vertical = 2
 script = ExtResource("1_74llx")
 main = NodePath("Главный экран")
 gallery_button = NodePath("Главный экран/VBoxContainer/Галерея")
+extra_button = NodePath("Главный экран/VBoxContainer/Экстра")
 saves_button = NodePath("Главный экран/VBoxContainer/Загрузить игру")
 exit_button = NodePath("Главный экран/VBoxContainer/Выйти")
 game_scene_file = ExtResource("2_i8b50")
@@ -210,8 +214,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 1920.0
-offset_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("5_8p1ol")
@@ -222,8 +224,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 1920.0
-offset_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("6_a3sls")
@@ -236,6 +236,7 @@ libraries = {
 autoplay = "движение"
 
 [node name="Logo" type="TextureRect" parent="Background"]
+modulate = Color(0.847059, 0.792157, 0.670588, 1)
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -265,7 +266,7 @@ offset_bottom = -20.0
 grow_vertical = 0
 theme = ExtResource("8_7egbi")
 theme_override_font_sizes/normal_font_size = 24
-text = "Версия: 1.0.2"
+text = "Версия: 1.1.0"
 fit_content = true
 scroll_active = false
 
@@ -281,31 +282,6 @@ script = ExtResource("2_h3ser")
 focus_element = NodePath("VBoxContainer/Начать игру")
 
 [node name="Jam" type="RichTextLabel" parent="Главный экран"]
-visible = false
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -273.0
-offset_top = -46.0
-offset_right = 273.0
-offset_bottom = -20.0
-grow_horizontal = 2
-grow_vertical = 0
-theme = ExtResource("8_7egbi")
-theme_override_colors/default_color = Color(0.912271, 4.71681e-06, 6.73831e-07, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 0.823529)
-theme_override_constants/outline_size = 4
-theme_override_font_sizes/normal_font_size = 24
-bbcode_enabled = true
-text = "[url=https://vk.com/jamof100flowers]Игра сделана на конкурс «Джем Ста Цветов» в 2024 году[/url]"
-fit_content = true
-scroll_active = false
-script = ExtResource("15_ddq1b")
-
-[node name="Jam2" type="RichTextLabel" parent="Главный экран"]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -330,6 +306,27 @@ text = "[right][url=https://vk.com/jamof100flowers]Игра сделана на 
 fit_content = true
 scroll_active = false
 script = ExtResource("15_ddq1b")
+
+[node name="VK" type="TextureRect" parent="Главный экран"]
+modulate = Color(0.847059, 0.792157, 0.670588, 1)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -78.0
+offset_right = -272.0
+offset_bottom = -30.0002
+grow_horizontal = 0
+grow_vertical = 0
+mouse_default_cursor_shape = 2
+texture = ExtResource("9_xqdj7")
+expand_mode = 2
+stretch_mode = 5
+script = ExtResource("10_2q5tt")
+link = "https://vk.com/penquins_software"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Главный экран"]
 layout_mode = 1
@@ -399,24 +396,22 @@ bbcode_enabled = true
 text = "[color=red](новое)"
 scroll_active = false
 
-[node name="Экстра" type="Button" parent="Главный экран/VBoxContainer"]
-visible = false
+[node name="Экстра" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
 size_flags_horizontal = 0
 focus_mode = 0
 theme = ExtResource("8_7egbi")
-disabled = true
 text = "Экстра"
 alignment = 0
 script = ExtResource("3_sfhbu")
+menu_element_to_show = NodePath("../../../Экстра")
 
 [node name="Настройки" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
 size_flags_horizontal = 0
 focus_mode = 0
 theme = ExtResource("8_7egbi")
-text = "Настройки
-"
+text = "Настройки"
 alignment = 0
 script = ExtResource("3_sfhbu")
 menu_element_to_show = NodePath("../../../Настройки")
@@ -1014,7 +1009,7 @@ offset_bottom = 8.0
 grow_horizontal = 0
 text = "Вернуться"
 
-[node name="Экстра" type="Control" parent="."]
+[node name="Экстра" type="Control" parent="." node_paths=PackedStringArray("return_button")]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -1022,6 +1017,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("2_h3ser")
+return_button = NodePath("Вернуться")
 
 [node name="Background" type="TextureRect" parent="Экстра"]
 layout_mode = 1
@@ -1085,21 +1082,82 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Button" type="Button" parent="Экстра/VBoxContainer"]
-custom_minimum_size = Vector2(300, 0)
+visible = false
+custom_minimum_size = Vector2(300, 48)
 layout_mode = 2
 size_flags_horizontal = 4
 theme = ExtResource("17_uo323")
 text = "Эпизод \"Прятки\""
 
 [node name="Label" type="Label" parent="Экстра/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme = ExtResource("8_7egbi")
 theme_override_font_sizes/font_size = 24
 text = "Первый и единственный выбор, влияющий на концовку!"
 horizontal_alignment = 1
 
+[node name="Button3" type="Button" parent="Экстра/VBoxContainer" node_paths=PackedStringArray("menu")]
+custom_minimum_size = Vector2(300, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("17_uo323")
+text = "\"Закулисье\""
+script = ExtResource("69_67vah")
+menu = NodePath("../../..")
+episode_id = 149
+
+[node name="Label3" type="Label" parent="Экстра/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("8_7egbi")
+theme_override_font_sizes/font_size = 24
+text = "Взгляните на историю под другим углом..."
+horizontal_alignment = 1
+
+[node name="Button4" type="Button" parent="Экстра/VBoxContainer"]
+custom_minimum_size = Vector2(300, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("17_uo323")
+text = "Первая версия"
+
+[node name="Label4" type="Label" parent="Экстра/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("8_7egbi")
+theme_override_font_sizes/font_size = 24
+text = "Первая версия сценария, которая по итогу была отброшена."
+horizontal_alignment = 1
+
+[node name="Button5" type="Button" parent="Экстра/VBoxContainer"]
+custom_minimum_size = Vector2(300, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("17_uo323")
+text = "Мета Детектив"
+
+[node name="Label5" type="Label" parent="Экстра/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("8_7egbi")
+theme_override_font_sizes/font_size = 24
+text = "Небольшая зарисовка из жизни детективного агенства Этьена."
+horizontal_alignment = 1
+
+[node name="Button6" type="Button" parent="Экстра/VBoxContainer"]
+custom_minimum_size = Vector2(300, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("17_uo323")
+text = "Хаос?"
+
+[node name="Label6" type="Label" parent="Экстра/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("8_7egbi")
+theme_override_font_sizes/font_size = 24
+text = "..."
+horizontal_alignment = 1
+
 [node name="Button2" type="Button" parent="Экстра/VBoxContainer"]
-custom_minimum_size = Vector2(300, 0)
+custom_minimum_size = Vector2(300, 48)
 layout_mode = 2
 size_flags_horizontal = 4
 theme = ExtResource("17_uo323")
@@ -1109,7 +1167,7 @@ text = "Гримёрка"
 layout_mode = 2
 theme = ExtResource("8_7egbi")
 theme_override_font_sizes/font_size = 24
-text = "Место, где можно посмотреть на персонажей..."
+text = "Место, где можно посмотреть на персонажей."
 horizontal_alignment = 1
 
 [node name="Настройки" parent="." instance=ExtResource("5_7o1gw")]
@@ -1242,6 +1300,7 @@ bus = &"Music"
 [connection signal="pressed" from="Главный экран/VBoxContainer/Продолжить" to="." method="continue_game"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Загрузить игру" to="." method="_show_menu_element"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Галерея" to="." method="_show_menu_element"]
+[connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Экстра" to="." method="_show_menu_element"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Настройки" to="." method="_show_menu_element"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Авторы" to="." method="_show_menu_element"]
 [connection signal="load_save" from="Загрузить игру" to="." method="load_game"]
@@ -1249,6 +1308,7 @@ bus = &"Music"
 [connection signal="return_was_pressed" from="Галерея" to="." method="_show_main_menu"]
 [connection signal="pressed" from="Галерея/Вернуться" to="." method="_on_return_from_gallery_pressed"]
 [connection signal="pressed" from="Галерея/ImagePreview/Exit" to="Галерея/ImagePreview" method="_on_exit_pressed"]
+[connection signal="return_was_pressed" from="Экстра" to="." method="_show_main_menu"]
 [connection signal="pressed" from="Экстра/Вернуться" to="." method="_on_return_from_gallery_pressed"]
 [connection signal="return_was_pressed" from="Настройки" to="." method="_show_main_menu"]
 [connection signal="return_was_pressed" from="Авторы" to="." method="_show_main_menu"]

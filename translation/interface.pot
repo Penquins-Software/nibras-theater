@@ -1,0 +1,288 @@
+# LANGUAGE translation for Nibras Theater for the following files:
+# res://scenes/game.tscn
+# res://scenes/pause.tscn
+# res://scenes/settings.tscn
+# res://scenes/save_manager/save_container.tscn
+# res://scenes/save_manager/save_list.tscn
+# res://scenes/menu/continue_button.gd
+# res://scenes/menu/exit_button.gd
+# res://scenes/menu/gallery_item.gd
+# res://scenes/menu/gallery_item.tscn
+# res://scenes/menu/gallery_items_container.gd
+# res://scenes/menu/image_preview.gd
+# res://scenes/menu/menu.tscn
+# res://scenes/menu/menu_background.gd
+# res://scenes/save_manager/save_container.gd
+# res://scenes/save_manager/save_image.gd
+# res://scenes/save_manager/save_list.gd
+# res://scenes/frame_player/bgs_player.gd
+# res://scenes/frame_player/frame_player.gd
+# res://scenes/frame_player/frame_player.tscn
+# res://scenes/frame_player/music_player.gd
+# res://scenes/frame_player/selection_menu.gd
+# res://scenes/frame_player/sfx_player.gd
+# res://source/button_with_sound.gd
+# res://source/constants.gd
+# res://source/game.gd
+# res://source/pause.gd
+# res://source/profile.gd
+# res://source/texture_button_with_sound.gd
+# res://source/ui_sound_manager.gd
+# res://source/variables_storage.gd
+# res://source/web_link.gd
+# res://source/main_menu/main_menu_button.gd
+# res://source/main_menu/menu.gd
+# res://source/main_menu/menu_element.gd
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Nibras Theater\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: scenes/pause.tscn
+#: scenes/menu/menu.tscn
+msgid "Продолжить"
+msgstr ""
+
+#: scenes/pause.tscn
+msgid "Сохранить игру"
+msgstr ""
+
+#: scenes/pause.tscn
+#: scenes/menu/menu.tscn
+msgid "Загрузить игру"
+msgstr ""
+
+#: scenes/pause.tscn
+#: scenes/settings.tscn
+#: scenes/menu/menu.tscn
+msgid "Настройки"
+msgstr ""
+
+#: scenes/pause.tscn
+msgid "Выйти в меню"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Имя игрока:"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Имя"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Режим экрана:"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Оконный"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Режим перемотки:"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Пропускать просмотренное"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Язык:"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Russian"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Скорость вывода текста:"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Скорость текста измеряется в количестве выводимых символов в секунду."
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Скорость автоматического чтения:"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Общая громкость:"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Громкость звуковых эффектов:"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Громкость музыки:"
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Блипы персонажей:"
+msgstr ""
+
+#: scenes/settings.tscn
+#: scenes/save_manager/save_list.tscn
+#: scenes/menu/menu.tscn
+msgid "Вернуться в меню "
+msgstr ""
+
+#: scenes/save_manager/save_container.tscn
+#: scenes/save_manager/save_container.gd
+#: scenes/frame_player/frame_player.tscn
+msgid ""
+msgstr ""
+
+#: scenes/save_manager/save_container.tscn
+#: scenes/save_manager/save_container.gd
+msgid "[color=INDIAN_RED][АВТО][/color] "
+msgstr ""
+
+#: scenes/save_manager/save_container.tscn
+msgid "Загрузить"
+msgstr ""
+
+#: scenes/save_manager/save_container.tscn
+msgid "Удалить"
+msgstr ""
+
+#: scenes/save_manager/save_list.tscn
+msgid "Сохранения"
+msgstr ""
+
+#: scenes/save_manager/save_list.tscn
+msgid "Удалить сохранение"
+msgstr ""
+
+#: scenes/save_manager/save_list.tscn
+msgid "Вы уверены?"
+msgstr ""
+
+#: scenes/menu/gallery_item.tscn
+msgid "[center][color=red]Новое!"
+msgstr ""
+
+#: scenes/menu/gallery_item.tscn
+msgid ""
+"Закрыто!\n"
+"Получите концовку #1"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Версия: 1.1.0"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "[url=https://vk.com/jamof100flowers]Игра сделана на конкурс «Джем Ста Цветов» в 2024 году[/url]"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid ""
+"[right][url=https://vk.com/jamof100flowers]Игра сделана на конкурс\n"
+"«Джем Ста Цветов»\n"
+"в 2024 году[/url]"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Начать игру"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Галерея"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "[color=red](новое)"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Экстра"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Авторы"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Выйти"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Вернуться"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Эпизод \"Прятки\""
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Первый и единственный выбор, влияющий на концовку!"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Гримёрка"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Место, где можно посмотреть на персонажей..."
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid ""
+"[center]Разработка: [url=https://ozkitsune.itch.io/]O3ZY[/url]\n"
+"Сценарий: [url=https://ozkitsune.itch.io/]O3ZY[/url]\n"
+"Редактура: [url=https://vk.com/musical_output]lexander[/url]\n"
+"Графика: [url=https://vk.com/ankelran]RANKEL[/url], [url=https://vk.com/agnialoo]Василий Василич[/url]\n"
+"Музыка и звуковой дизайн: [url=https://vk.com/musical_output]lexander[/url]\n"
+"\n"
+"Автор идеи: [url=https://itch.io/profile/aki-ona]Akiona[/url]\n"
+"\n"
+"[url=https://penquins.software/]Pen[color=red]q[/color]uins Software[/url]"
+msgstr ""
+
+#: scenes/frame_player/frame_player.tscn
+msgid "  [img=24]res://gui/Мелочи/Игра/Для текста/1.png[/img]"
+msgstr ""
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Автоматическая перемотка (A)"
+msgstr ""
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Показать лог (L)"
+msgstr ""
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Скрыть интерфейс (H)"
+msgstr ""
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Предыдущий кадр (колёсико вверх)"
+msgstr ""
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Следующий кадр (ЛКМ или колёсико вниз)"
+msgstr ""
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Перемотка (держать Left CTRL)"
+msgstr ""
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Пауза"
+msgstr ""
+
+#: scenes/frame_player/frame_player.tscn
+msgid "[cell][/cell][cell] [/cell][cell][/cell]"
+msgstr ""
+
+#: scenes/frame_player/frame_player.tscn
+msgid "[table=3]"
+msgstr ""

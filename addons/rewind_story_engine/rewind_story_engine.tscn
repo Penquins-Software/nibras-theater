@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://c3nmj815g0cjm" path="res://addons/rewind_story_engine/scene_editor/scene_editor.tscn" id="9_n47f2"]
 [ext_resource type="PackedScene" uid="uid://ce65a2xblprrq" path="res://addons/rewind_story_engine/transitition_editor/transitition_editor.tscn" id="10_n74y7"]
 
-[node name="RewindStoryEngine" type="Control" node_paths=PackedStringArray("start_screen", "work_screen", "tab_container", "create_file_dialog", "open_file_dialog", "save_file_dialog", "story_editor", "episode_editor", "character_editor", "location_editor", "visual_effect_editor", "sound_effect_editor", "music_editor", "transitition_editor", "scene_editor")]
+[node name="RewindStoryEngine" type="Control" node_paths=PackedStringArray("start_screen", "work_screen", "tab_container", "create_file_dialog", "open_file_dialog", "save_file_dialog", "save_pot_dialog", "story_editor", "episode_editor", "character_editor", "location_editor", "visual_effect_editor", "sound_effect_editor", "music_editor", "transitition_editor", "scene_editor")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -26,6 +26,7 @@ tab_container = NodePath("WorkScreen/TabContainer")
 create_file_dialog = NodePath("CreateFileDialog")
 open_file_dialog = NodePath("OpenFileDialog")
 save_file_dialog = NodePath("SaveFileDialog")
+save_pot_dialog = NodePath("SavePotDialog")
 story_editor = NodePath("WorkScreen/TabContainer/История")
 episode_editor = NodePath("WorkScreen/TabContainer/Эпизод")
 character_editor = NodePath("WorkScreen/TabContainer/Персонаж")
@@ -92,8 +93,9 @@ layout_mode = 2
 flat = true
 
 [node name="Файл" type="PopupMenu" parent="WorkScreen/Menu/MarginContainer/MenuBar"]
+snap_2d_transforms_to_pixel = true
 size = Vector2i(238, 100)
-item_count = 6
+item_count = 8
 item_0/text = "Создать новую историю"
 item_0/id = 0
 item_1/text = ""
@@ -108,6 +110,11 @@ item_4/text = "Сохранить историю"
 item_4/id = 3
 item_5/text = "Сохранить историю как..."
 item_5/id = 4
+item_6/text = ""
+item_6/id = 6
+item_6/separator = true
+item_7/text = "Сгенерировать POT"
+item_7/id = 7
 
 [node name="TabContainer" type="TabContainer" parent="WorkScreen"]
 layout_mode = 2
@@ -177,6 +184,14 @@ ok_button_text = "Сохранить"
 mode_overrides_title = false
 filters = PackedStringArray("*.rs")
 
+[node name="SavePotDialog" type="FileDialog" parent="."]
+title = "Сгенерировать POT"
+initial_position = 4
+size = Vector2i(600, 400)
+ok_button_text = "Сохранить"
+mode_overrides_title = false
+filters = PackedStringArray("*.pot")
+
 [connection signal="pressed" from="StartScreen/Button" to="." method="create_story"]
 [connection signal="pressed" from="StartScreen/Button2" to="." method="load_story"]
 [connection signal="id_pressed" from="WorkScreen/Menu/MarginContainer/MenuBar/Файл" to="." method="_on_file_id_pressed"]
@@ -184,3 +199,4 @@ filters = PackedStringArray("*.rs")
 [connection signal="file_selected" from="CreateFileDialog" to="." method="_create_story_by_path"]
 [connection signal="file_selected" from="OpenFileDialog" to="." method="_load_story_by_path"]
 [connection signal="file_selected" from="SaveFileDialog" to="." method="_save_as_story_by_path"]
+[connection signal="file_selected" from="SavePotDialog" to="." method="_on_save_pot_dialog_file_selected"]
