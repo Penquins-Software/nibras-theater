@@ -303,7 +303,7 @@ stretch = true
 disable_3d = true
 transparent_bg = true
 handle_input_locally = false
-size = Vector2i(844, 1042)
+size = Vector2i(840, 1045)
 render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HSplitContainer/HSplitContainer/Preview/Panel/MarginContainer/SubViewportContainer/SubViewport"]

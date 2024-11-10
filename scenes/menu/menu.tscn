@@ -266,7 +266,7 @@ offset_bottom = -20.0
 grow_vertical = 0
 theme = ExtResource("8_7egbi")
 theme_override_font_sizes/normal_font_size = 24
-text = "Версия: 1.1.0"
+text = "Версия: 1.2.0"
 fit_content = true
 scroll_active = false
 
@@ -282,6 +282,7 @@ script = ExtResource("2_h3ser")
 focus_element = NodePath("VBoxContainer/Начать игру")
 
 [node name="Jam" type="RichTextLabel" parent="Главный экран"]
+visible = false
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0

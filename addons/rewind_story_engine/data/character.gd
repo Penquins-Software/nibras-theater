@@ -104,7 +104,7 @@ func add_outfit() -> int:
 
 func _get_next_id(dict: Dictionary) -> int:
 	var max_id: int = 0
-	for id: int in dict.keys():
-		if id > max_id:
-			max_id = id
-	return max_id
+	for id in dict.keys():
+		if int(id) > max_id:
+			max_id = int(id)
+	return max_id + 1
