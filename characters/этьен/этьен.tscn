@@ -60,6 +60,36 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7i0p1"]
 animations = [{
+"frames": [],
+"loop": false,
+"name": &"new_вытягивает руку",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_думает",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_недоумение",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_неловкость",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_обычный",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_решительно хмурится",
+"speed": 10.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("3_lc7xa")
@@ -500,6 +530,36 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_as4yi"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_вытягивает руку",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_думает",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_недоумение",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_неловкость",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_обычный",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_решительно хмурится",
+"speed": 12.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("15_x338k")
@@ -826,6 +886,36 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o3p7a"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_вытягивает руку",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_думает",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_недоумение",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_неловкость",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_обычный",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_решительно хмурится",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("33_2gsy2")
@@ -981,6 +1071,36 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_a1f4h"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_вытягивает руку",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_думает",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_недоумение",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_неловкость",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_обычный",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_решительно хмурится",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("45_hfckk")
@@ -1136,6 +1256,36 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_b8k8w"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_вытягивает руку",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_думает",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_недоумение",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_неловкость",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_обычный",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_решительно хмурится",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("40_trks1")
@@ -1291,6 +1441,36 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i6dk6"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_вытягивает руку",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_думает",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_недоумение",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_неловкость",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_обычный",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_решительно хмурится",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("47_b0kmu")
@@ -1454,6 +1634,7 @@ mouth = NodePath("Head/Mouth")
 eyes_frame_close = 2
 default_emotion = "Спокойствие"
 bleep_player = NodePath("BleepPlayer")
+character_id = 27
 
 [node name="Head" type="Sprite2D" parent="."]
 light_mask = 3
