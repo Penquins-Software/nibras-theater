@@ -169567,7 +169567,7 @@
     },
     {
      "speaker_id": 27,
-     "text": "Что? ",
+     "text": "Что?",
      "type": "RSEFrameText"
     },
     {
@@ -169663,7 +169663,7 @@
     },
     {
      "speaker_id": 2,
-     "text": "Играть мёртвую девушку для меня естественно. ",
+     "text": "Играть мёртвую девушку для меня естественно.",
      "type": "RSEFrameText"
     },
     {
@@ -178594,10 +178594,6 @@
      "type": "RSEFrameTransitition"
     },
     {
-     "music_id": 36,
-     "type": "RSEFrameMusic"
-    },
-    {
      "description": "",
      "to_episode_id": 154,
      "type": "RSEFrameJump"
@@ -180158,7 +180154,7 @@
      "type": "RSEFrameCharacter"
     },
     {
-     "music_id": 29,
+     "music_id": 32,
      "type": "RSEFrameMusic"
     },
     {
@@ -181247,7 +181243,7 @@
        "scale": 1
       },
       "40": {
-       "emotion_id": 1,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 40,
        "order": 10,
@@ -181289,7 +181285,7 @@
        "scale": 1
       },
       "40": {
-       "emotion_id": 1,
+       "emotion_id": 0,
        "flip_h": true,
        "id": 40,
        "order": 10,
@@ -182346,7 +182342,7 @@
     },
     {
      "speaker_id": 2,
-     "text": "Они все один за другим вошли в комнату и начали пялится на Чарльза.",
+     "text": "Они один за другим вошли в комнату и начали пялится на Чарльза.",
      "type": "RSEFrameText"
     },
     {
@@ -182445,7 +182441,7 @@
     },
     {
      "speaker_id": 2,
-     "text": "Им пришлось разделиться и у меня появился шанс убить Мишель и Дидье.",
+     "text": "Им пришлось разделиться и я убила Мишель и Дидье.",
      "type": "RSEFrameText"
     },
     {
@@ -185555,7 +185551,7 @@
      "type": "RSEFrameCharacter"
     },
     {
-     "music_id": 36,
+     "music_id": 99,
      "type": "RSEFrameMusic"
     },
     {
@@ -185583,12 +185579,12 @@
     },
     {
      "speaker_id": 2,
-     "text": "На столе лежали листки сценария.",
+     "text": "На столе лежал сценарий.",
      "type": "RSEFrameText"
     },
     {
      "speaker_id": 2,
-     "text": "Я подошла к ним и взяла их в руки.",
+     "text": "Я взяла его в руки.",
      "type": "RSEFrameText"
     },
     {
@@ -186179,56 +186175,590 @@
     }
    ],
    "start": false
+  },
+  {
+   "active": false,
+   "description": "Нибрас Театра",
+   "frames": [
+    {
+     "location_id": 41,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Безупречные костюмы и мёртвые глаза...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я бы сделал это названием постановки.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Всё ведь как по шаблону!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "И сами герои как предсказуемые модельки.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "А актёры словно хотят поскорее закончить и уйти домой.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "...Так, что-то я раскритиковался.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "С [i]таким[/i] отношением от меня уж точно не будет никакой пользы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 73,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 22,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "action": 1,
+     "character_id": 13,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 19,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 25,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 40,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вообще-то я здесь, чтобы выслушать истории о загадочных несчастных случаях...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Но пришёл точно к началу репетиции, и меня усадили послушать постановку о бродячей труппе.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Я возглавляю труппу уже шестой год, и понимаю наше положение куда лучше любого из вас.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Мы прокляты, и наш единственный выход – это ритуал.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Постановку почти рекурсивную, кстати.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Директор театра хочет нанять меня, чтобы я разобрался в “проклятии этого места”.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Подробности мне обещали рассказать при встрече, и сейчас я знаю немногим больше того, что кто-то упал, а кто-то пропал.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "А худрук вышел в окно первого этажа.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Ты начиталась бредовых оккультных книжек.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Лет пять назад я был бы очень возмущён: мы унаследовали столько систематизированных трудов, а кто-то считает всё это сумасшествием.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Но когда в каждом мистическом происшествии мозг легко находит объяснение, невольно обрастаешь цинизмом.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Творческие люди мнительны, поэтому [i]здесь[/i] на мистику нет даже надежды.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Может, я был неправ, когда продолжил выдавать свои услуги за экзорцизм?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "И шуршащая по ночам кошка на чердаке должна была остаться просто кошкой, а не “злым духом”, которого я “изгнал”?",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Надеюсь, я не забыл оставить ей утром еды.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Директор, сидящая справа, повернулась ко мне, прервав мой поток сознания.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Ну, как вам наши актёры, как пьеса?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Наш театр всё так же умеет произвести впечатление, не правда ли?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Честно говоря... да.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Впечатление шаблонности.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Предсказуемый сюжет, клишированные персонажи и мёртвые глаза.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Жизнь сменилась скукой.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "...",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я молча кивнул.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Не знаю, что ты задумала, но мы в этом участвовать не будем.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Ты так и до жертвоприношений дойдёшь!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Впрочем, я не стану дожидаться этого момента.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Эмиль, стой!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Я не собираюсь с ней говорить, пока она не в себе!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Эта история – конечно же не о себе любимом.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Какие же артисты эгоцентричные.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "...Так, Этьен, опять ты за своё.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "С другой стороны, это же классно, ну ты чего?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Столкнувшись с непонятным, они исследуют эту тему в искусстве, обыгрывая своё положение в театральной постановке.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Или это не классно?",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Актриса, играющая обезумевшую главу труппы, внезапно нацелила винтовку на собеседницу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Хороший способ закончить пораньше.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Когда она успела её взять?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Надо было внимательнее смотреть.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Именно о жертвоприношении я говорить и собиралась.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Впрочем, тебе одной ведь уже нет смысла об этом слушать?",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "music_id": 36,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "location_id": 9,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Раздался громкий хлопок.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Девушка, принесённая в жертву, реалистично упала на пол.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Рыжая актриса, возвращаясь на сцену, остановилась и изобразила ужас.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Ч-что?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Что ты...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Актриса с винтовкой не повернулась.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Она не сводила глаз с распростёртого тела, из которого... текла кровь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Повисло напряжённое молчание.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Из-за кулис медленно вышел мужчина с шарфом, а бутафор поднялся со своего места.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Затем мы все, как по команде, устремились к телу лежащей актрисы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 161,
+     "type": "RSEFrameJump"
+    }
+   ],
+   "id": 160,
+   "name": "Нибрас Театра. Часть 1",
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "start": false
+  },
+  {
+   "active": false,
+   "description": "",
+   "frames": [],
+   "id": 161,
+   "name": "Нибрас Театра. Часть 2",
+   "scene_presets": [],
+   "start": false
   }
  ],
  "graph_state": {
   "0": {
    "position_x": 1400,
    "position_y": 780,
-   "size_x": 200.00537109375,
-   "size_y": 241.000701904297
+   "size_x": 200.005737304688,
+   "size_y": 241.000732421875
   },
   "100": {
    "position_x": -20,
    "position_y": -580,
    "size_x": 199.99853515625,
-   "size_y": 155.000244140625
+   "size_y": 155.00048828125
   },
   "101": {
    "position_x": 12240,
    "position_y": 580,
-   "size_x": 199.9970703125,
-   "size_y": 306.001647949219
+   "size_x": 199.998046875,
+   "size_y": 306.001708984375
   },
   "104": {
    "position_x": 1620,
    "position_y": -540,
-   "size_x": 200,
+   "size_x": 200.000122070313,
    "size_y": 155.0009765625
   },
   "106": {
    "position_x": 12480,
    "position_y": 340,
    "size_x": 194.388671875,
-   "size_y": 256.001098632813
+   "size_y": 256.0009765625
   },
   "107": {
    "position_x": 12480,
    "position_y": 660,
    "size_x": 198.130859375,
-   "size_y": 256.001098632813
+   "size_y": 256.001220703125
   },
   "108": {
    "position_x": 12480,
    "position_y": 920,
-   "size_x": 204.986328125,
-   "size_y": 306.001647949219
+   "size_x": 204.982421875,
+   "size_y": 306.001708984375
   },
   "109": {
    "position_x": 12780,
    "position_y": 620,
-   "size_x": 200.00390625,
-   "size_y": 306.000549316406
+   "size_x": 200.005859375,
+   "size_y": 306.00048828125
   },
   "110": {
    "position_x": 13060,
@@ -186240,25 +186770,25 @@
    "position_x": 13060,
    "position_y": 660,
    "size_x": 200.001953125,
-   "size_y": 300.000427246094
+   "size_y": 300.000732421875
   },
   "112": {
    "position_x": 13060,
    "position_y": 1000,
    "size_x": 200.001953125,
-   "size_y": 299.999664306641
+   "size_y": 299.99951171875
   },
   "113": {
    "position_x": 13360,
    "position_y": 680,
-   "size_x": 200.0009765625,
-   "size_y": 356.001403808594
+   "size_x": 200,
+   "size_y": 356.001708984375
   },
   "114": {
    "position_x": 13700,
    "position_y": 240,
-   "size_x": 200.01171875,
-   "size_y": 299.999755859375
+   "size_x": 200.0107421875,
+   "size_y": 299.99951171875
   },
   "115": {
    "position_x": 14000,
@@ -186269,56 +186799,56 @@
   "116": {
    "position_x": 13700,
    "position_y": 680,
-   "size_x": 200.01171875,
-   "size_y": 300.000671386719
+   "size_x": 200.0107421875,
+   "size_y": 300.000732421875
   },
   "117": {
    "position_x": 14000,
    "position_y": 920,
    "size_x": 200.001953125,
-   "size_y": 300.000640869141
+   "size_y": 300.000732421875
   },
   "118": {
    "position_x": 13700,
    "position_y": 1120,
-   "size_x": 200.01171875,
-   "size_y": 299.998382568359
+   "size_x": 200.0107421875,
+   "size_y": 299.998779296875
   },
   "119": {
    "position_x": 14380,
    "position_y": 720,
-   "size_x": 200.0009765625,
-   "size_y": 306.000793457031
+   "size_x": 200.001953125,
+   "size_y": 306.00048828125
   },
   "120": {
    "position_x": 14800,
    "position_y": 320,
-   "size_x": 199.9990234375,
+   "size_x": 199.998046875,
    "size_y": 300.0009765625
   },
   "121": {
    "position_x": 14800,
    "position_y": 640,
-   "size_x": 199.9990234375,
-   "size_y": 299.999816894531
+   "size_x": 199.998046875,
+   "size_y": 300
   },
   "122": {
    "position_x": 14800,
    "position_y": 980,
-   "size_x": 199.9990234375,
-   "size_y": 299.999938964844
+   "size_x": 199.998046875,
+   "size_y": 300.000244140625
   },
   "123": {
    "position_x": -640,
    "position_y": 1480,
    "size_x": 200.00048828125,
-   "size_y": 154.999572753906
+   "size_y": 155
   },
   "124": {
    "position_x": -620,
    "position_y": 1200,
    "size_x": 200,
-   "size_y": 155.000152587891
+   "size_y": 155.000244140625
   },
   "125": {
    "position_x": -20,
@@ -186330,13 +186860,13 @@
    "position_x": -420,
    "position_y": 1800,
    "size_x": 200.00048828125,
-   "size_y": 154.999877929688
+   "size_y": 155
   },
   "127": {
    "position_x": -1280,
    "position_y": 0,
    "size_x": 200,
-   "size_y": 155.000122070313
+   "size_y": 155
   },
   "128": {
    "position_x": 500,
@@ -186348,13 +186878,13 @@
    "position_x": 700,
    "position_y": 1920,
    "size_x": 200,
-   "size_y": 155.000061035156
+   "size_y": 155
   },
   "13": {
    "position_x": 1040,
    "position_y": 60,
    "size_x": 200.0009765625,
-   "size_y": 155.001098632813
+   "size_y": 155.0009765625
   },
   "130": {
    "position_x": 700,
@@ -186383,50 +186913,50 @@
   "134": {
    "position_x": 1000,
    "position_y": 2180,
-   "size_x": 200,
+   "size_x": 199.999755859375,
    "size_y": 155.000244140625
   },
   "135": {
    "position_x": 1000,
    "position_y": 2340,
-   "size_x": 200,
-   "size_y": 155.000244140625
+   "size_x": 199.999755859375,
+   "size_y": 155.000610351563
   },
   "136": {
    "position_x": 1000,
    "position_y": 2500,
-   "size_x": 200,
-   "size_y": 155.00048828125
+   "size_x": 199.999755859375,
+   "size_y": 155.000793457031
   },
   "137": {
    "position_x": 1000,
    "position_y": 2660,
-   "size_x": 200,
-   "size_y": 154.999206542969
+   "size_x": 199.999755859375,
+   "size_y": 155.000244140625
   },
   "138": {
    "position_x": 1000,
    "position_y": 2820,
-   "size_x": 200,
-   "size_y": 155.000122070313
+   "size_x": 199.999755859375,
+   "size_y": 155.000305175781
   },
   "139": {
    "position_x": 1000,
    "position_y": 2980,
-   "size_x": 200,
-   "size_y": 155.00048828125
+   "size_x": 199.999755859375,
+   "size_y": 155.000244140625
   },
   "14": {
    "position_x": 400,
    "position_y": 1800,
    "size_x": 200.0009765625,
-   "size_y": 155.000854492188
+   "size_y": 155.0009765625
   },
   "140": {
    "position_x": 1000,
    "position_y": 3140,
-   "size_x": 200,
-   "size_y": 155
+   "size_x": 199.999755859375,
+   "size_y": 155.000244140625
   },
   "141": {
    "position_x": 1337.91857910156,
@@ -186437,25 +186967,25 @@
   "142": {
    "position_x": -240,
    "position_y": 480,
-   "size_x": 200,
-   "size_y": 155.000122070313
+   "size_x": 199.99951171875,
+   "size_y": 155.000244140625
   },
   "143": {
    "position_x": -1000,
    "position_y": -600,
-   "size_x": 200,
+   "size_x": 200.00048828125,
    "size_y": 155
   },
   "144": {
    "position_x": -1000,
    "position_y": -440,
-   "size_x": 200,
+   "size_x": 200.00048828125,
    "size_y": 155
   },
   "145": {
    "position_x": -1000,
    "position_y": -280,
-   "size_x": 200,
+   "size_x": 200.00048828125,
    "size_y": 155
   },
   "146": {
@@ -186479,98 +187009,110 @@
   "149": {
    "position_x": 2340,
    "position_y": 1500,
-   "size_x": 318.841918945313,
-   "size_y": 317.779663085938
+   "size_x": 318.842041015625,
+   "size_y": 317.779296875
   },
   "15": {
    "position_x": 400,
    "position_y": 1960,
    "size_x": 200.0009765625,
-   "size_y": 155.0029296875
+   "size_y": 155.002868652344
   },
   "150": {
    "position_x": 2720,
    "position_y": 1500,
    "size_x": 269.872680664063,
-   "size_y": 335.621459960938
+   "size_y": 335.62109375
   },
   "151": {
    "position_x": 3040,
    "position_y": 1500,
-   "size_x": 260.82470703125,
-   "size_y": 338.366455078125
+   "size_x": 260.8251953125,
+   "size_y": 338.3662109375
   },
   "152": {
    "position_x": 3340,
    "position_y": 1500,
-   "size_x": 234.873901367188,
-   "size_y": 337.365234375
+   "size_x": 234.873779296875,
+   "size_y": 337.364990234375
   },
   "153": {
    "position_x": 4240,
    "position_y": 1460,
-   "size_x": 234.8740234375,
-   "size_y": 308.718322753906
+   "size_x": 234.874267578125,
+   "size_y": 308.718505859375
   },
   "154": {
    "position_x": 4540,
    "position_y": 1460,
-   "size_x": 222.419189453125,
-   "size_y": 354.802062988281
+   "size_x": 222.41845703125,
+   "size_y": 354.80224609375
   },
   "155": {
    "position_x": 4820,
    "position_y": 1460,
-   "size_x": 237.4306640625,
-   "size_y": 369.246520996094
+   "size_x": 237.4296875,
+   "size_y": 369.24658203125
   },
   "156": {
    "position_x": 3860,
    "position_y": 1380,
-   "size_x": 200,
-   "size_y": 300.000183105469
+   "size_x": 200.000244140625,
+   "size_y": 300.00048828125
   },
   "157": {
    "position_x": 3860,
    "position_y": 1700,
-   "size_x": 200,
+   "size_x": 200.000244140625,
    "size_y": 300
   },
   "158": {
    "position_x": 3600,
    "position_y": 1520,
-   "size_x": 200,
-   "size_y": 304.000122070313
+   "size_x": 199.999755859375,
+   "size_y": 306.000244140625
   },
   "159": {
    "position_x": 3860,
    "position_y": 2040,
-   "size_x": 200,
-   "size_y": 300
+   "size_x": 200.000244140625,
+   "size_y": 299.999633789063
   },
   "16": {
    "position_x": 0,
    "position_y": -100,
    "size_x": 199.99755859375,
-   "size_y": 155.000854492188
+   "size_y": 155.0009765625
+  },
+  "160": {
+   "position_x": 2400,
+   "position_y": 2400,
+   "size_x": 200,
+   "size_y": 300
+  },
+  "161": {
+   "position_x": 2680,
+   "position_y": 2400,
+   "size_x": 200,
+   "size_y": 300
   },
   "17": {
    "position_x": 0,
    "position_y": 60,
    "size_x": 199.99755859375,
-   "size_y": 155.000610351563
+   "size_y": 155.0009765625
   },
   "18": {
    "position_x": 0,
    "position_y": 220,
    "size_x": 199.99755859375,
-   "size_y": 155.000244140625
+   "size_y": 155.00048828125
   },
   "19": {
    "position_x": 1040,
    "position_y": 220,
    "size_x": 200.0009765625,
-   "size_y": 155.000244140625
+   "size_y": 155.00048828125
   },
   "2": {
    "position_x": 1340,
@@ -186582,31 +187124,31 @@
    "position_x": -400,
    "position_y": 840,
    "size_x": 200,
-   "size_y": 155.001770019531
+   "size_y": 155.001708984375
   },
   "22": {
    "position_x": -200,
    "position_y": 1400,
    "size_x": 200.001953125,
-   "size_y": 155.003662109375
+   "size_y": 155.00341796875
   },
   "23": {
    "position_x": -400,
    "position_y": 1200,
    "size_x": 200,
-   "size_y": 155.000152587891
+   "size_y": 155.000244140625
   },
   "24": {
    "position_x": 1800,
    "position_y": 760,
    "size_x": 199.99609375,
-   "size_y": 300.000732421875
+   "size_y": 300.000244140625
   },
   "25": {
    "position_x": 1040,
    "position_y": -100,
    "size_x": 200.0009765625,
-   "size_y": 155.000854492188
+   "size_y": 155.0009765625
   },
   "26": {
    "position_x": 1040,
@@ -186618,31 +187160,31 @@
    "position_x": 1340,
    "position_y": -160,
    "size_x": 200.0009765625,
-   "size_y": 155.000732421875
+   "size_y": 155.0009765625
   },
   "28": {
    "position_x": -200,
    "position_y": 1560,
    "size_x": 200.001953125,
-   "size_y": 155.001770019531
+   "size_y": 155.001220703125
   },
   "29": {
    "position_x": -200,
    "position_y": 1720,
    "size_x": 200.001953125,
-   "size_y": 155.000549316406
+   "size_y": 155.000610351563
   },
   "30": {
    "position_x": -200,
    "position_y": 1880,
    "size_x": 200.001953125,
-   "size_y": 155.002685546875
+   "size_y": 155.002807617188
   },
   "31": {
    "position_x": -200,
    "position_y": 2040,
    "size_x": 200.001953125,
-   "size_y": 155.0009765625
+   "size_y": 155.000915527344
   },
   "32": {
    "position_x": -200,
@@ -186654,7 +187196,7 @@
    "position_x": -200,
    "position_y": 2360,
    "size_x": 200.001953125,
-   "size_y": 155.000610351563
+   "size_y": 155.00048828125
   },
   "34": {
    "position_x": -200,
@@ -186672,7 +187214,7 @@
    "position_x": -420,
    "position_y": 1440,
    "size_x": 200.00048828125,
-   "size_y": 155.001220703125
+   "size_y": 155.001708984375
   },
   "37": {
    "position_x": -400,
@@ -186683,7 +187225,7 @@
   "38": {
    "position_x": -240,
    "position_y": -300,
-   "size_x": 200,
+   "size_x": 199.99951171875,
    "size_y": 155
   },
   "39": {
@@ -186696,19 +187238,19 @@
    "position_x": 1040,
    "position_y": -580,
    "size_x": 200.0009765625,
-   "size_y": 155.000244140625
+   "size_y": 155.00048828125
   },
   "41": {
    "position_x": 220,
    "position_y": -60,
-   "size_x": 199.998779296875,
+   "size_x": 199.99853515625,
    "size_y": 155
   },
   "42": {
    "position_x": 2200,
    "position_y": 760,
-   "size_x": 200.001220703125,
-   "size_y": 300.001220703125
+   "size_x": 200.0009765625,
+   "size_y": 300.000732421875
   },
   "43": {
    "position_x": 1340,
@@ -186719,122 +187261,122 @@
   "44": {
    "position_x": 2600,
    "position_y": 740,
-   "size_x": 239.489685058594,
-   "size_y": 375.049011230469
+   "size_x": 239.489624023438,
+   "size_y": 375.048828125
   },
   "45": {
    "position_x": -480,
    "position_y": -100,
    "size_x": 199.9970703125,
-   "size_y": 155.000854492188
+   "size_y": 155.0009765625
   },
   "46": {
    "position_x": -480,
    "position_y": 60,
    "size_x": 199.9970703125,
-   "size_y": 155.000610351563
+   "size_y": 155.0009765625
   },
   "47": {
    "position_x": -480,
    "position_y": 220,
    "size_x": 199.9970703125,
-   "size_y": 155.000244140625
+   "size_y": 155.00048828125
   },
   "48": {
    "position_x": 3000,
    "position_y": 740,
    "size_x": 302.68798828125,
-   "size_y": 345.623229980469
+   "size_y": 345.623046875
   },
   "49": {
    "position_x": 3400,
    "position_y": 740,
-   "size_x": 199.999267578125,
-   "size_y": 300.000671386719
+   "size_x": 199.9990234375,
+   "size_y": 300.00048828125
   },
   "50": {
    "position_x": 3800,
    "position_y": 520,
-   "size_x": 287.623291015625,
-   "size_y": 291.49462890625
+   "size_x": 287.623046875,
+   "size_y": 291.494140625
   },
   "51": {
    "position_x": 3800,
    "position_y": 1000,
-   "size_x": 293.984619140625,
-   "size_y": 293.205230712891
+   "size_x": 293.984375,
+   "size_y": 293.205078125
   },
   "52": {
    "position_x": 4240,
    "position_y": 740,
-   "size_x": 214.9697265625,
-   "size_y": 336.497619628906
+   "size_x": 214.969970703125,
+   "size_y": 336.497314453125
   },
   "53": {
    "position_x": 4520,
    "position_y": 740,
-   "size_x": 214.97314453125,
-   "size_y": 323.395812988281
+   "size_x": 214.97216796875,
+   "size_y": 323.3955078125
   },
   "54": {
    "position_x": 4800,
    "position_y": 720,
-   "size_x": 308.037109375,
-   "size_y": 366.3564453125
+   "size_x": 308.0380859375,
+   "size_y": 366.356201171875
   },
   "55": {
    "position_x": -620,
    "position_y": 820,
    "size_x": 200,
-   "size_y": 155.001708984375
+   "size_y": 155.001953125
   },
   "56": {
    "position_x": 400,
    "position_y": 2120,
    "size_x": 200.0009765625,
-   "size_y": 155.001831054688
+   "size_y": 155.001953125
   },
   "57": {
    "position_x": -720,
    "position_y": 0,
    "size_x": 199.99951171875,
-   "size_y": 155.000366210938
+   "size_y": 155
   },
   "58": {
    "position_x": -720,
    "position_y": 160,
    "size_x": 199.99951171875,
-   "size_y": 155.000244140625
+   "size_y": 155.00048828125
   },
   "59": {
    "position_x": -720,
    "position_y": 320,
    "size_x": 199.99951171875,
-   "size_y": 155.001831054688
+   "size_y": 155.001953125
   },
   "60": {
    "position_x": -720,
    "position_y": 480,
    "size_x": 199.99951171875,
-   "size_y": 155.000122070313
+   "size_y": 155.000244140625
   },
   "61": {
    "position_x": 5240,
    "position_y": 740,
-   "size_x": 263.233642578125,
-   "size_y": 414.253479003906
+   "size_x": 263.232177734375,
+   "size_y": 414.253173828125
   },
   "62": {
    "position_x": 5600,
    "position_y": 740,
-   "size_x": 217.8134765625,
-   "size_y": 354.803894042969
+   "size_x": 217.810791015625,
+   "size_y": 354.8037109375
   },
   "63": {
    "position_x": 5940,
    "position_y": 740,
-   "size_x": 223.29248046875,
-   "size_y": 350.693054199219
+   "size_x": 223.292236328125,
+   "size_y": 350.69287109375
   },
   "64": {
    "position_x": 1340,
@@ -186845,134 +187387,134 @@
   "65": {
    "position_x": 6260,
    "position_y": 740,
-   "size_x": 215.9091796875,
-   "size_y": 395.449890136719
+   "size_x": 215.909423828125,
+   "size_y": 395.44970703125
   },
   "66": {
    "position_x": 6600,
    "position_y": 740,
-   "size_x": 207.48876953125,
-   "size_y": 362.697906494141
+   "size_x": 207.48828125,
+   "size_y": 362.69775390625
   },
   "67": {
    "position_x": 6980,
    "position_y": 740,
-   "size_x": 226.20263671875,
-   "size_y": 350.532897949219
+   "size_x": 226.205078125,
+   "size_y": 350.53271484375
   },
   "68": {
    "position_x": 7260,
    "position_y": 740,
-   "size_x": 245.180419921875,
-   "size_y": 375.074401855469
+   "size_x": 245.181640625,
+   "size_y": 375.07421875
   },
   "69": {
    "position_x": 7580,
    "position_y": 740,
-   "size_x": 246.084716796875,
-   "size_y": 367.258941650391
+   "size_x": 246.0849609375,
+   "size_y": 367.2587890625
   },
   "70": {
    "position_x": -240,
    "position_y": -140,
-   "size_x": 200,
-   "size_y": 155.000244140625
+   "size_x": 199.99951171875,
+   "size_y": 155.00048828125
   },
   "71": {
    "position_x": -240,
    "position_y": 20,
-   "size_x": 200,
-   "size_y": 155.000244140625
+   "size_x": 199.99951171875,
+   "size_y": 155
   },
   "72": {
    "position_x": -240,
    "position_y": 160,
-   "size_x": 200,
-   "size_y": 155.000244140625
+   "size_x": 199.99951171875,
+   "size_y": 155.00048828125
   },
   "73": {
    "position_x": -240,
    "position_y": 320,
-   "size_x": 200,
-   "size_y": 155.001831054688
+   "size_x": 199.99951171875,
+   "size_y": 155.001953125
   },
   "74": {
    "position_x": 7900,
    "position_y": 740,
-   "size_x": 204.97998046875,
-   "size_y": 337.366760253906
+   "size_x": 204.98046875,
+   "size_y": 337.366455078125
   },
   "75": {
    "position_x": -1000,
    "position_y": 0,
-   "size_x": 200.0009765625,
-   "size_y": 155.000366210938
+   "size_x": 200.00146484375,
+   "size_y": 155
   },
   "76": {
    "position_x": -1000,
    "position_y": 160,
-   "size_x": 199.9990234375,
-   "size_y": 155.000244140625
+   "size_x": 199.99951171875,
+   "size_y": 155.00048828125
   },
   "77": {
    "position_x": -1000,
    "position_y": 320,
-   "size_x": 199.9990234375,
-   "size_y": 155.001831054688
+   "size_x": 199.99951171875,
+   "size_y": 155.001953125
   },
   "78": {
    "position_x": -1000,
    "position_y": 480,
-   "size_x": 199.9990234375,
-   "size_y": 155.000122070313
+   "size_x": 199.99951171875,
+   "size_y": 155.000244140625
   },
   "79": {
    "position_x": 8200,
    "position_y": 760,
-   "size_x": 233.630859375,
-   "size_y": 343.592895507813
+   "size_x": 233.62890625,
+   "size_y": 343.5927734375
   },
   "80": {
    "position_x": 8480,
    "position_y": 760,
    "size_x": 218.689453125,
-   "size_y": 389.675354003906
+   "size_y": 389.67529296875
   },
   "81": {
    "position_x": 8840,
    "position_y": 800,
-   "size_x": 241.9375,
-   "size_y": 356.527465820313
+   "size_x": 241.9384765625,
+   "size_y": 356.527099609375
   },
   "82": {
    "position_x": 9200,
    "position_y": 800,
-   "size_x": 236.11767578125,
-   "size_y": 410.847259521484
+   "size_x": 236.1171875,
+   "size_y": 410.846923828125
   },
   "83": {
    "position_x": 9540,
    "position_y": 620,
-   "size_x": 251.46630859375,
-   "size_y": 410.138793945313
+   "size_x": 251.466796875,
+   "size_y": 410.138671875
   },
   "84": {
    "position_x": 9540,
    "position_y": 1060,
-   "size_x": 260.01123046875,
-   "size_y": 347.554656982422
+   "size_x": 260.01171875,
+   "size_y": 347.5546875
   },
   "85": {
    "position_x": 9960,
    "position_y": 420,
-   "size_x": 258.77734375,
-   "size_y": 423.579284667969
+   "size_x": 258.7783203125,
+   "size_y": 423.579345703125
   },
   "86": {
    "position_x": 10300,
    "position_y": 420,
    "size_x": 246.720703125,
-   "size_y": 393.438049316406
+   "size_y": 393.438232421875
   },
   "87": {
    "position_x": 10600,
@@ -186983,14 +187525,14 @@
   "88": {
    "position_x": 10880,
    "position_y": 400,
-   "size_x": 224.1201171875,
-   "size_y": 397.960754394531
+   "size_x": 224.119140625,
+   "size_y": 397.960693359375
   },
   "89": {
    "position_x": 9880,
    "position_y": 1060,
    "size_x": 296.44921875,
-   "size_y": 369.324768066406
+   "size_y": 369.32470703125
   },
   "9": {
    "position_x": 280,
@@ -187007,14 +187549,14 @@
   "91": {
    "position_x": 10680,
    "position_y": 1060,
-   "size_x": 281.3876953125,
-   "size_y": 348.225067138672
+   "size_x": 281.38671875,
+   "size_y": 348.22509765625
   },
   "92": {
    "position_x": 11020,
    "position_y": 1060,
-   "size_x": 255.7646484375,
-   "size_y": 307.537231445313
+   "size_x": 255.76171875,
+   "size_y": 307.537109375
   },
   "93": {
    "position_x": 11360,
@@ -187025,19 +187567,19 @@
   "94": {
    "position_x": 11880,
    "position_y": 580,
-   "size_x": 313.2314453125,
-   "size_y": 302.265563964844
+   "size_x": 313.228515625,
+   "size_y": 302.265625
   },
   "95": {
    "position_x": 15400,
    "position_y": 360,
-   "size_x": 270.197265625,
-   "size_y": 350.147216796875
+   "size_x": 270.19921875,
+   "size_y": 350.14697265625
   },
   "96": {
    "position_x": 15820,
    "position_y": 400,
-   "size_x": 286.255859375,
+   "size_x": 286.25,
    "size_y": 328.0830078125
   },
   "97": {
@@ -187056,15 +187598,15 @@
    "position_x": -420,
    "position_y": 1620,
    "size_x": 200.00048828125,
-   "size_y": 155.000366210938
+   "size_y": 155.000732421875
   },
-  "scroll_offset_x": 1598.28344726563,
-  "scroll_offset_y": 956.565979003906,
+  "scroll_offset_x": 1176.87084960938,
+  "scroll_offset_y": 1627.00561523438,
   "show_grid": true,
   "snapping_enabled": true,
-  "zoom": 0.72989809513092
+  "zoom": 0.7994624376297
  },
- "last_id": 159,
+ "last_id": 161,
  "locations": [
   {
    "active": true,

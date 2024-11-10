@@ -1115,6 +1115,7 @@ text = "Взгляните на историю под другим углом...
 horizontal_alignment = 1
 
 [node name="Button4" type="Button" parent="Экстра/VBoxContainer"]
+visible = false
 custom_minimum_size = Vector2(300, 48)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -1122,6 +1123,7 @@ theme = ExtResource("17_uo323")
 text = "Первая версия"
 
 [node name="Label4" type="Label" parent="Экстра/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme = ExtResource("8_7egbi")
 theme_override_font_sizes/font_size = 24
@@ -1129,6 +1131,7 @@ text = "Первая версия сценария, которая по итог
 horizontal_alignment = 1
 
 [node name="Button5" type="Button" parent="Экстра/VBoxContainer"]
+visible = false
 custom_minimum_size = Vector2(300, 48)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -1136,6 +1139,7 @@ theme = ExtResource("17_uo323")
 text = "Мета Детектив"
 
 [node name="Label5" type="Label" parent="Экстра/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme = ExtResource("8_7egbi")
 theme_override_font_sizes/font_size = 24
@@ -1143,6 +1147,7 @@ text = "Небольшая зарисовка из жизни детективн
 horizontal_alignment = 1
 
 [node name="Button6" type="Button" parent="Экстра/VBoxContainer"]
+visible = false
 custom_minimum_size = Vector2(300, 48)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -1150,6 +1155,7 @@ theme = ExtResource("17_uo323")
 text = "Хаос?"
 
 [node name="Label6" type="Label" parent="Экстра/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme = ExtResource("8_7egbi")
 theme_override_font_sizes/font_size = 24

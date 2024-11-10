@@ -90,7 +90,8 @@ func get_id_with_name() -> String:
 
 
 func add_emotion() -> int:
-	var emotion_id = int(emotions.keys()[emotions.size() - 1]) + 1
+	#var emotion_id = int(emotions.keys()[emotions.size() - 1]) + 1
+	var emotion_id = _get_next_id(emotions)
 	emotions[str(emotion_id)] = ""
 	return emotion_id
 
@@ -99,3 +100,11 @@ func add_outfit() -> int:
 	var outfit_id = int(outfits.keys()[outfits.size() - 1]) + 1
 	outfits[str(outfit_id)] = ""
 	return outfit_id
+
+
+func _get_next_id(dict: Dictionary) -> int:
+	var max_id: int = 0
+	for id: int in dict.keys():
+		if id > max_id:
+			max_id = id
+	return max_id
