@@ -29,6 +29,8 @@ func _ready():
 	extra_button.disabled = not Settings.profile.global_variables.is_variable("TRUE_ENDING")
 	saves_button.disabled = SaveManager.saves.size() == 0
 	
+	extra_button.disabled = false
+	
 	if OS.has_feature("web"):
 		exit_button.hide()
 	

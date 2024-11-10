@@ -1115,6 +1115,23 @@ theme_override_font_sizes/font_size = 24
 text = "Взгляните на историю под другим углом..."
 horizontal_alignment = 1
 
+[node name="Button7" type="Button" parent="Экстра/VBoxContainer" node_paths=PackedStringArray("menu")]
+custom_minimum_size = Vector2(300, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("17_uo323")
+text = "\"Нибрас Театра\""
+script = ExtResource("69_67vah")
+menu = NodePath("../../..")
+episode_id = 160
+
+[node name="Label7" type="Label" parent="Экстра/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("8_7egbi")
+theme_override_font_sizes/font_size = 24
+text = "?.."
+horizontal_alignment = 1
+
 [node name="Button4" type="Button" parent="Экстра/VBoxContainer"]
 visible = false
 custom_minimum_size = Vector2(300, 48)
