@@ -41,6 +41,70 @@ animations = [{
 "texture": ExtResource("3_djwvb")
 }],
 "loop": false,
+"name": &"new_закрытая поза",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_4lf0w")
+}],
+"loop": false,
+"name": &"new_подшучивает",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_djwvb")
+}],
+"loop": false,
+"name": &"new_раздражён",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_djwvb")
+}],
+"loop": false,
+"name": &"new_сдерживает смех",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_djwvb")
+}],
+"loop": false,
+"name": &"new_спокойный",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_8y5hu")
+}],
+"loop": false,
+"name": &"new_угрожающий",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_8y5hu")
+}],
+"loop": false,
+"name": &"new_удивлён",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_djwvb")
+}],
+"loop": false,
+"name": &"new_улыбка",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_djwvb")
+}],
+"loop": false,
 "name": &"Грустный",
 "speed": 10.0
 }, {
@@ -151,6 +215,142 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dxlf1"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_j6csy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2fi85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1yis5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2fi85")
+}],
+"loop": true,
+"name": &"new_закрытая поза",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_f1870")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xw476")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_25sam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xw476")
+}],
+"loop": true,
+"name": &"new_подшучивает",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_3p50w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4rul5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4upk5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4rul5")
+}],
+"loop": true,
+"name": &"new_раздражён",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_f1870")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xw476")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_25sam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xw476")
+}],
+"loop": true,
+"name": &"new_сдерживает смех",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_j6csy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2fi85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1yis5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2fi85")
+}],
+"loop": true,
+"name": &"new_спокойный",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_j6csy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2fi85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1yis5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2fi85")
+}],
+"loop": true,
+"name": &"new_угрожающий",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_j6csy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2fi85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1yis5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2fi85")
+}],
+"loop": true,
+"name": &"new_удивлён",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_f1870")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xw476")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_25sam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xw476")
+}],
+"loop": true,
+"name": &"new_улыбка",
+"speed": 12.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("6_j6csy")
@@ -394,6 +594,70 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("9_cd6bk")
+}],
+"loop": true,
+"name": &"new_закрытая поза",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_cd6bk")
+}],
+"loop": true,
+"name": &"new_подшучивает",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_cd6bk")
+}],
+"loop": true,
+"name": &"new_раздражён",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_cd6bk")
+}],
+"loop": true,
+"name": &"new_сдерживает смех",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_cd6bk")
+}],
+"loop": true,
+"name": &"new_спокойный",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_hl2f8")
+}],
+"loop": true,
+"name": &"new_угрожающий",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_cd6bk")
+}],
+"loop": true,
+"name": &"new_удивлён",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_cd6bk")
+}],
+"loop": true,
+"name": &"new_улыбка",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("12_0mgwo")
 }],
 "loop": true,
@@ -512,6 +776,70 @@ animations = [{
 "texture": ExtResource("11_inl8v")
 }],
 "loop": true,
+"name": &"new_закрытая поза",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_inl8v")
+}],
+"loop": true,
+"name": &"new_подшучивает",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_inl8v")
+}],
+"loop": true,
+"name": &"new_раздражён",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_inl8v")
+}],
+"loop": true,
+"name": &"new_сдерживает смех",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_inl8v")
+}],
+"loop": true,
+"name": &"new_спокойный",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_inl8v")
+}],
+"loop": true,
+"name": &"new_угрожающий",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_inl8v")
+}],
+"loop": true,
+"name": &"new_удивлён",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_inl8v")
+}],
+"loop": true,
+"name": &"new_улыбка",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_inl8v")
+}],
+"loop": true,
 "name": &"Грустный",
 "speed": 5.0
 }, {
@@ -622,6 +950,70 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uspv6"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_nlsfu")
+}],
+"loop": true,
+"name": &"new_закрытая поза",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_2mueu")
+}],
+"loop": true,
+"name": &"new_подшучивает",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_2mueu")
+}],
+"loop": true,
+"name": &"new_раздражён",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_jufin")
+}],
+"loop": true,
+"name": &"new_сдерживает смех",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_2mueu")
+}],
+"loop": true,
+"name": &"new_спокойный",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_2mueu")
+}],
+"loop": true,
+"name": &"new_угрожающий",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_2mueu")
+}],
+"loop": true,
+"name": &"new_удивлён",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_2mueu")
+}],
+"loop": true,
+"name": &"new_улыбка",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("12_2mueu")
@@ -737,6 +1129,70 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pb7os"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_21s4a")
+}],
+"loop": true,
+"name": &"new_закрытая поза",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_d036t")
+}],
+"loop": true,
+"name": &"new_подшучивает",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_d036t")
+}],
+"loop": true,
+"name": &"new_раздражён",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_d036t")
+}],
+"loop": true,
+"name": &"new_сдерживает смех",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_d036t")
+}],
+"loop": true,
+"name": &"new_спокойный",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_et1pw")
+}],
+"loop": true,
+"name": &"new_угрожающий",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_d036t")
+}],
+"loop": true,
+"name": &"new_удивлён",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_d036t")
+}],
+"loop": true,
+"name": &"new_улыбка",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("17_et1pw")
@@ -859,6 +1315,7 @@ mouth = NodePath("Head/Mouth")
 eyes_frame_close = 2
 default_emotion = "Спокойствие"
 bleep_player = NodePath("BleepPlayer")
+character_id = 25
 
 [node name="Head" type="Sprite2D" parent="."]
 light_mask = 3
@@ -867,22 +1324,22 @@ texture = ExtResource("2_5ihty")
 [node name="Eyes" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_2doan")
-animation = &"Удивление"
+animation = &"new_удивлён"
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_dxlf1")
-animation = &"Удивление"
+animation = &"new_удивлён"
 
 [node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_grsxb")
-animation = &"Удивление"
+animation = &"new_удивлён"
 
 [node name="Details" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_qyffq")
-animation = &"Спокойствие"
+animation = &"new_удивлён"
 
 [node name="Hair" type="Sprite2D" parent="Head"]
 light_mask = 3
@@ -903,12 +1360,12 @@ light_mask = 3
 light_mask = 3
 position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_uspv6")
-animation = &"Удивление"
+animation = &"new_удивлён"
 
 [node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_pb7os")
-animation = &"Удивление"
+animation = &"new_удивлён"
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
 bus = &"Bleep"
