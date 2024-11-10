@@ -61,6 +61,76 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2doan"]
 animations = [{
+"frames": [],
+"loop": false,
+"name": &"new_безразличие",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_жестикулирует",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_закрытая поза",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_зла",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_испуг",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_карикатурно зла",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_обычная",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_опускает руки",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_опускает руки + слёзы",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_отводит взгляд",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_очень зла",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_разочарование",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_растерянность",
+"speed": 10.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"new_усталость",
+"speed": 10.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("5_adwt0")
@@ -381,6 +451,76 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dxlf1"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_безразличие",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_жестикулирует",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_закрытая поза",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_зла",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_испуг",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_карикатурно зла",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_обычная",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_опускает руки",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_опускает руки + слёзы",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_отводит взгляд",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_очень зла",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_разочарование",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_растерянность",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_усталость",
+"speed": 12.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("20_2ebqn")
@@ -695,6 +835,76 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grsxb"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_безразличие",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_жестикулирует",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_закрытая поза",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_зла",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_испуг",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_карикатурно зла",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_обычная",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_опускает руки",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_опускает руки + слёзы",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_отводит взгляд",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_очень зла",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_разочарование",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_растерянность",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_усталость",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("36_xxu8g")
@@ -850,6 +1060,76 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wi52r"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_безразличие",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_жестикулирует",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_закрытая поза",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_зла",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_испуг",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_карикатурно зла",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_обычная",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_опускает руки",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_опускает руки + слёзы",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_отводит взгляд",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_очень зла",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_разочарование",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_растерянность",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_усталость",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("45_6gdp4")
@@ -1005,6 +1285,76 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uspv6"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_безразличие",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_жестикулирует",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_закрытая поза",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_зла",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_испуг",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_карикатурно зла",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_обычная",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_опускает руки",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_опускает руки + слёзы",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_отводит взгляд",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_очень зла",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_разочарование",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_растерянность",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_усталость",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("44_0v8hm")
@@ -1160,6 +1510,76 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pb7os"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_безразличие",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_жестикулирует",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_закрытая поза",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_зла",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_испуг",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_карикатурно зла",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_обычная",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_опускает руки",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_опускает руки + слёзы",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_отводит взгляд",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_очень зла",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_разочарование",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_растерянность",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_усталость",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("52_p7v21")
@@ -1322,6 +1742,7 @@ mouth = NodePath("Head/Mouth")
 eyes_frame_close = 2
 default_emotion = "Спокойствие"
 bleep_player = NodePath("BleepPlayer")
+character_id = 26
 
 [node name="Head" type="Sprite2D" parent="."]
 light_mask = 3

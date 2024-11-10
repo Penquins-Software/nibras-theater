@@ -60,32 +60,140 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7i0p1"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_lc7xa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dy7yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fnvfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fnvfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dy7yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lc7xa")
+}],
 "loop": false,
 "name": &"new_вытягивает руку",
 "speed": 10.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_0gvxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_q38up")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_drm7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_drm7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_q38up")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0gvxf")
+}],
 "loop": false,
 "name": &"new_думает",
 "speed": 10.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_v35r1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_t2v01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dn27x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dn27x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_t2v01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_v35r1")
+}],
 "loop": false,
 "name": &"new_недоумение",
 "speed": 10.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_0gvxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_q38up")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_drm7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_drm7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_q38up")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0gvxf")
+}],
 "loop": false,
 "name": &"new_неловкость",
 "speed": 10.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_lc7xa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dy7yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fnvfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fnvfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dy7yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lc7xa")
+}],
 "loop": false,
 "name": &"new_обычный",
 "speed": 10.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_lc7xa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dy7yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fnvfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fnvfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dy7yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lc7xa")
+}],
 "loop": false,
 "name": &"new_решительно хмурится",
 "speed": 10.0
@@ -530,32 +638,104 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_as4yi"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_u1nnb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_pdd0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8f8k6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_pdd0y")
+}],
 "loop": true,
 "name": &"new_вытягивает руку",
 "speed": 12.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_x338k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8g7ev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hkomi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8g7ev")
+}],
 "loop": true,
 "name": &"new_думает",
 "speed": 12.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_x338k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8g7ev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hkomi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8g7ev")
+}],
 "loop": true,
 "name": &"new_недоумение",
 "speed": 12.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_143xv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_hx7q3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_s41gv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_hx7q3")
+}],
 "loop": true,
 "name": &"new_неловкость",
 "speed": 12.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_u1nnb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_pdd0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8f8k6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_pdd0y")
+}],
 "loop": true,
 "name": &"new_обычный",
 "speed": 12.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_x338k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8g7ev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hkomi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8g7ev")
+}],
 "loop": true,
 "name": &"new_решительно хмурится",
 "speed": 12.0
@@ -886,32 +1066,50 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o3p7a"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_4ga5b")
+}],
 "loop": true,
 "name": &"new_вытягивает руку",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_4ga5b")
+}],
 "loop": true,
 "name": &"new_думает",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_3uc2s")
+}],
 "loop": true,
 "name": &"new_недоумение",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_4ga5b")
+}],
 "loop": true,
 "name": &"new_неловкость",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_4ga5b")
+}],
 "loop": true,
 "name": &"new_обычный",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_xxrnx")
+}],
 "loop": true,
 "name": &"new_решительно хмурится",
 "speed": 5.0
@@ -1071,32 +1269,50 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_a1f4h"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_hfckk")
+}],
 "loop": true,
 "name": &"new_вытягивает руку",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_hfckk")
+}],
 "loop": true,
 "name": &"new_думает",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_hfckk")
+}],
 "loop": true,
 "name": &"new_недоумение",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_hfckk")
+}],
 "loop": true,
 "name": &"new_неловкость",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_hfckk")
+}],
 "loop": true,
 "name": &"new_обычный",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_hfckk")
+}],
 "loop": true,
 "name": &"new_решительно хмурится",
 "speed": 5.0
@@ -1256,32 +1472,50 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_b8k8w"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_8dq50")
+}],
 "loop": true,
 "name": &"new_вытягивает руку",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("43_03lwh")
+}],
 "loop": true,
 "name": &"new_думает",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("43_03lwh")
+}],
 "loop": true,
 "name": &"new_недоумение",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_trks1")
+}],
 "loop": true,
 "name": &"new_неловкость",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_0ixdx")
+}],
 "loop": true,
 "name": &"new_обычный",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_8dq50")
+}],
 "loop": true,
 "name": &"new_решительно хмурится",
 "speed": 5.0
@@ -1441,32 +1675,50 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i6dk6"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("51_to6ap")
+}],
 "loop": true,
 "name": &"new_вытягивает руку",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("49_g6siq")
+}],
 "loop": true,
 "name": &"new_думает",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_b0kmu")
+}],
 "loop": true,
 "name": &"new_недоумение",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_b0kmu")
+}],
 "loop": true,
 "name": &"new_неловкость",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_hfckk")
+}],
 "loop": true,
 "name": &"new_обычный",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("49_g6siq")
+}],
 "loop": true,
 "name": &"new_решительно хмурится",
 "speed": 5.0
@@ -1643,22 +1895,22 @@ texture = ExtResource("2_r2j3f")
 [node name="Eyes" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_7i0p1")
-animation = &"Сильно испуган"
+animation = &"new_неловкость"
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_as4yi")
-animation = &"Указывает на"
+animation = &"new_неловкость"
 
 [node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_o3p7a")
-animation = &"Указывает на"
+animation = &"new_неловкость"
 
 [node name="Details" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_a1f4h")
-animation = &"Сильно испуган"
+animation = &"new_неловкость"
 
 [node name="Hair" type="Sprite2D" parent="Head"]
 light_mask = 3
@@ -1679,12 +1931,12 @@ light_mask = 3
 light_mask = 3
 position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_b8k8w")
-animation = &"Просит помолчать"
+animation = &"new_неловкость"
 
 [node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_i6dk6")
-animation = &"Спокойствие"
+animation = &"new_неловкость"
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
 bus = &"Bleep"
