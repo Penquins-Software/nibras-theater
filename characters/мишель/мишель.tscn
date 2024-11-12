@@ -2315,7 +2315,6 @@ mouth = NodePath("Head/Mouth")
 eyes_frame_close = 2
 default_emotion = "Спокойствие"
 bleep_player = NodePath("BleepPlayer")
-character_id = 26
 
 [node name="Head" type="Sprite2D" parent="."]
 light_mask = 3

@@ -224,12 +224,16 @@ func generate_pot(path: String) -> void:
 	
 	#for location: RSELocation in story.locations.values():
 		#pot += get_pot_string(location.name)
+		
+	var keys: PackedStringArray = []
 	
 	for episode: RSEEpisode in story.episodes.values():
 		pot += get_pot_string(episode.name)
 		for frame: RSEFrame in episode.frames:
 			if frame is RSEFrameText:
-				pot += get_pot_string(frame.text)
+				if not keys.has(frame.text):
+					keys.append(frame.text)
+					pot += get_pot_string(frame.text)
 	
 	var file = FileAccess.open(path, FileAccess.WRITE)
 	file.store_string(pot)

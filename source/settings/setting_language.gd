@@ -5,7 +5,7 @@ var locales: PackedStringArray
 
 
 func _ready():
-	locales = TranslationServer.get_loaded_locales()
+	locales = _remove_duplicate_locales(TranslationServer.get_loaded_locales())
 	
 	if (locales.size() < 2):
 		disabled = true
@@ -22,3 +22,11 @@ func _ready():
 func _set_language(id: int):
 	text = get_popup().get_item_text(id)
 	Settings.locale = locales[id]
+
+
+func _remove_duplicate_locales(locales: Array) -> Array:
+	var unique: Array = []
+	for locale in locales:
+		if not unique.has(locale):
+			unique.append(locale)
+	return unique

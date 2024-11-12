@@ -1,0 +1,261 @@
+# Translation of Nibras Theatre - Интерфейс in English
+# This file is distributed under the same license as the Nibras Theatre - Интерфейс package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-11-10 06:29:56+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: en\n"
+"Project-Id-Version: Nibras Theatre - Интерфейс\n"
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Пауза"
+msgstr "Pause"
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Перемотка (держать Left CTRL)"
+msgstr "Rewind (hold Left CTRL)"
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Следующий кадр (ЛКМ или колёсико вниз)"
+msgstr "Advance through game (LMB or Mousewheel-Down)"
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Предыдущий кадр (колёсико вверх)"
+msgstr "Roll back (Mousewheel-Up)"
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Скрыть интерфейс (H)"
+msgstr "Hide GUI (H)"
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Показать лог (L)"
+msgstr "Show log (L)"
+
+#: scenes/frame_player/frame_player.tscn
+msgid "Автоматическая перемотка (A)"
+msgstr "Auto-Forward Time (A)"
+
+#: scenes/menu/menu.tscn
+msgid ""
+"[center]Разработка: [url=https://ozkitsune.itch.io/]O3ZY[/url]\n"
+"Сценарий: [url=https://ozkitsune.itch.io/]O3ZY[/url]\n"
+"Редактура: [url=https://vk.com/musical_output]lexander[/url]\n"
+"Графика: [url=https://vk.com/ankelran]RANKEL[/url], [url=https://vk.com/agnialoo]Василий Василич[/url]\n"
+"Музыка и звуковой дизайн: [url=https://vk.com/musical_output]lexander[/url]\n"
+"\n"
+"Автор идеи: [url=https://itch.io/profile/aki-ona]Akiona[/url]\n"
+"\n"
+"[url=https://penquins.software/]Pen[color=red]q[/color]uins Software[/url]"
+msgstr ""
+"[center]Programming: [url=https://ozkitsune.itch.io/]O3ZY[/url]\n"
+"Script: [url=https://ozkitsune.itch.io/]O3ZY[/url]\n"
+"Text Editing and Translation: [url=https://vk.com/musical_output]lexander[/url]\n"
+"Graphics and UI: [url=https://vk.com/ankelran]RANKEL[/url], [url=https://vk.com/agnialoo]Василий Василич[/url]\n"
+"Music and Sound Design: [url=https://vk.com/musical_output]lexander[/url]\n"
+"\n"
+"Original idea by [url=https://itch.io/profile/aki-ona]Akiona[/url]\n"
+"\n"
+"[url=https://penquins.software/]Pen[color=red]q[/color]uins Software[/url]"
+
+#: scenes/menu/menu.tscn
+msgid "Место, где можно посмотреть на персонажей..."
+msgstr "This is where you can look at the characters..."
+
+#: scenes/menu/menu.tscn
+msgid "Гримёрка"
+msgstr "Dressing room"
+
+#: scenes/menu/menu.tscn
+msgid "Первый и единственный выбор, влияющий на концовку!"
+msgstr "The first and only choice that determines the ending!"
+
+#: scenes/menu/menu.tscn
+msgid "Эпизод \"Прятки\""
+msgstr "Episode \"Hide-and-Seek\""
+
+#: scenes/menu/menu.tscn
+msgid "Вернуться"
+msgstr "Back"
+
+#: scenes/menu/menu.tscn
+msgid "Выйти"
+msgstr "Quit"
+
+#: scenes/menu/menu.tscn
+msgid "Авторы"
+msgstr "Authors"
+
+#: scenes/menu/menu.tscn
+msgid "Экстра"
+msgstr "Extras"
+
+#: scenes/menu/menu.tscn
+msgid "[color=red](новое)"
+msgstr "[color=red](new)"
+
+#: scenes/menu/menu.tscn
+msgid "Галерея"
+msgstr "Gallery"
+
+#: scenes/menu/menu.tscn
+msgid "Начать игру"
+msgstr "Begin"
+
+#: scenes/menu/menu.tscn
+msgid ""
+"[right][url=https://vk.com/jamof100flowers]Игра сделана на конкурс\n"
+"«Джем Ста Цветов»\n"
+"в 2024 году[/url]"
+msgstr ""
+"[right][url=https://vk.com/jamof100flowers]The game was made for\n"
+"«The Jam of a Hundred Flowers» contest\n"
+"in 2024[/url]"
+
+#: scenes/menu/menu.tscn
+msgid "[url=https://vk.com/jamof100flowers]Игра сделана на конкурс «Джем Ста Цветов» в 2024 году[/url]"
+msgstr "[url=https://vk.com/jamof100flowers]The game was made for «The Jam of a Hundred Flowers» in 2024[/url]"
+
+#: scenes/menu/menu.tscn
+msgid "Версия: 1.1.0"
+msgstr "Version: 1.1.0"
+
+#: scenes/menu/gallery_item.tscn
+msgid ""
+"Закрыто!\n"
+"Получите концовку #1"
+msgstr ""
+"Lockes!\n"
+"Get Ending 1"
+
+#: scenes/menu/gallery_item.tscn
+msgid "[center][color=red]Новое!"
+msgstr "[center][color=red]New!"
+
+#: scenes/save_manager/save_list.tscn
+msgid "Вы уверены?"
+msgstr "Are you sure?"
+
+#: scenes/save_manager/save_list.tscn
+msgid "Удалить сохранение"
+msgstr "Delete save"
+
+#: scenes/save_manager/save_list.tscn
+msgid "Сохранения"
+msgstr "Saves"
+
+#: scenes/save_manager/save_container.tscn
+msgid "Удалить"
+msgstr "Delete"
+
+#: scenes/save_manager/save_container.tscn
+msgid "Загрузить"
+msgstr "Load"
+
+#: scenes/save_manager/save_container.tscn
+#: scenes/save_manager/save_container.gd
+msgid "[color=INDIAN_RED][АВТО][/color] "
+msgstr "[color=INDIAN_RED][AUTO][/color] "
+
+#: scenes/settings.tscn scenes/save_manager/save_list.tscn
+#: scenes/menu/menu.tscn
+msgid "Вернуться в меню "
+msgstr "Back to menu "
+
+#: scenes/settings.tscn
+msgid "Блипы персонажей:"
+msgstr "Character blips:"
+
+#: scenes/settings.tscn
+msgid "Громкость музыки:"
+msgstr "Music volume:"
+
+#: scenes/settings.tscn
+msgid "Громкость звуковых эффектов:"
+msgstr "SFX volume:"
+
+#: scenes/settings.tscn
+msgid "Общая громкость:"
+msgstr "General volume:"
+
+#: scenes/settings.tscn
+msgid "Скорость автоматического чтения:"
+msgstr "Auto speed:"
+
+#: scenes/settings.tscn
+msgid "Скорость текста измеряется в количестве выводимых символов в секунду."
+msgstr "Text speed is in symbols per second."
+
+#: scenes/settings.tscn
+msgid "Скорость вывода текста:"
+msgstr "Text speed:"
+
+#: scenes/settings.tscn
+msgid "Russian"
+msgstr "Russian"
+
+#: scenes/settings.tscn
+msgid "Язык:"
+msgstr "Language:"
+
+#: scenes/settings.tscn
+msgid "Пропускать просмотренное"
+msgstr "Skip seen"
+
+#: scenes/settings.tscn
+msgid "Режим перемотки:"
+msgstr "Rewind mode:"
+
+#: scenes/settings.tscn
+msgid "Оконный"
+msgstr "Windowed"
+
+#: scenes/settings.tscn
+msgid "Режим экрана:"
+msgstr "Screen mode:"
+
+#: scenes/settings.tscn
+msgid "Имя"
+msgstr "Name"
+
+#: scenes/settings.tscn
+msgid "Имя игрока:"
+msgstr "Player name:"
+
+#: scenes/pause.tscn
+msgid "Выйти в меню"
+msgstr "Quit to menu"
+
+#: scenes/pause.tscn scenes/settings.tscn scenes/menu/menu.tscn
+msgid "Настройки"
+msgstr "Settings"
+
+#: scenes/pause.tscn scenes/menu/menu.tscn
+msgid "Загрузить игру"
+msgstr "Load game"
+
+#: scenes/pause.tscn
+msgid "Сохранить игру"
+msgstr "Save game"
+
+#: scenes/pause.tscn scenes/menu/menu.tscn
+msgid "Продолжить"
+msgstr "Continue"
+
+#: scenes/frame_player/frame_player.tscn
+#, gp-priority: hidden
+msgid "[table=3]"
+msgstr "[table=3]"
+
+#: scenes/frame_player/frame_player.tscn
+#, gp-priority: hidden
+msgid "[cell][/cell][cell] [/cell][cell][/cell]"
+msgstr "[cell][/cell][cell] [/cell][cell][/cell]"
+
+#: scenes/frame_player/frame_player.tscn
+#, gp-priority: hidden
+msgid "  [img=24]res://gui/Мелочи/Игра/Для текста/1.png[/img]"
+msgstr "  [img=24]res://gui/Мелочи/Игра/Для текста/1.png[/img]"
