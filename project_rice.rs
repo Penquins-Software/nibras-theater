@@ -192870,19 +192870,1144 @@
      "type": "RSEFrameText"
     },
     {
-     "speaker_id": 0,
+     "speaker_id": 2,
      "text": "Немудрено.",
      "type": "RSEFrameText"
     },
     {
-     "speaker_id": 0,
-     "text": "",
+     "speaker_id": 26,
+     "text": "Входная дверь закрыта на засов, а чёрный вход завален реквизитом, который мы никак не можем вывезти.",
      "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Окна открываются изнутри, и перед началом мы точно их все закрыли...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "...Потому что вскоре должен был начаться шторм.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Значит, в театр невозможно проникнуть бесшумно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Впрочем, какая разница?",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Преступник мог проникнуть до того, как дверь была закрыта на засов.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "С кем-то из актёров или, на худой конец, взломав замок.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Поэтому всегда есть вероятность, что здесь есть кто-то ещё.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В этих рассуждениях нет никакого смысла.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Как и в том, чтобы обыскивать театр, не разделяясь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Не так уж и важно, одни мы здесь или нет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Здесь нам больше нечего делать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Где мы можем сесть и обсудить ситуацию?",
+     "type": "RSEFrameText"
+    },
+    {
+     "action": 1,
+     "character_id": 25,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Лучше всего в гримёрке.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Кстати, я Чарльз, художественный руководитель...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "И актёр по принуждению, да.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вот это нехватка кадров.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мы обменялись рукопожатиями.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 47,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "По пути в гримёрку я познакомился с актрисами и выразил свои соболезнования.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Девушку с рыжими волосами звали Арлет, а ту, которая стреляла – Лоран.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "“Не так уж и важно, одни мы здесь или нет”...",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Куда важнее проследить путь винтовки.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Кто и когда мог с ней что-то сделать?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Итак, о несчастных случаях...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Директор, кажется, наконец взяла себя в руки, хоть её голос и несколько дрогнул при этих словах.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "О каких “несчастных случаях” может идти речь, если здесь произошло самое настоящее убийство?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Госпожа директор, я бы хотел сначала поговорить о том, что произошло сегодня.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вдруг предыдущие “несчастные случаи” – лишь предлог отложить обсуждение сегодняшнего происшествия и пыль в глаза?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вдруг она тянет время, чтобы все успели собраться с мыслями, ещё раз отработать в голове свои реплики?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Кто и когда заряжал оружие?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Я.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Понимаю, что все подозрения на мне...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Но все присутствующие здесь знают, как много театр для меня значит.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мишель и Чарльз кивнули головой.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Могу поверить, но это совершенно не годится для алиби.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "У вас мог быть мотив, достаточно сильный для того, чтобы переступить через эти чувства.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Лицо Мишель как будто стало ещё более обречённым.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я что, попал в цель?",
+     "type": "RSEFrameText"
+    },
+    {
+     "action": 1,
+     "character_id": 19,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Господин экзорцист, я всё время была с мистером Дидье, и когда он заряжал винтовку, сидела рядом.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Ну, всё время с тех пор, как мы пришли.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Потом мистер Дидье ушёл в зал, а мы начали репетировать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Ну и дела.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Теперь под подозрением ещё и Арлет – они могут быть заодно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Вы же как раз мне сегодня рассказывали, чем холостой патрон отличается от боевого!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Дидье кивнул.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Он показал оба и сказал “найди отличия”?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чарльз посмотрел на меня, словно поддразнивая.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Чарльз, сейчас [i]точно[/i] не время для таких шуток.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Прости.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Привычка, ты же знаешь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Нет, он просто показал холостой.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Они ещё выглядят так, как будто у них отобрали пулю и смяли нос.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Даже как-то жалко их.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Так, продолжаем следить за винтовкой...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Что было после того, как винтовка была заряжена?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Как долго она находилась в бутафорской и кто относил её на сцену?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Я зарядил магазин в последнюю очередь, когда мы с Арлет подготавливали реквизит.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Пока мы этим занимались, Чарльз отнёс на сцену всю основную бутафорию, поэтому оставалась какая-то мелочь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Мы с Чарльзом пошли на сцену, чтобы вынести стол из-за кулис.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Арлет следом за нами должна была принести чайный сервиз, но вместо этого она взяла винтовку.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "“Арлет следом за нами принесла винтовку”...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "То есть, даже если Дидье невиновен, украдкой заменить один патрон могла Арлет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Либо Дидье и Арлет, либо одна Арлет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Но зачем ей было сразу нести винтовку?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чтобы отвести подозрения?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я просто торопилась пошутить, что постановка точно выстрелит.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Как глупо получилось...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Глупых шуток сегодня было немало.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Да, Чарльз?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "И правда...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Подумать только...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "О чём вы?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Когда я забрал винтовку у Арлет, я в шутку нацелился на неё.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Напоминать тебе о технике безопасности просто бессмысленно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Лицо Чарльза внезапно оживилось.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Наверное, вы думаете, что Арлет могла заменить патрон, пока шла на сцену отдельно от нас.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Но я только что понял: в таком случае она бы точно перепугалась.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "А она даже не отреагировала...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Ну, если ты постоянно шутишь, тебя действительно не будут брать слишком всерьёз.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Да, но я ведь могу и не улыбаться.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Что может быть более жутким, чем улыбка маньяка?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "[i]Отсутствие[/i] улыбки там, где она обычно есть.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чарльз замолк.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Что было дальше?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Как я понимаю, вам нужно было сходить за оставшимся реквизитом, и винтовка могла оказаться без присмотра?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Нет, Чарльз остался в зале, чтобы всё расставлять.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Получается, что заменить патрон мог и Чарльз.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Но он защищает Арлет, а та защищает Дидье.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Эти трое заодно?",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В любом случае, Чарльз самый подозрительный.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Кто ещё был в это время в театре?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Только мы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Чуть погодя пришла директор, и до вашего прихода мы разговаривали в зале.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Внезапно я осознал, что за всё это время директор не проронила ни слова.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Она безучастно сидела и смотрела в одну точку.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Её что, не волнует, что я обвиняю её актёров?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "А когда пришли мисс Морт и мисс Лоран?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Они пришли вдвоём, за несколько минут до вас.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Вы же помните, мы встретили их в гардеробе.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "И правда.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Обычно я бы сразу такое вспомнил: пустой гардероб в полузаброшенном театре – это особая атмосфера.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Господин Этьен, у меня есть мысли, как это может быть связано с предыдущими трагедиями...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Чарльз, получается, вы не покидали зал до самой репетиции?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Всё верно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Я же участвую в постановке, зачем мне куда-то ходить?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Лентяй.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Разве я похож на человека, который приучен к тяжёлому физическому труду?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Хм...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Без накладных усов, пожалуй, нет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Но всегда ли вы были внимательны?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Может, кто-нибудь мог украдкой подойти к оружию?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Я, конечно, не люблю ждать и устаю от постоянных репетиций, но что-то такое я бы точно заметил.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Стол стоит на видном месте.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Да и репетиции у нас уже совсем не постоянные.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Итак, путь винтовки...",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Дидье и Арлет вместе зарядили винтовку.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Затем Арлет отнесла оружие на сцену, где её ждали Дидье и Чарльз.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чарльз остался на сцене, а чуть позже подошла Мишель.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Наконец, пришли Лоран и Морт, и сразу за ними – я. Все мы отправились в зрительный зал.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Возле винтовки всё время кто-то был, и посторонний человек просто не имел шанса незаметно поменять патрон.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Если верить их рассказу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Они словно сами себе отрезают все пути к отступлению.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В начале постановки винтовка лежала на столе.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я пропустил момент, когда Лоран взяла её в руки, но я точно помню, что в тот момент на сцене были только она и Морт.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Могли Мишель и Дидье также пропустить этот момент?",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Итого, это могли сделать Арлет, Чарльз или Дидье в любой комбинации.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Либо Лоран сильно рискнула, ловко заменив патрон прямо на сцене.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В последнюю версию я верю меньше всего.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чарльз защищает Арлет и Дидье...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Потому что они в сговоре или потому что у него самого нет алиби?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Чарльз, расскажите, какой была Мисс Морт?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чарльз ответил не сразу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Она...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "очень разной.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Больше всех заботилась о нашем театре.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "И о нас.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Постоянно предлагала какие-то идеи...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Помогала не черстветь, в общем.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Непохоже, что Чарльз из тех, кто будет говорить о мёртвых хорошо, лишь бы “почтить память”, но...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "в такой ситуации мне сложно поверить в его искренность.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я понял, что молчу уже несколько минут.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Господин Этьен...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Пожалуйста, поделитесь вашими мыслями, когда будете готовы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Сейчас я подозреваю Чарльза.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Я имела в виду...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Что?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Вы точно экзорцист, а не детектив?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "И вообще, вы собираетесь меня выслушать?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Я всего лишь хочу сначала убедиться, что здесь не рядовое преступление.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Простите за прямоту.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Если вам так угодно, то за Чарльза могу поручиться я.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Вам сложно понять, как много наш театр, а в особенности Морт, для него значили, но [i]я[/i] это [i]знаю[/i].",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Она настолько ему доверяет?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Или они все в сговоре?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Или это Лоран?",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "action": 1,
+     "character_id": 13,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Девушка сидела в углу, завернувшись в свою накидку.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Её била дрожь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Кажется, допрашивать её будет не лучшим решением, если она не притворяется.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я всё же решил осторожно задать ей тот же вопрос, что и Чарльзу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Расскажите, какой была мисс Морт?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Взгляд Лоран затуманился.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Она ничего не ответила.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я услышал ледяной голос Мишель.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Она была её сестрой.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Если вы всерьёз думаете, что Лоран могла это сделать, обращаться к вам было худшим решением в моей жизни.",
+     "type": "RSEFrameText"
+    },
+    {
+     "description": "",
+     "to_episode_id": 162,
+     "type": "RSEFrameJump"
     }
    ],
    "id": 161,
    "name": "Нибрас Театра. Часть 2",
    "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null,
     null,
     null,
@@ -193023,19 +194148,2309 @@
   {
    "active": false,
    "description": "",
-   "frames": [],
+   "frames": [
+    {
+     "location_id": 47,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "music_id": 126,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "action": 1,
+     "character_id": 13,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 19,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 25,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 26,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 27,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "action": 1,
+     "character_id": 39,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "transitition_id": 129,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "path_to_audio": "res://audio/sfx/lightning.mp3",
+     "type": "RSEFrameSFX"
+    },
+    {
+     "location_id": 46,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Похоже, скачок напряжения...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Пока не закончится гроза, лучше посидеть без света.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Шторм за окном стихать явно не собирался.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мы здесь надолго.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 41,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я не понимаю.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Одновременный выстрел точно отпадает.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Посторонний человек ничего сделать с оружием также не мог – во всяком случае, если полагаться на слова актёров.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Подложить боевой патрон могла Арлет, но её защищает Чарльз.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чарльза, в свою очередь, защищает Мишель.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Она же защищает и Лоран.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Иначе говоря, она берёт на себя всю ответственность за произошедшее.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Как истинный директор театра.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "И все они не показывают ни малейшей тревоги от того, что я их подозреваю.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Конечно, они актёры, но...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "В таких ситуациях без специальной подготовки эмоций не скроешь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вдобавок, версия с кем-то другим была бы для них выгодной, а они сами сводят её на нет!",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "И все они явно доверяют друг другу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Возможно, кто-то из них не тот, кем его считают, но в это просто не верится.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Они действительно выглядят... как семья.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Семья ополчилась на одного из своих?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Можно придумать множество безумных версий, но эти люди не похожи на безумцев.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я в тупике.",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 46,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет и Лоран сидели в углу, прижавшись друг к другу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Дидье и Мишель, казалось, были глубоко в своих мыслях.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чарльз смотрел на меня, его губы изображали лёгкую улыбку.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "И не подозревай его после этого...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Не хотите хотя бы для приличия выслушать директора?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Понимаю, что вы нашли для себя кое-что поинтереснее, но...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Прошу прощения за...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "всё это.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Госпожа Мишель говорила, что было падение с лестницы, пропажа человека и...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "кто-то не смог выйти через дверь и выбил окно?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Рада, что вы хотя бы помните мои слова.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Сначала была лестница...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Мишель упала с лестницы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Мы думали, что это из-за сломанной скрипки, но...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Но я всегда смотрю под ноги и держусь за перила, в каком бы состоянии я ни была.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Это доведено до автоматизма – спасибо воспитанию.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "А в тот раз моя нога как будто провалилась сквозь ступеньку, и я полетела вниз.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Из-за сломанной скрипки?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "В тот день Мишель очень сильно разозлилась из-за того, что я сломал у скрипки колок.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Мы тогда подолгу здесь занимались, а я быстро от такого устаю.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Решил от скуки поиграться со строем скрипки, а колок внезапно застрял.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Ну и...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "...И проиграл спор о том, что обращаешься с реквизитом бережнее, чем я.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Я тогда правда была на него очень зла: Арлет должна была играть на этой скрипке в новой постановке!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "К счастью, Чарльз, как всегда, смог исправить ситуацию...",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Как бы там ни было, я до сих пор считаю, что ступенька подо мной словно исчезла, но тогда мы в конце концов списали всё на эмоции.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Я отделалась лишь переломом ноги и лёгким сотрясением.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Но вот [i]всем нам[/i] пришлось хуже: в тот день я должна была присутствовать на важном собрании.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Из-за того, что вместо этого я отправилась в больницу, театр лишился одного из главных спонсоров.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 27,
+     "text": "А что насчёт случая с выбитым окном?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "До сегодняшнего дня мне казалось это забавным.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Это был всё ещё тот период, когда у нас было [i]очень[/i] много собраний и репетиций.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Пока ребята репетировали, я задремал.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Проснулся в абсолютной темноте.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Не было видно [i]совсем[/i] ничего.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 25,
+     "text": "На мои крики никто не ответил, и я сильно запаниковал.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Я...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "боюсь закрытых пространств.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Я на ощупь добрался до выхода, но не мог открыть дверь, как бы ни старался.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Ключ словно не подходил, хотя из всей связки в эту скважину может войти только один.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 25,
+     "text": "В итоге я в панике разбил окно и вышел через него.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "На дворе была уже поздняя ночь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Почему ваши коллеги оставили вас в театре одного?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Это самое странное.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Ну, если не считать абсолютной темноты.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Они говорят, что помнят, как мы выходили все вместе.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "В той мере, насколько мы в принципе можем быть уверены в таких вещах.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Чарльз справедливо заметил: тогда мы собирались [i]очень[/i] часто, и могли перепутать даже такие вещи.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Да, тогда мы ещё могли себе это позволить.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Но вскоре после этого театр больше не смог быть основной работой.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Как вы уже, наверное, догадываетесь, разбитое окно возле главного входа тоже пришлось очень “кстати”.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Как ни странно, инвесторы не слишком торопятся вкладывать деньги в места, которые разрушаются сами собой по непонятным причинам.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Я довольно быстро оправился от испуга и до недавнего времени думал, что в ту ночь я просто не до конца проснулся.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Конечно, мы провели параллель с предыдущим событием, мол, опять что-то произошло в самый неподходящий момент, опять страдает весь театр.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Но два случая – это совпадение.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Тогда мы и подумать не могли, что театр может быть проклят.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Сейчас сложные времена, а несчастные случаи – просто несчастные случаи.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Но пропажа человека – это уже перебор.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Не говоря уже о сегодняшнем...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Кто пропал?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Как это произошло?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "У нас был ещё один актёр...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Было общее собрание.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "В какой-то момент он задремал, потом проснулся, сказал “Ой, всё” и ушёл...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я едва сдержал смешок.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Что?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Что?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Оказалось, что домой он так и не вернулся.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Он был с нами всего пару лет и не особо влился в команду, но выступать с нами ему точно нравилось.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Что-то обсуждать – вот это да, это ему явно было неинтересно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Мы подумали, что может, ему [i]настолько[/i] надоела наша болтовня, но когда он не пришёл на следующую репетицию, мы забеспокоились.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Мы связались с его семьёй, и...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Его ищут уже больше недели.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "После этого я экспрессом переквалифицировался в актёры.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Следующая репетиция должна была быть генеральной, через три дня – первое выступление, а его роль была одной из главных.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "У нас опять всё сорвалось, и театр уверенно покатился в пропасть.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Когда он уходил, его взгляд был очень странным.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Расфокусированным, с расширенными зрачками.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Словно он увидел что-то перед собой и не мог отвести взгляд.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Вот что я имела в виду под проклятием этого театра, господин Этьен.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Три несчастных случая, после которых срывается шанс улучшить своё положение.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Пропавшая ступенька, волшебный замок, пропавший актёр.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "А сейчас...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Ведь после убийства театр ещё долго не сможет оправиться.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Не говоря уже о том, что кто-то из них может оказаться в тюрьме.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вполне годится для четвёртого происшествия.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Если выдвигать мистическую версию, то выглядит действительно так, словно театр ополчился на своих обитателей.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "А если говорить приземлённо, кто-то хочет, чтобы этот театр перестал работать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Но кому интересно выдворять из театра его работников?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Скажите, к кому перейдёт театр, если вы перестанете быть его владельцем?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "И есть ли у вас конкуренты?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Я так хотела ошибиться насчёт вас...",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Театр перейдёт в собственность государства.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Но думаю, вам не надо напоминать судьбу таких заведений.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Им сейчас уж точно не до этого.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Что же насчёт конкурентов...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Наш театр – последний из действующих.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Саботировать его не имеет смысла буквально ни для кого.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Вот как...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Здесь что, убийца – театр?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Или всё это лишь совпадения?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Мне нужно подумать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мишель посмотрела на меня безразличным взглядом.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Думайте сколько вам угодно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Но если хотите дружеского совета – не пытайтесь объять необъятное.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Хотя вам, конечно, виднее, господин экзорцист-детектив.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Это у которого и третий глаз, и увеличительное стекло?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Тогда точно виднее.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Ну я же почти удержался от этой шутки, а ты..!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "...",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мы сидели в молчании. В голову не приходило ни одной разумной мысли.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Где-то сбоку Мишель подала несмелый голос.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Что ж...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Надеюсь, мы сможем найти причины вновь собираться, пусть и не в стенах театра.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "То есть, я понимаю, что у вас есть семьи и близкие, но...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Конечно найдём.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Нам всем друг без друга будет тяжело.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Ты хочешь оставить театр?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Нет, разумеется не хочу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Но похоже, что выбора нет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Я обратилась к экзорцисту с безупречной репутацией, и вот, что вышло.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Я боюсь предпринимать что-либо ещё.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Я не понимаю этот театр.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Да и как мы будем без Морт?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Всю ответственность я возьму на себя, так что с вами всё будет в порядке.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Но ведь это я...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "стреляла...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Голос Лоран надорвался, и она наконец разрыдалась, отодвинувшись совсем к стене и уткнувшись лицом в ладони.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет осталась на месте, глядя на неё жалостливыми глазами.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "А я управляю этим театром.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "И если он идёт против своих актёров, это моя вина.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "У меня есть знакомый адвокат, у которого есть опыт в сложных делах, поэтому за меня не беспокойтесь.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "В такие времена, как сейчас, за такое запутанное дело не будут браться всерьёз.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Вдобавок, все, для кого её смерть стала трагедией, находятся в этой комнате...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Если так подумать, мы были для неё семьёй.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Лоран сжалась ещё сильнее.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Арлет подвинулась к ней и положила руку на её плечо.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Мы – и твоя семья тоже.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Мы никогда не заменим Морт, но это не значит, что ты теперь одна.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Слышишь?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Лоран подняла голову, её взгляд словно немного ожил.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Ты в-ведь г-говоришь это и д-для себя тоже?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Вы с Морт были...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "подругами по странностям.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Тебе тоже нужна своя Морт.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Опять ты со своей проницательностью...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Девушки слабо друг другу улыбнулись.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Почему театр отнял у нас именно её?..",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Где мы могли поступить иначе?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "То, что произошло, стало фактом, а то, что нас ждёт, подождёт ещё какое-то время.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Быть может, мы ещё сможем найти ответы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Лично я всё ещё наивно верю, что это может быть дело рук человека.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Дидье посмотрел на меня взглядом, от которого стало не по себе.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Но [i]сейчас[/i] от нас не требуется ничего.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Мы ничего не можем выяснить, ничего не можем предпринять.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Мы просто пережидаем шторм.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Давайте просто побудем здесь и сейчас, и выскажем всё, что просится наружу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Что, если это был ты, наш вечно скучающий худрук?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я аж оторопел.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чарльз, похоже, тоже совсем этого не ожидал.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Похоже, я проиграл спор ещё и в том, что более непредсказуем...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чарльз помедлил.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Его лицо сделалось необычно серьёзным.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "В худшие периоды я думаю, что мог докатиться и до такого.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Настолько устать от жизни.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Но это в том случае, если бы у нас не было Морт.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "А она буквально вытащила меня из ямы цинизма.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Показала, как глупо не видеть дальше предсказуемого сюжета и штампов.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Говоря образно и не очень.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Благодаря ей я снова ожил.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Я... никогда об этом не говорил.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Но ты ведь и сам это подмечал.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "За последние пару лет на репетициях ты заснул всего два раза.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "И с вами снова стало приятно работать.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "То есть... ой.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Да, Чарльз, я тебя давно знаю, и очень ценю.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Тебя и твою странную голову.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Прости, что вывел на эти слова таким способом, просто я решил, что тебе нужно об этом высказаться.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "А вот я после таких трюков уже и не уверен, что хорошо тебя знаю!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "А кто давал тебе советы, как стоит и как не стоит извиняться перед Мишель?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Шучу-шучу.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Ты и правда самый чуткий из нас.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Чарльз Моррис!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Ваше извинение шло не от сердца?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мишель нависла над Чарльзом с нарочито серьёзным лицом.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Оно шло от сердца Дидье, через моё и прямиком в ваше, госпожа Лагранж.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Да, я был проводником, но искренним!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Мишель мягко улыбнулась.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Морт была бы рада такой беседе.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Она как-то раз сказала, что смысл её жизни – это близкие люди.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Сейчас я поняла, что мы можем наполнять её жизнь смыслом даже после того, как она оборвалась.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Морт бы сказала, что впервые слышит от тебя такие глубокие рассуждения, и по-доброму бы подшутила.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Да...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "А что бы сказала ты?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Я... не знаю.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Ничего..?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Если бы рядом не было Морт, я бы молчала.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 13,
+     "text": "С ней я могла не думать о том, что мои слова не будут иметь такой же смысл для другого человека.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Я знаю, что это неизбежно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 13,
+     "text": "Морт научила меня не переживать по этому поводу, но мне всё ещё безумно сложно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Думаю, Морт всех нас учила чему-то ценному.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Она была нам словно опорой, пока мы заново учились ходить.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Наш последний урок – научиться ходить самостоятельно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Делать всё то, на что она нас вдохновляла, без её помощи.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 25,
+     "text": "Но в конце концов, на самом деле я хочу сказать лишь одно: Морт была офигительным человеком.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Лоран кивнула.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Какое-то время мы сидели молча.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Я хочу поблагодарить вас всех.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Театр был для меня буквально всей моей жизнью, и я рада, что провела её рядом с вами.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Я бы не терял надежды, Мишель.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Всё ещё может разрешиться.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Хотя, может, я слишком боюсь потерять свою главную отдушину...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Я просто не знаю, что будет дальше.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "И... мне страшно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Дидье подошёл к Мишель и обнял её.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 39,
+     "text": "Как человек с насмотренностью, ты должна знать, что за такой фразой обычно идёт “нам [i]всем[/i] страшно”.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 39,
+     "text": "И нам действительно тоже страшно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "А потом говорится что-то о том, что главное, что мы пройдём через это вместе.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 25,
+     "text": "И, как ни странно, я правда так считаю!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Эй, шаблонные фразы должны говорить актёры!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Вы хотите потеснить меня и Лоран?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Все засмеялись.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Какие же они... живые?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Странно осознавать, что столькими событиями в своей жизни я обязана Нибрасу...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "И абсолютно чудесными, и столь же трагичными.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Демону?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Что?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Нет, это первый владелец театра.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Он завещал его моим родителям.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Ты подумала о Нибрасе из городских легенд?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Да...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Которого называют то демоном безумия, то демоном развлечений, то ещё как-то.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 19,
+     "text": "Я просто испугалась, что вы... ну, поверили в... [i]такое[/i].",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Конечно нет.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Городские легенды до смешного разрозненны, а началось всё наверняка с историй о том, что настоящий Нибрас владел аж несколькими театрами, и его никак не могли потеснить конкуренты.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 26,
+     "text": "Я потому и вызвала [i]квалифицированного[/i] экзорциста...",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Стоп.",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "description": "",
+     "to_episode_id": 163,
+     "type": "RSEFrameJump"
+    }
+   ],
    "id": 162,
    "name": "Нибрас Театра. Часть 3",
-   "scene_presets": [],
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   },
   {
    "active": false,
    "description": "",
-   "frames": [],
+   "frames": [
+    {
+     "music_id": 36,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "location_id": 41,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Стоп-стоп-стоп.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "“Демон развлечений”...",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "У тех историй общим было то, что после несчастного случая театр приходил в больший упадок: срывались встречи, отменялись постановки.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Но эта связь кажется натянутой, по сравнению с кое-чем другим...",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Чарльз от скуки баловался со скрипкой, и после ссоры с ним Мишель упала с лестницы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Он же так сильно заскучал на репетиции, что заснул.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Проснулся в полной темноте, не смог выйти через дверь и в панике разбил окно.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Пропавший актёр, прежде чем встать и уйти навсегда, тоже заснул, и тоже от скуки...",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "А сегодня...",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "[i]Мне[/i] очень сильно хотелось, чтобы репетиция закончилась поскорее.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я нашёл идеальный способ сложить этот пазл.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "“Демон развлечений”.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Неужели..?",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Просто не может быть.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Это никуда не годится.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Но ведь до чего же офигительное совпадение.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Каков, нахрен, шанс?!",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Это ведь [i]всё[/i] ставит на свои места.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "АааААА!",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Думай, думай!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 64,
+     "text": "Ты впервые за столько лет увидел в чужих глазах жизнь, а все твои мысли — о том, как разгадать загадку?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Я открыл глаза и... ничего не увидел.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 2,
+     "text": "[i]Совсем[/i] ничего.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 2,
+     "text": "Но в следующее мгновение...",
+     "type": "RSEFrameText"
+    },
+    {
+     "transitition_id": 14,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "location_id": 142,
+     "type": "RSEFrameLocation"
+    },
+    {
+     "action": 1,
+     "character_id": 43,
+     "emotion_id": 0,
+     "outfit_id": 0,
+     "type": "RSEFrameCharacter"
+    },
+    {
+     "music_id": 33,
+     "type": "RSEFrameMusic"
+    },
+    {
+     "transitition_id": 15,
+     "type": "RSEFrameTransitition"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Ты что, настолько зависим от развлечений?",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Я только рад.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Ты так хотел докопаться до сути, что перерыл всё.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Но так и не смог найти ответ, в котором будешь уверен.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Самое весёлое – показать тебе этот ответ, ведь ты оказался прав.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Ты действительно собрал этот пазл.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Поздравляю тебя с победой!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Почему мне не страшно?",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Я ничего не чувствую!",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Только... пустота.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "О да.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Это *настоящий* вкус победы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Насладись им сполна.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 27,
+     "text": "Что произошло?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "В театре?",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Ты ведь уже всё понял.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Я убил Морт, чтобы развлечь тебя.",
+     "type": "RSEFrameText"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Или это ты убил Морт, чтобы развлечься?",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 43,
+     "text": "В этом больше нет никакой разницы.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Для тебя [i]всё[/i] уже позади.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Я хочу задать лишь один вопрос.",
+     "type": "RSEFrameText"
+    },
+    {
+     "type": "RSEFrameGap"
+    },
+    {
+     "speaker_id": 43,
+     "text": "Тебе ведь не было скучно?",
+     "type": "RSEFrameText"
+    }
+   ],
    "id": 163,
    "name": "Нибрас Театра. Часть 4",
-   "scene_presets": [],
+   "scene_presets": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
    "start": false
   }
  ],
@@ -193061,7 +196476,7 @@
   "104": {
    "position_x": 1620,
    "position_y": -540,
-   "size_x": 200.000122070313,
+   "size_x": 200,
    "size_y": 155.0009765625
   },
   "106": {
@@ -193091,31 +196506,31 @@
   "110": {
    "position_x": 13060,
    "position_y": 320,
-   "size_x": 200.001953125,
+   "size_x": 200.00390625,
    "size_y": 300.0009765625
   },
   "111": {
    "position_x": 13060,
    "position_y": 660,
-   "size_x": 200.001953125,
+   "size_x": 200.00390625,
    "size_y": 300.000732421875
   },
   "112": {
    "position_x": 13060,
    "position_y": 1000,
-   "size_x": 200.001953125,
+   "size_x": 200.00390625,
    "size_y": 299.99951171875
   },
   "113": {
    "position_x": 13360,
    "position_y": 680,
    "size_x": 200,
-   "size_y": 356.001708984375
+   "size_y": 356.001953125
   },
   "114": {
    "position_x": 13700,
    "position_y": 240,
-   "size_x": 200.0107421875,
+   "size_x": 200.009765625,
    "size_y": 299.99951171875
   },
   "115": {
@@ -193127,7 +196542,7 @@
   "116": {
    "position_x": 13700,
    "position_y": 680,
-   "size_x": 200.0107421875,
+   "size_x": 200.009765625,
    "size_y": 300.000732421875
   },
   "117": {
@@ -193139,7 +196554,7 @@
   "118": {
    "position_x": 13700,
    "position_y": 1120,
-   "size_x": 200.0107421875,
+   "size_x": 200.009765625,
    "size_y": 299.998779296875
   },
   "119": {
@@ -193164,7 +196579,7 @@
    "position_x": 14800,
    "position_y": 980,
    "size_x": 199.998046875,
-   "size_y": 300.000244140625
+   "size_y": 300.00048828125
   },
   "123": {
    "position_x": -640,
@@ -193199,19 +196614,19 @@
   "128": {
    "position_x": 500,
    "position_y": -320,
-   "size_x": 199.99951171875,
+   "size_x": 199.999267578125,
    "size_y": 155
   },
   "129": {
    "position_x": 700,
    "position_y": 1920,
    "size_x": 200,
-   "size_y": 155
+   "size_y": 155.000061035156
   },
   "13": {
    "position_x": 1040,
    "position_y": 60,
-   "size_x": 200.001037597656,
+   "size_x": 200.0009765625,
    "size_y": 155.0009765625
   },
   "130": {
@@ -193241,37 +196656,37 @@
   "134": {
    "position_x": 1000,
    "position_y": 2180,
-   "size_x": 199.999816894531,
+   "size_x": 199.999755859375,
    "size_y": 155.000244140625
   },
   "135": {
    "position_x": 1000,
    "position_y": 2340,
-   "size_x": 199.999816894531,
+   "size_x": 199.999755859375,
    "size_y": 155.000610351563
   },
   "136": {
    "position_x": 1000,
    "position_y": 2500,
-   "size_x": 199.999816894531,
+   "size_x": 199.999755859375,
    "size_y": 155.000793457031
   },
   "137": {
    "position_x": 1000,
    "position_y": 2660,
-   "size_x": 199.999816894531,
+   "size_x": 199.999755859375,
    "size_y": 155.000244140625
   },
   "138": {
    "position_x": 1000,
    "position_y": 2820,
-   "size_x": 199.999816894531,
-   "size_y": 155.000305175781
+   "size_x": 199.999755859375,
+   "size_y": 155.000244140625
   },
   "139": {
    "position_x": 1000,
    "position_y": 2980,
-   "size_x": 199.999816894531,
+   "size_x": 199.999755859375,
    "size_y": 155.000244140625
   },
   "14": {
@@ -193283,7 +196698,7 @@
   "140": {
    "position_x": 1000,
    "position_y": 3140,
-   "size_x": 199.999816894531,
+   "size_x": 199.999755859375,
    "size_y": 155.000244140625
   },
   "141": {
@@ -193385,14 +196800,14 @@
   "156": {
    "position_x": 3860,
    "position_y": 1380,
-   "size_x": 200.000244140625,
+   "size_x": 200,
    "size_y": 300.00048828125
   },
   "157": {
    "position_x": 3860,
    "position_y": 1700,
-   "size_x": 200.000244140625,
-   "size_y": 300
+   "size_x": 200,
+   "size_y": 299.999938964844
   },
   "158": {
    "position_x": 3600,
@@ -193403,7 +196818,7 @@
   "159": {
    "position_x": 3860,
    "position_y": 2040,
-   "size_x": 200.000244140625,
+   "size_x": 200,
    "size_y": 299.999633789063
   },
   "16": {
@@ -193415,7 +196830,7 @@
   "160": {
    "position_x": 2400,
    "position_y": 2400,
-   "size_x": 199.999877929688,
+   "size_x": 199.999755859375,
    "size_y": 300
   },
   "161": {
@@ -193451,13 +196866,13 @@
   "19": {
    "position_x": 1040,
    "position_y": 220,
-   "size_x": 200.001037597656,
+   "size_x": 200.0009765625,
    "size_y": 155.00048828125
   },
   "2": {
    "position_x": 1340,
    "position_y": 20,
-   "size_x": 199.9970703125,
+   "size_x": 199.996948242188,
    "size_y": 155.0009765625
   },
   "21": {
@@ -193487,19 +196902,19 @@
   "25": {
    "position_x": 1040,
    "position_y": -100,
-   "size_x": 200.001037597656,
+   "size_x": 200.0009765625,
    "size_y": 155.0009765625
   },
   "26": {
    "position_x": 1040,
    "position_y": -260,
-   "size_x": 200.001037597656,
+   "size_x": 200.0009765625,
    "size_y": 155.00048828125
   },
   "27": {
    "position_x": 1340,
    "position_y": -160,
-   "size_x": 200.0009765625,
+   "size_x": 200.000854492188,
    "size_y": 155.0009765625
   },
   "28": {
@@ -193512,7 +196927,7 @@
    "position_x": -200,
    "position_y": 1720,
    "size_x": 200.001953125,
-   "size_y": 155.000610351563
+   "size_y": 155.000549316406
   },
   "30": {
    "position_x": -200,
@@ -193571,13 +196986,13 @@
   "39": {
    "position_x": 1040,
    "position_y": -420,
-   "size_x": 200.001037597656,
+   "size_x": 200.0009765625,
    "size_y": 155.0009765625
   },
   "40": {
    "position_x": 1040,
    "position_y": -580,
-   "size_x": 200.001037597656,
+   "size_x": 200.0009765625,
    "size_y": 155.00048828125
   },
   "41": {
@@ -193589,13 +197004,13 @@
   "42": {
    "position_x": 2200,
    "position_y": 760,
-   "size_x": 200.0009765625,
+   "size_x": 200.001037597656,
    "size_y": 300.000732421875
   },
   "43": {
    "position_x": 1340,
    "position_y": -500,
-   "size_x": 200.0009765625,
+   "size_x": 200.000854492188,
    "size_y": 155
   },
   "44": {
@@ -193637,13 +197052,13 @@
   "50": {
    "position_x": 3800,
    "position_y": 520,
-   "size_x": 287.623046875,
+   "size_x": 287.62353515625,
    "size_y": 291.494140625
   },
   "51": {
    "position_x": 3800,
    "position_y": 1000,
-   "size_x": 293.984375,
+   "size_x": 293.98486328125,
    "size_y": 293.205078125
   },
   "52": {
@@ -193703,31 +197118,31 @@
   "61": {
    "position_x": 5240,
    "position_y": 740,
-   "size_x": 263.232177734375,
+   "size_x": 263.231689453125,
    "size_y": 414.253173828125
   },
   "62": {
    "position_x": 5600,
    "position_y": 740,
-   "size_x": 217.810791015625,
+   "size_x": 217.81103515625,
    "size_y": 354.8037109375
   },
   "63": {
    "position_x": 5940,
    "position_y": 740,
-   "size_x": 223.292236328125,
+   "size_x": 223.2919921875,
    "size_y": 350.69287109375
   },
   "64": {
    "position_x": 1340,
    "position_y": -340,
-   "size_x": 200.0009765625,
+   "size_x": 200.000854492188,
    "size_y": 155
   },
   "65": {
    "position_x": 6260,
    "position_y": 740,
-   "size_x": 215.9091796875,
+   "size_x": 215.90869140625,
    "size_y": 395.44970703125
   },
   "66": {
@@ -193751,7 +197166,7 @@
   "69": {
    "position_x": 7580,
    "position_y": 740,
-   "size_x": 246.0849609375,
+   "size_x": 246.0859375,
    "size_y": 367.2587890625
   },
   "70": {
@@ -193781,7 +197196,7 @@
   "74": {
    "position_x": 7900,
    "position_y": 740,
-   "size_x": 204.98046875,
+   "size_x": 204.97998046875,
    "size_y": 337.366455078125
   },
   "75": {
@@ -193817,7 +197232,7 @@
   "80": {
    "position_x": 8480,
    "position_y": 760,
-   "size_x": 218.689453125,
+   "size_x": 218.6904296875,
    "size_y": 389.67529296875
   },
   "81": {
@@ -193865,7 +197280,7 @@
   "88": {
    "position_x": 10880,
    "position_y": 400,
-   "size_x": 224.119140625,
+   "size_x": 224.1181640625,
    "size_y": 397.960693359375
   },
   "89": {
@@ -193907,7 +197322,7 @@
   "94": {
    "position_x": 11880,
    "position_y": 580,
-   "size_x": 313.228515625,
+   "size_x": 313.2275390625,
    "size_y": 302.265625
   },
   "95": {
@@ -193940,11 +197355,11 @@
    "size_x": 200.00048828125,
    "size_y": 155.000732421875
   },
-  "scroll_offset_x": 1718.30395507813,
-  "scroll_offset_y": 1955.35107421875,
+  "scroll_offset_x": 2545.3212890625,
+  "scroll_offset_y": 2559.607421875,
   "show_grid": true,
   "snapping_enabled": true,
-  "zoom": 0.967349529266357
+  "zoom": 1.17550826072693
  },
  "last_id": 163,
  "locations": [
