@@ -24,9 +24,9 @@ func _set_language(id: int):
 	Settings.locale = locales[id]
 
 
-func _remove_duplicate_locales(locales: Array) -> Array:
+func _remove_duplicate_locales(all_locales: Array) -> Array:
 	var unique: Array = []
-	for locale in locales:
+	for locale in all_locales:
 		if not unique.has(locale):
 			unique.append(locale)
 	return unique

@@ -241,4 +241,4 @@ func generate_pot(path: String) -> void:
 
 
 func get_pot_string(text: String) -> String:
-	return 'msgid "%s"\nmsgstr "%s"\n\n' % [text, text] 
+	return 'msgid "%s"\nmsgstr "%s"\n\n' % [text, ""] 

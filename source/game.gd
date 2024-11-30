@@ -69,3 +69,11 @@ func return_to_menu() -> void:
 
 func _on_frame_player_end():
 	get_tree().change_scene_to_file(path_to_menu_scene)
+
+
+func _input(event):
+	if event.is_action_pressed("pause"):
+		if pause_menu.visible:
+			continue_game()
+		else:
+			pause_game()

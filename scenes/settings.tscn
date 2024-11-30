@@ -381,7 +381,7 @@ grow_vertical = 2
 size_flags_horizontal = 4
 focus_mode = 0
 theme = ExtResource("3_qwhhk")
-text = "Вернуться в меню "
+text = "Назад"
 script = ExtResource("8_iv8c3")
 
 [connection signal="text_changed" from="VBoxContainer/Имя игрока/LineEdit" to="VBoxContainer/Имя игрока/LineEdit" method="_on_text_changed"]

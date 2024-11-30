@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=79 format=3 uid="uid://1ldra2lpi55u"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_h3ser"]
@@ -70,6 +70,7 @@
 [ext_resource type="Texture2D" uid="uid://b768k41knrau1" path="res://cg_arts/BIG_palette.jpg" id="48_nrhky"]
 [ext_resource type="Texture2D" uid="uid://dliajgaduhbl2" path="res://cg_arts/items/метка.png" id="49_7dh0l"]
 [ext_resource type="Texture2D" uid="uid://cgpk2uui42wst" path="res://cg_arts/BOSSpalette.jpg" id="49_17foi"]
+[ext_resource type="Texture2D" uid="uid://w6ap0i0p1x56" path="res://cg_arts/items/винтовка_2.png" id="65_pllb0"]
 [ext_resource type="Script" path="res://scenes/menu/extra_story.gd" id="69_67vah"]
 
 [sub_resource type="Animation" id="Animation_rcg8h"]
@@ -214,6 +215,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("5_8p1ol")
@@ -224,6 +227,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("6_a3sls")
@@ -911,7 +916,21 @@ tip_for_unlock = "Закрыто!
 Пройдите игру
 один раз."
 description = "Cassegrain 1917 Prot. 3."
+image = ExtResource("65_pllb0")
+
+[node name="Винтовка2" parent="Галерея/ScrollContainer/HFlowContainer" node_paths=PackedStringArray("tip_label", "image_rect", "border", "lock", "new_label") instance=ExtResource("18_pqco6")]
+layout_mode = 2
+id = 46
+condition = "TRUE_ENDING"
+tip_for_unlock = "Закрыто!
+???"
+description = "Cassegrain 1917 Prot. 1."
+tip_label = NodePath("../Винтовка/MarginContainer/Background/MarginContainer/Lock/MarginContainer/Label")
 image = ExtResource("47_wk66v")
+image_rect = NodePath("../Винтовка/MarginContainer/Background/MarginContainer/Image")
+border = NodePath("../Винтовка/MarginContainer/Background/MarginContainer/Border")
+lock = NodePath("../Винтовка/MarginContainer/Background/MarginContainer/Lock")
+new_label = NodePath("../Винтовка/MarginContainer/Background/MarginContainer/Image/MarginContainer")
 
 [node name="Патроны" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2

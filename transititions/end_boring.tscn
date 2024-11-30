@@ -1,0 +1,90 @@
+[gd_scene load_steps=7 format=3 uid="uid://dku1oiiml4abt"]
+
+[ext_resource type="Script" path="res://transititions/end_boring.gd" id="1_1b7ax"]
+[ext_resource type="Theme" uid="uid://c4e2ygeqqqaxy" path="res://scenes/frame_player/frame_player_theme.tres" id="2_3sabj"]
+
+[sub_resource type="Animation" id="Animation_pf2sg"]
+resource_name = "show"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3, 7, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_dx1yf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4alt8"]
+_data = {
+"RESET": SubResource("Animation_dx1yf"),
+"show": SubResource("Animation_pf2sg")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_gobd1"]
+font_size = 64
+
+[node name="EndBoring" type="Control" node_paths=PackedStringArray("player")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1b7ax")
+path_to_menu_scene = "res://scenes/menu/menu.tscn"
+player = NodePath("AnimationPlayer")
+animation_name = "show"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_4alt8")
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -324.0
+offset_top = -34.5
+offset_right = 324.0
+offset_bottom = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_3sabj")
+text = "Тебе ведь не было скучно?"
+label_settings = SubResource("LabelSettings_gobd1")
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

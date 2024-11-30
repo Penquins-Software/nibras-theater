@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cka2t7km7vv8b"]
+[gd_scene load_steps=9 format=3 uid="uid://cka2t7km7vv8b"]
 
 [ext_resource type="Script" path="res://source/pause.gd" id="1_cwqt0"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_6swir"]
@@ -8,12 +8,6 @@
 [ext_resource type="Script" path="res://source/button_with_sound.gd" id="4_3v4p6"]
 [ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="4_ns6aa"]
 [ext_resource type="PackedScene" uid="uid://beneekmk33mka" path="res://scenes/save_manager/save_list.tscn" id="5_00ptl"]
-
-[sub_resource type="InputEventAction" id="InputEventAction_jt326"]
-action = &"pause"
-
-[sub_resource type="Shortcut" id="Shortcut_pytoy"]
-events = [SubResource("InputEventAction_jt326")]
 
 [node name="Pause" type="Control" node_paths=PackedStringArray("main")]
 layout_mode = 3
@@ -51,7 +45,6 @@ rotation = -0.0874057
 focus_mode = 0
 theme = ExtResource("4_ns6aa")
 theme_override_font_sizes/font_size = 64
-shortcut = SubResource("Shortcut_pytoy")
 shortcut_in_tooltip = false
 text = "Продолжить"
 script = ExtResource("4_3v4p6")
