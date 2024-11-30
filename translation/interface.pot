@@ -129,9 +129,7 @@ msgid "Блипы персонажей:"
 msgstr ""
 
 #: scenes/settings.tscn
-#: scenes/save_manager/save_list.tscn
-#: scenes/menu/menu.tscn
-msgid "Вернуться в меню "
+msgid "Назад"
 msgstr ""
 
 #: scenes/save_manager/save_container.tscn
@@ -158,6 +156,11 @@ msgid "Сохранения"
 msgstr ""
 
 #: scenes/save_manager/save_list.tscn
+#: scenes/menu/menu.tscn
+msgid "Вернуться в меню "
+msgstr ""
+
+#: scenes/save_manager/save_list.tscn
 msgid "Удалить сохранение"
 msgstr ""
 
@@ -176,11 +179,7 @@ msgid ""
 msgstr ""
 
 #: scenes/menu/menu.tscn
-msgid "Версия: 1.1.0"
-msgstr ""
-
-#: scenes/menu/menu.tscn
-msgid "[url=https://vk.com/jamof100flowers]Игра сделана на конкурс «Джем Ста Цветов» в 2024 году[/url]"
+msgid "Версия: 1.2.0"
 msgstr ""
 
 #: scenes/menu/menu.tscn
@@ -227,11 +226,51 @@ msgid "Первый и единственный выбор, влияющий н�
 msgstr ""
 
 #: scenes/menu/menu.tscn
+msgid "\"Закулисье\""
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Взгляните на историю под другим углом..."
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "\"Нибрас Театра\""
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "?.."
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Первая версия"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Первая версия сценария, которая по итогу была отброшена."
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Мета Детектив"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Небольшая зарисовка из жизни детективного агенства Этьена."
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "Хаос?"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "..."
+msgstr ""
+
+#: scenes/menu/menu.tscn
 msgid "Гримёрка"
 msgstr ""
 
 #: scenes/menu/menu.tscn
-msgid "Место, где можно посмотреть на персонажей..."
+msgid "Место, где можно посмотреть на персонажей."
 msgstr ""
 
 #: scenes/menu/menu.tscn

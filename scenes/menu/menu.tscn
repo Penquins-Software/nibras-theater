@@ -1200,6 +1200,7 @@ text = "..."
 horizontal_alignment = 1
 
 [node name="Button2" type="Button" parent="Экстра/VBoxContainer"]
+visible = false
 custom_minimum_size = Vector2(300, 48)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -1207,6 +1208,7 @@ theme = ExtResource("17_uo323")
 text = "Гримёрка"
 
 [node name="Label2" type="Label" parent="Экстра/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme = ExtResource("8_7egbi")
 theme_override_font_sizes/font_size = 24

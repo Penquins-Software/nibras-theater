@@ -20,9 +20,9 @@ func write_frame_info_to_scene_state(scene_state: RSESceneState) -> void:
 	if rewrite:
 		scene_state.gap = false
 		scene_state.speaker_id = speaker_id
-		scene_state.text = text
+		scene_state.text = tr(text)
 	else:
-		scene_state.text += ' ' + text
+		scene_state.text += ' ' + tr(text)
 
 
 func get_frame_type() -> RSEFrame.FrameType:

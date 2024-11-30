@@ -22,3 +22,7 @@ func show_and_focus() -> void:
 
 func return_to_menu() -> void:
 	return_was_pressed.emit(self)
+
+
+func export_gallery_to_pot() -> void:
+	pass

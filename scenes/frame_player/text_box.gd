@@ -55,6 +55,9 @@ func set_text(text: String, speaker: String = "", speaker_color: Color = Color.W
 	if not ready_to_next_frame:
 		return
 	
+	text = tr(text)
+	speaker = tr(speaker)
+	
 	remove_bbcode_marker()
 	
 	text_label.text = text
@@ -76,6 +79,9 @@ func set_text(text: String, speaker: String = "", speaker_color: Color = Color.W
 func add_text(text: String, speaker: String = "", speaker_color: Color = Color.WHITE, mode: MarkerMode = MarkerMode.NextFrame) -> void:
 	if not ready_to_next_frame:
 		return
+	
+	text = tr(text)
+	speaker = tr(speaker)
 	
 	if text_label.text == "":
 		set_text(text, speaker, speaker_color, mode)
