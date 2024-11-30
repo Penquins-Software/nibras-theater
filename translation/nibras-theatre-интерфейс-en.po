@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Nibras Theatre - Интерфейс package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-11-10 06:29:56+0000\n"
+"PO-Revision-Date: 2024-11-30 05:09:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,22 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: en\n"
 "Project-Id-Version: Nibras Theatre - Интерфейс\n"
+
+#: scenes/menu/menu.tscn
+msgid "?.."
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "\"Нибрас Театра\""
+msgstr ""
+
+#: scenes/menu/menu.tscn
+msgid "\"Закулисье\""
+msgstr ""
+
+#: scenes/settings.tscn
+msgid "Назад"
+msgstr "Back"
 
 #: scenes/frame_player/frame_player.tscn
 msgid "Пауза"
@@ -52,7 +68,7 @@ msgid ""
 "[url=https://penquins.software/]Pen[color=red]q[/color]uins Software[/url]"
 msgstr ""
 "[center]Programming: [url=https://ozkitsune.itch.io/]O3ZY[/url]\n"
-"Script: [url=https://ozkitsune.itch.io/]O3ZY[/url]\n"
+"Script: [url=https://ozkitsune.itch.io/]O3ZY[/url], [url=https://vk.com/musical_output]lexander[/url]\n"
 "Text Editing and Translation: [url=https://vk.com/musical_output]lexander[/url]\n"
 "Graphics and UI: [url=https://vk.com/ankelran]RANKEL[/url], [url=https://vk.com/agnialoo]Василий Василич[/url]\n"
 "Music and Sound Design: [url=https://vk.com/musical_output]lexander[/url]\n"
@@ -62,8 +78,8 @@ msgstr ""
 "[url=https://penquins.software/]Pen[color=red]q[/color]uins Software[/url]"
 
 #: scenes/menu/menu.tscn
-msgid "Место, где можно посмотреть на персонажей..."
-msgstr "This is where you can look at the characters..."
+msgid "Место, где можно посмотреть на персонажей."
+msgstr ""
 
 #: scenes/menu/menu.tscn
 msgid "Гримёрка"
@@ -116,12 +132,8 @@ msgstr ""
 "in 2024[/url]"
 
 #: scenes/menu/menu.tscn
-msgid "[url=https://vk.com/jamof100flowers]Игра сделана на конкурс «Джем Ста Цветов» в 2024 году[/url]"
-msgstr "[url=https://vk.com/jamof100flowers]The game was made for «The Jam of a Hundred Flowers» in 2024[/url]"
-
-#: scenes/menu/menu.tscn
-msgid "Версия: 1.1.0"
-msgstr "Version: 1.1.0"
+msgid "Версия: 1.2.0"
+msgstr "Version: 1.2.0"
 
 #: scenes/menu/gallery_item.tscn
 msgid ""
@@ -160,8 +172,7 @@ msgstr "Load"
 msgid "[color=INDIAN_RED][АВТО][/color] "
 msgstr "[color=INDIAN_RED][AUTO][/color] "
 
-#: scenes/settings.tscn scenes/save_manager/save_list.tscn
-#: scenes/menu/menu.tscn
+#: scenes/save_manager/save_list.tscn scenes/menu/menu.tscn
 msgid "Вернуться в меню "
 msgstr "Back to menu "
 
@@ -244,6 +255,41 @@ msgstr "Save game"
 #: scenes/pause.tscn scenes/menu/menu.tscn
 msgid "Продолжить"
 msgstr "Continue"
+
+#: scenes/menu/menu.tscn
+#, gp-priority: hidden
+msgid "..."
+msgstr ""
+
+#: scenes/menu/menu.tscn
+#, gp-priority: hidden
+msgid "Хаос?"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+#, gp-priority: hidden
+msgid "Небольшая зарисовка из жизни детективного агенства Этьена."
+msgstr ""
+
+#: scenes/menu/menu.tscn
+#, gp-priority: hidden
+msgid "Мета Детектив"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+#, gp-priority: hidden
+msgid "Первая версия сценария, которая по итогу была отброшена."
+msgstr ""
+
+#: scenes/menu/menu.tscn
+#, gp-priority: hidden
+msgid "Первая версия"
+msgstr ""
+
+#: scenes/menu/menu.tscn
+#, gp-priority: hidden
+msgid "Взгляните на историю под другим углом..."
+msgstr ""
 
 #: scenes/frame_player/frame_player.tscn
 #, gp-priority: hidden

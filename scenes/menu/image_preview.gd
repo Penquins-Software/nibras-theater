@@ -9,7 +9,7 @@ extends Control
 func show_image(image: Texture2D, description: String) -> void:
 	show()
 	image_rect.texture = image
-	description_label.text = description
+	description_label.text = tr(description)
 
 
 func _on_exit_pressed():

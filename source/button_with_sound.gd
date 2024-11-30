@@ -3,8 +3,7 @@ extends Button
 
 
 func _pressed():
-	#_play_sound()
-	pass
+	_play_sound()
 
 
 func _play_sound() -> void:

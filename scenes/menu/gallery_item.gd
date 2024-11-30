@@ -26,7 +26,7 @@ func _ready():
 		queue_free()
 	
 	image_rect.texture = image
-	tip_label.text = tip_for_unlock
+	update_tip_text()
 	
 	viewed = Settings.profile.viewed_gallery_images.has(float(id))
 	
@@ -37,6 +37,10 @@ func _ready():
 	new = not locked and not viewed
 	if not new:
 		new_label.visible = false
+
+
+func update_tip_text() -> void:
+	tip_label.text = tr(tip_for_unlock)
 
 
 func _on_image_mouse_entered():

@@ -73,6 +73,7 @@ func _on_frame_player_end():
 
 func _input(event):
 	if event.is_action_pressed("pause"):
+		UISoundManager.click()
 		if pause_menu.visible:
 			continue_game()
 		else:

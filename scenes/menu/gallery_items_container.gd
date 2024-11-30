@@ -11,6 +11,12 @@ func _ready():
 		child.gallery_item.connect(image_preview.show_image)
 
 
+func _notification(what):
+	if what == NOTIFICATION_TRANSLATION_CHANGED:
+		for child: GalleryItem in get_children():
+			child.update_tip_text()
+
+
 func generate_pot(path: String) -> void:
 	var pot: String = 'msgid ""\nmsgstr ""\n\n'
 		
