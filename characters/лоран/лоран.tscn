@@ -630,16 +630,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("12_4suif")
+"texture": ExtResource("6_3vsi3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_qhwar")
+"texture": ExtResource("7_0jtuc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_tbxpw")
+"texture": ExtResource("8_ixb1h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_qhwar")
+"texture": ExtResource("7_0jtuc")
 }],
 "loop": true,
 "name": &"new_слёзы и отвела взгляд",
@@ -1708,7 +1708,6 @@ mouth = NodePath("Head/Mouth")
 eyes_frame_close = 2
 default_emotion = "Спокойствие"
 bleep_player = NodePath("BleepPlayer")
-character_id = 13
 
 [node name="Head" type="Sprite2D" parent="."]
 light_mask = 3
@@ -1722,7 +1721,7 @@ animation = &"new_грусть"
 [node name="Mouth" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_dxlf1")
-animation = &"new_грусть + слёзы"
+animation = &"new_слёзы и отвела взгляд"
 
 [node name="Eyebrows" type="AnimatedSprite2D" parent="Head"]
 light_mask = 3
