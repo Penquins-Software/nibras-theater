@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Nibras Theatre - Интерфейс package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-11-30 05:09:41+0000\n"
+"PO-Revision-Date: 2024-12-11 03:25:19+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #: scenes/menu/menu.tscn
 msgid "?.."
-msgstr ""
+msgstr "?.."
 
 #: scenes/menu/menu.tscn
 msgid "\"Нибрас Театра\""
@@ -21,7 +21,7 @@ msgstr ""
 
 #: scenes/menu/menu.tscn
 msgid "\"Закулисье\""
-msgstr ""
+msgstr "\"Behind the Scenes\""
 
 #: scenes/settings.tscn
 msgid "Назад"
@@ -76,10 +76,6 @@ msgstr ""
 "Original idea by [url=https://itch.io/profile/aki-ona]Akiona[/url]\n"
 "\n"
 "[url=https://penquins.software/]Pen[color=red]q[/color]uins Software[/url]"
-
-#: scenes/menu/menu.tscn
-msgid "Место, где можно посмотреть на персонажей."
-msgstr ""
 
 #: scenes/menu/menu.tscn
 msgid "Гримёрка"
@@ -305,3 +301,8 @@ msgstr "[cell][/cell][cell] [/cell][cell][/cell]"
 #, gp-priority: hidden
 msgid "  [img=24]res://gui/Мелочи/Игра/Для текста/1.png[/img]"
 msgstr "  [img=24]res://gui/Мелочи/Игра/Для текста/1.png[/img]"
+
+#: scenes/menu/menu.tscn
+#, gp-priority: hidden
+msgid "Место, где можно посмотреть на персонажей."
+msgstr ""

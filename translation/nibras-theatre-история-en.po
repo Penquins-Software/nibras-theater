@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Nibras Theatre - История package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-11-30 04:21:13+0000\n"
+"PO-Revision-Date: 2024-12-11 03:20:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,15 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: en\n"
 "Project-Id-Version: Nibras Theatre - История\n"
+
+msgid "Бутафор"
+msgstr "Prop master"
+
+msgid "Актриса"
+msgstr "Actress"
+
+msgid "Актёр"
+msgstr "Actor"
 
 msgid "ой."
 msgstr "oops."
@@ -7737,7 +7746,7 @@ msgid "А это должно быть сироп!"
 msgstr "And this must be syrup."
 
 msgid "Чарльз несколько поубавился в оптимизме, но улыбка так и не сползла с его лица."
-msgstr "Charles's optimism somewhat faded, but he was still smiling wide."
+msgstr "The actor's optimism somewhat faded, but he was still smiling wide."
 
 msgid "Из места, куда стреляли, потекла кровь."
 msgstr "The wound began to bleed."
@@ -7764,7 +7773,7 @@ msgid "Дидье, ты уверен, что она мертва?"
 msgstr "Are you sure though, Didier?"
 
 msgid "Чарльз, как всегда с невозмутимой улыбкой, подошёл к “мёртвой” актрисе и принялся внимательно её рассматривать."
-msgstr "Charles, on the other hand, smiling as always, approached the body and started to examine her."
+msgstr "The man, on the other hand, playing one of the roles, approached the body and started to examine her."
 
 msgid "Как же так?.."
 msgstr "How?.."

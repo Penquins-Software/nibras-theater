@@ -1,0 +1,153 @@
+# Translation of Nibras Theatre - Галерея in English
+# This file is distributed under the same license as the Nibras Theatre - Галерея package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-11-30 12:29:01+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: en\n"
+"Project-Id-Version: Nibras Theatre - Галерея\n"
+
+msgid "Символ изображает… улыбку?"
+msgstr "The symbol depicted... a smile?"
+
+msgid "25 патронов в калибре 8.2х54."
+msgstr "25 rounds of 8.2 x 54 mm caliber."
+
+msgid "Cassegrain 1917 Prot. 1."
+msgstr "Cassegrain 1917 Prot. 1."
+
+msgid "Cassegrain 1917 Prot. 3."
+msgstr "Cassegrain 1917 Prot. 3."
+
+msgid "Главное меню, тип 3"
+msgstr "Main menu type 3"
+
+msgid "Главное меню, тип 2"
+msgstr "Main menu type 2"
+
+msgid "Главное меню"
+msgstr "Main menu"
+
+msgid "Закрыто!"
+msgstr "Locked!"
+
+msgid "Кодовое имя \"BOSS\"."
+msgstr "Code name: BOSS."
+
+msgid "Кодовое имя \"BIG\"."
+msgstr "Code name: BIG."
+
+msgid "Усы?!.."
+msgstr "A moustache?!."
+
+msgid "Мишель сидела в углу комнаты. Она была в луже крови и не подавала признаков жизни."
+msgstr "Michelle was sitting in the corner of the room. She was in a pool of blood and showed no signs of life."
+
+msgid "Мой фонарик оказался направлен прямо… на труп Дидье."
+msgstr "My flashlight was pointed straight at... Didier's corpse."
+
+msgid "Здесь темно… Сейчас включу фонарик."
+msgstr "It's dark here... I'll turn on the flashlight."
+
+msgid "...на диване, в углу комнаты, лежал Чарльз с ножом в груди, а лицо было искажено гримасой боли."
+msgstr "In the corner of the room, was lying Charles with a knife in his chest, his face contorted with a grimace of pain."
+
+msgid "Глаза были открытыми и смотрели вверх. На лице словно застыло выражение удивления."
+msgstr "Her eyes were open and looking up. Her face seemed to have a frozen expression of surprise."
+
+msgid "М-морт? Морт, ты ведь понимаешь, что сейчас не время для шуток?"
+msgstr "Mort, you do realize it's not the time for jokes, right?"
+
+msgid "НИБРАС!"
+msgstr "NIBRAS!"
+
+msgid "...Тот, кому вечно не достаёт веселья."
+msgstr "The one who always wants some fun."
+
+msgid "Комната для отдыха во время шторма."
+msgstr "Recreation room during storm."
+
+msgid "Комната для отдыха днём. Чарльз любил читать здесь газеты."
+msgstr "Daytime recreation room. Charles loved reading newspapers here."
+
+msgid "Комната для отдыха ночью."
+msgstr "Recreation room at night."
+
+msgid "Комната для отдыха с освещением."
+msgstr "Recreation room with lights on."
+
+msgid "Холл во время шторма."
+msgstr "Hall during storm."
+
+msgid "Холл днём. В это врёмя суток здесь любят обсуждать постановки."
+msgstr "Daytime hall. People like to discuss plays here."
+
+msgid "Холл ночью."
+msgstr "Hall at night."
+
+msgid "Ночной холл с освещением."
+msgstr "Night hall with lights on."
+
+msgid "Бутафорский цех во время шторма."
+msgstr "Prop workshop during storm."
+
+msgid "Бутафорский цех днём."
+msgstr "Daytime prop workshop."
+
+msgid "Бутафорский цех ночью."
+msgstr "Prop workshop at night."
+
+msgid "Бутафорский цех с освещением."
+msgstr "Prop workshop with lights on."
+
+msgid "Коридор во время шторма."
+msgstr "Corridor during storm."
+
+msgid "Коридор днём."
+msgstr "Daytime corridor."
+
+msgid "Коридор ночью."
+msgstr "Corridor at night."
+
+msgid "Ночной коридор с освещением."
+msgstr "Corridor with lights on."
+
+msgid "Гримёрка во время шторма."
+msgstr "Dressing room during storm."
+
+msgid "Гримёрка днём."
+msgstr "Daytime dressing room."
+
+msgid "Гримёрка ночью."
+msgstr "Dressing room at night."
+
+msgid "Ночная гримёрка с освещением. Лучшее место для решения проблем."
+msgstr "Dressing room with lights on. The best place for problem solving."
+
+msgid "Нибрас?!"
+msgstr "Nibras?!"
+
+msgid "Закрыто"
+msgstr "Locked"
+
+msgid "Сцена без освещения."
+msgstr "Stage with no lighting."
+
+msgid "Красная комната?"
+msgstr "Red Room?"
+
+msgid "Сцена!"
+msgstr "The stage!"
+
+msgid ""
+"Закрыто!\n"
+"Посетите эту\n"
+"локацию."
+msgstr ""
+"Locked!\n"
+"Visit this\n"
+"location."

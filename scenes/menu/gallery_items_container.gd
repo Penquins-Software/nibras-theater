@@ -32,10 +32,10 @@ func generate_pot(path: String) -> void:
 	file.close()
 
 
-func try_add_string(keys: PackedStringArray, pot: String, str: String) -> String:
-	if not keys.has(str):
-		keys.append(str)
-		pot += get_pot_string(str)
+func try_add_string(keys: PackedStringArray, pot: String, string: String) -> String:
+	if not keys.has(string):
+		keys.append(string)
+		pot += get_pot_string(string)
 	return pot
 
 
