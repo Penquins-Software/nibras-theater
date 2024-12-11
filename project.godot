@@ -38,6 +38,10 @@ window/size/window_height_override=720
 window/stretch/mode="canvas_items"
 mouse_cursor/custom_image="res://graphics/cursor2-13.png"
 
+[dotnet]
+
+project/assembly_name="Nibras Theater"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/rewind_story_engine/plugin.cfg")
