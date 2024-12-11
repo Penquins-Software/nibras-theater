@@ -1800,7 +1800,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("12_fuumu")
+"texture": ExtResource("46_x3mvl")
 }],
 "loop": true,
 "name": &"new_зла",
@@ -1816,7 +1816,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("12_fuumu")
+"texture": ExtResource("46_x3mvl")
 }],
 "loop": true,
 "name": &"new_карикатурно зла",
@@ -1856,7 +1856,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("12_fuumu")
+"texture": ExtResource("46_x3mvl")
 }],
 "loop": true,
 "name": &"new_очень зла",
@@ -2359,12 +2359,12 @@ light_mask = 3
 light_mask = 3
 position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_uspv6")
-animation = &"new_карикатурно зла"
+animation = &"new_очень зла"
 
 [node name="Right Arm" type="AnimatedSprite2D" parent="Arms"]
 light_mask = 3
 sprite_frames = SubResource("SpriteFrames_pb7os")
-animation = &"new_карикатурно зла"
+animation = &"new_зла"
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
 bus = &"Bleep"
