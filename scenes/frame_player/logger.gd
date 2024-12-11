@@ -11,10 +11,10 @@ func _input(event):
 			hide()
 
 
-func add(frame: RSEFrame) -> void:
+func add(frame: RSEFrame, episode: RSEEpisode, current_frame_index: int) -> void:
 	if frame is RSEFrameText:
 		var speaker = RewindStoryEngine.story.characters[frame.speaker_id]
-		var speaker_name = speaker.display_name
+		var speaker_name = RSECharacter.get_skeaker_name(speaker, episode, current_frame_index)
 		if speaker_name != "":
 			speaker_name = tr(speaker_name)
 			speaker_name += ':'

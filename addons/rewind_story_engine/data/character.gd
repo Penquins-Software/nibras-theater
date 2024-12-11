@@ -108,3 +108,41 @@ func _get_next_id(dict: Dictionary) -> int:
 		if int(id) > max_id:
 			max_id = int(id)
 	return max_id + 1
+
+
+static func get_skeaker_name(speaker: RSECharacter, episode: RSEEpisode, current_frame_index: int) -> String:
+	match episode.id:
+		## Театр Нибраса. Эпизод "Репетиция". Весь эпизод неизвестно имя актёров и бутафора.
+		24:
+			if speaker.id == 13 or speaker.id == 19 or speaker.id == 40:
+				return "Актриса"
+			if speaker.id == 25:
+				return "Актёр"
+			if speaker.id == 39:
+				return "Бутафор"
+		## Театр Нибраса. Эпизод "После репетиции".
+		42:
+			if speaker.id == 13 or speaker.id == 19:
+				return "Актриса"
+			if speaker.id == 25:
+				return "Актёр"
+			if speaker.id == 39 and current_frame_index < 14:
+				return "Бутафор"
+		## Нибрас Театра. Часть 1. Весь эпизод неизвестно имя актёров и бутафора.
+		160:
+			if speaker.id == 13 or speaker.id == 19 or speaker.id == 40:
+				return "Актриса"
+			if speaker.id == 25:
+				return "Актёр"
+			if speaker.id == 39:
+				return "Бутафор"
+		## Нибрас Театра. Часть 2. До определённого момента неизвестны имена актёров и бутафора.
+		161:
+			if (speaker.id == 13 or speaker.id == 19) and current_frame_index < 163:
+				return "Актриса"
+			if speaker.id == 25 and current_frame_index < 163:
+				return "Актёр"
+			if speaker.id == 39 and current_frame_index < 89:
+				return "Бутафор"
+	
+	return speaker.display_name

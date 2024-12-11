@@ -70,6 +70,15 @@ msgstr ""
 msgid "Арлет"
 msgstr ""
 
+msgid "Актёр"
+msgstr ""
+
+msgid "Актриса"
+msgstr ""
+
+msgid "Бутафор"
+msgstr ""
+
 msgid "Репетиция"
 msgstr ""
 

@@ -224,16 +224,17 @@ func build_frame(frame: RSEFrame, is_immediately: bool = false, is_back: bool = 
 
 func show_text_frame(frame: RSEFrameText, is_immediately: bool = false, is_back: bool = false) -> void:
 	speaker = RewindStoryEngine.story.characters[frame.speaker_id]
+	var speaker_name = RSECharacter.get_skeaker_name(speaker, episode, current_frame_index)
 	var character = scene_builder.get_characeter_by_id(speaker.id)
 	if is_immediately:
 		is_gap = false
-		text_box.set_text(frame.scene_state.text, speaker.display_name, speaker.color, _define_marker_mode(is_back), is_immediately)
+		text_box.set_text(frame.scene_state.text, speaker_name, speaker.color, _define_marker_mode(is_back), is_immediately)
 	else:
 		if not is_gap:
-			text_box.add_text(frame.text, speaker.display_name, speaker.color, _define_marker_mode(is_back))
+			text_box.add_text(frame.text, speaker_name, speaker.color, _define_marker_mode(is_back))
 		else:
 			is_gap = false
-			text_box.set_text(frame.text, speaker.display_name, speaker.color, _define_marker_mode(is_back))
+			text_box.set_text(frame.text, speaker_name, speaker.color, _define_marker_mode(is_back))
 		if character != null:
 			character.start_talk()
 
@@ -316,7 +317,7 @@ func _on_selection_menu_option_selected(option_id):
 
 func _on_text_box_finished():
 	Settings.profile.add_viewed(episode.id, current_frame_index)
-	logger.add(episode.real_frames[current_frame_index])
+	logger.add(episode.real_frames[current_frame_index], episode, current_frame_index)
 	scene_builder.stop_speaker(speaker)
 	if current_frame is RSEFrameText:
 		auto_play_time = float(current_frame.text.length()) / Settings.auto_speed
