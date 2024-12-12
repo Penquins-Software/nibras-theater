@@ -21,7 +21,7 @@ func set_save(save: Save) -> void:
 	label.text = ""
 	if save.auto_save:
 		label.text = "[color=INDIAN_RED][АВТО][/color] "
-	label.text += "%s\n%s" % [save.episode_name, datetime]
+	label.text += "%s\n%s" % [tr(save.episode_name), datetime]
 
 
 func _on_load_pressed():
