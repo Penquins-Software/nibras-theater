@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dx7pego8mre31"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_location_controller.gd" id="1_h8q08"]
+[ext_resource type="Texture2D" uid="uid://cdgbr4hms4i2h" path="res://cg_arts/nibras_play/2.png" id="2_o3gke"]
+
+[node name="Метка" type="Node2D"]
+z_index = 100
+script = ExtResource("1_h8q08")
+
+[node name="Метка" type="Sprite2D" parent="."]
+texture = ExtResource("2_o3gke")
