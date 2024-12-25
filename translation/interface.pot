@@ -325,3 +325,9 @@ msgstr ""
 #: scenes/frame_player/frame_player.tscn
 msgid "[table=3]"
 msgstr ""
+
+msgid "Полноэкранный"
+msgstr ""
+
+msgid "Пропускать всё"
+msgstr ""

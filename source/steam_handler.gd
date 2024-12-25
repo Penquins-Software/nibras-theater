@@ -1,7 +1,7 @@
 extends Node
 
 
-const STEAM_APP_ID: int = 480
+const STEAM_APP_ID: int = 3411140
 
 
 func _init():

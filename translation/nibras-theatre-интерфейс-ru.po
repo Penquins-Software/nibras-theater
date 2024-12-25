@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Nibras Theatre - Интерфейс package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-11-30 05:12:17+0000\n"
+"PO-Revision-Date: 2024-12-25 01:59:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,12 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: ru\n"
 "Project-Id-Version: Nibras Theatre - Интерфейс\n"
+
+msgid "Пропускать всё"
+msgstr "Пропускать всё"
+
+msgid "Полноэкранный"
+msgstr "Полноэкранный"
 
 #: scenes/menu/menu.tscn
 msgid "?.."
