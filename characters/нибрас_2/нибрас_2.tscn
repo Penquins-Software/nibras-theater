@@ -1,0 +1,248 @@
+[gd_scene load_steps=21 format=3 uid="uid://bumk5a2sr40hn"]
+
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/base_character_contoller.gd" id="1_oaeww"]
+[ext_resource type="Texture2D" uid="uid://dcelywmnl6gsj" path="res://characters/нибрас_2/1.png" id="2_38xpf"]
+[ext_resource type="Texture2D" uid="uid://daixos00rxtuv" path="res://characters/нибрас_2/2.png" id="3_qp7o8"]
+[ext_resource type="Texture2D" uid="uid://kxsswar3x1bm" path="res://characters/нибрас_2/3.png" id="4_tfviy"]
+[ext_resource type="Texture2D" uid="uid://f1roofppw8t7" path="res://characters/нибрас/sprites/1.png" id="5_otknr"]
+[ext_resource type="Texture2D" uid="uid://bmdasvnhxk6s1" path="res://characters/нибрас/sprites/2.png" id="6_fepdl"]
+[ext_resource type="Texture2D" uid="uid://bsd11kpyach3r" path="res://characters/нибрас/sprites/3.png" id="7_g08le"]
+[ext_resource type="Script" path="res://addons/rewind_story_engine/contollers/bleep_player.gd" id="8_cmw1b"]
+[ext_resource type="Texture2D" uid="uid://mt2be2xyq1rm" path="res://characters/нибрас/sprites/лев зрачок.png" id="9_6ii76"]
+[ext_resource type="Texture2D" uid="uid://dl8frda406ybr" path="res://characters/нибрас/sprites/пр зрачок.png" id="10_wk2my"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_01phd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_38xpf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qp7o8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_tfviy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qp7o8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_otknr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fepdl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_g08le")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fepdl")
+}],
+"loop": true,
+"name": &"чб",
+"speed": 8.0
+}]
+
+[sub_resource type="Animation" id="Animation_ig60a"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ЛевЗрачок:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ПрЗрачок:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_87glu"]
+resource_name = "появление"
+length = 8.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ЛевЗрачок:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ПрЗрачок:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uvv7o"]
+_data = {
+"RESET": SubResource("Animation_ig60a"),
+"появление": SubResource("Animation_87glu")
+}
+
+[sub_resource type="Animation" id="Animation_vavq7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ЛевЗрачок:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ПрЗрачок:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_tas0c"]
+resource_name = "движение"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ЛевЗрачок:position")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(3, -2), Vector2(-4, 3), Vector2(2, 2), Vector2(-2, 3), Vector2(0, -2)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ПрЗрачок:position")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1, -3), Vector2(3, 3), Vector2(3, -2), Vector2(-5, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b8e3m"]
+_data = {
+"RESET": SubResource("Animation_vavq7"),
+"движение": SubResource("Animation_tas0c")
+}
+
+[sub_resource type="Animation" id="Animation_buxyc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mouth:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_snwq1"]
+resource_name = "появление"
+length = 12.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mouth:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nrrj2"]
+_data = {
+"RESET": SubResource("Animation_buxyc"),
+"появление": SubResource("Animation_snwq1")
+}
+
+[node name="Нибрас" type="Node2D" node_paths=PackedStringArray("mouth", "bleep_player")]
+script = ExtResource("1_oaeww")
+mouth = NodePath("Mouth")
+eyes_frame_close = 2
+bleep_player = NodePath("BleepPlayer")
+
+[node name="Mouth" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+sprite_frames = SubResource("SpriteFrames_01phd")
+
+[node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Bleep"
+script = ExtResource("8_cmw1b")
+
+[node name="ЛевЗрачок" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("9_6ii76")
+
+[node name="ПрЗрачок" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("10_wk2my")
+
+[node name="Появление глаз" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_uvv7o")
+}
+autoplay = "появление"
+
+[node name="Движение зрачков" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_b8e3m")
+}
+
+[node name="Появление головы" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_nrrj2")
+}
+autoplay = "появление"
