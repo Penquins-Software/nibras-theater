@@ -4788,7 +4788,7 @@ msgid "С их же слов, Чарльз пошёл в туалет, а Лор
 msgstr "According to them, Charles went to the bathroom and Laurent went for a walk."
 
 msgid "Мишель и Чарльз утверждают, что были в гримёрке."
-msgstr "Michel and Charles claim they stayed in the dressing room."
+msgstr "Michel and Didier claim they stayed in the dressing room."
 
 msgid "Я всё время был с Арлет."
 msgstr "I was with Arlette this whole time."
