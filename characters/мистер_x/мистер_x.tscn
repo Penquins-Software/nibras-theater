@@ -16,4 +16,5 @@ texture = ExtResource("2_d66v5")
 flip_h = true
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Bleep"
 script = ExtResource("3_gbtvb")

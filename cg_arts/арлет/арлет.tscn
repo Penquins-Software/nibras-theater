@@ -37,4 +37,5 @@ sprite_frames = SubResource("SpriteFrames_4y56u")
 frame_progress = 0.411496
 
 [node name="BleepPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Bleep"
 script = ExtResource("5_x1n8w")
