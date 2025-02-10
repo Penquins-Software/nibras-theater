@@ -23,7 +23,6 @@ RewindStoryEngine="*res://addons/rewind_story_engine/rse_handler.gd"
 Settings="*res://source/settings/settings.gd"
 SaveManager="*res://source/save/save_manager.gd"
 UISoundManager="*res://source/ui_sound_manager.gd"
-SteamHandler="*res://source/steam_handler.gd"
 
 [debug]
 

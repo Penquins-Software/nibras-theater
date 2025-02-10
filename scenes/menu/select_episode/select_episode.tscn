@@ -1,0 +1,341 @@
+[gd_scene load_steps=18 format=3 uid="uid://gf1pplda57ar"]
+
+[ext_resource type="Script" path="res://scenes/menu/select_episode/select_episode.gd" id="1_0gcu4"]
+[ext_resource type="Texture2D" uid="uid://ba6i3va8ga04" path="res://scenes/menu/select_episode/фон.png" id="1_qp7mo"]
+[ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="2_r4xho"]
+[ext_resource type="Script" path="res://source/button_with_sound.gd" id="4_bks2k"]
+[ext_resource type="Script" path="res://scenes/menu/select_episode/episode.gd" id="4_jpviy"]
+[ext_resource type="Texture2D" uid="uid://bi71mcgfmfcat" path="res://scenes/menu/select_episode/Конец/к2.png" id="5_p85ji"]
+[ext_resource type="Texture2D" uid="uid://c67ukyvh5fkbl" path="res://scenes/menu/select_episode/Конец/к1.png" id="6_nx4ai"]
+[ext_resource type="Texture2D" uid="uid://d263hiqpj8no2" path="res://scenes/menu/select_episode/Арлет/а2.png" id="7_f665n"]
+[ext_resource type="Texture2D" uid="uid://c51enhd33d4rb" path="res://scenes/menu/select_episode/Арлет/а1.png" id="8_tjj4n"]
+[ext_resource type="Texture2D" uid="uid://bbd1wq0cu48jn" path="res://scenes/menu/select_episode/Морт/м2.png" id="9_eriql"]
+[ext_resource type="Texture2D" uid="uid://b1kyn81gkdkmf" path="res://scenes/menu/select_episode/Лоран/л2.png" id="9_ijkwt"]
+[ext_resource type="Texture2D" uid="uid://67rqty2fl78m" path="res://scenes/menu/select_episode/Лоран/л1.png" id="9_nww50"]
+[ext_resource type="Texture2D" uid="uid://dsjfivbl1g32r" path="res://scenes/menu/select_episode/Морт/м1.png" id="10_cammr"]
+[ext_resource type="Texture2D" uid="uid://g4muxuggb3l" path="res://scenes/menu/select_episode/ГГ/гг2.png" id="10_cfqq7"]
+[ext_resource type="Texture2D" uid="uid://ctihlr186oqvj" path="res://scenes/menu/select_episode/ГГ/гг1.png" id="11_6ijks"]
+[ext_resource type="Texture2D" uid="uid://buy1tyeeh8cyy" path="res://scenes/menu/select_episode/Чарльз/ч1.png" id="12_svomx"]
+[ext_resource type="Texture2D" uid="uid://dpmee88my75k4" path="res://scenes/menu/select_episode/Чарльз/ч2.png" id="13_bg1y1"]
+
+[node name="SelectEpisode" type="Control" node_paths=PackedStringArray("episodes", "return_button")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_0gcu4")
+episodes = NodePath("Эпизоды")
+return_button = NodePath("Вернуться")
+
+[node name="Фон" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_qp7mo")
+expand_mode = 2
+
+[node name="Эпизоды" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Нибрас" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
+layout_mode = 0
+offset_left = 625.0
+offset_top = -1.0
+offset_right = 3628.0
+offset_bottom = 1050.0
+texture = ExtResource("6_nx4ai")
+expand_mode = 1
+stretch_mode = 4
+script = ExtResource("4_jpviy")
+select_episode = NodePath("../..")
+episode_id = 94
+condition = "TRUE_ENDING"
+idle_image = ExtResource("6_nx4ai")
+active_image = ExtResource("5_p85ji")
+area = NodePath("Area2D")
+label = NodePath("Label")
+
+[node name="Area2D" type="Area2D" parent="Эпизоды/Нибрас"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Эпизоды/Нибрас/Area2D"]
+position = Vector2(190, 920)
+polygon = PackedVector2Array(-128, -53, -24, -41, 144, -47, 285, -70, 328, -75, 351, -67, 392, 34, 375, 119, 183, 102, 68, 81, -47, 38, -171, -28)
+
+[node name="Label" type="Label" parent="Эпизоды/Нибрас"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1579.5
+offset_top = 457.5
+offset_right = -1374.5
+offset_bottom = 508.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_r4xho")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 48
+text = "Истина"
+horizontal_alignment = 1
+
+[node name="Арлет" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
+layout_mode = 0
+offset_left = 712.0
+offset_top = -4.0
+offset_right = 2691.0
+offset_bottom = 819.0
+texture = ExtResource("8_tjj4n")
+expand_mode = 1
+stretch_mode = 4
+script = ExtResource("4_jpviy")
+select_episode = NodePath("../..")
+episode_id = 83
+condition = "FIRST_CHOICE"
+idle_image = ExtResource("8_tjj4n")
+active_image = ExtResource("7_f665n")
+area = NodePath("Area2D")
+label = NodePath("Label")
+
+[node name="Area2D" type="Area2D" parent="Эпизоды/Арлет"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Эпизоды/Арлет/Area2D"]
+polygon = PackedVector2Array(7, 587, 27, 539, 36, 477, 60, 464, 98, 475, 143, 476, 178, 472, 179, 529, 167, 618, 89, 808, 79, 812, 78, 743, 38, 663)
+
+[node name="Label" type="Label" parent="Эпизоды/Арлет"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1193.5
+offset_top = 187.5
+offset_right = -988.5
+offset_bottom = 238.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_r4xho")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 48
+text = "Арлет"
+horizontal_alignment = 1
+
+[node name="Лоран" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
+layout_mode = 0
+offset_left = 977.0
+offset_top = 4.0
+offset_right = 2853.0
+offset_bottom = 736.0
+texture = ExtResource("9_nww50")
+expand_mode = 1
+stretch_mode = 4
+script = ExtResource("4_jpviy")
+select_episode = NodePath("../..")
+episode_id = 84
+condition = "FIRST_CHOICE"
+idle_image = ExtResource("9_nww50")
+active_image = ExtResource("9_ijkwt")
+area = NodePath("Area2D")
+label = NodePath("Label")
+
+[node name="Area2D" type="Area2D" parent="Эпизоды/Лоран"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Эпизоды/Лоран/Area2D"]
+polygon = PackedVector2Array(46, 707, 12, 588, 13, 498, 50, 410, 80, 379, 106, 378, 156, 471, 177, 565, 169, 655, 96, 723, 66, 724)
+
+[node name="Label" type="Label" parent="Эпизоды/Лоран"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -762.0
+offset_top = 184.0
+offset_right = -557.0
+offset_bottom = 235.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_r4xho")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 48
+text = "Лоран"
+horizontal_alignment = 1
+
+[node name="Морт" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
+layout_mode = 0
+offset_left = 233.0
+offset_right = 528.0
+offset_bottom = 931.0
+texture = ExtResource("10_cammr")
+expand_mode = 1
+stretch_mode = 4
+script = ExtResource("4_jpviy")
+select_episode = NodePath("../..")
+episode_id = 149
+condition = "TRUE_ENDING"
+idle_image = ExtResource("10_cammr")
+active_image = ExtResource("9_eriql")
+area = NodePath("Area2D")
+label = NodePath("Label")
+
+[node name="Area2D" type="Area2D" parent="Эпизоды/Морт"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Эпизоды/Морт/Area2D"]
+polygon = PackedVector2Array(11, 458, 70, 364, 169, 57, 185, 61, 283, 477, 241, 594, 243, 675, 163, 838, 110, 650)
+
+[node name="Label" type="Label" parent="Эпизоды/Морт"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.5
+offset_top = 407.5
+offset_right = 119.5
+offset_bottom = 458.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_r4xho")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 48
+text = "\"Закулисье\""
+horizontal_alignment = 1
+
+[node name="Этьен" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
+layout_mode = 0
+offset_left = 558.0
+offset_right = 1421.0
+offset_bottom = 362.0
+texture = ExtResource("11_6ijks")
+expand_mode = 1
+stretch_mode = 4
+script = ExtResource("4_jpviy")
+select_episode = NodePath("../..")
+episode_id = 24
+idle_image = ExtResource("11_6ijks")
+active_image = ExtResource("10_cfqq7")
+area = NodePath("Area2D")
+label = NodePath("Label")
+
+[node name="Area2D" type="Area2D" parent="Эпизоды/Этьен"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Эпизоды/Этьен/Area2D"]
+polygon = PackedVector2Array(10, 59, 120, 74, 183, 65, 472, 77, 616, 94, 819, 111, 720, 188, 667, 265, 527, 289, 381, 320, 277, 350, 188, 294, 97, 216, 35, 137)
+
+[node name="Label" type="Label" parent="Эпизоды/Этьен"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -69.5
+offset_top = -1.0
+offset_right = 208.5
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_r4xho")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 48
+text = "Театр Нибраса"
+horizontal_alignment = 1
+
+[node name="Чарльз" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
+layout_mode = 0
+offset_left = 1304.0
+offset_top = -39.0
+offset_right = 3438.0
+offset_bottom = 990.0
+texture = ExtResource("12_svomx")
+expand_mode = 1
+stretch_mode = 4
+script = ExtResource("4_jpviy")
+select_episode = NodePath("../..")
+episode_id = 160
+condition = "TRUE_ENDING"
+idle_image = ExtResource("12_svomx")
+active_image = ExtResource("13_bg1y1")
+area = NodePath("Area2D")
+label = NodePath("Label")
+
+[node name="Area2D" type="Area2D" parent="Эпизоды/Чарльз"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Эпизоды/Чарльз/Area2D"]
+polygon = PackedVector2Array(163, 1022, 142, 968, 9, 434, 153, 317, 289, 308, 286, 731)
+
+[node name="Label" type="Label" parent="Эпизоды/Чарльз"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -749.0
+offset_top = -29.5
+offset_right = -471.0
+offset_bottom = 21.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_r4xho")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 48
+text = "\"Нибрас Театра\""
+horizontal_alignment = 1
+
+[node name="Вернуться" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_top = -102.0
+offset_right = 200.0
+offset_bottom = -60.0
+grow_vertical = 0
+size_flags_horizontal = 4
+focus_mode = 0
+theme = ExtResource("2_r4xho")
+text = "Назад"
+script = ExtResource("4_bks2k")
+
+[connection signal="mouse_entered" from="Эпизоды/Нибрас/Area2D" to="Эпизоды/Нибрас" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Эпизоды/Нибрас/Area2D" to="Эпизоды/Нибрас" method="_on_area_2d_mouse_exited"]
+[connection signal="mouse_entered" from="Эпизоды/Арлет/Area2D" to="Эпизоды/Арлет" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Эпизоды/Арлет/Area2D" to="Эпизоды/Арлет" method="_on_area_2d_mouse_exited"]
+[connection signal="mouse_entered" from="Эпизоды/Лоран/Area2D" to="Эпизоды/Лоран" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Эпизоды/Лоран/Area2D" to="Эпизоды/Лоран" method="_on_area_2d_mouse_exited"]
+[connection signal="mouse_entered" from="Эпизоды/Морт/Area2D" to="Эпизоды/Морт" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Эпизоды/Морт/Area2D" to="Эпизоды/Морт" method="_on_area_2d_mouse_exited"]
+[connection signal="mouse_entered" from="Эпизоды/Этьен/Area2D" to="Эпизоды/Этьен" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Эпизоды/Этьен/Area2D" to="Эпизоды/Этьен" method="_on_area_2d_mouse_exited"]
+[connection signal="mouse_entered" from="Эпизоды/Чарльз/Area2D" to="Эпизоды/Чарльз" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Эпизоды/Чарльз/Area2D" to="Эпизоды/Чарльз" method="_on_area_2d_mouse_exited"]

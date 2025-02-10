@@ -18,6 +18,8 @@ static var menu_scene: PackedScene
 @export var game_scene_file: PackedScene
 
 @export_group("Other")
+@export var select_episode: SelectEpisode
+@export var episode_new: Control
 @export var gallery_new: Control
 @export var gallery_items_container: Control
 
@@ -29,11 +31,10 @@ func _ready():
 	extra_button.disabled = not Settings.profile.global_variables.is_variable("TRUE_ENDING")
 	saves_button.disabled = SaveManager.saves.size() == 0
 	
-	extra_button.disabled = false
-	
 	if OS.has_feature("web"):
 		exit_button.hide()
 	
+	check_episodes()
 	check_gallery_items()
 
 
@@ -71,9 +72,19 @@ func _on_return_from_gallery_pressed():
 	check_gallery_items()
 
 
+func check_episodes() -> void:
+	episode_new.hide()
+	if select_episode.has_not_viewed():
+		episode_new.show()
+
+
 func check_gallery_items() -> void:
 	gallery_new.hide()
 	for child: GalleryItem in gallery_items_container.get_children():
 		if child.new:
 			gallery_new.show()
 			return
+
+
+func _on_start_game_pressed():
+	pass # Replace with function body.

@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=80 format=3 uid="uid://1ldra2lpi55u"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_h3ser"]
@@ -21,6 +21,7 @@
 [ext_resource type="Script" path="res://source/web_link.gd" id="15_ddq1b"]
 [ext_resource type="Script" path="res://source/button_with_sound.gd" id="16_ruy8w"]
 [ext_resource type="Theme" uid="uid://cgymxxcr7u4ai" path="res://scenes/save_manager/save_theme.tres" id="17_uo323"]
+[ext_resource type="PackedScene" uid="uid://gf1pplda57ar" path="res://scenes/menu/select_episode/select_episode.tscn" id="18_gnqcg"]
 [ext_resource type="Script" path="res://scenes/menu/gallery_items_container.gd" id="18_o0rnt"]
 [ext_resource type="PackedScene" uid="uid://btjj01uvktlvn" path="res://scenes/menu/gallery_item.tscn" id="18_pqco6"]
 [ext_resource type="Texture2D" uid="uid://fr16djow08qc" path="res://locations/коридор/коридор ночь.png" id="19_ljm3s"]
@@ -171,13 +172,14 @@ _data = {
 "fadeout": SubResource("Animation_51bo5")
 }
 
-[node name="Menu" type="Control" node_paths=PackedStringArray("main", "gallery_button", "extra_button", "saves_button", "exit_button", "gallery_new", "gallery_items_container")]
+[node name="Menu" type="Control" node_paths=PackedStringArray("main", "gallery_button", "extra_button", "saves_button", "exit_button", "select_episode", "episode_new", "gallery_new", "gallery_items_container")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
 script = ExtResource("1_74llx")
 main = NodePath("Главный экран")
 gallery_button = NodePath("Главный экран/VBoxContainer/Галерея")
@@ -185,6 +187,8 @@ extra_button = NodePath("Главный экран/VBoxContainer/Экстра")
 saves_button = NodePath("Главный экран/VBoxContainer/Загрузить игру")
 exit_button = NodePath("Главный экран/VBoxContainer/Выйти")
 game_scene_file = ExtResource("2_i8b50")
+select_episode = NodePath("Выбор эпизода")
+episode_new = NodePath("Главный экран/VBoxContainer/Начать игру/New")
 gallery_new = NodePath("Главный экран/VBoxContainer/Галерея/New")
 gallery_items_container = NodePath("Галерея/ScrollContainer/HFlowContainer")
 
@@ -341,14 +345,34 @@ offset_right = 291.0
 offset_bottom = -100.0
 grow_vertical = 0
 
-[node name="Начать игру" type="Button" parent="Главный экран/VBoxContainer"]
+[node name="Начать игру" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
 layout_mode = 2
 size_flags_horizontal = 0
 focus_mode = 0
 theme = ExtResource("8_7egbi")
 text = "Начать игру"
 alignment = 0
-script = ExtResource("16_ruy8w")
+script = ExtResource("3_sfhbu")
+menu_element_to_show = NodePath("../../../Выбор эпизода")
+
+[node name="New" type="RichTextLabel" parent="Главный экран/VBoxContainer/Начать игру"]
+visible = false
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -17.5
+offset_right = 111.0
+offset_bottom = 17.5
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("8_7egbi")
+bbcode_enabled = true
+text = "[color=red](новое)"
+scroll_active = false
 
 [node name="Продолжить" type="Button" parent="Главный экран/VBoxContainer"]
 layout_mode = 2
@@ -399,6 +423,7 @@ text = "[color=red](новое)"
 scroll_active = false
 
 [node name="Экстра" type="Button" parent="Главный экран/VBoxContainer" node_paths=PackedStringArray("menu_element_to_show")]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 0
 focus_mode = 0
@@ -436,6 +461,11 @@ theme = ExtResource("8_7egbi")
 text = "Выйти"
 alignment = 0
 script = ExtResource("11_ahf2s")
+
+[node name="Выбор эпизода" parent="." node_paths=PackedStringArray("menu") instance=ExtResource("18_gnqcg")]
+visible = false
+layout_mode = 1
+menu = NodePath("..")
 
 [node name="Загрузить игру" parent="." instance=ExtResource("5_rnans")]
 visible = false
@@ -914,19 +944,14 @@ tip_for_unlock = "Закрыто!
 description = "Cassegrain 1917 Prot. 3."
 image = ExtResource("65_pllb0")
 
-[node name="Винтовка2" parent="Галерея/ScrollContainer/HFlowContainer" node_paths=PackedStringArray("tip_label", "image_rect", "border", "lock", "new_label") instance=ExtResource("18_pqco6")]
+[node name="Винтовка 2" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
 id = 46
 condition = "TRUE_ENDING"
 tip_for_unlock = "Закрыто!
 ???"
-description = "Cassegrain 1917 Prot. 1."
-tip_label = NodePath("../Винтовка/MarginContainer/Background/MarginContainer/Lock/MarginContainer/Label")
+description = "Cassegrain 1917 Prot. 1"
 image = ExtResource("47_wk66v")
-image_rect = NodePath("../Винтовка/MarginContainer/Background/MarginContainer/Image")
-border = NodePath("../Винтовка/MarginContainer/Background/MarginContainer/Border")
-lock = NodePath("../Винтовка/MarginContainer/Background/MarginContainer/Lock")
-new_label = NodePath("../Винтовка/MarginContainer/Background/MarginContainer/Image/MarginContainer")
 
 [node name="Патроны" parent="Галерея/ScrollContainer/HFlowContainer" instance=ExtResource("18_pqco6")]
 layout_mode = 2
@@ -1337,13 +1362,14 @@ autoplay = true
 bus = &"Music"
 
 [connection signal="return_was_pressed" from="Главный экран" to="." method="_show_main_menu"]
-[connection signal="pressed" from="Главный экран/VBoxContainer/Начать игру" to="." method="_start_game"]
+[connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Начать игру" to="." method="_show_menu_element"]
 [connection signal="pressed" from="Главный экран/VBoxContainer/Продолжить" to="." method="continue_game"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Загрузить игру" to="." method="_show_menu_element"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Галерея" to="." method="_show_menu_element"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Экстра" to="." method="_show_menu_element"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Настройки" to="." method="_show_menu_element"]
 [connection signal="menu_element_was_selected" from="Главный экран/VBoxContainer/Авторы" to="." method="_show_menu_element"]
+[connection signal="return_was_pressed" from="Выбор эпизода" to="." method="_show_main_menu"]
 [connection signal="load_save" from="Загрузить игру" to="." method="load_game"]
 [connection signal="return_was_pressed" from="Загрузить игру" to="." method="_show_main_menu"]
 [connection signal="return_was_pressed" from="Галерея" to="." method="_show_main_menu"]

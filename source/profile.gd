@@ -27,6 +27,9 @@ func is_viewed(episode_id: int, frame_index: int) -> bool:
 	return true
 
 
+func is_viewed_episode(episode_id: int) -> bool:
+	return viewed.has(str(episode_id))
+
 func save_to_file(path_to_file: String) -> void:
 	var data := {
 		"global_variables" : global_variables.data,
