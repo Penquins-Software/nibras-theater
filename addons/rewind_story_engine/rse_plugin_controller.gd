@@ -234,6 +234,11 @@ func generate_pot(path: String) -> void:
 				if not keys.has(frame.text):
 					keys.append(frame.text)
 					pot += get_pot_string(frame.text)
+			if frame is RSEFrameSelection:
+				for option in frame.options:
+					if not keys.has(option[1]):
+						keys.append(option[1])
+						pot += get_pot_string(option[1])
 	
 	var file = FileAccess.open(path, FileAccess.WRITE)
 	file.store_string(pot)
