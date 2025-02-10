@@ -1,22 +1,43 @@
-[gd_scene load_steps=24 format=3 uid="uid://gf1pplda57ar"]
+[gd_scene load_steps=60 format=3 uid="uid://gf1pplda57ar"]
 
 [ext_resource type="Script" path="res://scenes/menu/select_episode/select_episode.gd" id="1_0gcu4"]
 [ext_resource type="Texture2D" uid="uid://ba6i3va8ga04" path="res://scenes/menu/select_episode/фон.png" id="1_qp7mo"]
 [ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="2_r4xho"]
 [ext_resource type="Script" path="res://source/button_with_sound.gd" id="4_bks2k"]
 [ext_resource type="Script" path="res://scenes/menu/select_episode/episode.gd" id="4_jpviy"]
+[ext_resource type="Texture2D" uid="uid://ca2jlfcqdc4g1" path="res://scenes/menu/select_episode/без теней/к0.png" id="5_ghj4y"]
 [ext_resource type="Texture2D" uid="uid://bi71mcgfmfcat" path="res://scenes/menu/select_episode/Конец/к2.png" id="5_p85ji"]
 [ext_resource type="Texture2D" uid="uid://c67ukyvh5fkbl" path="res://scenes/menu/select_episode/Конец/к1.png" id="6_nx4ai"]
 [ext_resource type="Texture2D" uid="uid://d263hiqpj8no2" path="res://scenes/menu/select_episode/Арлет/а2.png" id="7_f665n"]
 [ext_resource type="Texture2D" uid="uid://c51enhd33d4rb" path="res://scenes/menu/select_episode/Арлет/а1.png" id="8_tjj4n"]
+[ext_resource type="Texture2D" uid="uid://boqrj4v7y5o1b" path="res://scenes/menu/select_episode/без теней/ф0.png" id="9_cm1hn"]
 [ext_resource type="Texture2D" uid="uid://bbd1wq0cu48jn" path="res://scenes/menu/select_episode/Морт/м2.png" id="9_eriql"]
 [ext_resource type="Texture2D" uid="uid://b1kyn81gkdkmf" path="res://scenes/menu/select_episode/Лоран/л2.png" id="9_ijkwt"]
 [ext_resource type="Texture2D" uid="uid://67rqty2fl78m" path="res://scenes/menu/select_episode/Лоран/л1.png" id="9_nww50"]
 [ext_resource type="Texture2D" uid="uid://dsjfivbl1g32r" path="res://scenes/menu/select_episode/Морт/м1.png" id="10_cammr"]
 [ext_resource type="Texture2D" uid="uid://g4muxuggb3l" path="res://scenes/menu/select_episode/ГГ/гг2.png" id="10_cfqq7"]
 [ext_resource type="Texture2D" uid="uid://ctihlr186oqvj" path="res://scenes/menu/select_episode/ГГ/гг1.png" id="11_6ijks"]
+[ext_resource type="Texture2D" uid="uid://s1ii0aik82mg" path="res://scenes/menu/select_episode/без теней/л0.png" id="12_1dwpc"]
 [ext_resource type="Texture2D" uid="uid://buy1tyeeh8cyy" path="res://scenes/menu/select_episode/Чарльз/ч1.png" id="12_svomx"]
 [ext_resource type="Texture2D" uid="uid://dpmee88my75k4" path="res://scenes/menu/select_episode/Чарльз/ч2.png" id="13_bg1y1"]
+[ext_resource type="Texture2D" uid="uid://dc62hnfipir6n" path="res://scenes/menu/select_episode/без теней/м0.png" id="15_sjaum"]
+[ext_resource type="Texture2D" uid="uid://37hoek7fk4db" path="res://scenes/menu/select_episode/без теней/гг0.png" id="18_lbaqy"]
+[ext_resource type="Texture2D" uid="uid://drn8rnykhrsv5" path="res://scenes/menu/select_episode/без теней/ч0.png" id="21_jlimh"]
+
+[sub_resource type="Animation" id="Animation_sr6cw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(625, -1)]
+}
 
 [sub_resource type="Animation" id="Animation_avglr"]
 resource_name = "move"
@@ -35,7 +56,104 @@ tracks/0/keys = {
 "values": [Vector2(625, -1), Vector2(622, 11), Vector2(636, 9), Vector2(628, 5)]
 }
 
-[sub_resource type="Animation" id="Animation_sr6cw"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4k6bj"]
+_data = {
+"RESET": SubResource("Animation_sr6cw"),
+"move": SubResource("Animation_avglr")
+}
+
+[sub_resource type="Animation" id="Animation_n6vpd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Нибрас:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_70ynf"]
+resource_name = "show"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Нибрас:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5ss5i"]
+_data = {
+"RESET": SubResource("Animation_n6vpd"),
+"show": SubResource("Animation_70ynf")
+}
+
+[sub_resource type="Animation" id="Animation_xj5qk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Арлет:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_iotwq"]
+resource_name = "show"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Арлет:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ue7rm"]
+_data = {
+"RESET": SubResource("Animation_xj5qk"),
+"show": SubResource("Animation_iotwq")
+}
+
+[sub_resource type="Animation" id="Animation_euqod"]
+resource_name = "move"
+length = 13.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5, 5, 7.5, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(712, -4), Vector2(708, 0), Vector2(713, 9), Vector2(711, 5), Vector2(718, -4)]
+}
+
+[sub_resource type="Animation" id="Animation_oajof"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -47,13 +165,103 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(625, -1)]
+"values": [Vector2(712, -4)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_4k6bj"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yr04i"]
 _data = {
-"RESET": SubResource("Animation_sr6cw"),
-"move": SubResource("Animation_avglr")
+"RESET": SubResource("Animation_oajof"),
+"move": SubResource("Animation_euqod")
+}
+
+[sub_resource type="Animation" id="Animation_eo4sw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Лоран:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4afe3"]
+resource_name = "show"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Лоран:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_j6ipy"]
+_data = {
+"RESET": SubResource("Animation_eo4sw"),
+"show": SubResource("Animation_4afe3")
+}
+
+[sub_resource type="Animation" id="Animation_2squq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(975, 4)]
+}
+
+[sub_resource type="Animation" id="Animation_earm8"]
+resource_name = "move"
+length = 9.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(975, 4), Vector2(978, 14)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2bo7f"]
+_data = {
+"RESET": SubResource("Animation_2squq"),
+"move": SubResource("Animation_earm8")
+}
+
+[sub_resource type="Animation" id="Animation_6ruy8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Эпизоды/Морт:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(233, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_popmo"]
@@ -73,25 +281,197 @@ tracks/0/keys = {
 "values": [Vector2(233, 0), Vector2(232, 22), Vector2(245, 6), Vector2(224, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_6ruy8"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_35h4y"]
+_data = {
+"RESET": SubResource("Animation_6ruy8"),
+"move": SubResource("Animation_popmo")
+}
+
+[sub_resource type="Animation" id="Animation_owaar"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Эпизоды/Морт:position")
+tracks/0/path = NodePath("Морт:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(233, 0)]
+"values": [Color(1, 1, 1, 0)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_35h4y"]
+[sub_resource type="Animation" id="Animation_tqdcq"]
+resource_name = "show"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Морт:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u20cg"]
 _data = {
-"RESET": SubResource("Animation_6ruy8"),
-"move": SubResource("Animation_popmo")
+"RESET": SubResource("Animation_owaar"),
+"show": SubResource("Animation_tqdcq")
+}
+
+[sub_resource type="Animation" id="Animation_44ig2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Этьен:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jfajc"]
+resource_name = "show"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Этьен:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g3icl"]
+_data = {
+"RESET": SubResource("Animation_44ig2"),
+"show": SubResource("Animation_jfajc")
+}
+
+[sub_resource type="Animation" id="Animation_o356h"]
+resource_name = "move"
+length = 9.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5, 6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(558, 0), Vector2(558, 2), Vector2(552, -6)]
+}
+
+[sub_resource type="Animation" id="Animation_46qhi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(558, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6t6s4"]
+_data = {
+"RESET": SubResource("Animation_46qhi"),
+"move": SubResource("Animation_o356h")
+}
+
+[sub_resource type="Animation" id="Animation_7uwbv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Чарльз:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_nsih7"]
+resource_name = "show"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Чарльз:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_snus2"]
+_data = {
+"RESET": SubResource("Animation_7uwbv"),
+"show": SubResource("Animation_nsih7")
+}
+
+[sub_resource type="Animation" id="Animation_q2svs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1306, -32)]
+}
+
+[sub_resource type="Animation" id="Animation_w60vg"]
+resource_name = "move"
+length = 12.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4, 8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1306, -32), Vector2(1303, -23), Vector2(1319, -35)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_x2flg"]
+_data = {
+"RESET": SubResource("Animation_q2svs"),
+"move": SubResource("Animation_w60vg")
 }
 
 [node name="SelectEpisode" type="Control" node_paths=PackedStringArray("episodes", "return_button")]
@@ -125,7 +505,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 
-[node name="Нибрас" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
+[node name="Нибрас" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label", "animation_player")]
 layout_mode = 0
 offset_left = 625.0
 offset_top = -1.0
@@ -139,9 +519,22 @@ select_episode = NodePath("../..")
 episode_id = 94
 condition = "TRUE_ENDING"
 idle_image = ExtResource("6_nx4ai")
-active_image = ExtResource("5_p85ji")
+hide_image = ExtResource("5_ghj4y")
 area = NodePath("Area2D")
 label = NodePath("Label")
+animation_player = NodePath("ShowAnimationPlayer")
+
+[node name="Нибрас" type="TextureRect" parent="Эпизоды/Нибрас"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_p85ji")
+expand_mode = 1
+stretch_mode = 4
 
 [node name="Area2D" type="Area2D" parent="Эпизоды/Нибрас"]
 
@@ -174,8 +567,14 @@ horizontal_alignment = 1
 libraries = {
 "": SubResource("AnimationLibrary_4k6bj")
 }
+autoplay = "move"
 
-[node name="Арлет" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
+[node name="ShowAnimationPlayer" type="AnimationPlayer" parent="Эпизоды/Нибрас"]
+libraries = {
+"": SubResource("AnimationLibrary_5ss5i")
+}
+
+[node name="Арлет" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label", "animation_player")]
 layout_mode = 0
 offset_left = 712.0
 offset_top = -4.0
@@ -189,9 +588,22 @@ select_episode = NodePath("../..")
 episode_id = 83
 condition = "FIRST_CHOICE"
 idle_image = ExtResource("8_tjj4n")
-active_image = ExtResource("7_f665n")
+hide_image = ExtResource("9_cm1hn")
 area = NodePath("Area2D")
 label = NodePath("Label")
+animation_player = NodePath("ShowAnimationPlayer")
+
+[node name="Арлет" type="TextureRect" parent="Эпизоды/Арлет"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_f665n")
+expand_mode = 1
+stretch_mode = 4
 
 [node name="Area2D" type="Area2D" parent="Эпизоды/Арлет"]
 
@@ -219,7 +631,18 @@ theme_override_font_sizes/font_size = 48
 text = "Арлет"
 horizontal_alignment = 1
 
-[node name="Лоран" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
+[node name="ShowAnimationPlayer" type="AnimationPlayer" parent="Эпизоды/Арлет"]
+libraries = {
+"": SubResource("AnimationLibrary_ue7rm")
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Эпизоды/Арлет"]
+libraries = {
+"": SubResource("AnimationLibrary_yr04i")
+}
+autoplay = "move"
+
+[node name="Лоран" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label", "animation_player")]
 layout_mode = 0
 offset_left = 975.0
 offset_top = 4.0
@@ -233,9 +656,22 @@ select_episode = NodePath("../..")
 episode_id = 84
 condition = "FIRST_CHOICE"
 idle_image = ExtResource("9_nww50")
-active_image = ExtResource("9_ijkwt")
+hide_image = ExtResource("12_1dwpc")
 area = NodePath("Area2D")
 label = NodePath("Label")
+animation_player = NodePath("ShowAnimationPlayer")
+
+[node name="Лоран" type="TextureRect" parent="Эпизоды/Лоран"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_ijkwt")
+expand_mode = 1
+stretch_mode = 4
 
 [node name="Area2D" type="Area2D" parent="Эпизоды/Лоран"]
 
@@ -263,7 +699,18 @@ theme_override_font_sizes/font_size = 48
 text = "Лоран"
 horizontal_alignment = 1
 
-[node name="Морт" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
+[node name="ShowAnimationPlayer" type="AnimationPlayer" parent="Эпизоды/Лоран"]
+libraries = {
+"": SubResource("AnimationLibrary_j6ipy")
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Эпизоды/Лоран"]
+libraries = {
+"": SubResource("AnimationLibrary_2bo7f")
+}
+autoplay = "move"
+
+[node name="Морт" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label", "animation_player")]
 layout_mode = 0
 offset_left = 233.0
 offset_right = 527.995
@@ -276,9 +723,22 @@ select_episode = NodePath("../..")
 episode_id = 149
 condition = "TRUE_ENDING"
 idle_image = ExtResource("10_cammr")
-active_image = ExtResource("9_eriql")
+hide_image = ExtResource("15_sjaum")
 area = NodePath("Area2D")
 label = NodePath("Label")
+animation_player = NodePath("ShowAnimationPlayer")
+
+[node name="Морт" type="TextureRect" parent="Эпизоды/Морт"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_eriql")
+expand_mode = 1
+stretch_mode = 4
 
 [node name="Area2D" type="Area2D" parent="Эпизоды/Морт"]
 
@@ -311,11 +771,17 @@ root_node = NodePath("../../..")
 libraries = {
 "": SubResource("AnimationLibrary_35h4y")
 }
+autoplay = "move"
 
-[node name="Этьен" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
+[node name="ShowAnimationPlayer" type="AnimationPlayer" parent="Эпизоды/Морт"]
+libraries = {
+"": SubResource("AnimationLibrary_u20cg")
+}
+
+[node name="Этьен" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label", "animation_player")]
 layout_mode = 0
 offset_left = 558.0
-offset_right = 1421.0
+offset_right = 1420.99
 offset_bottom = 362.0
 texture = ExtResource("11_6ijks")
 expand_mode = 1
@@ -324,9 +790,22 @@ script = ExtResource("4_jpviy")
 select_episode = NodePath("../..")
 episode_id = 24
 idle_image = ExtResource("11_6ijks")
-active_image = ExtResource("10_cfqq7")
+hide_image = ExtResource("18_lbaqy")
 area = NodePath("Area2D")
 label = NodePath("Label")
+animation_player = NodePath("ShowAnimationPlayer")
+
+[node name="Этьен" type="TextureRect" parent="Эпизоды/Этьен"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_cfqq7")
+expand_mode = 1
+stretch_mode = 4
 
 [node name="Area2D" type="Area2D" parent="Эпизоды/Этьен"]
 
@@ -354,7 +833,18 @@ theme_override_font_sizes/font_size = 48
 text = "Театр Нибраса"
 horizontal_alignment = 1
 
-[node name="Чарльз" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
+[node name="ShowAnimationPlayer" type="AnimationPlayer" parent="Эпизоды/Этьен"]
+libraries = {
+"": SubResource("AnimationLibrary_g3icl")
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Эпизоды/Этьен"]
+libraries = {
+"": SubResource("AnimationLibrary_6t6s4")
+}
+autoplay = "move"
+
+[node name="Чарльз" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label", "animation_player")]
 layout_mode = 0
 offset_left = 1306.0
 offset_top = -32.0
@@ -366,11 +856,23 @@ stretch_mode = 4
 script = ExtResource("4_jpviy")
 select_episode = NodePath("../..")
 episode_id = 160
-condition = "TRUE_ENDING"
 idle_image = ExtResource("12_svomx")
-active_image = ExtResource("13_bg1y1")
+hide_image = ExtResource("21_jlimh")
 area = NodePath("Area2D")
 label = NodePath("Label")
+animation_player = NodePath("ShowAnimationPlayer")
+
+[node name="Чарльз" type="TextureRect" parent="Эпизоды/Чарльз"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_bg1y1")
+expand_mode = 1
+stretch_mode = 4
 
 [node name="Area2D" type="Area2D" parent="Эпизоды/Чарльз"]
 
@@ -397,6 +899,17 @@ theme_override_constants/outline_size = 12
 theme_override_font_sizes/font_size = 48
 text = "\"Нибрас Театра\""
 horizontal_alignment = 1
+
+[node name="ShowAnimationPlayer" type="AnimationPlayer" parent="Эпизоды/Чарльз"]
+libraries = {
+"": SubResource("AnimationLibrary_snus2")
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Эпизоды/Чарльз"]
+libraries = {
+"": SubResource("AnimationLibrary_x2flg")
+}
+autoplay = "move"
 
 [node name="Вернуться" type="Button" parent="."]
 layout_mode = 1

@@ -6,11 +6,13 @@ extends TextureRect
 @export var episode_id: int
 @export var condition: String
 @export var idle_image: Texture
-@export var active_image: Texture
+@export var hide_image: Texture
 @export var area: Area2D
 @export var label: Label
+@export var animation_player: AnimationPlayer
 
 
+var unlocked: bool = true
 var active: bool = false
 var original_text: String
 
@@ -22,12 +24,14 @@ func _ready():
 		return
 	
 	if not Settings.profile.global_variables.is_variable(condition):
-		queue_free()
+		texture = hide_image
+		unlocked = false
+		#queue_free()
 		return
 
 
 func _gui_input(event):
-	if not active:
+	if not active or not unlocked:
 		return
 	
 	if event is InputEventMouseButton:
@@ -36,16 +40,24 @@ func _gui_input(event):
 
 
 func _on_area_2d_mouse_entered():
+	if not unlocked:
+		return
+	
 	active = true
-	texture = active_image
+	if animation_player != null:
+		animation_player.play("show")
 	if label != null:
 		label.show()
 		label.text = _get_localized_text_with_quotes()
 
 
 func _on_area_2d_mouse_exited():
+	if not unlocked:
+		return
+	
 	active = false
-	texture = idle_image
+	if animation_player != null:
+		animation_player.play("RESET")
 	if label != null:
 		label.hide()
 
