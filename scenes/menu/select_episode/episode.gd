@@ -12,9 +12,12 @@ extends TextureRect
 
 
 var active: bool = false
+var original_text: String
 
 
 func _ready():
+	original_text = label.text
+	
 	if condition == "":
 		return
 	
@@ -37,6 +40,7 @@ func _on_area_2d_mouse_entered():
 	texture = active_image
 	if label != null:
 		label.show()
+		label.text = _get_localized_text_with_quotes()
 
 
 func _on_area_2d_mouse_exited():
@@ -57,3 +61,14 @@ func _start_episode() -> void:
 
 func is_viewed() -> bool:
 	return Settings.profile.is_viewed_episode(episode_id)
+
+
+func _get_localized_text_with_quotes() -> String:
+	var translated_text = tr(original_text)
+	
+	if not translated_text.begins_with('"'):
+		translated_text = '"' + translated_text
+	if not translated_text.ends_with('"'):
+		translated_text = translated_text + '"'
+	
+	return translated_text

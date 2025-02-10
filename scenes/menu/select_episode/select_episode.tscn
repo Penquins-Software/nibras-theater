@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://gf1pplda57ar"]
+[gd_scene load_steps=24 format=3 uid="uid://gf1pplda57ar"]
 
 [ext_resource type="Script" path="res://scenes/menu/select_episode/select_episode.gd" id="1_0gcu4"]
 [ext_resource type="Texture2D" uid="uid://ba6i3va8ga04" path="res://scenes/menu/select_episode/фон.png" id="1_qp7mo"]
@@ -17,6 +17,82 @@
 [ext_resource type="Texture2D" uid="uid://ctihlr186oqvj" path="res://scenes/menu/select_episode/ГГ/гг1.png" id="11_6ijks"]
 [ext_resource type="Texture2D" uid="uid://buy1tyeeh8cyy" path="res://scenes/menu/select_episode/Чарльз/ч1.png" id="12_svomx"]
 [ext_resource type="Texture2D" uid="uid://dpmee88my75k4" path="res://scenes/menu/select_episode/Чарльз/ч2.png" id="13_bg1y1"]
+
+[sub_resource type="Animation" id="Animation_avglr"]
+resource_name = "move"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5, 5, 7.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(625, -1), Vector2(622, 11), Vector2(636, 9), Vector2(628, 5)]
+}
+
+[sub_resource type="Animation" id="Animation_sr6cw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(625, -1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4k6bj"]
+_data = {
+"RESET": SubResource("Animation_sr6cw"),
+"move": SubResource("Animation_avglr")
+}
+
+[sub_resource type="Animation" id="Animation_popmo"]
+resource_name = "move"
+length = 8.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Эпизоды/Морт:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(233, 0), Vector2(232, 22), Vector2(245, 6), Vector2(224, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6ruy8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Эпизоды/Морт:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(233, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_35h4y"]
+_data = {
+"RESET": SubResource("Animation_6ruy8"),
+"move": SubResource("Animation_popmo")
+}
 
 [node name="SelectEpisode" type="Control" node_paths=PackedStringArray("episodes", "return_button")]
 layout_mode = 3
@@ -94,6 +170,11 @@ theme_override_font_sizes/font_size = 48
 text = "Истина"
 horizontal_alignment = 1
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Эпизоды/Нибрас"]
+libraries = {
+"": SubResource("AnimationLibrary_4k6bj")
+}
+
 [node name="Арлет" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
 layout_mode = 0
 offset_left = 712.0
@@ -140,9 +221,9 @@ horizontal_alignment = 1
 
 [node name="Лоран" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
 layout_mode = 0
-offset_left = 977.0
+offset_left = 975.0
 offset_top = 4.0
-offset_right = 2853.0
+offset_right = 2851.0
 offset_bottom = 736.0
 texture = ExtResource("9_nww50")
 expand_mode = 1
@@ -185,7 +266,7 @@ horizontal_alignment = 1
 [node name="Морт" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
 layout_mode = 0
 offset_left = 233.0
-offset_right = 528.0
+offset_right = 527.995
 offset_bottom = 931.0
 texture = ExtResource("10_cammr")
 expand_mode = 1
@@ -224,6 +305,12 @@ theme_override_constants/outline_size = 12
 theme_override_font_sizes/font_size = 48
 text = "\"Закулисье\""
 horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Эпизоды/Морт"]
+root_node = NodePath("../../..")
+libraries = {
+"": SubResource("AnimationLibrary_35h4y")
+}
 
 [node name="Этьен" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
 layout_mode = 0
@@ -269,10 +356,10 @@ horizontal_alignment = 1
 
 [node name="Чарльз" type="TextureRect" parent="Эпизоды" node_paths=PackedStringArray("select_episode", "area", "label")]
 layout_mode = 0
-offset_left = 1304.0
-offset_top = -39.0
-offset_right = 3438.0
-offset_bottom = 990.0
+offset_left = 1306.0
+offset_top = -32.0
+offset_right = 3440.0
+offset_bottom = 997.0
 texture = ExtResource("12_svomx")
 expand_mode = 1
 stretch_mode = 4
