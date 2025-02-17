@@ -9,6 +9,7 @@ extends TextureRect
 @export var hide_image: Texture
 @export var area: Area2D
 @export var label: Label
+@export var bywho: Label
 @export var animation_player: AnimationPlayer
 
 
@@ -49,6 +50,8 @@ func _on_area_2d_mouse_entered():
 	if label != null:
 		label.show()
 		label.text = _get_localized_text_with_quotes()
+	if bywho != null:
+		bywho.show()
 
 
 func _on_area_2d_mouse_exited():
@@ -60,6 +63,8 @@ func _on_area_2d_mouse_exited():
 		animation_player.play("RESET")
 	if label != null:
 		label.hide()
+	if bywho != null:
+		bywho.hide()
 
 
 func _start_episode() -> void:

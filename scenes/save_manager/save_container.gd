@@ -20,7 +20,7 @@ func set_save(save: Save) -> void:
 	var datetime = "%s.%02d.%02d %02d:%02d:%02d" % [save.datetime["year"], save.datetime["month"], save.datetime["day"], save.datetime["hour"], save.datetime["minute"], save.datetime["second"]]
 	label.text = ""
 	if save.auto_save:
-		label.text = "[color=INDIAN_RED][АВТО][/color] "
+		label.text = "[color=INDIAN_RED][%s][/color] " % tr("АВТО")
 	label.text += "%s\n%s" % [tr(save.episode_name), datetime]
 
 

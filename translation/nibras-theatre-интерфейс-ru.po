@@ -312,3 +312,6 @@ msgstr "  [img=24]res://gui/Мелочи/Игра/Для текста/1.png[/img
 #, gp-priority: hidden
 msgid "Место, где можно посмотреть на персонажей."
 msgstr ""
+
+msgid "АВТО"
+msgstr "АВТО"

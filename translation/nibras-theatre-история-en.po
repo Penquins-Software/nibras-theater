@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Nibras Theatre - История package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-12-11 03:20:37+0000\n"
+"PO-Revision-Date: 2025-02-15 12:23:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,14 +11,56 @@ msgstr ""
 "Language: en\n"
 "Project-Id-Version: Nibras Theatre - История\n"
 
-msgid "Бутафор"
-msgstr "Prop master"
+msgid "Перейти в газообразное состояние."
+msgstr "Go into a gaseous state."
 
-msgid "Актриса"
-msgstr "Actress"
+msgid "Исчезнуть."
+msgstr "Vanish."
 
-msgid "Актёр"
-msgstr "Actor"
+msgid "Усы!"
+msgstr "Moustache!"
+
+msgid "Незаметно покинуть открытую комнату."
+msgstr "Leave the open room unnoticed."
+
+msgid "Гипноз!"
+msgstr "Hypnosis!"
+
+msgid "Переход в газообразное состояние."
+msgstr "A gaseous state."
+
+msgid "Тайный проход."
+msgstr "Secret passage."
+
+msgid "Убийца не покидал комнату."
+msgstr "The murderer did not leave the room."
+
+msgid "Убийство через щель двери…"
+msgstr "Murder through the door gap..."
+
+msgid "Мега-устройство взлома!"
+msgstr "Mega Hacking Device!"
+
+msgid "Это был манекен."
+msgstr "It was a mannequin."
+
+msgid "Вместо руки у неё был протез."
+msgstr "Instead of an arm, she had a prosthesis."
+
+msgid "У Морт не было сердца!"
+msgstr "Mort had no heart!"
+
+msgid "Человек-усы."
+msgstr "\tThe Moustache Man."
+
+msgid "Отправиться самому."
+msgstr "Go yourself."
+
+msgid "Отправить Арлет."
+msgstr "Send Arlette."
+
+msgid "Нибрас (alt.)"
+msgstr "Nibras (alt.)"
 
 msgid "ой."
 msgstr "oops."
@@ -132,7 +174,7 @@ msgid "Я нашёл идеальный способ сложить этот п�
 msgstr "I found the perfect way to put this puzzle together."
 
 msgid "[i]Мне[/i] очень сильно хотелось, чтобы репетиция закончилась поскорее."
-msgstr "[i]I[/i] really wanted the rehearsal to finish earlier"
+msgstr "[i]I[/i] really wanted the rehearsal to finish earlier."
 
 msgid "А сегодня..."
 msgstr "And today..."
@@ -189,7 +231,7 @@ msgid "Он завещал его моим родителям."
 msgstr "He bequeathed it to my parents."
 
 msgid "Нет, это первый владелец театра."
-msgstr "No, he is the first owner of the theater."
+msgstr "No, he is the first owner of the theatre."
 
 msgid "Демону?"
 msgstr "The demon?"
@@ -474,7 +516,7 @@ msgid "И если он идёт против своих актёров, это 
 msgstr "And if it goes against its actors, it's my fault."
 
 msgid "А я управляю этим театром."
-msgstr "And I run this theater."
+msgstr "And I run this theatre."
 
 msgid "Арлет осталась на месте, глядя на неё жалостливыми глазами."
 msgstr "Arlette remained where she was, looking at her with pitiful eyes."
@@ -597,10 +639,10 @@ msgid "Но кому интересно выдворять из театра е�
 msgstr "But who could be interested in expelling the theatre’s workers?"
 
 msgid "А если говорить приземлённо, кто-то хочет, чтобы этот театр перестал работать."
-msgstr "But if we speak more down-to-earth, someone wants this theater to stop functioning."
+msgstr "But if we speak more down-to-earth, someone wants this theatre to stop functioning."
 
 msgid "Если выдвигать мистическую версию, то выглядит действительно так, словно театр ополчился на своих обитателей."
-msgstr "If we put forward a mystical version, it really looks as if the theater has turned against its inhabitants."
+msgstr "If we put forward a mystical version, it really looks as if the theatre has turned against its inhabitants."
 
 msgid "Вполне годится для четвёртого происшествия."
 msgstr "Quite suitable for the fourth incident."
@@ -633,7 +675,7 @@ msgid "Когда он уходил, его взгляд был очень ст�
 msgstr "When he left, his gaze was very strange."
 
 msgid "У нас опять всё сорвалось, и театр уверенно покатился в пропасть."
-msgstr "Everything fell through again, and the theater began confidently moving into the abyss."
+msgstr "Everything fell through again, and the theatre began confidently moving into the abyss."
 
 msgid "Следующая репетиция должна была быть генеральной, через три дня – первое выступление, а его роль была одной из главных."
 msgstr "The next rehearsal was supposed to be a dress rehearsal, three days later – the first performance, and he was playing one of the main roles."
@@ -693,7 +735,7 @@ msgid "Но два случая – это совпадение."
 msgstr "But two cases are just a coincidence."
 
 msgid "Конечно, мы провели параллель с предыдущим событием, мол, опять что-то произошло в самый неподходящий момент, опять страдает весь театр."
-msgstr "Sure, we drew a parallel with the previous event, like, something happens at the most inopportune moment, the whole theater suffers, whatever."
+msgstr "Sure, we drew a parallel with the previous event, like, something happens at the most inopportune moment, the whole theatre suffers, whatever."
 
 msgid "Я довольно быстро оправился от испуга и до недавнего времени думал, что в ту ночь я просто не до конца проснулся."
 msgstr "I recovered from the fright quite quickly and until recently thought that I simply didn't fully wake up that night."
@@ -885,7 +927,7 @@ msgid "И все они не показывают ни малейшей трев
 msgstr "And none of them show the slightest concern that I suspect them."
 
 msgid "Как истинный директор театра."
-msgstr "Like a true theater director."
+msgstr "Like a true theatre director."
 
 msgid "Иначе говоря, она берёт на себя всю ответственность за произошедшее."
 msgstr "In other words, she is taking full responsibility for what happened."
@@ -1011,7 +1053,7 @@ msgid "И о нас."
 msgstr "And about us."
 
 msgid "Больше всех заботилась о нашем театре."
-msgstr "She cared about our theater more than anyone else."
+msgstr "She cared about our theatre more than anyone else."
 
 msgid "очень разной."
 msgstr "she was very diverse."
@@ -1554,7 +1596,7 @@ msgid "И попытка всё наладить – вызвать “экзо�
 msgstr "And the attempt to fix everything is to call in an “exorcist consultant”?"
 
 msgid "Возможно, я недостаточно это акцентировала, но наш театр в [i]серьёзном[/i] упадке."
-msgstr "Perhaps I haven't emphasized this enough, but our theater is in [i]serious[/i] decline."
+msgstr "Perhaps I haven't emphasized this enough, but our theatre is in [i]serious[/i] decline."
 
 msgid "Телефон уже давно не работает..."
 msgstr "The phone has been broken for a decent amount of time now..."
@@ -1736,9 +1778,6 @@ msgstr "There is also something good about it, is there not?"
 msgid "...Так, Этьен, опять ты за своё."
 msgstr "...Okay, Etienne, you're at it again."
 
-msgid "Какие же артисты эгоцентричные."
-msgstr "Artists are so self-centered."
-
 msgid "Эта история – конечно же не о себе любимом."
 msgstr "This story is certainly not about their beloved selves, right?"
 
@@ -1884,7 +1923,7 @@ msgid "Надеюсь, Вам понравилось наше небольшое
 msgstr "I hope you enjoyed our little performance...\""
 
 msgid "Добро пожаловать в мой театр."
-msgstr "Welcome to my theater."
+msgstr "Welcome to my theatre."
 
 msgid "“Господин “Детектив!"
 msgstr "\"Mr. \"Detective\"!"
@@ -2535,7 +2574,7 @@ msgid "Морт должно быть уже несколько сотен ле�
 msgstr "Mort must be several hundred years old by now!.."
 
 msgid "Она существует в этом театре с самого его основания."
-msgstr "She has existed in this theater since its inception."
+msgstr "She has existed in this theatre since its inception."
 
 msgid "Морт – моя кукла."
 msgstr "Mort is my doll."
@@ -2685,7 +2724,7 @@ msgid "Пока мы смотрели на убитого Чарльза, у н�
 msgstr "While we were looking at the murdered Charles, she had enough time to leave the room."
 
 msgid "Истина"
-msgstr "The truth"
+msgstr "The Truth"
 
 msgid "Звучит очень сомнительно."
 msgstr "Sounds very dubious."
@@ -3081,7 +3120,7 @@ msgid "Нибрас..."
 msgstr "Nibras..."
 
 msgid "Очень легко объяснить, если предположить, что существует некто 7-й в театре."
-msgstr "Very easy to explain if we assume there is a 7th person in the theater."
+msgstr "Very easy to explain if we assume there is a 7th person in the theatre."
 
 msgid "Всё произошедшее очень легко объяснить!"
 msgstr "Everything that happened is very easy to explain!"
@@ -3195,10 +3234,10 @@ msgid "Какое-то время ты совершала диверсии, вы
 msgstr "For a while, you carried out sabotage, passing it off as the work of a demon, in the hope that Michelle would give up and leave her post herself. But she didn't."
 
 msgid "У директора не было детей, поэтому по правилам театр перешёл бы к старшей актрисе."
-msgstr "The director had no children, so according to the rules, the theater would go to the eldest actress."
+msgstr "The director had no children, so according to the rules, the theatre would go to the eldest actress."
 
 msgid "Тебе очень не нравилось, как Мишель управляет театром, и ты захотела забрать его себе."
-msgstr "You really didn't like the way Michelle ran the theater, so you decided to take it over."
+msgstr "You really didn't like the way Michelle ran the theatre, so you decided to take it over."
 
 msgid "Да, именно так я и думаю."
 msgstr "Yes, that's exactly what I think."
@@ -3645,10 +3684,10 @@ msgid "Новость вызвала такой резонанс, что даж�
 msgstr "The news caused such a resonance that even a film adaptation of these events is being prepared."
 
 msgid "В прессе этот случай окрестили “Театром Нибраса”."
-msgstr "The press dubbed this incident \"The Nibras' Theater.\""
+msgstr "The press dubbed this incident \"The Nibras' Theatre.\""
 
 msgid "Театр закрыли."
-msgstr "The theater was closed."
+msgstr "The theatre was closed."
 
 msgid "Арлет сначала арестовали, а потом поместили в психиатрическую больницу."
 msgstr "Arlette was first arrested and then placed in a psychiatric hospital."
@@ -3789,7 +3828,7 @@ msgid "Денег можно получить очень много, и Мише
 msgstr "A great opportunity to make a lot of money, so Michelle happily agreed."
 
 msgid "И тут он понял: “Если у нас не получается быть хорошим театром, то, может, получится стать хорошим проклятым местом?”"
-msgstr "So he realized: \"If we can't be a good theater, then maybe we can become a good cursed place?\""
+msgstr "So he realized: \"If we can't be a good theatre, then maybe we can become a good cursed place?\""
 
 msgid "На глаза Чарльзу попалась статья про некого богача – мистера X – который по слухам занимается демонологией и активно скупает всякие проклятые места."
 msgstr "Charles came across an article about a certain rich man, Mr. X, who was rumored to be involved in demonology and was actively buying up all sorts of cursed places."
@@ -4188,7 +4227,7 @@ msgid "Вы хотите сказать, что Мишель специальн�
 msgstr "Are you saying that Michelle is deliberately creating such a background for the theatre in order to ultimately sell it to that person at a high price?"
 
 msgid "Она говорила что-то про жертвоприношения, и что это – единственный путь для театра."
-msgstr "She was saying something about sacrifices, and that this was the only way for the theater."
+msgstr "She was saying something about sacrifices, and that this was the only way for the theatre."
 
 msgid "Несколько дней назад я случайно подслушала разговор директора по телефону."
 msgstr "A few days ago I overheard the director on the phone."
@@ -4272,7 +4311,7 @@ msgid "Она наверняка говорила про потенциальн�
 msgstr "Remember what she said about a potential sponsor who likes authenticity?"
 
 msgid "Я думаю, что Мишель хочет выставить всё так, будто в театре действительно поселился демон."
-msgstr "I think Michelle wants to make it [i]look[/i] like the theater is haunted by a demon."
+msgstr "I think Michelle wants to make it [i]look[/i] like the theatre is haunted by a demon."
 
 msgid "Не в этом смысле."
 msgstr "Not in that sense."
@@ -5598,7 +5637,7 @@ msgid "Удачной игры!"
 msgstr "Have a good game!"
 
 msgid "Если же Вы выиграете, то сможете покинуть театр живым."
-msgstr "If you win, you will be able to leave the theater in one piece."
+msgstr "If you win, you will be able to leave the theatre in one piece."
 
 msgid "Но помните, в таком случае Вы автоматически проиграете, и он сразу убьёт Вас."
 msgstr "But remember, in this case you automatically lose, and they will kill you right away."
@@ -5628,7 +5667,7 @@ msgid "Надеюсь, Вам понравилось наше небольшое
 msgstr "I hope you enjoyed our little performance."
 
 msgid "Добро пожаловать в [i]мой[/i] театр."
-msgstr "Welcome to my theater."
+msgstr "Welcome to my theatre."
 
 msgid "Господин “Детектив”!"
 msgstr "Mr. \"Detective\"!"
@@ -5781,10 +5820,10 @@ msgid "Другого способа стать директором нет."
 msgstr "There is no other way to become a director."
 
 msgid "этот театр может переходить только по наследству либо детям, либо старшему актёру этого театра."
-msgstr "this theater can only be inherited by either children or the oldest actor of this theater."
+msgstr "this theatre can only be inherited by either children or the oldest actor of this theatre."
 
 msgid "Старое правило театра, установленное ещё до родителей Мишель:"
-msgstr "An old rule of the theater, established even before Michelle's parents:"
+msgstr "An old rule of the theatre, established even before Michelle's parents:"
 
 msgid "Почему это?"
 msgstr "Why?"
@@ -5904,7 +5943,7 @@ msgid "Коридор был слабо освещён, и тени танцев
 msgstr "The corridor was dimly lit, and shadows were dancing on the walls, creating a mystical and somewhat eerie atmosphere."
 
 msgid "Мы шли по длинному коридору театра, и шаги гулко отдавались эхом в пустом пространстве."
-msgstr "We walked down the long corridor of the theater, our footsteps echoing loudly in the empty space."
+msgstr "We walked down the long corridor of the theatre, our footsteps echoing loudly in the empty space."
 
 msgid "Повторный осмотр сцены"
 msgstr "Re-examination of the scene"
@@ -6762,7 +6801,7 @@ msgid "Вы напугали меня!"
 msgstr "You scared me!"
 
 msgid "Ещё чуть-чуть и жертв в театре стало бы больше."
-msgstr "Just a little more and there would have been more victims in the theater."
+msgstr "Just a little more and there would have been more victims in the theatre."
 
 msgid "Я чуть не умер со страха."
 msgstr "I almost died of fright."
@@ -7023,7 +7062,7 @@ msgid "Всё это было задокументировано и сделан
 msgstr "Everything was documented and done in the presence of the director."
 
 msgid "Наш театр сумел раздобыть только одну коробку с патронами для этого оружия, и все патроны были сразу же переделаны в холостые."
-msgstr "Our theater managed to get hold of only one box of cartridges for this weapon, and all the cartridges were immediately converted into blanks."
+msgstr "Our theatre managed to get hold of only one box of cartridges for this weapon, and all the cartridges were immediately converted into blanks."
 
 msgid "Это невозможно."
 msgstr "This is impossible."
@@ -7050,7 +7089,7 @@ msgid "Это очень серьёзное обвинение, у вас ест
 msgstr "This is a very serious accusation, do you have evidence?"
 
 msgid "Я долгое время служу театру и ни за что бы не пошёл на такое!"
-msgstr "I've been serving this theater for a very long time!"
+msgstr "I've been serving this theatre for a very long time!"
 
 msgid "Я бы не стал убивать людей."
 msgstr "I would never do anything like that."
@@ -7080,7 +7119,7 @@ msgid "Не знаю почему, но если кто-то из них и ви
 msgstr "Not sure why, but if one of them is guilty, I want to believe it's him."
 
 msgid "Кажется, что судьба театра его не особо волнует и он готов хоть завтра покинуть их."
-msgstr "It seems that he does not particularly care about the fate of the theater and is ready to leave anytime."
+msgstr "It seems that he does not particularly care about the fate of the theatre and is ready to leave anytime."
 
 msgid "Как по мне, он ведёт себя подозрительнее всех, но при этом он единственный, на кого ничто не указывает."
 msgstr "To me, he is the most suspicious of all, though he is also the only one who has no indication of anything."
@@ -7125,7 +7164,7 @@ msgid "Она говорит, что оружие крайне редкое и �
 msgstr "She says that the weapon is extremely rare and that it is difficult to get ammunition for it..."
 
 msgid "Мишель – директор этого театра, и она запросто могла организовать нечто подобное."
-msgstr "Michelle is the theater's director, and she could easily organize all of this."
+msgstr "Michelle is the theatre's director, and she could easily organize all of this."
 
 msgid "Но какой у него может быть мотив убивать мисс Морт?"
 msgstr "But what motive could he have for killing Miss Mort?"
@@ -7578,7 +7617,7 @@ msgid "Очень давно."
 msgstr "A very long time."
 
 msgid "Она уже давно служит нашему театру."
-msgstr "She has been serving our theater for a long time."
+msgstr "She has been serving our theatre for a long time."
 
 msgid "Всё так."
 msgstr "Correct."
@@ -7653,7 +7692,7 @@ msgid "И чтобы избежать этого, она прибегает ко
 msgstr "And to try and avoid it, she resorts to all possible means, in particular -- calling me."
 
 msgid "Директор рассказывала мне об этом: их театр на грани закрытия."
-msgstr "The director told me about it: their theater is on the brink of closing."
+msgstr "The director told me about it: their theatre is on the brink of closing."
 
 msgid "Точно."
 msgstr "Right."
@@ -7662,7 +7701,7 @@ msgid "Это наш последний шанс."
 msgstr "This is our last chance."
 
 msgid "Видите ли, если мы привлечём полицию, тогда наша постановка точно сорвётся, и театр окончательно разорится."
-msgstr "You see, if we get the police involved, our upcoming play will certainly fall through and the theater will go bankrupt."
+msgstr "You see, if we get the police involved, our upcoming play will certainly fall through and the theatre will go bankrupt."
 
 msgid "Почему?!"
 msgstr "Why?!"
@@ -7950,7 +7989,7 @@ msgid "Удачи."
 msgstr "Good luck."
 
 msgid "А, различие всё же есть – директриса реального театра хочет изгнать демона, а не удовлетворить."
-msgstr "So there [i]is[/i] a difference -- the real theater's director want to banish the demon, not to satisfy."
+msgstr "So there [i]is[/i] a difference -- the real theatre's director want to banish the demon, not to satisfy."
 
 msgid "На сцене прозвучало что-то про демона развлечений, требующего жертв."
 msgstr "I heard some on stage saying something about the demon of entertainment asking for sacrifices."
@@ -8022,7 +8061,7 @@ msgid "Ты спятила?!"
 msgstr "Are you crazy?"
 
 msgid "Кроме нас в зале сидел только мужчина лет пятидесяти – бутафор."
-msgstr "Besides us, there was only one other person in the theater hall -- the prop master."
+msgstr "Besides us, there was only one other person in the theatre hall -- the prop master."
 
 msgid "Но Мишель убедила меня посмотреть с ней генеральную репетицию."
 msgstr "But for some reason Michelle made me see the dress rehearsal first."
@@ -8049,7 +8088,7 @@ msgid "Подробности она обещала раскрыть позже,
 msgstr "She promised to share the details later, but in short, she thinks there is something supernatural involved."
 
 msgid "Мишель, директор театра, наняла меня разобраться в участившихся несчастных случаях."
-msgstr "Michelle, the theater's director, hired me to solve the mystery of the increasing number of accidents."
+msgstr "Michelle, the theatre's director, hired me to solve the mystery of the increasing number of accidents."
 
 msgid "Вообще я здесь не ради этого."
 msgstr "...I'm not here for this."
@@ -8082,7 +8121,7 @@ msgid "Сейчас у них будет общее собрание, на ко�
 msgstr "Right now they're having a general meeting to decide the fate of their team."
 
 msgid "Это постановка о бродячей труппе, столкнувшейся с серьёзными проблемами."
-msgstr "This is a play about a travelling theater troupe that is facing serious problems."
+msgstr "This is a play about a travelling theatre troupe that is facing serious problems."
 
 msgid "Актёров."
 msgstr "Actors."
