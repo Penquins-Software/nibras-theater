@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=3 uid="uid://1ldra2lpi55u"]
+[gd_scene load_steps=81 format=3 uid="uid://1ldra2lpi55u"]
 
 [ext_resource type="Script" path="res://source/main_menu/menu.gd" id="1_74llx"]
 [ext_resource type="Script" path="res://source/main_menu/menu_element.gd" id="2_h3ser"]
@@ -8,11 +8,12 @@
 [ext_resource type="Script" path="res://scenes/menu/menu_background.gd" id="4_f824p"]
 [ext_resource type="PackedScene" uid="uid://c1njjadxa43bg" path="res://scenes/settings.tscn" id="5_7o1gw"]
 [ext_resource type="Texture2D" uid="uid://djv3txdrxhsae" path="res://gui/Главное меню и настройки/левая.png" id="5_8p1ol"]
-[ext_resource type="Texture2D" uid="uid://dmdnbgkovufq5" path="res://gui/Главное меню и настройки/Меню 2.png" id="5_pyue1"]
 [ext_resource type="PackedScene" uid="uid://beneekmk33mka" path="res://scenes/save_manager/save_list.tscn" id="5_rnans"]
 [ext_resource type="Texture2D" uid="uid://brnxtegkgyyqc" path="res://gui/Главное меню и настройки/правая.png" id="6_a3sls"]
+[ext_resource type="Texture2D" uid="uid://dqwwp8840lvjq" path="res://cg_arts/eng/menu_1.png" id="6_avwwu"]
 [ext_resource type="Texture2D" uid="uid://bu1fc76i5fe2v" path="res://gui/Главное меню и настройки/Лого.png" id="7_nugf5"]
 [ext_resource type="Theme" uid="uid://o18on08dn11a" path="res://scenes/menu/menu_buttons.tres" id="8_7egbi"]
+[ext_resource type="Texture2D" uid="uid://vwggk6msntvs" path="res://cg_arts/eng/menu_3.png" id="8_ycckm"]
 [ext_resource type="Texture2D" uid="uid://bdg7kk0esiuhw" path="res://graphics/VK Logo White.png" id="9_xqdj7"]
 [ext_resource type="Script" path="res://source/control_link.gd" id="10_2q5tt"]
 [ext_resource type="Script" path="res://scenes/menu/continue_button.gd" id="10_tp6ug"]
@@ -203,7 +204,10 @@ texture = ExtResource("3_ors6w")
 expand_mode = 1
 script = ExtResource("4_f824p")
 hands = NodePath("Руки")
-true_ending = ExtResource("5_pyue1")
+image_ru = ExtResource("46_8vam1")
+image_en = ExtResource("6_avwwu")
+image_true_ru = ExtResource("47_tl5p8")
+image_true_en = ExtResource("8_ycckm")
 
 [node name="Руки" type="Control" parent="Background"]
 layout_mode = 1
