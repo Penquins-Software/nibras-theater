@@ -67,6 +67,10 @@ func _set_player_name(new_name: String) -> void:
 
 
 func _set_locale(new_locale: String) -> void:
+	if new_locale.begins_with("ru"):
+		new_locale = "ru"
+	else:
+		new_locale = "en"
 	locale = new_locale
 	TranslationServer.set_locale(locale)
 	locale_was_changed.emit()
@@ -214,6 +218,7 @@ func load_config() -> void:
 		print("Configuration file loaded successfully!")
 	else:
 		print("Failed to read configuration file: %s" % error)
+		locale = OS.get_locale()
 
 
 func set_audio_volume(bus: AudioBus, value: int) -> void:
