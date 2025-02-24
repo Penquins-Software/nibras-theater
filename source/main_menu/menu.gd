@@ -34,7 +34,7 @@ func _ready():
 	if OS.has_feature("web"):
 		exit_button.hide()
 	
-	check_episodes()
+	#check_episodes()
 	check_gallery_items()
 
 
