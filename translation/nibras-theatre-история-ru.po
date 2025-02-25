@@ -8188,3 +8188,6 @@ msgstr "Актёр"
 
 msgid "Актриса"
 msgstr "Актриса"
+
+msgid "Бутафор"
+msgstr "Бутафор"
