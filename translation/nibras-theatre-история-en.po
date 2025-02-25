@@ -1479,7 +1479,7 @@ msgid "Безумная версия с синхронным выстрелом 
 msgstr "The crazy version with a synchronized shot is out."
 
 msgid "Чарльз вышел из левого, и это было спустя каких-то десять секунд после выстрела."
-msgstr "Charles came out of the left, and that was about ten seconds after the shot."
+msgstr "The smiley actor came out of the left, and that was about ten seconds after the shot."
 
 msgid "С учётом расположения актрисы, попасть в сердце можно было только стреляя из правого кармана сцены."
 msgstr "Given the actress's position, the only way to hit the heart was to shoot from the right wing."
