@@ -218,7 +218,15 @@ func load_config() -> void:
 		print("Configuration file loaded successfully!")
 	else:
 		print("Failed to read configuration file: %s" % error)
-		locale = OS.get_locale()
+		set_default();
+
+
+func set_default() -> void:
+	locale = OS.get_locale()
+	screen_mode = DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN
+	master_volume = 50
+	sfx_volume = 50
+	music_volume = 50
 
 
 func set_audio_volume(bus: AudioBus, value: int) -> void:
