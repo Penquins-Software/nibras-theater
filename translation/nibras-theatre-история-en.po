@@ -8185,3 +8185,9 @@ msgstr "Narrator"
 
 msgid "Театр Нибраса"
 msgstr "Nibras's Play"
+
+msgid "Актёр"
+msgstr "Actor"
+
+msgid "Актриса"
+msgstr "Actress"
