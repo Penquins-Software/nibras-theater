@@ -134,8 +134,8 @@ msgstr ""
 "in 2024[/url]"
 
 #: scenes/menu/menu.tscn
-msgid "Версия: 1.2.1"
-msgstr "Version: 1.2.1"
+msgid "Версия: 1.2.2"
+msgstr "Version: 1.2.2"
 
 #: scenes/menu/gallery_item.tscn
 msgid ""
