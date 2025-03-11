@@ -6,5 +6,6 @@ func _ready():
 
 
 func open_url(meta: Variant) -> void:
-	UISoundManager.click()
-	OS.shell_open(meta)
+	#UISoundManager.click()
+	#OS.shell_open(meta)
+	pass
